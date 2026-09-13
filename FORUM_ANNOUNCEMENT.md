@@ -29,4 +29,4 @@ Three things, all documented at **<https://wiki.openstreetmap.org/wiki/Guelph/Ad
 
 **Objections welcome for 14 days, to 2026-09-10.** Then a pilot tile posted here with its counts and changeset before anything else moves.
 
-toronto@comentality.com · [address-importer-friend](https://github.com/skfd/address-importer-friend) · [guelph-address-import](https://github.com/skfd/guelph-address-import)
+toronto@comentality.com · [address-importer-friend](https://github.com/skfd/address-importer-friend) · [guelph-address-import](https://github.com/guelph-maps/guelph-address-import)

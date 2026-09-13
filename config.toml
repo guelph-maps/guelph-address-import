@@ -77,7 +77,7 @@ active_values = ["Active"]
 # recorded anywhere in the family, so the footer falls back to the [export]
 # attribution string unlinked rather than to a guessed link.
 [links]
-repo = "https://github.com/skfd/guelph-address-import"
+repo = "https://github.com/guelph-maps/guelph-address-import"
 # The announcement thread, #135103, opened 2026-08-27.
 discussion = "https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103"
 # Our wiki page — the same one [export] import_plan stamps on every changeset.
