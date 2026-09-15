@@ -64,6 +64,31 @@ status = "props:STATUS"
 # 514 groups are stacked (deepest 214 units), 80 of those have no unit-less
 # row to elect (lowest identity_key then). 111 groups carry >1 unit-less rows
 # — civic-level intra-source duplicates worth a look during review.
+#
+# Apartment vs. individual entrances, measured 2026-09-15 on snapshot 46 against
+# 47,008 live OSM address objects (Overpass, admin_level 6). The source cannot
+# name the difference — it has no building/structure field, and PIN is single on
+# 460 of the 514 (a condo complex is one parcel). What separates them is the
+# median nearest-neighbour spacing of the unit points within the group:
+#   <3 m    144 groups — every unit on one door: tower or plaza.
+#   3-8 m   290 groups — one point per door: townhouse row, strip mall.
+#   >=8 m    80 groups — ambiguous: multi-building site. Eyes, if ever needed.
+# The classifier is mechanical; nothing downstream consumes it yet, because
+# collapse-to-civic emits one node either way and no addr:unit at all.
+# Where the 514 actually stand against OSM:
+#   304  already carry a bare civic node — MATCH, nothing to decide.
+#    89  OSM has ONLY the double-encoded form (714-30), so conflate.py's
+#        exact-string _norm_number (conflate.py:168) reads them as MISSING.
+#        These 89 are the whole interaction between gap-fill and mechanical
+#        edit #2: whichever runs first changes what the other sees. Not yet
+#        written into IMPORT_PROPOSAL.mediawiki — open decision.
+#   121  absent in any form — ordinary gap-fill, one civic node each.
+# City-wide the same exact-string effect is small: of 2,598 civic keys with no
+# bare OSM match, only 91 are rescued by the hyphenated form; 2,507 are really
+# absent, which corroborates the 2,523 hand-measured on 2026-08-10.
+# Strongest per-door signal, if per-door nodes are ever wanted: unit_count ==
+# distinct PIN count (freehold townhouses, separate parcels sharing a civic
+# number) — 34 groups, 11 of them in the 121 absent-entirely bucket.
 [units]
 policy = "collapse-to-civic"
 
