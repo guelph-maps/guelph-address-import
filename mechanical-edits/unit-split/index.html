@@ -1,0 +1,468 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Guelph unit split — run sheet</title>
+<style>
+:root { color-scheme: light dark; --line:#d5d7db; --muted:#6b7177;
+        --ok:#1f7a3f; --warn:#8a5a00; --bg:#fff; --fg:#16181d; --card:#fafbfc; }
+@media (prefers-color-scheme: dark) {
+  :root { --line:#3a3f46; --muted:#9aa1a9; --ok:#6fcf8f; --warn:#e0b25c;
+          --bg:#14171a; --fg:#e8eaed; --card:#1b1f23; } }
+* { box-sizing: border-box; }
+body { margin:0 auto; padding:2rem 1.25rem 6rem; max-width:64rem;
+       background:var(--bg); color:var(--fg);
+       font:15px/1.55 -apple-system,Segoe UI,Roboto,sans-serif; }
+h1 { font-size:1.5rem; margin:0 0 .25rem; }
+h2 { font-size:1.05rem; margin:2.25rem 0 .6rem; }
+.sub { color:var(--muted); margin:0 0 1.5rem; }
+.banner { border:1px solid var(--line); border-left:4px solid var(--ok);
+          background:var(--card); padding:.85rem 1rem; border-radius:6px;
+          margin:0 0 1rem; }
+.banner.warn { border-left-color:var(--warn); }
+code, .mono { font-family:ui-monospace,SFMono-Regular,Consolas,monospace;
+              font-size:.86em; }
+table { border-collapse:collapse; width:100%; }
+th, td { text-align:left; padding:.5rem .55rem; border-bottom:1px solid var(--line);
+         vertical-align:top; }
+th { font-size:.78rem; text-transform:uppercase; letter-spacing:.04em;
+     color:var(--muted); font-weight:600; }
+tr.done td { opacity:.42; }
+tr.pilot td { background:color-mix(in srgb, var(--ok) 9%, transparent); }
+td.n { text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
+a.open { display:inline-block; padding:.3rem .65rem; border:1px solid var(--line);
+         border-radius:5px; text-decoration:none; color:inherit;
+         background:var(--card); white-space:nowrap; }
+a.open:hover { border-color:var(--ok); }
+.cs { color:var(--muted); font-size:.8rem; margin-top:.3rem; word-break:break-word; }
+.copy { cursor:pointer; border:1px solid var(--line); background:var(--card);
+        border-radius:4px; font-size:.72rem; padding:.1rem .4rem; color:inherit; }
+.progress { position:sticky; top:0; background:var(--bg); padding:.7rem 0;
+            border-bottom:1px solid var(--line); z-index:2; font-weight:600; }
+ol.steps li, ul.steps li { margin:.4rem 0; }
+</style>
+<h1>Guelph unit split — run sheet</h1>
+<p class="sub">Mechanical edit 2 of 2: <code>addr:housenumber=714-30</code> +
+<code>addr:unit=30</code> &rarr; <code>addr:housenumber=714</code>, unit
+untouched. 5,521 objects in 36 batches, prepared
+2026-09-15 17:58 Eastern Daylight Time · <a href="https://wiki.openstreetmap.org/wiki/Guelph/Address_Import/Continuous#Mechanical_edits">wiki</a> ·
+<a href="https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103">thread #135103</a></p>
+
+<div class="banner"><strong>Consent is in.</strong> Announced in
+<a href="https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103">#135103</a> post #14 on 2026-08-28 with a 14-day objection
+window to 2026-09-10. It closed five days ago with no objections, and
+ARandomThumbtack — who had defended the combined form — replied supportively
+in #15.</div>
+
+<div class="banner warn"><strong>Batch 1 is the pilot, and there is a gate
+after it.</strong> The announcement promised “a pilot tile posted here with its
+counts and changeset before anything else moves.” Upload batch 1, post its
+count and changeset link to the thread, then carry on.</div>
+
+<h2>Before the first one</h2>
+<ol class="steps">
+  <li>JOSM &rarr; Preferences &rarr; Remote Control &rarr; enable it and tick
+      <strong>“Open local files”</strong>. That box is off by default and the
+      links below do nothing without it. If a link does nothing, the fallback
+      is to open the <code>.osm</code> from
+      <code>mechanical-edits/unit-split/batches/</code> by hand.</li>
+  <li>Be signed in as the account the announcement named — the same one the
+      import uploads from.</li>
+  <li>Each file carries its own changeset comment, <code>source</code>,
+      <code>source:license</code>, <code>mechanical=yes</code>,
+      <code>bot=no</code> and <code>import_plan</code>; JOSM fills the upload
+      dialog in from them, so there is nothing to paste.
+      <code>created_by</code> will read <code>JOSM/…</code> rather than the
+      wiki table’s <code>address-importer-friend</code> — JOSM always stamps
+      its own, and a value that cannot survive the upload was not worth
+      writing. Worth a line when you post the pilot.</li>
+  <li>Every object carries the <code>version</code> it was prepared against.
+      If someone else has edited it since, the upload 409s and JOSM raises a
+      conflict — that is the promised “skipped and re-examined rather than
+      overwritten”, working. Discard ours and re-run
+      <code>build_batches.py --refetch</code> later.</li>
+  <li>Only <code>addr:housenumber</code> changes. Do not fold the
+      <code>addr:province</code> campaign into these changesets — it is
+      consented and revertable separately, and mixing them would make either
+      revert take the other with it.</li>
+</ol>
+
+<h2>Batches</h2>
+<div class="progress" id="tally"></div>
+<table>
+  <thead><tr><th></th><th class="n">#</th><th>Area</th><th class="n">Objects</th>
+  <th>Open</th></tr></thead>
+  <tbody>
+      <tr class="pilot" data-batch="1" data-count="69">
+        <td><input type="checkbox" aria-label="batch 1 uploaded"></td>
+        <td class="n">1 <strong>PILOT</strong></td>
+        <td><strong>June Avenue</strong><div class='cs'>Burns Drive</div><div class='cs mono'>e.g. 33-2 Burns Drive &rarr; 33 + unit 2</div></td>
+        <td class="n">69</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/01-june-avenue.osm">Open in JOSM</a>
+            <div class="cs">01-june-avenue.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - June Avenue [batch 1/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="2" data-count="1">
+        <td><input type="checkbox" aria-label="batch 2 uploaded"></td>
+        <td class="n">2</td>
+        <td><strong>Non-Residential - B</strong><div class='cs'>York Road</div><div class='cs mono'>e.g. 561-5 York Road &rarr; 561 + unit 5</div></td>
+        <td class="n">1</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/02-non-residential-b.osm">Open in JOSM</a>
+            <div class="cs">02-non-residential-b.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Non-Residential - B [batch 2/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="3" data-count="6">
+        <td><input type="checkbox" aria-label="batch 3 uploaded"></td>
+        <td class="n">3</td>
+        <td><strong>Non-Residential - A</strong><div class='cs'>Monarch Road</div><div class='cs mono'>e.g. 70-6 Monarch Road &rarr; 70 + unit 6</div></td>
+        <td class="n">6</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/03-non-residential-a.osm">Open in JOSM</a>
+            <div class="cs">03-non-residential-a.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Non-Residential - A [batch 3/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="4" data-count="19">
+        <td><input type="checkbox" aria-label="batch 4 uploaded"></td>
+        <td class="n">4</td>
+        <td><strong>Downtown - Sunny Acres</strong><div class='cs'>Glasgow Street South, Paisley Street</div><div class='cs mono'>e.g. 12-14 Glasgow Street South &rarr; 12 + unit 14</div></td>
+        <td class="n">19</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/04-downtown-sunny-acres.osm">Open in JOSM</a>
+            <div class="cs">04-downtown-sunny-acres.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Downtown - Sunny Acres [batch 4/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="5" data-count="24">
+        <td><input type="checkbox" aria-label="batch 5 uploaded"></td>
+        <td class="n">5</td>
+        <td><strong>Two Rivers</strong><div class='cs'>York Road</div><div class='cs mono'>e.g. 142-24 York Road &rarr; 142 + unit 24</div></td>
+        <td class="n">24</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/05-two-rivers.osm">Open in JOSM</a>
+            <div class="cs">05-two-rivers.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Two Rivers [batch 5/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="6" data-count="47">
+        <td><input type="checkbox" aria-label="batch 6 uploaded"></td>
+        <td class="n">6</td>
+        <td><strong>Outside the area fabric</strong><div class='cs'>Westra Drive</div><div class='cs mono'>e.g. 107-71 Westra Drive &rarr; 107 + unit 71</div></td>
+        <td class="n">47</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/06-outside-the-area-fabric.osm">Open in JOSM</a>
+            <div class="cs">06-outside-the-area-fabric.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Outside the area fabric [batch 6/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="7" data-count="78">
+        <td><input type="checkbox" aria-label="batch 7 uploaded"></td>
+        <td class="n">7</td>
+        <td><strong>Non-Residential - C</strong><div class='cs'>Farley Drive, Kay Crescent, Poppy Drive East</div><div class='cs mono'>e.g. 33-14 Farley Drive &rarr; 33 + unit 14</div></td>
+        <td class="n">78</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/07-non-residential-c.osm">Open in JOSM</a>
+            <div class="cs">07-non-residential-c.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Non-Residential - C [batch 7/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="8" data-count="105">
+        <td><input type="checkbox" aria-label="batch 8 uploaded"></td>
+        <td class="n">8</td>
+        <td><strong>Exhibition Park</strong><div class='cs'>London Road West, Yorkshire Street North</div><div class='cs mono'>e.g. 240-5 London Road West &rarr; 240 + unit 5</div></td>
+        <td class="n">105</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/08-exhibition-park.osm">Open in JOSM</a>
+            <div class="cs">08-exhibition-park.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Exhibition Park [batch 8/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="9" data-count="180">
+        <td><input type="checkbox" aria-label="batch 9 uploaded"></td>
+        <td class="n">9</td>
+        <td><strong>Waverley</strong><div class='cs'>Arthur Street North, Country Club Drive, Eramosa Road, Simmonds Drive +3 more</div><div class='cs mono'>e.g. 196-2 Arthur Street North &rarr; 196 + unit 2</div></td>
+        <td class="n">180</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/09-waverley.osm">Open in JOSM</a>
+            <div class="cs">09-waverley.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Waverley [batch 9/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="10" data-count="186">
+        <td><input type="checkbox" aria-label="batch 10 uploaded"></td>
+        <td class="n">10</td>
+        <td><strong>Kortright Hills</strong><div class='cs'>Downey Road, Hanlon Creek Boulevard, Ptarmigan Drive, Teal Drive</div><div class='cs mono'>e.g. 115-10 Downey Road &rarr; 115 + unit 10</div></td>
+        <td class="n">186</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/10-kortright-hills.osm">Open in JOSM</a>
+            <div class="cs">10-kortright-hills.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Kortright Hills [batch 10/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="11" data-count="187">
+        <td><input type="checkbox" aria-label="batch 11 uploaded"></td>
+        <td class="n">11</td>
+        <td><strong>Brant</strong><div class='cs'>Carere Crescent, Mullin Drive, Victoria Road North, Woodlawn Road East</div><div class='cs mono'>e.g. 15-17B Carere Crescent &rarr; 15 + unit 17B</div></td>
+        <td class="n">187</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/11-brant.osm">Open in JOSM</a>
+            <div class="cs">11-brant.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Brant [batch 11/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="12" data-count="250">
+        <td><input type="checkbox" aria-label="batch 12 uploaded"></td>
+        <td class="n">12</td>
+        <td><strong>Clairfields (1/2)</strong><div class='cs'>Cowan Place, Dawn Avenue, Gordon Street, Gosling Gardens +1 more</div><div class='cs mono'>e.g. 20-12 Cowan Place &rarr; 20 + unit 12</div></td>
+        <td class="n">250</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/12-clairfields-p1.osm">Open in JOSM</a>
+            <div class="cs">12-clairfields-p1.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Clairfields 1/2 [batch 12/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="13" data-count="7">
+        <td><input type="checkbox" aria-label="batch 13 uploaded"></td>
+        <td class="n">13</td>
+        <td><strong>Clairfields (2/2)</strong><div class='cs'>Vaughan Street</div><div class='cs mono'>e.g. 30-58 Vaughan Street &rarr; 30 + unit 58</div></td>
+        <td class="n">7</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/13-clairfields-p2.osm">Open in JOSM</a>
+            <div class="cs">13-clairfields-p2.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Clairfields 2/2 [batch 13/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="14" data-count="250">
+        <td><input type="checkbox" aria-label="batch 14 uploaded"></td>
+        <td class="n">14</td>
+        <td><strong>Hanlon Creek (1/2)</strong><div class='cs'>Cole Road, Scottsdale Drive, Stone Road West</div><div class='cs mono'>e.g. 125-14 Cole Road &rarr; 125 + unit 14</div></td>
+        <td class="n">250</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/14-hanlon-creek-p1.osm">Open in JOSM</a>
+            <div class="cs">14-hanlon-creek-p1.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Hanlon Creek 1/2 [batch 14/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="15" data-count="78">
+        <td><input type="checkbox" aria-label="batch 15 uploaded"></td>
+        <td class="n">15</td>
+        <td><strong>Hanlon Creek (2/2)</strong><div class='cs'>Stone Road West</div><div class='cs mono'>e.g. 370-11 Stone Road West &rarr; 370 + unit 11</div></td>
+        <td class="n">78</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/15-hanlon-creek-p2.osm">Open in JOSM</a>
+            <div class="cs">15-hanlon-creek-p2.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Hanlon Creek 2/2 [batch 15/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="16" data-count="250">
+        <td><input type="checkbox" aria-label="batch 16 uploaded"></td>
+        <td class="n">16</td>
+        <td><strong>Pine Ridge - Westminster Woods (1/2)</strong><div class='cs'>Arkell Road, Bard Boulevard, Clairfields Drive East, Gordon Street</div><div class='cs mono'>e.g. 167-33 Arkell Road &rarr; 167 + unit 33</div></td>
+        <td class="n">250</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/16-pine-ridge-westminster-woods-p1.osm">Open in JOSM</a>
+            <div class="cs">16-pine-ridge-westminster-woods-p1.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Pine Ridge - Westminster Woods 1/2 [batch 16/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="17" data-count="136">
+        <td><input type="checkbox" aria-label="batch 17 uploaded"></td>
+        <td class="n">17</td>
+        <td><strong>Pine Ridge - Westminster Woods (2/2)</strong><div class='cs'>Gordon Street, Lowes Road East, Summerfield Drive</div><div class='cs mono'>e.g. 1498-1 Gordon Street &rarr; 1498 + unit 1</div></td>
+        <td class="n">136</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/17-pine-ridge-westminster-woods-p2.osm">Open in JOSM</a>
+            <div class="cs">17-pine-ridge-westminster-woods-p2.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Pine Ridge - Westminster Woods 2/2 [batch 17/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="18" data-count="250">
+        <td><input type="checkbox" aria-label="batch 18 uploaded"></td>
+        <td class="n">18</td>
+        <td><strong>Hales Barton (1/2)</strong><div class='cs'>Amos Drive, Arkell Road, Decorso Drive, Macalister Boulevard</div><div class='cs mono'>e.g. 14-17 Amos Drive &rarr; 14 + unit 17</div></td>
+        <td class="n">250</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/18-hales-barton-p1.osm">Open in JOSM</a>
+            <div class="cs">18-hales-barton-p1.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Hales Barton 1/2 [batch 18/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="19" data-count="157">
+        <td><input type="checkbox" aria-label="batch 19 uploaded"></td>
+        <td class="n">19</td>
+        <td><strong>Hales Barton (2/2)</strong><div class='cs'>Macalister Boulevard, Valley Road, Victoria Road South</div><div class='cs mono'>e.g. 355-17 Macalister Boulevard &rarr; 355 + unit 17</div></td>
+        <td class="n">157</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/19-hales-barton-p2.osm">Open in JOSM</a>
+            <div class="cs">19-hales-barton-p2.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Hales Barton 2/2 [batch 19/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="20" data-count="250">
+        <td><input type="checkbox" aria-label="batch 20 uploaded"></td>
+        <td class="n">20</td>
+        <td><strong>Parkwood Gardens (1/2)</strong><div class='cs'>Deerpath Drive, Fife Road, Imperial Road South</div><div class='cs mono'>e.g. 166-98 Deerpath Drive &rarr; 166 + unit 98</div></td>
+        <td class="n">250</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/20-parkwood-gardens-p1.osm">Open in JOSM</a>
+            <div class="cs">20-parkwood-gardens-p1.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Parkwood Gardens 1/2 [batch 20/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="21" data-count="188">
+        <td><input type="checkbox" aria-label="batch 21 uploaded"></td>
+        <td class="n">21</td>
+        <td><strong>Parkwood Gardens (2/2)</strong><div class='cs'>Imperial Road South, Paisley Road, Worton Avenue</div><div class='cs mono'>e.g. 30-73 Imperial Road South &rarr; 30 + unit 73</div></td>
+        <td class="n">188</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/21-parkwood-gardens-p2.osm">Open in JOSM</a>
+            <div class="cs">21-parkwood-gardens-p2.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Parkwood Gardens 2/2 [batch 21/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="22" data-count="250">
+        <td><input type="checkbox" aria-label="batch 22 uploaded"></td>
+        <td class="n">22</td>
+        <td><strong>Rickson Ridge (1/2)</strong><div class='cs'>Edinburgh Road South, Gordon Street</div><div class='cs mono'>e.g. 920-47 Edinburgh Road South &rarr; 920 + unit 47</div></td>
+        <td class="n">250</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/22-rickson-ridge-p1.osm">Open in JOSM</a>
+            <div class="cs">22-rickson-ridge-p1.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Rickson Ridge 1/2 [batch 22/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="23" data-count="190">
+        <td><input type="checkbox" aria-label="batch 23 uploaded"></td>
+        <td class="n">23</td>
+        <td><strong>Rickson Ridge (2/2)</strong><div class='cs'>Gordon Street, Kortright Road West, Rodgers Road, Terraview Crescent</div><div class='cs mono'>e.g. 1155-95 Gordon Street &rarr; 1155 + unit 95</div></td>
+        <td class="n">190</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/23-rickson-ridge-p2.osm">Open in JOSM</a>
+            <div class="cs">23-rickson-ridge-p2.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Rickson Ridge 2/2 [batch 23/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="24" data-count="250">
+        <td><input type="checkbox" aria-label="batch 24 uploaded"></td>
+        <td class="n">24</td>
+        <td><strong>Onward Willow (1/3)</strong><div class='cs'>Applewood Crescent, Bagot Street, Dawson Road, Greengate Road +1 more</div><div class='cs mono'>e.g. 4-D1 Applewood Crescent &rarr; 4 + unit D1</div></td>
+        <td class="n">250</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/24-onward-willow-p1.osm">Open in JOSM</a>
+            <div class="cs">24-onward-willow-p1.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Onward Willow 1/3 [batch 24/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="25" data-count="250">
+        <td><input type="checkbox" aria-label="batch 25 uploaded"></td>
+        <td class="n">25</td>
+        <td><strong>Onward Willow (2/3)</strong><div class='cs'>Silvercreek Parkway North, Sunset Road, Willow Road</div><div class='cs mono'>e.g. 201-21 Silvercreek Parkway North &rarr; 201 + unit 21</div></td>
+        <td class="n">250</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/25-onward-willow-p2.osm">Open in JOSM</a>
+            <div class="cs">25-onward-willow-p2.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Onward Willow 2/3 [batch 25/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="26" data-count="3">
+        <td><input type="checkbox" aria-label="batch 26 uploaded"></td>
+        <td class="n">26</td>
+        <td><strong>Onward Willow (3/3)</strong><div class='cs'>Willow Road</div><div class='cs mono'>e.g. 15-19 Willow Road &rarr; 15 + unit 19</div></td>
+        <td class="n">3</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/26-onward-willow-p3.osm">Open in JOSM</a>
+            <div class="cs">26-onward-willow-p3.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Onward Willow 3/3 [batch 26/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="27" data-count="250">
+        <td><input type="checkbox" aria-label="batch 27 uploaded"></td>
+        <td class="n">27</td>
+        <td><strong>Grange Hill East (1/3)</strong><div class='cs'>Auden Road, Eastview Road, Grange Road, Hadati Road +2 more</div><div class='cs mono'>e.g. 394-5 Auden Road &rarr; 394 + unit 5</div></td>
+        <td class="n">250</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/27-grange-hill-east-p1.osm">Open in JOSM</a>
+            <div class="cs">27-grange-hill-east-p1.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Grange Hill East 1/3 [batch 27/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="28" data-count="250">
+        <td><input type="checkbox" aria-label="batch 28 uploaded"></td>
+        <td class="n">28</td>
+        <td><strong>Grange Hill East (2/3)</strong><div class='cs'>Mountford Drive, Schroder Crescent, Shackleton Drive, Victoria Road North +1 more</div><div class='cs mono'>e.g. 35-15 Mountford Drive &rarr; 35 + unit 15</div></td>
+        <td class="n">250</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/28-grange-hill-east-p2.osm">Open in JOSM</a>
+            <div class="cs">28-grange-hill-east-p2.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Grange Hill East 2/3 [batch 28/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="29" data-count="67">
+        <td><input type="checkbox" aria-label="batch 29 uploaded"></td>
+        <td class="n">29</td>
+        <td><strong>Grange Hill East (3/3)</strong><div class='cs'>Watson Parkway North</div><div class='cs mono'>e.g. 120-3 Watson Parkway North &rarr; 120 + unit 3</div></td>
+        <td class="n">67</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/29-grange-hill-east-p3.osm">Open in JOSM</a>
+            <div class="cs">29-grange-hill-east-p3.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Grange Hill East 3/3 [batch 29/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="30" data-count="250">
+        <td><input type="checkbox" aria-label="batch 30 uploaded"></td>
+        <td class="n">30</td>
+        <td><strong>Old University (1/3)</strong><div class='cs'>College Avenue West</div><div class='cs mono'>e.g. 264-38 College Avenue West &rarr; 264 + unit 38</div></td>
+        <td class="n">250</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/30-old-university-p1.osm">Open in JOSM</a>
+            <div class="cs">30-old-university-p1.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Old University 1/3 [batch 30/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="31" data-count="250">
+        <td><input type="checkbox" aria-label="batch 31 uploaded"></td>
+        <td class="n">31</td>
+        <td><strong>Old University (2/3)</strong><div class='cs'>College Avenue West, Edinburgh Road South, Janefield Avenue, Manor Park Crescent +1 more</div><div class='cs mono'>e.g. 302-1 College Avenue West &rarr; 302 + unit 1</div></td>
+        <td class="n">250</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/31-old-university-p2.osm">Open in JOSM</a>
+            <div class="cs">31-old-university-p2.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Old University 2/3 [batch 31/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="32" data-count="91">
+        <td><input type="checkbox" aria-label="batch 32 uploaded"></td>
+        <td class="n">32</td>
+        <td><strong>Old University (3/3)</strong><div class='cs'>Water Street</div><div class='cs mono'>e.g. 295-61 Water Street &rarr; 295 + unit 61</div></td>
+        <td class="n">91</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/32-old-university-p3.osm">Open in JOSM</a>
+            <div class="cs">32-old-university-p3.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Old University 3/3 [batch 32/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="33" data-count="250">
+        <td><input type="checkbox" aria-label="batch 33 uploaded"></td>
+        <td class="n">33</td>
+        <td><strong>West Willow Woods (1/3)</strong><div class='cs'>Ferman Drive, Imperial Road North, Marksam Road</div><div class='cs mono'>e.g. 80-13 Ferman Drive &rarr; 80 + unit 13</div></td>
+        <td class="n">250</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/33-west-willow-woods-p1.osm">Open in JOSM</a>
+            <div class="cs">33-west-willow-woods-p1.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - West Willow Woods 1/3 [batch 33/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="34" data-count="250">
+        <td><input type="checkbox" aria-label="batch 34 uploaded"></td>
+        <td class="n">34</td>
+        <td><strong>West Willow Woods (2/3)</strong><div class='cs'>Marksam Road, Rhonda Road, Westra Drive, Westwood Road</div><div class='cs mono'>e.g. 180-66 Marksam Road &rarr; 180 + unit 66</div></td>
+        <td class="n">250</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/34-west-willow-woods-p2.osm">Open in JOSM</a>
+            <div class="cs">34-west-willow-woods-p2.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - West Willow Woods 2/3 [batch 34/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="35" data-count="181">
+        <td><input type="checkbox" aria-label="batch 35 uploaded"></td>
+        <td class="n">35</td>
+        <td><strong>West Willow Woods (3/3)</strong><div class='cs'>Westwood Road, Willow Road</div><div class='cs mono'>e.g. 199-96 Westwood Road &rarr; 199 + unit 96</div></td>
+        <td class="n">181</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/35-west-willow-woods-p3.osm">Open in JOSM</a>
+            <div class="cs">35-west-willow-woods-p3.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - West Willow Woods 3/3 [batch 35/36]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-batch="36" data-count="21">
+        <td><input type="checkbox" aria-label="batch 36 uploaded"></td>
+        <td class="n">36</td>
+        <td><strong>Prefix and suffix identical (10-10)</strong><div class='cs'>Amos Drive, Decorso Drive, Glasgow Street South, Hadati Road +15 more</div><div class='cs mono'>e.g. 14-14 Amos Drive &rarr; 14 + unit 14</div></td>
+        <td class="n">21</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/unit-split/batches/36-prefix-and-suffix-identical-10-10.osm">Open in JOSM</a>
+            <div class="cs">36-prefix-and-suffix-identical-10-10.osm
+            <button class="copy" data-text="Guelph unit tagging: split double-encoded housenumbers (714-30 -&gt; 714 + addr:unit=30) - Prefix and suffix identical (10-10) [batch 36/36]">copy comment</button></div></td>
+      </tr></tbody>
+</table>
+
+<h2>By hand — 47 objects this refuses to touch</h2>
+<p class="sub">Three different problems, so they are kept apart. None of them
+is a mechanical edit; each object wants a look. Same list, with the reason, in
+<code>review.csv</code>.</p>
+<h3>A <code>;</code>-separated list of housenumbers — 27</h3><p class='sub'>These belong to <a href='https://wiki.openstreetmap.org/wiki/Guelph/Address_Import/Continuous#Open_questions_for_the_community'>open question 3</a> — the ~800 <code>;</code>-list objects the plan proposes as a MapRoulette challenge, not a batch — and not to this campaign at all. Listed here only because the hyphen query catches them.</p><table><thead><tr><th>Object</th><th>housenumber</th><th>unit</th><th>Street</th><th></th></tr></thead><tbody><tr><td class='mono'>way 929589725</td><td class='mono'>137-B;139-A;137-A;137</td><td class='mono'>—</td><td>Arthur Street North</td><td><a href='https://www.openstreetmap.org/way/929589725'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w929589725'>JOSM</a></td></tr><tr><td class='mono'>way 878039609</td><td class='mono'>100;102;94;96-A;96;98</td><td class='mono'>—</td><td>Bagot Street</td><td><a href='https://www.openstreetmap.org/way/878039609'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w878039609'>JOSM</a></td></tr><tr><td class='mono'>way 878039886</td><td class='mono'>66;68;66-B;66-A</td><td class='mono'>—</td><td>Bagot Street</td><td><a href='https://www.openstreetmap.org/way/878039886'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w878039886'>JOSM</a></td></tr><tr><td class='mono'>way 932284687</td><td class='mono'>103;105;107-B;107-A</td><td class='mono'>—</td><td>Emma Street</td><td><a href='https://www.openstreetmap.org/way/932284687'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w932284687'>JOSM</a></td></tr><tr><td class='mono'>way 949555552</td><td class='mono'>161-B;161</td><td class='mono'>—</td><td>Goodwin Drive</td><td><a href='https://www.openstreetmap.org/way/949555552'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w949555552'>JOSM</a></td></tr><tr><td class='mono'>node 13164248912</td><td class='mono'>18;18-A</td><td class='mono'>A</td><td>Grove Street</td><td><a href='https://www.openstreetmap.org/node/13164248912'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=n13164248912'>JOSM</a></td></tr><tr><td class='mono'>way 921078119</td><td class='mono'>338;338-B</td><td class='mono'>—</td><td>Imperial Road South</td><td><a href='https://www.openstreetmap.org/way/921078119'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w921078119'>JOSM</a></td></tr><tr><td class='mono'>node 13251106189</td><td class='mono'>27;27-B</td><td class='mono'>—</td><td>Janefield Avenue</td><td><a href='https://www.openstreetmap.org/node/13251106189'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=n13251106189'>JOSM</a></td></tr><tr><td class='mono'>node 13251106172</td><td class='mono'>33;33-C;33-B</td><td class='mono'>—</td><td>Janefield Avenue</td><td><a href='https://www.openstreetmap.org/node/13251106172'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=n13251106172'>JOSM</a></td></tr><tr><td class='mono'>node 13251106188</td><td class='mono'>35-B;35;35-C</td><td class='mono'>—</td><td>Janefield Avenue</td><td><a href='https://www.openstreetmap.org/node/13251106188'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=n13251106188'>JOSM</a></td></tr><tr><td class='mono'>node 13251106171</td><td class='mono'>37-B;37</td><td class='mono'>—</td><td>Janefield Avenue</td><td><a href='https://www.openstreetmap.org/node/13251106171'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=n13251106171'>JOSM</a></td></tr><tr><td class='mono'>node 13251106168</td><td class='mono'>39-B;39</td><td class='mono'>—</td><td>Janefield Avenue</td><td><a href='https://www.openstreetmap.org/node/13251106168'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=n13251106168'>JOSM</a></td></tr><tr><td class='mono'>node 13251106187</td><td class='mono'>41-B;41</td><td class='mono'>—</td><td>Janefield Avenue</td><td><a href='https://www.openstreetmap.org/node/13251106187'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=n13251106187'>JOSM</a></td></tr><tr><td class='mono'>node 13251106167</td><td class='mono'>43-B;43</td><td class='mono'>—</td><td>Janefield Avenue</td><td><a href='https://www.openstreetmap.org/node/13251106167'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=n13251106167'>JOSM</a></td></tr><tr><td class='mono'>way 1349071737</td><td class='mono'>240-57;240-56</td><td class='mono'>56;57</td><td>London Road West</td><td><a href='https://www.openstreetmap.org/way/1349071737'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w1349071737'>JOSM</a></td></tr><tr><td class='mono'>node 13251106170</td><td class='mono'>10-C;10-B;10</td><td class='mono'>—</td><td>Mason Court</td><td><a href='https://www.openstreetmap.org/node/13251106170'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=n13251106170'>JOSM</a></td></tr><tr><td class='mono'>node 13251106169</td><td class='mono'>12-C;12-B;12</td><td class='mono'>—</td><td>Mason Court</td><td><a href='https://www.openstreetmap.org/node/13251106169'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=n13251106169'>JOSM</a></td></tr><tr><td class='mono'>node 13251106174</td><td class='mono'>6;6-B</td><td class='mono'>—</td><td>Mason Court</td><td><a href='https://www.openstreetmap.org/node/13251106174'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=n13251106174'>JOSM</a></td></tr><tr><td class='mono'>node 13251106173</td><td class='mono'>8;8-B</td><td class='mono'>—</td><td>Mason Court</td><td><a href='https://www.openstreetmap.org/node/13251106173'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=n13251106173'>JOSM</a></td></tr><tr><td class='mono'>way 803260905</td><td class='mono'>37;37-B</td><td class='mono'>—</td><td>Ottawa Crescent</td><td><a href='https://www.openstreetmap.org/way/803260905'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w803260905'>JOSM</a></td></tr><tr><td class='mono'>way 925437731</td><td class='mono'>22;22-C;22-B;24;22-A;26</td><td class='mono'>—</td><td>Oxford Street</td><td><a href='https://www.openstreetmap.org/way/925437731'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w925437731'>JOSM</a></td></tr><tr><td class='mono'>way 925437770</td><td class='mono'>111;109;111-B</td><td class='mono'>—</td><td>Paisley Street</td><td><a href='https://www.openstreetmap.org/way/925437770'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w925437770'>JOSM</a></td></tr><tr><td class='mono'>way 925437875</td><td class='mono'>118-A;118;120</td><td class='mono'>—</td><td>Paisley Street</td><td><a href='https://www.openstreetmap.org/way/925437875'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w925437875'>JOSM</a></td></tr><tr><td class='mono'>node 13159082377</td><td class='mono'>19;19-201</td><td class='mono'>—</td><td>Quebec Street</td><td><a href='https://www.openstreetmap.org/node/13159082377'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=n13159082377'>JOSM</a></td></tr><tr><td class='mono'>way 929108639</td><td class='mono'>32;34;36;38;40;42;44;44-B;46;</td><td class='mono'>—</td><td>Regent Street</td><td><a href='https://www.openstreetmap.org/way/929108639'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w929108639'>JOSM</a></td></tr><tr><td class='mono'>way 926071754</td><td class='mono'>430-A;430;432-A;432</td><td class='mono'>—</td><td>Woolwich Street</td><td><a href='https://www.openstreetmap.org/way/926071754'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w926071754'>JOSM</a></td></tr><tr><td class='mono'>way 926071750</td><td class='mono'>448;448-B</td><td class='mono'>—</td><td>Woolwich Street</td><td><a href='https://www.openstreetmap.org/way/926071750'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w926071750'>JOSM</a></td></tr></tbody></table><h3>A single hyphen, but no <code>addr:unit</code> to confirm it — 17</h3><p class='sub'>The ~17 the published plan says are done by hand. Each is either a genuine range (<code>380-400</code>) or a unit that nothing corroborates — a judgement per object.</p><table><thead><tr><th>Object</th><th>housenumber</th><th>unit</th><th>Street</th><th></th></tr></thead><tbody><tr><td class='mono'>way 1076453163</td><td class='mono'>69-79</td><td class='mono'>—</td><td>Beechwood Avenue</td><td><a href='https://www.openstreetmap.org/way/1076453163'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w1076453163'>JOSM</a></td></tr><tr><td class='mono'>way 1437044001</td><td class='mono'>37-1</td><td class='mono'>—</td><td>Bond Court</td><td><a href='https://www.openstreetmap.org/way/1437044001'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w1437044001'>JOSM</a></td></tr><tr><td class='mono'>way 1437043999</td><td class='mono'>37-10</td><td class='mono'>—</td><td>Bond Court</td><td><a href='https://www.openstreetmap.org/way/1437043999'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w1437043999'>JOSM</a></td></tr><tr><td class='mono'>way 1437044000</td><td class='mono'>37-11</td><td class='mono'>—</td><td>Bond Court</td><td><a href='https://www.openstreetmap.org/way/1437044000'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w1437044000'>JOSM</a></td></tr><tr><td class='mono'>way 557515096</td><td class='mono'>37-12</td><td class='mono'>—</td><td>Bond Court</td><td><a href='https://www.openstreetmap.org/way/557515096'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w557515096'>JOSM</a></td></tr><tr><td class='mono'>way 1437044002</td><td class='mono'>37-2</td><td class='mono'>—</td><td>Bond Court</td><td><a href='https://www.openstreetmap.org/way/1437044002'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w1437044002'>JOSM</a></td></tr><tr><td class='mono'>way 1437044003</td><td class='mono'>37-3</td><td class='mono'>—</td><td>Bond Court</td><td><a href='https://www.openstreetmap.org/way/1437044003'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w1437044003'>JOSM</a></td></tr><tr><td class='mono'>way 1437044004</td><td class='mono'>37-4</td><td class='mono'>—</td><td>Bond Court</td><td><a href='https://www.openstreetmap.org/way/1437044004'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w1437044004'>JOSM</a></td></tr><tr><td class='mono'>way 557515211</td><td class='mono'>37-5</td><td class='mono'>—</td><td>Bond Court</td><td><a href='https://www.openstreetmap.org/way/557515211'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w557515211'>JOSM</a></td></tr><tr><td class='mono'>way 1437043995</td><td class='mono'>37-6</td><td class='mono'>—</td><td>Bond Court</td><td><a href='https://www.openstreetmap.org/way/1437043995'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w1437043995'>JOSM</a></td></tr><tr><td class='mono'>way 1437043996</td><td class='mono'>37-7</td><td class='mono'>—</td><td>Bond Court</td><td><a href='https://www.openstreetmap.org/way/1437043996'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w1437043996'>JOSM</a></td></tr><tr><td class='mono'>way 1437043997</td><td class='mono'>37-8</td><td class='mono'>—</td><td>Bond Court</td><td><a href='https://www.openstreetmap.org/way/1437043997'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w1437043997'>JOSM</a></td></tr><tr><td class='mono'>way 1437043998</td><td class='mono'>37-9</td><td class='mono'>—</td><td>Bond Court</td><td><a href='https://www.openstreetmap.org/way/1437043998'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w1437043998'>JOSM</a></td></tr><tr><td class='mono'>way 1084055678</td><td class='mono'>32-34</td><td class='mono'>—</td><td>Palermo Crescent</td><td><a href='https://www.openstreetmap.org/way/1084055678'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w1084055678'>JOSM</a></td></tr><tr><td class='mono'>node 11120060764</td><td class='mono'>380-400</td><td class='mono'>—</td><td>Waterloo Avenue</td><td><a href='https://www.openstreetmap.org/node/11120060764'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=n11120060764'>JOSM</a></td></tr><tr><td class='mono'>way 773015474</td><td class='mono'>243-263</td><td class='mono'>—</td><td>Woodlawn Road West</td><td><a href='https://www.openstreetmap.org/way/773015474'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w773015474'>JOSM</a></td></tr><tr><td class='mono'>way 1087109448</td><td class='mono'>299-301</td><td class='mono'>—</td><td>York Road</td><td><a href='https://www.openstreetmap.org/way/1087109448'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w1087109448'>JOSM</a></td></tr></tbody></table><h3><code>addr:unit</code> matches neither side of the hyphen — 3</h3><p class='sub'>Mostly spaces and slashes the mechanical rule will not touch: <code>130-BLD D</code>, <code>10-6/7</code>. Several are obvious splits by eye; do them by eye.</p><table><thead><tr><th>Object</th><th>housenumber</th><th>unit</th><th>Street</th><th></th></tr></thead><tbody><tr><td class='mono'>node 13148757308</td><td class='mono'>10-6/7</td><td class='mono'>6/7</td><td>Paisley Street</td><td><a href='https://www.openstreetmap.org/node/13148757308'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=n13148757308'>JOSM</a></td></tr><tr><td class='mono'>way 256118504</td><td class='mono'>130-BLD D</td><td class='mono'>BLD D</td><td>Silvercreek Parkway North</td><td><a href='https://www.openstreetmap.org/way/256118504'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w256118504'>JOSM</a></td></tr><tr><td class='mono'>way 256118508</td><td class='mono'>130-BLD E</td><td class='mono'>BLD E</td><td>Silvercreek Parkway North</td><td><a href='https://www.openstreetmap.org/way/256118508'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w256118508'>JOSM</a></td></tr></tbody></table>
+
+<h2>Records</h2>
+<p class="sub"><code>manifest.csv</code> is the revert record: every edited
+object with the version it was prepared against and its prior value, as
+<a href="https://wiki.openstreetmap.org/wiki/Guelph/Address_Import/Continuous#Revert_plan">§ Revert plan</a> promises. The tick boxes above
+live in this browser’s local storage, not in the file.</p>
+
+<script>
+const TOTAL_BATCHES = 36;
+const TOTAL_OBJECTS = 5521;
+
+const KEY = 'guelph-unit-split-done';
+const done = new Set(JSON.parse(localStorage.getItem(KEY) || '[]'));
+function paint() {
+  let objs = 0, batches = 0;
+  document.querySelectorAll('tr[data-batch]').forEach(tr => {
+    const on = done.has(tr.dataset.batch);
+    tr.classList.toggle('done', on);
+    tr.querySelector('input').checked = on;
+    if (on) { batches++; objs += Number(tr.dataset.count); }
+  });
+  document.getElementById('tally').textContent =
+    batches + ' of ' + TOTAL_BATCHES + ' batches uploaded \u2014 ' +
+    objs.toLocaleString() + ' of ' + TOTAL_OBJECTS.toLocaleString() + ' objects';
+}
+document.addEventListener('change', e => {
+  if (e.target.matches('tr[data-batch] input')) {
+    const id = e.target.closest('tr').dataset.batch;
+    e.target.checked ? done.add(id) : done.delete(id);
+    localStorage.setItem(KEY, JSON.stringify([...done]));
+    paint();
+  }
+});
+document.addEventListener('click', e => {
+  if (e.target.matches('.copy')) {
+    navigator.clipboard.writeText(e.target.dataset.text);
+    const was = e.target.textContent;
+    e.target.textContent = 'copied';
+    setTimeout(() => { e.target.textContent = was; }, 900);
+  }
+});
+paint();
+
+</script>

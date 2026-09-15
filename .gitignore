@@ -9,3 +9,9 @@ __pycache__/
 venv/
 .claude/*
 !.claude/commands/
+
+# Mechanical edit 2: the raw Overpass fetch and the JOSM batches built from it.
+# Both are regenerable (`build_batches.py --refetch`) and go stale as they are
+# uploaded; manifest.csv is the record that matters and is tracked.
+mechanical-edits/unit-split/live.osm
+mechanical-edits/unit-split/batches/

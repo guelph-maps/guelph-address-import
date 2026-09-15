@@ -1,0 +1,48 @@
+type,id,street,housenumber,unit,area,reason
+way,929589725,Arthur Street North,137-B;139-A;137-A;137,,St. Georges Parkway,list
+way,878039609,Bagot Street,100;102;94;96-A;96;98,,Onward Willow,list
+way,878039886,Bagot Street,66;68;66-B;66-A,,Onward Willow,list
+way,1076453163,Beechwood Avenue,69-79,,Downtown - Sunny Acres,no-unit
+way,1437044001,Bond Court,37-1,,West Willow Woods,no-unit
+way,1437043999,Bond Court,37-10,,West Willow Woods,no-unit
+way,1437044000,Bond Court,37-11,,West Willow Woods,no-unit
+way,557515096,Bond Court,37-12,,West Willow Woods,no-unit
+way,1437044002,Bond Court,37-2,,West Willow Woods,no-unit
+way,1437044003,Bond Court,37-3,,West Willow Woods,no-unit
+way,1437044004,Bond Court,37-4,,West Willow Woods,no-unit
+way,557515211,Bond Court,37-5,,West Willow Woods,no-unit
+way,1437043995,Bond Court,37-6,,West Willow Woods,no-unit
+way,1437043996,Bond Court,37-7,,West Willow Woods,no-unit
+way,1437043997,Bond Court,37-8,,West Willow Woods,no-unit
+way,1437043998,Bond Court,37-9,,West Willow Woods,no-unit
+way,932284687,Emma Street,103;105;107-B;107-A,,Waverley,list
+way,949555552,Goodwin Drive,161-B;161,,Pine Ridge - Westminster Woods,list
+node,13164248912,Grove Street,18;18-A,A,St. Georges Parkway,list
+way,921078119,Imperial Road South,338;338-B,,Parkwood Gardens,list
+node,13251106189,Janefield Avenue,27;27-B,,Old University,list
+node,13251106172,Janefield Avenue,33;33-C;33-B,,Old University,list
+node,13251106188,Janefield Avenue,35-B;35;35-C,,Old University,list
+node,13251106171,Janefield Avenue,37-B;37,,Old University,list
+node,13251106168,Janefield Avenue,39-B;39,,Old University,list
+node,13251106187,Janefield Avenue,41-B;41,,Old University,list
+node,13251106167,Janefield Avenue,43-B;43,,Old University,list
+way,1349071737,London Road West,240-57;240-56,56;57,Exhibition Park,list
+node,13251106170,Mason Court,10-C;10-B;10,,Old University,list
+node,13251106169,Mason Court,12-C;12-B;12,,Old University,list
+node,13251106174,Mason Court,6;6-B,,Old University,list
+node,13251106173,Mason Court,8;8-B,,Old University,list
+way,803260905,Ottawa Crescent,37;37-B,,St. Georges Parkway,list
+way,925437731,Oxford Street,22;22-C;22-B;24;22-A;26,,Exhibition Park,list
+node,13148757308,Paisley Street,10-6/7,6/7,Downtown - Sunny Acres,odd-unit
+way,925437770,Paisley Street,111;109;111-B,,Exhibition Park,list
+way,925437875,Paisley Street,118-A;118;120,,Exhibition Park,list
+way,1084055678,Palermo Crescent,32-34,,Grange Hill East,no-unit
+node,13159082377,Quebec Street,19;19-201,,Downtown - Sunny Acres,list
+way,929108639,Regent Street,32;34;36;38;40;42;44;44-B;46;,,St. Georges Parkway,list
+way,256118504,Silvercreek Parkway North,130-BLD D,BLD D,Onward Willow,odd-unit
+way,256118508,Silvercreek Parkway North,130-BLD E,BLD E,Onward Willow,odd-unit
+node,11120060764,Waterloo Avenue,380-400,,Downtown - Sunny Acres,no-unit
+way,773015474,Woodlawn Road West,243-263,,June Avenue,no-unit
+way,926071754,Woolwich Street,430-A;430;432-A;432,,Exhibition Park,list
+way,926071750,Woolwich Street,448;448-B,,Exhibition Park,list
+way,1087109448,York Road,299-301,,Two Rivers,no-unit
