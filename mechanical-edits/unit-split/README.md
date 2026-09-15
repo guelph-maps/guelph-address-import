@@ -51,6 +51,26 @@ That 17 is exactly the "~17 objects carry the combined form with no
 has not drifted. The mechanical total has: the plan said 5,422 against
 today's 5,521, which is what re-measuring is for.
 
+## What has gone up
+
+`uploads.csv` is the batch-to-changeset log — the `changeset_id` half of the
+per-run manifest [§ Revert plan][revert] promises, with `manifest.csv` holding
+the per-object half. Append a row as each batch lands.
+
+| Batch | Area | Objects | Changeset |
+|---|---|---|---|
+| 1 (pilot) | June Avenue | 69 | [189086416](https://www.openstreetmap.org/changeset/189086416) |
+
+Verified against `manifest.csv` on upload: 69 modifies, every housenumber the
+expected civic number, no `addr:unit` altered, every version +1, no row
+missed, `addr:province` untouched.
+
+**The pilot went from `skfd`, not `skfd imports`.** The page names the
+dedicated account and says the personal one is never used for uploads from
+this tooling. The 69 objects are correct and stay; the slip is disclosed in
+`PILOT_POST.md`, and batches 2–36 go from `skfd imports` — which means
+signing JOSM into that account before continuing.
+
 ## Running it again
 
 ```bash
