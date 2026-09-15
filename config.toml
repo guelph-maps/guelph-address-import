@@ -206,6 +206,62 @@ status = "props:STATUS"
 # on Guelph/Address_Import/Continuous, and the matching line in the scope
 # table. The wiki page and forum thread #135103 need that before any upload
 # under this policy, and ARandomThumbtack holds a standing veto over it.
+# THE STRAGGLER DEFECT, found 2026-09-15 while designing the review UI below.
+# is_coded requires EVERY unit to carry a stem, so one unit that cannot ends
+# the test — and the units that cannot are exactly the ones proving the
+# building is stacked. Nine groups carry a non-numeric floor designator: LL
+# (lower level), B (basement), PH (penthouse), AT (attic), BH/RR, or bare
+# A;B;C retail. Each reads to is_coded as evidence AGAINST collapsing, which
+# inverts the signal.
+#   108 Summit Ridge Drive  52 units  101-112;201-212;301-312;401-412;LL01-LL04
+# classifies NODES and would upload 52 invented front doors for a four-storey
+# walkup. The other eight are saved by the spacing guard alone — 7 Kay Crescent
+# (LL01-LL06), 1219 Gordon (A;B;C), 25 Kay (LL02-LL14), 105 Bagot (B1-B4),
+# 57 Suffolk West (PH) and 53/63/73 Arthur South (AT1-AT8, BHA-BHC, RR-A1) —
+# and that is luck, not design: 108 Summit Ridge clears the 4.5 m guard at
+# 5.2 m. flats_tag already renders every one of them correctly; only is_coded
+# chokes.
+# DECIDED: fix the rule BEFORE building the UI. A short or letter-only
+# designator sitting alongside 3-digit coded units is a floor, and should carry
+# a stem rather than veto the test.
+# NOT the documented sub-100 guard, which stays: a plain 1..214 sequence has 99
+# short units and must keep reading as doors. A first pass on snapshot 46 called
+# 29 groups "mixed"; most are that artifact — plain or stepped (odd/even)
+# sequences crossing 100 — and are right as they stand. The nine above are the
+# real class, isolated by asking which groups would be coded-collapse but for a
+# minority of stragglers.
+#
+# THE SHAPE-REVIEW UI, decided 2026-09-15, NOT YET BUILT. Review the collapse-
+# vs-nodes decision as a category instead of one candidate at a time.
+#   - City-wide and run-independent, keyed by civic group, with a badge and
+#     back-link on each candidate in the per-run queue. A flip changes how many
+#     candidates exist (1 becomes 52), so the verdict has to reach _emit_group
+#     BEFORE ingest — unlike multi_address_verdicts, which transforms tags on
+#     export. A per-run page also cannot hold a group whole: doors straddling a
+#     tile boundary are emitted into different runs.
+#   - Four verdicts, not two: collapse+addr:flats / nodes / civic-only / skip.
+#     civic-only makes the three dropped over-length listings a real answer
+#     rather than a failure mode; skip is for 252 Stone Road West, whose 140
+#     storefronts are arguably POIs and where both shapes assert something
+#     false.
+#   - review stops being a verdict. It is collapse plus a reason to look, and
+#     it currently carries two unrelated meanings — ambiguous spacing, and a
+#     dropped listing — that want different labels and different actions.
+#   - Persist keyed by the normalized civic key PLUS a hash of the unit set the
+#     verdict was made against, so a building that gains a floor re-surfaces
+#     instead of inheriting a decision about a different building. Mirror
+#     migration 011 exported_at/exported_file and FREEZE a verdict once its
+#     group is uploaded: afterwards both flips are mutations (nodes->collapse
+#     is delete 52, create 1) and this import only creates.
+#   - Show what OSM already has per group. The 89 groups where OSM carries only
+#     the 714-30 form are per-door structure somebody already mapped, and
+#     collapsing one puts a civic node beside 30 existing unit nodes. That
+#     column lies until mechanical edit #2 runs.
+#   - Gate the route on source_db.PER_DOOR so it never appears for Toronto or
+#     Hamilton, the way the check gates on requires = ("unit",).
+#   - This is also where source deltas at unit groups land as the QA finding
+#     promised above — which unblocks the easy case (a new unit at a door group
+#     is one more node) without building a mutation path.
 [units]
 policy = "per-door-or-collapse"
 
