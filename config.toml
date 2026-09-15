@@ -65,21 +65,42 @@ status = "props:STATUS"
 # row to elect (lowest identity_key then). 111 groups carry >1 unit-less rows
 # — civic-level intra-source duplicates worth a look during review.
 #
-# Apartment vs. individual entrances, measured 2026-09-15 on snapshot 46 against
-# 47,008 live OSM address objects (Overpass, admin_level 6). The source cannot
-# name the difference — it has no building/structure field, and PIN is single on
-# 460 of the 514 (a condo complex is one parcel). What separates them is the
-# median nearest-neighbour spacing of the unit points within the group:
-#   <0.5 m   54 groups — every unit on one point: tower or plaza, one door.
-#   0.5-3 m  90 groups — dense fan. NOT one door: 708 Woolwich Street has 97
-#            units at 2.4 m median but a 171 m spread, so the spacing is the
-#            City geocoder pulling coincident points apart, not geometry.
-#            Treat as ambiguous.
-#   3-8 m   290 groups — one point per door: townhouse row, strip mall.
-#   >=8 m    80 groups — ambiguous: multi-building site.
-# So ~290 classify mechanically and ~170 would need eyes, if it ever mattered.
-# The classifier is mechanical; nothing downstream consumes it yet, because
-# collapse-to-civic emits one node either way and no addr:unit at all.
+# COLLAPSE VS PER-DOOR NODES — the rule (2026-09-15). Superseded two earlier
+# readings of this, both of which classified on geometry and both of which were
+# wrong. Geometry is the guard; the UNIT NUMBERING is what decides.
+#
+# The City has no building or structure field, and PIN is single on 460 of the
+# 514 (a condo complex is one parcel), so neither answers it. The numbering
+# does: a suite number encodes the floor or building it sits in, a door number
+# does not. Strip the last two digits — if what remains takes two or more
+# values, the scheme is floor- or building-coded and the units are stacked:
+#   93 Arthur Street South    101..1411, prefixes 1-14  -> 14 storeys
+#   150 Wellington Street E   101..1802, prefixes 1-18  -> 18 storeys
+#   71 Bayberry Drive         D101..D409                -> building D
+#   302 College Avenue West   1..214, no prefix          -> 214 doors
+# Catching 3- and 4-digit codes and letter prefixes in one rule matters: a
+# 3-digit-only test lets 93 Arthur Street South through as 193 "doors" packed
+# into 66 m, and a spacing-only test lets it through too.
+#
+# Spacing then guards the sequential ones, against a townhouse's minimum
+# buildable width of ~4.5 m. Under 2 m there is no distinct location to map at
+# all; 2-4.5 m is real enough to be a point but too tight to be a front door.
+#
+# The whole of the 514, and all 13,160 unit rows:
+#    87 groups  5,093 units  COLLAPSE — floor/building-coded suites
+#    20 groups    573 units  COLLAPSE — no distinct per-unit location (<2 m)
+#   250 groups  6,121 units  NODES    — sequential, door-width spacing
+#    50 groups  1,373 units  REVIEW   — sequential but under 4.5 m apart
+#   107 groups      0 units  civic duplicates, no unit rows — these are the
+#                            ~111 intra-source duplicates noted above, not a
+#                            unit question at all.
+# So 357 of 407 unit-bearing groups decide themselves and 50 need eyes — about
+# one in eight. The REVIEW bucket is where the genuinely hard cases sit:
+# 252 Stone Road West is a mall whose 140 "units" are storefronts, and whether
+# a storefront is a door is a judgement no rule should be making silently.
+#
+# NOT the same 87/89 as the OSM-hyphenated 89 below. Different sets, same size
+# by coincidence.
 # Where the 514 actually stand against OSM:
 #   304  already carry a bare civic node — MATCH, nothing to decide.
 #    89  OSM has ONLY the double-encoded form (714-30), so conflate.py's
