@@ -219,8 +219,9 @@ status = "props:STATUS"
 # (LL01-LL06), 1219 Gordon (A;B;C), 25 Kay (LL02-LL14), 105 Bagot (B1-B4),
 # 57 Suffolk West (PH) and 53/63/73 Arthur South (AT1-AT8, BHA-BHC, RR-A1) —
 # and that is luck, not design: 108 Summit Ridge clears the 4.5 m guard at
-# 5.2 m. flats_tag already renders every one of them correctly; only is_coded
-# chokes.
+# 5.2 m. flats_tag renders these listings, minus their leading zeros — LL01-LL04
+# comes out LL1-LL4, because parse_unit goes through int(). Cosmetic, untouched
+# by the fix below, and the only thing that was broken was is_coded.
 # DECIDED: fix the rule BEFORE building the UI. A short or letter-only
 # designator sitting alongside 3-digit coded units is a floor, and should carry
 # a stem rather than veto the test.
@@ -230,6 +231,24 @@ status = "props:STATUS"
 # sequences crossing 100 — and are right as they stand. The nine above are the
 # real class, isolated by asking which groups would be coded-collapse but for a
 # minority of stragglers.
+#
+# FIXED 2026-09-15 in address-importer-friend caae7333. A short designator now
+# contributes its prefix as a stem, but ONLY where the group already carries
+# 3-digit floor codes. That second clause was not in the first attempt, which
+# absorbed short lettered units unconditionally and collapsed five townhouse
+# blocks lettered by building — 12 Sunset Road (A1..A7;B1..B5;C1..), 527
+# Woodlawn East (D1-E16), 427 Victoria North (B11-C25), 560 Woolwich (A1-B5),
+# 1460 Gordon (A2-B4). All five are back to NODES and 12 Sunset is now a
+# regression test. Unparseable designators (PH, bare A;B;C, BHC-1, RR-A1) keep
+# their veto: nothing distinguishes them from REAR, a coach house with its own
+# door. Those four groups collapse on spacing anyway.
+# Re-measured over all 40,634 groups at snapshot 46, exactly three move:
+#   108 Summit Ridge Drive   nodes  -> collapse   (the 52 invented doors)
+#   105 Bagot Street         review -> collapse   (already emitted collapsed)
+#   53 Arthur Street South   review -> collapse   (already emitted collapsed)
+# City-wide the table above becomes 112 COLLAPSE / 239 NODES / 58 REVIEW, and
+# door nodes fall 6,111 -> 6,059. Only 108 Summit Ridge changes upload shape;
+# the other two stop needing eyes. 343 engine tests pass.
 #
 # THE SHAPE-REVIEW UI, decided 2026-09-15, NOT YET BUILT. Review the collapse-
 # vs-nodes decision as a category instead of one candidate at a time.
