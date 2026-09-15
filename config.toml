@@ -281,6 +281,13 @@ status = "props:STATUS"
 #   - This is also where source deltas at unit groups land as the QA finding
 #     promised above — which unblocks the easy case (a new unit at a door group
 #     is one more node) without building a mutation path.
+# BUILT 2026-09-15, address-importer-friend f967749e (read-only page), 9817b76b
+# (verdict chips, honoured at ingest, freeze on upload), 391734a5 (per-run
+# badge, back-link, sibling strip). Still open from the list above: the "what
+# OSM has" column, which waits on the extract and on mechanical edit #2; and
+# the source-delta QA finding, which is a separate proposal. Verdicts live in
+# tool.db unit_shape_verdicts, keyed number|street|municipality plus a hash of
+# the unit set; the engine's future-work/unit-shape-overrides.md is the record.
 [units]
 policy = "per-door-or-collapse"
 
