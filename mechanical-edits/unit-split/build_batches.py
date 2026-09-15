@@ -566,13 +566,18 @@ after it.</strong> The announcement promised “a pilot tile posted here with it
 counts and changeset before anything else moves.” Upload batch 1, post its
 count and changeset link to the thread, then carry on.</div>
 
+<div class="banner warn"><strong>One box to tick before any link here
+works.</strong> JOSM &rarr; Preferences &rarr; Remote Control &rarr;
+<strong>“Open local files”</strong>. Checked on this machine when the batches
+were built: Remote Control is enabled, but that permission is not — so the
+buttons below will silently do nothing until you tick it. The permission is
+off by default in JOSM and has to be granted from JOSM’s own UI. If you would
+rather not, every button has a file name beside it: drag that file out of
+<code>mechanical-edits/unit-split/batches/</code> into JOSM, or File &rarr;
+Open. Identical result.</div>
+
 <h2>Before the first one</h2>
 <ol class="steps">
-  <li>JOSM &rarr; Preferences &rarr; Remote Control &rarr; enable it and tick
-      <strong>“Open local files”</strong>. That box is off by default and the
-      links below do nothing without it. If a link does nothing, the fallback
-      is to open the <code>.osm</code> from
-      <code>mechanical-edits/unit-split/batches/</code> by hand.</li>
   <li>Be signed in as the account the announcement named — the same one the
       import uploads from.</li>
   <li>Each file carries its own changeset comment, <code>source</code>,
