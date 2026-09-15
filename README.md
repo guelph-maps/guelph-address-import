@@ -1,8 +1,10 @@
 # guelph-address-import
 
 The **Guelph city checkout** of the address-import family — city #3,
-scaffolded 2026-08-15. Status: **wiki page live, feedback window open, nothing
-uploaded**.
+scaffolded 2026-08-15. Status: **wiki page live, feedback window closed with
+both mechanical edits consented, nothing uploaded yet** — the unit split is
+prepared and waiting for an operator in
+[`mechanical-edits/unit-split/`](mechanical-edits/unit-split/README.md).
 `ARandomThumbtack_Import` imported Guelph's addresses solo in 2025 (first
 changeset 2025-09-16, declared complete 2025-10-23 on the
 [wiki page](https://wiki.openstreetmap.org/wiki/Guelph/Address_Import)),
@@ -37,14 +39,15 @@ Publication state:
    wiki and the repo diverge. Their page is theirs: link, never edit.
 2. ✅ `config.toml` `[export] import_plan` set to that live URL. The engine
    refuses to open a changeset while it is empty, so this gated every upload.
-3. ⬜ `WIKI_CATALOGUE_ENTRY.mediawiki` — two `Import/Catalogue` edits: move
-   Toronto's row out of § One-Time Imports (it is continuous now too) and add
-   both rows to § Ongoing Imports, Semi-Automated.
-4. ⬜ `FORUM_ANNOUNCEMENT.md` — a **reply on thread #135103**. It also withdraws
-   the `addr:full` suggestion left in post #13, which was tested against
-   Nominatim and does not work; that withdrawal is the time-sensitive part,
-   being currently the last word in the thread. The 14-day window in the draft
-   runs from the day it is posted — check the hardcoded 2026-09-10 still fits.
+3. ✅ `WIKI_CATALOGUE_ENTRY.mediawiki` — **published**; both rows are live in
+   `Import/Catalogue` § Ongoing Imports, Semi-Automated (checked against the
+   raw wikitext 2026-09-15). Guelph's row still reads status `Planned` and
+   wants moving to `In progress` once the first batch uploads.
+4. ✅ `FORUM_ANNOUNCEMENT.md` — **posted 2026-08-28** as post #14 on thread
+   #135103, `addr:full` withdrawal included. The 14-day objection window ran to
+   2026-09-10 and closed with no objections; ARandomThumbtack replied
+   supportively in #15, and #16 (2026-09-01) followed up on the open questions.
+   **Both mechanical edits are therefore consented.**
 
 Two **mechanical edits** ride along with the proposal, announced with it but
 consented separately under the Automated Edits code of conduct:
@@ -72,7 +75,11 @@ states intent):
 - The engine has **no tag-modification path at all** — it creates nodes. Both
   mechanical edits need one, with per-object version checking and prior-value
   capture. Or run them from JOSM, neighbourhood by neighbourhood, as the 2025
-  import did.
+  import did — which is the route taken for the unit split:
+  `mechanical-edits/unit-split/` prepares 36 JOSM-ready batches over 5,521
+  objects, each carrying the live version it was built against, with the
+  prior values in `manifest.csv`. The `addr:province` campaign has no
+  equivalent yet.
 
 The pipeline lives in the engine repo,
 [`address-importer-friend`](https://github.com/skfd/address-importer-friend)
