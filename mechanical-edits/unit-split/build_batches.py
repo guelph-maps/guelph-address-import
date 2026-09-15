@@ -457,8 +457,8 @@ const KEY = 'guelph-unit-split-done';
 const done = new Set(JSON.parse(localStorage.getItem(KEY) || '[]'));
 function paint() {
   let objs = 0, batches = 0;
-  document.querySelectorAll('tr[data-batch]').forEach(tr => {
-    const on = done.has(tr.dataset.batch);
+  document.querySelectorAll('tr[data-key]').forEach(tr => {
+    const on = done.has(tr.dataset.key);
     tr.classList.toggle('done', on);
     tr.querySelector('input').checked = on;
     if (on) { batches++; objs += Number(tr.dataset.count); }
@@ -468,8 +468,8 @@ function paint() {
     objs.toLocaleString() + ' of ' + TOTAL_OBJECTS.toLocaleString() + ' objects';
 }
 document.addEventListener('change', e => {
-  if (e.target.matches('tr[data-batch] input')) {
-    const id = e.target.closest('tr').dataset.batch;
+  if (e.target.matches('tr[data-key] input')) {
+    const id = e.target.closest('tr').dataset.key;
     e.target.checked ? done.add(id) : done.delete(id);
     localStorage.setItem(KEY, JSON.stringify([...done]));
     paint();
@@ -514,7 +514,7 @@ def render_page(records: list[dict], review: list[dict], stamp: str) -> str:
                                else f" ({rec['part']}/{rec['of']})")
         is_pilot = rec["index"] == 1
         rows_html.append(f"""
-      <tr class="{'pilot' if is_pilot else ''}" data-batch="{rec['index']}" data-count="{rec['count']}">
+      <tr class="{'pilot' if is_pilot else ''}" data-key="{rec['path'].stem}" data-count="{rec['count']}">
         <td><input type="checkbox" aria-label="batch {rec['index']} uploaded"></td>
         <td class="n">{rec['index']}{' <strong>PILOT</strong>' if is_pilot else ''}</td>
         <td><strong>{html.escape(label)}</strong>{street_html}{sample_html}</td>
@@ -588,6 +588,14 @@ count and changeset link to the thread, then carry on.</div>
       conflict — that is the promised “skipped and re-examined rather than
       overwritten”, working. Discard ours and re-run
       <code>build_batches.py --refetch</code> later.</li>
+  <li><strong>Close each layer once it is uploaded.</strong> Thirty-six
+      remote-control opens otherwise stack thirty-six layers, and JOSM uploads
+      whichever one is active — not necessarily the one you just opened.</li>
+  <li>Re-running <code>build_batches.py --refetch</code> <em>renumbers</em>
+      everything: objects already fixed drop out of the fetch, the areas
+      re-sort, and the pilot may move. The tick boxes are keyed by file name
+      rather than number so they survive what they can, but expect to
+      re-check. Anything already uploaded simply will not appear.</li>
   <li>Only <code>addr:housenumber</code> changes. Do not fold the
       <code>addr:province</code> campaign into these changesets — it is
       consented and revertable separately, and mixing them would make either
