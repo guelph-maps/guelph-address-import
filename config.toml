@@ -124,8 +124,31 @@ status = "props:STATUS"
 #   5. Collapse in source_db.py to stop being one module-level _COLLAPSE
 #      boolean, since both shapes now have to coexist within one city.
 #
-# OPEN: what tag lists the units on a collapsed apartment node. Nothing is
-# built until that is answered.
+# The collapsed apartment node carries addr:flats, as semicolon-separated
+# ranges broken wherever the numbering skips (decided 2026-09-15). Guelph's
+# tower units are floor-coded, so a single range would be a lie: 19 Woodlawn
+# Road East runs 101..915 but holds 142 units, and only 2 of 46 all-numeric
+# towers are contiguous. Per-floor ranges are both honest and compact —
+#   23 Woodlawn Road East (103 units):
+#     101-110;201-212;301-312;401-412;501-512;601-612;701-705;707-712;
+#     801-812;901-909;911
+# where 701-705;707-712 and 901-909;911 are real gaps, not tidying. Letter
+# prefixes are building letters and group on their own (71 Bayberry Drive ->
+# D101-D112;D201-D212;D301-D312;D401-D409); letter-suffixed strays (101A,
+# 102B) cannot join a range and are emitted as single values.
+# Verified over all 54 coincident groups, 2026-09-15: every one compresses,
+# median 31 chars, max 135 — comfortably inside OSM's 255-char tag value
+# limit, which a raw list of 142 values would have blown.
+# Known cosmetic wrinkle: strays sort to the tail, so 511 Edinburgh Road South
+# reads 101-102;201-202;101A rather than interleaving 101A after 101.
+#
+# addr:flats is the right key because it means containment — this node SERVES
+# these units — where addr:unit means identity, this node IS that unit. Door
+# nodes therefore take addr:unit, collapsed apartments take addr:flats; they
+# are not two spellings of one idea. Caveat carried knowingly: Ontario has 58
+# addr:flats against 29,312 addr:unit (counted 2026-09-15 against area
+# 3600068841), so this is close to a regional first and should be called out
+# on thread #135103 rather than slipped in.
 #
 # This also reverses a PUBLISHED non-goal — "No unit-level addresses uploaded"
 # on Guelph/Address_Import/Continuous, and the matching line in the scope
