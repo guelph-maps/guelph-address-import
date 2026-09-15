@@ -136,12 +136,22 @@ status = "props:STATUS"
 # and every query, match and dedup path gates on this value so they stay
 # byte-identical.
 #
-# Sequencing, decided with it and then made moot: mechanical edit #2 (split the
-# double-encoded 714-30) was to run BEFORE any conflation. Unit-aware matching
-# removed the need — a node split into 714 + addr:unit=30 still is not the
-# building, so the civic candidate is proposed either way and the order no
-# longer matters. The range caveat is retired too: once the double-encoding is
-# gone, a hyphen left in an OSM housenumber is a genuine address range.
+# Sequencing: mechanical edit #2 (split the double-encoded 714-30) runs BEFORE
+# any conflation. This was briefly recorded here as "made moot by unit-aware
+# matching" — that was wrong, and only half-checked. It holds for a building's
+# own node: neither 714-30 nor 714+addr:unit=30 answers to a bare 714, so the
+# civic candidate is proposed either way. It does NOT hold for a door. A door
+# candidate is (714, unit 30), and before the split OSM carries that address as
+# housenumber 714-30, which fails the housenumber compare — so the door reads
+# MISSING and conflation proposes a SECOND node beside the badly-encoded one.
+# Nothing downstream catches it; nearby_street_mismatch compares housenumbers
+# too. With 5,553 hyphenated objects in OSM and 6,111 door candidates, running
+# in the wrong order would mass-produce duplicates. The engine has a test named
+# for this (test_a_door_does_not_recognise_its_own_double_encoded_self) that
+# fails loudly if anyone decides otherwise.
+#
+# The range caveat IS retired: once the double-encoding is gone, a hyphen left
+# in an OSM housenumber is a genuine address range.
 #
 # The engine side, all landed 2026-09-15 in address-importer-friend:
 #   t2/units.py               the classifier and the addr:flats renderer
@@ -172,9 +182,15 @@ status = "props:STATUS"
 # prefixes are building letters and group on their own (71 Bayberry Drive ->
 # D101-D112;D201-D212;D301-D312;D401-D409); letter-suffixed strays (101A,
 # 102B) cannot join a range and are emitted as single values.
-# Verified over all 54 coincident groups, 2026-09-15: every one compresses,
-# median 31 chars, max 135 — comfortably inside OSM's 255-char tag value
-# limit, which a raw list of 142 values would have blown.
+# Measured over all 167 collapsed groups, 2026-09-15: median 23 chars against
+# OSM's 255-char tag value limit, which a raw list of 142 values would have
+# blown. An earlier note here said "max 135" — that sampled only the 54
+# coincident groups and was wrong about the rest. Three groups do not fit:
+# 85 Mullin Drive (110 units as 1A;1B;2A;2B..., 421 chars), 176 Janefield
+# Avenue (steps by two, 303) and 15 Carere Crescent (261). Nothing compresses
+# a suffixed or stepped sequence, so those listings are DROPPED rather than
+# truncated — a truncated one would assert the building ends where the cut
+# landed — and the candidate is flagged for review so the loss is visible.
 # Known cosmetic wrinkle: strays sort to the tail, so 511 Edinburgh Road South
 # reads 101-102;201-202;101A rather than interleaving 101A after 101.
 #
