@@ -70,9 +70,14 @@ status = "props:STATUS"
 # name the difference — it has no building/structure field, and PIN is single on
 # 460 of the 514 (a condo complex is one parcel). What separates them is the
 # median nearest-neighbour spacing of the unit points within the group:
-#   <3 m    144 groups — every unit on one door: tower or plaza.
+#   <0.5 m   54 groups — every unit on one point: tower or plaza, one door.
+#   0.5-3 m  90 groups — dense fan. NOT one door: 708 Woolwich Street has 97
+#            units at 2.4 m median but a 171 m spread, so the spacing is the
+#            City geocoder pulling coincident points apart, not geometry.
+#            Treat as ambiguous.
 #   3-8 m   290 groups — one point per door: townhouse row, strip mall.
-#   >=8 m    80 groups — ambiguous: multi-building site. Eyes, if ever needed.
+#   >=8 m    80 groups — ambiguous: multi-building site.
+# So ~290 classify mechanically and ~170 would need eyes, if it ever mattered.
 # The classifier is mechanical; nothing downstream consumes it yet, because
 # collapse-to-civic emits one node either way and no addr:unit at all.
 # Where the 514 actually stand against OSM:
