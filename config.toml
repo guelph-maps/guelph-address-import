@@ -86,18 +86,29 @@ status = "props:STATUS"
 # buildable width of ~4.5 m. Under 2 m there is no distinct location to map at
 # all; 2-4.5 m is real enough to be a point but too tight to be a front door.
 #
-# The whole of the 514, and all 13,160 unit rows:
+# The whole of the 514, and all 13,160 unit rows — run through the shipped
+# t2/units.py on snapshot 46, keyed the way the engine keys (number, street,
+# municipality) rather than the way the exploratory scripts did:
 #    87 groups  5,093 units  COLLAPSE — floor/building-coded suites
-#    20 groups    573 units  COLLAPSE — no distinct per-unit location (<2 m)
-#   250 groups  6,121 units  NODES    — sequential, door-width spacing
-#    50 groups  1,373 units  REVIEW   — sequential but under 4.5 m apart
+#    22 groups    575 units  COLLAPSE — no distinct per-unit location (<2 m)
+#   240 groups  6,111 units  NODES    — sequential, door-width spacing
+#    58 groups  1,381 units  REVIEW   — sequential but under 4.5 m apart
 #   107 groups      0 units  civic duplicates, no unit rows — these are the
 #                            ~111 intra-source duplicates noted above, not a
 #                            unit question at all.
-# So 357 of 407 unit-bearing groups decide themselves and 50 need eyes — about
-# one in eight. The REVIEW bucket is where the genuinely hard cases sit:
-# 252 Stone Road West is a mall whose 140 "units" are storefronts, and whether
-# a storefront is a door is a judgement no rule should be making silently.
+# So 349 of 407 unit-bearing groups decide themselves and 58 need eyes — about
+# one in seven. REVIEW is where the genuinely hard cases sit: 252 Stone Road
+# West is a mall whose 140 "units" are storefronts, and whether a storefront is
+# a door is a judgement no rule should be making silently. Those groups are
+# emitted COLLAPSED, not held back — collapsing is right either way, and the
+# reviewer sees one node to weigh instead of 140 to reject.
+#
+# One known blind spot, caught by the spacing guard rather than the rule:
+# 2-digit floor codes (49 Surrey Street East runs 11;21-22;31-32 — floor 1
+# unit 1, floor 2 unit 1) are too short to carry a stem, so _stem returns None
+# and is_coded says no. Every instance found so far is also coincident, so the
+# <2 m branch collapses it anyway. If one ever turns up spread out it will read
+# as doors.
 #
 # NOT the same 87/89 as the OSM-hyphenated 89 below. Different sets, same size
 # by coincidence.
@@ -116,34 +127,38 @@ status = "props:STATUS"
 # distinct PIN count (freehold townhouses, separate parcels sharing a civic
 # number) — 34 groups, 11 of them in the 121 absent-entirely bucket.
 #
-# DECIDED 2026-09-15, NOT YET BUILDABLE. The policy below is superseded in
-# intent but stays as written, because it is the only value the engine accepts
-# (t2/config.py:181 UNIT_POLICIES) and parse_units_policy refuses the config
-# outright otherwise — writing the new name here would stop every Guelph run.
+# DECIDED 2026-09-15, BUILT THE SAME DAY. Door units become their own nodes;
+# big apartments collapse to one civic node with the units listed on it. The
+# City's data is already in that shape, so this reads its geometry rather than
+# overriding it, and conflation is told about units rather than left comparing
+# bare housenumbers. Guelph-specific: an opt-in policy value, NOT a change to
+# what collapse-to-civic means — Toronto and Hamilton keep the old behaviour,
+# and every query, match and dedup path gates on this value so they stay
+# byte-identical.
 #
-# The decision: door units become their own nodes; big apartments collapse to
-# one civic node with the units listed on it. The real data is already in that
-# shape — this is reading the City's geometry rather than overriding it — and
-# conflation is to be told about units rather than left comparing bare
-# housenumbers. Guelph-specific: an opt-in policy value, NOT a change to what
-# collapse-to-civic means, because Toronto and Hamilton keep the old behaviour.
+# Sequencing, decided with it and then made moot: mechanical edit #2 (split the
+# double-encoded 714-30) was to run BEFORE any conflation. Unit-aware matching
+# removed the need — a node split into 714 + addr:unit=30 still is not the
+# building, so the civic candidate is proposed either way and the order no
+# longer matters. The range caveat is retired too: once the double-encoding is
+# gone, a hyphen left in an OSM housenumber is a genuine address range.
 #
-# Sequencing, also decided: mechanical edit #2 (split the double-encoded
-# 714-30) runs BEFORE any conflation, not after. That kills the 89-group
-# ordering hazard noted above at its root, and it also retires the range
-# caveat — once the double-encoding is gone, a hyphen left in an OSM
-# housenumber is a genuine address range and can be read as one.
+# The engine side, all landed 2026-09-15 in address-importer-friend:
+#   t2/units.py               the classifier and the addr:flats renderer
+#   t2/candidates.py          per-group emission, city-wide group fetch,
+#                             per-emission tile clipping
+#   t2/source_db.py           build_civic_group_query, PER_DOOR
+#   t2/conflate.py            _same_address, gated on this policy
+#   t2/osm_export.py          addr:unit / addr:flats, unit-aware upload dedup
+#   migrations/017_unit_flats.sql
 #
-# What this needs before it can be switched on, all of it in the engine repo
-# (address-importer-friend), none of it here:
-#   1. A new value in UNIT_POLICIES, opted into per city.
-#   2. The shape classifier above, run per civic group at projection time.
-#   3. addr:unit emission in osm_export.build_tags, which writes no unit today.
-#   4. Unit-aware matching in conflate._classify, which compares _norm_number
-#      and street only — a per-door candidate would otherwise match any node
-#      at that civic number.
-#   5. Collapse in source_db.py to stop being one module-level _COLLAPSE
-#      boolean, since both shapes now have to coexist within one city.
+# STILL OPEN, and deliberately not built: the maintenance path. A new unit
+# appearing at an already-collapsed tower needs addr:flats *modified* on an
+# existing node, and the import is create-only — iter_new_since would ingest
+# the unit row and propose a second node for the building. Route those to a QA
+# finding instead. iter_retired_since has the mirror problem: a retired unit
+# should shrink a listing, and nothing shrinks it. Until that is closed, run
+# per-door-or-collapse from the tile path only, not the monthly maintenance job.
 #
 # The collapsed apartment node carries addr:flats, as semicolon-separated
 # ranges broken wherever the numbering skips (decided 2026-09-15). Guelph's
@@ -176,7 +191,7 @@ status = "props:STATUS"
 # table. The wiki page and forum thread #135103 need that before any upload
 # under this policy, and ARandomThumbtack holds a standing veto over it.
 [units]
-policy = "collapse-to-civic"
+policy = "per-door-or-collapse"
 
 [status]
 active_values = ["Active"]
