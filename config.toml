@@ -283,11 +283,22 @@ status = "props:STATUS"
 #     is one more node) without building a mutation path.
 # BUILT 2026-09-15, address-importer-friend f967749e (read-only page), 9817b76b
 # (verdict chips, honoured at ingest, freeze on upload), 391734a5 (per-run
-# badge, back-link, sibling strip). Still open from the list above: the "what
-# OSM has" column, which waits on the extract and on mechanical edit #2; and
-# the source-delta QA finding, which is a separate proposal. Verdicts live in
+# badge, back-link, sibling strip), and the "what OSM has" column the same
+# evening once the extract was fetched. Still open from the list above: the
+# source-delta QA finding, which is a separate proposal. Verdicts live in
 # tool.db unit_shape_verdicts, keyed number|street|municipality plus a hash of
 # the unit set; the engine's future-work/unit-shape-overrides.md is the record.
+# WHAT THE OSM COLUMN FOUND, 2026-09-15, fresh Ontario extract: 338 of the 409
+# groups already have a shape in OSM. 176 are one building way carrying every
+# unit under a multi-valued addr:unit (101-116;201-215;...) -- the collapsed
+# shape under the wrong key -- and 162 have unit objects, 156 of those groups
+# still hyphenated. 71 are open. The 89 quoted above counted one encoding.
+# This matters beyond the page: a collapsed candidate (1878, no unit) does not
+# match a way whose addr:unit is a listing, because _same_address demands unit
+# equality, so 98 collapse groups and 51 door groups would read MISSING and
+# propose a second address object beside a building that already lists the
+# units. Conflation has to learn what a listing-bearing building is before
+# anything uploads under this policy. Separate proposal, not yet written.
 [units]
 policy = "per-door-or-collapse"
 
