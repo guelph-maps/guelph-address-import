@@ -94,6 +94,43 @@ status = "props:STATUS"
 # Strongest per-door signal, if per-door nodes are ever wanted: unit_count ==
 # distinct PIN count (freehold townhouses, separate parcels sharing a civic
 # number) — 34 groups, 11 of them in the 121 absent-entirely bucket.
+#
+# DECIDED 2026-09-15, NOT YET BUILDABLE. The policy below is superseded in
+# intent but stays as written, because it is the only value the engine accepts
+# (t2/config.py:181 UNIT_POLICIES) and parse_units_policy refuses the config
+# outright otherwise — writing the new name here would stop every Guelph run.
+#
+# The decision: door units become their own nodes; big apartments collapse to
+# one civic node with the units listed on it. The real data is already in that
+# shape — this is reading the City's geometry rather than overriding it — and
+# conflation is to be told about units rather than left comparing bare
+# housenumbers. Guelph-specific: an opt-in policy value, NOT a change to what
+# collapse-to-civic means, because Toronto and Hamilton keep the old behaviour.
+#
+# Sequencing, also decided: mechanical edit #2 (split the double-encoded
+# 714-30) runs BEFORE any conflation, not after. That kills the 89-group
+# ordering hazard noted above at its root, and it also retires the range
+# caveat — once the double-encoding is gone, a hyphen left in an OSM
+# housenumber is a genuine address range and can be read as one.
+#
+# What this needs before it can be switched on, all of it in the engine repo
+# (address-importer-friend), none of it here:
+#   1. A new value in UNIT_POLICIES, opted into per city.
+#   2. The shape classifier above, run per civic group at projection time.
+#   3. addr:unit emission in osm_export.build_tags, which writes no unit today.
+#   4. Unit-aware matching in conflate._classify, which compares _norm_number
+#      and street only — a per-door candidate would otherwise match any node
+#      at that civic number.
+#   5. Collapse in source_db.py to stop being one module-level _COLLAPSE
+#      boolean, since both shapes now have to coexist within one city.
+#
+# OPEN: what tag lists the units on a collapsed apartment node. Nothing is
+# built until that is answered.
+#
+# This also reverses a PUBLISHED non-goal — "No unit-level addresses uploaded"
+# on Guelph/Address_Import/Continuous, and the matching line in the scope
+# table. The wiki page and forum thread #135103 need that before any upload
+# under this policy, and ARandomThumbtack holds a standing veto over it.
 [units]
 policy = "collapse-to-civic"
 
