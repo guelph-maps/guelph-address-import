@@ -1,16 +1,20 @@
-# Mechanical edit 3 — announcement draft, NOT POSTED
+# Mechanical edit 3 — announcement draft, SUPERSEDED 2026-09-16
 
-Reply in thread #135103, after the wiki section (§ Mechanical edits, 3) is
-synced so the link resolves. Set the objection deadline to 14 days from the
-day it goes up. It answers ARandomThumbtack's (d) in post #15 directly — the
-"one object" in our open question 3 was wrong — so lead with that.
+**Do not post this.** It was written as a 14-day consultation and as a post of
+its own. Both are now wrong:
 
-Batches WERE prepared ahead of consent (2026-09-16, `build_batches.py` in this
-directory: 452 objects in 23 batches, pilot Non-Residential - C with 22).
-Edit #2 was announced first and prepared later, and that order was the right
-one; these exist early only so the counts in the post are measured rather than
-estimated. They must be rebuilt with `--refetch` on the day of upload, because
-versions will have moved, and nothing uploads before the window closes.
+- The 14-day window was dropped on 2026-09-16 — campaign 3 and the units
+  reversal are **announced, not consented**, and proceed immediately. The
+  reasoning, and the standing offer to revert on request, are in
+  `IMPORT_PROPOSAL.mediawiki` § Status.
+- It is merged with the units reversal into one post, because they are the
+  same subject and the same audience, and because the correction to
+  ARandomThumbtack's (d) belongs next to the reversal it motivates.
+
+**The post that goes up is `../../UNITS_REVERSAL_POST.md`.**
+
+This file is kept as the record of what was drafted under the old plan. The
+line below saying nothing uploads before the window closes no longer holds.
 
 ---
 

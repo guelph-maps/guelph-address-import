@@ -1,92 +1,92 @@
-# Units reversal — forum post draft
+# Units: the reversal and campaign 3 — one post, for thread #135103
 
-**Reply on thread #135103.** This has to go up *before* the import of missing
-objects runs, because it reverses a non-goal that is currently published on
-the wiki page: "No unit-level addresses uploaded."
+**Supersedes** `mechanical-edits/unit-listing-retag/ANNOUNCEMENT.md`, which was
+written as a 14-day consultation. This is one notice covering both the
+non-goal reversal and campaign 3, because they are the same subject and the
+same audience.
 
-Post #17 says the import runs next week. That is only true if this goes up
-now and nobody objects — the clock starts when this is posted, not when the
-batches finish.
+**Post after the wiki page is republished**, so the section links resolve.
 
-Republish `IMPORT_PROPOSAL.mediawiki` to the wiki first, so the links resolve.
+**This is an announcement, not a consultation** — decided 2026-09-16. It says
+so in the post, in the maintainer's own words, rather than pretending to a
+window that is not being run. Do not soften that; it is the part that keeps it
+honest.
 
 ---
 
-**Changing my mind about units — please shout if this is wrong**
+**Units in Guelph: I changed my mind, and I am correcting a count I got wrong**
 
-The wiki page currently says, as a non-goal, **"No unit-level addresses
-uploaded."** I want to reverse that before I upload anything, because I now
-think it was the wrong call, and I would rather be told so here than in a
-revert.
+Two things, both about units, both of them changes to what this page and I
+have previously said.
 
-**Why it was wrong.** The old plan treated "unit" as one thing to keep or
-drop. The City's data doesn't. 13,162 of its rows carry a unit, and they
-describe two different situations: a townhouse front door, and suite 906 of a
-tower. Collapsing both to one civic point throws away the doors — which are
-real, separately addressed places with their own position. Uploading both as
-nodes would scatter 142 points through one apartment building. Neither is
-right, because they are not the same thing at different resolutions.
-
-**What I want to do instead.** Decide per building, on the unit numbering:
-
-- Units that are **separate front doors** — sequential numbering, spaced like
-  doors — become **one node each**, with `addr:unit`.
-- Units **stacked inside a building** — floor- or building-coded, like
-  101–112, 201–212 — collapse to **one civic node** carrying `addr:flats`.
-
-The numbering is what decides, not the spacing. I tried spacing first and it
-was wrong: 93 Arthur Street South is a fourteen-storey building, and a spacing
-test called it 193 front doors in 66 m. Stripping the last two digits off each
-unit and seeing whether the remainder varies catches the floor codes properly.
-Spacing is kept only as a guard — under 2 m apart there is no distinct
-location to map, so it collapses whatever the numbers say.
-
-Over the 514 stacked groups in the source: 240 groups (6,111 units) come out
-as doors, 109 groups (5,668 units) collapse, and 58 groups (1,381 units) sit
-in a middle band — sequential but tighter than a townhouse can be — where I
-emit them collapsed and flag them, rather than guess. 252 Stone Road West is
-the case that convinced me not to automate that band: it is a mall, its 140
-"units" are storefronts, and whether a storefront is a front door is not
-something a rule should decide quietly.
-
-**The part I most want opinions on: `addr:flats`.** Ontario has 58 objects
-with `addr:flats` against 29,312 with `addr:unit`. This would be close to a
-first at scale here, which is exactly why I am not slipping it in. I picked it
-because it means containment — this node *serves* these units — where
-`addr:unit` means identity, this node *is* that unit. No node would get both.
-
-Values are semicolon-separated ranges broken wherever the numbering skips,
-because a single range would be false — Guelph's towers are floor-coded, so
-19 Woodlawn Road East runs 101 to 915 while holding 142 units, and only 2 of
-46 all-numeric towers are contiguous. 23 Woodlawn Road East, 103 units, comes
-out as:
+**1. @ARandomThumbtack, your (d) in #15 deserves a real answer.** You asked
+which object carries unit ranges in `addr:unit` where `addr:flats` belongs. I
+said "one". It is **453**. I had counted by eye and was wrong by two orders of
+magnitude. Measured against a fresh extract on 2026-09-15: 453 Guelph objects
+carry a *list* of units in `addr:unit`, like the building way at 37 Goodwin
+Drive:
 
 ```
-101-110;201-212;301-312;401-412;501-512;601-612;701-705;707-712;801-812;901-909;911
+addr:unit = 101-113;201-214;301-314;401-414
 ```
 
-Median length across the 167 collapsed buildings is 23 characters. **Three do
-not fit** OSM's 255-character limit — 85 Mullin Drive is 421 characters
-because its units are 1A;1B;2A;2B. Those three get **no listing at all**
-rather than a truncated one, since a truncated list would claim the building
-ends where the cut landed. They are flagged for me to look at.
+They cover 176 of the City's 409 multi-unit addresses, and 167 of those 176
+lists match the City's unit roster exactly — mapped from the same data, and
+mapped carefully.
 
-@ARandomThumbtack — this is the same ground as our earlier exchange about
-units, so I especially want your read. You were right that units matter; I was
-too quick to drop them.
+**2. I am reversing a published non-goal.** The wiki page said, in bold, "No
+unit-level addresses uploaded." I now think that was wrong and I want to say
+why before I act on it rather than after.
 
-**Two things I am not claiming.** This does not make units searchable —
-Nominatim discards `addr:unit` and `addr:full` alike, tested 2026-08-21, so
-unit-level search is unavailable under every scheme and I am not pretending
-otherwise. And the maintenance side is deliberately unbuilt: a new unit
-appearing in an already-collapsed building needs `addr:flats` *modified*, and
-this import only creates, so those go to a review queue rather than an upload
-until I have built it properly.
+The old plan treated "unit" as one thing to keep or drop. The City's data
+doesn't. 13,162 of its rows carry a unit, and they are two different
+situations: a townhouse front door, and suite 906 of a tower. Collapsing both
+to one civic point throws away the doors, which are real separately addressed
+places with their own position. Uploading both as nodes scatters 142 points
+through one apartment building. Neither is right, because they are not the
+same thing at different resolutions.
 
-Full write-up, with the counts and the classifier:
+So: units that are **separate front doors** become **one node each** with
+`addr:unit`. Units **stacked in a building** collapse to **one civic node**
+carrying `addr:flats`. What decides is the numbering, not the spacing — I
+tried spacing first and it was wrong, because 93 Arthur Street South is a
+fourteen-storey building and a spacing test called it 193 front doors in 66 m.
+Over the 514 stacked groups: 240 groups (6,111 units) are doors, 109 groups
+(5,668 units) collapse, and 58 groups (1,381 units) sit in a middle band where
+I emit them collapsed and flag them rather than guess.
+
+**Which makes the 453 a problem.** With the import writing `addr:flats` for
+collapsed buildings, Guelph would carry the same fact under two keys, split
+roughly evenly, indefinitely. So campaign 3 moves them:
+
+```
+addr:unit = 101-113;201-214;…   →   addr:flats = 101-113;201-214;…
+```
+
+Value verbatim — not re-compressed, not reconciled against the City's list —
+so the edit is exactly reversible and asserts nothing the original mapper did
+not. Single-valued `addr:unit` is a door and is not touched. 452 objects in 23
+batches, one per area, same method as the split now running.
+
+**`addr:flats` is rare here and that is the thing I would most like told I am
+wrong about.** Ontario has 58 objects with it against 29,312 with `addr:unit`.
+I picked it because it means containment — this node *serves* these units —
+where `addr:unit` means identity, this node *is* that unit. No node gets both.
+
+**On timing, plainly.** I am not running a 14-day window for either of these.
+Both are tagging changes on a single well-defined set, both are mechanically
+reversible with the prior value recorded per object, neither deletes anything
+or moves any geometry. I judged a fortnight's pause not worth it and I would
+rather say that outright than dress an announcement up as a consultation.
+**If you object, the batches get reverted on request — no argument first.**
+@ARandomThumbtack, your standing veto is unaffected by my being in a hurry.
+
+Two things I am not claiming. This does not make units searchable: Nominatim
+discards `addr:unit` and `addr:full` alike, tested 2026-08-21. And the
+maintenance side is deliberately unbuilt — a new unit in an already-collapsed
+building needs `addr:flats` *modified*, and this import only creates, so those
+go to a review queue rather than an upload until I have built it properly.
+
+Full write-up, with the classifier and the counts:
 <https://wiki.openstreetmap.org/wiki/Guelph/Address_Import/Continuous#Unit-level_addresses>
-
-**Objections welcome for 14 days.** Nothing unit-bearing uploads until then.
-The mechanical unit-split batches already running are unaffected — those only
-fix `addr:housenumber=714-30` on objects that are already in OSM, and they
-stand on their own regardless of how this lands.
+and §&nbsp;Mechanical edits 3 on the same page.
