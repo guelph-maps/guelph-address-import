@@ -1,15 +1,15 @@
 {{Map of imports| name = Guelph Address Points
-| description = Continuous, human-reviewed gap-fill of civic address points from the City of Guelph open dataset, plus two documented mechanical tag cleanups, over the completed 2025 community import.
+| description = Continuous, human-reviewed gap-fill of civic address points from the City of Guelph open dataset, plus three documented mechanical tag cleanups, over the completed 2025 community import.
 | user = [[https://www.openstreetmap.org/user/skfd%20imports|skfd imports]]
-| status = Proposed
+| status = In progress
 }}
 
 ''A subpage of [[Guelph/Address_Import]] because this is a continuation of that import, '''not''' because it is maintained by its author. The parent page is ARandomThumbtack's and stays theirs; this subpage is written and maintained by [[User:skfd|skfd]], who is solely responsible for everything proposed on it. Neither page speaks for the other.''
 
 == Status ==
 
-* '''Stage:''' Proposed. The community feedback window opens with the publication of this page and the accompanying Community Forum announcement.
-* '''Last revised:''' 2026-08-27
+* '''Stage:''' Partly consented, partly open. The gap-fill, campaign 1 and campaign 2 were announced on 2026-08-28 and their 14-day window closed on 2026-09-10 with no objections; campaign 2 is uploading now. '''New on this revision and not yet consented:''' the reversal in § Unit-level addresses, and campaign 3. Both open a fresh window from the forum post accompanying this revision.
+* '''Last revised:''' 2026-09-16
 * '''Contact:''' guelph@comentality.com
 * '''OSM import account:''' [[osm:user/skfd imports|skfd imports]] — the same dedicated account used for the [[Toronto/Import/AddressPoints|Toronto address import]]. The maintainer's personal account ([[User:skfd|skfd]]) is not used for any upload from this tooling.
 * '''Discussion:''' [https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103 OSM Community Forum thread #135103] — the 2025 import's own thread, tagged <code>import</code> / <code>import-proposal</code>, where this proposal was announced rather than in a new topic. The announcement venue under the current [[Import/Guidelines|OSM Import Guidelines]].
@@ -180,7 +180,7 @@ Measured across all 167 collapsed groups the median value is 23 characters. '''T
 
 == Mechanical edits ==
 
-Three tag cleanups on '''existing''' Guelph objects, announced with this proposal but consented separately under the [[Automated Edits code of conduct]]. All are attribute-only: one tag per object (the third moves one value between two keys), nothing else touched, no geometry, no deletions. All run neighbourhood by neighbourhood in separately revertable batches, in the same 23-area partition as the import, from the same account.
+Three tag cleanups on '''existing''' Guelph objects, each consented separately from the import and from each other under the [[Automated Edits code of conduct]]. '''1 and 2 are consented''' (announced 2026-08-28, window closed 2026-09-10); '''3 is proposed on this revision and is not''' — see § Open questions. All are attribute-only: one tag per object (the third moves one value between two keys), nothing else touched, no geometry, no deletions. All run neighbourhood by neighbourhood in separately revertable batches, in the same 23-area partition as the import, from the same account.
 
 === 1. Remove <code>addr:province=Ontario</code> ===
 
@@ -188,12 +188,14 @@ The 2025 import wrote <code>addr:province</code> as a constant; it is now on rou
 
 === 2. Split double-encoded unit housenumbers ===
 
-'''5,422''' objects carry the unit '''twice''': <code>addr:housenumber=714-30</code> ''and'' <code>addr:unit=30</code> — and in an order that is not the Canada Post one (which writes <code>30-714</code>), so it is not a postal string either. The fix writes the civic number alone into <code>addr:housenumber</code> and leaves the already-correct <code>addr:unit</code> untouched:
+'''5,521''' objects carry the unit '''twice''': <code>addr:housenumber=714-30</code> ''and'' <code>addr:unit=30</code> — and in an order that is not the Canada Post one (which writes <code>30-714</code>), so it is not a postal string either. (Re-measured 2026-09-16 against live OSM: 5,568 objects carry a hyphen in <code>addr:housenumber</code>, of which 5,521 split mechanically and 47 do not. The announcement said 5,422; that was August's count and the figure has drifted up since.) '''Running now''', in 36 batches of at most 250, one per area — the pilot is [https://www.openstreetmap.org/changeset/189086416 changeset 189086416], 69 objects in the June Avenue area. The fix writes the civic number alone into <code>addr:housenumber</code> and leaves the already-correct <code>addr:unit</code> untouched:
 
  addr:housenumber = 714-30   →   addr:housenumber = 714
  addr:unit        = 30           addr:unit        = 30   (unchanged)
 
-Letter suffixes that ''are'' the civic number (<code>645A</code>) are not units and are preserved, per the Toronto import's precedent. A further ~17 objects carry the combined form with no <code>addr:unit</code> to confirm the split; those are handled by hand, not mechanically.
+Letter suffixes that ''are'' the civic number (<code>645A</code>) are not units and are preserved, per the Toronto import's precedent. Of the 47 left out: '''17''' carry the combined form with no <code>addr:unit</code> to confirm the split — the ones this page always said would be done by hand — '''27''' are <code>;</code>-separated housenumber lists that belong to the MapRoulette question in § Open questions rather than to this campaign, and '''3''' carry an <code>addr:unit</code> matching neither side of the hyphen (<code>130-BLD D</code>, <code>10-6/7</code>). None are touched mechanically.
+
+These batches are prepared as <code>.osm</code> files carrying the live version of every object and uploaded from JOSM, so an object edited since the batch was prepared raises a conflict rather than being overwritten — the § Revert plan promise, enforced by the upload rather than by care. Because JOSM does the uploading, <code>created_by</code> on these changesets reads <code>JOSM</code> rather than the tool named in § Changeset tags; JOSM stamps its own and nothing else survives.
 
 '''The argument, recorded because it was contested.''' The original importer's position is that the combined form keeps the postal address searchable. Tested against live Nominatim on 2026-08-21, it does not: "72 York Road Unit 5" returns the property with the unit silently ignored, and "5-72 York Road" returns unrelated road segments. Unit-level search is unavailable under ''every'' scheme currently available, so it cannot argue for either form — while the combined form additionally breaks plain "714 Willow Road" queries, because then no object carries the bare civic number. The honest summary is that this change costs nothing and buys correct semantics.
 
@@ -266,9 +268,9 @@ The import path creates nodes only, so reverting it cannot damage the 2025 impor
 
 == Open questions for the community ==
 
-# '''The two mechanical edits.''' § Mechanical edits states the intent; the consent is what the feedback window is for. Objections to either campaign — or to the batch size and ordering — belong on [https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103 thread #135103].
-# '''<code>addr:city</code> on the 73 Guelph/Eramosa objects.''' The 2025 import wrote <code>addr:city=Guelph/Eramosa Twp</code> — the City's internal <code>PLACE</code> string — on all 73 (§ The Guelph/Eramosa rows). It is not obviously wrong so much as unexamined: <code>addr:city</code> is the postal community, not the municipality, and the one row of the 75 the City gives a postcode sits in a Guelph FSA. Retagging 73 objects would be a '''third''' mechanical edit needing its own consent, so it is raised here as a question, not proposed. What should the value be — or should it be left alone?
-# '''<code>;</code>-lists and <code>addr:flats</code>.''' Roughly 800 objects carry <code>;</code>-separated housenumbers, and one carries unit ranges in <code>addr:unit</code> where <code>addr:flats</code> belongs. Both want door positions rather than a mechanical rule, so the plan is a MapRoulette challenge rather than a batch — is that wanted?
+# '''The mechanical edits — and which of them are actually settled.''' Campaigns '''1''' and '''2''' were announced on 2026-08-28 with a 14-day objection window that closed on 2026-09-10 with no objections, so they are consented and running. Campaign '''3''' (<code>addr:unit</code> lists → <code>addr:flats</code>) is '''new on this revision and not consented''' — it is proposed here, not announced as settled, and nothing of it uploads until its own window has run. So is the reversal in § Unit-level addresses. Objections to any campaign — or to the batch size and ordering — belong on [https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103 thread #135103].
+# '''<code>addr:city</code> on the 73 Guelph/Eramosa objects.''' The 2025 import wrote <code>addr:city=Guelph/Eramosa Twp</code> — the City's internal <code>PLACE</code> string — on all 73 (§ The Guelph/Eramosa rows). It is not obviously wrong so much as unexamined: <code>addr:city</code> is the postal community, not the municipality, and the one row of the 75 the City gives a postcode sits in a Guelph FSA. Retagging 73 objects would be a '''fourth''' mechanical edit needing its own consent, so it is raised here as a question, not proposed. What should the value be — or should it be left alone?
+# '''<code>;</code>-lists in <code>addr:housenumber</code>.''' Roughly 800 objects carry <code>;</code>-separated ''housenumbers'' — <code>137-B;139-A;137-A;137</code> on one way. Unlike the unit lists, these want door positions rather than a key change, so no mechanical rule fits them and the plan is a MapRoulette challenge rather than a batch — is that wanted? (''Revised 2026-09-16:'' this question previously also said "one" object carried unit ranges in <code>addr:unit</code> where <code>addr:flats</code> belongs. That was a count by eye and it was wrong — there are '''453'''. They are now campaign 3 in § Mechanical edits, which is the honest place for them.)
 # '''Cadence and quiet.''' How often should a maintenance batch be announced on the forum thread: every batch, or a periodic summary?
 
 == References ==
