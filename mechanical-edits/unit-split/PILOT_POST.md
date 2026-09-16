@@ -1,10 +1,22 @@
-# Pilot post — draft
+# Pilot post — POSTED 2026-09-16 as #17
 
-**Reply on thread #135103.** This is the gate post #14 promised: "a pilot tile
-posted here with its counts and changeset before anything else moves."
+Up as [post #17](https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103/17),
+which satisfies the gate post #14 promised: "a pilot tile posted here with its
+counts and changeset before anything else moves."
 
-Post it before uploading batch 2. Check the changeset link resolves and that
-the account line below still matches what actually happened.
+**What went up is shorter than this draft**, which is fine — it is skfd's
+thread and skfd's voice. Dropped: the counts (5,568 / 5,521 / 36 batches), the
+three-way breakdown of the 47 hand cases, the method paragraph and the repo
+link, and the `created_by` note.
+
+**One omission is not cosmetic: the account disclosure.** We agreed to
+disclose rather than revert, and #17 does not mention that the pilot went from
+`skfd` rather than the `skfd imports` the page names in bold. Until it is
+said, the pilot is an undisclosed deviation from a published commitment. One
+sentence appended to #17, or a line in the next batch post, closes it — the
+wording is in the last section below.
+
+The draft is kept as written, because it is the record of what was offered.
 
 ---
 

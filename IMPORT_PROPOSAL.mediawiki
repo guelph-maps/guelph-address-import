@@ -48,7 +48,7 @@ Measured against source snapshot 39 (2026-08-13): 53,846 active source rows, col
 |-
 | New addresses per City update || small, unknown || The recurring workload this proposal is actually about. Tracked snapshot-to-snapshot by <code>ontario-address-changes</code>.
 |-
-| Unit-level addresses || 13,162 source unit rows || '''Not uploaded.''' Source rows are collapsed to one candidate per civic address (<code>[units] policy = "collapse-to-civic"</code>). Guelph's units are largely ''already in OSM'', double-encoded — see § Mechanical edits.
+| Unit-level addresses || 13,162 source unit rows || '''Uploaded, by shape''' — <code>[units] policy = "per-door-or-collapse"</code>. '''This reverses what this page said until 2026-09-16''', which was that units would not be uploaded at all; see § Unit-level addresses for the reasoning and the numbers. Units that are separate front doors become one node each with <code>addr:unit</code>; units stacked in a building collapse to one civic node listing them in <code>addr:flats</code>. Guelph's units are largely ''already in OSM'', double-encoded — see § Mechanical edits.
 |-
 | Street-name disagreements || to be reported || Output of the <code>nearby_street_mismatch</code> check. Reported, never auto-corrected.
 |-
@@ -67,7 +67,9 @@ As [[Toronto/Import/AddressPoints#Goals and non-goals|§ Non-goals of the Toront
 
 * '''No deletions of objects''', including addresses the City source no longer lists.
 * '''No mutation of existing OSM objects by the import.''' The import path creates new nodes only. The two campaigns in § Mechanical edits are the sole exception, they are announced and consented separately from the import, and they touch only the two tags named there — nothing else on the object, and no geometry.
-* '''No unit-level addresses uploaded''', no <code>addr:interpolation</code> cleanup, no polygons, no geometry editing.
+* No <code>addr:interpolation</code> cleanup, no polygons, no geometry editing.
+
+''Revised 2026-09-16.'' Until that date this list also read '''"no unit-level addresses uploaded"'''. It no longer does. Nothing else in the non-goals changed, and the reversal is set out in full, with its counts, in § Unit-level addresses — it is called out here rather than quietly deleted because a non-goal that has been published is a promise, and a reader who remembers the old one is owed the change.
 
 == Import data ==
 
@@ -108,10 +110,73 @@ The baseline is the tag mapping [[Guelph/Address_Import]] established in 2025, b
 |-
 | <code>addr:postcode</code> || enrichment only || Written only when a same-address POI already in OSM carries one. Never invented, never extrapolated.
 |-
+| <code>addr:unit</code> || source <code>UNIT_NO</code> || '''New 2026-09-16.''' On per-door nodes only — a node tagged <code>addr:unit</code> asserts that it ''is'' that unit, which is true of a front door and false of a building. Never written alongside <code>addr:flats</code>. See § Unit-level addresses.
+|-
+| <code>addr:flats</code> || the unit list, as ranges || '''New 2026-09-16.''' On collapsed nodes only — <code>addr:flats</code> means containment: this node ''serves'' these units. Semicolon-separated ranges broken wherever the numbering skips, e.g. <code>101-110;201-212;301-312</code>. See § Unit-level addresses.
+|-
 | <code>addr:source</code> || <code>Guelph Open Data</code> || '''Not a bare <code>source</code>''': it sources the ''address'', sits in the <code>addr:*</code> namespace alongside the tags it explains, and survives a later merge into a building polygon without appearing to source the building. The changeset keeps the plain <code>source</code> key — that one describes the edit. Toronto's import wrote a bare <code>source</code> on its nodes and has a [[Toronto/Import/AddressPoints#Post-import follow-ups (scoped separately)|scoped follow-up]] to correct them; Guelph starts correct instead of accruing the same debt. The '''value''' is the 2025 import's own string, verbatim — one city should have one attribution value, not two spellings of it — while the '''key''' is the corrected one.
 |}
 
-Deliberately '''not''' emitted: <code>addr:unit</code> (see scope), <code>addr:province</code> (above), <code>addr:ward</code> (the source's 1–6 ward integer is modelled better as an admin polygon), <code>addr:housename</code>, <code>addr:country</code>, <code>addr:full</code> (tested 2026-08-21: Nominatim discards it, so it is a pure duplicate of the structured tags), and any city-specific custom namespace.
+Deliberately '''not''' emitted: <code>addr:province</code> (above), <code>addr:ward</code> (the source's 1–6 ward integer is modelled better as an admin polygon), <code>addr:housename</code>, <code>addr:country</code>, <code>addr:full</code> (tested 2026-08-21: Nominatim discards it, so it is a pure duplicate of the structured tags), and any city-specific custom namespace.
+
+== Unit-level addresses ==
+
+'''This section reverses a published non-goal.''' Until 2026-09-16 this page said units would not be uploaded and source rows would collapse to one candidate per civic address. They now upload, and the decision is set out here in full — including the numbers it rests on — so that it can be argued with rather than discovered in a changeset.
+
+=== What changed and why ===
+
+The old plan treated "unit" as one thing to be either kept or dropped. The City's data does not: 13,162 of its rows carry a unit, and they describe two different situations. A row for a townhouse door and a row for suite 906 of a tower are not the same object at a coarser resolution — they are different objects. Collapsing both lost the doors; uploading both as nodes would have scattered 142 nodes through one tower.
+
+So the policy is now <code>per-door-or-collapse</code>:
+
+* Units that are '''separate front doors''' become '''one node each''', carrying <code>addr:unit</code>.
+* Units that are '''stacked inside a building''' collapse to '''one civic node''', carrying <code>addr:flats</code>.
+
+This reads the City's own geometry rather than overriding it, and it means conflation is ''told'' about units instead of comparing bare housenumbers and guessing. It is Guelph-specific: Toronto and Hamilton keep the previous collapse-to-civic behaviour unchanged.
+
+=== What decides which ===
+
+The '''unit numbering''', not the geometry. Two earlier attempts to decide this by spacing alone were both wrong: <code>93 Arthur Street South</code> runs units 101–1411 over prefixes 1–14 — a fourteen-storey building — and a spacing test called it 193 front doors within 66 m.
+
+The rule: strip the last two digits from each unit. If what remains takes two or more values, the scheme is floor- or building-coded and the units are stacked, so the group collapses. Purely sequential numbering (1…214) means doors. Letter-prefixed codes (<code>D101</code>) are building letters and count as coded.
+
+Geometry is the '''guard''', not the decision. A sequential group whose points sit less than 2 m apart has no distinct per-unit location and collapses regardless; between 2 m and 4.5 m — under the width of the narrowest real townhouse — it is flagged for a human rather than assumed.
+
+Run over all 514 stacked groups in the source:
+
+{| class="wikitable"
+! Outcome !! Groups !! Units !! Why
+|-
+| Collapse || 87 || 5,093 || Floor- or building-coded suites
+|-
+| Collapse || 22 || 575 || Sequential, but under 2 m apart — no distinct location
+|-
+| Per-door nodes || 240 || 6,111 || Sequential, door-width spacing
+|-
+| Review, emitted collapsed || 58 || 1,381 || Sequential but tighter than 4.5 m
+|-
+| No unit rows || 107 || 0 || Civic duplicates; not a unit question at all
+|}
+
+So 349 of the 407 unit-bearing groups decide themselves and 58 want eyes — about one in seven. The review cases are emitted '''collapsed rather than held back''', because collapsing is defensible either way and it puts one node in front of the reviewer instead of 140 to reject. <code>252 Stone Road West</code> is the honest example: a mall whose 140 "units" are storefronts, and whether a storefront is a front door is not a judgement any rule should be making silently.
+
+=== <code>addr:flats</code>, and its limits ===
+
+Collapsed nodes list their units as semicolon-separated ranges, broken wherever the numbering skips. A single range would be a lie: Guelph's tower units are floor-coded, so <code>19 Woodlawn Road East</code> runs 101 to 915 while holding 142 units, and only 2 of 46 all-numeric towers are contiguous. <code>23 Woodlawn Road East</code>, 103 units, comes out as
+
+ 101-110;201-212;301-312;401-412;501-512;601-612;701-705;707-712;801-812;901-909;911
+
+where <code>701-705;707-712</code> and <code>901-909;911</code> are real gaps in the building, not tidying.
+
+Measured across all 167 collapsed groups the median value is 23 characters. '''Three do not fit''' OSM's 255-character limit — <code>85 Mullin Drive</code> (110 units as 1A;1B;2A;2B…, 421 characters), <code>176 Janefield Avenue</code> (303) and <code>15 Carere Crescent</code> (261). Nothing compresses a suffixed or stepped sequence, so those three have their listing '''dropped rather than truncated''' — a truncated list would assert that the building ends where the cut landed — and the candidate is flagged so the loss is visible rather than silent.
+
+'''<code>addr:flats</code> is rare in Ontario''' and this is close to a first at scale: 58 objects province-wide against 29,312 carrying <code>addr:unit</code> (counted 2026-09-15). That is precisely why it is raised here instead of being slipped in. The key is chosen because it means containment — this node ''serves'' these units — where <code>addr:unit</code> means identity. They are not two spellings of one idea, and no node gets both.
+
+=== Known limits, stated up front ===
+
+* '''Unit-level search does not work under any scheme.''' Tested against live Nominatim on 2026-08-21: <code>addr:unit</code> and <code>addr:full</code> are both discarded. This buys correct data, not findability, and that cost is accepted rather than mitigated.
+* '''The maintenance path for units is deliberately not built.''' A new unit at an already-collapsed building needs <code>addr:flats</code> ''modified'' on an existing node, and this import only ever creates. Until that is closed, unit-bearing runs go through the tile path only, never the recurring maintenance job, and a new unit at a collapsed building is routed to a QA finding instead of an upload. A retired unit has the mirror problem and likewise shrinks nothing.
+* '''Ordering.''' The split in § Mechanical edits runs '''before''' any of this. Before it, OSM carries a door's address as <code>714-30</code>, which a door candidate of <code>(714, unit 30)</code> does not match — so the door would read as missing and a second node would be proposed beside the badly-encoded one. With 5,568 hyphenated objects against 6,111 door candidates, the wrong order mass-produces duplicates.
 
 == Mechanical edits ==
 
