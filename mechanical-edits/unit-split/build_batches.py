@@ -1,4 +1,4 @@
-"""Mechanical edit 2/2 — split double-encoded unit housenumbers, prepared for JOSM.
+"""Mechanical edit 2/3 — split double-encoded unit housenumbers, prepared for JOSM.
 
     addr:housenumber = 714-30  ->  addr:housenumber = 714
     addr:unit        = 30          addr:unit        = 30   (untouched)
@@ -549,7 +549,7 @@ def render_page(records: list[dict], review: list[dict], stamp: str) -> str:
 <title>Guelph unit split — run sheet</title>
 <style>{PAGE_CSS}</style>
 <h1>Guelph unit split — run sheet</h1>
-<p class="sub">Mechanical edit 2 of 2: <code>addr:housenumber=714-30</code> +
+<p class="sub">Mechanical edit 2 of 3: <code>addr:housenumber=714-30</code> +
 <code>addr:unit=30</code> &rarr; <code>addr:housenumber=714</code>, unit
 untouched. {total_objects:,} objects in {len(records)} batches, prepared
 {html.escape(stamp)} · <a href="{WIKI_SECTION}">wiki</a> ·

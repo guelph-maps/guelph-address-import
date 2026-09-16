@@ -305,9 +305,27 @@ status = "props:STATUS"
 # addr:unit objects move to addr:flats, key only, value verbatim, as
 # MECHANICAL EDIT #3 -- wiki section written, announcement drafted in
 # mechanical-edits/unit-listing-retag/ANNOUNCEMENT.md, consent not yet
-# asked, batches not to be built until the window closes. Cheap to decide now
-# because only the June Avenue pilot of edit #2 has gone up. Conflation still
-# learns both forms; after the retag that branch is a safety net.
+# asked. Cheap to decide now because only the June Avenue pilot of edit #2 has
+# gone up. Conflation still learns both forms; after the retag that branch is
+# a safety net.
+# PREPARED 2026-09-16, ahead of consent, so the post carries measured counts:
+# mechanical-edits/unit-listing-retag/ -- 452 objects (37 nodes, 415 ways) in
+# 23 batches, one per area, pilot Non-Residential - C (22). Two refused: way
+# 208488213 (40 Northumberland, already addr:flats, no addr:unit) and way
+# 1349071737 (240 London Road West, addr:housenumber=240-57;240-56 AND
+# addr:unit=56;57 -- the one object both edits touch; edit #2's by-hand pile
+# owns it first). Rebuild with --refetch on upload day. Edit #2's "2 of 2"
+# became "2 of 3".
+# ENGINE SIDE BUILT the same day (address-importer-friend 38ea7459): a
+# listing-bearing element is indexed as the building; a collapsed candidate
+# MATCHes it, a door matches by containment as MATCH_LISTED (skipped like
+# MATCH); addr:flats compares as a set in the diff. Simulated on the fresh
+# extract: 125 collapsed -> 115 MATCH / 10 MATCH_FAR; 642 doors of the 51
+# door groups -> 597 MATCH_LISTED / 45 MISSING (units no listing names).
+# Also found and fixed there: conflate.run never selected unit/flats, so
+# every door had compared as the bare civic point and would have been SKIPPED
+# as already in OSM. No Guelph run had been conflated yet, so nothing shipped
+# wrong.
 [units]
 policy = "per-door-or-collapse"
 

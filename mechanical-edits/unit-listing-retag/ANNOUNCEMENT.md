@@ -5,11 +5,12 @@ synced so the link resolves. Set the objection deadline to 14 days from the
 day it goes up. It answers ARandomThumbtack's (d) in post #15 directly — the
 "one object" in our open question 3 was wrong — so lead with that.
 
-Batches are not prepared yet and should not be until the window closes:
-edit #2 was announced 2026-08-28 and prepared 2026-09-15 against live OSM,
-and the same order applies here. When the time comes, the selection is
-"addr:unit contains `;` or matches `^[A-Za-z]*\d+-[A-Za-z]*\d+$`", and the
-engine's listing-aware conflation can emit the batches from its tag diff.
+Batches WERE prepared ahead of consent (2026-09-16, `build_batches.py` in this
+directory: 452 objects in 23 batches, pilot Non-Residential - C with 22).
+Edit #2 was announced first and prepared later, and that order was the right
+one; these exist early only so the counts in the post are measured rather than
+estimated. They must be rebuilt with `--refetch` on the day of upload, because
+versions will have moved, and nothing uploads before the window closes.
 
 ---
 
