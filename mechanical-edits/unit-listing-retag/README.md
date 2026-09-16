@@ -63,18 +63,21 @@ comes near the 250 cap, so every area is one batch.
 
 Things worth knowing about the values, all of which move exactly as they are:
 
-- 416 of the 452 end in a trailing `;` (`101-113;201-214;301-314;401-414;`).
+- 49 of the 452 end in a trailing `;` (`101-113;201-214;301-314;401-414;`).
   It moves with the value. Tidying it is not this edit.
 - 2 have spaces after the `;` (`201-209; 301-309; …`). Same.
 - Not every list is a range. 8 are a single range with no `;`; the rest
-  include plain enumerations (`1;2;3;4`), pairs on semi-detached buildings
-  (nine ways at 39 Kay Crescent carry `32;33`, `34;35`, …), lettered units
-  (`A;B;C` on the nodes at 147 and 151 Arthur Street North, `2;4A;6;8` on 2
-  Taggart Street) and mixes (`101-114;…;LL02;LL04;…`). The announcement says
-  "contains `;` or matches a range" and "verbatim", and that is what happens.
-- 198 distinct `(street, housenumber)` civic groups, against the 176 the wiki
-  counts. The 176 are the ones that match a City multi-unit address; the other
-  22 are OSM-only groupings (the Kay Crescent pairs are most of them).
+  include plain enumerations (`1;2;3;4`), small lists on townhouse blocks
+  (nine ways at 39 Kay Crescent carry mostly pairs, `32;33`, `34;35`, …, one a
+  run of ten), lettered units (`A;B;C` on the nodes at 147 and 151 Arthur
+  Street North, `2;4A;6;8` on 2 Taggart Street) and mixes
+  (`101-114;…;LL02;LL04;…`). The announcement says "contains `;` or matches a
+  range" and "verbatim", and that is what happens.
+- 198 distinct `(street, housenumber)` civic groups in the safe set, against
+  the 176 the wiki counts. The two were counted differently (the wiki's is
+  against the City's 409 multi-unit addresses) and the gap was not reconciled
+  here. 34 groups hold more than one object — 190 Fife Road alone is 36 ways,
+  each block carrying its own list.
 - The longest value is 154 characters (150 Wellington Street East). The run
   sheet truncates for display; the files do not.
 
