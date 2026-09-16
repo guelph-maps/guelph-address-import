@@ -1,0 +1,3 @@
+type,id,street,housenumber,unit,flats,area,reason
+way,1349071737,London Road West,240-57;240-56,56;57,,Exhibition Park,hyphen-hn
+way,208488213,Northumberland Street,40,,101-106;201-206;301-306,Downtown - Sunny Acres,has-flats

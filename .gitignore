@@ -15,3 +15,7 @@ venv/
 # uploaded; manifest.csv is the record that matters and is tracked.
 mechanical-edits/unit-split/live.osm
 mechanical-edits/unit-split/batches/
+
+# Mechanical edit 3: same arrangement as edit 2.
+mechanical-edits/unit-listing-retag/live.osm
+mechanical-edits/unit-listing-retag/batches/

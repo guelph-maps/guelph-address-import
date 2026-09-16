@@ -1,0 +1,453 @@
+batch,area,type,id,version,street,housenumber,before_unit,after_flats,class
+1,Non-Residential - C,way,287908449,3,Goodwin Drive,37,101-113;201-214;301-314;401-414;,101-113;201-214;301-314;401-414;,safe
+1,Non-Residential - C,way,287908442,3,Goodwin Drive,39,101-111;201-212;301-312;401-412;,101-111;201-212;301-312;401-412;,safe
+1,Non-Residential - C,way,287908447,3,Goodwin Drive,41,101-111;201-212;301-312;401-412;,101-111;201-212;301-312;401-412;,safe
+1,Non-Residential - C,way,287908444,3,Goodwin Drive,43,101-113;201-214;301-314;401-414;,101-113;201-214;301-314;401-414;,safe
+1,Non-Residential - C,way,287908445,3,Goodwin Drive,45,101-111;201-212;301-312;401-412;,101-111;201-212;301-312;401-412;,safe
+1,Non-Residential - C,way,862511297,7,Gordon Street,1878,101-116;201-215;301-314;401-414;501-514;601-614;701-714;801-814;901-914;1001-1014;1101-1114;1201-1206;1301-1305;1401-1404;,101-116;201-215;301-314;401-414;501-514;601-614;701-714;801-814;901-914;1001-1014;1101-1114;1201-1206;1301-1305;1401-1404;,safe
+1,Non-Residential - C,way,862511298,7,Gordon Street,1880,101-115;201-215;301-314;401-414;501-514;601-614;701-714;801-814;901-914;1001-1014;1101-1114;1201-1206;1301-1306;1401-1404;,101-115;201-215;301-314;401-414;501-514;601-614;701-714;801-814;901-914;1001-1014;1101-1114;1201-1206;1301-1306;1401-1404;,safe
+1,Non-Residential - C,node,13241233182,1,Gordon Street,1882,101-115;201-209;301-312;401-412;501-512;601-612;701-712;801-805;,101-115;201-209;301-312;401-412;501-512;601-612;701-712;801-805;,safe
+1,Non-Residential - C,node,13241233183,1,Gordon Street,1884,101-114;201-214;301-312;401-412;501-512;601-612;701-712;801-805;,101-114;201-214;301-312;401-412;501-512;601-612;701-712;801-805;,safe
+1,Non-Residential - C,way,961839908,3,Gordon Street,1886,101;102;201;202,101;102;201;202,safe
+1,Non-Residential - C,way,900493343,3,Kay Crescent,17,101-111;201-212;301-312;401-412;,101-111;201-212;301-312;401-412;,safe
+1,Non-Residential - C,way,900493342,3,Kay Crescent,25,101-114;201-214;301-314;401-414;LL02;LL04;LL06;LL08;LL10;LL12;LL14;,101-114;201-214;301-314;401-414;LL02;LL04;LL06;LL08;LL10;LL12;LL14;,safe
+1,Non-Residential - C,way,1443052881,1,Kay Crescent,39,32;33,32;33,safe
+1,Non-Residential - C,way,1443052882,1,Kay Crescent,39,34;35,34;35,safe
+1,Non-Residential - C,way,1443052883,1,Kay Crescent,39,36;37,36;37,safe
+1,Non-Residential - C,way,1443052884,1,Kay Crescent,39,46;47,46;47,safe
+1,Non-Residential - C,way,1443052885,1,Kay Crescent,39,44;45,44;45,safe
+1,Non-Residential - C,way,1443052886,1,Kay Crescent,39,42;43,42;43,safe
+1,Non-Residential - C,way,802540386,3,Kay Crescent,39,12;13;14;15;16;17;18;19;20;21,12;13;14;15;16;17;18;19;20;21,safe
+1,Non-Residential - C,way,802540388,3,Kay Crescent,39,38;39,38;39,safe
+1,Non-Residential - C,way,802540389,3,Kay Crescent,39,40;41,40;41,safe
+1,Non-Residential - C,way,741807532,4,Kay Crescent,7,101-113;201-215;301-315;401-415;501-515;601-615;LL01-LL06;,101-113;201-215;301-315;401-415;501-515;601-615;LL01-LL06;,safe
+2,University,way,212563853,4,Chancellors Way,245,101-108;201-208;301-316,101-108;201-208;301-316,safe
+2,University,way,802817805,3,Gordon Street,220,11;12;14;15;16;17;21;22;23;24;25;26;31;32;33;34;35;36,11;12;14;15;16;17;21;22;23;24;25;26;31;32;33;34;35;36,safe
+3,Non-Residential - B,way,177694773,2,Taggart Street,2,2;4A;6;8,2;4A;6;8,safe
+3,Non-Residential - B,way,802544817,3,Watson Parkway South,70,1;2;3;4;5;6;7;8,1;2;3;4;5;6;7;8,safe
+3,Non-Residential - B,way,802544833,2,Watson Road South,3,1;2;3;8,1;2;3;8,safe
+3,Non-Residential - B,way,1054125923,2,York Road,561,1;2;3;4,1;2;3;4,safe
+4,Rickson Ridge,way,801555971,3,Gordon Street,1077,112-142;212-242;312-342;412-442;,112-142;212-242;312-342;412-442;,safe
+4,Rickson Ridge,way,801555970,4,Gordon Street,1083,101-111;201-211;301-311;401-411;,101-111;201-211;301-311;401-411;,safe
+4,Rickson Ridge,way,1156180354,2,Gordon Street,1131,1;2;3;4;5;6;7;8,1;2;3;4;5;6;7;8,safe
+4,Rickson Ridge,way,659406271,4,Gordon Street,1219,101-108;201-211;301-315;401-415;501-515;601-613;A;B;C;,101-108;201-211;301-315;401-415;501-515;601-613;A;B;C;,safe
+4,Rickson Ridge,way,499046190,8,Gordon Street,1291,101-125;201-227;301-327;401-427;501-527;601-627;,101-125;201-227;301-327;401-427;501-527;601-627;,safe
+5,Clairfields,node,13533404756,1,Clair Road West,30,B3-1,B3-1,safe
+5,Clairfields,way,399342891,2,Gordon Street,1467,1;2;3,1;2;3,safe
+5,Clairfields,way,1004013623,4,Lowes Road West,26,101-108;110;112;201-216;301-316;401-416;501-514;601-614;,101-108;110;112;201-216;301-316;401-416;501-514;601-614;,safe
+5,Clairfields,way,208650114,2,Southgate Drive,200,1;2;3,1;2;3,safe
+5,Clairfields,way,337955594,5,Southgate Drive,245,10;11;12;7;8;9,10;11;12;7;8;9,safe
+5,Clairfields,way,337955609,5,Southgate Drive,245,1;2;3;4;5;6,1;2;3;4;5;6,safe
+6,Dover Cliff,way,802528772,2,Conroy Crescent,105,102-106;201-206;301-312;401-412;501-512,102-106;201-206;301-312;401-412;501-512,safe
+6,Dover Cliff,way,210083020,2,Conroy Crescent,37,1;10;11;12;13;14;15;2;3;4;5;6;7;8;9,1;10;11;12;13;14;15;2;3;4;5;6;7;8;9,safe
+6,Dover Cliff,way,802528770,2,Conroy Crescent,53,101-107;201-208;301-308,101-107;201-208;301-308,safe
+6,Dover Cliff,way,210083022,2,Conroy Crescent,57,101-104;201-204;301-304,101-104;201-204;301-304,safe
+6,Dover Cliff,way,210083021,2,Conroy Crescent,63,1-3;21-24;31-37;41-48;51-58,1-3;21-24;31-37;41-48;51-58,safe
+6,Dover Cliff,way,802528771,2,Conroy Crescent,91,102-106;201-206;301-312;401-412;501-512,102-106;201-206;301-312;401-412;501-512,safe
+7,St. Georges Parkway,node,13164248923,1,Arthur Street North,147,A;B;C,A;B;C,safe
+7,St. Georges Parkway,node,13164248922,1,Arthur Street North,151,A;B,A;B,safe
+7,St. Georges Parkway,node,13164248921,1,Arthur Street North,28,A;B;C;D,A;B;C;D,safe
+7,St. Georges Parkway,way,208488067,3,Eramosa Road,265,1;2;3;4,1;2;3;4,safe
+7,St. Georges Parkway,way,240744882,5,Eramosa Road,297,1;2,1;2,safe
+7,St. Georges Parkway,node,13164248917,1,Grove Street,20,A;B;C;D,A;B;C;D,safe
+7,St. Georges Parkway,way,929589622,5,Stuart Street,10,1;10;2;3;4;5;6;7;8;9,1;10;2;3;4;5;6;7;8;9,safe
+8,Two Rivers,way,927975886,2,Huron Street,131,A;B;C,A;B;C,safe
+8,Two Rivers,way,927975771,2,Huron Street,47,A;B,A;B,safe
+8,Two Rivers,node,13188159621,1,Huron Street,49,A;B,A;B,safe
+8,Two Rivers,node,13188159620,1,Huron Street,51,A;B;C;D;E,A;B;C;D;E,safe
+8,Two Rivers,node,13188159617,1,Neeve Street,115,A;B,A;B,safe
+8,Two Rivers,way,356650876,4,Neeve Street,83,1;2;3;4;5;6;7,1;2;3;4;5;6;7,safe
+8,Two Rivers,way,260551704,7,Victoria Road South,199,1;2;3;4;5;6;7;8,1;2;3;4;5;6;7;8,safe
+8,Two Rivers,way,177695409,6,Wyndham Street South,60,1001-1012;101-112;201-212;301-312;401-412;501-512;601-612;701-712;801-812;901-912;,1001-1012;101-112;201-212;301-312;401-412;501-512;601-612;701-712;801-812;901-912;,safe
+9,Kortright Hills,way,1450184510,1,Downey Road,146,24A;24B,24A;24B,safe
+9,Kortright Hills,way,1450184516,1,Downey Road,146,17A;17B,17A;17B,safe
+9,Kortright Hills,way,1450184517,2,Downey Road,146,18A;18B,18A;18B,safe
+9,Kortright Hills,way,1450184675,1,Downey Road,146,20A;20B,20A;20B,safe
+9,Kortright Hills,way,1450184676,1,Downey Road,146,19A;19B,19A;19B,safe
+9,Kortright Hills,way,1450184680,1,Downey Road,146,22A;22B,22A;22B,safe
+9,Kortright Hills,way,1450184684,1,Downey Road,146,21A;21B,21A;21B,safe
+9,Kortright Hills,way,802839119,3,Downey Road,146,23A;23B,23A;23B,safe
+9,Kortright Hills,way,794182126,3,Hanlon Creek Boulevard,265,1;3;4;5;9,1;3;4;5;9,safe
+9,Kortright Hills,way,794182120,3,Hanlon Creek Boulevard,275,1;2;3;4;5,1;2;3;4;5,safe
+10,Hales Barton,way,1283416466,3,Arkell Road,32,10;11;12;9,10;11;12;9,safe
+10,Hales Barton,way,1283416472,3,Arkell Road,32,17;18;19;20,17;18;19;20,safe
+10,Hales Barton,way,1283416476,3,Arkell Road,32,1;2;3;4,1;2;3;4,safe
+10,Hales Barton,way,1283416486,3,Arkell Road,32,25;26;27;28,25;26;27;28,safe
+10,Hales Barton,way,1443819663,2,Arkell Road,32,21;22;23;24,21;22;23;24,safe
+10,Hales Barton,way,1443819664,2,Arkell Road,32,5;6;7;8,5;6;7;8,safe
+10,Hales Barton,way,1443819665,2,Arkell Road,32,29;30;31;32,29;30;31;32,safe
+10,Hales Barton,way,1443819666,2,Arkell Road,32,13;14;15;16,13;14;15;16,safe
+10,Hales Barton,way,208407926,2,Bayberry Drive,65,C101-C109;C201-C209;C301-C309;C401-C409,C101-C109;C201-C209;C301-C309;C401-C409,safe
+10,Hales Barton,way,801652218,3,Bayberry Drive,71,D101-D112;D201-D212;D301-D312;D401-D409,D101-D112;D201-D212;D301-D312;D401-D409,safe
+10,Hales Barton,way,499045964,4,Gordon Street,1280,101-118;201-219;301-319;401-419;,101-118;201-219;301-319;401-419;,safe
+10,Hales Barton,way,499049867,4,Gordon Street,1284,101-131;201-231;301-331;401-431;,101-131;201-231;301-331;401-431;,safe
+11,Onward Willow,way,502064546,3,Ajax Street,10,401-409;201-209;301-309;101-108,401-409;201-209;301-309;101-108,safe
+11,Onward Willow,way,502064547,2,Ajax Street,7,104-108;205-210;306-311;406-411,104-108;205-210;306-311;406-411,safe
+11,Onward Willow,way,502064548,2,Ajax Street,9,101-103;201-204;301-305;401-405;501-505,101-103;201-204;301-305;401-405;501-505,safe
+11,Onward Willow,way,208356564,2,Bagot Street,105,101-113;201-215;301-315;401-415;B1;B2;B3;B4,101-113;201-215;301-315;401-415;B1;B2;B3;B4,safe
+11,Onward Willow,way,208356615,3,Bagot Street,107,101-113;201-215;301-315;401-415;501-515;601-615;,101-113;201-215;301-315;401-415;501-515;601-615;,safe
+11,Onward Willow,way,1442367112,1,Paisley Road,305,A;B,A;B,safe
+11,Onward Willow,way,1442367111,1,Paisley Road,307,A;B,A;B,safe
+11,Onward Willow,way,208492557,2,Silvercreek Parkway North,106,1;2;4;5;7,1;2;4;5;7,safe
+11,Onward Willow,node,9181710389,1,Silvercreek Parkway North,219,35-37,35-37,safe
+11,Onward Willow,way,1442367349,1,Silvercreek Parkway North,40,47;48,47;48,safe
+11,Onward Willow,way,502064544,3,Silvercreek Parkway North,65,201-210;301-311;101-109;401-410,201-210;301-311;101-109;401-410,safe
+11,Onward Willow,way,502064545,2,Silvercreek Parkway North,75,401-408;201-208;301-308;101-107,401-408;201-208;301-308;101-107,safe
+11,Onward Willow,way,208492512,2,Willow Road,234,101-104;201-208;301-308,101-104;201-208;301-308,safe
+12,Pine Ridge - Westminster Woods,way,878035921,3,Bard Boulevard,106,101-114;201-220;301-320;401-418;,101-114;201-220;301-320;401-418;,safe
+12,Pine Ridge - Westminster Woods,way,878035915,3,Colonial Drive,2,101-110;201-211;301-313;401-414;,101-110;201-211;301-313;401-414;,safe
+12,Pine Ridge - Westminster Woods,way,802540407,2,Frederick Drive,100,1;10;11;12;13;14;15;16;2;3;4;5;6;7;8;9,1;10;11;12;13;14;15;16;2;3;4;5;6;7;8;9,safe
+12,Pine Ridge - Westminster Woods,way,802540411,2,Frederick Drive,101,1;10;11;12;13;14;15;16;2;3;4;5;6;7;8;9,1;10;11;12;13;14;15;16;2;3;4;5;6;7;8;9,safe
+12,Pine Ridge - Westminster Woods,way,802540408,4,Frederick Drive,64,101-104;201-204;301-304;401-404,101-104;201-204;301-304;401-404,safe
+12,Pine Ridge - Westminster Woods,way,950227736,2,Frederick Drive,65,1;2;3;4;5;6,1;2;3;4;5;6,safe
+12,Pine Ridge - Westminster Woods,way,801657260,2,Gordon Street,1440,101-122;201-223;301-323;401-423;,101-122;201-223;301-323;401-423;,safe
+12,Pine Ridge - Westminster Woods,way,217386048,4,Gordon Street,1474,C1;C2;C3,C1;C2;C3,safe
+12,Pine Ridge - Westminster Woods,way,837634910,3,Kingsbury Square,35,101-109;116-127;201-210;212;214-227;301-327;401-427;,101-109;116-127;201-210;212;214-227;301-327;401-427;,safe
+12,Pine Ridge - Westminster Woods,way,802540405,2,Kingsbury Square,45,101-112;201-214;301-314;401-414;,101-112;201-214;301-314;401-414;,safe
+12,Pine Ridge - Westminster Woods,way,802540406,2,Kingsbury Square,67,101-112;201-214;301-314;401-414;,101-112;201-214;301-314;401-414;,safe
+12,Pine Ridge - Westminster Woods,way,287946730,3,Lynnmore Street,60,101-112;201-214;301-314;401-414;,101-112;201-214;301-314;401-414;,safe
+12,Pine Ridge - Westminster Woods,way,287946734,2,Waterford Drive,19,101-112;201-214;301-314;401-414;,101-112;201-214;301-314;401-414;,safe
+12,Pine Ridge - Westminster Woods,way,287946731,2,Waterford Drive,43,101-112;201-214;301-314;401-414;,101-112;201-214;301-314;401-414;,safe
+13,Non-Residential - A,way,1436604416,1,Burns Drive,80,11;12,11;12,safe
+13,Non-Residential - A,way,1436604417,1,Burns Drive,80,13;14,13;14,safe
+13,Non-Residential - A,way,1436604418,1,Burns Drive,80,15;16,15;16,safe
+13,Non-Residential - A,way,1436604419,1,Burns Drive,80,17;18,17;18,safe
+13,Non-Residential - A,way,632319013,3,Burns Drive,80,19;20,19;20,safe
+13,Non-Residential - A,way,1436604420,1,Burns Drive,86,1;2,1;2,safe
+13,Non-Residential - A,way,1436604421,1,Burns Drive,86,3;4,3;4,safe
+13,Non-Residential - A,way,1436604422,1,Burns Drive,86,5;6,5;6,safe
+13,Non-Residential - A,way,1436604423,1,Burns Drive,86,7;8,7;8,safe
+13,Non-Residential - A,way,632319014,3,Burns Drive,86,10;9,10;9,safe
+13,Non-Residential - A,way,344325628,5,Elmira Road North,355,100-140,100-140,safe
+13,Non-Residential - A,node,9139124188,1,Elmira Road North,355,119;121,119;121,safe
+13,Non-Residential - A,way,399149535,3,Elmira Road North,473,1;2;3;4,1;2;3;4,safe
+13,Non-Residential - A,way,802121047,2,Monarch Road,27,1;2;3;4;5;6,1;2;3;4;5;6,safe
+13,Non-Residential - A,node,8908985078,2,Woodlawn Road West,450,4;5;6,4;5;6,safe
+13,Non-Residential - A,node,8908985079,2,Woodlawn Road West,450,1;2,1;2,safe
+14,June Avenue,way,475631431,2,Arrow Road,31,1;10;11;2;3;4;5;6;7;8;9,1;10;11;2;3;4;5;6;7;8;9,safe
+14,June Avenue,way,1436604427,1,Burns Drive,11,13;14;15;16,13;14;15;16,safe
+14,June Avenue,way,802123329,2,Burns Drive,11,17;18;19;20,17;18;19;20,safe
+14,June Avenue,way,1436604432,1,Burns Drive,15,21;22;23;24,21;22;23;24,safe
+14,June Avenue,way,802123326,2,Burns Drive,15,25;26;27;28,25;26;27;28,safe
+14,June Avenue,way,1436604433,1,Burns Drive,17,35;36;37;38;39;40,35;36;37;38;39;40,safe
+14,June Avenue,way,802123325,2,Burns Drive,17,29;30;31;32;33;34,29;30;31;32;33;34,safe
+14,June Avenue,way,1436604430,1,Burns Drive,19,41;42;43;44,41;42;43;44,safe
+14,June Avenue,way,1436604431,1,Burns Drive,19,49;50;51;52,49;50;51;52,safe
+14,June Avenue,way,802123324,2,Burns Drive,19,45;46;47;48,45;46;47;48,safe
+14,June Avenue,way,1436604425,1,Burns Drive,3,1;2;3;4,1;2;3;4,safe
+14,June Avenue,way,1436604426,1,Burns Drive,3,5;6;7;8,5;6;7;8,safe
+14,June Avenue,way,802123328,2,Burns Drive,3,10;11;12;9,10;11;12;9,safe
+14,June Avenue,way,1436604428,1,Burns Drive,9,53;54;55;56;57;58,53;54;55;56;57;58,safe
+14,June Avenue,way,1436604429,1,Burns Drive,9,59;60;61;62;63;64,59;60;61;62;63;64,safe
+14,June Avenue,way,802123327,2,Burns Drive,9,65;66;67;68;69;70,65;66;67;68;69;70,safe
+14,June Avenue,way,1436028337,1,Woodlawn Road East,70,101-114;201-218;301-318;,101-114;201-218;301-318;,safe
+14,June Avenue,way,353492157,4,Woodlawn Road East,72,101-103;201-207;301-307;401-407;501-507;601-607;,101-103;201-207;301-307;401-407;501-507;601-607;,safe
+15,Waverley,way,761343575,2,Country Club Drive,120,11;12;14-33;,11;12;14-33;,safe
+15,Waverley,way,761343576,2,Country Club Drive,120,1-10,1-10,safe
+15,Waverley,way,761343584,2,Country Club Drive,120,58;59;60;61,58;59;60;61,safe
+15,Waverley,way,931652638,2,King Street,108,A;B;C,A;B;C,safe
+15,Waverley,way,802124534,3,Marilyn Drive,16,101;102;103;104;105;201;202;203;204;205;206;301;302;303;304;305;306,101;102;103;104;105;201;202;203;204;205;206;301;302;303;304;305;306,safe
+15,Waverley,way,178085148,5,Marilyn Drive,22,103-108;201-208;301-308;401-408;501-508;601-608;701-708;801-808;901-908;,103-108;201-208;301-308;401-408;501-508;601-608;701-708;801-808;901-908;,safe
+15,Waverley,way,178085152,6,Marilyn Drive,24,1001-1006;101-103;201-205;301-306;401-406;501-506;601-606;701-706;801-806;901-906;,1001-1006;101-103;201-205;301-306;401-406;501-506;601-606;701-706;801-806;901-906;,safe
+15,Waverley,node,13165533695,1,Norwich Street East,110,1;2;4,1;2;4,safe
+15,Waverley,way,242662848,5,Speedvale Avenue East,8,A;B;C;E;G,A;B;C;E;G,safe
+15,Waverley,way,802125028,2,Sunnylea Crescent,1,1;2;3;4;5;6;7;8,1;2;3;4;5;6;7;8,safe
+15,Waverley,way,802125026,2,Sunnylea Crescent,2,1;2;3;4;5;6;7;8,1;2;3;4;5;6;7;8,safe
+15,Waverley,way,802125029,2,Sunnylea Crescent,3,1;2;3;4;5;6;7;8,1;2;3;4;5;6;7;8,safe
+15,Waverley,way,802125027,2,Sunnylea Crescent,4,1;2;3;4;5;6;7;8,1;2;3;4;5;6;7;8,safe
+15,Waverley,way,803281467,4,Woodlawn Road East,100,5;6,5;6,safe
+15,Waverley,way,803281468,4,Woodlawn Road East,100,1;2,1;2,safe
+15,Waverley,way,954036919,2,Woodlawn Road East,100,3;4,3;4,safe
+15,Waverley,way,954036924,2,Woodlawn Road East,100,7;8,7;8,safe
+15,Waverley,way,178085150,5,Woodlawn Road East,19,101-115;201-216;301-316;401-416;501-516;601-616;701-716;801-816;901-915;,101-115;201-216;301-316;401-416;501-516;601-616;701-716;801-816;901-915;,safe
+15,Waverley,way,178085151,4,Woodlawn Road East,23,101-110;201-212;301-312;401-412;501-512;601-612;701-712;801-812;901-909;911;,101-110;201-212;301-312;401-412;501-512;601-612;701-712;801-812;901-909;911;,safe
+16,Old University,way,1349287614,2,Janefield Avenue,176,228;230,228;230,safe
+16,Old University,way,1349287615,2,Janefield Avenue,176,226;232,226;232,safe
+16,Old University,way,1349287616,2,Janefield Avenue,176,224;234,224;234,safe
+16,Old University,way,1349287617,2,Janefield Avenue,176,222;236,222;236,safe
+16,Old University,way,1349287618,2,Janefield Avenue,176,220;238,220;238,safe
+16,Old University,way,1349287989,2,Janefield Avenue,176,154;202,154;202,safe
+16,Old University,way,1349287990,2,Janefield Avenue,176,156;200,156;200,safe
+16,Old University,way,1349287997,2,Janefield Avenue,176,152;204,152;204,safe
+16,Old University,way,1349319931,2,Janefield Avenue,176,308;318,308;318,safe
+16,Old University,way,1349319932,2,Janefield Avenue,176,310;316,310;316,safe
+16,Old University,way,1349319933,2,Janefield Avenue,176,312;314,312;314,safe
+16,Old University,way,1349291101,2,Janefield Avenue,224,346;352,346;352,safe
+16,Old University,way,1349291102,2,Janefield Avenue,224,348;350,348;350,safe
+16,Old University,way,801566989,3,Janefield Avenue,224,344;354,344;354,safe
+16,Old University,way,1349266419,2,Janefield Avenue,454,101-108;201-208,101-108;201-208,safe
+16,Old University,way,801566997,4,Janefield Avenue,456,109-118;209-218,109-118;209-218,safe
+16,Old University,way,1349266429,2,Janefield Avenue,458,119-126;219-226,119-126;219-226,safe
+16,Old University,way,801567001,2,Janefield Avenue,460,127-134;227-234,127-134;227-234,safe
+16,Old University,way,1349287991,2,Janefield Avenue,74,158;198,158;198,safe
+16,Old University,way,1349287992,2,Janefield Avenue,74,160;196,160;196,safe
+16,Old University,way,1349287993,2,Janefield Avenue,74,162;194,162;194,safe
+16,Old University,way,1349287996,2,Janefield Avenue,74,164;192,164;192,safe
+16,Old University,way,802811015,4,Manor Park Crescent,25,13;14;15,13;14;15,safe
+16,Old University,way,802815631,3,Water Street,119,101;102;103;104;201;202;203;204,101;102;103;104;201;202;203;204,safe
+17,Downtown - Sunny Acres,way,1076453164,4,Beechwood Avenue,83,1-16,1-16,safe
+17,Downtown - Sunny Acres,way,802123352,5,Bristol Street,281,201-204;301-304;401-404;501-504;601-604;701-704;801-804,201-204;301-304;401-404;501-504;601-604;701-704;801-804,safe
+17,Downtown - Sunny Acres,way,802123351,5,Bristol Street,283,201-206;301-306;401-406;501-506;601-604,201-206;301-306;401-406;501-506;601-604,safe
+17,Downtown - Sunny Acres,way,413398803,6,Gordon Street,31,11;12;14;15;A14;16;17;18;19;2B;1A;A2;1;2;3;4;5;6;7;8;9;20;10,11;12;14;15;A14;16;17;18;19;2B;1A;A2;1;2;3;4;5;6;7;8;9;20;10,safe
+17,Downtown - Sunny Acres,node,13150618368,1,Gordon Street,5,208;308;408;507;607,208;308;408;507;607,safe
+17,Downtown - Sunny Acres,node,13150618369,1,Gordon Street,5,206;306;406;506;606,206;306;406;506;606,safe
+17,Downtown - Sunny Acres,node,13150618370,1,Gordon Street,5,205;305;405;505;605,205;305;405;505;605,safe
+17,Downtown - Sunny Acres,node,13150618371,1,Gordon Street,5,204;304;404;504;604,204;304;404;504;604,safe
+17,Downtown - Sunny Acres,node,13150618372,1,Gordon Street,5,203;303;403;503;603,203;303;403;503;603,safe
+17,Downtown - Sunny Acres,node,13150618373,1,Gordon Street,5,202;302;402;502;602;102B,202;302;402;502;602;102B,safe
+17,Downtown - Sunny Acres,node,13150618374,1,Gordon Street,5,201;301;401;501;601;102A,201;301;401;501;601;102A,safe
+17,Downtown - Sunny Acres,node,13150618375,1,Gordon Street,5,100;200;300;400;500;600,100;200;300;400;500;600,safe
+17,Downtown - Sunny Acres,node,13150618376,1,Gordon Street,5,212;312;412;107,212;312;412;107,safe
+17,Downtown - Sunny Acres,node,13150618377,1,Gordon Street,5,211;311;411;106,211;311;411;106,safe
+17,Downtown - Sunny Acres,node,13150618378,1,Gordon Street,5,210;310;410;105,210;310;410;105,safe
+17,Downtown - Sunny Acres,node,13150618379,1,Gordon Street,5,209;309;409,209;309;409,safe
+17,Downtown - Sunny Acres,node,13150618380,1,Gordon Street,5,207;307;407,207;307;407,safe
+17,Downtown - Sunny Acres,way,177696219,6,MacDonell Street,160,101;1001-1009;1101-1109;1201-1209;1301-1309;1401-1409;1501-1509;1601-1609;1701-1705;1801-1804;301-308;401-406;501-509;601-609;701-709;801-809;901-909;,101;1001-1009;1101-1109;1201-1209;1301-1309;1401-1409;1501-1509;1601-1609;1701-1705;1801-1804;301-308;401-406;501-509;601-609;701-709;801-809;901-909;,safe
+17,Downtown - Sunny Acres,node,13159082381,1,Quebec Street,21,202;203;204,202;203;204,safe
+17,Downtown - Sunny Acres,way,1431616569,1,Surrey Street East,47,3C;1;2;4;5;6;7;8;3A;3B,3C;1;2;4;5;6;7;8;3A;3B,safe
+17,Downtown - Sunny Acres,way,493155848,2,Surrey Street East,49,11;22;23A;23B;33A;33B;23C;33C;31;32;21,11;22;23A;23B;33A;33B;23C;33C;31;32;21,safe
+17,Downtown - Sunny Acres,way,923609578,4,Waterloo Avenue,121,110;101;102;103;104;105;106;107;108;109,110;101;102;103;104;105;106;107;108;109,safe
+17,Downtown - Sunny Acres,way,819734257,5,Waterloo Avenue,210,A;B,A;B,safe
+17,Downtown - Sunny Acres,way,819734215,6,Waterloo Avenue,358,1001-1008;1101-1108;101-106;201-208;301-308;401-408;501-508;601-608;701-708;801-808;901-908;,1001-1008;1101-1108;101-106;201-208;301-308;401-408;501-508;601-608;701-708;801-808;901-908;,safe
+17,Downtown - Sunny Acres,way,819734214,3,Waterloo Avenue,360,107;108;209;210;211;212,107;108;209;210;211;212,safe
+17,Downtown - Sunny Acres,way,675436618,7,Wellington Street East,150,1001-1008;101-104;1101-1108;1201-1208;1301-1308;1401-1408;1501-1508;1601-1606;1701-1704;1801-1802;301-314;401-414;501-514;601-614;701-707;801-808;901-908;,1001-1008;101-104;1101-1108;1201-1208;1301-1308;1401-1408;1501-1508;1601-1606;1701-1704;1801-1802;301-314;401-414;501-514;601-614;701-707;801-808;901-908;,safe
+18,Hanlon Creek,way,801612614,5,Christopher Court,8,101-107;201-207;301-308;401-408;501-508;601-608;701-708,101-107;201-207;301-308;401-408;501-508;601-608;701-708,safe
+18,Hanlon Creek,way,215069449,4,Edinburgh Road South,511,101;101A;102;201;202,101;101A;102;201;202,safe
+18,Hanlon Creek,way,743421919,3,Gordon Street,803,1;10;11;12;13;14;15;2;3;4;5;6;7;8;9,1;10;11;12;13;14;15;2;3;4;5;6;7;8;9,safe
+18,Hanlon Creek,way,743421918,3,Gordon Street,807,1;10;11;12;2;3;4;5;6;7;8;9,1;10;11;12;2;3;4;5;6;7;8;9,safe
+18,Hanlon Creek,way,800638895,2,Gordon Street,941,65;66;67;68,65;66;67;68,safe
+18,Hanlon Creek,way,800638896,2,Gordon Street,941,61;62;63;64,61;62;63;64,safe
+18,Hanlon Creek,way,800638897,2,Gordon Street,941,57;58;59;60,57;58;59;60,safe
+18,Hanlon Creek,way,800638898,2,Gordon Street,941,53;54;55;56,53;54;55;56,safe
+18,Hanlon Creek,way,800638899,2,Gordon Street,941,49;50;51;52,49;50;51;52,safe
+18,Hanlon Creek,way,800638900,2,Gordon Street,941,45;46;47;48,45;46;47;48,safe
+18,Hanlon Creek,way,800638901,2,Gordon Street,941,41;42;43;44,41;42;43;44,safe
+18,Hanlon Creek,way,800638902,2,Gordon Street,941,37;38;39;40,37;38;39;40,safe
+18,Hanlon Creek,way,800638903,2,Gordon Street,941,21;22;23;24,21;22;23;24,safe
+18,Hanlon Creek,way,800638904,2,Gordon Street,941,17;18;19;20,17;18;19;20,safe
+18,Hanlon Creek,way,800638905,2,Gordon Street,941,13;14;15;16,13;14;15;16,safe
+18,Hanlon Creek,way,800638906,2,Gordon Street,941,10;11;12;9,10;11;12;9,safe
+18,Hanlon Creek,way,800638907,2,Gordon Street,941,5;6;7;8,5;6;7;8,safe
+18,Hanlon Creek,way,800638908,2,Gordon Street,941,1;2;3;4,1;2;3;4,safe
+18,Hanlon Creek,way,800638909,2,Gordon Street,941,33;34;35;36,33;34;35;36,safe
+18,Hanlon Creek,way,800638910,2,Gordon Street,941,29;30;31;32,29;30;31;32,safe
+18,Hanlon Creek,way,800638911,2,Gordon Street,941,25;26;27;28,25;26;27;28,safe
+18,Hanlon Creek,way,800638912,2,Gordon Street,941,69;70;71;72,69;70;71;72,safe
+18,Hanlon Creek,way,212559741,6,Scottsdale Drive,615,A;B,A;B,safe
+18,Hanlon Creek,way,212559742,5,Scottsdale Drive,649,100;101,100;101,safe
+18,Hanlon Creek,way,212559745,4,Scottsdale Drive,649,1;2;2B;3;4;5,1;2;2B;3;4;5,safe
+18,Hanlon Creek,way,215069452,14,Stone Road West,304,1;2;3;4,1;2;3;4,safe
+18,Hanlon Creek,way,215069453,4,Stone Road West,304,10;11;12;7;8;9,10;11;12;7;8;9,safe
+19,Grange Hill East,way,802544822,2,Airpark Place,35,1;3,1;3,safe
+19,Grange Hill East,way,802544823,2,Airpark Place,45,1;2;3;4;5;6;7;8,1;2;3;4;5;6;7;8,safe
+19,Grange Hill East,way,803283640,3,Auden Road,394,29;30;31;32;33;34;35;36;37;38;39,29;30;31;32;33;34;35;36;37;38;39,safe
+19,Grange Hill East,way,803283643,3,Auden Road,394,11;12;13;14;15;16;17;18;19,11;12;13;14;15;16;17;18;19,safe
+19,Grange Hill East,way,937956322,3,Auden Road,467,14;15;16;17;18;19;20,14;15;16;17;18;19;20,safe
+19,Grange Hill East,way,937956323,3,Auden Road,467,39;40;41;42;43;44,39;40;41;42;43;44,safe
+19,Grange Hill East,way,937956324,3,Auden Road,467,10;11;12;13;7;8;9,10;11;12;13;7;8;9,safe
+19,Grange Hill East,way,937956325,3,Auden Road,467,1;2;3;4;5;6,1;2;3;4;5;6,safe
+19,Grange Hill East,way,937956326,3,Auden Road,467,33;34;35;36;37;38,33;34;35;36;37;38,safe
+19,Grange Hill East,way,937956327,3,Auden Road,467,27;28;29;30;31;32,27;28;29;30;31;32,safe
+19,Grange Hill East,way,937956329,3,Auden Road,467,21;22;23;24;25;26,21;22;23;24;25;26,safe
+19,Grange Hill East,way,937552909,3,Auden Road,470,37;38;39;40,37;38;39;40,safe
+19,Grange Hill East,way,937552911,3,Auden Road,470,32;33;34;35;36,32;33;34;35;36,safe
+19,Grange Hill East,way,937552912,3,Auden Road,470,26;27;28;29;30;31,26;27;28;29;30;31,safe
+19,Grange Hill East,way,937552913,3,Auden Road,470,41;42;43;44,41;42;43;44,safe
+19,Grange Hill East,way,937552914,3,Auden Road,470,45;46;47;48,45;46;47;48,safe
+19,Grange Hill East,way,937552915,3,Auden Road,470,22;23,22;23,safe
+19,Grange Hill East,way,937552916,3,Auden Road,470,16;17,16;17,safe
+19,Grange Hill East,way,937552917,3,Auden Road,470,10;11;12;13;7;8;9,10;11;12;13;7;8;9,safe
+19,Grange Hill East,way,937552918,3,Auden Road,470,1;2;3;4;5;6,1;2;3;4;5;6,safe
+19,Grange Hill East,way,939208872,2,Cityview Drive South,5,101;102;103;104;105;106;107;108,101;102;103;104;105;106;107;108,safe
+19,Grange Hill East,way,939208873,2,Cityview Drive South,7,201;202;203;204;205;206;207;208;209;210;211;212,201;202;203;204;205;206;207;208;209;210;211;212,safe
+19,Grange Hill East,way,939208874,2,Cityview Drive South,9,301;302;303;304;305;306;307;308,301;302;303;304;305;306;307;308,safe
+19,Grange Hill East,way,803283699,2,Eastview Road,66,10;11;7;8;9,10;11;7;8;9,safe
+19,Grange Hill East,way,333632635,3,Grange Road,415,101-111;201-213;301-313;401-413;,101-111;201-213;301-313;401-413;,safe
+19,Grange Hill East,way,803283648,2,Mountford Drive,35,17-32,17-32,safe
+19,Grange Hill East,way,803283649,2,Mountford Drive,35,65-88,65-88,safe
+19,Grange Hill East,way,942414532,2,Shackleton Drive,20,44;45;46;47,44;45;46;47,safe
+19,Grange Hill East,way,803283670,2,Summit Ridge Drive,104,101-112;201-212;301-312;401-412;,101-112;201-212;301-312;401-412;,safe
+19,Grange Hill East,way,803283669,2,Summit Ridge Drive,108,101-112;201-212;301-312;401-412;LL01;LL02;LL03;LL04;,101-112;201-212;301-312;401-412;LL01;LL02;LL03;LL04;,safe
+19,Grange Hill East,way,941667226,2,Watson Parkway North,308,101-120;201-221;301-321;401-421;,101-120;201-221;301-321;401-421;,safe
+20,Brant,way,1002133611,3,Carere Crescent,15,9A;9B,9A;9B,safe
+20,Brant,way,1002133612,3,Carere Crescent,15,11A;11B,11A;11B,safe
+20,Brant,way,1002133613,3,Carere Crescent,15,13A;13B,13A;13B,safe
+20,Brant,way,1002133614,3,Carere Crescent,15,15A;15B,15A;15B,safe
+20,Brant,way,1002133731,3,Carere Crescent,15,23A;23B,23A;23B,safe
+20,Brant,way,1002133737,3,Carere Crescent,15,19A;19B,19A;19B,safe
+20,Brant,way,1002133738,3,Carere Crescent,15,21A;21B,21A;21B,safe
+20,Brant,way,1002134901,3,Carere Crescent,15,37A;37B,37A;37B,safe
+20,Brant,way,1002134902,3,Carere Crescent,15,36A;36B,36A;36B,safe
+20,Brant,way,1002134903,3,Carere Crescent,15,34A;34B,34A;34B,safe
+20,Brant,way,1002134904,3,Carere Crescent,15,35A;35B,35A;35B,safe
+20,Brant,way,1002134905,3,Carere Crescent,15,32A;32B,32A;32B,safe
+20,Brant,way,1002134906,3,Carere Crescent,15,33A;33B,33A;33B,safe
+20,Brant,way,1002135386,3,Carere Crescent,15,42A;42B,42A;42B,safe
+20,Brant,way,1002135387,3,Carere Crescent,15,41A;41B,41A;41B,safe
+20,Brant,way,1002135388,3,Carere Crescent,15,40A;40B,40A;40B,safe
+20,Brant,way,1002135389,3,Carere Crescent,15,39A;39B,39A;39B,safe
+20,Brant,way,1002135390,3,Carere Crescent,15,38A;38B,38A;38B,safe
+20,Brant,way,1002135571,3,Carere Crescent,15,48A;48B,48A;48B,safe
+20,Brant,way,1002135572,3,Carere Crescent,15,47A;47B,47A;47B,safe
+20,Brant,way,1002135573,3,Carere Crescent,15,46A;46B,46A;46B,safe
+20,Brant,way,1002135574,3,Carere Crescent,15,45A;45B,45A;45B,safe
+20,Brant,way,1002135575,3,Carere Crescent,15,44A;44B,44A;44B,safe
+20,Brant,way,1002135576,3,Carere Crescent,15,43A;43B,43A;43B,safe
+20,Brant,way,1002136083,3,Carere Crescent,15,29A;29B,29A;29B,safe
+20,Brant,way,1002136084,3,Carere Crescent,15,31A;31B,31A;31B,safe
+20,Brant,way,1002136085,3,Carere Crescent,15,30A;30B,30A;30B,safe
+20,Brant,way,1002136091,3,Carere Crescent,15,24A;24B,24A;24B,safe
+20,Brant,way,1002136092,3,Carere Crescent,15,25A;25B,25A;25B,safe
+20,Brant,way,1002136093,3,Carere Crescent,15,26A;26B,26A;26B,safe
+20,Brant,way,1002136094,3,Carere Crescent,15,27A;27B,27A;27B,safe
+20,Brant,way,803283639,4,Carere Crescent,15,28A;28B,28A;28B,safe
+21,Parkwood Gardens,way,1441651733,1,Fife Road,190,59;60,59;60,safe
+21,Parkwood Gardens,way,1441651734,1,Fife Road,190,57;58,57;58,safe
+21,Parkwood Gardens,way,1441651735,1,Fife Road,190,55;56,55;56,safe
+21,Parkwood Gardens,way,1441651736,1,Fife Road,190,51;52,51;52,safe
+21,Parkwood Gardens,way,1441651737,1,Fife Road,190,49;50,49;50,safe
+21,Parkwood Gardens,way,1441651738,1,Fife Road,190,47;48,47;48,safe
+21,Parkwood Gardens,way,1441651739,1,Fife Road,190,77;78,77;78,safe
+21,Parkwood Gardens,way,1441651740,1,Fife Road,190,79;80,79;80,safe
+21,Parkwood Gardens,way,1441651741,1,Fife Road,190,81;82,81;82,safe
+21,Parkwood Gardens,way,1441651742,1,Fife Road,190,61;62,61;62,safe
+21,Parkwood Gardens,way,1441651743,1,Fife Road,190,63;64,63;64,safe
+21,Parkwood Gardens,way,1441651744,1,Fife Road,190,65;66,65;66,safe
+21,Parkwood Gardens,way,1441651745,1,Fife Road,190,67;68,67;68,safe
+21,Parkwood Gardens,way,1441651746,1,Fife Road,190,69;70,69;70,safe
+21,Parkwood Gardens,way,1441651747,1,Fife Road,190,71;72,71;72,safe
+21,Parkwood Gardens,way,1441651748,1,Fife Road,190,73;74,73;74,safe
+21,Parkwood Gardens,way,1441651749,1,Fife Road,190,42;43,42;43,safe
+21,Parkwood Gardens,way,1441651750,1,Fife Road,190,40;41,40;41,safe
+21,Parkwood Gardens,way,1441651751,1,Fife Road,190,38;39,38;39,safe
+21,Parkwood Gardens,way,1441651752,1,Fife Road,190,34;35,34;35,safe
+21,Parkwood Gardens,way,1441651753,1,Fife Road,190,32;33,32;33,safe
+21,Parkwood Gardens,way,1441651754,1,Fife Road,190,30;31,30;31,safe
+21,Parkwood Gardens,way,1441651755,1,Fife Road,190,100;99,100;99,safe
+21,Parkwood Gardens,way,1441651756,1,Fife Road,190,97;98,97;98,safe
+21,Parkwood Gardens,way,1441651757,1,Fife Road,190,95;96,95;96,safe
+21,Parkwood Gardens,way,1441651758,1,Fife Road,190,93;94,93;94,safe
+21,Parkwood Gardens,way,1441651759,1,Fife Road,190,91;92,91;92,safe
+21,Parkwood Gardens,way,1441651760,1,Fife Road,190,89;90,89;90,safe
+21,Parkwood Gardens,way,1441651761,1,Fife Road,190,87;88,87;88,safe
+21,Parkwood Gardens,way,921942596,2,Fife Road,190,36;37,36;37,safe
+21,Parkwood Gardens,way,921942597,2,Fife Road,190,28;29,28;29,safe
+21,Parkwood Gardens,way,921942598,2,Fife Road,190,85;86,85;86,safe
+21,Parkwood Gardens,way,921942599,2,Fife Road,190,83;84,83;84,safe
+21,Parkwood Gardens,way,921942600,2,Fife Road,190,75;76,75;76,safe
+21,Parkwood Gardens,way,921942601,2,Fife Road,190,45;46,45;46,safe
+21,Parkwood Gardens,way,921942602,2,Fife Road,190,53;54,53;54,safe
+21,Parkwood Gardens,way,413943417,3,Paisley Road,901,101-107;201-209;301-309;401-409,101-107;201-209;301-309;401-409,safe
+22,Exhibition Park,way,925775122,3,Cardigan Street,122,1;2;3;4,1;2;3;4,safe
+22,Exhibition Park,way,242663900,4,Cardigan Street,60,101-108;201-210,101-108;201-210,safe
+22,Exhibition Park,way,1430415280,1,Dublin Street North,124,A;B,A;B,safe
+22,Exhibition Park,way,925437750,3,Dublin Street North,126,A;B,A;B,safe
+22,Exhibition Park,way,1042083497,4,Edinburgh Road North,395,105-108;110-114;201-207;209-213;217;301-307;309-313;317;401-407;409-417;501-507;509-513;517;601-607;609-613;617;701-707;709-713;717;,105-108;110-114;201-207;209-213;217;301-307;309-313;317;401-407;409-417;501-507;509-513;517;601-607;609-613;617;701-707;709-713;717;,safe
+22,Exhibition Park,way,926452787,3,Exhibition Street,253,A;B;C;D;E;F;G;H;I;J;K,A;B;C;D;E;F;G;H;I;J;K,safe
+22,Exhibition Park,way,926452788,3,Exhibition Street,263,A;B;C;D;E;F;G;H;I;J;K,A;B;C;D;E;F;G;H;I;J;K,safe
+22,Exhibition Park,way,925746826,4,Liverpool Street,23,A;B;C,A;B;C,safe
+22,Exhibition Park,way,1430415277,1,Liverpool Street,25,A;B;C,A;B;C,safe
+22,Exhibition Park,way,925796246,4,Mctague Street,42,A;B;C,A;B;C,safe
+22,Exhibition Park,node,13164297972,1,Mont Street,1,1;2;3;4;5;6,1;2;3;4;5;6,safe
+22,Exhibition Park,node,13148757305,1,Paisley Street,210,A;B;C,A;B;C,safe
+22,Exhibition Park,way,925775200,3,Suffolk Street West,57,101;102;203;204;305;306;407;408;PH,101;102;203;204;305;306;407;408;PH,safe
+22,Exhibition Park,way,1369220537,3,Westmount Road,120,2;4,2;4,safe
+22,Exhibition Park,way,1369220538,3,Westmount Road,120,6;8,6;8,safe
+22,Exhibition Park,way,1369220539,3,Westmount Road,120,10;12,10;12,safe
+22,Exhibition Park,way,1369220540,3,Westmount Road,120,13;14,13;14,safe
+22,Exhibition Park,way,1369220541,3,Westmount Road,120,5;7,5;7,safe
+22,Exhibition Park,way,1369220542,3,Westmount Road,120,11;9,11;9,safe
+22,Exhibition Park,way,1369220543,3,Westmount Road,120,1;3,1;3,safe
+22,Exhibition Park,way,1369220544,3,Westmount Road,120,15;16,15;16,safe
+22,Exhibition Park,way,1369220545,3,Westmount Road,120,18;20,18;20,safe
+22,Exhibition Park,way,1369220546,3,Westmount Road,120,22;24,22;24,safe
+22,Exhibition Park,way,1369220547,3,Westmount Road,120,26;28,26;28,safe
+22,Exhibition Park,way,1369220548,3,Westmount Road,120,17;19,17;19,safe
+22,Exhibition Park,way,1369220549,3,Westmount Road,120,21;23,21;23,safe
+22,Exhibition Park,way,1369220550,3,Westmount Road,120,25;27,25;27,safe
+22,Exhibition Park,way,123242060,5,Woolwich Street,200,101;102;201;103;202;203;204,101;102;201;103;202;203;204,safe
+22,Exhibition Park,way,123418400,3,Woolwich Street,210,A;B;C,A;B;C,safe
+22,Exhibition Park,node,13165539606,1,Woolwich Street,323,A;B,A;B,safe
+22,Exhibition Park,node,13165539605,1,Woolwich Street,325,A;B,A;B,safe
+22,Exhibition Park,way,882913721,2,Woolwich Street,560,A1;A2;A3;A4;A5;A6;A7;A8;A9,A1;A2;A3;A4;A5;A6;A7;A8;A9,safe
+22,Exhibition Park,way,882913722,2,Woolwich Street,560,B1;B2;B3;B4;B5;B6;B7;B8;B9,B1;B2;B3;B4;B5;B6;B7;B8;B9,safe
+22,Exhibition Park,node,13159082353,1,Wyndham Street North,116,1;2;3;4,1;2;3;4,safe
+22,Exhibition Park,way,1344915931,3,Wyndham Street North,143,201;202;203;204;301,201;202;203;204;301,safe
+22,Exhibition Park,node,12314152369,2,Yarmouth Street,31,101;201;301;202;302;203;303;204;304;106;205;305;206;107;306;207;307,101;201;301;202;302;203;303;204;304;106;205;305;206;107;306;207;307,safe
+22,Exhibition Park,node,12314155787,2,Yarmouth Street,55,201-209; 301-309; 401-409; 501-509; 601-609; 701-709; 801-809; 901-909;,201-209; 301-309; 401-409; 501-509; 601-609; 701-709; 801-809; 901-909;,safe
+22,Exhibition Park,node,3944996090,3,Yarmouth Street,77,A;B;C;D,A;B;C;D,safe
+22,Exhibition Park,way,409855358,3,Yarmouth Street,86,101-104; 201-208; 301-306,101-104; 201-208; 301-306,safe
+23,West Willow Woods,way,1437043928,1,Flaherty Drive,75,49;50,49;50,safe
+23,West Willow Woods,way,1437043929,1,Flaherty Drive,75,45;46,45;46,safe
+23,West Willow Woods,way,1437043930,1,Flaherty Drive,75,41;42,41;42,safe
+23,West Willow Woods,way,1437043931,1,Flaherty Drive,75,37;38,37;38,safe
+23,West Willow Woods,way,1437043932,1,Flaherty Drive,75,35;36,35;36,safe
+23,West Willow Woods,way,1437043933,1,Flaherty Drive,75,31;32,31;32,safe
+23,West Willow Woods,way,1437043934,1,Flaherty Drive,75,33;34,33;34,safe
+23,West Willow Woods,way,1437043935,1,Flaherty Drive,75,3;4,3;4,safe
+23,West Willow Woods,way,1437043936,1,Flaherty Drive,75,5;6,5;6,safe
+23,West Willow Woods,way,1437043937,1,Flaherty Drive,75,10;9,10;9,safe
+23,West Willow Woods,way,1437043938,1,Flaherty Drive,75,11;12,11;12,safe
+23,West Willow Woods,way,1437043939,1,Flaherty Drive,75,13;14,13;14,safe
+23,West Willow Woods,way,1437043940,1,Flaherty Drive,75,17;18,17;18,safe
+23,West Willow Woods,way,1437043941,1,Flaherty Drive,75,19;20,19;20,safe
+23,West Willow Woods,way,1437043942,1,Flaherty Drive,75,25;26,25;26,safe
+23,West Willow Woods,way,1437043943,1,Flaherty Drive,75,23;24,23;24,safe
+23,West Willow Woods,way,1437043944,1,Flaherty Drive,75,21;22,21;22,safe
+23,West Willow Woods,way,912221550,3,Flaherty Drive,75,39;40,39;40,safe
+23,West Willow Woods,way,912221551,3,Flaherty Drive,75,43;44,43;44,safe
+23,West Willow Woods,way,912221552,3,Flaherty Drive,75,47;48,47;48,safe
+23,West Willow Woods,way,912221553,3,Flaherty Drive,75,27;28,27;28,safe
+23,West Willow Woods,way,912221554,3,Flaherty Drive,75,15;16,15;16,safe
+23,West Willow Woods,way,912221556,3,Flaherty Drive,75,29;30,29;30,safe
+23,West Willow Woods,way,912221557,3,Flaherty Drive,75,1;2,1;2,safe
+23,West Willow Woods,way,912221558,3,Flaherty Drive,75,7;8,7;8,safe
+23,West Willow Woods,way,557515464,4,Imperial Road North,142,101-108;201-208;301-308;401-408;,101-108;201-208;301-308;401-408;,safe
+23,West Willow Woods,way,557515432,4,Imperial Road North,146,101-108;201-208;301-308;401-408;,101-108;201-208;301-308;401-408;,safe
+23,West Willow Woods,way,557515399,4,Imperial Road North,150,101-108;201-208;301-308;401-408;,101-108;201-208;301-308;401-408;,safe
+23,West Willow Woods,way,1441651844,1,Rhonda Road,49,98;99,98;99,safe
+23,West Willow Woods,way,1441651845,1,Rhonda Road,49,94;95,94;95,safe
+23,West Willow Woods,way,1441651846,1,Rhonda Road,49,84;85,84;85,safe
+23,West Willow Woods,way,1441651847,1,Rhonda Road,49,88;89,88;89,safe
+23,West Willow Woods,way,1441651848,1,Rhonda Road,49,90;91,90;91,safe
+23,West Willow Woods,way,1441651849,1,Rhonda Road,49,92;93,92;93,safe
+23,West Willow Woods,way,1441651850,1,Rhonda Road,49,96;97,96;97,safe
+23,West Willow Woods,way,1441651851,1,Rhonda Road,49,100;101,100;101,safe
+23,West Willow Woods,way,1441651852,1,Rhonda Road,49,102;103,102;103,safe
+23,West Willow Woods,way,1441651853,1,Rhonda Road,49,104;105,104;105,safe
+23,West Willow Woods,way,1441651854,1,Rhonda Road,49,106;107,106;107,safe
+23,West Willow Woods,way,1441651855,1,Rhonda Road,49,108;109,108;109,safe
+23,West Willow Woods,way,1441651856,1,Rhonda Road,49,110;111,110;111,safe
+23,West Willow Woods,way,1441651910,1,Rhonda Road,49,128;129,128;129,safe
+23,West Willow Woods,way,1441651911,1,Rhonda Road,49,126;127,126;127,safe
+23,West Willow Woods,way,1441651912,1,Rhonda Road,49,122;123,122;123,safe
+23,West Willow Woods,way,1441651913,1,Rhonda Road,49,118;119,118;119,safe
+23,West Willow Woods,way,1441651914,1,Rhonda Road,49,116;117,116;117,safe
+23,West Willow Woods,way,1441651915,1,Rhonda Road,49,124;125,124;125,safe
+23,West Willow Woods,way,1441651916,1,Rhonda Road,49,130;131,130;131,safe
+23,West Willow Woods,way,1441651917,1,Rhonda Road,49,114;115,114;115,safe
+23,West Willow Woods,way,803276519,2,Rhonda Road,49,112;113,112;113,safe
+23,West Willow Woods,way,803276525,2,Rhonda Road,49,120;121,120;121,safe
+23,West Willow Woods,way,803276526,2,Rhonda Road,49,86;87,86;87,safe
+23,West Willow Woods,way,413380308,4,Speedvale Avenue West,350,1-12,1-12,safe
+23,West Willow Woods,way,1019900572,2,Westwood Road,240,10A;10B;10C,10A;10B;10C,safe
+23,West Willow Woods,way,1019900573,2,Westwood Road,240,8A;8B;8C;8D,8A;8B;8C;8D,safe
+23,West Willow Woods,way,1019900574,2,Westwood Road,240,7A;7B;7C;7D,7A;7B;7C;7D,safe
+23,West Willow Woods,way,1019900576,2,Westwood Road,240,14A;14B;14C;14D,14A;14B;14C;14D,safe
+23,West Willow Woods,way,1441652013,1,Westwood Road,240,1A;1B;1C,1A;1B;1C,safe
+23,West Willow Woods,way,1441652014,1,Westwood Road,240,6A;6B;6C;6D,6A;6B;6C;6D,safe
+23,West Willow Woods,way,1441652015,1,Westwood Road,240,5A;5B;5C;5D,5A;5B;5C;5D,safe
+23,West Willow Woods,way,1441652016,1,Westwood Road,240,2A;2B;2C;2D,2A;2B;2C;2D,safe
+23,West Willow Woods,way,1441652017,1,Westwood Road,240,9A;9B;9C,9A;9B;9C,safe
+23,West Willow Woods,way,1441652018,1,Westwood Road,240,13A;13B;13C;13D,13A;13B;13C;13D,safe
+23,West Willow Woods,way,1441652019,1,Westwood Road,240,20A;20B;20C;20D,20A;20B;20C;20D,safe
+23,West Willow Woods,way,1441652020,1,Westwood Road,240,16A;16B;16C;16D,16A;16B;16C;16D,safe
+23,West Willow Woods,way,1441652021,1,Westwood Road,240,12A;12B;12C,12A;12B;12C,safe
+23,West Willow Woods,way,803279310,3,Westwood Road,240,17A;17B;17C;17D,17A;17B;17C;17D,safe
+23,West Willow Woods,way,803279312,3,Westwood Road,240,18A;18B;18C;18D,18A;18B;18C;18D,safe
+23,West Willow Woods,way,803279313,3,Westwood Road,240,19A;19B;19C;19D,19A;19B;19C;19D,safe
+23,West Willow Woods,way,803279314,3,Westwood Road,240,3A;3B;3C,3A;3B;3C,safe
+23,West Willow Woods,way,803279315,3,Westwood Road,240,4A;4B;4C;4D,4A;4B;4C;4D,safe
+23,West Willow Woods,way,803279319,3,Westwood Road,240,11A;11B;11C,11A;11B;11C,safe
+23,West Willow Woods,way,358946113,3,Westwood Road,89,101-109;201-211;301-311;401-411;501-512;601-612,101-109;201-211;301-311;401-411;501-512;601-612,safe
+23,West Willow Woods,way,358946112,3,Westwood Road,93,101-109;201-211;301-311;401-411;501-512;601-612,101-109;201-211;301-311;401-411;501-512;601-612,safe
