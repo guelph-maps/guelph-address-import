@@ -31,7 +31,7 @@ ARandomThumbtack was contacted before this page was written and is content for t
 
 '''Continuous''', human-reviewed gap-fill of the civic addresses the City publishes and OSM does not yet have, re-run each time the City's dataset changes — plus the QA findings that fall out of running conflation over a city that is already mapped.
 
-Alongside it, and consented separately, '''two one-off mechanical tag cleanups''' on Guelph's existing address objects: removing <code>addr:province=Ontario</code>, and splitting the unit back out of double-encoded housenumbers. Both are described in [[#Mechanical edits|§ Mechanical edits]]. They are not part of the import path and nothing in the import depends on them landing.
+Alongside it, and consented separately, '''three one-off mechanical tag cleanups''' on Guelph's existing address objects: removing <code>addr:province=Ontario</code>, splitting the unit back out of double-encoded housenumbers, and moving unit ''lists'' from <code>addr:unit</code> to <code>addr:flats</code>. All three are described in [[#Mechanical edits|§ Mechanical edits]]. They are not part of the import path and nothing in the import depends on them landing.
 
 Guelph's import is '''finished'''. There is no initial upload left to argue about — the questions an initial proposal exists to settle (is the dataset suitable, is the licence compatible, does the community want it) were asked and answered on [[Guelph/Address_Import]] in September 2025. What was never settled is who keeps it current afterwards, and that is the only thing this page proposes.
 
@@ -66,7 +66,7 @@ Measured against source snapshot 39 (2026-08-13): 53,846 active source rows, col
 As [[Toronto/Import/AddressPoints#Goals and non-goals|§ Non-goals of the Toronto import]], with one deliberate exception:
 
 * '''No deletions of objects''', including addresses the City source no longer lists.
-* '''No mutation of existing OSM objects by the import.''' The import path creates new nodes only. The two campaigns in § Mechanical edits are the sole exception, they are announced and consented separately from the import, and they touch only the two tags named there — nothing else on the object, and no geometry.
+* '''No mutation of existing OSM objects by the import.''' The import path creates new nodes only. The three campaigns in § Mechanical edits are the sole exception, they are announced and consented separately from the import, and they touch only the tags named there — nothing else on the object, and no geometry.
 * No <code>addr:interpolation</code> cleanup, no polygons, no geometry editing.
 
 ''Revised 2026-09-16.'' Until that date this list also read '''"no unit-level addresses uploaded"'''. It no longer does. Nothing else in the non-goals changed, and the reversal is set out in full, with its counts, in § Unit-level addresses — it is called out here rather than quietly deleted because a non-goal that has been published is a promise, and a reader who remembers the old one is owed the change.
@@ -176,11 +176,11 @@ Measured across all 167 collapsed groups the median value is 23 characters. '''T
 
 * '''Unit-level search does not work under any scheme.''' Tested against live Nominatim on 2026-08-21: <code>addr:unit</code> and <code>addr:full</code> are both discarded. This buys correct data, not findability, and that cost is accepted rather than mitigated.
 * '''The maintenance path for units is deliberately not built.''' A new unit at an already-collapsed building needs <code>addr:flats</code> ''modified'' on an existing node, and this import only ever creates. Until that is closed, unit-bearing runs go through the tile path only, never the recurring maintenance job, and a new unit at a collapsed building is routed to a QA finding instead of an upload. A retired unit has the mirror problem and likewise shrinks nothing.
-* '''Ordering.''' The split in § Mechanical edits runs '''before''' any of this. Before it, OSM carries a door's address as <code>714-30</code>, which a door candidate of <code>(714, unit 30)</code> does not match — so the door would read as missing and a second node would be proposed beside the badly-encoded one. With 5,568 hyphenated objects against 6,111 door candidates, the wrong order mass-produces duplicates.
+* '''Ordering.''' The split in § Mechanical edits runs '''before''' any of this. Before it, OSM carries a door's address as <code>714-30</code>, which a door candidate of <code>(714, unit 30)</code> does not match — so the door would read as missing and a second node would be proposed beside the badly-encoded one. With 5,568 hyphenated objects against 6,111 door candidates, the wrong order mass-produces duplicates. The same holds for the listing retag (§ Mechanical edits, 3): a collapsed candidate with no unit does not match a building whose <code>addr:unit</code> is a list, and 125 collapsed buildings plus 51 door groups would be proposed beside buildings that already list their units. The conflation is also being taught to read both forms, because an extract always lags an edit — but reading both is the safety net, not the plan.
 
 == Mechanical edits ==
 
-Two tag cleanups on '''existing''' Guelph objects, announced with this proposal but consented separately under the [[Automated Edits code of conduct]]. Both are attribute-only: one tag per object, nothing else touched, no geometry, no deletions. Both run neighbourhood by neighbourhood in separately revertable batches, in the same 23-area partition as the import, from the same account.
+Three tag cleanups on '''existing''' Guelph objects, announced with this proposal but consented separately under the [[Automated Edits code of conduct]]. All are attribute-only: one tag per object (the third moves one value between two keys), nothing else touched, no geometry, no deletions. All run neighbourhood by neighbourhood in separately revertable batches, in the same 23-area partition as the import, from the same account.
 
 === 1. Remove <code>addr:province=Ontario</code> ===
 
@@ -197,7 +197,20 @@ Letter suffixes that ''are'' the civic number (<code>645A</code>) are not units 
 
 '''The argument, recorded because it was contested.''' The original importer's position is that the combined form keeps the postal address searchable. Tested against live Nominatim on 2026-08-21, it does not: "72 York Road Unit 5" returns the property with the unit silently ignored, and "5-72 York Road" returns unrelated road segments. Unit-level search is unavailable under ''every'' scheme currently available, so it cannot argue for either form — while the combined form additionally breaks plain "714 Willow Road" queries, because then no object carries the bare civic number. The honest summary is that this change costs nothing and buys correct semantics.
 
-=== Changeset tags for both campaigns ===
+=== 3. Move unit lists from <code>addr:unit</code> to <code>addr:flats</code> ===
+
+'''453''' Guelph objects carry a ''list'' of units in <code>addr:unit</code> — <code>addr:unit=101-116;201-215;301-314;…</code> on one building way, the whole tower on one object. Counted 2026-09-15 against a fresh extract. The open questions on this page used to say "one" carried unit ranges where <code>addr:flats</code> belongs; that was a count by eye and it was wrong by two orders of magnitude. They cover '''176 of the City's 409''' unit-bearing civic addresses, and 167 of the 176 listings match the City's unit roster exactly — they were mapped from the same data, and mapped carefully.
+
+<code>addr:unit</code> means identity — this address ''is'' unit 30 — and its wiki page allows several values only for one address that spans adjacent units. A building that ''contains'' units 101–116 is what <code>addr:flats</code> is for: "the range of unit numbers within a larger building or complex", on the building way or its entrance, in exactly this <code>3-7;10;14-18</code> format. Guelph currently says "door" with <code>addr:unit</code> on 5,863 objects and "building" with the same key on 453, and nothing but the shape of the value tells them apart. The fix moves the key and touches nothing else:
+
+ addr:unit  = 101-116;201-215;…   →   addr:flats = 101-116;201-215;…
+                                        (addr:unit removed; every other tag and the geometry untouched)
+
+A single-valued <code>addr:unit</code> is a door and is not touched. The one object already carrying <code>addr:flats</code> is left alone. Values move '''verbatim''' — not re-compressed, not reconciled against the City's list — so the edit is exactly reversible and asserts nothing the original mapper did not.
+
+'''Why a campaign rather than a note.''' § Unit-level addresses has the import writing <code>addr:flats</code> for collapsed buildings; without this edit Guelph would carry the same fact under two keys, split about evenly, indefinitely. And conflation has to be able to tell a door from a building by key: with both meanings on <code>addr:unit</code> it can only guess from the value, and the first version of that guess froze 158 buildings for the wrong reason. <code>addr:flats</code> being rare in Ontario is the reason this is asked rather than done.
+
+=== Changeset tags for all three campaigns ===
 
 As the import's changeset tags below, except <code>import=yes</code> is replaced by <code>mechanical=yes</code>, the comment names the campaign, and <code>import_plan</code> points at this section.
 

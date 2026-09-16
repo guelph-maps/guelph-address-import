@@ -298,7 +298,16 @@ status = "props:STATUS"
 # equality, so 98 collapse groups and 51 door groups would read MISSING and
 # propose a second address object beside a building that already lists the
 # units. Conflation has to learn what a listing-bearing building is before
-# anything uploads under this policy. Separate proposal, not yet written.
+# anything uploads under this policy. Proposal: engine
+# future-work/listing-aware-conflation.md.
+# DECIDED 2026-09-16: STANDARDISE. addr:unit = identity (a door IS unit 30);
+# addr:flats = containment (a building HOLDS 101-116). The 453 list-valued
+# addr:unit objects move to addr:flats, key only, value verbatim, as
+# MECHANICAL EDIT #3 -- wiki section written, announcement drafted in
+# mechanical-edits/unit-listing-retag/ANNOUNCEMENT.md, consent not yet
+# asked, batches not to be built until the window closes. Cheap to decide now
+# because only the June Avenue pilot of edit #2 has gone up. Conflation still
+# learns both forms; after the retag that branch is a safety net.
 [units]
 policy = "per-door-or-collapse"
 
