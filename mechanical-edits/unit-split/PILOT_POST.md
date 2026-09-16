@@ -9,12 +9,15 @@ thread and skfd's voice. Dropped: the counts (5,568 / 5,521 / 36 batches), the
 three-way breakdown of the 47 hand cases, the method paragraph and the repo
 link, and the `created_by` note.
 
-**One omission is not cosmetic: the account disclosure.** We agreed to
-disclose rather than revert, and #17 does not mention that the pilot went from
-`skfd` rather than the `skfd imports` the page names in bold. Until it is
-said, the pilot is an undisclosed deviation from a published commitment. One
-sentence appended to #17, or a line in the next batch post, closes it — the
-wording is in the last section below.
+**The account disclosure is in.** It was missing from the first version of
+#17; skfd edited it in on 2026-09-16 — "changeset 189086416, as my main
+account skfd, not skfd import, my bad". The pilot is no longer an undisclosed
+deviation from a published commitment, and nothing further is owed on it.
+
+The same edit also trailed the units reversal and campaign 3 in #17 ahead of
+their own post: choosing per building between door nodes and a list, and
+"switching to `addr:flats` for the lists". So the full notice lands as
+elaboration rather than as news.
 
 The draft is kept as written, because it is the record of what was offered.
 
