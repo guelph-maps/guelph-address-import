@@ -14,6 +14,42 @@ honest.
 
 ---
 
+## The one-paragraph version — post this
+
+Post #17 already trailed both of these, so the long draft below is more than
+the thread now needs. This keeps the three things #17 does not carry: the 453
+correction, the reasoning, and the link.
+
+---
+
+**Units — correcting a count, and reversing a non-goal.** @ARandomThumbtack,
+your (d) in #15 deserves a better answer than I gave: not *one* object
+carrying unit ranges in `addr:unit`, but **453** — I counted by eye and was
+wrong by two orders of magnitude. It matters because I am also reversing the
+"No unit-level addresses uploaded" non-goal on my page. The City's 13,162 unit
+rows are two different things — front doors and stacked suites — and
+collapsing both threw the doors away, while mapping both as nodes would
+scatter 142 points through one tower. So units that are separate doors now
+become one node each with `addr:unit` (240 groups, 6,111 units), units stacked
+in a building collapse to one civic node carrying `addr:flats` (109 groups,
+5,668 units), and what decides is the *numbering*, not the spacing — a spacing
+test called 93 Arthur Street South, which is fourteen storeys, 193 front doors
+in 66 m. That leaves the 453 lists sitting under the wrong key, so a third
+mechanical edit moves them verbatim to `addr:flats` — 452 objects in 23
+batches, values not re-compressed or reconciled, single-valued `addr:unit`
+untouched. `addr:flats` is rare here, 58 objects in Ontario against 29,312
+with `addr:unit`, and that is the part I would most like to be told I have
+wrong. I am not running a 14-day window on either: both are reversible tagging
+changes on well-defined sets with the prior value recorded per object, I
+judged a fortnight's pause not worth it, and I would rather say that plainly
+than dress an announcement up as a consultation — **so object and I revert on
+request, no argument first.** Detail, with the classifier and the counts:
+<https://wiki.openstreetmap.org/wiki/Guelph/Address_Import/Continuous#Unit-level_addresses>
+
+---
+
+## The long version — kept, in case the thread wants it
+
 **Units in Guelph: I changed my mind, and I am correcting a count I got wrong**
 
 Two things, both about units, both of them changes to what this page and I
