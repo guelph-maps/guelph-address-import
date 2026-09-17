@@ -296,6 +296,27 @@ def changeset_tags(camp: Campaign, batch: dict,
     }
 
 
+def geometry_stub(node: ET.Element) -> ET.Element:
+    """A way's child node, reduced to the reference geometry JOSM needs.
+
+    Child nodes are in a batch so JOSM can draw the way, nothing more. They
+    must not carry `action`, and they must not carry tags, for one reason:
+    **the element objects are shared between batches.** `selected` and
+    `by_node_id` hand out the same `Element` for a node that is both a
+    campaign item and some way's child, so the moment one batch transforms it
+    and stamps `action="modify"`, every *other* batch that pulls it in as
+    geometry inherits both - and uploads the same edit a second time, in a
+    second changeset, against a version the first upload already bumped.
+
+    Campaign 1 hit this: 58 nodes were marked `action="modify"` in two batches
+    each. Copying id, version and position and dropping the rest makes a
+    child node inert, which is all it was ever meant to be.
+    """
+    keep = {k: node.attrib[k] for k in ("id", "version", "lat", "lon")
+            if k in node.attrib}
+    return ET.Element("node", keep)
+
+
 def write_batch(camp: Campaign, batch_dir: Path, batch: dict, index: int,
                 total: int, selected: dict, by_node_id: dict) -> dict:
     """Emit one .osm. Returns the record the manifest and run sheet need."""
@@ -310,6 +331,11 @@ def write_batch(camp: Campaign, batch_dir: Path, batch: dict, index: int,
     cs = ET.SubElement(out, "changeset")
     for key, value in cs_tags.items():
         ET.SubElement(cs, "tag", k=key, v=value)
+
+    # The nodes this batch is actually editing. A way child that is also an
+    # item here must be written in full, not stubbed.
+    item_nodes = {item["id"] for item in batch["items"]
+                  if item["type"] == "node"}
 
     rows: list[dict] = []
     nodes: list[ET.Element] = []
@@ -327,11 +353,19 @@ def write_batch(camp: Campaign, batch_dir: Path, batch: dict, index: int,
                 ref = nd.attrib["ref"]
                 if ref not in seen_nodes and ref in by_node_id:
                     seen_nodes.add(ref)
-                    nodes.append(by_node_id[ref])
+                    if ref in item_nodes:
+                        nodes.append(selected[("node", ref)])
+                    else:
+                        nodes.append(geometry_stub(by_node_id[ref]))
         else:
             if el.attrib["id"] not in seen_nodes:
                 seen_nodes.add(el.attrib["id"])
                 nodes.append(el)
+            else:
+                # Already added as some way's child, before we knew it was an
+                # item. Swap the stub for the real, edited element.
+                nodes[:] = [el if n.attrib.get("id") == el.attrib["id"] else n
+                            for n in nodes]
         rows.append({
             "batch": index, "area": batch["area"], "type": item["type"],
             "id": item["id"], "version": el.attrib.get("version", ""),
