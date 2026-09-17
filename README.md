@@ -81,6 +81,12 @@ states intent):
   prior values in `manifest.csv`. The `addr:province` campaign has no
   equivalent yet.
 
+**[`mechanical-edits/TODO.md`](mechanical-edits/TODO.md) is the ledger** for
+all five campaigns — what is done, what is uploading, and the two found while
+running the others and not yet proposed: 81 objects carrying
+`addr:interpolation` where it cannot mean anything, and 51 `addr:flats` values
+with untidy separators.
+
 The pipeline lives in the engine repo,
 [`address-importer-friend`](https://github.com/skfd/address-importer-friend)
 (see its README for setup). This repo carries only Guelph's `config.toml`,
