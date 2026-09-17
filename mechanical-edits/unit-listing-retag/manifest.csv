@@ -89,7 +89,6 @@ batch,area,type,id,version,street,housenumber,before_unit,after_flats,class
 11,Onward Willow,way,1442367112,1,Paisley Road,305,A;B,A;B,safe
 11,Onward Willow,way,1442367111,1,Paisley Road,307,A;B,A;B,safe
 11,Onward Willow,way,208492557,2,Silvercreek Parkway North,106,1;2;4;5;7,1;2;4;5;7,safe
-11,Onward Willow,node,9181710389,1,Silvercreek Parkway North,219,35-37,35-37,safe
 11,Onward Willow,way,1442367349,1,Silvercreek Parkway North,40,47;48,47;48,safe
 11,Onward Willow,way,502064544,3,Silvercreek Parkway North,65,201-210;301-311;101-109;401-410,201-210;301-311;101-109;401-410,safe
 11,Onward Willow,way,502064545,2,Silvercreek Parkway North,75,401-408;201-208;301-308;101-107,401-408;201-208;301-308;101-107,safe
@@ -101,7 +100,6 @@ batch,area,type,id,version,street,housenumber,before_unit,after_flats,class
 12,Pine Ridge - Westminster Woods,way,802540408,4,Frederick Drive,64,101-104;201-204;301-304;401-404,101-104;201-204;301-304;401-404,safe
 12,Pine Ridge - Westminster Woods,way,950227736,2,Frederick Drive,65,1;2;3;4;5;6,1;2;3;4;5;6,safe
 12,Pine Ridge - Westminster Woods,way,801657260,2,Gordon Street,1440,101-122;201-223;301-323;401-423;,101-122;201-223;301-323;401-423;,safe
-12,Pine Ridge - Westminster Woods,way,217386048,4,Gordon Street,1474,C1;C2;C3,C1;C2;C3,safe
 12,Pine Ridge - Westminster Woods,way,837634910,3,Kingsbury Square,35,101-109;116-127;201-210;212;214-227;301-327;401-427;,101-109;116-127;201-210;212;214-227;301-327;401-427;,safe
 12,Pine Ridge - Westminster Woods,way,802540405,2,Kingsbury Square,45,101-112;201-214;301-314;401-414;,101-112;201-214;301-314;401-414;,safe
 12,Pine Ridge - Westminster Woods,way,802540406,2,Kingsbury Square,67,101-112;201-214;301-314;401-414;,101-112;201-214;301-314;401-414;,safe
@@ -119,11 +117,8 @@ batch,area,type,id,version,street,housenumber,before_unit,after_flats,class
 13,Non-Residential - A,way,1436604423,1,Burns Drive,86,7;8,7;8,safe
 13,Non-Residential - A,way,632319014,3,Burns Drive,86,10;9,10;9,safe
 13,Non-Residential - A,way,344325628,5,Elmira Road North,355,100-140,100-140,safe
-13,Non-Residential - A,node,9139124188,1,Elmira Road North,355,119;121,119;121,safe
 13,Non-Residential - A,way,399149535,3,Elmira Road North,473,1;2;3;4,1;2;3;4,safe
 13,Non-Residential - A,way,802121047,2,Monarch Road,27,1;2;3;4;5;6,1;2;3;4;5;6,safe
-13,Non-Residential - A,node,8908985078,2,Woodlawn Road West,450,4;5;6,4;5;6,safe
-13,Non-Residential - A,node,8908985079,2,Woodlawn Road West,450,1;2,1;2,safe
 14,June Avenue,way,475631431,2,Arrow Road,31,1;10;11;2;3;4;5;6;7;8;9,1;10;11;2;3;4;5;6;7;8;9,safe
 14,June Avenue,way,1436604427,1,Burns Drive,11,13;14;15;16,13;14;15;16,safe
 14,June Avenue,way,802123329,2,Burns Drive,11,17;18;19;20,17;18;19;20,safe

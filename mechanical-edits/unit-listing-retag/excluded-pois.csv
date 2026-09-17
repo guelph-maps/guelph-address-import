@@ -1,0 +1,6 @@
+batch,type,id,street,housenumber,keep_addr_unit,why
+11,node,9181710389,Silvercreek Parkway North,219,35-37,"La Shoe (shop=shoes) — occupies units 35-37, does not contain them"
+12,way,217386048,Gordon Street,1474,C1;C2;C3,"Wally Parr Sausage — building way named as the restaurant; ambiguous, wants eyes"
+13,node,9139124188,Elmira Road North,355,119;121,KH&A (shop=copyshop) — occupant of 119;121
+13,node,8908985078,Woodlawn Road West,450,4;5;6,Bigelow Flooring (shop=flooring) — occupant of 4;5;6
+13,node,8908985079,Woodlawn Road West,450,1;2,Starberry Cafe (amenity=cafe) — occupant of 1;2

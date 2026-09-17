@@ -182,6 +182,30 @@ def is_listing(unit: str | None) -> bool:
     return bool(unit) and _LISTING.search(unit) is not None
 
 
+# Keys that say "an occupant lives here", not "a structure stands here".
+_POI_KEYS = ("amenity", "shop", "office", "craft", "healthcare", "tourism",
+             "leisure", "emergency", "club", "cuisine", "vending", "government")
+
+
+def is_occupant(tags: dict[str, str]) -> bool:
+    """Is this object a tenant rather than the building holding the tenants?
+
+    The whole campaign rests on `addr:unit` meaning containment, and on a POI
+    it does not: a cafe tagged `addr:unit=B3-1` *is* in unit B3-1, and
+    rewriting that to `addr:flats` claims the cafe contains a unit. Caught
+    live on 2026-09-17 after Centurion Coffee (node 13533404756) went up in
+    batch 5 — the only one that reached OSM before the sweep.
+
+    `building` is the discriminator, not the POI tag on its own. A nursing
+    home or an office block tagged `amenity=social_facility` / `office=yes`
+    *is* the structure, and really does contain its units; a bare node with
+    `shop=shoes` is a tenant of one.
+    """
+    if tags.get("building"):
+        return False
+    return any(k in tags for k in _POI_KEYS)
+
+
 def classify(tags: dict[str, str]) -> tuple[str, str | None]:
     """Return (class, review_reason).
 
@@ -204,6 +228,8 @@ def classify(tags: dict[str, str]) -> tuple[str, str | None]:
     unit = tags.get("addr:unit")
     if "addr:flats" in tags:
         return "review", "has-flats"
+    if is_occupant(tags):
+        return "review", "occupant"
     if not is_listing(unit):
         return "review", "single"
     if "-" in tags.get("addr:housenumber", ""):
@@ -226,6 +252,15 @@ REVIEW_REASONS = {
                   "before anything is said about the unit. Measured overlap "
                   "was zero, so this row should be empty; if it is not, run "
                   "edit 2 on it and <code>--refetch</code>."),
+    "occupant": ("A tenant, not the building holding the tenants",
+                 "A POI with no <code>building</code>: a shop or cafe whose "
+                 "<code>addr:unit</code> says which unit it <em>is in</em>. "
+                 "Moving that to <code>addr:flats</code> would claim the cafe "
+                 "<em>contains</em> units. Caught on 2026-09-17 after one "
+                 "(Centurion Coffee) had already gone up in batch 5. A "
+                 "building tagged <code>office=yes</code> or "
+                 "<code>amenity=social_facility</code> is not one of these — "
+                 "it is the structure, and it really does contain its units."),
     "single": ("A lone designator the fetch caught but the rule does not",
                "Overpass's regex and Python's agree by construction, so this "
                "is normally empty. Anything here is a door "
