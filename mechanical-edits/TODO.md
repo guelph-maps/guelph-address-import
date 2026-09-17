@@ -10,7 +10,7 @@ have been *found* but not yet proposed, so they do not live only in a chat log.
 | — | Campaign 2/3 leftovers, corroborated by the City roster | **done**, 32 objects |
 | 3 | Unit lists `addr:unit` → `addr:flats` (452) | announced 2026-09-16, uploading |
 | 4 | **Remove meaningless `addr:interpolation`** (81) | ← queued, see below |
-| 5 | **Tidy the `addr:flats` separators** (51) | ← queued, see below |
+| 5 | **A real `addr:flats` normalizer** (171 of 447 untidy) | ← queued, see below |
 
 ---
 
@@ -58,23 +58,66 @@ than it is.
 these objects are being edited by campaign 3 right now, so their versions will
 have moved.
 
-## 5. Tidy the `addr:flats` separators
+## 5. A real `addr:flats` normalizer
 
-**Found 2026-09-16**, when skfd spotted `101-113;201-214;301-314;401-414;` on
-the campaign 3 pilot and asked whether the trailing semicolon belonged.
+**Started 2026-09-16** as "strip the trailing semicolon", when skfd spotted
+`101-113;201-214;301-314;401-414;` on the campaign 3 pilot. It is bigger than
+that: **171 of campaign 3's 447 values (38%) are untidy in at least one way.**
 
-It does not — a trailing `;` reads as an empty final element — but it was
-inherited honestly: campaign 3 moves the value **verbatim**, and the trailing
-`;` was in the `addr:unit` the original mapper wrote. Holding the verbatim rule
-mid-campaign was the right call; this pass cleans up afterwards.
+Campaign 3 moved values **verbatim** and was right to — that promise is what
+makes it trivially reversible, and holding it mid-campaign was deliberate.
+This is the pass that cleans up afterwards.
 
-Of campaign 3's 452 values: **402 clean, 49 with a trailing `;`, 2 with spaces
-around the separator** (`201-209; 301-309; …`, 55 Yarmouth Street). 51 objects.
+### What the normalizer has to do
 
-**Why bother.** The import's own `addr:flats` renderer writes clean values
-(`101-110;201-212;701-705;707-712`). Leave these and Guelph carries two
-formats for one key, written by the same maintainer days apart — the "two
-conventions in one city" problem this project objects to everywhere else.
+| Defect | Count | Example | Should be |
+|---|---|---|---|
+| Enumeration that should collapse | 110 | `12;13;14;15;16;17;18;19;20;21` (39 Kay Crescent) | `12-21` |
+| Trailing `;` | 49 | `101-113;201-214;301-314;401-414;` | no trailing separator |
+| Sorted as text, not as numbers | 35 | `10;11;12;7;8;9` (245 Southgate Drive) | `7-12` |
+| Spaces around `;` | 2 | `201-209; 301-309; 401-409;` (55 Yarmouth) | no spaces |
+
+The text-sorting one is the ugliest in the wild: 358 Waterloo Avenue reads
+`1001-1008;1101-1108;101-106;201-208;…` — the eleventh floor sorts above the
+first because `1` precedes `2` as a character. Floors must sort **numerically**
+so the thousands land at the end where a reader expects them.
+
+### Do not write this twice
+
+`t2/units.py` already has `compress_flats()` and `flats_tag()`, which render a
+set of units into exactly the wanted form — gap-broken ranges, numeric order,
+no trailing separator. That is the canonical implementation and the import
+already writes through it.
+
+So the normalizer is **parse existing value → set of units → `compress_flats`**,
+and the only new code is the parser. Reimplementing the rendering would give
+Guelph two answers to the same question, which is the whole complaint this
+campaign exists to fix.
+
+Cases the parser must not mangle:
+
+* **Letter prefixes are building letters**, and group on their own:
+  `D101-D112;D201-D212`. Do not merge across letters.
+* **Letter suffixes cannot join a range** — `101A` is a single value and stays
+  one.
+* **`LL` floors** (`LL01;LL02;LL03`) are a real prefix, not a typo. The engine
+  has a known cosmetic wrinkle here (`LL01-LL04` renders as `LL1-LL4` because
+  `parse_unit` goes through `int()`); fix that in the engine, not around it.
+* **Stepped sequences** (176 Janefield Avenue steps by two) do not compress,
+  and must not be forced into a range that claims the missing ones exist.
+* **The 255-character limit.** Three groups already blow it and have their
+  listing dropped rather than truncated. A normalizer that *shortens* values
+  may rescue some of those — worth re-measuring after.
+
+**Round-trip test before any upload:** the parsed unit set must be identical
+before and after. If normalizing changes which units a building claims, the
+parser is wrong, and that is a data-corrupting bug rather than a cosmetic one.
+
+### Scope
+
+Everything carrying `addr:flats` in Guelph once campaign 3 lands — the 447,
+plus the pre-existing handful, plus whatever the import writes. Re-measure
+rather than assuming 171.
 
 **Pair it with campaign 4.** Overlapping objects, both pure tag hygiene on
 apartment buildings, one changeset, one revert, one notice. Doing them
