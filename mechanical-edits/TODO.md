@@ -8,7 +8,7 @@ have been *found* but not yet proposed, so they do not live only in a chat log.
 | 1 | Remove `addr:province=Ontario` (~3,699) | consented 2026-09-10, **not built** |
 | 2 | Split double-encoded unit housenumbers | **done** 2026-09-16, 5,521 objects, 36 changesets |
 | — | Campaign 2/3 leftovers, corroborated by the City roster | **done**, 32 objects |
-| 3 | Unit lists `addr:unit` → `addr:flats` (452) | announced 2026-09-16, uploading |
+| 3 | Unit lists `addr:unit` → `addr:flats` (447) | **done** 2026-09-17, 447 objects, 23 changesets |
 | 4 | **Remove meaningless `addr:interpolation`** (81) | ← queued, see below |
 | 5 | **A real `addr:flats` normalizer** (171 of 447 untidy) | ← queued, see below |
 
