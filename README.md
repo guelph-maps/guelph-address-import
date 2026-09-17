@@ -1,10 +1,10 @@
 # guelph-address-import
 
 The **Guelph city checkout** of the address-import family — city #3,
-scaffolded 2026-08-15. Status: **wiki page live, feedback window closed with
-both mechanical edits consented, nothing uploaded yet** — the unit split is
-prepared and waiting for an operator in
-[`mechanical-edits/unit-split/`](mechanical-edits/unit-split/README.md).
+scaffolded 2026-08-15. Status: **two mechanical campaigns finished and
+verified, the gap-fill import not yet run.** 5,968 objects re-tagged over
+2026-09-16/17 in 59 changesets — see
+[`mechanical-edits/TODO.md`](mechanical-edits/TODO.md) for the ledger.
 `ARandomThumbtack_Import` imported Guelph's addresses solo in 2025 (first
 changeset 2025-09-16, declared complete 2025-10-23 on the
 [wiki page](https://wiki.openstreetmap.org/wiki/Guelph/Address_Import)),
@@ -49,19 +49,26 @@ Publication state:
    supportively in #15, and #16 (2026-09-01) followed up on the open questions.
    **Both mechanical edits are therefore consented.**
 
-Two **mechanical edits** ride along with the proposal, announced with it but
-consented separately under the Automated Edits code of conduct:
+**Three mechanical edits** ride along with the proposal, each consented
+separately under the Automated Edits code of conduct:
 
-- **Remove `addr:province=Ontario`** (~3,699 objects). Canadian convention omits
-  province; Toronto's import doesn't write it. Not written on new nodes either.
-- **Split double-encoded unit housenumbers** (5,422 objects):
-  `addr:housenumber=714-30` + `addr:unit=30` → `addr:housenumber=714`, unit
-  untouched. The original importer defended the combined form, so the wiki page
-  records the argument and the 2026-08-21 Nominatim evidence rather than just
-  the conclusion. Rationale in full at
-  `~/Code/obsidian/skfd/OSM Research/Guelph Unit Addresses (tagging convention).md`.
+1. **Remove `addr:province=Ontario`** (~3,699 objects). Consented 2026-09-10,
+   **not built** — the only one of the three with no tooling.
+2. **Split double-encoded unit housenumbers** — ✅ **done 2026-09-16**, 5,521
+   objects in 36 changesets. `addr:housenumber=714-30` + `addr:unit=30` →
+   `addr:housenumber=714`, unit untouched. The original importer defended the
+   combined form, so the wiki page records the argument and the 2026-08-21
+   Nominatim evidence rather than just the conclusion. Rationale in full at
+   `~/Code/obsidian/skfd/OSM Research/Guelph Unit Addresses (tagging convention).md`.
+3. **Move unit lists to `addr:flats`** — ✅ **done 2026-09-17**, 447 objects in
+   23 changesets. Announced on short notice rather than through a fresh
+   14-day window; the wiki page records that choice and the standing offer to
+   revert on request.
 
-Neither is on the import path, and the import does not wait on them.
+Plus 32 stragglers the rules first refused and the City's roster later
+settled. None of the three is on the import path, and the import does not wait
+on them — but the split had to run **before** conflation, or door candidates
+would have duplicated against the badly-encoded objects.
 
 **Blockers before the pilot upload** (not before publishing — the wiki page
 states intent):
@@ -72,20 +79,25 @@ states intent):
   `source:license`. (Dropping `addr:province` removed one of the two constants
   this used to need; `addr:source` and `created_by=address-importer-friend`
   landed in the engine 2026-08-27.)
-- The engine has **no tag-modification path at all** — it creates nodes. Both
-  mechanical edits need one, with per-object version checking and prior-value
-  capture. Or run them from JOSM, neighbourhood by neighbourhood, as the 2025
-  import did — which is the route taken for the unit split:
-  `mechanical-edits/unit-split/` prepares 36 JOSM-ready batches over 5,521
-  objects, each carrying the live version it was built against, with the
-  prior values in `manifest.csv`. The `addr:province` campaign has no
-  equivalent yet.
+- The engine still has **no tag-modification path** — it creates nodes. The
+  route taken instead was JOSM, area by area, as the 2025 import did: each
+  campaign directory under `mechanical-edits/` builds `.osm` batches carrying
+  the live version of every object, so a stale one raises a conflict rather
+  than overwriting someone, with prior values in `manifest.csv` and
+  batch→changeset in `uploads.csv`. Campaign 1 has no equivalent yet.
+- **A classifier bug, found 2026-09-17 and not yet fixed.** Three groups whose
+  `addr:flats` listing overflows OSM's 255-character limit turn out to be
+  complexes 100–200 m across, not buildings — 15 Carere Crescent is 32
+  separate townhouse blocks. The collapse branch decides on unit numbering and
+  never asks how far apart the units are. Fix the footprint guard before any
+  unit-bearing import run, or those three collapse into a single node each.
+  `config.toml` carries the measurements.
 
 **[`mechanical-edits/TODO.md`](mechanical-edits/TODO.md) is the ledger** for
-all five campaigns — what is done, what is uploading, and the two found while
-running the others and not yet proposed: 81 objects carrying
-`addr:interpolation` where it cannot mean anything, and 51 `addr:flats` values
-with untidy separators.
+all five campaigns — what is done and the two found *while* running the
+others, neither yet proposed: 81 objects carrying `addr:interpolation` where
+it cannot mean anything (against 405 legitimate ones that stay), and a real
+`addr:flats` normaliser, 171 of 447 values being untidy in some way.
 
 **[`IDEAS.md`](IDEAS.md) is the other half of that ledger** — projection ideas
 the data suggested and that are *not* being built, each with the numbers that
@@ -106,8 +118,8 @@ python run.py --city-dir ../guelph-address-import
 Source data: City of Guelph address points, consumed via the sibling
 [`ontario-address-changes`](https://github.com/skfd/ontario-address-changes)
 tracker (`data/guelph/guelph.db`, 53,846 active rows / 40,634 civic addresses
-at snapshot 39, 2026-08-13). 24.4% of rows carry units, collapsed to civic per
-the `[units]` policy. Tiles subdivide the city's 23 "Guelph Areas" polygons
+at snapshot 39, 2026-08-13). 24.4% of rows carry units, uploaded by shape per
+the `[units] policy = "per-door-or-collapse"`. Tiles subdivide the city's 23 "Guelph Areas" polygons
 (99.47% point coverage, probed 2026-08-15).
 
 Entry state re-confirmed 2026-08-15 by `scripts/entry_state_probe.py`
