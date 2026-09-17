@@ -9,17 +9,24 @@ live Overpass on 2026-09-17:
 
 | Value | Objects |
 |---|---|
-| `Ontario` | 44,307 |
-| `ON` | 637 |
+| `Ontario` | 44,155 |
+| `ON` | 607 |
 | `On` | 1 |
-| **total** | **44,945** |
+| refused, see below | 33 |
+| **total carrying the key** | **44,796** |
 
-An independent `out count;` query the same afternoon returned 44,796 for
-`nwr["addr:province"]` inside the city relation — the two disagree by ~150
-because one is a cached extract and the other is live, and the number drifts
-daily. Either way the order of magnitude is settled: **~44,800**, against
-47,050 objects in Guelph carrying `addr:housenumber`. Effectively every
-address object in the city has this tag.
+That agrees to the object with an independent `out count;` query against the
+city relation the same afternoon. It is measured against 47,050 objects in
+Guelph carrying `addr:housenumber` — so **effectively every address object in
+the city has this tag**.
+
+A first pass reported 44,945 and was wrong by 149. The fetch ends
+`out meta; >; out meta;`, and the `>;` recursion re-emits any node that both
+carries `addr:province` *and* is a child of a matched way — so 149 objects
+appear twice in the XML and a naive count counts them twice. Exactly 149
+objects are emitted more than once, and every one carries the key. The
+builder indexes by `(type, id)`, so it never saw the duplicates; only the
+tally did.
 
 The proposal and the forum post both say **~3,699**. That figure is a
 **sample count published as a census**. `onboarding/entry-state-2026-08-15.json`
@@ -37,13 +44,16 @@ that quoted it.
   over, and it needs a correction on the thread before a single batch goes up.
   The correction is owed regardless of whether anyone objects: the number was
   wrong in public.
-* **Batch count.** At campaign 3's 250-per-batch this is ~180 changesets. The
-  builder uses **600**, giving ~75 — still a lot, and the run sheet is
-  explicit that this is a multi-evening job, not a sitting.
+* **Batch count.** The builder defaults to 600 per batch, giving **105
+  changesets** — a multi-evening job, not a sitting. `--per-batch 2000` gives
+  ~30, which is closer to what post #14 literally promised ("neighbourhood by
+  neighbourhood") but far coarser to revert. Campaigns 2 and 3 both split
+  large areas, so splitting is already the established reading of that
+  promise; the question is only how fine.
 * **The `ON` variants are a separate ask.** The wiki §1 says they are removed
   on the same pass; the forum post names only `Ontario`. They are built into
   their own batches at the end of the run, so the operator can upload the
-  `Ontario` ones and hold the 638 `ON`/`On` ones if the thread prefers.
+  `Ontario` ones and hold the 608 `ON`/`On` ones if the thread prefers.
 
 ### What it does not change
 
@@ -56,12 +66,15 @@ by the enclosing admin boundary. Only the count was wrong.
 Remove `addr:province`. Change nothing else. An object whose only tag change
 would be a no-op is dropped rather than uploaded.
 
+**Built 2026-09-17: 44,763 objects in 105 batches, 33 refused.**
+
 Routed to `review.csv` rather than batched:
 
-| Reason | What it is |
-|---|---|
-| `relation` | Relations are never batched — `_common.batchable()` refuses them, because this tooling fetches neither their members nor a position for them. |
-| `no-address` | Carries `addr:province` but no `addr:housenumber` — a boundary, a `place=*` node, something that is not an address. Worth a human's eye before stripping. |
+| Reason | Count | What it is |
+|---|---|---|
+| `no-address` | 29 | Carries `addr:province` but no `addr:housenumber` — a boundary, a `place=*` node, something that is not an address. Worth a human's eye before stripping. |
+| `relation` | 4 | Relations are never batched — `_common.batchable()` refuses them, because this tooling fetches neither their members nor a position for them. |
+| `outside-city` | 0 | Anything the fetch dragged in from over the boundary. **It found nothing**, which is the useful part: Guelph abuts Guelph/Eramosa and the `>;` recursion does cross ways, so the guard was written expecting spill. There is none. It stays as a cheap invariant that will speak up if a later refetch behaves differently. |
 
 ## Files
 

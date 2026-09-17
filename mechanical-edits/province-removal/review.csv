@@ -1,0 +1,34 @@
+type,id,street,housenumber,province,area,reason
+node,3192278891,,,ON,Two Rivers,no-address
+node,3599309937,,,ON,Hanlon Creek,no-address
+node,3631895695,,,ON,Grange Hill East,no-address
+node,12089876618,,,ON,Two Rivers,no-address
+node,12634704597,,,ON,Non-Residential - B,no-address
+node,12634818698,,,ON,Grange Hill East,no-address
+node,12634818700,,,ON,Grange Hill East,no-address
+node,12854590757,,,ON,Waverley,no-address
+way,177929342,,,ON,Onward Willow,no-address
+way,178084455,,,ON,Brant,no-address
+way,208503417,,,ON,Downtown - Sunny Acres,no-address
+way,413398792,,,ON,Downtown - Sunny Acres,no-address
+way,772999951,,,Ontario,Downtown - Sunny Acres,no-address
+way,802544799,,,ON,Non-Residential - B,no-address
+way,803283659,,,ON,Grange Hill East,no-address
+way,803283660,,,ON,Grange Hill East,no-address
+way,803283661,,,ON,Grange Hill East,no-address
+way,803283662,,,ON,Grange Hill East,no-address
+way,1388560463,,,ON,Non-Residential - B,no-address
+way,1558934403,,,Ontario,Downtown - Sunny Acres,no-address
+node,13700513285,435 Stone Rd W,,ON,Old University,no-address
+relation,12595929,Delhi Street,150,ON,Unplaced,relation
+node,1732487985,Edinburgh Road South,,ON,University,no-address
+relation,14939223,Elizabeth Street,380,ON,Unplaced,relation
+way,208339454,Exhibition Park,,ON,Exhibition Park,no-address
+way,714069159,Farquhar Street,,ON,Downtown - Sunny Acres,no-address
+way,1430308403,Grange Road,,ON,Grange Hill East,no-address
+node,416262818,James Street East,,ON,University,no-address
+relation,4066188,Paisley Street,155,Ontario,Unplaced,relation
+node,11225222239,Waterloo Avenue,,Ontario,Downtown - Sunny Acres,no-address
+relation,12981919,Westmount Road,100,ON,Unplaced,relation
+way,1387307325,Willow Road,,ON,Onward Willow,no-address
+node,9095771631,Woodlawn Road West,,ON,Non-Residential - A,no-address

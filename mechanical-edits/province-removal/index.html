@@ -1,0 +1,1053 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Guelph province removal — run sheet</title>
+<style>
+:root { color-scheme: light dark; --line:#d5d7db; --muted:#6b7177;
+        --ok:#1f7a3f; --warn:#8a5a00; --bg:#fff; --fg:#16181d; --card:#fafbfc; }
+@media (prefers-color-scheme: dark) {
+  :root { --line:#3a3f46; --muted:#9aa1a9; --ok:#6fcf8f; --warn:#e0b25c;
+          --bg:#14171a; --fg:#e8eaed; --card:#1b1f23; } }
+* { box-sizing: border-box; }
+body { margin:0 auto; padding:2rem 1.25rem 6rem; max-width:64rem;
+       background:var(--bg); color:var(--fg);
+       font:15px/1.55 -apple-system,Segoe UI,Roboto,sans-serif; }
+h1 { font-size:1.5rem; margin:0 0 .25rem; }
+h2 { font-size:1.05rem; margin:2.25rem 0 .6rem; }
+h3 { font-size:.95rem; margin:1.6rem 0 .3rem; }
+.sub { color:var(--muted); margin:0 0 1.5rem; }
+.banner { border:1px solid var(--line); border-left:4px solid var(--ok);
+          background:var(--card); padding:.85rem 1rem; border-radius:6px;
+          margin:0 0 1rem; }
+.banner.warn { border-left-color:var(--warn); }
+code, .mono { font-family:ui-monospace,SFMono-Regular,Consolas,monospace;
+              font-size:.86em; }
+table { border-collapse:collapse; width:100%; }
+th, td { text-align:left; padding:.5rem .55rem; border-bottom:1px solid var(--line);
+         vertical-align:top; }
+th { font-size:.78rem; text-transform:uppercase; letter-spacing:.04em;
+     color:var(--muted); font-weight:600; }
+tr.done td { opacity:.42; }
+tr.pilot td { background:color-mix(in srgb, var(--ok) 9%, transparent); }
+td.n { text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
+a.open { display:inline-block; padding:.3rem .65rem; border:1px solid var(--line);
+         border-radius:5px; text-decoration:none; color:inherit;
+         background:var(--card); white-space:nowrap; }
+a.open:hover { border-color:var(--ok); }
+.cs { color:var(--muted); font-size:.8rem; margin-top:.3rem; word-break:break-word; }
+.copy { cursor:pointer; border:1px solid var(--line); background:var(--card);
+        border-radius:4px; font-size:.72rem; padding:.1rem .4rem; color:inherit; }
+.progress { position:sticky; top:0; background:var(--bg); padding:.7rem 0;
+            border-bottom:1px solid var(--line); z-index:2; font-weight:600; }
+ol.steps li, ul.steps li { margin:.4rem 0; }
+</style>
+<h1>Guelph province removal — run sheet</h1>
+<p class="sub">Mechanical edit 1: <code>addr:province=Ontario</code> &rarr; removed. Canadian convention omits the province and the enclosing admin boundary already implies it. Nothing else on the object is touched.</p>
+
+<div class="banner warn">
+  <strong>Nothing here uploads itself.</strong> Open each batch in JOSM, look at
+  it, then press upload. The changeset tags are pre-filled from the file;
+  <code>created_by</code> is JOSM's own. Upload from the
+  <code>skfd imports</code> account, not a personal one.
+</div>
+
+<p class="sub">Built 2026-09-17 18:16 Eastern Daylight Time — 44,796 objects selected,
+44,763 batched across 105 batches,
+33 left for hand review.
+Plan: <a href="https://wiki.openstreetmap.org/wiki/Guelph/Address_Import/Continuous#Mechanical_edits">wiki § Mechanical edits</a> ·
+Thread: <a href="https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103">#135103</a></p>
+
+<div class="progress" id="tally"></div>
+
+<h2>Batches</h2>
+<table>
+  <thead><tr><th></th><th class="n">#</th><th>Area</th><th class="n">Objects</th>
+  <th>Open</th></tr></thead>
+  <tbody>
+      <tr class="pilot" data-key="01-non-residential-b" data-count="121">
+        <td><input type="checkbox" aria-label="batch 1 uploaded"></td>
+        <td class="n">1 <strong>PILOT</strong></td>
+        <td><strong>Non-Residential - B</strong><div class='cs'>Beaumont Crescent, Cityview Drive South, Clearview Street, Dunlop Drive +9 more</div><div class='cs mono'>e.g. 108 Beaumont Crescent: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">121</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/01-non-residential-b.osm">Open in JOSM</a>
+            <div class="cs">01-non-residential-b.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Non-Residential - B [batch 1/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="02-unplaced" data-count="193">
+        <td><input type="checkbox" aria-label="batch 2 uploaded"></td>
+        <td class="n">2</td>
+        <td><strong>Unplaced</strong><div class='cs'>Couling Crescent, Drone Crescent, Westra Drive</div><div class='cs mono'>e.g. 117 Couling Crescent: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">193</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/02-unplaced.osm">Open in JOSM</a>
+            <div class="cs">02-unplaced.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Unplaced [batch 2/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="03-university" data-count="236">
+        <td><input type="checkbox" aria-label="batch 3 uploaded"></td>
+        <td class="n">3</td>
+        <td><strong>University</strong><div class='cs'>Arboretum Road, Braid Place, Chancellors Way, Christie Lane +25 more</div><div class='cs mono'>e.g. 20 Arboretum Road: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">236</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/03-university.osm">Open in JOSM</a>
+            <div class="cs">03-university.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - University [batch 3/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="04-june-avenue" data-count="472">
+        <td><input type="checkbox" aria-label="batch 4 uploaded"></td>
+        <td class="n">4</td>
+        <td><strong>June Avenue</strong><div class='cs'>Arrow Road, Bailey Avenue, Beattie Street, Brentwood Drive +14 more</div><div class='cs mono'>e.g. 100 Arrow Road: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">472</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/04-june-avenue.osm">Open in JOSM</a>
+            <div class="cs">04-june-avenue.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - June Avenue [batch 4/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="05-non-residential-a" data-count="501">
+        <td><input type="checkbox" aria-label="batch 5 uploaded"></td>
+        <td class="n">5</td>
+        <td><strong>Non-Residential - A</strong><div class='cs'>Brentwood Drive, Burns Drive, Campbell Road, Cope Court +24 more</div><div class='cs mono'>e.g. 12 Brentwood Drive: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">501</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/05-non-residential-a.osm">Open in JOSM</a>
+            <div class="cs">05-non-residential-a.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Non-Residential - A [batch 5/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="06-non-residential-c" data-count="501">
+        <td><input type="checkbox" aria-label="batch 6 uploaded"></td>
+        <td class="n">6</td>
+        <td><strong>Non-Residential - C</strong><div class='cs'>Burcombe Crossing, Carlaw Place, Clair Road East, Dallan Drive +14 more</div><div class='cs mono'>e.g. 1 Burcombe Crossing: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">501</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/06-non-residential-c.osm">Open in JOSM</a>
+            <div class="cs">06-non-residential-c.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Non-Residential - C [batch 6/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="07-dover-cliff-p1" data-count="600">
+        <td><input type="checkbox" aria-label="batch 7 uploaded"></td>
+        <td class="n">7</td>
+        <td><strong>Dover Cliff (1/2)</strong><div class='cs'>Argyle Drive, Bishop Court, Bridlewood Drive, Carnaby Crescent +8 more</div><div class='cs mono'>e.g. 10 Argyle Drive: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/07-dover-cliff-p1.osm">Open in JOSM</a>
+            <div class="cs">07-dover-cliff-p1.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Dover Cliff 1/2 [batch 7/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="08-dover-cliff-p2" data-count="461">
+        <td><input type="checkbox" aria-label="batch 8 uploaded"></td>
+        <td class="n">8</td>
+        <td><strong>Dover Cliff (2/2)</strong><div class='cs'>Flanders Road, Hanlon Road, Kendrick Avenue, Kingswood Gate +13 more</div><div class='cs mono'>e.g. 27 Flanders Road: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">461</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/08-dover-cliff-p2.osm">Open in JOSM</a>
+            <div class="cs">08-dover-cliff-p2.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Dover Cliff 2/2 [batch 8/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="09-kortright-hills-p1" data-count="600">
+        <td><input type="checkbox" aria-label="batch 9 uploaded"></td>
+        <td class="n">9</td>
+        <td><strong>Kortright Hills (1/3)</strong><div class='cs'>Berry Drive, Bett Court, Cooper Drive, Downey Road +13 more</div><div class='cs mono'>e.g. 10 Berry Drive: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/09-kortright-hills-p1.osm">Open in JOSM</a>
+            <div class="cs">09-kortright-hills-p1.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Kortright Hills 1/3 [batch 9/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="10-kortright-hills-p2" data-count="600">
+        <td><input type="checkbox" aria-label="batch 10 uploaded"></td>
+        <td class="n">10</td>
+        <td><strong>Kortright Hills (2/3)</strong><div class='cs'>Milson Crescent, Mollison Court, Mulberry Court, Niska Road +12 more</div><div class='cs mono'>e.g. 84 Milson Crescent: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/10-kortright-hills-p2.osm">Open in JOSM</a>
+            <div class="cs">10-kortright-hills-p2.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Kortright Hills 2/3 [batch 10/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="11-kortright-hills-p3" data-count="118">
+        <td><input type="checkbox" aria-label="batch 11 uploaded"></td>
+        <td class="n">11</td>
+        <td><strong>Kortright Hills (3/3)</strong><div class='cs'>Trendell Lane, Waxwing Crescent, Weir Drive, Wood Duck Court</div><div class='cs mono'>e.g. 22 Trendell Lane: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">118</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/11-kortright-hills-p3.osm">Open in JOSM</a>
+            <div class="cs">11-kortright-hills-p3.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Kortright Hills 3/3 [batch 11/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="12-two-rivers-p1" data-count="600">
+        <td><input type="checkbox" aria-label="batch 12 uploaded"></td>
+        <td class="n">12</td>
+        <td><strong>Two Rivers (1/3)</strong><div class='cs'>Alice Street, Armstrong Avenue, Arthur Street South, Audrey Avenue +16 more</div><div class='cs mono'>e.g. 10 Alice Street: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/12-two-rivers-p1.osm">Open in JOSM</a>
+            <div class="cs">12-two-rivers-p1.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Two Rivers 1/3 [batch 12/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="13-two-rivers-p2" data-count="600">
+        <td><input type="checkbox" aria-label="batch 13 uploaded"></td>
+        <td class="n">13</td>
+        <td><strong>Two Rivers (2/3)</strong><div class='cs'>Howitt Street, Huron Street, Johnston Street, Kingsmill Avenue +17 more</div><div class='cs mono'>e.g. 27 Howitt Street: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/13-two-rivers-p2.osm">Open in JOSM</a>
+            <div class="cs">13-two-rivers-p2.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Two Rivers 2/3 [batch 13/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="14-two-rivers-p3" data-count="245">
+        <td><input type="checkbox" aria-label="batch 14 uploaded"></td>
+        <td class="n">14</td>
+        <td><strong>Two Rivers (3/3)</strong><div class='cs'>Victoria Road South, Walter Street, Wheeler Avenue, Wood Street +2 more</div><div class='cs mono'>e.g. 211 Victoria Road South: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">245</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/14-two-rivers-p3.osm">Open in JOSM</a>
+            <div class="cs">14-two-rivers-p3.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Two Rivers 3/3 [batch 14/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="15-brant-p1" data-count="600">
+        <td><input type="checkbox" aria-label="batch 15 uploaded"></td>
+        <td class="n">15</td>
+        <td><strong>Brant (1/3)</strong><div class='cs'>Algoma Drive, Algonquin Road, Atto Drive, Birchbank Boulevard +17 more</div><div class='cs mono'>e.g. 10 Algoma Drive: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/15-brant-p1.osm">Open in JOSM</a>
+            <div class="cs">15-brant-p1.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Brant 1/3 [batch 15/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="16-brant-p2" data-count="600">
+        <td><input type="checkbox" aria-label="batch 16 uploaded"></td>
+        <td class="n">16</td>
+        <td><strong>Brant (2/3)</strong><div class='cs'>Montana Road, Mullin Drive, Muskoka Drive, Mussen Street +10 more</div><div class='cs mono'>e.g. 40;42 Montana Road: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/16-brant-p2.osm">Open in JOSM</a>
+            <div class="cs">16-brant-p2.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Brant 2/3 [batch 16/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="17-brant-p3" data-count="257">
+        <td><input type="checkbox" aria-label="batch 17 uploaded"></td>
+        <td class="n">17</td>
+        <td><strong>Brant (3/3)</strong><div class='cs'>Victoria Road North, Wideman Boulevard, Woodlawn Road East</div><div class='cs mono'>e.g. 301 Victoria Road North: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">257</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/17-brant-p3.osm">Open in JOSM</a>
+            <div class="cs">17-brant-p3.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Brant 3/3 [batch 17/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="18-rickson-ridge-p1" data-count="600">
+        <td><input type="checkbox" aria-label="batch 18 uploaded"></td>
+        <td class="n">18</td>
+        <td><strong>Rickson Ridge (1/3)</strong><div class='cs'>Carrington Drive, Carrington Place, Darnell Road, Edinburgh Road South +5 more</div><div class='cs mono'>e.g. 196 Carrington Drive: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/18-rickson-ridge-p1.osm">Open in JOSM</a>
+            <div class="cs">18-rickson-ridge-p1.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Rickson Ridge 1/3 [batch 18/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="19-rickson-ridge-p2" data-count="600">
+        <td><input type="checkbox" aria-label="batch 19 uploaded"></td>
+        <td class="n">19</td>
+        <td><strong>Rickson Ridge (2/3)</strong><div class='cs'>Kortright Road West, Lovett Lane, Mccurdy Road, Moss Place +7 more</div><div class='cs mono'>e.g. 160 Kortright Road West: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/19-rickson-ridge-p2.osm">Open in JOSM</a>
+            <div class="cs">19-rickson-ridge-p2.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Rickson Ridge 2/3 [batch 19/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="20-rickson-ridge-p3" data-count="348">
+        <td><input type="checkbox" aria-label="batch 20 uploaded"></td>
+        <td class="n">20</td>
+        <td><strong>Rickson Ridge (3/3)</strong><div class='cs'>Southcreek Trail, Terraview Crescent, Truesdale Crescent</div><div class='cs mono'>e.g. 100 Southcreek Trail: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">348</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/20-rickson-ridge-p3.osm">Open in JOSM</a>
+            <div class="cs">20-rickson-ridge-p3.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Rickson Ridge 3/3 [batch 20/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="21-clairfields-p1" data-count="600">
+        <td><input type="checkbox" aria-label="batch 21 uploaded"></td>
+        <td class="n">21</td>
+        <td><strong>Clairfields (1/3)</strong><div class='cs'>Admiral Place, Borland Drive, Boulder Crescent, Carroll Crescent +12 more</div><div class='cs mono'>e.g. 2 Admiral Place: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/21-clairfields-p1.osm">Open in JOSM</a>
+            <div class="cs">21-clairfields-p1.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Clairfields 1/3 [batch 21/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="22-clairfields-p2" data-count="600">
+        <td><input type="checkbox" aria-label="batch 22 uploaded"></td>
+        <td class="n">22</td>
+        <td><strong>Clairfields (2/3)</strong><div class='cs'>Gibbs Crescent, Gordon Street, Gosling Gardens, Hayward Crescent +9 more</div><div class='cs mono'>e.g. 21 Gibbs Crescent: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/22-clairfields-p2.osm">Open in JOSM</a>
+            <div class="cs">22-clairfields-p2.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Clairfields 2/3 [batch 22/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="23-clairfields-p3" data-count="393">
+        <td><input type="checkbox" aria-label="batch 23 uploaded"></td>
+        <td class="n">23</td>
+        <td><strong>Clairfields (3/3)</strong><div class='cs'>Moffatt Lane, Munroe Crescent, Murphy Court, Paulstown Crescent +5 more</div><div class='cs mono'>e.g. 59 Moffatt Lane: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">393</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/23-clairfields-p3.osm">Open in JOSM</a>
+            <div class="cs">23-clairfields-p3.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Clairfields 3/3 [batch 23/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="24-downtown-sunny-acres-p1" data-count="600">
+        <td><input type="checkbox" aria-label="batch 24 uploaded"></td>
+        <td class="n">24</td>
+        <td><strong>Downtown - Sunny Acres (1/3)</strong><div class='cs'>Allan Avenue, Alma Street North, Alma Street South, Beechwood Avenue +27 more</div><div class='cs mono'>e.g. 11 Allan Avenue: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/24-downtown-sunny-acres-p1.osm">Open in JOSM</a>
+            <div class="cs">24-downtown-sunny-acres-p1.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Downtown - Sunny Acres 1/3 [batch 24/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="25-downtown-sunny-acres-p2" data-count="600">
+        <td><input type="checkbox" aria-label="batch 25 uploaded"></td>
+        <td class="n">25</td>
+        <td><strong>Downtown - Sunny Acres (2/3)</strong><div class='cs'>Galt Street, Glasgow Street North, Glasgow Street South, Glengarry Street +26 more</div><div class='cs mono'>e.g. 64 Galt Street: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/25-downtown-sunny-acres-p2.osm">Open in JOSM</a>
+            <div class="cs">25-downtown-sunny-acres-p2.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Downtown - Sunny Acres 2/3 [batch 25/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="26-downtown-sunny-acres-p3" data-count="478">
+        <td><input type="checkbox" aria-label="batch 26 uploaded"></td>
+        <td class="n">26</td>
+        <td><strong>Downtown - Sunny Acres (3/3)</strong><div class='cs'>Preston Street, Quebec Street, Raglan Street, Raymond Street +19 more</div><div class='cs mono'>e.g. 20 Preston Street: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">478</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/26-downtown-sunny-acres-p3.osm">Open in JOSM</a>
+            <div class="cs">26-downtown-sunny-acres-p3.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Downtown - Sunny Acres 3/3 [batch 26/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="27-onward-willow-p1" data-count="600">
+        <td><input type="checkbox" aria-label="batch 27 uploaded"></td>
+        <td class="n">27</td>
+        <td><strong>Onward Willow (1/3)</strong><div class='cs'>Ajax Street, Alma Street North, Applewood Crescent, Bagot Street +8 more</div><div class='cs mono'>e.g. 10 Ajax Street: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/27-onward-willow-p1.osm">Open in JOSM</a>
+            <div class="cs">27-onward-willow-p1.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Onward Willow 1/3 [batch 27/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="28-onward-willow-p2" data-count="600">
+        <td><input type="checkbox" aria-label="batch 28 uploaded"></td>
+        <td class="n">28</td>
+        <td><strong>Onward Willow (2/3)</strong><div class='cs'>Guelph Street, Heath Road, Julia Drive, Kenwood Crescent +11 more</div><div class='cs mono'>e.g. 59 Guelph Street: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/28-onward-willow-p2.osm">Open in JOSM</a>
+            <div class="cs">28-onward-willow-p2.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Onward Willow 2/3 [batch 28/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="29-onward-willow-p3" data-count="522">
+        <td><input type="checkbox" aria-label="batch 29 uploaded"></td>
+        <td class="n">29</td>
+        <td><strong>Onward Willow (3/3)</strong><div class='cs'>Silvercreek Parkway North, Sleeman Avenue, Speedvale Avenue West, Suffolk Street West +4 more</div><div class='cs mono'>e.g. 214 Silvercreek Parkway North: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">522</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/29-onward-willow-p3.osm">Open in JOSM</a>
+            <div class="cs">29-onward-willow-p3.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Onward Willow 3/3 [batch 29/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="30-st-georges-parkway-p1" data-count="600">
+        <td><input type="checkbox" aria-label="batch 30 uploaded"></td>
+        <td class="n">30</td>
+        <td><strong>St. Georges Parkway (1/4)</strong><div class='cs'>Anthony Avenue, Ardmay Crescent, Arthur Street North, Bennett Avenue +17 more</div><div class='cs mono'>e.g. 10 Anthony Avenue: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/30-st-georges-parkway-p1.osm">Open in JOSM</a>
+            <div class="cs">30-st-georges-parkway-p1.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - St. Georges Parkway 1/4 [batch 30/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="31-st-georges-parkway-p2" data-count="600">
+        <td><input type="checkbox" aria-label="batch 31 uploaded"></td>
+        <td class="n">31</td>
+        <td><strong>St. Georges Parkway (2/4)</strong><div class='cs'>Grove Street, Hardy Street, Heffernan Street, Hepburn Avenue +22 more</div><div class='cs mono'>e.g. 45 Grove Street: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/31-st-georges-parkway-p2.osm">Open in JOSM</a>
+            <div class="cs">31-st-georges-parkway-p2.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - St. Georges Parkway 2/4 [batch 31/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="32-st-georges-parkway-p3" data-count="600">
+        <td><input type="checkbox" aria-label="batch 32 uploaded"></td>
+        <td class="n">32</td>
+        <td><strong>St. Georges Parkway (3/4)</strong><div class='cs'>Queen Street, Regent Street, Rosedale Avenue, Ryan Avenue +11 more</div><div class='cs mono'>e.g. 29 Queen Street: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/32-st-georges-parkway-p3.osm">Open in JOSM</a>
+            <div class="cs">32-st-georges-parkway-p3.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - St. Georges Parkway 3/4 [batch 32/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="33-st-georges-parkway-p4" data-count="3">
+        <td><input type="checkbox" aria-label="batch 33 uploaded"></td>
+        <td class="n">33</td>
+        <td><strong>St. Georges Parkway (4/4)</strong><div class='cs'>Winston Crescent</div><div class='cs mono'>e.g. 97 Winston Crescent: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">3</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/33-st-georges-parkway-p4.osm">Open in JOSM</a>
+            <div class="cs">33-st-georges-parkway-p4.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - St. Georges Parkway 4/4 [batch 33/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="34-exhibition-park-p1" data-count="600">
+        <td><input type="checkbox" aria-label="batch 34 uploaded"></td>
+        <td class="n">34</td>
+        <td><strong>Exhibition Park (1/4)</strong><div class='cs'>Aberdeen Street, Alexandra Street, Ann Street, Arnold Street +24 more</div><div class='cs mono'>e.g. 10 Aberdeen Street: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/34-exhibition-park-p1.osm">Open in JOSM</a>
+            <div class="cs">34-exhibition-park-p1.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Exhibition Park 1/4 [batch 34/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="35-exhibition-park-p2" data-count="600">
+        <td><input type="checkbox" aria-label="batch 35 uploaded"></td>
+        <td class="n">35</td>
+        <td><strong>Exhibition Park (2/4)</strong><div class='cs'>Exhibition Street, Extra Street, Garth Street, George Street +22 more</div><div class='cs mono'>e.g. 285 Exhibition Street: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/35-exhibition-park-p2.osm">Open in JOSM</a>
+            <div class="cs">35-exhibition-park-p2.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Exhibition Park 2/4 [batch 35/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="36-exhibition-park-p3" data-count="600">
+        <td><input type="checkbox" aria-label="batch 36 uploaded"></td>
+        <td class="n">36</td>
+        <td><strong>Exhibition Park (3/4)</strong><div class='cs'>Mont Street, Norfolk Street, North Street, Norwich Street East +27 more</div><div class='cs mono'>e.g. 17 Mont Street: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/36-exhibition-park-p3.osm">Open in JOSM</a>
+            <div class="cs">36-exhibition-park-p3.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Exhibition Park 3/4 [batch 36/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="37-exhibition-park-p4" data-count="301">
+        <td><input type="checkbox" aria-label="batch 37 uploaded"></td>
+        <td class="n">37</td>
+        <td><strong>Exhibition Park (4/4)</strong><div class='cs'>Westmount Road, Woolwich Street, Wright Crescent, Wyndham Street North +2 more</div><div class='cs mono'>e.g. 115 Westmount Road: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">301</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/37-exhibition-park-p4.osm">Open in JOSM</a>
+            <div class="cs">37-exhibition-park-p4.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Exhibition Park 4/4 [batch 37/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="38-old-university-p1" data-count="600">
+        <td><input type="checkbox" aria-label="batch 38 uploaded"></td>
+        <td class="n">38</td>
+        <td><strong>Old University (1/4)</strong><div class='cs'>Albert Street, Bellevue Street, Borden Street, Caledonia Street +7 more</div><div class='cs mono'>e.g. 12 Albert Street: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/38-old-university-p1.osm">Open in JOSM</a>
+            <div class="cs">38-old-university-p1.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Old University 1/4 [batch 38/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="39-old-university-p2" data-count="600">
+        <td><input type="checkbox" aria-label="batch 39 uploaded"></td>
+        <td class="n">39</td>
+        <td><strong>Old University (2/4)</strong><div class='cs'>Echo Drive, Edinburgh Road South, Elson Drive, Fairview Boulevard +13 more</div><div class='cs mono'>e.g. 12 Echo Drive: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/39-old-university-p2.osm">Open in JOSM</a>
+            <div class="cs">39-old-university-p2.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Old University 2/4 [batch 39/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="40-old-university-p3" data-count="600">
+        <td><input type="checkbox" aria-label="batch 40 uploaded"></td>
+        <td class="n">40</td>
+        <td><strong>Old University (3/4)</strong><div class='cs'>Janefield Avenue, Lockyer Road, Lynwood Avenue, Lynwood Place +15 more</div><div class='cs mono'>e.g. 224 Janefield Avenue: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/40-old-university-p3.osm">Open in JOSM</a>
+            <div class="cs">40-old-university-p3.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Old University 3/4 [batch 40/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="41-old-university-p4" data-count="573">
+        <td><input type="checkbox" aria-label="batch 41 uploaded"></td>
+        <td class="n">41</td>
+        <td><strong>Old University (4/4)</strong><div class='cs'>Scottsdale Drive, Skye Place, Stone Road West, Talbot Street +9 more</div><div class='cs mono'>e.g. 26 Scottsdale Drive: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">573</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/41-old-university-p4.osm">Open in JOSM</a>
+            <div class="cs">41-old-university-p4.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Old University 4/4 [batch 41/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="42-hales-barton-p1" data-count="600">
+        <td><input type="checkbox" aria-label="batch 42 uploaded"></td>
+        <td class="n">42</td>
+        <td><strong>Hales Barton (1/5)</strong><div class='cs'>Amberwood Lane, Ambrous Crescent, Amos Drive, Arabella Drive +12 more</div><div class='cs mono'>e.g. 1 Amberwood Lane: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/42-hales-barton-p1.osm">Open in JOSM</a>
+            <div class="cs">42-hales-barton-p1.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Hales Barton 1/5 [batch 42/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="43-hales-barton-p2" data-count="600">
+        <td><input type="checkbox" aria-label="batch 43 uploaded"></td>
+        <td class="n">43</td>
+        <td><strong>Hales Barton (2/5)</strong><div class='cs'>Cherry Blossom Circle, Colborn Street, Cox Court, Dawes Avenue +16 more</div><div class='cs mono'>e.g. 43 Cherry Blossom Circle: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/43-hales-barton-p2.osm">Open in JOSM</a>
+            <div class="cs">43-hales-barton-p2.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Hales Barton 2/5 [batch 43/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="44-hales-barton-p3" data-count="600">
+        <td><input type="checkbox" aria-label="batch 44 uploaded"></td>
+        <td class="n">44</td>
+        <td><strong>Hales Barton (3/5)</strong><div class='cs'>Hands Drive, Harts Lane East, Hauser Court, Honeysuckle Drive +16 more</div><div class='cs mono'>e.g. 47 Hands Drive: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/44-hales-barton-p3.osm">Open in JOSM</a>
+            <div class="cs">44-hales-barton-p3.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Hales Barton 3/5 [batch 44/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="45-hales-barton-p4" data-count="600">
+        <td><input type="checkbox" aria-label="batch 45 uploaded"></td>
+        <td class="n">45</td>
+        <td><strong>Hales Barton (4/5)</strong><div class='cs'>Macalister Boulevard, Magnolia Lane, Marsland Court, Mayfield Avenue +18 more</div><div class='cs mono'>e.g. 9 Macalister Boulevard: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/45-hales-barton-p4.osm">Open in JOSM</a>
+            <div class="cs">45-hales-barton-p4.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Hales Barton 4/5 [batch 45/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="46-hales-barton-p5" data-count="210">
+        <td><input type="checkbox" aria-label="batch 46 uploaded"></td>
+        <td class="n">46</td>
+        <td><strong>Hales Barton (5/5)</strong><div class='cs'>Village Crossing West, Village Green Drive, White Pine Way, Whitetail Court +3 more</div><div class='cs mono'>e.g. 3 Village Crossing West: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">210</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/46-hales-barton-p5.osm">Open in JOSM</a>
+            <div class="cs">46-hales-barton-p5.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Hales Barton 5/5 [batch 46/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="47-hanlon-creek-p1" data-count="600">
+        <td><input type="checkbox" aria-label="batch 47 uploaded"></td>
+        <td class="n">47</td>
+        <td><strong>Hanlon Creek (1/5)</strong><div class='cs'>Aspen Valley Crescent, Augustine Court, Birch Street, Brazolot Drive +11 more</div><div class='cs mono'>e.g. 10 Aspen Valley Crescent: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/47-hanlon-creek-p1.osm">Open in JOSM</a>
+            <div class="cs">47-hanlon-creek-p1.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Hanlon Creek 1/5 [batch 47/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="48-hanlon-creek-p2" data-count="600">
+        <td><input type="checkbox" aria-label="batch 48 uploaded"></td>
+        <td class="n">48</td>
+        <td><strong>Hanlon Creek (2/5)</strong><div class='cs'>Deerchase Court, Edinburgh Road South, Ervin Crescent, Gordon Street +9 more</div><div class='cs mono'>e.g. 8 Deerchase Court: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/48-hanlon-creek-p2.osm">Open in JOSM</a>
+            <div class="cs">48-hanlon-creek-p2.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Hanlon Creek 2/5 [batch 48/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="49-hanlon-creek-p3" data-count="600">
+        <td><input type="checkbox" aria-label="batch 49 uploaded"></td>
+        <td class="n">49</td>
+        <td><strong>Hanlon Creek (3/5)</strong><div class='cs'>Ironwood Road, Karen Avenue, Keats Crescent, Koch Drive +8 more</div><div class='cs mono'>e.g. 358 Ironwood Road: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/49-hanlon-creek-p3.osm">Open in JOSM</a>
+            <div class="cs">49-hanlon-creek-p3.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Hanlon Creek 3/5 [batch 49/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="50-hanlon-creek-p4" data-count="600">
+        <td><input type="checkbox" aria-label="batch 50 uploaded"></td>
+        <td class="n">50</td>
+        <td><strong>Hanlon Creek (4/5)</strong><div class='cs'>Reid Court, Renfrew Place, Research Lane, Rickson Avenue +7 more</div><div class='cs mono'>e.g. 7 Reid Court: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/50-hanlon-creek-p4.osm">Open in JOSM</a>
+            <div class="cs">50-hanlon-creek-p4.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Hanlon Creek 4/5 [batch 50/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="51-hanlon-creek-p5" data-count="382">
+        <td><input type="checkbox" aria-label="batch 51 uploaded"></td>
+        <td class="n">51</td>
+        <td><strong>Hanlon Creek (5/5)</strong><div class='cs'>Stone Road West, Thomasfield Drive, Thornberry Court, Walman Drive +6 more</div><div class='cs mono'>e.g. 414 Stone Road West: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">382</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/51-hanlon-creek-p5.osm">Open in JOSM</a>
+            <div class="cs">51-hanlon-creek-p5.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Hanlon Creek 5/5 [batch 51/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="52-parkwood-gardens-p1" data-count="600">
+        <td><input type="checkbox" aria-label="batch 52 uploaded"></td>
+        <td class="n">52</td>
+        <td><strong>Parkwood Gardens (1/5)</strong><div class='cs'>Abbeywood Crescent, Allison Place, Amy Court, Aspenwood Place +12 more</div><div class='cs mono'>e.g. 10 Abbeywood Crescent: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/52-parkwood-gardens-p1.osm">Open in JOSM</a>
+            <div class="cs">52-parkwood-gardens-p1.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Parkwood Gardens 1/5 [batch 52/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="53-parkwood-gardens-p2" data-count="600">
+        <td><input type="checkbox" aria-label="batch 53 uploaded"></td>
+        <td class="n">53</td>
+        <td><strong>Parkwood Gardens (2/5)</strong><div class='cs'>Deerpath Drive, Elmira Road South, Fairmeadow Drive, Fife Road +1 more</div><div class='cs mono'>e.g. 166 Deerpath Drive: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/53-parkwood-gardens-p2.osm">Open in JOSM</a>
+            <div class="cs">53-parkwood-gardens-p2.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Parkwood Gardens 2/5 [batch 53/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="54-parkwood-gardens-p3" data-count="600">
+        <td><input type="checkbox" aria-label="batch 54 uploaded"></td>
+        <td class="n">54</td>
+        <td><strong>Parkwood Gardens (3/5)</strong><div class='cs'>Freshmeadow Way, Gateway Drive, Gombas Place, Hewitt Lane +9 more</div><div class='cs mono'>e.g. 17 Freshmeadow Way: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/54-parkwood-gardens-p3.osm">Open in JOSM</a>
+            <div class="cs">54-parkwood-gardens-p3.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Parkwood Gardens 3/5 [batch 54/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="55-parkwood-gardens-p4" data-count="600">
+        <td><input type="checkbox" aria-label="batch 55 uploaded"></td>
+        <td class="n">55</td>
+        <td><strong>Parkwood Gardens (4/5)</strong><div class='cs'>Paisley Road, Pamela Place, Parkview Crescent, Pinetree Drive +10 more</div><div class='cs mono'>e.g. 700 Paisley Road: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/55-parkwood-gardens-p4.osm">Open in JOSM</a>
+            <div class="cs">55-parkwood-gardens-p4.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Parkwood Gardens 4/5 [batch 55/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="56-parkwood-gardens-p5" data-count="563">
+        <td><input type="checkbox" aria-label="batch 56 uploaded"></td>
+        <td class="n">56</td>
+        <td><strong>Parkwood Gardens (5/5)</strong><div class='cs'>Springdale Boulevard, Stephanie Drive, Sullivan Crescent, Sunrise Court +6 more</div><div class='cs mono'>e.g. 22 Springdale Boulevard: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">563</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/56-parkwood-gardens-p5.osm">Open in JOSM</a>
+            <div class="cs">56-parkwood-gardens-p5.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Parkwood Gardens 5/5 [batch 56/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="57-west-willow-woods-p1" data-count="600">
+        <td><input type="checkbox" aria-label="batch 57 uploaded"></td>
+        <td class="n">57</td>
+        <td><strong>West Willow Woods (1/5)</strong><div class='cs'>Avra Court, Blueridge Court, Bonar Place, Bond Court +11 more</div><div class='cs mono'>e.g. 10 Avra Court: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/57-west-willow-woods-p1.osm">Open in JOSM</a>
+            <div class="cs">57-west-willow-woods-p1.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - West Willow Woods 1/5 [batch 57/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="58-west-willow-woods-p2" data-count="600">
+        <td><input type="checkbox" aria-label="batch 58 uploaded"></td>
+        <td class="n">58</td>
+        <td><strong>West Willow Woods (2/5)</strong><div class='cs'>Ferman Drive, Flaherty Drive, Glenda Court, Gorman Court +7 more</div><div class='cs mono'>e.g. 7 Ferman Drive: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/58-west-willow-woods-p2.osm">Open in JOSM</a>
+            <div class="cs">58-west-willow-woods-p2.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - West Willow Woods 2/5 [batch 58/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="59-west-willow-woods-p3" data-count="600">
+        <td><input type="checkbox" aria-label="batch 59 uploaded"></td>
+        <td class="n">59</td>
+        <td><strong>West Willow Woods (3/5)</strong><div class='cs'>Kipling Avenue, Lisa Lane, Marksam Road, Matthew Drive +11 more</div><div class='cs mono'>e.g. 67 Kipling Avenue: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/59-west-willow-woods-p3.osm">Open in JOSM</a>
+            <div class="cs">59-west-willow-woods-p3.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - West Willow Woods 3/5 [batch 59/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="60-west-willow-woods-p4" data-count="600">
+        <td><input type="checkbox" aria-label="batch 60 uploaded"></td>
+        <td class="n">60</td>
+        <td><strong>West Willow Woods (4/5)</strong><div class='cs'>Rhonda Road, Rooke Court, Saigon Street, Sanderson Drive +9 more</div><div class='cs mono'>e.g. 41 Rhonda Road: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/60-west-willow-woods-p4.osm">Open in JOSM</a>
+            <div class="cs">60-west-willow-woods-p4.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - West Willow Woods 4/5 [batch 60/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="61-west-willow-woods-p5" data-count="566">
+        <td><input type="checkbox" aria-label="batch 61 uploaded"></td>
+        <td class="n">61</td>
+        <td><strong>West Willow Woods (5/5)</strong><div class='cs'>Westra Drive, Westwood Road, Wildwood Place, Willow Road +2 more</div><div class='cs mono'>e.g. 82 Westra Drive: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">566</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/61-west-willow-woods-p5.osm">Open in JOSM</a>
+            <div class="cs">61-west-willow-woods-p5.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - West Willow Woods 5/5 [batch 61/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="62-waverley-p1" data-count="600">
+        <td><input type="checkbox" aria-label="batch 62 uploaded"></td>
+        <td class="n">62</td>
+        <td><strong>Waverley (1/6)</strong><div class='cs'>Acorn Place, Arthur Street North, Balmoral Drive, Balsam Drive +16 more</div><div class='cs mono'>e.g. 1 Acorn Place: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/62-waverley-p1.osm">Open in JOSM</a>
+            <div class="cs">62-waverley-p1.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Waverley 1/6 [batch 62/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="63-waverley-p2" data-count="600">
+        <td><input type="checkbox" aria-label="batch 63 uploaded"></td>
+        <td class="n">63</td>
+        <td><strong>Waverley (2/6)</strong><div class='cs'>Dumbarton Street, Emma Street, Eramosa Road, Eton Place +13 more</div><div class='cs mono'>e.g. 137 Dumbarton Street: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/63-waverley-p2.osm">Open in JOSM</a>
+            <div class="cs">63-waverley-p2.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Waverley 2/6 [batch 63/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="64-waverley-p3" data-count="600">
+        <td><input type="checkbox" aria-label="batch 64 uploaded"></td>
+        <td class="n">64</td>
+        <td><strong>Waverley (3/6)</strong><div class='cs'>Kensington Street, King Street, Kingsley Court, Kinlock Street +18 more</div><div class='cs mono'>e.g. 13 Kensington Street: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/64-waverley-p3.osm">Open in JOSM</a>
+            <div class="cs">64-waverley-p3.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Waverley 3/6 [batch 64/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="65-waverley-p4" data-count="600">
+        <td><input type="checkbox" aria-label="batch 65 uploaded"></td>
+        <td class="n">65</td>
+        <td><strong>Waverley (4/6)</strong><div class='cs'>Pearl Street, Peter Avenue, Philip Avenue, Pine Drive +12 more</div><div class='cs mono'>e.g. 26;28 Pearl Street: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/65-waverley-p4.osm">Open in JOSM</a>
+            <div class="cs">65-waverley-p4.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Waverley 4/6 [batch 65/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="66-waverley-p5" data-count="600">
+        <td><input type="checkbox" aria-label="batch 66 uploaded"></td>
+        <td class="n">66</td>
+        <td><strong>Waverley (5/6)</strong><div class='cs'>Speedvale Avenue East, Spring Street, Spruce Place, Stevenson Street North +9 more</div><div class='cs mono'>e.g. 256 Speedvale Avenue East: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/66-waverley-p5.osm">Open in JOSM</a>
+            <div class="cs">66-waverley-p5.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Waverley 5/6 [batch 66/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="67-waverley-p6" data-count="377">
+        <td><input type="checkbox" aria-label="batch 67 uploaded"></td>
+        <td class="n">67</td>
+        <td><strong>Waverley (6/6)</strong><div class='cs'>Waverley Drive, Webster Street, Wideman Boulevard, Wilton Road +5 more</div><div class='cs mono'>e.g. 23 Waverley Drive: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">377</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/67-waverley-p6.osm">Open in JOSM</a>
+            <div class="cs">67-waverley-p6.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Waverley 6/6 [batch 67/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="68-pine-ridge-westminster-woods-p1" data-count="600">
+        <td><input type="checkbox" aria-label="batch 68 uploaded"></td>
+        <td class="n">68</td>
+        <td><strong>Pine Ridge - Westminster Woods (1/6)</strong><div class='cs'>Amalia Crescent, Amsterdam Crescent, Annmoore Crescent, Arkell Road +10 more</div><div class='cs mono'>e.g. 10 Amalia Crescent: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/68-pine-ridge-westminster-woods-p1.osm">Open in JOSM</a>
+            <div class="cs">68-pine-ridge-westminster-woods-p1.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Pine Ridge - Westminster Woods 1/6 [batch 68/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="69-pine-ridge-westminster-woods-p2" data-count="600">
+        <td><input type="checkbox" aria-label="batch 69 uploaded"></td>
+        <td class="n">69</td>
+        <td><strong>Pine Ridge - Westminster Woods (2/6)</strong><div class='cs'>Camm Crescent, Clair Road East, Clairfields Drive East, Clough Crescent +10 more</div><div class='cs mono'>e.g. 18 Camm Crescent: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/69-pine-ridge-westminster-woods-p2.osm">Open in JOSM</a>
+            <div class="cs">69-pine-ridge-westminster-woods-p2.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Pine Ridge - Westminster Woods 2/6 [batch 69/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="70-pine-ridge-westminster-woods-p3" data-count="600">
+        <td><input type="checkbox" aria-label="batch 70 uploaded"></td>
+        <td class="n">70</td>
+        <td><strong>Pine Ridge - Westminster Woods (3/6)</strong><div class='cs'>Farley Drive, Frederick Drive, Gaw Crescent, Goodwin Drive +5 more</div><div class='cs mono'>e.g. 120 Farley Drive: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/70-pine-ridge-westminster-woods-p3.osm">Open in JOSM</a>
+            <div class="cs">70-pine-ridge-westminster-woods-p3.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Pine Ridge - Westminster Woods 3/6 [batch 70/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="71-pine-ridge-westminster-woods-p4" data-count="600">
+        <td><input type="checkbox" aria-label="batch 71 uploaded"></td>
+        <td class="n">71</td>
+        <td><strong>Pine Ridge - Westminster Woods (4/6)</strong><div class='cs'>Hasler Crescent, Hodgson Drive, Holland Crescent, Howden Crescent +14 more</div><div class='cs mono'>e.g. 59 Hasler Crescent: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/71-pine-ridge-westminster-woods-p4.osm">Open in JOSM</a>
+            <div class="cs">71-pine-ridge-westminster-woods-p4.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Pine Ridge - Westminster Woods 4/6 [batch 71/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="72-pine-ridge-westminster-woods-p5" data-count="600">
+        <td><input type="checkbox" aria-label="batch 72 uploaded"></td>
+        <td class="n">72</td>
+        <td><strong>Pine Ridge - Westminster Woods (5/6)</strong><div class='cs'>Mcgarr Court, Mcgarr Drive, Mcnulty Lane, Miller Street +13 more</div><div class='cs mono'>e.g. 47 Mcgarr Court: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/72-pine-ridge-westminster-woods-p5.osm">Open in JOSM</a>
+            <div class="cs">72-pine-ridge-westminster-woods-p5.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Pine Ridge - Westminster Woods 5/6 [batch 72/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="73-pine-ridge-westminster-woods-p6" data-count="435">
+        <td><input type="checkbox" aria-label="batch 73 uploaded"></td>
+        <td class="n">73</td>
+        <td><strong>Pine Ridge - Westminster Woods (6/6)</strong><div class='cs'>Spencer Crescent, Summerfield Drive, Tolton Drive, Walker Way +4 more</div><div class='cs mono'>e.g. 12 Spencer Crescent: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">435</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/73-pine-ridge-westminster-woods-p6.osm">Open in JOSM</a>
+            <div class="cs">73-pine-ridge-westminster-woods-p6.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Pine Ridge - Westminster Woods 6/6 [batch 73/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="74-grange-hill-east-p1" data-count="600">
+        <td><input type="checkbox" aria-label="batch 74 uploaded"></td>
+        <td class="n">74</td>
+        <td><strong>Grange Hill East (1/10)</strong><div class='cs'>Acker Street, Airpark Place, Auden Road, Beaumont Crescent +9 more</div><div class='cs mono'>e.g. 10 Acker Street: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/74-grange-hill-east-p1.osm">Open in JOSM</a>
+            <div class="cs">74-grange-hill-east-p1.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Grange Hill East 1/10 [batch 74/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="75-grange-hill-east-p2" data-count="600">
+        <td><input type="checkbox" aria-label="batch 75 uploaded"></td>
+        <td class="n">75</td>
+        <td><strong>Grange Hill East (2/10)</strong><div class='cs'>Chesterton Lane, Cityview Drive North, Cityview Drive South, Clearview Street +11 more</div><div class='cs mono'>e.g. 12 Chesterton Lane: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/75-grange-hill-east-p2.osm">Open in JOSM</a>
+            <div class="cs">75-grange-hill-east-p2.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Grange Hill East 2/10 [batch 75/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="76-grange-hill-east-p3" data-count="600">
+        <td><input type="checkbox" aria-label="batch 76 uploaded"></td>
+        <td class="n">76</td>
+        <td><strong>Grange Hill East (3/10)</strong><div class='cs'>Eastview Road, Edwards Street, Eleanor Court, Elginfield Drive +14 more</div><div class='cs mono'>e.g. 5 Eastview Road: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/76-grange-hill-east-p3.osm">Open in JOSM</a>
+            <div class="cs">76-grange-hill-east-p3.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Grange Hill East 3/10 [batch 76/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="77-grange-hill-east-p4" data-count="600">
+        <td><input type="checkbox" aria-label="batch 77 uploaded"></td>
+        <td class="n">77</td>
+        <td><strong>Grange Hill East (4/10)</strong><div class='cs'>Grange Road, Greenview Street, Grinyer Drive, Hadati Road +9 more</div><div class='cs mono'>e.g. 299 Grange Road: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/77-grange-hill-east-p4.osm">Open in JOSM</a>
+            <div class="cs">77-grange-hill-east-p4.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Grange Hill East 4/10 [batch 77/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="78-grange-hill-east-p5" data-count="600">
+        <td><input type="checkbox" aria-label="batch 78 uploaded"></td>
+        <td class="n">78</td>
+        <td><strong>Grange Hill East (5/10)</strong><div class='cs'>Hyland Road, Ireland Place, Jeffrey Drive, Joyce Place +9 more</div><div class='cs mono'>e.g. 15 Hyland Road: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/78-grange-hill-east-p5.osm">Open in JOSM</a>
+            <div class="cs">78-grange-hill-east-p5.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Grange Hill East 5/10 [batch 78/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="79-grange-hill-east-p6" data-count="600">
+        <td><input type="checkbox" aria-label="batch 79 uploaded"></td>
+        <td class="n">79</td>
+        <td><strong>Grange Hill East (6/10)</strong><div class='cs'>Mackay Street, Magdalena Drive, Marshall Drive, Maude Lane +7 more</div><div class='cs mono'>e.g. 10 Mackay Street: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/79-grange-hill-east-p6.osm">Open in JOSM</a>
+            <div class="cs">79-grange-hill-east-p6.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Grange Hill East 6/10 [batch 79/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="80-grange-hill-east-p7" data-count="600">
+        <td><input type="checkbox" aria-label="batch 80 uploaded"></td>
+        <td class="n">80</td>
+        <td><strong>Grange Hill East (7/10)</strong><div class='cs'>Oakes Crescent, Palermo Crescent, Penfold Drive, Pettitt Drive +8 more</div><div class='cs mono'>e.g. 82 Oakes Crescent: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/80-grange-hill-east-p7.osm">Open in JOSM</a>
+            <div class="cs">80-grange-hill-east-p7.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Grange Hill East 7/10 [batch 80/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="81-grange-hill-east-p8" data-count="600">
+        <td><input type="checkbox" aria-label="batch 81 uploaded"></td>
+        <td class="n">81</td>
+        <td><strong>Grange Hill East (8/10)</strong><div class='cs'>Shackleton Drive, Silurian Drive, Skinner Drive, Sloan Avenue +3 more</div><div class='cs mono'>e.g. 19 Shackleton Drive: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/81-grange-hill-east-p8.osm">Open in JOSM</a>
+            <div class="cs">81-grange-hill-east-p8.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Grange Hill East 8/10 [batch 81/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="82-grange-hill-east-p9" data-count="600">
+        <td><input type="checkbox" aria-label="batch 82 uploaded"></td>
+        <td class="n">82</td>
+        <td><strong>Grange Hill East (9/10)</strong><div class='cs'>Stone Road East, Suburban Avenue, Summit Ridge Drive, Swift Crescent +8 more</div><div class='cs mono'>e.g. 763 Stone Road East: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">600</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/82-grange-hill-east-p9.osm">Open in JOSM</a>
+            <div class="cs">82-grange-hill-east-p9.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Grange Hill East 9/10 [batch 82/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="83-grange-hill-east-p10" data-count="499">
+        <td><input type="checkbox" aria-label="batch 83 uploaded"></td>
+        <td class="n">83</td>
+        <td><strong>Grange Hill East (10/10)</strong><div class='cs'>Victoria Road North, Vipond Street, Warren Street, Washburn Drive +8 more</div><div class='cs mono'>e.g. 129 Victoria Road North: addr:province=Ontario &rarr; removed</div></td>
+        <td class="n">499</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/83-grange-hill-east-p10.osm">Open in JOSM</a>
+            <div class="cs">83-grange-hill-east-p10.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Grange Hill East 10/10 [batch 83/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="84-hales-barton" data-count="1">
+        <td><input type="checkbox" aria-label="batch 84 uploaded"></td>
+        <td class="n">84</td>
+        <td><strong>Hales Barton</strong><div class='cs'>Robin Road</div><div class='cs mono'>e.g. 49 Robin Road: addr:province=ON &rarr; removed</div></td>
+        <td class="n">1</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/84-hales-barton.osm">Open in JOSM</a>
+            <div class="cs">84-hales-barton.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Hales Barton [batch 84/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="85-non-residential-c" data-count="2">
+        <td><input type="checkbox" aria-label="batch 85 uploaded"></td>
+        <td class="n">85</td>
+        <td><strong>Non-Residential - C</strong><div class='cs'>Farley Drive, Poppy Drive East</div><div class='cs mono'>e.g. 31 Farley Drive: addr:province=ON &rarr; removed</div></td>
+        <td class="n">2</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/85-non-residential-c.osm">Open in JOSM</a>
+            <div class="cs">85-non-residential-c.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Non-Residential - C [batch 85/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="86-old-university" data-count="3">
+        <td><input type="checkbox" aria-label="batch 86 uploaded"></td>
+        <td class="n">86</td>
+        <td><strong>Old University</strong><div class='cs'>Municipal Street, Stone Road West, Water Street</div><div class='cs mono'>e.g. 45 Municipal Street: addr:province=ON &rarr; removed</div></td>
+        <td class="n">3</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/86-old-university.osm">Open in JOSM</a>
+            <div class="cs">86-old-university.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Old University [batch 86/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="87-brant" data-count="4">
+        <td><input type="checkbox" aria-label="batch 87 uploaded"></td>
+        <td class="n">87</td>
+        <td><strong>Brant</strong><div class='cs'>Ferndale Avenue, Longfellow Avenue, Victoria Road North, Woodlawn Road East</div><div class='cs mono'>e.g. 31 Ferndale Avenue: addr:province=ON &rarr; removed</div></td>
+        <td class="n">4</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/87-brant.osm">Open in JOSM</a>
+            <div class="cs">87-brant.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Brant [batch 87/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="88-rickson-ridge" data-count="4">
+        <td><input type="checkbox" aria-label="batch 88 uploaded"></td>
+        <td class="n">88</td>
+        <td><strong>Rickson Ridge</strong><div class='cs'>Edinburgh Road South, Gordon Street</div><div class='cs mono'>e.g. 920 Edinburgh Road South: addr:province=ON &rarr; removed</div></td>
+        <td class="n">4</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/88-rickson-ridge.osm">Open in JOSM</a>
+            <div class="cs">88-rickson-ridge.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Rickson Ridge [batch 88/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="89-university" data-count="4">
+        <td><input type="checkbox" aria-label="batch 89 uploaded"></td>
+        <td class="n">89</td>
+        <td><strong>University</strong><div class='cs'>Edinburgh Road South, Gordon Street, Trent Lane</div><div class='cs mono'>e.g. 498 Edinburgh Road South: addr:province=ON &rarr; removed</div></td>
+        <td class="n">4</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/89-university.osm">Open in JOSM</a>
+            <div class="cs">89-university.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - University [batch 89/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="90-st-georges-parkway" data-count="5">
+        <td><input type="checkbox" aria-label="batch 90 uploaded"></td>
+        <td class="n">90</td>
+        <td><strong>St. Georges Parkway</strong><div class='cs'>Arthur Street North, Eramosa Road, Franchetto Boulevard, Grove Street +1 more</div><div class='cs mono'>e.g. 146 Arthur Street North: addr:province=ON &rarr; removed</div></td>
+        <td class="n">5</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/90-st-georges-parkway.osm">Open in JOSM</a>
+            <div class="cs">90-st-georges-parkway.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - St. Georges Parkway [batch 90/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="91-clairfields" data-count="6">
+        <td><input type="checkbox" aria-label="batch 91 uploaded"></td>
+        <td class="n">91</td>
+        <td><strong>Clairfields</strong><div class='cs'>Clair Road West, Gordon Street S, Southgate Drive</div><div class='cs mono'>e.g. 20 Clair Road West: addr:province=ON &rarr; removed</div></td>
+        <td class="n">6</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/91-clairfields.osm">Open in JOSM</a>
+            <div class="cs">91-clairfields.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Clairfields [batch 91/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="92-non-residential-b" data-count="8">
+        <td><input type="checkbox" aria-label="batch 92 uploaded"></td>
+        <td class="n">92</td>
+        <td><strong>Non-Residential - B</strong><div class='cs'>Dunlop Drive, Victoria Road South, York Road</div><div class='cs mono'>e.g. 110 Dunlop Drive: addr:province=ON &rarr; removed</div></td>
+        <td class="n">8</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/92-non-residential-b.osm">Open in JOSM</a>
+            <div class="cs">92-non-residential-b.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Non-Residential - B [batch 92/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="93-pine-ridge-westminster-woods" data-count="8">
+        <td><input type="checkbox" aria-label="batch 93 uploaded"></td>
+        <td class="n">93</td>
+        <td><strong>Pine Ridge - Westminster Woods</strong><div class='cs'>Arkell Road, Clair Road East, Clairfields Drive East, Eugene Drive +4 more</div><div class='cs mono'>e.g. 63 Arkell Road: addr:province=ON &rarr; removed</div></td>
+        <td class="n">8</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/93-pine-ridge-westminster-woods.osm">Open in JOSM</a>
+            <div class="cs">93-pine-ridge-westminster-woods.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Pine Ridge - Westminster Woods [batch 93/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="94-hanlon-creek" data-count="10">
+        <td><input type="checkbox" aria-label="batch 94 uploaded"></td>
+        <td class="n">94</td>
+        <td><strong>Hanlon Creek</strong><div class='cs'>Mcelderry Road, Scottsdale Drive, Yewholme Drive, Youngman Drive</div><div class='cs mono'>e.g. 9 Mcelderry Road: addr:province=ON &rarr; removed</div></td>
+        <td class="n">10</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/94-hanlon-creek.osm">Open in JOSM</a>
+            <div class="cs">94-hanlon-creek.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Hanlon Creek [batch 94/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="95-kortright-hills" data-count="11">
+        <td><input type="checkbox" aria-label="batch 95 uploaded"></td>
+        <td class="n">95</td>
+        <td><strong>Kortright Hills</strong><div class='cs'>Bett Court, Downey Road, Hanlon Creek Blvd, Hanlon Creek Boulevard +2 more</div><div class='cs mono'>e.g. 28 Bett Court: addr:province=ON &rarr; removed</div></td>
+        <td class="n">11</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/95-kortright-hills.osm">Open in JOSM</a>
+            <div class="cs">95-kortright-hills.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Kortright Hills [batch 95/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="96-parkwood-gardens" data-count="17">
+        <td><input type="checkbox" aria-label="batch 96 uploaded"></td>
+        <td class="n">96</td>
+        <td><strong>Parkwood Gardens</strong><div class='cs'>Deerpath Drive, Imperial Road South, Paisley Road, Wellington Street West</div><div class='cs mono'>e.g. 18 Deerpath Drive: addr:province=ON &rarr; removed</div></td>
+        <td class="n">17</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/96-parkwood-gardens.osm">Open in JOSM</a>
+            <div class="cs">96-parkwood-gardens.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Parkwood Gardens [batch 96/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="97-two-rivers" data-count="18">
+        <td><input type="checkbox" aria-label="batch 97 uploaded"></td>
+        <td class="n">97</td>
+        <td><strong>Two Rivers</strong><div class='cs'>Alice Street, Armstrong Avenue, Beverley St, Huron Street +4 more</div><div class='cs mono'>e.g. 158 Alice Street: addr:province=ON &rarr; removed</div></td>
+        <td class="n">18</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/97-two-rivers.osm">Open in JOSM</a>
+            <div class="cs">97-two-rivers.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Two Rivers [batch 97/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="98-west-willow-woods" data-count="21">
+        <td><input type="checkbox" aria-label="batch 98 uploaded"></td>
+        <td class="n">98</td>
+        <td><strong>West Willow Woods</strong><div class='cs'>Flaherty Drive, Imperial Road North, Speedvale Avenue West, Westwood Road +1 more</div><div class='cs mono'>e.g. 75 Flaherty Drive: addr:province=ON &rarr; removed</div></td>
+        <td class="n">21</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/98-west-willow-woods.osm">Open in JOSM</a>
+            <div class="cs">98-west-willow-woods.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - West Willow Woods [batch 98/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="99-grange-hill-east" data-count="22">
+        <td><input type="checkbox" aria-label="batch 99 uploaded"></td>
+        <td class="n">99</td>
+        <td><strong>Grange Hill East</strong><div class='cs'>Elizabeth Street, Fleming Road, Grange Road, Hadati Road +6 more</div><div class='cs mono'>e.g. 380 Elizabeth Street: addr:province=ON &rarr; removed</div></td>
+        <td class="n">22</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/99-grange-hill-east.osm">Open in JOSM</a>
+            <div class="cs">99-grange-hill-east.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Grange Hill East [batch 99/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="100-june-avenue" data-count="28">
+        <td><input type="checkbox" aria-label="batch 100 uploaded"></td>
+        <td class="n">100</td>
+        <td><strong>June Avenue</strong><div class='cs'>Woodlawn Road East, Woodlawn Road West, Woolwich Street</div><div class='cs mono'>e.g. 10 Woodlawn Road East: addr:province=ON &rarr; removed</div></td>
+        <td class="n">28</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/100-june-avenue.osm">Open in JOSM</a>
+            <div class="cs">100-june-avenue.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - June Avenue [batch 100/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="101-waverley" data-count="59">
+        <td><input type="checkbox" aria-label="batch 101 uploaded"></td>
+        <td class="n">101</td>
+        <td><strong>Waverley</strong><div class='cs'>Arthur Street North, Balmoral Drive, Delhi Street, Emma Street +8 more</div><div class='cs mono'>e.g. 156 Arthur Street North: addr:province=ON &rarr; removed</div></td>
+        <td class="n">59</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/101-waverley.osm">Open in JOSM</a>
+            <div class="cs">101-waverley.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Waverley [batch 101/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="102-onward-willow" data-count="61">
+        <td><input type="checkbox" aria-label="batch 102 uploaded"></td>
+        <td class="n">102</td>
+        <td><strong>Onward Willow</strong><div class='cs'>Dawson Road, Shelldale Crescent, Silvercreek Parkway North, Speedvale Avenue West +1 more</div><div class='cs mono'>e.g. 65 Dawson Road: addr:province=ON &rarr; removed</div></td>
+        <td class="n">61</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/102-onward-willow.osm">Open in JOSM</a>
+            <div class="cs">102-onward-willow.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Onward Willow [batch 102/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="103-exhibition-park" data-count="81">
+        <td><input type="checkbox" aria-label="batch 103 uploaded"></td>
+        <td class="n">103</td>
+        <td><strong>Exhibition Park</strong><div class='cs'>Cardigan Street, Douglas Street, Dufferin Street, George Street +15 more</div><div class='cs mono'>e.g. 139 Cardigan Street: addr:province=ON &rarr; removed</div></td>
+        <td class="n">81</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/103-exhibition-park.osm">Open in JOSM</a>
+            <div class="cs">103-exhibition-park.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Exhibition Park [batch 103/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="104-non-residential-a" data-count="88">
+        <td><input type="checkbox" aria-label="batch 104 uploaded"></td>
+        <td class="n">104</td>
+        <td><strong>Non-Residential - A</strong><div class='cs'>Curtis Drive, Dawson Road, Elmira Road North, Imperial Road North +7 more</div><div class='cs mono'>e.g. 163 Curtis Drive: addr:province=ON &rarr; removed</div></td>
+        <td class="n">88</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/104-non-residential-a.osm">Open in JOSM</a>
+            <div class="cs">104-non-residential-a.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Non-Residential - A [batch 104/105]">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="105-downtown-sunny-acres" data-count="147">
+        <td><input type="checkbox" aria-label="batch 105 uploaded"></td>
+        <td class="n">105</td>
+        <td><strong>Downtown - Sunny Acres</strong><div class='cs'>Alma Street South, Carden Street, Commercial Street, Crimea Street +22 more</div><div class='cs mono'>e.g. 15 Alma Street South: addr:province=ON &rarr; removed</div></td>
+        <td class="n">147</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/province-removal/batches/105-downtown-sunny-acres.osm">Open in JOSM</a>
+            <div class="cs">105-downtown-sunny-acres.osm
+            <button class="copy" data-text="Guelph address tidy: remove addr:province - Downtown - Sunny Acres [batch 105/105]">copy comment</button></div></td>
+      </tr></tbody>
+</table>
+
+<h2>Order of work</h2><ol class="steps"><li><strong>Do not start.</strong> The thread was told this edit touches ~3,699 objects. It touches ~44,800. Post the correction first - see README.md.</li><li>Upload the pilot, then wait a day and look at what came back before doing the rest.</li><li>The <code>ON</code> / <code>On</code> batches are last and separate. They are covered by the wiki but not named in the forum post; upload them only if the thread is content.</li><li>Rebuild with <code>--refetch</code> on the day you upload. Versions prepared earlier will have moved, and a stale one costs you a conflict per object.</li></ol>
+
+<h2>Left for hand review</h2><h3>Relations — 4</h3><p class='sub'>Never batched. This tooling fetches neither a relation's members nor a position for it, so batching one would upload an object whose geometry nobody looked at. Handle by hand, or leave.</p><table><thead><tr><th>Object</th><th>housenumber</th><th>province</th><th>Street</th><th></th></tr></thead><tbody><tr><td class='mono'>relation 12595929</td><td class='mono'>150</td><td class='mono'>ON</td><td>Delhi Street</td><td><a href='https://www.openstreetmap.org/relation/12595929'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=r12595929'>JOSM</a></td></tr><tr><td class='mono'>relation 14939223</td><td class='mono'>380</td><td class='mono'>ON</td><td>Elizabeth Street</td><td><a href='https://www.openstreetmap.org/relation/14939223'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=r14939223'>JOSM</a></td></tr><tr><td class='mono'>relation 4066188</td><td class='mono'>155</td><td class='mono'>Ontario</td><td>Paisley Street</td><td><a href='https://www.openstreetmap.org/relation/4066188'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=r4066188'>JOSM</a></td></tr><tr><td class='mono'>relation 12981919</td><td class='mono'>100</td><td class='mono'>ON</td><td>Westmount Road</td><td><a href='https://www.openstreetmap.org/relation/12981919'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=r12981919'>JOSM</a></td></tr></tbody></table><h3>No housenumber — 29</h3><p class='sub'>Carries <code>addr:province</code> but no <code>addr:housenumber</code>: a boundary, a <code>place=*</code> node, something that is not an address. Worth a look before the tag is stripped.</p><table><thead><tr><th>Object</th><th>housenumber</th><th>province</th><th>Street</th><th></th></tr></thead><tbody><tr><td class='mono'>node 3192278891</td><td class='mono'></td><td class='mono'>ON</td><td></td><td><a href='https://www.openstreetmap.org/node/3192278891'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=n3192278891'>JOSM</a></td></tr><tr><td class='mono'>node 3599309937</td><td class='mono'></td><td class='mono'>ON</td><td></td><td><a href='https://www.openstreetmap.org/node/3599309937'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=n3599309937'>JOSM</a></td></tr><tr><td class='mono'>node 3631895695</td><td class='mono'></td><td class='mono'>ON</td><td></td><td><a href='https://www.openstreetmap.org/node/3631895695'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=n3631895695'>JOSM</a></td></tr><tr><td class='mono'>node 12089876618</td><td class='mono'></td><td class='mono'>ON</td><td></td><td><a href='https://www.openstreetmap.org/node/12089876618'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=n12089876618'>JOSM</a></td></tr><tr><td class='mono'>node 12634704597</td><td class='mono'></td><td class='mono'>ON</td><td></td><td><a href='https://www.openstreetmap.org/node/12634704597'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=n12634704597'>JOSM</a></td></tr><tr><td class='mono'>node 12634818698</td><td class='mono'></td><td class='mono'>ON</td><td></td><td><a href='https://www.openstreetmap.org/node/12634818698'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=n12634818698'>JOSM</a></td></tr><tr><td class='mono'>node 12634818700</td><td class='mono'></td><td class='mono'>ON</td><td></td><td><a href='https://www.openstreetmap.org/node/12634818700'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=n12634818700'>JOSM</a></td></tr><tr><td class='mono'>node 12854590757</td><td class='mono'></td><td class='mono'>ON</td><td></td><td><a href='https://www.openstreetmap.org/node/12854590757'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=n12854590757'>JOSM</a></td></tr><tr><td class='mono'>way 177929342</td><td class='mono'></td><td class='mono'>ON</td><td></td><td><a href='https://www.openstreetmap.org/way/177929342'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w177929342'>JOSM</a></td></tr><tr><td class='mono'>way 178084455</td><td class='mono'></td><td class='mono'>ON</td><td></td><td><a href='https://www.openstreetmap.org/way/178084455'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w178084455'>JOSM</a></td></tr><tr><td class='mono'>way 208503417</td><td class='mono'></td><td class='mono'>ON</td><td></td><td><a href='https://www.openstreetmap.org/way/208503417'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w208503417'>JOSM</a></td></tr><tr><td class='mono'>way 413398792</td><td class='mono'></td><td class='mono'>ON</td><td></td><td><a href='https://www.openstreetmap.org/way/413398792'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w413398792'>JOSM</a></td></tr><tr><td class='mono'>way 772999951</td><td class='mono'></td><td class='mono'>Ontario</td><td></td><td><a href='https://www.openstreetmap.org/way/772999951'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w772999951'>JOSM</a></td></tr><tr><td class='mono'>way 802544799</td><td class='mono'></td><td class='mono'>ON</td><td></td><td><a href='https://www.openstreetmap.org/way/802544799'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w802544799'>JOSM</a></td></tr><tr><td class='mono'>way 803283659</td><td class='mono'></td><td class='mono'>ON</td><td></td><td><a href='https://www.openstreetmap.org/way/803283659'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w803283659'>JOSM</a></td></tr><tr><td class='mono'>way 803283660</td><td class='mono'></td><td class='mono'>ON</td><td></td><td><a href='https://www.openstreetmap.org/way/803283660'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w803283660'>JOSM</a></td></tr><tr><td class='mono'>way 803283661</td><td class='mono'></td><td class='mono'>ON</td><td></td><td><a href='https://www.openstreetmap.org/way/803283661'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w803283661'>JOSM</a></td></tr><tr><td class='mono'>way 803283662</td><td class='mono'></td><td class='mono'>ON</td><td></td><td><a href='https://www.openstreetmap.org/way/803283662'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w803283662'>JOSM</a></td></tr><tr><td class='mono'>way 1388560463</td><td class='mono'></td><td class='mono'>ON</td><td></td><td><a href='https://www.openstreetmap.org/way/1388560463'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w1388560463'>JOSM</a></td></tr><tr><td class='mono'>way 1558934403</td><td class='mono'></td><td class='mono'>Ontario</td><td></td><td><a href='https://www.openstreetmap.org/way/1558934403'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w1558934403'>JOSM</a></td></tr><tr><td class='mono'>node 13700513285</td><td class='mono'></td><td class='mono'>ON</td><td>435 Stone Rd W</td><td><a href='https://www.openstreetmap.org/node/13700513285'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=n13700513285'>JOSM</a></td></tr><tr><td class='mono'>node 1732487985</td><td class='mono'></td><td class='mono'>ON</td><td>Edinburgh Road South</td><td><a href='https://www.openstreetmap.org/node/1732487985'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=n1732487985'>JOSM</a></td></tr><tr><td class='mono'>way 208339454</td><td class='mono'></td><td class='mono'>ON</td><td>Exhibition Park</td><td><a href='https://www.openstreetmap.org/way/208339454'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w208339454'>JOSM</a></td></tr><tr><td class='mono'>way 714069159</td><td class='mono'></td><td class='mono'>ON</td><td>Farquhar Street</td><td><a href='https://www.openstreetmap.org/way/714069159'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w714069159'>JOSM</a></td></tr><tr><td class='mono'>way 1430308403</td><td class='mono'></td><td class='mono'>ON</td><td>Grange Road</td><td><a href='https://www.openstreetmap.org/way/1430308403'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w1430308403'>JOSM</a></td></tr><tr><td class='mono'>node 416262818</td><td class='mono'></td><td class='mono'>ON</td><td>James Street East</td><td><a href='https://www.openstreetmap.org/node/416262818'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=n416262818'>JOSM</a></td></tr><tr><td class='mono'>node 11225222239</td><td class='mono'></td><td class='mono'>Ontario</td><td>Waterloo Avenue</td><td><a href='https://www.openstreetmap.org/node/11225222239'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=n11225222239'>JOSM</a></td></tr><tr><td class='mono'>way 1387307325</td><td class='mono'></td><td class='mono'>ON</td><td>Willow Road</td><td><a href='https://www.openstreetmap.org/way/1387307325'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w1387307325'>JOSM</a></td></tr><tr><td class='mono'>node 9095771631</td><td class='mono'></td><td class='mono'>ON</td><td>Woodlawn Road West</td><td><a href='https://www.openstreetmap.org/node/9095771631'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=n9095771631'>JOSM</a></td></tr></tbody></table>
+
+<script>
+const TOTAL_BATCHES = 105;
+const TOTAL_OBJECTS = 44763;
+
+const KEY = 'guelph-province-removal-done';
+const done = new Set(JSON.parse(localStorage.getItem(KEY) || '[]'));
+function paint() {
+  let objs = 0, batches = 0;
+  document.querySelectorAll('tr[data-key]').forEach(tr => {
+    const on = done.has(tr.dataset.key);
+    tr.classList.toggle('done', on);
+    tr.querySelector('input').checked = on;
+    if (on) { batches++; objs += Number(tr.dataset.count); }
+  });
+  document.getElementById('tally').textContent =
+    batches + ' of ' + TOTAL_BATCHES + ' batches uploaded \u2014 ' +
+    objs.toLocaleString() + ' of ' + TOTAL_OBJECTS.toLocaleString() + ' objects';
+}
+document.addEventListener('change', e => {
+  if (e.target.matches('tr[data-key] input')) {
+    const id = e.target.closest('tr').dataset.key;
+    e.target.checked ? done.add(id) : done.delete(id);
+    localStorage.setItem(KEY, JSON.stringify([...done]));
+    paint();
+  }
+});
+document.addEventListener('click', e => {
+  if (e.target.matches('.copy')) {
+    navigator.clipboard.writeText(e.target.dataset.text);
+    const was = e.target.textContent;
+    e.target.textContent = 'copied';
+    setTimeout(() => { e.target.textContent = was; }, 900);
+  }
+});
+paint();
+
+</script>
