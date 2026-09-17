@@ -76,6 +76,32 @@ Routed to `review.csv` rather than batched:
 | `relation` | 4 | Relations are never batched — `_common.batchable()` refuses them, because this tooling fetches neither their members nor a position for them. |
 | `outside-city` | 0 | Anything the fetch dragged in from over the boundary. **It found nothing**, which is the useful part: Guelph abuts Guelph/Eramosa and the `>;` recursion does cross ways, so the guard was written expecting spill. There is none. It stays as a cheap invariant that will speak up if a later refetch behaves differently. |
 
+## A bug this campaign found in the shared builder
+
+`write_batch` used to put a way's child nodes into the batch straight from the
+fetch index. Those `Element` objects are **shared**: `selected` and
+`by_node_id` hand back the same object for a node that is both a campaign item
+and some way's child. So once one batch transformed that node and stamped
+`action="modify"` on it, every later batch carrying that way inherited the
+edit *and* the action — and would have uploaded the same change again, in a
+second changeset, against a version the first upload had already bumped.
+
+Campaign 1 had **58** of them. The manifest looked perfect throughout: 44,763
+rows, 44,763 distinct objects, no ghosts. The damage was only visible in the
+batch `.osm` files, which is where it was found.
+
+Fixed in `_common.py` — child nodes are now written as inert geometry stubs
+(`id`, `version`, `lat`, `lon`; no tags, no action), and a child that is also
+an item in the same batch still goes in whole. After the fix: 0 objects marked
+modify in more than one batch, and no way left with a dangling node reference.
+
+**Campaigns 2 and 3 were audited against their batch files on disk and are
+clean** — 5,521 and 447 modify-marked objects, none in more than one batch.
+Nothing uploaded in September needs revisiting. The bug needed a campaign
+where the edited objects are themselves way children, and only this one is:
+almost every address object in Guelph carries `addr:province`, including the
+entrance nodes sitting inside building outlines.
+
 ## Files
 
     live.osm            the cached Overpass fetch (gitignored — 68 MB)
