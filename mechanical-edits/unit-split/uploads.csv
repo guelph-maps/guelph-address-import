@@ -1,2 +1,37 @@
 batch,file,area,objects,changeset,uploaded_at,account
 1,01-june-avenue.osm,June Avenue,69,189086416,2026-09-15T23:49:42Z,skfd
+2,02-non-residential-b.osm,Non-Residential - B,1,189135575,2026-09-17T00:20:54Z,skfd imports
+3,03-non-residential-a.osm,Non-Residential - A,6,189135585,2026-09-17T00:21:23Z,skfd imports
+4,04-downtown-sunny-acres.osm,Downtown - Sunny Acres,19,189135592,2026-09-17T00:21:41Z,skfd imports
+5,05-two-rivers.osm,Two Rivers,24,189135596,2026-09-17T00:22:22Z,skfd imports
+6,06-outside-the-area-fabric.osm,Outside the area fabric,47,189135606,2026-09-17T00:22:47Z,skfd imports
+7,07-non-residential-c.osm,Non-Residential - C,78,189135610,2026-09-17T00:23:04Z,skfd imports
+8,08-exhibition-park.osm,Exhibition Park,105,189135614,2026-09-17T00:23:32Z,skfd imports
+9,09-waverley.osm,Waverley,180,189135617,2026-09-17T00:23:43Z,skfd imports
+10,10-kortright-hills.osm,Kortright Hills,186,189135618,2026-09-17T00:23:54Z,skfd imports
+11,11-brant.osm,Brant,187,189135643,2026-09-17T00:25:51Z,skfd imports
+12,12-clairfields-p1.osm,Clairfields,250,189135651,2026-09-17T00:26:07Z,skfd imports
+13,13-clairfields-p2.osm,Clairfields,7,189135665,2026-09-17T00:27:01Z,skfd imports
+14,14-hanlon-creek-p1.osm,Hanlon Creek,250,189135666,2026-09-17T00:27:10Z,skfd imports
+15,15-hanlon-creek-p2.osm,Hanlon Creek,78,189135692,2026-09-17T00:28:23Z,skfd imports
+16,16-pine-ridge-westminster-woods-p1.osm,Pine Ridge - Westminster Woods,250,189135716,2026-09-17T00:29:19Z,skfd imports
+17,17-pine-ridge-westminster-woods-p2.osm,Pine Ridge - Westminster Woods,136,189135741,2026-09-17T00:30:34Z,skfd imports
+18,18-hales-barton-p1.osm,Hales Barton,250,189135749,2026-09-17T00:31:01Z,skfd imports
+19,19-hales-barton-p2.osm,Hales Barton,157,189135762,2026-09-17T00:31:36Z,skfd imports
+20,20-parkwood-gardens-p1.osm,Parkwood Gardens,250,189135785,2026-09-17T00:32:50Z,skfd imports
+21,21-parkwood-gardens-p2.osm,Parkwood Gardens,188,189135797,2026-09-17T00:33:19Z,skfd imports
+22,22-rickson-ridge-p1.osm,Rickson Ridge,250,189135801,2026-09-17T00:33:46Z,skfd imports
+23,23-rickson-ridge-p2.osm,Rickson Ridge,190,189135812,2026-09-17T00:34:12Z,skfd imports
+24,24-onward-willow-p1.osm,Onward Willow,250,189135821,2026-09-17T00:34:50Z,skfd imports
+25,25-onward-willow-p2.osm,Onward Willow,250,189135832,2026-09-17T00:35:26Z,skfd imports
+26,26-onward-willow-p3.osm,Onward Willow,3,189135836,2026-09-17T00:35:33Z,skfd imports
+27,27-grange-hill-east-p1.osm,Grange Hill East,250,189135839,2026-09-17T00:35:43Z,skfd imports
+28,28-grange-hill-east-p2.osm,Grange Hill East,250,189135847,2026-09-17T00:36:18Z,skfd imports
+29,29-grange-hill-east-p3.osm,Grange Hill East,67,189135854,2026-09-17T00:36:35Z,skfd imports
+30,30-old-university-p1.osm,Old University,250,189135865,2026-09-17T00:37:01Z,skfd imports
+31,31-old-university-p2.osm,Old University,250,189135873,2026-09-17T00:37:33Z,skfd imports
+32,32-old-university-p3.osm,Old University,91,189135906,2026-09-17T00:39:41Z,skfd imports
+33,33-west-willow-woods-p1.osm,West Willow Woods,250,189135910,2026-09-17T00:40:01Z,skfd imports
+34,34-west-willow-woods-p2.osm,West Willow Woods,250,189135917,2026-09-17T00:40:25Z,skfd imports
+35,35-west-willow-woods-p3.osm,West Willow Woods,181,189135922,2026-09-17T00:40:47Z,skfd imports
+36,36-prefix-and-suffix-identical-10-10.osm,Prefix and suffix identical (10-10),21,189135926,2026-09-17T00:40:55Z,skfd imports
