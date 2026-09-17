@@ -191,6 +191,29 @@ status = "props:STATUS"
 # a suffixed or stepped sequence, so those listings are DROPPED rather than
 # truncated — a truncated one would assert the building ends where the cut
 # landed — and the candidate is flagged for review so the loss is visible.
+#
+# THE OVERFLOW IS A MISCLASSIFICATION DETECTOR, not an independent problem.
+# Found 2026-09-17, from skfd asking why 15 Carere Crescent had turned into
+# many buildings all reading "15 Carere Crescent". Measure the three that do
+# not fit and they are not buildings at all:
+#     15 Carere Crescent    66 units over 103 m x 114 m
+#     85 Mullin Drive      110 units over 186 m x 119 m
+#    176 Janefield Avenue   76 units over 205 m x 175 m
+# A single apartment tower is about 40 m square. These are COMPLEXES — 15
+# Carere is 32 separate townhouse blocks that OSM already maps individually,
+# which is why campaign 3 wrote addr:flats on 32 ways rather than one. So
+# collapsing them to a single civic node is wrong, and the listing is too long
+# precisely BECAUSE the group is too spread out to be one building. The
+# classifier collapses them because the unit numbering is lettered-coded
+# (9A;9B), and the numbering test never asks how far apart the units are once
+# it has decided they are coded.
+#
+# The fix is a footprint guard on the collapse branch, not a longer tag: a
+# group whose units span more than roughly one building should be per-door
+# even when its numbering looks coded. Until that lands, the three are flagged
+# for review and a reviewer should expect to route them to door nodes by hand.
+# Do NOT "fix" this by truncating or by raising the limit — both would paper
+# over a group that was misread.
 # Known cosmetic wrinkle: strays sort to the tail, so 511 Edinburgh Road South
 # reads 101-102;201-202;101A rather than interleaving 101A after 101.
 #
