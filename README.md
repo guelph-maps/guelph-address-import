@@ -87,6 +87,11 @@ running the others and not yet proposed: 81 objects carrying
 `addr:interpolation` where it cannot mean anything, and 51 `addr:flats` values
 with untidy separators.
 
+**[`IDEAS.md`](IDEAS.md) is the other half of that ledger** — projection ideas
+the data suggested and that are *not* being built, each with the numbers that
+made it tempting and the numbers that stopped it. Two so far, both from asking
+how `44B` should be mapped.
+
 The pipeline lives in the engine repo,
 [`address-importer-friend`](https://github.com/skfd/address-importer-friend)
 (see its README for setup). This repo carries only Guelph's `config.toml`,
