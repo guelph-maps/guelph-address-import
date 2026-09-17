@@ -1,4 +1,22 @@
-# Forum announcement — draft
+# Forum announcement — posted 2026-08-28 as post #14
+
+**This file is the record of what went up, not a draft any more.** It is kept
+verbatim on purpose. Corrections go *after* it, or on the thread — editing the
+text here would make the repo disagree with what the community actually read
+and consented to.
+
+> **Known wrong, found 2026-09-17.** Point 2 below says `addr:province=Ontario`
+> is on "the ~3,699 Guelph objects that carry it". The real figure is **44,796**
+> — 44,155 `Ontario`, 607 `ON`, one `On` — about twelve times what this post
+> claimed, and very nearly every address object in Guelph. 3,699 was a sample
+> count (4,244 elements probed) quoted as if it were a census. The 14-day
+> window that closed on 2026-09-10 is therefore **not** being treated as
+> consent for the corrected scope; the correction is carried in
+> `FINDINGS_POST.md` and the campaign is held until the thread answers.
+
+---
+
+**Original posting notes, kept as written:**
 
 **Reply in the existing thread. Do not open a new topic.**
 <https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103>

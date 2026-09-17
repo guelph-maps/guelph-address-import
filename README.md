@@ -52,8 +52,14 @@ Publication state:
 **Three mechanical edits** ride along with the proposal, each consented
 separately under the Automated Edits code of conduct:
 
-1. **Remove `addr:province=Ontario`** (~3,699 objects). Consented 2026-09-10,
-   **not built** — the only one of the three with no tooling.
+1. **Remove `addr:province`** — ✅ **built 2026-09-17**, 44,763 objects in
+   105 batches, not yet uploaded. **The consented count was wrong by 12×**:
+   the thread was told ~3,699, the real figure is 44,796 (44,155 `Ontario`,
+   607 `ON`, 1 `On`) — very nearly every address object in the city. 3,699 was
+   a sample count published as a census. The edit is unchanged and still
+   right; its size was misstated, so it waits on a correction and the
+   community's answer on whether a fresh window is wanted. See
+   [`mechanical-edits/province-removal/README.md`](mechanical-edits/province-removal/README.md).
 2. **Split double-encoded unit housenumbers** — ✅ **done 2026-09-16**, 5,521
    objects in 36 changesets. `addr:housenumber=714-30` + `addr:unit=30` →
    `addr:housenumber=714`, unit untouched. The original importer defended the
@@ -128,7 +134,9 @@ of sampled elements, 2026 activity is 49 elements and the latest 100
 changesets carry no import tags — complete and quiet, not active. The probe's
 tag-convention note said to stay consistent with `addr:province=Ontario`
 (3,699 vs 178 `ON`); that was **superseded 2026-08-27** — province is now
-dropped and the existing tags stripped, see the mechanical edits above.
+dropped and the existing tags stripped, see the mechanical edits above. Those
+two figures are the probe's own 4,244-element sample, and quoting them as
+city-wide counts is the error corrected on 2026-09-17.
 Postcode on the dominant combo still holds, as does the observation that 725
 sampled elements already carry `addr:unit`.
 

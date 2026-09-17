@@ -25,6 +25,14 @@ Below is the honest list. I would rather publish the mistakes than have someone 
 * **I retagged a cafe as its own landlord.** [Centurion Coffee](https://www.openstreetmap.org/node/13533404756) had `addr:unit=B3-1` and got `addr:flats=B3-1`. On a POI, `addr:unit` means *this business is in that unit* — identity, not containment — so the rewrite claimed a cafe contains a unit. Fixed by hand. I then swept every remaining batch and pulled four more shop and cafe nodes before they went up.
   * The discriminator turned out to be `building`, not the POI tag. A nursing home tagged `amenity=social_facility` **is** the structure and really does contain its units; a bare node with `shop=shoes` is a tenant of one.
 * **A near miss on ordering.** My first classifier read `37-1` on Bond Court as a span "37 down to 1" rather than unit 1 of number 37 — plausible, because Bond Court really does have addresses at 1, 3 and 5. It quietly moved twelve townhouses into the leave-alone pile. Caught before upload, but only because the counts looked wrong.
+* **I told you `addr:province` was on ~3,699 objects. It is on ~44,800.** That is the second mechanical edit I proposed, in post #14, and the number was wrong by a factor of twelve. It came from a sample: an entry-state probe read 4,244 Guelph elements and found the tag on 3,878 of them, and I quoted that sample's `Ontario`/`ON` split as if it were a city-wide count. It never was, and nothing in the write-up said so. Re-measured against Overpass on 2026-09-17: **44,155 `Ontario`, 607 `ON`, 1 `On`** — against 47,050 objects in Guelph carrying `addr:housenumber`, so **very nearly every address object in the city**.
+  * The edit itself does not change and I still think it is right: Canadian convention omits the province, the Toronto import does not write it, and the enclosing admin boundary already implies it. What changes is the size of the thing I asked you to agree to. **I am not treating the 2026-09-10 window as covering this**, and nothing uploads until we have settled that here.
+
+## The one thing I want an answer on
+
+The province edit is built and ready — 44,763 objects in 105 batches, one per neighbourhood with the large ones split, each its own changeset and its own revert. What I do not want to do is run it on a consent that was given for a number twelve times smaller.
+
+So: does an unchanged edit definition with a corrected count want **a fresh 14-day window**, or a **correction plus short notice** like the unit-list campaign got? I lean to the second — nothing about what the edit does has moved — but "95% of every address object in Guelph" is the number that ought to make someone pause, and I would rather be told to wait than assume.
 
 ## Things the data taught me
 
@@ -45,7 +53,7 @@ Below is the honest list. I would rather publish the mistakes than have someone 
 
 ## What is next
 
-* **Remove `addr:province=Ontario`** — ~3,699 objects, consented back in the first window, not yet run.
+* **Remove `addr:province`** — ~44,800 objects, not the ~3,699 I said. Built and waiting on the question above.
 * **Remove the meaningless `addr:interpolation`** — the 81 above, leaving the 405 real ones alone. Needs its own notice before anything moves; this post is not it.
 * **Normalise `addr:flats` formatting** — the ~38%, using the same renderer the import writes through so Guelph ends up with one answer rather than two.
 * **Fix the complex-versus-building rule** before any unit-level import, so 15 Carere and its two siblings are not collapsed into a single node.

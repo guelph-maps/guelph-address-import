@@ -5,7 +5,7 @@ have been *found* but not yet proposed, so they do not live only in a chat log.
 
 | # | Campaign | State |
 |---|---|---|
-| 1 | Remove `addr:province=Ontario` (~3,699) | consented 2026-09-10, **not built** |
+| 1 | Remove `addr:province` (44,796, **not** the ~3,699 consented) | **built** 2026-09-17, 44,763 objects, 105 batches — held for a corrected consent |
 | 2 | Split double-encoded unit housenumbers | **done** 2026-09-16, 5,521 objects, 36 changesets |
 | — | Campaign 2/3 leftovers, corroborated by the City roster | **done**, 32 objects |
 | 3 | Unit lists `addr:unit` → `addr:flats` (447) | **done** 2026-09-17, 447 objects, 23 changesets |
