@@ -1,0 +1,33 @@
+type,id,version,street,area,before_housenumber,before_unit,after_housenumber,after_unit,after_flats,evidence
+way,1437044001,1,Bond Court,West Willow Woods,37-1,,37,1,,"City lists 37 Bond Court with unit(s) 1, 10, 11, 12, 2, 3, 4, 5, 6, 7, 8, 9"
+way,1437043999,1,Bond Court,West Willow Woods,37-10,,37,10,,"City lists 37 Bond Court with unit(s) 1, 10, 11, 12, 2, 3, 4, 5, 6, 7, 8, 9"
+way,1437044000,1,Bond Court,West Willow Woods,37-11,,37,11,,"City lists 37 Bond Court with unit(s) 1, 10, 11, 12, 2, 3, 4, 5, 6, 7, 8, 9"
+way,557515096,5,Bond Court,West Willow Woods,37-12,,37,12,,"City lists 37 Bond Court with unit(s) 1, 10, 11, 12, 2, 3, 4, 5, 6, 7, 8, 9"
+way,1437044002,1,Bond Court,West Willow Woods,37-2,,37,2,,"City lists 37 Bond Court with unit(s) 1, 10, 11, 12, 2, 3, 4, 5, 6, 7, 8, 9"
+way,1437044003,1,Bond Court,West Willow Woods,37-3,,37,3,,"City lists 37 Bond Court with unit(s) 1, 10, 11, 12, 2, 3, 4, 5, 6, 7, 8, 9"
+way,1437044004,1,Bond Court,West Willow Woods,37-4,,37,4,,"City lists 37 Bond Court with unit(s) 1, 10, 11, 12, 2, 3, 4, 5, 6, 7, 8, 9"
+way,557515211,6,Bond Court,West Willow Woods,37-5,,37,5,,"City lists 37 Bond Court with unit(s) 1, 10, 11, 12, 2, 3, 4, 5, 6, 7, 8, 9"
+way,1437043995,1,Bond Court,West Willow Woods,37-6,,37,6,,"City lists 37 Bond Court with unit(s) 1, 10, 11, 12, 2, 3, 4, 5, 6, 7, 8, 9"
+way,1437043996,1,Bond Court,West Willow Woods,37-7,,37,7,,"City lists 37 Bond Court with unit(s) 1, 10, 11, 12, 2, 3, 4, 5, 6, 7, 8, 9"
+way,1437043997,1,Bond Court,West Willow Woods,37-8,,37,8,,"City lists 37 Bond Court with unit(s) 1, 10, 11, 12, 2, 3, 4, 5, 6, 7, 8, 9"
+way,1437043998,1,Bond Court,West Willow Woods,37-9,,37,9,,"City lists 37 Bond Court with unit(s) 1, 10, 11, 12, 2, 3, 4, 5, 6, 7, 8, 9"
+way,949555552,2,Goodwin Drive,Pine Ridge - Westminster Woods,161-B;161,,161,,B,City lists 161 Goodwin Drive with unit(s) B
+node,13164248912,1,Grove Street,St. Georges Parkway,18;18-A,A,18,,A,City lists 18 Grove Street with unit(s) A
+way,921078119,3,Imperial Road South,Parkwood Gardens,338;338-B,,338,,B,City lists 338 Imperial Road South with unit(s) B
+node,13251106189,1,Janefield Avenue,Old University,27;27-B,,27,,B,City lists 27 Janefield Avenue with unit(s) B
+node,13251106172,1,Janefield Avenue,Old University,33;33-C;33-B,,33,,B;C,"City lists 33 Janefield Avenue with unit(s) B, C"
+node,13251106188,1,Janefield Avenue,Old University,35-B;35;35-C,,35,,B;C,"City lists 35 Janefield Avenue with unit(s) B, C"
+node,13251106171,1,Janefield Avenue,Old University,37-B;37,,37,,B,City lists 37 Janefield Avenue with unit(s) B
+node,13251106168,1,Janefield Avenue,Old University,39-B;39,,39,,B,City lists 39 Janefield Avenue with unit(s) B
+node,13251106187,1,Janefield Avenue,Old University,41-B;41,,41,,B,City lists 41 Janefield Avenue with unit(s) B
+node,13251106167,1,Janefield Avenue,Old University,43-B;43,,43,,B,City lists 43 Janefield Avenue with unit(s) B
+node,13251106170,1,Mason Court,Old University,10-C;10-B;10,,10,,B;C,"City lists 10 Mason Court with unit(s) B, C"
+node,13251106169,1,Mason Court,Old University,12-C;12-B;12,,12,,B;C,"City lists 12 Mason Court with unit(s) B, C"
+node,13251106174,1,Mason Court,Old University,6;6-B,,6,,B,City lists 6 Mason Court with unit(s) B
+node,13251106173,1,Mason Court,Old University,8;8-B,,8,,B,City lists 8 Mason Court with unit(s) B
+way,803260905,2,Ottawa Crescent,St. Georges Parkway,37;37-B,,37,,B,City lists 37 Ottawa Crescent with unit(s) B
+node,13148757308,1,Paisley Street,Downtown - Sunny Acres,10-6/7,6/7,10,6/7,,"City lists 10 Paisley Street with unit(s) 1, 10, 2A, 3, 4, 5, 6/7, 8"
+node,13159082377,1,Quebec Street,Downtown - Sunny Acres,19;19-201,,19,,201,City lists 19 Quebec Street with unit(s) 201
+way,256118504,8,Silvercreek Parkway North,Onward Willow,130-BLD D,BLD D,130,BLD D,,"City lists 130 Silvercreek Parkway North with unit(s) 1, 10, 12, 13, 14, 15, 17, 18, 19, 2, 21, 22, 23, 24, 4, 5, 6, 7, 8, 9, BLD D, BLD E"
+way,256118508,6,Silvercreek Parkway North,Onward Willow,130-BLD E,BLD E,130,BLD E,,"City lists 130 Silvercreek Parkway North with unit(s) 1, 10, 12, 13, 14, 15, 17, 18, 19, 2, 21, 22, 23, 24, 4, 5, 6, 7, 8, 9, BLD D, BLD E"
+way,926071750,3,Woolwich Street,Exhibition Park,448;448-B,,448,,B,City lists 448 Woolwich Street with unit(s) B
