@@ -20,3 +20,9 @@ mechanical-edits/unit-split/batches/
 mechanical-edits/unit-listing-retag/live.osm
 mechanical-edits/unit-listing-retag/batches/
 mechanical-edits/hand-cases/batches/
+
+# Mechanical edit 1 (province) and 4+5 (flats hygiene): same arrangement.
+mechanical-edits/province-removal/live.osm
+mechanical-edits/province-removal/batches/
+mechanical-edits/flats-hygiene/live.osm
+mechanical-edits/flats-hygiene/batches/
