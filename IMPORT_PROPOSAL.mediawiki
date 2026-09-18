@@ -1,5 +1,5 @@
 {{Map of imports| name = Guelph Address Points
-| description = Continuous, human-reviewed gap-fill of civic address points from the City of Guelph open dataset, plus three documented mechanical tag cleanups, over the completed 2025 community import.
+| description = Continuous, human-reviewed gap-fill of civic address points from the City of Guelph open dataset, plus five documented mechanical tag cleanups, over the completed 2025 community import.
 | user = [[https://www.openstreetmap.org/user/skfd%20imports|skfd imports]]
 | status = In progress
 }}

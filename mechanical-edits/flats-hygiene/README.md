@@ -252,10 +252,11 @@ workaround lives.
 ## Checklist
 
 - [x] `ANNOUNCEMENT.md` posted to #135103 — 2026-09-18, post #21, condensed
-- [ ] Wiki § Mechanical edits gains sections 4 and 5, and § Non-goals retracts
-      "no `addr:interpolation` cleanup" — written 2026-09-18, **not republished**.
-      The post went up without the wiki link, so nothing dangles, but the page
-      still describes three campaigns
+- [x] Wiki § Mechanical edits gains sections 4 and 5, and § Non-goals retracts
+      "no `addr:interpolation` cleanup" — **republished 2026-09-18**, live and
+      byte-identical to `IMPORT_PROPOSAL.mediawiki`. The same edit published
+      the 2026-09-17 `addr:province` correction, which had been written in the
+      repo since then but never pushed to the wiki
 - [ ] The four dropped paragraphs added to #21, or deliberately left out
 - [ ] `build_batches.py --refetch` on the day; `python test_flats_parse.py` against the fresh fetch; counts re-read against this README
 - [ ] JOSM signed in as `skfd imports`, not the personal account
