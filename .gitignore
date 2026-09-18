@@ -26,3 +26,4 @@ mechanical-edits/province-removal/live.osm
 mechanical-edits/province-removal/batches/
 mechanical-edits/flats-hygiene/live.osm
 mechanical-edits/flats-hygiene/batches/
+.pytest_cache/

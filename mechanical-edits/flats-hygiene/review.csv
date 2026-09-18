@@ -1,0 +1,555 @@
+type,id,street,housenumber,flats,interpolation,shape,area,reason
+way,145333064,,,,even,openN,Hanlon Creek,interpolation-multinode
+way,145333071,,,,odd,open2,Hanlon Creek,interpolation-live
+way,145333080,,,,odd,open2,University,interpolation-live
+way,145333088,,,,odd,open2,Non-Residential - C,interpolation-live
+way,145333111,,,,even,open2,Old University,interpolation-live
+way,145333115,,,,odd,open2,Clairfields,interpolation-live
+way,145333140,,,,odd,open2,University,interpolation-live
+way,145333141,,,,even,open2,Hanlon Creek,interpolation-live
+way,145333155,,,,odd,open2,Old University,interpolation-live
+way,145333168,,,,even,open2,University,interpolation-live
+way,145333169,,,,even,open2,Old University,interpolation-live
+way,145333171,,,,even,open2,Old University,interpolation-live
+way,145333195,,,,even,open2,Old University,interpolation-live
+way,145333204,,,,even,open2,Hanlon Creek,interpolation-live
+way,145333207,,,,odd,openN,Old University,interpolation-multinode
+way,145333253,,,,even,open2,University,interpolation-live
+way,145333256,,,,even,open2,Old University,interpolation-live
+way,145333283,,,,even,open2,Hales Barton,interpolation-live
+way,145333289,,,,even,open2,Pine Ridge - Westminster Woods,interpolation-live
+way,145333292,,,,even,open2,Pine Ridge - Westminster Woods,interpolation-live
+way,145333314,,,,even,open2,Old University,interpolation-live
+way,145333331,,,,even,open2,Old University,interpolation-live
+way,145333411,,,,odd,open2,Rickson Ridge,interpolation-live
+way,145333420,,,,even,openN,University,interpolation-multinode
+way,145333422,,,,odd,open2,Hanlon Creek,interpolation-live
+way,145333460,,,,odd,open2,Rickson Ridge,interpolation-live
+way,145333479,,,,odd,open2,Hanlon Creek,interpolation-live
+way,145333485,,,,odd,open2,Non-Residential - C,interpolation-live
+way,145333494,,,,odd,open2,University,interpolation-live
+way,145333497,,,,even,openN,Hales Barton,interpolation-multinode
+way,145333674,,,,even,open2,Hanlon Creek,interpolation-live
+way,145333686,,,,odd,open2,Pine Ridge - Westminster Woods,interpolation-live
+way,145333688,,,,even,open2,University,interpolation-live
+way,145333689,,,,even,open2,Hanlon Creek,interpolation-live
+way,145333710,,,,even,open2,Hanlon Creek,interpolation-live
+way,145333729,,,,odd,open2,Rickson Ridge,interpolation-live
+way,145333735,,,,odd,open2,Rickson Ridge,interpolation-live
+way,145333740,,,,even,open2,Old University,interpolation-live
+way,145333797,,,,even,openN,Pine Ridge - Westminster Woods,interpolation-multinode
+way,145333801,,,,even,open2,Old University,interpolation-live
+way,145333812,,,,odd,openN,Pine Ridge - Westminster Woods,interpolation-multinode
+way,145333820,,,,even,open2,Hanlon Creek,interpolation-live
+way,145333839,,,,odd,open2,Old University,interpolation-live
+way,145333875,,,,even,open2,Old University,interpolation-live
+way,145333882,,,,odd,open2,University,interpolation-live
+way,145333894,,,,even,open2,Old University,interpolation-live
+way,145333896,,,,odd,open2,Old University,interpolation-live
+way,145333927,,,,odd,open2,Rickson Ridge,interpolation-live
+way,145333955,,,,odd,open2,Old University,interpolation-live
+way,145333962,,,,even,open2,Hales Barton,interpolation-live
+way,145333964,,,,odd,open2,Old University,interpolation-live
+way,145333969,,,,even,open2,Hanlon Creek,interpolation-live
+way,145333983,,,,even,open2,Hanlon Creek,interpolation-live
+way,145333990,,,,odd,open2,Old University,interpolation-live
+way,145334032,,,,even,open2,Old University,interpolation-live
+way,145334033,,,,even,openN,University,interpolation-multinode
+way,145334072,,,,odd,open2,Pine Ridge - Westminster Woods,interpolation-live
+way,145334084,,,,odd,open2,Clairfields,interpolation-live
+way,145334153,,,,even,open2,University,interpolation-live
+way,145334228,,,,even,openN,Pine Ridge - Westminster Woods,interpolation-multinode
+way,145334250,,,,odd,openN,Hanlon Creek,interpolation-multinode
+way,145334254,,,,odd,openN,Clairfields,interpolation-multinode
+way,145334267,,,,odd,openN,University,interpolation-multinode
+way,145334311,,,,odd,openN,Old University,interpolation-multinode
+way,145334332,,,,even,openN,Hanlon Creek,interpolation-multinode
+way,145334400,,,,even,openN,Pine Ridge - Westminster Woods,interpolation-multinode
+way,145334438,,,,even,openN,Hanlon Creek,interpolation-multinode
+way,145334442,,,,odd,openN,University,interpolation-multinode
+way,145334444,,,,even,openN,Hanlon Creek,interpolation-multinode
+way,145334489,,,,even,openN,University,interpolation-multinode
+way,145334498,,,,even,openN,Old University,interpolation-multinode
+way,145334545,,,,odd,openN,Hanlon Creek,interpolation-multinode
+way,145334556,,,,odd,openN,Clairfields,interpolation-multinode
+way,145334572,,,,odd,open2,University,interpolation-live
+way,145334592,,,,even,openN,Old University,interpolation-multinode
+way,145334606,,,,even,openN,University,interpolation-multinode
+way,145334619,,,,even,openN,Hanlon Creek,interpolation-multinode
+way,145334627,,,,odd,openN,University,interpolation-multinode
+way,145334836,,,,even,openN,Pine Ridge - Westminster Woods,interpolation-multinode
+way,145334837,,,,odd,openN,Hanlon Creek,interpolation-multinode
+way,145334917,,,,even,openN,Hanlon Creek,interpolation-multinode
+way,145334919,,,,odd,openN,Pine Ridge - Westminster Woods,interpolation-multinode
+way,145335003,,,,even,openN,Old University,interpolation-multinode
+way,145335021,,,,odd,openN,Old University,interpolation-multinode
+way,177606350,,,,odd,open2,Grange Hill East,interpolation-live
+way,177606355,,,,odd,open2,St. Georges Parkway,interpolation-live
+way,177606379,,,,even,open2,Grange Hill East,interpolation-live
+way,177606385,,,,even,open2,Grange Hill East,interpolation-live
+way,177606402,,,,odd,open2,Two Rivers,interpolation-live
+way,177606420,,,,odd,open2,Two Rivers,interpolation-live
+way,177606463,,,,even,open2,University,interpolation-live
+way,177606486,,,,odd,open2,St. Georges Parkway,interpolation-live
+way,177606541,,,,odd,open2,Old University,interpolation-live
+way,177606545,,,,even,openN,Non-Residential - B,interpolation-multinode
+way,177606553,,,,odd,open2,Downtown - Sunny Acres,interpolation-live
+way,177606578,,,,even,open2,St. Georges Parkway,interpolation-live
+way,177606590,,,,odd,open2,St. Georges Parkway,interpolation-live
+way,177606598,,,,even,open2,University,interpolation-live
+way,177606603,,,,even,open2,St. Georges Parkway,interpolation-live
+way,177606646,,,,even,openN,St. Georges Parkway,interpolation-multinode
+way,177606679,,,,even,openN,Grange Hill East,interpolation-multinode
+way,177606700,,,,odd,open2,Downtown - Sunny Acres,interpolation-live
+way,177606701,,,,odd,open2,Two Rivers,interpolation-live
+way,177606772,,,,odd,open2,Two Rivers,interpolation-live
+way,177606786,,,,even,open2,Old University,interpolation-live
+way,177606808,,,,odd,open2,Two Rivers,interpolation-live
+way,177606811,,,,even,open2,Non-Residential - B,interpolation-live
+way,177606841,,,,even,open2,Non-Residential - B,interpolation-live
+way,177606883,,,,even,open2,Grange Hill East,interpolation-live
+way,177606903,,,,odd,open2,St. Georges Parkway,interpolation-live
+way,177606919,,,,odd,open2,Non-Residential - B,interpolation-live
+way,177606926,,,,odd,open2,St. Georges Parkway,interpolation-live
+way,177606935,,,,even,open2,St. Georges Parkway,interpolation-live
+way,177606940,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177606995,,,,even,open2,St. Georges Parkway,interpolation-live
+way,177606999,,,,even,open2,St. Georges Parkway,interpolation-live
+way,177607019,,,,even,open2,University,interpolation-live
+way,177607055,,,,odd,open2,Old University,interpolation-live
+way,177607077,,,,odd,open2,University,interpolation-live
+way,177607119,,,,odd,open2,Non-Residential - B,interpolation-live
+way,177607154,,,,odd,open2,Two Rivers,interpolation-live
+way,177607157,,,,even,open2,Non-Residential - B,interpolation-live
+way,177607163,,,,even,open2,Non-Residential - B,interpolation-live
+way,177607165,,,,odd,openN,Old University,interpolation-multinode
+way,177607170,,,,even,open2,Non-Residential - B,interpolation-live
+way,177607197,,,,odd,open2,Grange Hill East,interpolation-live
+way,177607218,,,,even,open2,Grange Hill East,interpolation-live
+way,177607220,,,,odd,open2,University,interpolation-live
+way,177607223,,,,odd,open2,Grange Hill East,interpolation-live
+way,177607272,,,,odd,open2,St. Georges Parkway,interpolation-live
+way,177607303,,,,odd,open2,St. Georges Parkway,interpolation-live
+way,177607328,,,,even,open2,St. Georges Parkway,interpolation-live
+way,177607357,,,,odd,open2,Non-Residential - B,interpolation-live
+way,177607366,,,,even,open2,Exhibition Park,interpolation-live
+way,177607379,,,,even,open2,Non-Residential - B,interpolation-live
+way,177607414,,,,odd,open2,St. Georges Parkway,interpolation-live
+way,177607483,,,,odd,open2,Old University,interpolation-live
+way,177607491,,,,even,open2,Grange Hill East,interpolation-live
+way,177607502,,,,even,open2,Grange Hill East,interpolation-live
+way,177607533,,,,odd,open2,St. Georges Parkway,interpolation-live
+way,177607542,,,,odd,open2,Downtown - Sunny Acres,interpolation-live
+way,177607574,,,,even,open2,Two Rivers,interpolation-live
+way,177607582,,,,even,open2,University,interpolation-live
+way,177607585,,,,odd,open2,Grange Hill East,interpolation-live
+way,177607611,,,,even,open2,Two Rivers,interpolation-live
+way,177607653,,,,even,open2,St. Georges Parkway,interpolation-live
+way,177607656,,,,even,open2,St. Georges Parkway,interpolation-live
+way,177607674,,,,odd,open2,Non-Residential - B,interpolation-live
+way,177607687,,,,odd,open2,St. Georges Parkway,interpolation-live
+way,177607696,,,,even,open2,Grange Hill East,interpolation-live
+way,177607715,,,,odd,openN,Grange Hill East,interpolation-multinode
+way,177607744,,,,even,openN,Downtown - Sunny Acres,interpolation-multinode
+way,177607751,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177607752,,,,odd,open2,St. Georges Parkway,interpolation-live
+way,177607787,,,,odd,open2,Two Rivers,interpolation-live
+way,177607796,,,,odd,open2,University,interpolation-live
+way,177607843,,,,odd,open2,Old University,interpolation-live
+way,177607857,,,,even,open2,St. Georges Parkway,interpolation-live
+way,177607874,,,,odd,open2,St. Georges Parkway,interpolation-live
+way,177607883,,,,even,openN,St. Georges Parkway,interpolation-multinode
+way,177607890,,,,odd,openN,Downtown - Sunny Acres,interpolation-multinode
+way,177607975,,,,odd,openN,St. Georges Parkway,interpolation-multinode
+way,177607978,,,,even,openN,Non-Residential - B,interpolation-multinode
+way,177608001,,,,odd,openN,Downtown - Sunny Acres,interpolation-multinode
+way,177608065,,,,even,openN,University,interpolation-multinode
+way,177608148,,,,odd,openN,Non-Residential - B,interpolation-multinode
+way,177608195,,,,odd,openN,St. Georges Parkway,interpolation-multinode
+way,177860771,,,,odd,open2,Grange Hill East,interpolation-live
+way,177860791,,,,odd,openN,Grange Hill East,interpolation-multinode
+way,177864875,,,,even,open2,Pine Ridge - Westminster Woods,interpolation-live
+way,177864877,,,,odd,open2,Non-Residential - C,interpolation-live
+way,177864886,,,,even,open2,Non-Residential - C,interpolation-live
+way,177864890,,,,odd,open2,Non-Residential - C,interpolation-live
+way,177864897,,,,odd,open2,Pine Ridge - Westminster Woods,interpolation-live
+way,177864898,,,,odd,openN,Non-Residential - C,interpolation-multinode
+way,177864904,,,,odd,open2,Non-Residential - C,interpolation-live
+way,177864914,,,,odd,open2,Non-Residential - C,interpolation-live
+way,177864921,,,,odd,open2,Non-Residential - C,interpolation-live
+way,177864923,,,,odd,openN,Pine Ridge - Westminster Woods,interpolation-multinode
+way,177864924,,,,even,open2,Pine Ridge - Westminster Woods,interpolation-live
+way,177864928,,,,odd,openN,Non-Residential - C,interpolation-multinode
+way,177864936,,,,even,open2,Pine Ridge - Westminster Woods,interpolation-live
+way,177864938,,,,even,open2,Pine Ridge - Westminster Woods,interpolation-live
+way,177864948,,,,odd,open2,Non-Residential - C,interpolation-live
+way,177864949,,,,odd,openN,Pine Ridge - Westminster Woods,interpolation-multinode
+way,177864950,,,,odd,open2,Pine Ridge - Westminster Woods,interpolation-live
+way,177864954,,,,even,open2,Non-Residential - C,interpolation-live
+way,177864955,,,,odd,open2,Non-Residential - C,interpolation-live
+way,177864958,,,,odd,openN,Non-Residential - C,interpolation-multinode
+way,177864969,,,,even,openN,Non-Residential - C,interpolation-multinode
+way,177864971,,,,odd,open2,Pine Ridge - Westminster Woods,interpolation-live
+way,177864976,,,,odd,open2,Non-Residential - C,interpolation-live
+way,177924217,,,,even,open2,Parkwood Gardens,interpolation-live
+way,177924221,,,,odd,open2,Parkwood Gardens,interpolation-live
+way,177924233,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177924239,,,,even,open2,Old University,interpolation-live
+way,177924240,,,,even,open2,Parkwood Gardens,interpolation-live
+way,177924254,,,,even,open2,Parkwood Gardens,interpolation-live
+way,177924256,,,,even,open2,Parkwood Gardens,interpolation-live
+way,177924263,,,,even,open2,Parkwood Gardens,interpolation-live
+way,177924272,,,,odd,open2,Parkwood Gardens,interpolation-live
+way,177924290,,,,odd,open2,Parkwood Gardens,interpolation-live
+way,177924308,,,,even,openN,West Willow Woods,interpolation-multinode
+way,177924314,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177924326,,,,odd,open2,Old University,interpolation-live
+way,177924331,,,,even,open2,Parkwood Gardens,interpolation-live
+way,177924341,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177924342,,,,odd,open2,Old University,interpolation-live
+way,177924344,,,,even,open2,Parkwood Gardens,interpolation-live
+way,177924369,,,,even,open2,Old University,interpolation-live
+way,177924373,,,,even,open2,Parkwood Gardens,interpolation-live
+way,177924382,,,,even,open2,Old University,interpolation-live
+way,177924383,,,,odd,open2,West Willow Woods,interpolation-live
+way,177924400,,,,odd,open2,Parkwood Gardens,interpolation-live
+way,177924402,,,,even,openN,Parkwood Gardens,interpolation-multinode
+way,177924423,,,,even,open2,Parkwood Gardens,interpolation-live
+way,177924426,,,,odd,openN,Parkwood Gardens,interpolation-multinode
+way,177924437,,,,odd,open2,Unplaced,interpolation-live
+way,177924442,,,,odd,open2,Parkwood Gardens,interpolation-live
+way,177924452,,,,odd,open2,Downtown - Sunny Acres,interpolation-live
+way,177924456,,,,odd,open2,Parkwood Gardens,interpolation-live
+way,177924475,,,,odd,openN,Parkwood Gardens,interpolation-multinode
+way,177924484,,,,even,openN,Parkwood Gardens,interpolation-multinode
+way,177924493,,,,odd,openN,Parkwood Gardens,interpolation-multinode
+way,177924494,,,,even,openN,Unplaced,interpolation-multinode
+way,177924501,,,,odd,openN,West Willow Woods,interpolation-multinode
+way,177924535,,,,odd,openN,West Willow Woods,interpolation-multinode
+way,177924547,,,,even,openN,Parkwood Gardens,interpolation-multinode
+way,177924558,,,,odd,openN,Downtown - Sunny Acres,interpolation-multinode
+way,177924560,,,,odd,openN,West Willow Woods,interpolation-multinode
+way,177924575,,,,even,openN,Parkwood Gardens,interpolation-multinode
+way,177924582,,,,odd,openN,West Willow Woods,interpolation-multinode
+way,177924611,,,,odd,openN,Downtown - Sunny Acres,interpolation-multinode
+way,177924646,,,,even,openN,Parkwood Gardens,interpolation-multinode
+way,177924665,,,,even,openN,Downtown - Sunny Acres,interpolation-multinode
+way,177924697,,,,odd,openN,Parkwood Gardens,interpolation-multinode
+way,177924704,,,,odd,openN,Downtown - Sunny Acres,interpolation-multinode
+way,177924708,,,,odd,openN,Parkwood Gardens,interpolation-multinode
+way,177926829,,,,even,openN,Old University,interpolation-multinode
+way,177926831,,,,odd,open2,Onward Willow,interpolation-live
+way,177926849,,,,odd,open2,Onward Willow,interpolation-live
+way,177926850,,,,even,open2,Exhibition Park,interpolation-live
+way,177926864,,,,even,open2,June Avenue,interpolation-live
+way,177926897,,,,odd,open2,June Avenue,interpolation-live
+way,177926912,,,,even,open2,Non-Residential - A,interpolation-live
+way,177926918,,,,odd,open2,Exhibition Park,interpolation-live
+way,177926942,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177926943,,,,even,open2,Exhibition Park,interpolation-live
+way,177926955,,,,even,open2,Exhibition Park,interpolation-live
+way,177926966,,,,odd,open2,June Avenue,interpolation-live
+way,177926967,,,,even,open2,Non-Residential - A,interpolation-live
+way,177926973,,,,even,open2,Onward Willow,interpolation-live
+way,177926978,,,,even,open2,Waverley,interpolation-live
+way,177926998,,,,even,openN,Exhibition Park,interpolation-multinode
+way,177927005,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177927019,,,,odd,open2,Onward Willow,interpolation-live
+way,177927020,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177927022,,,,even,open2,Unplaced,interpolation-live
+way,177927037,,,,even,open2,Exhibition Park,interpolation-live
+way,177927046,,,,even,open2,Onward Willow,interpolation-live
+way,177927049,,,,odd,open2,June Avenue,interpolation-live
+way,177927058,,,,odd,open2,Non-Residential - A,interpolation-live
+way,177927060,,,,odd,open2,West Willow Woods,interpolation-live
+way,177927064,,,,odd,open2,Downtown - Sunny Acres,interpolation-live
+way,177927068,,,,even,open2,Non-Residential - A,interpolation-live
+way,177927075,,,,odd,open2,June Avenue,interpolation-live
+way,177927092,,,,odd,open2,Downtown - Sunny Acres,interpolation-live
+way,177927095,,,,odd,open2,Onward Willow,interpolation-live
+way,177927112,,,,odd,open2,Non-Residential - A,interpolation-live
+way,177927117,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177927125,,,,odd,open2,Onward Willow,interpolation-live
+way,177927133,,,,odd,open2,Old University,interpolation-live
+way,177927155,,,,even,open2,Exhibition Park,interpolation-live
+way,177927168,,,,odd,openN,Downtown - Sunny Acres,interpolation-multinode
+way,177927173,,,,odd,open2,Exhibition Park,interpolation-live
+way,177927181,,,,odd,openN,West Willow Woods,interpolation-multinode
+way,177927182,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177927191,,,,odd,openN,Waverley,interpolation-multinode
+way,177927197,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177927208,,,,even,open2,Non-Residential - A,interpolation-live
+way,177927220,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177927223,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177927226,,,,even,open2,Non-Residential - A,interpolation-live
+way,177927234,,,,odd,open2,Downtown - Sunny Acres,interpolation-live
+way,177927235,,,,odd,open2,Old University,interpolation-live
+way,177927279,,,,even,open2,Onward Willow,interpolation-live
+way,177927282,,,,odd,open2,Exhibition Park,interpolation-live
+way,177927307,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177927322,,,,even,open2,Waverley,interpolation-live
+way,177927339,,,,odd,open2,Non-Residential - A,interpolation-live
+way,177927343,,,,odd,open2,Onward Willow,interpolation-live
+way,177927385,,,,odd,open2,Non-Residential - A,interpolation-live
+way,177927389,,,,odd,open2,Non-Residential - A,interpolation-live
+way,177927390,,,,odd,open2,Non-Residential - A,interpolation-live
+way,177927395,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177927398,,,,even,open2,Non-Residential - A,interpolation-live
+way,177927424,,,,odd,open2,Downtown - Sunny Acres,interpolation-live
+way,177927428,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177927439,,,,even,open2,Onward Willow,interpolation-live
+way,177927445,,,,odd,open2,Non-Residential - A,interpolation-live
+way,177927466,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177927472,,,,odd,open2,June Avenue,interpolation-live
+way,177927479,,,,odd,open2,Downtown - Sunny Acres,interpolation-live
+way,177927487,,,,even,open2,Onward Willow,interpolation-live
+way,177927496,,,,odd,open2,June Avenue,interpolation-live
+way,177927505,,,,odd,open2,Downtown - Sunny Acres,interpolation-live
+way,177927507,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177927516,,,,odd,open2,Non-Residential - A,interpolation-live
+way,177927519,,,,even,openN,Onward Willow,interpolation-multinode
+way,177927525,,,,odd,open2,Onward Willow,interpolation-live
+way,177927531,,,,odd,open2,Downtown - Sunny Acres,interpolation-live
+way,177927544,,,,even,open2,Onward Willow,interpolation-live
+way,177927562,,,,odd,open2,West Willow Woods,interpolation-live
+way,177927576,,,,even,openN,Downtown - Sunny Acres,interpolation-multinode
+way,177927592,,,,odd,open2,June Avenue,interpolation-live
+way,177927599,,,,even,open2,June Avenue,interpolation-live
+way,177927603,,,,odd,open2,Exhibition Park,interpolation-live
+way,177927606,,,,even,open2,Exhibition Park,interpolation-live
+way,177927608,,,,odd,open2,June Avenue,interpolation-live
+way,177927623,,,,odd,open2,Exhibition Park,interpolation-live
+way,177927631,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177927632,,,,even,open2,Exhibition Park,interpolation-live
+way,177927647,,,,even,open2,Non-Residential - A,interpolation-live
+way,177927648,,,,odd,open2,Downtown - Sunny Acres,interpolation-live
+way,177927656,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177927685,,,,even,openN,Downtown - Sunny Acres,interpolation-multinode
+way,177927701,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177927703,,,,even,open2,Non-Residential - A,interpolation-live
+way,177927709,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177927731,,,,even,open2,Onward Willow,interpolation-live
+way,177927733,,,,even,open2,Onward Willow,interpolation-live
+way,177927736,,,,odd,open2,Downtown - Sunny Acres,interpolation-live
+way,177927745,,,,odd,open2,Onward Willow,interpolation-live
+way,177927753,,,,odd,open2,Onward Willow,interpolation-live
+way,177927764,,,,odd,open2,West Willow Woods,interpolation-live
+way,177927774,,,,odd,open2,June Avenue,interpolation-live
+way,177927787,,,,odd,open2,Onward Willow,interpolation-live
+way,177927790,,,,even,open2,Onward Willow,interpolation-live
+way,177927797,,,,odd,open2,Downtown - Sunny Acres,interpolation-live
+way,177927798,,,,even,open2,Exhibition Park,interpolation-live
+way,177927805,,,,odd,open2,Onward Willow,interpolation-live
+way,177927808,,,,even,open2,Non-Residential - A,interpolation-live
+way,177927809,,,,even,open2,Onward Willow,interpolation-live
+way,177927830,,,,odd,open2,Downtown - Sunny Acres,interpolation-live
+way,177927831,,,,odd,open2,Downtown - Sunny Acres,interpolation-live
+way,177927832,,,,even,open2,June Avenue,interpolation-live
+way,177927847,,,,even,open2,Non-Residential - A,interpolation-live
+way,177927856,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177927859,,,,odd,open2,Downtown - Sunny Acres,interpolation-live
+way,177927867,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177927879,,,,even,open2,Exhibition Park,interpolation-live
+way,177927881,,,,odd,open2,June Avenue,interpolation-live
+way,177927886,,,,even,open2,Onward Willow,interpolation-live
+way,177927899,,,,even,open2,Exhibition Park,interpolation-live
+way,177927916,,,,odd,open2,Non-Residential - A,interpolation-live
+way,177927968,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177927974,,,,odd,open2,Exhibition Park,interpolation-live
+way,177928004,,,,even,openN,Onward Willow,interpolation-multinode
+way,177928013,,,,even,open2,June Avenue,interpolation-live
+way,177928025,,,,even,open2,Onward Willow,interpolation-live
+way,177928028,,,,odd,open2,Exhibition Park,interpolation-live
+way,177928032,,,,odd,open2,Exhibition Park,interpolation-live
+way,177928039,,,,odd,open2,Parkwood Gardens,interpolation-live
+way,177928046,,,,odd,open2,June Avenue,interpolation-live
+way,177928049,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177928057,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177928067,,,,even,open2,Non-Residential - A,interpolation-live
+way,177928072,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177928077,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177928078,,,,odd,open2,Downtown - Sunny Acres,interpolation-live
+way,177928082,,,,even,open2,Waverley,interpolation-live
+way,177928083,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177928087,,,,odd,open2,June Avenue,interpolation-live
+way,177928088,,,,even,open2,Exhibition Park,interpolation-live
+way,177928095,,,,even,open2,Exhibition Park,interpolation-live
+way,177928096,,,,even,open2,Exhibition Park,interpolation-live
+way,177928102,,,,odd,open2,Downtown - Sunny Acres,interpolation-live
+way,177928107,,,,odd,open2,West Willow Woods,interpolation-live
+way,177928116,,,,odd,open2,Exhibition Park,interpolation-live
+way,177928117,,,,even,open2,Non-Residential - A,interpolation-live
+way,177928120,,,,odd,open2,Exhibition Park,interpolation-live
+way,177928122,,,,odd,open2,Onward Willow,interpolation-live
+way,177928127,,,,odd,open2,Downtown - Sunny Acres,interpolation-live
+way,177928128,,,,even,open2,Onward Willow,interpolation-live
+way,177928133,,,,odd,open2,Non-Residential - A,interpolation-live
+way,177928153,,,,odd,open2,Exhibition Park,interpolation-live
+way,177928159,,,,odd,open2,Downtown - Sunny Acres,interpolation-live
+way,177928169,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,177928176,,,,odd,open2,June Avenue,interpolation-live
+way,177928207,,,,odd,openN,Downtown - Sunny Acres,interpolation-multinode
+way,177928213,,,,odd,openN,June Avenue,interpolation-multinode
+way,177928244,,,,even,openN,Onward Willow,interpolation-multinode
+way,177928246,,,,odd,openN,Downtown - Sunny Acres,interpolation-multinode
+way,177928256,,,,even,openN,Non-Residential - A,interpolation-multinode
+way,177928284,,,,even,openN,June Avenue,interpolation-multinode
+way,177928289,,,,even,open2,Exhibition Park,interpolation-live
+way,177928316,,,,even,openN,Downtown - Sunny Acres,interpolation-multinode
+way,177928318,,,,even,openN,Exhibition Park,interpolation-multinode
+way,177928328,,,,odd,openN,Onward Willow,interpolation-multinode
+way,177928346,,,,odd,openN,June Avenue,interpolation-multinode
+way,177928352,,,,even,openN,Non-Residential - A,interpolation-multinode
+way,177928382,,,,odd,openN,Downtown - Sunny Acres,interpolation-multinode
+way,177928395,,,,odd,openN,Non-Residential - A,interpolation-multinode
+way,177928412,,,,odd,openN,Onward Willow,interpolation-multinode
+way,177928414,,,,odd,openN,Downtown - Sunny Acres,interpolation-multinode
+way,177928418,,,,odd,openN,West Willow Woods,interpolation-multinode
+way,177928461,,,,even,openN,Downtown - Sunny Acres,interpolation-multinode
+way,177928495,,,,odd,openN,June Avenue,interpolation-multinode
+way,178082660,,,,even,openN,Waverley,interpolation-multinode
+way,178082679,,,,even,open2,June Avenue,interpolation-live
+way,178082701,,,,odd,open2,Brant,interpolation-live
+way,178082722,,,,odd,open2,Waverley,interpolation-live
+way,178082738,,,,even,open2,June Avenue,interpolation-live
+way,178082743,,,,even,open2,Waverley,interpolation-live
+way,178082745,,,,odd,open2,Waverley,interpolation-live
+way,178082753,,,,even,open2,June Avenue,interpolation-live
+way,178082760,,,,even,openN,Waverley,interpolation-multinode
+way,178082790,,,,even,open2,June Avenue,interpolation-live
+way,178082811,,,,even,open2,Brant,interpolation-live
+way,178082814,,,,even,openN,Waverley,interpolation-multinode
+way,178082825,,,,odd,open2,Waverley,interpolation-live
+way,178082863,,,,even,open2,Waverley,interpolation-live
+way,178082908,,,,even,openN,Waverley,interpolation-multinode
+way,178082916,,,,even,open2,Waverley,interpolation-live
+way,178082930,,,,odd,openN,June Avenue,interpolation-multinode
+way,178082964,,,,even,open2,Waverley,interpolation-live
+way,178082968,,,,even,open2,Waverley,interpolation-live
+way,178082997,,,,odd,open2,Waverley,interpolation-live
+way,178082998,,,,odd,openN,Waverley,interpolation-multinode
+way,178083007,,,,even,openN,June Avenue,interpolation-multinode
+way,178083021,,,,odd,open2,Waverley,interpolation-live
+way,178083034,,,,even,open2,Waverley,interpolation-live
+way,178083036,,,,even,open2,Brant,interpolation-live
+way,178083046,,,,odd,openN,Brant,interpolation-multinode
+way,178083078,,,,odd,open2,Waverley,interpolation-live
+way,178083084,,,,odd,open2,Waverley,interpolation-live
+way,178083142,,,,odd,openN,June Avenue,interpolation-multinode
+way,178083157,,,,even,openN,Waverley,interpolation-multinode
+way,178083166,,,,odd,openN,Waverley,interpolation-multinode
+way,178083182,,,,even,open2,June Avenue,interpolation-live
+way,178083185,,,,even,openN,Brant,interpolation-multinode
+way,178083199,,,,odd,openN,Waverley,interpolation-multinode
+way,178083287,,,,even,openN,Waverley,interpolation-multinode
+way,178088693,,,,even,open2,Non-Residential - A,interpolation-live
+way,178088713,,,,even,open2,Non-Residential - A,interpolation-live
+way,178088724,,,,odd,open2,Unplaced,interpolation-live
+way,178088729,,,,even,open2,Non-Residential - A,interpolation-live
+way,178088739,,,,odd,open2,Non-Residential - A,interpolation-live
+way,180286021,,,,even,open2,Clairfields,interpolation-live
+way,180286090,,,,odd,openN,Clairfields,interpolation-multinode
+way,180286168,,,,even,openN,Kortright Hills,interpolation-multinode
+way,180286254,,,,even,openN,Kortright Hills,interpolation-multinode
+way,180286410,,,,odd,openN,Clairfields,interpolation-multinode
+way,180286455,,,,even,openN,Clairfields,interpolation-multinode
+way,180286485,,,,even,openN,Clairfields,interpolation-multinode
+way,180286512,,,,even,openN,Clairfields,interpolation-multinode
+way,400247342,,,,odd,open2,Brant,interpolation-live
+way,400247435,,,,odd,open2,Grange Hill East,interpolation-live
+way,400247475,,,,odd,open2,Grange Hill East,interpolation-live
+way,400247520,,,,odd,open2,Grange Hill East,interpolation-live
+way,400247627,,,,odd,open2,Non-Residential - B,interpolation-live
+way,400247677,,,,odd,open2,St. Georges Parkway,interpolation-live
+way,400247690,,,,odd,open2,Brant,interpolation-live
+way,400247733,,,,odd,open2,Grange Hill East,interpolation-live
+way,400247754,,,,even,open2,June Avenue,interpolation-live
+way,400247762,,,,odd,open2,Brant,interpolation-live
+way,400247797,,,,odd,open2,Non-Residential - B,interpolation-live
+way,400247943,,,,odd,open2,St. Georges Parkway,interpolation-live
+way,400247973,,,,even,open2,Grange Hill East,interpolation-live
+way,400247990,,,,even,open2,Brant,interpolation-live
+way,400248016,,,,even,open2,Grange Hill East,interpolation-live
+way,400248031,,,,even,open2,St. Georges Parkway,interpolation-live
+way,400248032,,,,odd,open2,Brant,interpolation-live
+way,400248075,,,,even,openN,Brant,interpolation-multinode
+way,400248117,,,,even,open2,Brant,interpolation-live
+way,400248144,,,,even,open2,Brant,interpolation-live
+way,400248165,,,,even,open2,St. Georges Parkway,interpolation-live
+way,400248172,,,,odd,open2,Grange Hill East,interpolation-live
+way,400248194,,,,odd,open2,Grange Hill East,interpolation-live
+way,400248220,,,,even,open2,Grange Hill East,interpolation-live
+way,400248223,,,,odd,open2,St. Georges Parkway,interpolation-live
+way,400248242,,,,even,open2,St. Georges Parkway,interpolation-live
+way,400248248,,,,even,open2,Grange Hill East,interpolation-live
+way,400248270,,,,odd,open2,Non-Residential - B,interpolation-live
+way,400248329,,,,even,openN,Grange Hill East,interpolation-multinode
+way,400248470,,,,even,openN,Grange Hill East,interpolation-multinode
+way,400248512,,,,even,openN,Grange Hill East,interpolation-multinode
+way,400248522,,,,odd,openN,Non-Residential - B,interpolation-multinode
+way,400859876,,,,odd,open2,West Willow Woods,interpolation-live
+way,400859881,,,,even,open2,Unplaced,interpolation-live
+way,400859904,,,,even,open2,Parkwood Gardens,interpolation-live
+way,400859905,,,,odd,open2,Unplaced,interpolation-live
+way,400859906,,,,even,open2,West Willow Woods,interpolation-live
+way,400859912,,,,even,open2,Onward Willow,interpolation-live
+way,400859914,,,,even,open2,Parkwood Gardens,interpolation-live
+way,400859920,,,,even,openN,Onward Willow,interpolation-multinode
+way,400859926,,,,even,openN,Non-Residential - A,interpolation-multinode
+way,400859942,,,,odd,openN,Parkwood Gardens,interpolation-multinode
+way,400859943,,,,even,openN,Parkwood Gardens,interpolation-multinode
+way,400859967,,,,odd,openN,West Willow Woods,interpolation-multinode
+way,401027331,,,,even,open2,Old University,interpolation-live
+way,401027336,,,,odd,open2,Clairfields,interpolation-live
+way,401027346,,,,odd,open2,Pine Ridge - Westminster Woods,interpolation-live
+way,401027350,,,,odd,open2,Grange Hill East,interpolation-live
+way,401027364,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,401027369,,,,odd,open2,Pine Ridge - Westminster Woods,interpolation-live
+way,401027378,,,,odd,open2,Non-Residential - B,interpolation-live
+way,401027379,,,,odd,open2,Pine Ridge - Westminster Woods,interpolation-live
+way,401027381,,,,even,open2,Pine Ridge - Westminster Woods,interpolation-live
+way,401027385,,,,odd,open2,Hanlon Creek,interpolation-live
+way,401027386,,,,even,open2,University,interpolation-live
+way,401027388,,,,even,open2,Exhibition Park,interpolation-live
+way,401027399,,,,odd,open2,Pine Ridge - Westminster Woods,interpolation-live
+way,401027405,,,,even,open2,Exhibition Park,interpolation-live
+way,401027412,,,,odd,open2,Pine Ridge - Westminster Woods,interpolation-live
+way,401027427,,,,odd,open2,Old University,interpolation-live
+way,401027428,,,,even,open2,Pine Ridge - Westminster Woods,interpolation-live
+way,401027429,,,,even,open2,Pine Ridge - Westminster Woods,interpolation-live
+way,401027441,,,,even,open2,Pine Ridge - Westminster Woods,interpolation-live
+way,401027444,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,401027449,,,,odd,open2,University,interpolation-live
+way,401027450,,,,even,open2,Unplaced,interpolation-live
+way,401027468,,,,odd,open2,University,interpolation-live
+way,401027481,,,,even,open2,Pine Ridge - Westminster Woods,interpolation-live
+way,401027499,,,,even,open2,Clairfields,interpolation-live
+way,401027501,,,,even,open2,Downtown - Sunny Acres,interpolation-live
+way,401027502,,,,odd,open2,Non-Residential - B,interpolation-live
+way,401027506,,,,odd,open2,Clairfields,interpolation-live
+way,401027512,,,,even,open2,Old University,interpolation-live
+way,401027517,,,,even,open2,Pine Ridge - Westminster Woods,interpolation-live
+way,401027524,,,,odd,open2,Pine Ridge - Westminster Woods,interpolation-live
+way,401027538,,,,even,open2,Pine Ridge - Westminster Woods,interpolation-live
+way,401027545,,,,odd,open2,Pine Ridge - Westminster Woods,interpolation-live
+way,401027550,,,,even,open2,Grange Hill East,interpolation-live
+way,401027553,,,,even,openN,Old University,interpolation-multinode
+way,401027557,,,,odd,openN,University,interpolation-multinode
+way,401027558,,,,odd,openN,Two Rivers,interpolation-multinode
+way,401027570,,,,even,openN,Pine Ridge - Westminster Woods,interpolation-multinode
+way,401027580,,,,odd,openN,Grange Hill East,interpolation-multinode
+way,401027593,,,,odd,openN,Pine Ridge - Westminster Woods,interpolation-multinode
+way,401027597,,,,even,openN,University,interpolation-multinode
+way,401027602,,,,even,openN,Pine Ridge - Westminster Woods,interpolation-multinode
+way,401027604,,,,even,openN,Pine Ridge - Westminster Woods,interpolation-multinode
+way,401027628,,,,odd,openN,Non-Residential - C,interpolation-multinode
+way,401027630,,,,odd,openN,Hales Barton,interpolation-multinode
+way,401027632,,,,odd,openN,Pine Ridge - Westminster Woods,interpolation-multinode
+way,401027636,,,,even,openN,Pine Ridge - Westminster Woods,interpolation-multinode
+way,401027646,,,,even,openN,University,interpolation-multinode
+way,401027661,,,,even,openN,Non-Residential - B,interpolation-multinode
+way,401027664,,,,odd,openN,Downtown - Sunny Acres,interpolation-multinode
+way,401027668,,,,odd,openN,Non-Residential - B,interpolation-multinode
+way,401027681,,,,even,openN,Pine Ridge - Westminster Woods,interpolation-multinode
+way,539311557,,,,even,openN,Non-Residential - B,interpolation-multinode
+way,1413282060,,,,odd,open2,Pine Ridge - Westminster Woods,interpolation-live

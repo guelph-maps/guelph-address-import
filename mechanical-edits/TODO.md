@@ -9,8 +9,8 @@ have been *found* but not yet proposed, so they do not live only in a chat log.
 | 2 | Split double-encoded unit housenumbers | **done** 2026-09-16, 5,521 objects, 36 changesets |
 | — | Campaign 2/3 leftovers, corroborated by the City roster | **done**, 32 objects |
 | 3 | Unit lists `addr:unit` → `addr:flats` (447) | **done** 2026-09-17, 447 objects, 23 changesets |
-| 4 | **Remove meaningless `addr:interpolation`** (81) | ← queued, see below |
-| 5 | **A real `addr:flats` normalizer** (171 of 447 untidy) | ← queued, see below |
+| 4 | Remove meaningless `addr:interpolation` (81) | **built** 2026-09-17 with campaign 5, one batch set — awaiting its notice |
+| 5 | A real `addr:flats` normalizer (292 of 464 untidy, re-measured) | **built** 2026-09-17, merged with campaign 4 — 325 objects, 22 batches |
 
 ---
 
@@ -119,8 +119,10 @@ Everything carrying `addr:flats` in Guelph once campaign 3 lands — the 447,
 plus the pre-existing handful, plus whatever the import writes. Re-measure
 rather than assuming 171.
 
-**Pair it with campaign 4.** Overlapping objects, both pure tag hygiene on
-apartment buildings, one changeset, one revert, one notice. Doing them
-separately means announcing twice for what a reader will see as one cleanup.
+**Paired with campaign 4, and built as one.** Done 2026-09-17 in
+`mechanical-edits/flats-hygiene/` — one builder, one batch set, one revert,
+one notice. The pairing turned out to be not just tidier but necessary: 74 of
+the 81 interpolation objects also carry `addr:flats`, so two separate batch
+sets would have conflicted against each other on object version.
 
 [thread]: https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103

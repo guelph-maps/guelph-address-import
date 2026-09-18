@@ -1,0 +1,326 @@
+batch,area,type,id,version,street,housenumber,edit,shape,flats_before,flats_after,interpolation_removed
+1,Hanlon Creek,way,801612614,6,Christopher Court,8,interpolation,closed,101-107;201-207;301-308;401-408;501-508;601-608;701-708,101-107;201-207;301-308;401-408;501-508;601-608;701-708,all
+1,Hanlon Creek,way,215069449,5,Edinburgh Road South,511,flats,closed,101;101A;102;201;202,101-102;101A;201-202,
+1,Hanlon Creek,way,743421919,4,Gordon Street,803,flats,closed,1;10;11;12;13;14;15;2;3;4;5;6;7;8;9,1-15,
+1,Hanlon Creek,way,743421918,4,Gordon Street,807,flats,closed,1;10;11;12;2;3;4;5;6;7;8;9,1-12,
+1,Hanlon Creek,way,800638895,3,Gordon Street,941,flats,closed,65;66;67;68,65-68,
+1,Hanlon Creek,way,800638896,3,Gordon Street,941,flats,closed,61;62;63;64,61-64,
+1,Hanlon Creek,way,800638897,3,Gordon Street,941,flats,closed,57;58;59;60,57-60,
+1,Hanlon Creek,way,800638898,3,Gordon Street,941,flats,closed,53;54;55;56,53-56,
+1,Hanlon Creek,way,800638899,3,Gordon Street,941,flats,closed,49;50;51;52,49-52,
+1,Hanlon Creek,way,800638900,3,Gordon Street,941,flats,closed,45;46;47;48,45-48,
+1,Hanlon Creek,way,800638901,3,Gordon Street,941,flats,closed,41;42;43;44,41-44,
+1,Hanlon Creek,way,800638902,3,Gordon Street,941,flats,closed,37;38;39;40,37-40,
+1,Hanlon Creek,way,800638903,3,Gordon Street,941,flats,closed,21;22;23;24,21-24,
+1,Hanlon Creek,way,800638904,3,Gordon Street,941,flats,closed,17;18;19;20,17-20,
+1,Hanlon Creek,way,800638905,3,Gordon Street,941,flats,closed,13;14;15;16,13-16,
+1,Hanlon Creek,way,800638906,3,Gordon Street,941,flats,closed,10;11;12;9,9-12,
+1,Hanlon Creek,way,800638907,3,Gordon Street,941,flats,closed,5;6;7;8,5-8,
+1,Hanlon Creek,way,800638908,3,Gordon Street,941,flats,closed,1;2;3;4,1-4,
+1,Hanlon Creek,way,800638909,3,Gordon Street,941,flats,closed,33;34;35;36,33-36,
+1,Hanlon Creek,way,800638910,3,Gordon Street,941,flats,closed,29;30;31;32,29-32,
+1,Hanlon Creek,way,800638911,3,Gordon Street,941,flats,closed,25;26;27;28,25-28,
+1,Hanlon Creek,way,800638912,3,Gordon Street,941,flats,closed,69;70;71;72,69-72,
+1,Hanlon Creek,way,212559742,6,Scottsdale Drive,649,flats,closed,100;101,100-101,
+1,Hanlon Creek,way,212559745,5,Scottsdale Drive,649,flats,closed,1;2;2B;3;4;5,1-5;2B,
+1,Hanlon Creek,way,215069452,15,Stone Road West,304,flats,closed,1;2;3;4,1-4,
+1,Hanlon Creek,way,215069453,5,Stone Road West,304,flats,closed,10;11;12;7;8;9,7-12,
+2,Kortright Hills,way,794182126,4,Hanlon Creek Boulevard,265,flats,closed,1;3;4;5;9,1;3-5;9,
+2,Kortright Hills,way,794182120,4,Hanlon Creek Boulevard,275,flats,closed,1;2;3;4;5,1-5,
+3,University,way,212563853,5,Chancellors Way,245,interpolation,closed,101-108;201-208;301-316,101-108;201-208;301-316,all
+3,University,way,802817805,4,Gordon Street,220,flats,closed,11;12;14;15;16;17;21;22;23;24;25;26;31;32;33;34;35;36,11-12;14-17;21-26;31-36,
+4,Non-Residential - B,way,802544817,4,Watson Parkway South,70,flats,closed,1;2;3;4;5;6;7;8,1-8,
+4,Non-Residential - B,way,802544833,3,Watson Road South,3,flats,closed,1;2;3;8,1-3;8,
+4,Non-Residential - B,way,1054125923,3,York Road,561,flats,closed,1;2;3;4,1-4,
+5,St. Georges Parkway,way,208488067,4,Eramosa Road,265,flats,closed,1;2;3;4,1-4,
+5,St. Georges Parkway,way,240744882,6,Eramosa Road,297,flats,closed,1;2,1-2,
+5,St. Georges Parkway,way,929589622,6,Stuart Street,10,flats,closed,1;10;2;3;4;5;6;7;8;9,1-10,
+6,Rickson Ridge,way,801555971,4,Gordon Street,1077,interpolation+flats,closed,112-142;212-242;312-342;412-442;,112-142;212-242;312-342;412-442,all
+6,Rickson Ridge,way,801555970,5,Gordon Street,1083,interpolation+flats,closed,101-111;201-211;301-311;401-411;,101-111;201-211;301-311;401-411,all
+6,Rickson Ridge,way,1156180354,3,Gordon Street,1131,flats,closed,1;2;3;4;5;6;7;8,1-8,
+6,Rickson Ridge,way,659406271,5,Gordon Street,1219,interpolation+flats,closed,101-108;201-211;301-315;401-415;501-515;601-613;A;B;C;,101-108;201-211;301-315;401-415;501-515;601-613;A;B;C,all
+6,Rickson Ridge,way,499046190,9,Gordon Street,1291,interpolation+flats,closed,101-125;201-227;301-327;401-427;501-527;601-627;,101-125;201-227;301-327;401-427;501-527;601-627,all
+7,Clairfields,way,399342891,3,Gordon Street,1467,flats,closed,1;2;3,1-3,
+7,Clairfields,way,961839909,5,Gosling Gardens,332,interpolation,closed,,,all
+7,Clairfields,way,1004013623,5,Lowes Road West,26,flats,closed,101-108;110;112;201-216;301-316;401-416;501-514;601-614;,101-108;110;112;201-216;301-316;401-416;501-514;601-614,
+7,Clairfields,way,208650114,3,Southgate Drive,200,flats,closed,1;2;3,1-3,
+7,Clairfields,way,337955594,6,Southgate Drive,245,flats,closed,10;11;12;7;8;9,7-12,
+7,Clairfields,way,337955609,6,Southgate Drive,245,flats,closed,1;2;3;4;5;6,1-6,
+8,Dover Cliff,way,802528772,3,Conroy Crescent,105,interpolation,closed,102-106;201-206;301-312;401-412;501-512,102-106;201-206;301-312;401-412;501-512,all
+8,Dover Cliff,way,210083020,3,Conroy Crescent,37,flats,closed,1;10;11;12;13;14;15;2;3;4;5;6;7;8;9,1-15,
+8,Dover Cliff,way,802528770,3,Conroy Crescent,53,interpolation,closed,101-107;201-208;301-308,101-107;201-208;301-308,all
+8,Dover Cliff,way,210083022,3,Conroy Crescent,57,interpolation,closed,101-104;201-204;301-304,101-104;201-204;301-304,all
+8,Dover Cliff,way,210083021,3,Conroy Crescent,63,interpolation,closed,1-3;21-24;31-37;41-48;51-58,1-3;21-24;31-37;41-48;51-58,all
+8,Dover Cliff,way,802528771,3,Conroy Crescent,91,interpolation,closed,102-106;201-206;301-312;401-412;501-512,102-106;201-206;301-312;401-412;501-512,all
+9,Old University,way,1349266419,3,Janefield Avenue,454,interpolation,closed,101-108;201-208,101-108;201-208,all
+9,Old University,way,801566997,5,Janefield Avenue,456,interpolation,closed,109-118;209-218,109-118;209-218,all
+9,Old University,way,1349266429,3,Janefield Avenue,458,interpolation,closed,119-126;219-226,119-126;219-226,all
+9,Old University,way,801567001,3,Janefield Avenue,460,interpolation,closed,127-134;227-234,127-134;227-234,all
+9,Old University,way,802811015,5,Manor Park Crescent,25,flats,closed,13;14;15,13-15,
+9,Old University,way,802815631,4,Water Street,119,flats,closed,101;102;103;104;201;202;203;204,101-104;201-204,
+10,Two Rivers,way,714071029,6,Arthur Street South,53,interpolation,closed,,,all
+10,Two Rivers,way,714071030,6,Arthur Street South,63,interpolation,closed,,,all
+10,Two Rivers,way,1065787162,5,Arthur Street South,73,interpolation,closed,,,all
+10,Two Rivers,way,1347682501,4,Arthur Street South,93,interpolation,closed,,,all
+10,Two Rivers,way,356650876,5,Neeve Street,83,flats,closed,1;2;3;4;5;6;7,1-7,
+10,Two Rivers,way,142082372,12,Ontario Street,26,interpolation,closed,,,all
+10,Two Rivers,way,260551704,8,Victoria Road South,199,flats,closed,1;2;3;4;5;6;7;8,1-8,
+10,Two Rivers,way,177695409,7,Wyndham Street South,60,interpolation+flats,closed,1001-1012;101-112;201-212;301-312;401-412;501-512;601-612;701-712;801-812;901-912;,101-112;201-212;301-312;401-412;501-512;601-612;701-712;801-812;901-912;1001-1012,all
+11,Onward Willow,way,502064546,4,Ajax Street,10,interpolation+flats,closed,401-409;201-209;301-309;101-108,101-108;201-209;301-309;401-409,all
+11,Onward Willow,way,502064547,3,Ajax Street,7,interpolation,closed,104-108;205-210;306-311;406-411,104-108;205-210;306-311;406-411,all
+11,Onward Willow,way,502064548,3,Ajax Street,9,interpolation,closed,101-103;201-204;301-305;401-405;501-505,101-103;201-204;301-305;401-405;501-505,all
+11,Onward Willow,way,208356564,3,Bagot Street,105,interpolation+flats,closed,101-113;201-215;301-315;401-415;B1;B2;B3;B4,101-113;201-215;301-315;401-415;B1-B4,all
+11,Onward Willow,way,208356615,4,Bagot Street,107,interpolation+flats,closed,101-113;201-215;301-315;401-415;501-515;601-615;,101-113;201-215;301-315;401-415;501-515;601-615,all
+11,Onward Willow,way,208492557,3,Silvercreek Parkway North,106,flats,closed,1;2;4;5;7,1-2;4-5;7,
+11,Onward Willow,way,1442367349,2,Silvercreek Parkway North,40,flats,closed,47;48,47-48,
+11,Onward Willow,way,502064544,4,Silvercreek Parkway North,65,interpolation+flats,closed,201-210;301-311;101-109;401-410,101-109;201-210;301-311;401-410,all
+11,Onward Willow,way,502064545,3,Silvercreek Parkway North,75,interpolation+flats,closed,401-408;201-208;301-308;101-107,101-107;201-208;301-308;401-408,all
+11,Onward Willow,way,208492512,3,Willow Road,234,interpolation,closed,101-104;201-208;301-308,101-104;201-208;301-308,all
+12,Hales Barton,way,1283416466,4,Arkell Road,32,flats,closed,10;11;12;9,9-12,
+12,Hales Barton,way,1283416472,4,Arkell Road,32,flats,closed,17;18;19;20,17-20,
+12,Hales Barton,way,1283416476,4,Arkell Road,32,flats,closed,1;2;3;4,1-4,
+12,Hales Barton,way,1283416486,4,Arkell Road,32,flats,closed,25;26;27;28,25-28,
+12,Hales Barton,way,1443819663,3,Arkell Road,32,flats,closed,21;22;23;24,21-24,
+12,Hales Barton,way,1443819664,3,Arkell Road,32,flats,closed,5;6;7;8,5-8,
+12,Hales Barton,way,1443819665,3,Arkell Road,32,flats,closed,29;30;31;32,29-32,
+12,Hales Barton,way,1443819666,3,Arkell Road,32,flats,closed,13;14;15;16,13-16,
+12,Hales Barton,way,208407926,3,Bayberry Drive,65,interpolation,closed,C101-C109;C201-C209;C301-C309;C401-C409,C101-C109;C201-C209;C301-C309;C401-C409,all
+12,Hales Barton,way,801652218,4,Bayberry Drive,71,interpolation,closed,D101-D112;D201-D212;D301-D312;D401-D409,D101-D112;D201-D212;D301-D312;D401-D409,all
+12,Hales Barton,way,499045964,5,Gordon Street,1280,interpolation+flats,closed,101-118;201-219;301-319;401-419;,101-118;201-219;301-319;401-419,all
+12,Hales Barton,way,499049867,5,Gordon Street,1284,interpolation+flats,closed,101-131;201-231;301-331;401-431;,101-131;201-231;301-331;401-431,all
+13,Non-Residential - A,way,1436604416,2,Burns Drive,80,flats,closed,11;12,11-12,
+13,Non-Residential - A,way,1436604417,2,Burns Drive,80,flats,closed,13;14,13-14,
+13,Non-Residential - A,way,1436604418,2,Burns Drive,80,flats,closed,15;16,15-16,
+13,Non-Residential - A,way,1436604419,2,Burns Drive,80,flats,closed,17;18,17-18,
+13,Non-Residential - A,way,632319013,4,Burns Drive,80,flats,closed,19;20,19-20,
+13,Non-Residential - A,way,1436604420,2,Burns Drive,86,flats,closed,1;2,1-2,
+13,Non-Residential - A,way,1436604421,2,Burns Drive,86,flats,closed,3;4,3-4,
+13,Non-Residential - A,way,1436604422,2,Burns Drive,86,flats,closed,5;6,5-6,
+13,Non-Residential - A,way,1436604423,2,Burns Drive,86,flats,closed,7;8,7-8,
+13,Non-Residential - A,way,632319014,4,Burns Drive,86,flats,closed,10;9,9-10,
+13,Non-Residential - A,way,344325628,6,Elmira Road North,355,interpolation,closed,100-140,100-140,all
+13,Non-Residential - A,way,399149535,4,Elmira Road North,473,flats,closed,1;2;3;4,1-4,
+13,Non-Residential - A,way,802121047,3,Monarch Road,27,flats,closed,1;2;3;4;5;6,1-6,
+14,Pine Ridge - Westminster Woods,way,878035921,4,Bard Boulevard,106,flats,closed,101-114;201-220;301-320;401-418;,101-114;201-220;301-320;401-418,
+14,Pine Ridge - Westminster Woods,way,878035915,4,Colonial Drive,2,interpolation+flats,closed,101-110;201-211;301-313;401-414;,101-110;201-211;301-313;401-414,all
+14,Pine Ridge - Westminster Woods,way,802540407,3,Frederick Drive,100,flats,closed,1;10;11;12;13;14;15;16;2;3;4;5;6;7;8;9,1-16,
+14,Pine Ridge - Westminster Woods,way,802540411,3,Frederick Drive,101,flats,closed,1;10;11;12;13;14;15;16;2;3;4;5;6;7;8;9,1-16,
+14,Pine Ridge - Westminster Woods,way,802540408,5,Frederick Drive,64,interpolation,closed,101-104;201-204;301-304;401-404,101-104;201-204;301-304;401-404,all
+14,Pine Ridge - Westminster Woods,way,950227736,3,Frederick Drive,65,flats,closed,1;2;3;4;5;6,1-6,
+14,Pine Ridge - Westminster Woods,way,801657260,3,Gordon Street,1440,interpolation+flats,closed,101-122;201-223;301-323;401-423;,101-122;201-223;301-323;401-423,all
+14,Pine Ridge - Westminster Woods,way,837634910,4,Kingsbury Square,35,interpolation+flats,closed,101-109;116-127;201-210;212;214-227;301-327;401-427;,101-109;116-127;201-210;212;214-227;301-327;401-427,all
+14,Pine Ridge - Westminster Woods,way,802540405,3,Kingsbury Square,45,interpolation+flats,closed,101-112;201-214;301-314;401-414;,101-112;201-214;301-314;401-414,all
+14,Pine Ridge - Westminster Woods,way,802540406,3,Kingsbury Square,67,interpolation+flats,closed,101-112;201-214;301-314;401-414;,101-112;201-214;301-314;401-414,all
+14,Pine Ridge - Westminster Woods,way,287946730,4,Lynnmore Street,60,flats,closed,101-112;201-214;301-314;401-414;,101-112;201-214;301-314;401-414,
+14,Pine Ridge - Westminster Woods,way,287946734,3,Waterford Drive,19,interpolation+flats,closed,101-112;201-214;301-314;401-414;,101-112;201-214;301-314;401-414,all
+14,Pine Ridge - Westminster Woods,way,287946731,3,Waterford Drive,43,interpolation+flats,closed,101-112;201-214;301-314;401-414;,101-112;201-214;301-314;401-414,all
+15,Downtown - Sunny Acres,way,1076453164,5,Beechwood Avenue,83,interpolation,closed,1-16,1-16,all
+15,Downtown - Sunny Acres,way,413398803,7,Gordon Street,31,flats,closed,11;12;14;15;A14;16;17;18;19;2B;1A;A2;1;2;3;4;5;6;7;8;9;20;10,1-12;1A;2B;14-20;A2;A14,
+15,Downtown - Sunny Acres,node,13150618373,2,Gordon Street,5,flats,node,202;302;402;502;602;102B,102B;202;302;402;502;602,
+15,Downtown - Sunny Acres,node,13150618374,2,Gordon Street,5,flats,node,201;301;401;501;601;102A,102A;201;301;401;501;601,
+15,Downtown - Sunny Acres,node,13150618376,2,Gordon Street,5,flats,node,212;312;412;107,107;212;312;412,
+15,Downtown - Sunny Acres,node,13150618377,2,Gordon Street,5,flats,node,211;311;411;106,106;211;311;411,
+15,Downtown - Sunny Acres,node,13150618378,2,Gordon Street,5,flats,node,210;310;410;105,105;210;310;410,
+15,Downtown - Sunny Acres,way,177696219,7,MacDonell Street,160,flats,closed,101;1001-1009;1101-1109;1201-1209;1301-1309;1401-1409;1501-1509;1601-1609;1701-1705;1801-1804;301-308;401-406;501-509;601-609;701-709;801-809;901-909;,101;301-308;401-406;501-509;601-609;701-709;801-809;901-909;1001-1009;1101-1109;1201-1209;1301-1309;1401-1409;1501-1509;1601-1609;1701-1705;1801-1804,
+15,Downtown - Sunny Acres,node,13159082381,2,Quebec Street,21,flats,node,202;203;204,202-204,
+15,Downtown - Sunny Acres,way,1431616569,2,Surrey Street East,47,flats,closed,3C;1;2;4;5;6;7;8;3A;3B,1-2;3A;3B;3C;4-8,
+15,Downtown - Sunny Acres,way,493155848,3,Surrey Street East,49,flats,closed,11;22;23A;23B;33A;33B;23C;33C;31;32;21,11;21-22;23A;23B;23C;31-32;33A;33B;33C,
+15,Downtown - Sunny Acres,way,923609578,5,Waterloo Avenue,121,flats,closed,110;101;102;103;104;105;106;107;108;109,101-110,
+15,Downtown - Sunny Acres,way,819734215,7,Waterloo Avenue,358,interpolation+flats,closed,1001-1008;1101-1108;101-106;201-208;301-308;401-408;501-508;601-608;701-708;801-808;901-908;,101-106;201-208;301-308;401-408;501-508;601-608;701-708;801-808;901-908;1001-1008;1101-1108,all
+15,Downtown - Sunny Acres,way,819734214,4,Waterloo Avenue,360,flats,closed,107;108;209;210;211;212,107-108;209-212,
+15,Downtown - Sunny Acres,way,675436618,8,Wellington Street East,150,flats,closed,1001-1008;101-104;1101-1108;1201-1208;1301-1308;1401-1408;1501-1508;1601-1606;1701-1704;1801-1802;301-314;401-414;501-514;601-614;701-707;801-808;901-908;,101-104;301-314;401-414;501-514;601-614;701-707;801-808;901-908;1001-1008;1101-1108;1201-1208;1301-1308;1401-1408;1501-1508;1601-1606;1701-1704;1801-1802,
+16,Exhibition Park,way,925775122,4,Cardigan Street,122,flats,closed,1;2;3;4,1-4,
+16,Exhibition Park,way,1042083497,5,Edinburgh Road North,395,flats,closed,105-108;110-114;201-207;209-213;217;301-307;309-313;317;401-407;409-417;501-507;509-513;517;601-607;609-613;617;701-707;709-713;717;,105-108;110-114;201-207;209-213;217;301-307;309-313;317;401-407;409-417;501-507;509-513;517;601-607;609-613;617;701-707;709-713;717,
+16,Exhibition Park,node,13164297972,2,Mont Street,1,flats,node,1;2;3;4;5;6,1-6,
+16,Exhibition Park,way,925775200,4,Suffolk Street West,57,flats,closed,101;102;203;204;305;306;407;408;PH,101-102;203-204;305-306;407-408;PH,
+16,Exhibition Park,way,1369220540,4,Westmount Road,120,flats,closed,13;14,13-14,
+16,Exhibition Park,way,1369220542,4,Westmount Road,120,flats,closed,11;9,9;11,
+16,Exhibition Park,way,1369220544,4,Westmount Road,120,flats,closed,15;16,15-16,
+16,Exhibition Park,way,123242060,6,Woolwich Street,200,flats,closed,101;102;201;103;202;203;204,101-103;201-204,
+16,Exhibition Park,way,882913721,3,Woolwich Street,560,flats,closed,A1;A2;A3;A4;A5;A6;A7;A8;A9,A1-A9,
+16,Exhibition Park,way,882913722,3,Woolwich Street,560,flats,closed,B1;B2;B3;B4;B5;B6;B7;B8;B9,B1-B9,
+16,Exhibition Park,node,13159082353,2,Wyndham Street North,116,flats,node,1;2;3;4,1-4,
+16,Exhibition Park,way,1344915931,4,Wyndham Street North,143,flats,closed,201;202;203;204;301,201-204;301,
+16,Exhibition Park,node,12314152369,3,Yarmouth Street,31,flats,node,101;201;301;202;302;203;303;204;304;106;205;305;206;107;306;207;307,101;106-107;201-207;301-307,
+16,Exhibition Park,node,12314155787,3,Yarmouth Street,55,interpolation+flats,node,201-209; 301-309; 401-409; 501-509; 601-609; 701-709; 801-809; 901-909;,201-209;301-309;401-409;501-509;601-609;701-709;801-809;901-909,all
+16,Exhibition Park,way,409855358,4,Yarmouth Street,86,interpolation+flats,closed,101-104; 201-208; 301-306,101-104;201-208;301-306,all
+17,Waverley,way,761343575,3,Country Club Drive,120,interpolation+flats,closed,11;12;14-33;,11-12;14-33,all
+17,Waverley,way,761343576,3,Country Club Drive,120,interpolation,closed,1-10,1-10,all
+17,Waverley,way,761343584,3,Country Club Drive,120,flats,closed,58;59;60;61,58-61,
+17,Waverley,way,802124534,4,Marilyn Drive,16,flats,closed,101;102;103;104;105;201;202;203;204;205;206;301;302;303;304;305;306,101-105;201-206;301-306,
+17,Waverley,way,178085148,6,Marilyn Drive,22,interpolation+flats,closed,103-108;201-208;301-308;401-408;501-508;601-608;701-708;801-808;901-908;,103-108;201-208;301-308;401-408;501-508;601-608;701-708;801-808;901-908,all
+17,Waverley,way,178085152,7,Marilyn Drive,24,interpolation+flats,closed,1001-1006;101-103;201-205;301-306;401-406;501-506;601-606;701-706;801-806;901-906;,101-103;201-205;301-306;401-406;501-506;601-606;701-706;801-806;901-906;1001-1006,all
+17,Waverley,node,13165533695,2,Norwich Street East,110,flats,node,1;2;4,1-2;4,
+17,Waverley,way,802125028,3,Sunnylea Crescent,1,flats,closed,1;2;3;4;5;6;7;8,1-8,
+17,Waverley,way,802125026,3,Sunnylea Crescent,2,flats,closed,1;2;3;4;5;6;7;8,1-8,
+17,Waverley,way,802125029,3,Sunnylea Crescent,3,flats,closed,1;2;3;4;5;6;7;8,1-8,
+17,Waverley,way,802125027,3,Sunnylea Crescent,4,flats,closed,1;2;3;4;5;6;7;8,1-8,
+17,Waverley,way,803281467,5,Woodlawn Road East,100,flats,closed,5;6,5-6,
+17,Waverley,way,803281468,5,Woodlawn Road East,100,flats,closed,1;2,1-2,
+17,Waverley,way,954036919,3,Woodlawn Road East,100,flats,closed,3;4,3-4,
+17,Waverley,way,954036924,3,Woodlawn Road East,100,flats,closed,7;8,7-8,
+17,Waverley,way,178085150,6,Woodlawn Road East,19,interpolation+flats,closed,101-115;201-216;301-316;401-416;501-516;601-616;701-716;801-816;901-915;,101-115;201-216;301-316;401-416;501-516;601-616;701-716;801-816;901-915,all
+17,Waverley,way,178085151,5,Woodlawn Road East,23,interpolation+flats,closed,101-110;201-212;301-312;401-412;501-512;601-612;701-712;801-812;901-909;911;,101-110;201-212;301-312;401-412;501-512;601-612;701-712;801-812;901-909;911,all
+18,June Avenue,way,475631431,3,Arrow Road,31,flats,closed,1;10;11;2;3;4;5;6;7;8;9,1-11,
+18,June Avenue,way,1436604427,2,Burns Drive,11,flats,closed,13;14;15;16,13-16,
+18,June Avenue,way,802123329,3,Burns Drive,11,flats,closed,17;18;19;20,17-20,
+18,June Avenue,way,1436604432,2,Burns Drive,15,flats,closed,21;22;23;24,21-24,
+18,June Avenue,way,802123326,3,Burns Drive,15,flats,closed,25;26;27;28,25-28,
+18,June Avenue,way,1436604433,2,Burns Drive,17,flats,closed,35;36;37;38;39;40,35-40,
+18,June Avenue,way,802123325,3,Burns Drive,17,flats,closed,29;30;31;32;33;34,29-34,
+18,June Avenue,way,1436604430,2,Burns Drive,19,flats,closed,41;42;43;44,41-44,
+18,June Avenue,way,1436604431,2,Burns Drive,19,flats,closed,49;50;51;52,49-52,
+18,June Avenue,way,802123324,3,Burns Drive,19,flats,closed,45;46;47;48,45-48,
+18,June Avenue,way,1436604425,2,Burns Drive,3,flats,closed,1;2;3;4,1-4,
+18,June Avenue,way,1436604426,2,Burns Drive,3,flats,closed,5;6;7;8,5-8,
+18,June Avenue,way,802123328,3,Burns Drive,3,flats,closed,10;11;12;9,9-12,
+18,June Avenue,way,1436604428,2,Burns Drive,9,flats,closed,53;54;55;56;57;58,53-58,
+18,June Avenue,way,1436604429,2,Burns Drive,9,flats,closed,59;60;61;62;63;64,59-64,
+18,June Avenue,way,802123327,3,Burns Drive,9,flats,closed,65;66;67;68;69;70,65-70,
+18,June Avenue,way,1436028337,2,Woodlawn Road East,70,interpolation+flats,closed,101-114;201-218;301-318;,101-114;201-218;301-318,all
+18,June Avenue,way,353492157,5,Woodlawn Road East,72,interpolation+flats,closed,101-103;201-207;301-307;401-407;501-507;601-607;,101-103;201-207;301-307;401-407;501-507;601-607,all
+18,June Avenue,way,773015474,3,Woodlawn Road West,243-263,interpolation,closed,,,odd
+19,Non-Residential - C,way,287908449,4,Goodwin Drive,37,interpolation+flats,closed,101-113;201-214;301-314;401-414;,101-113;201-214;301-314;401-414,all
+19,Non-Residential - C,way,287908442,4,Goodwin Drive,39,interpolation+flats,closed,101-111;201-212;301-312;401-412;,101-111;201-212;301-312;401-412,all
+19,Non-Residential - C,way,287908447,4,Goodwin Drive,41,interpolation+flats,closed,101-111;201-212;301-312;401-412;,101-111;201-212;301-312;401-412,all
+19,Non-Residential - C,way,287908444,4,Goodwin Drive,43,interpolation+flats,closed,101-113;201-214;301-314;401-414;,101-113;201-214;301-314;401-414,all
+19,Non-Residential - C,way,287908445,4,Goodwin Drive,45,interpolation+flats,closed,101-111;201-212;301-312;401-412;,101-111;201-212;301-312;401-412,all
+19,Non-Residential - C,way,862511297,8,Gordon Street,1878,interpolation+flats,closed,101-116;201-215;301-314;401-414;501-514;601-614;701-714;801-814;901-914;1001-1014;1101-1114;1201-1206;1301-1305;1401-1404;,101-116;201-215;301-314;401-414;501-514;601-614;701-714;801-814;901-914;1001-1014;1101-1114;1201-1206;1301-1305;1401-1404,all
+19,Non-Residential - C,way,862511298,8,Gordon Street,1880,interpolation+flats,closed,101-115;201-215;301-314;401-414;501-514;601-614;701-714;801-814;901-914;1001-1014;1101-1114;1201-1206;1301-1306;1401-1404;,101-115;201-215;301-314;401-414;501-514;601-614;701-714;801-814;901-914;1001-1014;1101-1114;1201-1206;1301-1306;1401-1404,all
+19,Non-Residential - C,node,13241233182,2,Gordon Street,1882,interpolation+flats,node,101-115;201-209;301-312;401-412;501-512;601-612;701-712;801-805;,101-115;201-209;301-312;401-412;501-512;601-612;701-712;801-805,all
+19,Non-Residential - C,node,13241233183,2,Gordon Street,1884,interpolation+flats,node,101-114;201-214;301-312;401-412;501-512;601-612;701-712;801-805;,101-114;201-214;301-312;401-412;501-512;601-612;701-712;801-805,all
+19,Non-Residential - C,way,961839908,4,Gordon Street,1886,flats,closed,101;102;201;202,101-102;201-202,
+19,Non-Residential - C,way,900493343,4,Kay Crescent,17,interpolation+flats,closed,101-111;201-212;301-312;401-412;,101-111;201-212;301-312;401-412,all
+19,Non-Residential - C,way,900493342,4,Kay Crescent,25,interpolation+flats,closed,101-114;201-214;301-314;401-414;LL02;LL04;LL06;LL08;LL10;LL12;LL14;,101-114;201-214;301-314;401-414;LL02;LL04;LL06;LL08;LL10;LL12;LL14,all
+19,Non-Residential - C,way,1443052881,2,Kay Crescent,39,flats,closed,32;33,32-33,
+19,Non-Residential - C,way,1443052882,2,Kay Crescent,39,flats,closed,34;35,34-35,
+19,Non-Residential - C,way,1443052883,2,Kay Crescent,39,flats,closed,36;37,36-37,
+19,Non-Residential - C,way,1443052884,2,Kay Crescent,39,flats,closed,46;47,46-47,
+19,Non-Residential - C,way,1443052885,2,Kay Crescent,39,flats,closed,44;45,44-45,
+19,Non-Residential - C,way,1443052886,2,Kay Crescent,39,flats,closed,42;43,42-43,
+19,Non-Residential - C,way,802540386,4,Kay Crescent,39,flats,closed,12;13;14;15;16;17;18;19;20;21,12-21,
+19,Non-Residential - C,way,802540388,4,Kay Crescent,39,flats,closed,38;39,38-39,
+19,Non-Residential - C,way,802540389,4,Kay Crescent,39,flats,closed,40;41,40-41,
+19,Non-Residential - C,way,741807532,5,Kay Crescent,7,interpolation+flats,closed,101-113;201-215;301-315;401-415;501-515;601-615;LL01-LL06;,101-113;201-215;301-315;401-415;501-515;601-615;LL01-LL06,all
+20,Grange Hill East,way,802544823,3,Airpark Place,45,flats,closed,1;2;3;4;5;6;7;8,1-8,
+20,Grange Hill East,way,803283640,4,Auden Road,394,flats,closed,29;30;31;32;33;34;35;36;37;38;39,29-39,
+20,Grange Hill East,way,803283643,4,Auden Road,394,flats,closed,11;12;13;14;15;16;17;18;19,11-19,
+20,Grange Hill East,way,937956322,4,Auden Road,467,flats,closed,14;15;16;17;18;19;20,14-20,
+20,Grange Hill East,way,937956323,4,Auden Road,467,flats,closed,39;40;41;42;43;44,39-44,
+20,Grange Hill East,way,937956324,4,Auden Road,467,flats,closed,10;11;12;13;7;8;9,7-13,
+20,Grange Hill East,way,937956325,4,Auden Road,467,flats,closed,1;2;3;4;5;6,1-6,
+20,Grange Hill East,way,937956326,4,Auden Road,467,flats,closed,33;34;35;36;37;38,33-38,
+20,Grange Hill East,way,937956327,4,Auden Road,467,flats,closed,27;28;29;30;31;32,27-32,
+20,Grange Hill East,way,937956329,4,Auden Road,467,flats,closed,21;22;23;24;25;26,21-26,
+20,Grange Hill East,way,937552909,4,Auden Road,470,flats,closed,37;38;39;40,37-40,
+20,Grange Hill East,way,937552911,4,Auden Road,470,flats,closed,32;33;34;35;36,32-36,
+20,Grange Hill East,way,937552912,4,Auden Road,470,flats,closed,26;27;28;29;30;31,26-31,
+20,Grange Hill East,way,937552913,4,Auden Road,470,flats,closed,41;42;43;44,41-44,
+20,Grange Hill East,way,937552914,4,Auden Road,470,flats,closed,45;46;47;48,45-48,
+20,Grange Hill East,way,937552915,4,Auden Road,470,flats,closed,22;23,22-23,
+20,Grange Hill East,way,937552916,4,Auden Road,470,flats,closed,16;17,16-17,
+20,Grange Hill East,way,937552917,4,Auden Road,470,flats,closed,10;11;12;13;7;8;9,7-13,
+20,Grange Hill East,way,937552918,4,Auden Road,470,flats,closed,1;2;3;4;5;6,1-6,
+20,Grange Hill East,way,939208872,3,Cityview Drive South,5,flats,closed,101;102;103;104;105;106;107;108,101-108,
+20,Grange Hill East,way,939208873,3,Cityview Drive South,7,flats,closed,201;202;203;204;205;206;207;208;209;210;211;212,201-212,
+20,Grange Hill East,way,939208874,3,Cityview Drive South,9,flats,closed,301;302;303;304;305;306;307;308,301-308,
+20,Grange Hill East,way,803283699,3,Eastview Road,66,flats,closed,10;11;7;8;9,7-11,
+20,Grange Hill East,way,333632635,4,Grange Road,415,interpolation+flats,closed,101-111;201-213;301-313;401-413;,101-111;201-213;301-313;401-413,all
+20,Grange Hill East,way,803283648,3,Mountford Drive,35,interpolation,closed,17-32,17-32,all
+20,Grange Hill East,way,803283649,3,Mountford Drive,35,interpolation,closed,65-88,65-88,all
+20,Grange Hill East,way,942414532,3,Shackleton Drive,20,flats,closed,44;45;46;47,44-47,
+20,Grange Hill East,way,803283670,3,Summit Ridge Drive,104,interpolation+flats,closed,101-112;201-212;301-312;401-412;,101-112;201-212;301-312;401-412,all
+20,Grange Hill East,way,803283669,3,Summit Ridge Drive,108,interpolation+flats,closed,101-112;201-212;301-312;401-412;LL01;LL02;LL03;LL04;,101-112;201-212;301-312;401-412;LL01-LL04,all
+20,Grange Hill East,way,941667226,3,Watson Parkway North,308,interpolation+flats,closed,101-120;201-221;301-321;401-421;,101-120;201-221;301-321;401-421,all
+21,Parkwood Gardens,way,1441651733,2,Fife Road,190,flats,closed,59;60,59-60,
+21,Parkwood Gardens,way,1441651734,2,Fife Road,190,flats,closed,57;58,57-58,
+21,Parkwood Gardens,way,1441651735,2,Fife Road,190,flats,closed,55;56,55-56,
+21,Parkwood Gardens,way,1441651736,2,Fife Road,190,flats,closed,51;52,51-52,
+21,Parkwood Gardens,way,1441651737,2,Fife Road,190,flats,closed,49;50,49-50,
+21,Parkwood Gardens,way,1441651738,2,Fife Road,190,flats,closed,47;48,47-48,
+21,Parkwood Gardens,way,1441651739,2,Fife Road,190,flats,closed,77;78,77-78,
+21,Parkwood Gardens,way,1441651740,2,Fife Road,190,flats,closed,79;80,79-80,
+21,Parkwood Gardens,way,1441651741,2,Fife Road,190,flats,closed,81;82,81-82,
+21,Parkwood Gardens,way,1441651742,2,Fife Road,190,flats,closed,61;62,61-62,
+21,Parkwood Gardens,way,1441651743,2,Fife Road,190,flats,closed,63;64,63-64,
+21,Parkwood Gardens,way,1441651744,2,Fife Road,190,flats,closed,65;66,65-66,
+21,Parkwood Gardens,way,1441651745,2,Fife Road,190,flats,closed,67;68,67-68,
+21,Parkwood Gardens,way,1441651746,2,Fife Road,190,flats,closed,69;70,69-70,
+21,Parkwood Gardens,way,1441651747,2,Fife Road,190,flats,closed,71;72,71-72,
+21,Parkwood Gardens,way,1441651748,2,Fife Road,190,flats,closed,73;74,73-74,
+21,Parkwood Gardens,way,1441651749,2,Fife Road,190,flats,closed,42;43,42-43,
+21,Parkwood Gardens,way,1441651750,2,Fife Road,190,flats,closed,40;41,40-41,
+21,Parkwood Gardens,way,1441651751,2,Fife Road,190,flats,closed,38;39,38-39,
+21,Parkwood Gardens,way,1441651752,2,Fife Road,190,flats,closed,34;35,34-35,
+21,Parkwood Gardens,way,1441651753,2,Fife Road,190,flats,closed,32;33,32-33,
+21,Parkwood Gardens,way,1441651754,2,Fife Road,190,flats,closed,30;31,30-31,
+21,Parkwood Gardens,way,1441651755,2,Fife Road,190,flats,closed,100;99,99-100,
+21,Parkwood Gardens,way,1441651756,2,Fife Road,190,flats,closed,97;98,97-98,
+21,Parkwood Gardens,way,1441651757,2,Fife Road,190,flats,closed,95;96,95-96,
+21,Parkwood Gardens,way,1441651758,2,Fife Road,190,flats,closed,93;94,93-94,
+21,Parkwood Gardens,way,1441651759,2,Fife Road,190,flats,closed,91;92,91-92,
+21,Parkwood Gardens,way,1441651760,2,Fife Road,190,flats,closed,89;90,89-90,
+21,Parkwood Gardens,way,1441651761,2,Fife Road,190,flats,closed,87;88,87-88,
+21,Parkwood Gardens,way,921942596,3,Fife Road,190,flats,closed,36;37,36-37,
+21,Parkwood Gardens,way,921942597,3,Fife Road,190,flats,closed,28;29,28-29,
+21,Parkwood Gardens,way,921942598,3,Fife Road,190,flats,closed,85;86,85-86,
+21,Parkwood Gardens,way,921942599,3,Fife Road,190,flats,closed,83;84,83-84,
+21,Parkwood Gardens,way,921942600,3,Fife Road,190,flats,closed,75;76,75-76,
+21,Parkwood Gardens,way,921942601,3,Fife Road,190,flats,closed,45;46,45-46,
+21,Parkwood Gardens,way,921942602,3,Fife Road,190,flats,closed,53;54,53-54,
+21,Parkwood Gardens,way,413943417,4,Paisley Road,901,interpolation,closed,101-107;201-209;301-309;401-409,101-107;201-209;301-309;401-409,all
+22,West Willow Woods,way,1437043928,2,Flaherty Drive,75,flats,closed,49;50,49-50,
+22,West Willow Woods,way,1437043929,2,Flaherty Drive,75,flats,closed,45;46,45-46,
+22,West Willow Woods,way,1437043930,2,Flaherty Drive,75,flats,closed,41;42,41-42,
+22,West Willow Woods,way,1437043931,2,Flaherty Drive,75,flats,closed,37;38,37-38,
+22,West Willow Woods,way,1437043932,2,Flaherty Drive,75,flats,closed,35;36,35-36,
+22,West Willow Woods,way,1437043933,2,Flaherty Drive,75,flats,closed,31;32,31-32,
+22,West Willow Woods,way,1437043934,2,Flaherty Drive,75,flats,closed,33;34,33-34,
+22,West Willow Woods,way,1437043935,2,Flaherty Drive,75,flats,closed,3;4,3-4,
+22,West Willow Woods,way,1437043936,2,Flaherty Drive,75,flats,closed,5;6,5-6,
+22,West Willow Woods,way,1437043937,2,Flaherty Drive,75,flats,closed,10;9,9-10,
+22,West Willow Woods,way,1437043938,2,Flaherty Drive,75,flats,closed,11;12,11-12,
+22,West Willow Woods,way,1437043939,2,Flaherty Drive,75,flats,closed,13;14,13-14,
+22,West Willow Woods,way,1437043940,2,Flaherty Drive,75,flats,closed,17;18,17-18,
+22,West Willow Woods,way,1437043941,2,Flaherty Drive,75,flats,closed,19;20,19-20,
+22,West Willow Woods,way,1437043942,2,Flaherty Drive,75,flats,closed,25;26,25-26,
+22,West Willow Woods,way,1437043943,2,Flaherty Drive,75,flats,closed,23;24,23-24,
+22,West Willow Woods,way,1437043944,2,Flaherty Drive,75,flats,closed,21;22,21-22,
+22,West Willow Woods,way,912221550,4,Flaherty Drive,75,flats,closed,39;40,39-40,
+22,West Willow Woods,way,912221551,4,Flaherty Drive,75,flats,closed,43;44,43-44,
+22,West Willow Woods,way,912221552,4,Flaherty Drive,75,flats,closed,47;48,47-48,
+22,West Willow Woods,way,912221553,4,Flaherty Drive,75,flats,closed,27;28,27-28,
+22,West Willow Woods,way,912221554,4,Flaherty Drive,75,flats,closed,15;16,15-16,
+22,West Willow Woods,way,912221556,4,Flaherty Drive,75,flats,closed,29;30,29-30,
+22,West Willow Woods,way,912221557,4,Flaherty Drive,75,flats,closed,1;2,1-2,
+22,West Willow Woods,way,912221558,4,Flaherty Drive,75,flats,closed,7;8,7-8,
+22,West Willow Woods,way,557515464,5,Imperial Road North,142,interpolation+flats,closed,101-108;201-208;301-308;401-408;,101-108;201-208;301-308;401-408,all
+22,West Willow Woods,way,557515432,5,Imperial Road North,146,interpolation+flats,closed,101-108;201-208;301-308;401-408;,101-108;201-208;301-308;401-408,all
+22,West Willow Woods,way,557515399,5,Imperial Road North,150,interpolation+flats,closed,101-108;201-208;301-308;401-408;,101-108;201-208;301-308;401-408,all
+22,West Willow Woods,way,1441651844,2,Rhonda Road,49,flats,closed,98;99,98-99,
+22,West Willow Woods,way,1441651845,2,Rhonda Road,49,flats,closed,94;95,94-95,
+22,West Willow Woods,way,1441651846,2,Rhonda Road,49,flats,closed,84;85,84-85,
+22,West Willow Woods,way,1441651847,2,Rhonda Road,49,flats,closed,88;89,88-89,
+22,West Willow Woods,way,1441651848,2,Rhonda Road,49,flats,closed,90;91,90-91,
+22,West Willow Woods,way,1441651849,2,Rhonda Road,49,flats,closed,92;93,92-93,
+22,West Willow Woods,way,1441651850,2,Rhonda Road,49,flats,closed,96;97,96-97,
+22,West Willow Woods,way,1441651851,2,Rhonda Road,49,flats,closed,100;101,100-101,
+22,West Willow Woods,way,1441651852,2,Rhonda Road,49,flats,closed,102;103,102-103,
+22,West Willow Woods,way,1441651853,2,Rhonda Road,49,flats,closed,104;105,104-105,
+22,West Willow Woods,way,1441651854,2,Rhonda Road,49,flats,closed,106;107,106-107,
+22,West Willow Woods,way,1441651855,2,Rhonda Road,49,flats,closed,108;109,108-109,
+22,West Willow Woods,way,1441651856,2,Rhonda Road,49,flats,closed,110;111,110-111,
+22,West Willow Woods,way,1441651910,2,Rhonda Road,49,flats,closed,128;129,128-129,
+22,West Willow Woods,way,1441651911,2,Rhonda Road,49,flats,closed,126;127,126-127,
+22,West Willow Woods,way,1441651912,2,Rhonda Road,49,flats,closed,122;123,122-123,
+22,West Willow Woods,way,1441651913,2,Rhonda Road,49,flats,closed,118;119,118-119,
+22,West Willow Woods,way,1441651914,2,Rhonda Road,49,flats,closed,116;117,116-117,
+22,West Willow Woods,way,1441651915,2,Rhonda Road,49,flats,closed,124;125,124-125,
+22,West Willow Woods,way,1441651916,2,Rhonda Road,49,flats,closed,130;131,130-131,
+22,West Willow Woods,way,1441651917,2,Rhonda Road,49,flats,closed,114;115,114-115,
+22,West Willow Woods,way,803276519,3,Rhonda Road,49,flats,closed,112;113,112-113,
+22,West Willow Woods,way,803276525,3,Rhonda Road,49,flats,closed,120;121,120-121,
+22,West Willow Woods,way,803276526,3,Rhonda Road,49,flats,closed,86;87,86-87,
+22,West Willow Woods,way,413380308,5,Speedvale Avenue West,350,interpolation,closed,1-12,1-12,all
+22,West Willow Woods,way,358946113,4,Westwood Road,89,interpolation,closed,101-109;201-211;301-311;401-411;501-512;601-612,101-109;201-211;301-311;401-411;501-512;601-612,all
+22,West Willow Woods,way,358946112,4,Westwood Road,93,interpolation,closed,101-109;201-211;301-311;401-411;501-512;601-612,101-109;201-211;301-311;401-411;501-512;601-612,all
