@@ -100,10 +100,16 @@ states intent):
   `config.toml` carries the measurements.
 
 **[`mechanical-edits/TODO.md`](mechanical-edits/TODO.md) is the ledger** for
-all five campaigns — what is done and the two found *while* running the
-others, neither yet proposed: 81 objects carrying `addr:interpolation` where
-it cannot mean anything (against 405 legitimate ones that stay), and a real
-`addr:flats` normaliser, 171 of 447 values being untidy in some way.
+all five campaigns. The two found *while* running the others are now **built
+as one batch set** in
+[`mechanical-edits/flats-hygiene/`](mechanical-edits/flats-hygiene/) and
+awaiting their notice — 81 objects carrying `addr:interpolation` where it
+cannot mean anything (against 405 legitimate ones that stay untouched, and 149
+multi-node ones out of scope), plus a real `addr:flats` normaliser, re-measured
+at 292 of 464 values untidy. 325 objects, 22 batches; 48 take both edits,
+which is why they are one campaign rather than two. Every value is gated on a
+round trip through the engine's own renderer, so a normalisation that changed
+which units a building claims could not reach a batch.
 
 **[`IDEAS.md`](IDEAS.md) is the other half of that ledger** — projection ideas
 the data suggested and that are *not* being built, each with the numbers that
