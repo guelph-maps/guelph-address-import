@@ -1,9 +1,36 @@
-# Findings post — draft, for thread #135103
+# Findings post — POSTED 2026-09-16 as post #18
 
-Post after the mechanical edits are done and before campaign 4 is proposed.
-Bullets rather than prose: it is a list of things found, not an argument.
+Checked against the live thread 2026-09-18. It went up in skfd's own
+condensed form, not this draft verbatim, and it went up **the night before**
+the province count was re-measured.
 
-Numbers verified against the live API on 2026-09-17, not from our own records.
+**What post #18 therefore does not carry, and is still owed:**
+
+* **The province correction.** #18's "What is next" lists "Remove
+  `addr:province=Ontario`" with no count at all. The ~3,699 → 44,796
+  correction is *not* on the thread. It has its own draft now:
+  [`PROVINCE_CORRECTION_POST.md`](PROVINCE_CORRECTION_POST.md).
+* **Campaigns 4 and 5 as a notice.** #18 trails both under "What is next" —
+  interpolation at "81 total", flats normalisation as "not developed yet,
+  working on it" — which is a heads-up, not the notice either campaign needs
+  before it uploads. That draft is
+  [`mechanical-edits/flats-hygiene/ANNOUNCEMENT.md`](mechanical-edits/flats-hygiene/ANNOUNCEMENT.md).
+
+**ARandomThumbtack replied in #19 and #20 (2026-09-17)** and asked for
+something directly relevant: *"when making such a change like the Unit-level
+addresses, I would love it if you could post that change into this forum
+post."* They are reading every update and want the announcements to keep
+coming here. That settles the cadence question from #15/#16 in favour of
+announcing, not staying quiet.
+
+They also said they are happy with `per-door-or-collapse`, quoting the wiki's
+own reasoning back, so the units reversal has explicit assent from the
+original importer.
+
+---
+
+*Draft text below, kept for the record. Numbers verified against the live API
+on 2026-09-17.*
 
 ---
 

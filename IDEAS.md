@@ -121,6 +121,38 @@ like.
 source letters are uppercase. 154 of the 169 would be new nodes rather than
 retags.
 
+**The original importer weighed in, 2026-09-17 (posts #19 and #20).** Asked
+about exactly this, ARandomThumbtack came down on **respecting the source**:
+
+> Even if it's silly, I think the unitless + unit B data from the City should
+> be respected, because who knows what sort of edge case then fails because we
+> didn't faithfully propagate the data from the dataset.
+
+That is the same conclusion this idea was parked on, now with a second voice
+behind it. **Idea 2 stays parked, and is closer to closed than open.**
+
+They did offer a route *if* it were ever taken up — and it is worth writing
+down why it cannot be taken as-is. Their suggestion is to write the
+housenumber as `44-A` and `44-B`, so that numeric cases become `53-1` and
+`53-2`:
+
+> However, if we wanted to proceed with Fixing it idea 1, then a solution: map
+> the housenumbers so that it turns into "44-A" and "44-B". That way, numeric
+> units turn into "53-1" and "53-2".
+
+**`53-1` is the exact form campaign 2 just spent 5,521 edits removing.**
+`addr:housenumber=714-30` alongside `addr:unit=30` is the double encoding the
+whole campaign was about, and it is not even in Canada Post's order. Adopting
+`53-1` as a civic number would re-create that shape city-wide, one year after
+arguing it away — and conflation could no longer tell a genuine `53-1` civic
+number from a leftover double encoding, because they would be spelled
+identically. It also collides with edge case 7 above, which already needs
+three forms to match one door.
+
+The hyphen-free suffix (`44B`, no hyphen) does not have this problem, which is
+what this idea actually proposed. The distinction is small on the page and
+total in the data, and it is the thing to raise if the question comes back.
+
 **What is decided and unaffected:** the import projects the source verbatim,
 `44` + `addr:unit=B`, exactly as it will write `52` + `addr:unit=2`. Edge
 case 7 is worth writing into the proposal *regardless* of this idea, because

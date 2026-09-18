@@ -47,7 +47,24 @@ Publication state:
    #135103, `addr:full` withdrawal included. The 14-day objection window ran to
    2026-09-10 and closed with no objections; ARandomThumbtack replied
    supportively in #15, and #16 (2026-09-01) followed up on the open questions.
-   **Both mechanical edits are therefore consented.**
+   The unit split is consented. **The province edit is not** — #14 asked for it
+   at ~3,699 objects and it is 44,796, so that consent does not cover what the
+   campaign actually does. See `PROVINCE_CORRECTION_POST.md`.
+5. ✅ `FINDINGS_POST.md` — **posted 2026-09-16** as post #18, in condensed
+   form, the night before the province count was re-measured. It therefore
+   carries neither the correction nor the notices campaigns 4 and 5 need.
+6. ⬜ `PROVINCE_CORRECTION_POST.md` — **not posted.** Corrects #14's figure and
+   asks whether the corrected scope wants a fresh window.
+7. ⬜ `mechanical-edits/flats-hygiene/ANNOUNCEMENT.md` — **not posted.** The
+   notice campaigns 4 and 5 upload behind.
+
+**The original importer is reading and wants to be told.** In #19 (2026-09-17)
+ARandomThumbtack asked: *"when making such a change like the Unit-level
+addresses, I would love it if you could post that change into this forum
+post."* That closes the cadence question from #15/#16 — announce here, do not
+go quiet. They also gave `per-door-or-collapse` explicit assent, quoting the
+wiki's reasoning back, and weighed in on the parked `44B` idea (see
+[`IDEAS.md`](IDEAS.md)).
 
 **Three mechanical edits** ride along with the proposal, each consented
 separately under the Automated Edits code of conduct:
