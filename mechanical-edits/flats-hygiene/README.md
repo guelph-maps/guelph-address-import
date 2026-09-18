@@ -21,17 +21,21 @@ thing in a banner. This file is for whoever comes back to the machinery later.
 
 ## Where the consent is
 
-Nowhere yet. The notice is drafted in [`ANNOUNCEMENT.md`](ANNOUNCEMENT.md)
-beside this file and has **not** been posted to [thread #135103][thread].
-Nothing here may be uploaded until it is up.
+**Posted 2026-09-18 as post #21** on [thread #135103][thread]. Upload is the
+weekend of **2026-09-19/20** — no 14-day window, the same call as campaign 3
+and the units reversal, with the standing offer to revert on request in
+`IMPORT_PROPOSAL.mediawiki` § Status.
 
-It is drafted as an announcement, not a consultation, matching what campaign 3
-and the units reversal actually did — the standing offer to revert on request
-is in `IMPORT_PROPOSAL.mediawiki` § Status. It does not claim a window that is
-not being run.
+The posted form is condensed and drops four things the draft in
+[`ANNOUNCEMENT.md`](ANNOUNCEMENT.md) carried: the 81-of-635 figure with the
+554 objects left alone, the round-trip gate, the batch plan and its pilot, and
+the timing paragraph — which is where the no-window statement and the revert
+offer lived. #21 ends "Will update this post when it's done" and can still
+take them. That matters most for the timing paragraph: proceeding without a
+window is defensible *stated*, and the post does not currently state it.
 
-The batches in `batches/` were built against the versions live today. By the
-day of upload those will have moved, so the first step that day is
+The batches in `batches/` were built against the versions live on 2026-09-17.
+By upload day those will have moved, so the first step that morning is
 `build_batches.py --refetch`, not JOSM.
 
 ## What is in scope, and what is deliberately not
@@ -247,8 +251,12 @@ workaround lives.
 
 ## Checklist
 
-- [ ] Wiki § Mechanical edits gains sections 4 and 5, so the notice's link resolves
-- [ ] `ANNOUNCEMENT.md` posted to #135103
+- [x] `ANNOUNCEMENT.md` posted to #135103 — 2026-09-18, post #21, condensed
+- [ ] Wiki § Mechanical edits gains sections 4 and 5, and § Non-goals retracts
+      "no `addr:interpolation` cleanup" — written 2026-09-18, **not republished**.
+      The post went up without the wiki link, so nothing dangles, but the page
+      still describes three campaigns
+- [ ] The four dropped paragraphs added to #21, or deliberately left out
 - [ ] `build_batches.py --refetch` on the day; `python test_flats_parse.py` against the fresh fetch; counts re-read against this README
 - [ ] JOSM signed in as `skfd imports`, not the personal account
 - [ ] Batch 1 (pilot, Hanlon Creek, 26) uploaded; count and changeset posted to the thread

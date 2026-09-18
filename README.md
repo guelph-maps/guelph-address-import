@@ -2,7 +2,8 @@
 
 The **Guelph city checkout** of the address-import family — city #3,
 scaffolded 2026-08-15. Status: **two mechanical campaigns finished and
-verified, the gap-fill import not yet run.** 5,968 objects re-tagged over
+verified, two more announced and uploading the weekend of 2026-09-19/20, the
+gap-fill import not yet run.** 5,968 objects re-tagged over
 2026-09-16/17 in 59 changesets — see
 [`mechanical-edits/TODO.md`](mechanical-edits/TODO.md) for the ledger.
 `ARandomThumbtack_Import` imported Guelph's addresses solo in 2025 (first
@@ -55,8 +56,16 @@ Publication state:
    carries neither the correction nor the notices campaigns 4 and 5 need.
 6. ⬜ `PROVINCE_CORRECTION_POST.md` — **not posted.** Corrects #14's figure and
    asks whether the corrected scope wants a fresh window.
-7. ⬜ `mechanical-edits/flats-hygiene/ANNOUNCEMENT.md` — **not posted.** The
-   notice campaigns 4 and 5 upload behind.
+7. ✅ `mechanical-edits/flats-hygiene/ANNOUNCEMENT.md` — **posted 2026-09-18**
+   as post #21, in condensed form, like #18 before it. What went up: the two
+   campaigns named together, the 74-of-81 overlap, and the four `addr:flats`
+   defects with their examples. What did **not**: the 81-of-635 figure and the
+   554 left alone — which the draft called the hard number to lead with — the
+   round-trip gate, the 325-objects-in-22-batches plan with its pilot, and the
+   plain no-window-plus-revert-on-request paragraph carrying
+   ARandomThumbtack's standing veto. The post closes "Will update this post
+   when it's done", so those four can still be added there rather than in a
+   second post.
 
 **The original importer is reading and wants to be told.** In #19 (2026-09-17)
 ARandomThumbtack asked: *"when making such a change like the Unit-level
@@ -66,8 +75,10 @@ go quiet. They also gave `per-door-or-collapse` explicit assent, quoting the
 wiki's reasoning back, and weighed in on the parked `44B` idea (see
 [`IDEAS.md`](IDEAS.md)).
 
-**Three mechanical edits** ride along with the proposal, each consented
-separately under the Automated Edits code of conduct:
+**Five mechanical edits** ride along with the proposal, each announced
+separately under the Automated Edits code of conduct. 1 and 2 went through a
+14-day window; 3, 4 and 5 were announced on short notice instead, with the
+standing offer to revert on request:
 
 1. **Remove `addr:province`** — ✅ **built 2026-09-17**, 44,763 objects in
    105 batches, not yet uploaded. **The consented count was wrong by 12×**:
@@ -88,8 +99,18 @@ separately under the Automated Edits code of conduct:
    14-day window; the wiki page records that choice and the standing offer to
    revert on request.
 
+4. **Remove meaningless `addr:interpolation`** — ✅ **built 2026-09-17**,
+   81 objects, sharing campaign 5's batch set. Announced 2026-09-18 as post
+   #21. Withdraws a non-goal the wiki published on 2026-08-27; the page
+   strikes it rather than deleting it.
+5. **Normalise `addr:flats` formatting** — ✅ **built 2026-09-17**, 292 of 464
+   values re-rendered through the engine's own `compress_flats`, every one
+   gated on a round trip. Announced 2026-09-18 as post #21. The full
+   before→after list is
+   [`mechanical-edits/flats-hygiene/FLATS_NORMALISATION_LIST.md`](mechanical-edits/flats-hygiene/FLATS_NORMALISATION_LIST.md).
+
 Plus 32 stragglers the rules first refused and the City's roster later
-settled. None of the three is on the import path, and the import does not wait
+settled. None of the five is on the import path, and the import does not wait
 on them — but the split had to run **before** conflation, or door candidates
 would have duplicated against the badly-encoded objects.
 
@@ -120,7 +141,8 @@ states intent):
 all five campaigns. The two found *while* running the others are now **built
 as one batch set** in
 [`mechanical-edits/flats-hygiene/`](mechanical-edits/flats-hygiene/) and
-awaiting their notice — 81 objects carrying `addr:interpolation` where it
+**announced 2026-09-18** (post #21) and **uploading the weekend of
+2026-09-19/20** — 81 objects carrying `addr:interpolation` where it
 cannot mean anything (against 405 legitimate ones that stay untouched, and 149
 multi-node ones out of scope), plus a real `addr:flats` normaliser, re-measured
 at 292 of 464 values untidy. 325 objects, 22 batches; 48 take both edits,

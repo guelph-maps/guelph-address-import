@@ -1,9 +1,17 @@
 # Mechanical edits 4 + 5 — notice draft for thread #135103
 
-**Not posted.** Nothing in `batches/` may be uploaded until it is.
+**Posted 2026-09-18 as post #21**, in condensed form and *before* the wiki
+page gained sections 4 and 5 — so the closing link was dropped from the post
+rather than left dangling. Upload is the weekend of **2026-09-19/20**.
 
-**Post after the wiki page is republished** with sections 4 and 5 under
-§ Mechanical edits, so the link at the end resolves.
+What went up is shorter than what is below. Missing, and still worth adding to
+#21 (it ends "Will update this post when it's done"): the 81-of-635 figure
+with the 554 left alone, the round-trip gate, the 325-in-22-batches plan with
+its pilot, and the whole timing paragraph — the plain statement that no
+14-day window is being run, the revert-on-request offer, and
+@ARandomThumbtack's standing veto. The first and the last of those are the
+ones this file argued hardest for; see the notes below, which are kept as
+written.
 
 **This is an announcement, not a consultation**, the same as campaign 3 and
 the units reversal — decided 2026-09-16, reasoning in

@@ -8,9 +8,10 @@
 
 == Status ==
 
-* '''Stage:''' In progress. The gap-fill, campaign 1 and campaign 2 were announced on 2026-08-28 and their 14-day objection window closed on 2026-09-10 with no objections. '''Campaigns 2 and 3 are finished''' — 5,521 and 447 objects, 59 changesets between them, all from the [[osm:user/skfd imports|skfd imports]] account except the very first, which went from the maintainer's personal account by mistake and is disclosed on the thread. Campaign 1 has not been built. The import itself has not run.
+* '''Stage:''' In progress. The gap-fill, campaign 1 and campaign 2 were announced on 2026-08-28 and their 14-day objection window closed on 2026-09-10 with no objections. '''Campaigns 2 and 3 are finished''' — 5,521 and 447 objects, 59 changesets between them, and '''campaigns 4 and 5 are built and announced''' (325 objects, 22 batches, uploading 2026-09-19/20), all from the [[osm:user/skfd imports|skfd imports]] account except the very first, which went from the maintainer's personal account by mistake and is disclosed on the thread. Campaign 1 has not been built. The import itself has not run.
+* '''Announced on short notice, 2026-09-18:''' campaigns '''4''' and '''5''' — [https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103/21 post #21], uploading the weekend of 2026-09-19/20. The same call as below, for the same reasons, and it is the third time it has been made: a reader entitled to think once was reasonable is entitled to think three times is a habit, and saying so is the point of this bullet. Both are attribute-only on a set enumerated object by object, with the prior value and the object version recorded for every one. '''Reverted on request.''' The posted notice is shorter than the page: it does not carry the 81-of-635 scope, the round-trip gate or this timing statement, so this page is where those live.
 * '''Announced on short notice, 2026-09-16:''' the reversal in § Unit-level addresses and campaign 3. These are '''announced, not consented''' — they are proceeding without waiting out a fresh 14-day window, which is a deliberate choice by the maintainer and is recorded here rather than glossed. The reasoning is that both are tagging changes on a single well-defined set, fully and mechanically reversible, with the prior value recorded per object; neither deletes anything, moves any geometry, or touches any object outside the sets described below. '''If anyone objects, the affected batches are reverted on request''' — no argument first — and ARandomThumbtack's standing veto over anything touching Guelph addresses is unaffected by the pace. A reader who thinks this was the wrong call should say so on [https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103 thread #135103]; that judgement is theirs to make and the record is here to make it on.
-* '''Last revised:''' 2026-09-17
+* '''Last revised:''' 2026-09-18
 * '''Contact:''' guelph@comentality.com
 * '''OSM import account:''' [[osm:user/skfd imports|skfd imports]] — the same dedicated account used for the [[Toronto/Import/AddressPoints|Toronto address import]]. The maintainer's personal account ([[User:skfd|skfd]]) is not used for any upload from this tooling.
 * '''Discussion:''' [https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103 OSM Community Forum thread #135103] — the 2025 import's own thread, tagged <code>import</code> / <code>import-proposal</code>, where this proposal was announced rather than in a new topic. The announcement venue under the current [[Import/Guidelines|OSM Import Guidelines]].
@@ -32,7 +33,7 @@ ARandomThumbtack was contacted before this page was written and is content for t
 
 '''Continuous''', human-reviewed gap-fill of the civic addresses the City publishes and OSM does not yet have, re-run each time the City's dataset changes — plus the QA findings that fall out of running conflation over a city that is already mapped.
 
-Alongside it, and consented separately, '''three one-off mechanical tag cleanups''' on Guelph's existing address objects: removing <code>addr:province=Ontario</code>, splitting the unit back out of double-encoded housenumbers, and moving unit ''lists'' from <code>addr:unit</code> to <code>addr:flats</code>. All three are described in [[#Mechanical edits|§ Mechanical edits]]. They are not part of the import path and nothing in the import depends on them landing.
+Alongside it, and consented separately, '''five one-off mechanical tag cleanups''' on Guelph's existing address objects: removing <code>addr:province=Ontario</code>, splitting the unit back out of double-encoded housenumbers, moving unit ''lists'' from <code>addr:unit</code> to <code>addr:flats</code>, removing <code>addr:interpolation</code> from the shapes it cannot describe, and normalising the <code>addr:flats</code> values the third campaign deliberately moved verbatim. All five are described in [[#Mechanical edits|§ Mechanical edits]]; the last two were found while running the middle one. They are not part of the import path and nothing in the import depends on them landing.
 
 Guelph's import is '''finished'''. There is no initial upload left to argue about — the questions an initial proposal exists to settle (is the dataset suitable, is the licence compatible, does the community want it) were asked and answered on [[Guelph/Address_Import]] in September 2025. What was never settled is who keeps it current afterwards, and that is the only thing this page proposes.
 
@@ -67,8 +68,11 @@ Measured against source snapshot 39 (2026-08-13): 53,846 active source rows, col
 As [[Toronto/Import/AddressPoints#Goals and non-goals|§ Non-goals of the Toronto import]], with one deliberate exception:
 
 * '''No deletions of objects''', including addresses the City source no longer lists.
-* '''No mutation of existing OSM objects by the import.''' The import path creates new nodes only. The three campaigns in § Mechanical edits are the sole exception, they are announced and consented separately from the import, and they touch only the tags named there — nothing else on the object, and no geometry.
-* No <code>addr:interpolation</code> cleanup, no polygons, no geometry editing.
+* '''No mutation of existing OSM objects by the import.''' The import path creates new nodes only. The five campaigns in § Mechanical edits are the sole exception, they are announced and consented separately from the import, and they touch only the tags named there — nothing else on the object, and no geometry.
+* No polygons, no geometry editing.
+* <s>No <code>addr:interpolation</code> cleanup.</s> '''Withdrawn 2026-09-18''' — see the revision note below, and § Mechanical edits, 4.
+
+''Revised 2026-09-18.'' This list also read '''"no <code>addr:interpolation</code> cleanup"''' — published 2026-08-27, struck above. Campaign 4 is exactly that cleanup, so the promise is '''withdrawn rather than reinterpreted'''. What it was protecting still stands, now as the campaign's own scope rule: the 405 legitimate two-node interpolation ways and the 149 multi-node ones are '''not touched''', no geometry is edited and nothing is deleted. What changes is that a key is removed from 78 building outlines and 3 nodes — shapes the tag cannot describe at all. The non-goal was written when the plan was to leave the key alone entirely; running campaign 3 showed what it was actually being used for, and leaving it would have left one mistake standing under a second key.
 
 ''Revised 2026-09-16.'' Until that date this list also read '''"no unit-level addresses uploaded"'''. It no longer does. Nothing else in the non-goals changed, and the reversal is set out in full, with its counts, in § Unit-level addresses — it is called out here rather than quietly deleted because a non-goal that has been published is a promise, and a reader who remembers the old one is owed the change.
 
@@ -183,7 +187,9 @@ Measured across all 167 collapsed groups the median value is 23 characters. '''T
 
 == Mechanical edits ==
 
-Three tag cleanups on '''existing''' Guelph objects, each announced separately from the import and from each other under the [[Automated Edits code of conduct]]. '''1 and 2 were consented''' through a 14-day window (announced 2026-08-28, closed 2026-09-10 with no objections). '''3 is announced on this revision and proceeds without one''' — see § Status for why, and for the standing offer to revert it on request. All are attribute-only: one tag per object (the third moves one value between two keys), nothing else touched, no geometry, no deletions. All run neighbourhood by neighbourhood in separately revertable batches, in the same 23-area partition as the import, from the same account.
+Five tag cleanups on '''existing''' Guelph objects, each announced separately from the import under the [[Automated Edits code of conduct]]. '''1 and 2 were consented''' through a 14-day window (announced 2026-08-28, closed 2026-09-10 with no objections). '''3, 4 and 5 were announced without one''' — 3 on 2026-09-16, 4 and 5 on 2026-09-18 — see § Status for why, and for the standing offer to revert any of them on request. All are attribute-only: one tag per object, nothing else touched, no geometry, no deletions. The third moves one value between two keys; the fifth rewrites one value in place without changing what it says. All run neighbourhood by neighbourhood in separately revertable batches, in the same 23-area partition as the import, from the same account.
+
+'''4 and 5 share one batch set''', and are one announcement and one revert, because they land on the same buildings: 74 of the 81 objects in campaign 4 also carry <code>addr:flats</code>, and 48 objects take both edits. Run separately, the second would have conflicted against the first on object version, and would have announced twice what a reader sees as one cleanup of the same apartment buildings. Together they are '''325 objects in 22 batches''' — 244 re-rendered only, 33 de-interpolated only, 48 both — with 146 further objects skipped rather than uploaded as no-ops, because they were already correct.
 
 === 1. Remove <code>addr:province=Ontario</code> ===
 
@@ -223,7 +229,55 @@ A single-valued <code>addr:unit</code> is a door and is not touched.
 
 '''Why a campaign rather than a note.''' § Unit-level addresses has the import writing <code>addr:flats</code> for collapsed buildings; without this edit Guelph would carry the same fact under two keys, split about evenly, indefinitely. And conflation has to be able to tell a door from a building by key: with both meanings on <code>addr:unit</code> it can only guess from the value, and the first version of that guess froze 158 buildings for the wrong reason. <code>addr:flats</code> being rare in Ontario is the reason this is asked rather than done.
 
-=== Changeset tags for all three campaigns ===
+=== 4. Remove <code>addr:interpolation</code> where it cannot mean anything ===
+
+'''Announced 2026-09-18; uploading 2026-09-19/20.''' '''81''' objects lose the key and '''554 keep it'''. This campaign withdraws a non-goal this page published on 2026-08-27; § Non-goals records that rather than deleting it.
+
+<code>addr:interpolation</code> describes '''a way drawn between two address nodes''': the numbers run from the housenumber at one end to the housenumber at the other. It cannot mean anything on a shape with no two ends. Guelph carries it on 635 objects, surveyed against Overpass on 2026-09-17:
+
+{| class="wikitable"
+! Shape !! Count !! This campaign
+|-
+| 2-node open way || 405 || '''Not touched.''' Real interpolation, correctly tagged.
+|-
+| Open way, 3+ nodes || 149 || '''Not touched.''' Legal in principle, and wants a different question asked of it — do both ends carry <code>addr:housenumber</code>? — which is not this edit.
+|-
+| '''Closed way''' || '''78''' || '''Removed.''' A building outline has no two ends, and its corners are geometry that will never carry a housenumber.
+|-
+| '''Node''' || '''3''' || '''Removed.''' A single node has nothing to interpolate between.
+|}
+
+Which 554 are left alone matters more than the 81: "removing <code>addr:interpolation</code> from Guelph" reads as a city-wide sweep of a key that is mostly tagged correctly, and it is not one. Every refusal is recorded with its reason in the campaign's <code>review.csv</code>.
+
+'''It is the same mistake campaign 3 fixed under a different key.''' Whoever tagged a building <code>addr:interpolation=all</code> was reaching for ''"this building contains a range of addresses"'' — which is what <code>addr:flats</code> means and what <code>addr:interpolation</code> does not. 74 of the 81 already received <code>addr:flats</code> in campaign 3, so the right key is in place and this removes the wrong one. It is also what JOSM has been reporting on those buildings as ''"End node without housenumber in address interpolation"''; the warning is pre-existing, it is what turned the campaign up, and it will otherwise nag every mapper who opens one of them.
+
+=== 5. Normalise <code>addr:flats</code> formatting ===
+
+'''Announced 2026-09-18; uploading 2026-09-19/20.''' '''292''' of the '''464''' objects carrying <code>addr:flats</code> are re-rendered, and '''not one of them changes which units it names'''. Campaign 3 moved 447 unit lists '''verbatim''', on purpose — that promise is what made it trivially reversible — and this is the tidy-up afterwards. The 172 values already in the right form are left byte-for-byte alone.
+
+Four defects, at least one of which is present on each of the 292:
+
+{| class="wikitable"
+! Defect !! Objects !! Live !! Becomes
+|-
+| Enumeration that should collapse || 235 || <code>1;10;11;12;13;14;15;2;3;4;5;6;7;8;9</code> (803 Gordon Street) || <code>1-15</code>
+|-
+| Trailing <code>;</code> || 49 || <code>101-113;201-214;301-314;401-414;</code> || no trailing separator
+|-
+| Sorted as text, not numerically || 14 || <code>1001-1008;1101-1108;101-106;…</code> (358 Waterloo Avenue) || floors in numeric order, thousands last
+|-
+| Spaces around <code>;</code> || 2 || <code>201-209; 301-309; 401-409;</code> (55 Yarmouth Street) || no spaces
+|}
+
+(The counts overlap — a value can carry more than one defect.)
+
+'''The rendering is not invented for this campaign.''' It is <code>compress_flats</code> in the import's own code — the function every collapsed building the import uploads already goes through. The only new code is a parser to read an existing value back, which is where the risk is. So '''every value is gated on a round trip''': parse it, render it, parse the rendering, and require the two sets of units to be identical. If normalising ever changed which units a building claims, that would be data loss dressed as tidying. Anything failing the gate is left alone for a by-hand list. '''464 parsed, 464 passed, 0 refused.'''
+
+What the parser is careful about, each with its own test: <code>101A</code> is one unit and never joins a range, so 511 Edinburgh Road South goes <code>101;101A;102;201;202</code> → <code>101-102;101A;201-202</code>; <code>D101-D112;D201-D212</code> are two building-D runs and never merge across letters; <code>LL01</code> is a real lower-level floor and keeps its zero, which needed a fix in the import itself (<code>unit_pad</code>, threading a per-prefix width through <code>compress_flats</code>); and 176 Janefield Avenue is a row of blocks numbered in steps of two, so <code>224;234</code> stays <code>224;234</code> rather than becoming <code>224-234</code> and claiming nine units that do not exist.
+
+'''The 255-character tag limit is not reached.''' Guelph's longest <code>addr:flats</code> is 154 characters; after normalising the longest is 153. No value grows — 163 get shorter, 129 stay the same length — and a test asserts both bounds across all 464. Three known listings ''would'' overflow, but they are refused source-side and were never written to OSM, and they are exactly the shapes <code>compress_flats</code> cannot shorten anyway.
+
+=== Changeset tags for all five campaigns ===
 
 As the import's changeset tags below, except <code>import=yes</code> is replaced by <code>mechanical=yes</code>, the comment names the campaign, and <code>import_plan</code> points at this section.
 
@@ -275,11 +329,11 @@ Per cycle, triggered by a change in the source data rather than by a calendar:
 
 As [[Toronto/Import/AddressPoints#Revert plan|§ Revert plan of the Toronto import]]. Every upload is a distinct changeset from a dedicated account, with a per-run manifest of <code>(source_id, address, osm_node_id, changeset_id)</code>, so any batch can be reverted in isolation without touching neighbouring work.
 
-The import path creates nodes only, so reverting it cannot damage the 2025 import or any organic mapping. The two campaigns in § Mechanical edits ''do'' modify existing objects, so they carry the stricter rule: each batch records the prior value and the object version it edited, each is a single-purpose changeset touching exactly one tag, and each is revertable on its own without disturbing the import batches interleaved around it. Any object whose version has moved since the batch was prepared is skipped and re-examined rather than overwritten.
+The import path creates nodes only, so reverting it cannot damage the 2025 import or any organic mapping. The five campaigns in § Mechanical edits ''do'' modify existing objects, so they carry the stricter rule: each batch records the prior value and the object version it edited, each is a single-purpose changeset, and each is revertable on its own without disturbing the import batches interleaved around it. A batch touches exactly one tag, with one deliberate exception — campaigns 4 and 5 share a batch set and so touch two, because 48 objects take both edits and splitting them would mean two changesets and two reverts for what is one cleanup of one building. Any object whose version has moved since the batch was prepared is skipped and re-examined rather than overwritten.
 
 == Open questions for the community ==
 
-# '''The mechanical edits — and which of them are actually settled.''' Campaigns '''1''' and '''2''' were announced on 2026-08-28 with a 14-day objection window that closed on 2026-09-10 with no objections, so they are consented and running. Campaign '''3''' and the reversal in § Unit-level addresses are '''announced on 2026-09-16 and proceeding without a window''' — the maintainer's judgement that both are reversible tagging changes not worth a fortnight's pause, stated openly in § Status rather than left to be noticed. That judgement is exactly the sort of thing this section exists to collect disagreement about: if it was wrong, saying so on [https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103 thread #135103] gets the batches reverted, not defended.
+# '''The mechanical edits — and which of them are actually settled.''' Campaigns '''1''' and '''2''' were announced on 2026-08-28 with a 14-day objection window that closed on 2026-09-10 with no objections, so they are consented and running. Campaign '''3''' and the reversal in § Unit-level addresses are '''announced on 2026-09-16 and proceeding without a window''', and campaigns '''4''' and '''5''' the same way on '''2026-09-18''' — the maintainer's judgement that all of them are reversible tagging changes not worth a fortnight's pause, stated openly in § Status rather than left to be noticed. Three short-notice calls in three days is a pattern rather than an exception, which is the honest way to describe it. That judgement is exactly the sort of thing this section exists to collect disagreement about: if it was wrong, saying so on [https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103 thread #135103] gets the batches reverted, not defended.
 # '''<code>addr:city</code> on the 73 Guelph/Eramosa objects.''' The 2025 import wrote <code>addr:city=Guelph/Eramosa Twp</code> — the City's internal <code>PLACE</code> string — on all 73 (§ The Guelph/Eramosa rows). It is not obviously wrong so much as unexamined: <code>addr:city</code> is the postal community, not the municipality, and the one row of the 75 the City gives a postcode sits in a Guelph FSA. Retagging 73 objects would be a '''fourth''' mechanical edit needing its own consent, so it is raised here as a question, not proposed. What should the value be — or should it be left alone?
 # '''<code>;</code>-lists in <code>addr:housenumber</code>.''' Roughly 800 objects carry <code>;</code>-separated ''housenumbers'' — <code>137-B;139-A;137-A;137</code> on one way. Unlike the unit lists, these want door positions rather than a key change, so no mechanical rule fits them and the plan is a MapRoulette challenge rather than a batch — is that wanted? (''Revised 2026-09-16:'' this question previously also said "one" object carried unit ranges in <code>addr:unit</code> where <code>addr:flats</code> belongs. That was a count by eye and it was wrong — there are '''453'''. They are now campaign 3 in § Mechanical edits, which is the honest place for them.)
 # '''Cadence and quiet.''' How often should a maintenance batch be announced on the forum thread: every batch, or a periodic summary?
