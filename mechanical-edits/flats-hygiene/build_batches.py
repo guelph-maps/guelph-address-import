@@ -12,11 +12,11 @@ would have the second one conflicting against the first on object version, and
 would announce twice what a reader sees as one cleanup of the same apartment
 buildings.
 
-**Consent is PENDING.** The notice is drafted in ANNOUNCEMENT.md beside this
-file and has not been posted to thread #135103. Nothing here may be uploaded
-until it is up. The run sheet says so in a banner; this is the same sentence.
-On the day of upload the batches are rebuilt with --refetch, because the
-versions prepared against today will have moved.
+**Announced 2026-09-18** as post #21 on thread #135103, in condensed form,
+and uploading the weekend of 2026-09-19/20 without a 14-day window — the same
+call as campaign 3. ANNOUNCEMENT.md beside this file records what the posted
+version left out. On the day of upload the batches are rebuilt with --refetch,
+because the versions they were prepared against will have moved.
 
 What is in scope, re-measured against live OSM on 2026-09-17:
 
@@ -262,9 +262,11 @@ REVIEW_REASONS = {
 }
 
 STEPS = [
-    "<strong>Do not start.</strong> <code>ANNOUNCEMENT.md</code> has not been "
-    "posted to <a href='https://community.openstreetmap.org/t/"
-    "import-addresses-from-city-of-guelph-data/135103'>#135103</a> yet.",
+    "<strong>Announced.</strong> The notice went up as post #21 on "
+    "<a href='https://community.openstreetmap.org/t/"
+    "import-addresses-from-city-of-guelph-data/135103'>#135103</a> on "
+    "2026-09-18, and these upload the weekend of 2026-09-19/20. No 14-day "
+    "window, same as campaign 3.",
     "On the day: <code>build_batches.py --refetch</code>, then "
     "<code>python test_flats_parse.py</code>. The round-trip runs against "
     "whatever OSM holds that morning, not against today's cache.",
@@ -446,8 +448,9 @@ def main() -> None:
     print(f"longest addr:flats value: {was} chars before, {longest} after "
           f"(OSM's limit is 255)")
     print(f"run sheet: {page}")
-    print("Consent is PENDING — ANNOUNCEMENT.md is not posted. Nothing "
-          "uploads.")
+    print("Announced 2026-09-18 (post #21); uploading 2026-09-19/20. "
+          "Batch 1 is the pilot — post its count and changeset before the "
+          "rest moves.")
 
 
 if __name__ == "__main__":
