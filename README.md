@@ -155,6 +155,13 @@ the data suggested and that are *not* being built, each with the numbers that
 made it tempting and the numbers that stopped it. Two so far, both from asking
 how `44B` should be mapped.
 
+**The reference layer** for this source is
+[`guelph-address-layer`](https://github.com/skfd/guelph-address-layer) —
+the same address points drawn as iD/JOSM overlays, live at
+<https://skfd.github.io/guelph-address-layer/>, rebuilt daily (set up
+2026-09-29). Use it to check an address against the City's data without
+leaving the editor.
+
 The pipeline lives in the engine repo,
 [`address-importer-friend`](https://github.com/skfd/address-importer-friend)
 (see its README for setup). This repo carries only Guelph's `config.toml`,
