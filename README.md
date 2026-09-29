@@ -14,6 +14,12 @@ survey). What is proposed here is **continuous gap-fill and QA over that
 finished import**, not a re-import: create-only, human-reviewed per batch,
 re-run when the City publishes.
 
+Part of the [guelph-maps](https://github.com/guelph-maps) organisation, which
+indexes every Guelph project. Addresses were one of the City open-data layers
+tiered for OSM import by
+[`guelph-osm-import-audit`](https://github.com/guelph-maps/guelph-osm-import-audit)
+(private).
+
 **Prior importer contacted — go-ahead given.** `ARandomThumbtack` was asked
 directly and is content for this project to take on continuous upkeep. (The
 draft message that was written for this, `CONTACT_PRIOR_IMPORTER.md`, was
@@ -179,6 +185,8 @@ tracker (`data/guelph/guelph.db`, 53,846 active rows / 40,634 civic addresses
 at snapshot 39, 2026-08-13). 24.4% of rows carry units, uploaded by shape per
 the `[units] policy = "per-door-or-collapse"`. Tiles subdivide the city's 23 "Guelph Areas" polygons
 (99.47% point coverage, probed 2026-08-15).
+The same 23 polygons become OSM boundary relations in
+[`guelph-boundaries`](https://github.com/guelph-maps/guelph-boundaries).
 
 Entry state re-confirmed 2026-08-15 by `scripts/entry_state_probe.py`
 (evidence: `onboarding/entry-state-2026-08-15.json`): the importer holds 85.6%
@@ -191,6 +199,9 @@ two figures are the probe's own 4,244-element sample, and quoting them as
 city-wide counts is the error corrected on 2026-09-17.
 Postcode on the dominant combo still holds, as does the observation that 725
 sampled elements already carry `addr:unit`.
+The probe was a one-off reading; [`guelph-beholder`](https://github.com/guelph-maps/guelph-beholder)
+keeps taking it, auditing how completely Guelph's address points are
+represented in OSM over time.
 
 Baseline conflation runs in full regardless of entry state (house rule —
 entering a brownfield city in maintenance-only mode inherits prior errors
