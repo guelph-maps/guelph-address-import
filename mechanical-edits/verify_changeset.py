@@ -67,6 +67,7 @@ def expected_unit_doors(before: dict, row: dict) -> dict:
 
 EXPECT = {"flats-hygiene": expected_flats_hygiene,
           "province-removal": expected_province,
+          "province-leftovers": expected_province,
           "unit-doors": expected_unit_doors}
 
 # A created node may land a hair off the prepared position once the API has

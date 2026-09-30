@@ -1,0 +1,787 @@
+<?xml version='1.0' encoding='utf-8'?>
+<osm version="0.6"><node id="416262818" visible="true" version="5" changeset="165553935" timestamp="2025-04-28T15:22:43Z" user="Coehill" uid="8290324" lat="43.5389574" lon="-80.2386433">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:province" v="ON" />
+  <tag k="addr:street" v="James Street East" />
+  <tag k="highway" v="trailhead" />
+  <tag k="name" v="James Street Trail" />
+ </node>
+ <node id="1732487985" visible="true" version="3" changeset="171293439" timestamp="2025-09-01T02:58:27Z" user="Jarek 🚲" uid="1768286" lat="43.5218405" lon="-80.2347807">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:province" v="ON" />
+  <tag k="addr:street" v="Edinburgh Road South" />
+  <tag k="amenity" v="cafe" />
+  <tag k="brand" v="Williams Fresh Cafe" />
+  <tag k="brand:wikidata" v="Q106195633" />
+  <tag k="cuisine" v="coffee_shop" />
+  <tag k="delivery" v="yes" />
+  <tag k="internet_access" v="wlan" />
+  <tag k="internet_access:fee" v="no" />
+  <tag k="internet_access:ssid" v="Williams-Guest" />
+  <tag k="name" v="Williams Fresh Cafe" />
+  <tag k="takeaway" v="yes" />
+  <tag k="website" v="https://williamsfreshcafe.com" />
+ </node>
+ <node id="3192278891" visible="true" version="4" changeset="163184234" timestamp="2025-03-04T03:06:42Z" user="Coehill" uid="8290324" lat="43.5541620" lon="-80.2277557">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:province" v="ON" />
+  <tag k="brand" v="PartSource" />
+  <tag k="brand:wikidata" v="Q7140095" />
+  <tag k="name" v="PartSource" />
+  <tag k="shop" v="car_parts" />
+  <tag k="website" v="https://www.partsource.ca/" />
+ </node>
+ <node id="3599309937" visible="true" version="10" changeset="188536548" timestamp="2026-09-04T17:18:39Z" user="JAP1st" uid="10234054" lat="43.5149222" lon="-80.2378939">
+  <tag k="access" v="yes" />
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:postcode" v="N1G 3M2" />
+  <tag k="addr:province" v="ON" />
+  <tag k="air_conditioning" v="yes" />
+  <tag k="amenity" v="library" />
+  <tag k="check_date" v="2026-09-04" />
+  <tag k="internet_access" v="wlan" />
+  <tag k="name" v="Guelph Public Library - Scottsdale Branch" />
+  <tag k="opening_hours" v="Mo-Th 09:00-20:00; Fr-Sa 09:00-17:00; Su 13:00-17:00" />
+  <tag k="operator" v="Guelph Public Library" />
+  <tag k="operator:type" v="public" />
+  <tag k="phone" v="+15198294402" />
+  <tag k="toilets:wheelchair" v="yes" />
+  <tag k="website" v="https://www.guelphpl.ca/en/about-us/scottsdale.aspx" />
+  <tag k="wheelchair" v="yes" />
+ </node>
+ <node id="3631895695" visible="true" version="4" changeset="168374640" timestamp="2025-07-01T23:10:10Z" user="ARandomThumbtack" uid="22098106" lat="43.5580243" lon="-80.2296869">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:province" v="ON" />
+  <tag k="amenity" v="cafe" />
+  <tag k="name" v="Planet Bean Coffee" />
+  <tag k="opening_hours" v="Mo-Sa 07:00-18:00; Su 09:00-16:00" />
+ </node>
+ <node id="9095771631" visible="true" version="1" changeset="111265595" timestamp="2021-09-16T00:11:27Z" user="crosstato" uid="12579164" lat="43.5517321" lon="-80.2950550">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:province" v="ON" />
+  <tag k="addr:street" v="Woodlawn Road West" />
+  <tag k="name" v="Paul's Insurance" />
+  <tag k="office" v="insurance" />
+ </node>
+ <node id="11225222239" visible="true" version="10" changeset="165865004" timestamp="2025-05-05T21:04:48Z" user="Coehill" uid="8290324" lat="43.5327432" lon="-80.2591152">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:province" v="Ontario" />
+  <tag k="addr:street" v="Waterloo Avenue" />
+  <tag k="bench" v="no" />
+  <tag k="bin" v="no" />
+  <tag k="bus" v="yes" />
+  <tag k="covered" v="no" />
+  <tag k="highway" v="bus_stop" />
+  <tag k="interval" v="00:30:00" />
+  <tag k="lit" v="no" />
+  <tag k="name" v="Waterloo at Hearn Westbound" />
+  <tag k="name:en" v="Waterloo at Hearn Westbound" />
+  <tag k="name:fr" v="Waterloo à Hearn Westbound" />
+  <tag k="network" v="Guelph Transit" />
+  <tag k="network:wikidata" v="Q5614797" />
+  <tag k="network:wikipedia" v="en:Guelph Transit" />
+  <tag k="operator" v="Guelph Transit" />
+  <tag k="passenger_information_display" v="yes" />
+  <tag k="public_transport" v="platform" />
+  <tag k="public_transport:version" v="2" />
+  <tag k="ref" v="905" />
+  <tag k="route_ref" v="6858235" />
+  <tag k="shelter" v="no" />
+  <tag k="tactile_paving" v="no" />
+  <tag k="wheelchair" v="no" />
+  <tag k="wheelchair:description" v="Standard roadside curb-height to concrete pad." />
+ </node>
+ <node id="12089876618" visible="true" version="3" changeset="155582509" timestamp="2024-08-22T00:37:40Z" user="Coehill" uid="8290324" lat="43.5466839" lon="-80.2352878">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:province" v="ON" />
+  <tag k="amenity" v="recycling" />
+  <tag k="check_date" v="2024-08-09" />
+  <tag k="name" v="Community Garden Compost" />
+  <tag k="opening_hours" v="24/7" />
+  <tag k="operator" v="Compost Queens of the Royal City" />
+  <tag k="operator:type" v="community" />
+  <tag k="panoramax" v="932539c8-5b8f-43ce-976b-a63907ddaf62" />
+  <tag k="recycling:green_waste" v="yes" />
+  <tag k="recycling_type" v="centre" />
+ </node>
+ <node id="12634704597" visible="true" version="1" changeset="163184234" timestamp="2025-03-04T03:06:42Z" user="Coehill" uid="8290324" lat="43.5552396" lon="-80.2280400">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:province" v="ON" />
+  <tag k="amenity" v="cafe" />
+  <tag k="name" v="Queen's Cafe" />
+ </node>
+ <node id="12634818698" visible="true" version="1" changeset="163184195" timestamp="2025-03-04T03:03:58Z" user="Coehill" uid="8290324" lat="43.5572218" lon="-80.2302259">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:province" v="ON" />
+  <tag k="name" v="Buck or Two Plus" />
+  <tag k="shop" v="party" />
+ </node>
+ <node id="12634818700" visible="true" version="1" changeset="163184195" timestamp="2025-03-04T03:03:58Z" user="Coehill" uid="8290324" lat="43.5571324" lon="-80.2296917">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:province" v="ON" />
+  <tag k="amenity" v="fast_food" />
+  <tag k="cuisine" v="chinese" />
+  <tag k="name" v="Super Happy Garden" />
+ </node>
+ <node id="12854590757" visible="true" version="1" changeset="166591619" timestamp="2025-05-22T02:50:07Z" user="Coehill" uid="8290324" lat="43.5634186" lon="-80.2698842">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:province" v="ON" />
+  <tag k="amenity" v="car_sharing" />
+  <tag k="brand" v="FLO" />
+  <tag k="name" v="FLO Charging Station" />
+ </node>
+ <node id="13700513285" visible="true" version="4" changeset="189755131" timestamp="2026-09-30T04:27:21Z" user="skfd" uid="205595" lat="43.5183000" lon="-80.2387555">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="435" />
+  <tag k="addr:postcode" v="N1G 2X6" />
+  <tag k="addr:street" v="Stone Road West" />
+  <tag k="description" v="Engraver in Guelph, ON" />
+  <tag k="image" v="https://zapped.to/uploads/vcards/logo/445850db08b4819eaa6df8651e14f803.png" />
+  <tag k="name" v="Key Centre Engravables" />
+  <tag k="opening_hours" v="Mo-Fr 10:00-20:00, Sa 10:00-18:00, Su 11:00-17:00" />
+  <tag k="payment" v="MasterCard  Amex  Cash  Visa" />
+  <tag k="phone" v="+1-519-836-8580" />
+  <tag k="shop" v="locksmith" />
+  <tag k="website" v="https://keycentre.ca" />
+ </node>
+<node id="1883283878" visible="true" version="1" changeset="12861605" timestamp="2012-08-26T01:08:08Z" user="andrewpmk" uid="1679" lat="43.5420339" lon="-80.2711468" />
+ <node id="1883283879" visible="true" version="1" changeset="12861605" timestamp="2012-08-26T01:08:08Z" user="andrewpmk" uid="1679" lat="43.5423514" lon="-80.2715815" />
+ <node id="1883283880" visible="true" version="1" changeset="12861605" timestamp="2012-08-26T01:08:08Z" user="andrewpmk" uid="1679" lat="43.5423781" lon="-80.2706684" />
+ <node id="1883283881" visible="true" version="1" changeset="12861605" timestamp="2012-08-26T01:08:08Z" user="andrewpmk" uid="1679" lat="43.5426956" lon="-80.2711031" />
+ <way id="177929342" visible="true" version="2" changeset="157736029" timestamp="2024-10-10T23:17:34Z" user="Coehill" uid="8290324">
+  <nd ref="1883283881" />
+  <nd ref="1883283880" />
+  <nd ref="1883283878" />
+  <nd ref="1883283879" />
+  <nd ref="1883283881" />
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:province" v="ON" />
+  <tag k="leisure" v="park" />
+  <tag k="name" v="Drew Park" />
+  <tag k="source" v="Bing" />
+ </way>
+<node id="1884606707" visible="true" version="3" changeset="103664684" timestamp="2021-04-27T00:02:47Z" user="crosstato" uid="12579164" lat="43.5734709" lon="-80.2523448" />
+ <node id="1884606710" visible="true" version="3" changeset="103664684" timestamp="2021-04-27T00:02:47Z" user="crosstato" uid="12579164" lat="43.5743254" lon="-80.2509722" />
+ <node id="1884606715" visible="true" version="3" changeset="103664684" timestamp="2021-04-27T00:02:47Z" user="crosstato" uid="12579164" lat="43.5744323" lon="-80.2531327" />
+ <node id="1884606717" visible="true" version="2" changeset="103664684" timestamp="2021-04-27T00:02:47Z" user="crosstato" uid="12579164" lat="43.5748491" lon="-80.2524065" />
+ <node id="1884606719" visible="true" version="2" changeset="103664684" timestamp="2021-04-27T00:02:47Z" user="crosstato" uid="12579164" lat="43.5748598" lon="-80.2525789" />
+ <node id="1884606721" visible="true" version="1" changeset="12873128" timestamp="2012-08-26T23:10:50Z" user="andrewpmk" uid="1679" lat="43.5749042" lon="-80.2522521" />
+ <node id="1884606723" visible="true" version="3" changeset="103664684" timestamp="2021-04-27T00:02:47Z" user="crosstato" uid="12579164" lat="43.5750731" lon="-80.2520216" />
+ <node id="7115238203" visible="true" version="2" changeset="103664684" timestamp="2021-04-27T00:02:47Z" user="crosstato" uid="12579164" lat="43.5739786" lon="-80.2525105" />
+ <node id="7115238204" visible="true" version="1" changeset="79308847" timestamp="2020-01-07T19:51:40Z" user="adventurouspotato" uid="10624031" lat="43.5737860" lon="-80.2527773" />
+ <node id="8670132146" visible="true" version="1" changeset="103664684" timestamp="2021-04-27T00:02:47Z" user="crosstato" uid="12579164" lat="43.5748724" lon="-80.2523160" />
+ <node id="8670132147" visible="true" version="1" changeset="103664684" timestamp="2021-04-27T00:02:47Z" user="crosstato" uid="12579164" lat="43.5748486" lon="-80.2524950" />
+ <node id="8670132148" visible="true" version="1" changeset="103664684" timestamp="2021-04-27T00:02:47Z" user="crosstato" uid="12579164" lat="43.5734490" lon="-80.2522087" />
+ <node id="8670132149" visible="true" version="1" changeset="103664684" timestamp="2021-04-27T00:02:47Z" user="crosstato" uid="12579164" lat="43.5734437" lon="-80.2522329" />
+ <node id="8670132150" visible="true" version="1" changeset="103664684" timestamp="2021-04-27T00:02:47Z" user="crosstato" uid="12579164" lat="43.5734495" lon="-80.2522966" />
+ <node id="8670132151" visible="true" version="1" changeset="103664684" timestamp="2021-04-27T00:02:47Z" user="crosstato" uid="12579164" lat="43.5734782" lon="-80.2521631" />
+ <way id="178084455" visible="true" version="4" changeset="165728059" timestamp="2025-05-02T16:46:40Z" user="Coehill" uid="8290324">
+  <nd ref="1884606723" />
+  <nd ref="1884606710" />
+  <nd ref="8670132151" />
+  <nd ref="8670132148" />
+  <nd ref="8670132149" />
+  <nd ref="8670132150" />
+  <nd ref="1884606707" />
+  <nd ref="7115238204" />
+  <nd ref="7115238203" />
+  <nd ref="1884606715" />
+  <nd ref="1884606719" />
+  <nd ref="8670132147" />
+  <nd ref="1884606717" />
+  <nd ref="8670132146" />
+  <nd ref="1884606721" />
+  <nd ref="1884606723" />
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:province" v="ON" />
+  <tag k="leisure" v="park" />
+  <tag k="name" v="Dakota Park" />
+  <tag k="source" v="Bing" />
+ </way>
+<node id="2187938356" visible="true" version="3" changeset="158268372" timestamp="2024-10-23T19:27:06Z" user="eireidium" uid="146307" lat="43.5347515" lon="-80.2670232" />
+ <node id="2187938357" visible="true" version="2" changeset="158268372" timestamp="2024-10-23T19:27:06Z" user="eireidium" uid="146307" lat="43.5350402" lon="-80.2672046" />
+ <node id="2187938358" visible="true" version="2" changeset="158268372" timestamp="2024-10-23T19:27:06Z" user="eireidium" uid="146307" lat="43.5351595" lon="-80.2669912" />
+ <node id="2187938359" visible="true" version="2" changeset="125428238" timestamp="2022-08-27T02:28:16Z" user="saun-ders" uid="16743468" lat="43.5350501" lon="-80.2660709" />
+ <node id="2187938360" visible="true" version="2" changeset="158268372" timestamp="2024-10-23T19:27:06Z" user="eireidium" uid="146307" lat="43.5357689" lon="-80.2661926" />
+ <node id="2187938361" visible="true" version="2" changeset="158268372" timestamp="2024-10-23T19:27:06Z" user="eireidium" uid="146307" lat="43.5358414" lon="-80.2661424" />
+ <node id="2187938362" visible="true" version="1" changeset="15265778" timestamp="2013-03-06T03:10:12Z" user="andrewpmk" uid="1679" lat="43.5358724" lon="-80.2657770" />
+ <node id="2187938363" visible="true" version="1" changeset="15265778" timestamp="2013-03-06T03:10:12Z" user="andrewpmk" uid="1679" lat="43.5360185" lon="-80.2656174" />
+ <node id="2187938364" visible="true" version="2" changeset="16143317" timestamp="2013-05-15T19:19:09Z" user="GHunter" uid="134742" lat="43.5361779" lon="-80.2651180" />
+ <node id="2187938365" visible="true" version="3" changeset="16143292" timestamp="2013-05-15T19:17:06Z" user="GHunter" uid="134742" lat="43.5365434" lon="-80.2656284" />
+ <node id="2305496490" visible="true" version="3" changeset="110700446" timestamp="2021-09-04T02:20:39Z" user="crosstato" uid="12579164" lat="43.5362722" lon="-80.2659570" />
+ <node id="12282525987" visible="true" version="1" changeset="158268372" timestamp="2024-10-23T19:27:06Z" user="eireidium" uid="146307" lat="43.5350680" lon="-80.2671219" />
+ <node id="12282525988" visible="true" version="1" changeset="158268372" timestamp="2024-10-23T19:27:06Z" user="eireidium" uid="146307" lat="43.5351112" lon="-80.2670468" />
+ <node id="12282525989" visible="true" version="1" changeset="158268372" timestamp="2024-10-23T19:27:06Z" user="eireidium" uid="146307" lat="43.5350798" lon="-80.2670917" />
+ <node id="12282525990" visible="true" version="1" changeset="158268372" timestamp="2024-10-23T19:27:06Z" user="eireidium" uid="146307" lat="43.5350964" lon="-80.2670652" />
+ <node id="12282525994" visible="true" version="1" changeset="158268372" timestamp="2024-10-23T19:27:06Z" user="eireidium" uid="146307" lat="43.5352739" lon="-80.2668649" />
+ <node id="12282525995" visible="true" version="1" changeset="158268372" timestamp="2024-10-23T19:27:06Z" user="eireidium" uid="146307" lat="43.5354258" lon="-80.2666613" />
+ <node id="12282525996" visible="true" version="1" changeset="158268372" timestamp="2024-10-23T19:27:06Z" user="eireidium" uid="146307" lat="43.5353275" lon="-80.2667996" />
+ <node id="12282525997" visible="true" version="1" changeset="158268372" timestamp="2024-10-23T19:27:06Z" user="eireidium" uid="146307" lat="43.5356002" lon="-80.2664182" />
+ <node id="12282525998" visible="true" version="1" changeset="158268372" timestamp="2024-10-23T19:27:06Z" user="eireidium" uid="146307" lat="43.5357375" lon="-80.2662327" />
+ <node id="12282559601" visible="true" version="1" changeset="158268372" timestamp="2024-10-23T19:27:06Z" user="eireidium" uid="146307" lat="43.5358026" lon="-80.2661662" />
+ <way id="208503417" visible="true" version="6" changeset="164742314" timestamp="2025-04-09T20:38:03Z" user="Coehill" uid="8290324">
+  <nd ref="2187938365" />
+  <nd ref="2187938364" />
+  <nd ref="2187938359" />
+  <nd ref="2187938356" />
+  <nd ref="2187938357" />
+  <nd ref="12282525987" />
+  <nd ref="12282525989" />
+  <nd ref="12282525990" />
+  <nd ref="12282525988" />
+  <nd ref="2187938358" />
+  <nd ref="12282525994" />
+  <nd ref="12282525996" />
+  <nd ref="12282525995" />
+  <nd ref="12282525997" />
+  <nd ref="12282525998" />
+  <nd ref="2187938360" />
+  <nd ref="12282559601" />
+  <nd ref="2187938361" />
+  <nd ref="2187938362" />
+  <nd ref="2187938363" />
+  <nd ref="2305496490" />
+  <nd ref="2187938365" />
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:province" v="ON" />
+  <tag k="leisure" v="park" />
+  <tag k="name" v="Goldie Park" />
+  <tag k="source" v="Bing" />
+ </way>
+<node id="4147299575" visible="true" version="3" changeset="101950177" timestamp="2021-03-30T04:20:53Z" user="crosstato" uid="12579164" lat="43.5418488" lon="-80.2462335" />
+ <node id="4147299576" visible="true" version="3" changeset="101950177" timestamp="2021-03-30T04:20:53Z" user="crosstato" uid="12579164" lat="43.5418051" lon="-80.2460684" />
+ <node id="8573579773" visible="true" version="1" changeset="101950177" timestamp="2021-03-30T04:20:53Z" user="crosstato" uid="12579164" lat="43.5420724" lon="-80.2459336" />
+ <node id="8573579774" visible="true" version="1" changeset="101950177" timestamp="2021-03-30T04:20:53Z" user="crosstato" uid="12579164" lat="43.5421162" lon="-80.2460987" />
+ <node id="13159082412" visible="true" version="2" changeset="189754783" timestamp="2026-09-30T04:05:47Z" user="skfd imports" uid="24088502" lat="43.5418763" lon="-80.2462198">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="15" />
+  <tag k="addr:postcode" v="N1H 3N5" />
+  <tag k="addr:street" v="Fountain Street East" />
+ </node>
+ <node id="13159082413" visible="true" version="2" changeset="189754783" timestamp="2026-09-30T04:05:47Z" user="skfd imports" uid="24088502" lat="43.5419826" lon="-80.2461663">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="19" />
+  <tag k="addr:postcode" v="N1H 3N5" />
+  <tag k="addr:street" v="Fountain Street East" />
+ </node>
+ <node id="13159082414" visible="true" version="2" changeset="189754783" timestamp="2026-09-30T04:05:47Z" user="skfd imports" uid="24088502" lat="43.5421069" lon="-80.2461022">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="23" />
+  <tag k="addr:postcode" v="N1H 3N5" />
+  <tag k="addr:street" v="Fountain Street East" />
+ </node>
+ <node id="13159082415" visible="true" version="2" changeset="189754783" timestamp="2026-09-30T04:05:47Z" user="skfd imports" uid="24088502" lat="43.5419239" lon="-80.2461969">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="17" />
+  <tag k="addr:postcode" v="N1H 3N5" />
+  <tag k="addr:street" v="Fountain Street East" />
+ </node>
+ <node id="13159082416" visible="true" version="2" changeset="189754783" timestamp="2026-09-30T04:05:47Z" user="skfd imports" uid="24088502" lat="43.5420535" lon="-80.2461304">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="21" />
+  <tag k="addr:postcode" v="N1H 3N5" />
+  <tag k="addr:street" v="Fountain Street East" />
+ </node>
+ <way id="413398792" visible="true" version="4" changeset="172228504" timestamp="2025-09-21T03:20:19Z" user="ARandomThumbtack_Import" uid="23299759">
+  <nd ref="8573579774" />
+  <nd ref="13159082414" />
+  <nd ref="13159082416" />
+  <nd ref="13159082413" />
+  <nd ref="13159082415" />
+  <nd ref="13159082412" />
+  <nd ref="4147299575" />
+  <nd ref="4147299576" />
+  <nd ref="8573579773" />
+  <nd ref="8573579774" />
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:province" v="ON" />
+  <tag k="building" v="yes" />
+  <tag k="building:levels" v="2" />
+ </way>
+<node id="7217299537" visible="true" version="2" changeset="158119469" timestamp="2024-10-20T09:20:14Z" user="eireidium" uid="146307" lat="43.5372682" lon="-80.2554897" />
+ <node id="7217299538" visible="true" version="2" changeset="158119469" timestamp="2024-10-20T09:20:14Z" user="eireidium" uid="146307" lat="43.5368858" lon="-80.2547997" />
+ <node id="7217299539" visible="true" version="2" changeset="158119469" timestamp="2024-10-20T09:20:14Z" user="eireidium" uid="146307" lat="43.5374225" lon="-80.2542269" />
+ <node id="7217299540" visible="true" version="2" changeset="158119469" timestamp="2024-10-20T09:20:14Z" user="eireidium" uid="146307" lat="43.5378256" lon="-80.2549165" />
+ <node id="12270638805" visible="true" version="1" changeset="158119469" timestamp="2024-10-20T09:20:14Z" user="eireidium" uid="146307" lat="43.5372906" lon="-80.2554895" />
+ <node id="12270638806" visible="true" version="1" changeset="158119469" timestamp="2024-10-20T09:20:14Z" user="eireidium" uid="146307" lat="43.5375464" lon="-80.2552198" />
+ <node id="12270638807" visible="true" version="1" changeset="158119469" timestamp="2024-10-20T09:20:14Z" user="eireidium" uid="146307" lat="43.5377667" lon="-80.2549818" />
+ <node id="12270638808" visible="true" version="1" changeset="158119469" timestamp="2024-10-20T09:20:14Z" user="eireidium" uid="146307" lat="43.5370914" lon="-80.2551652" />
+ <way id="772999951" visible="true" version="5" changeset="188550992" timestamp="2026-09-05T01:17:19Z" user="skfd" uid="205595">
+  <nd ref="7217299540" />
+  <nd ref="7217299539" />
+  <nd ref="7217299538" />
+  <nd ref="12270638808" />
+  <nd ref="7217299537" />
+  <nd ref="12270638805" />
+  <nd ref="12270638806" />
+  <nd ref="12270638807" />
+  <nd ref="7217299540" />
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:province" v="Ontario" />
+  <tag k="amenity" v="school" />
+  <tag k="education" v="school" />
+  <tag k="name" v="Guelph Montessori School" />
+  <tag k="operator:type" v="private" />
+ </way>
+<node id="7507036341" visible="true" version="2" changeset="100757328" timestamp="2021-03-10T07:24:03Z" user="crosstato" uid="12579164" lat="43.5524437" lon="-80.1963632" />
+ <node id="7507036342" visible="true" version="2" changeset="100757328" timestamp="2021-03-10T07:24:03Z" user="crosstato" uid="12579164" lat="43.5522935" lon="-80.1968284" />
+ <node id="7507036343" visible="true" version="2" changeset="100757328" timestamp="2021-03-10T07:24:03Z" user="crosstato" uid="12579164" lat="43.5522101" lon="-80.1967771" />
+ <node id="7507036344" visible="true" version="2" changeset="100757328" timestamp="2021-03-10T07:24:03Z" user="crosstato" uid="12579164" lat="43.5522358" lon="-80.1966974" />
+ <node id="7507036345" visible="true" version="2" changeset="100757328" timestamp="2021-03-10T07:24:03Z" user="crosstato" uid="12579164" lat="43.5520475" lon="-80.1965817" />
+ <node id="7507036346" visible="true" version="2" changeset="100757328" timestamp="2021-03-10T07:24:03Z" user="crosstato" uid="12579164" lat="43.5520630" lon="-80.1965337" />
+ <node id="7507036347" visible="true" version="2" changeset="100757328" timestamp="2021-03-10T07:24:03Z" user="crosstato" uid="12579164" lat="43.5520237" lon="-80.1965095" />
+ <node id="7507036348" visible="true" version="2" changeset="100757328" timestamp="2021-03-10T07:24:03Z" user="crosstato" uid="12579164" lat="43.5520503" lon="-80.1964271" />
+ <node id="7507036349" visible="true" version="2" changeset="100757328" timestamp="2021-03-10T07:24:03Z" user="crosstato" uid="12579164" lat="43.5518948" lon="-80.1963314" />
+ <node id="7507036350" visible="true" version="2" changeset="100757328" timestamp="2021-03-10T07:24:03Z" user="crosstato" uid="12579164" lat="43.5519713" lon="-80.1960946" />
+ <node id="7507036351" visible="true" version="2" changeset="100757328" timestamp="2021-03-10T07:24:03Z" user="crosstato" uid="12579164" lat="43.5518762" lon="-80.1960361" />
+ <node id="7507036352" visible="true" version="2" changeset="100757328" timestamp="2021-03-10T07:24:03Z" user="crosstato" uid="12579164" lat="43.5519118" lon="-80.1959259" />
+ <node id="7507036353" visible="true" version="2" changeset="100757328" timestamp="2021-03-10T07:24:03Z" user="crosstato" uid="12579164" lat="43.5517404" lon="-80.1958205" />
+ <node id="7507036354" visible="true" version="2" changeset="100757328" timestamp="2021-03-10T07:24:03Z" user="crosstato" uid="12579164" lat="43.5519099" lon="-80.1952958" />
+ <node id="7507036355" visible="true" version="2" changeset="100757328" timestamp="2021-03-10T07:24:03Z" user="crosstato" uid="12579164" lat="43.5520901" lon="-80.1954066" />
+ <node id="7507036356" visible="true" version="2" changeset="100757328" timestamp="2021-03-10T07:24:03Z" user="crosstato" uid="12579164" lat="43.5521199" lon="-80.1953142" />
+ <node id="7507036357" visible="true" version="2" changeset="100757328" timestamp="2021-03-10T07:24:03Z" user="crosstato" uid="12579164" lat="43.5526762" lon="-80.1956561" />
+ <node id="7507036358" visible="true" version="2" changeset="100757328" timestamp="2021-03-10T07:24:03Z" user="crosstato" uid="12579164" lat="43.5525664" lon="-80.1959962" />
+ <node id="7507036359" visible="true" version="2" changeset="100757328" timestamp="2021-03-10T07:24:03Z" user="crosstato" uid="12579164" lat="43.5532386" lon="-80.1964092" />
+ <node id="7507036360" visible="true" version="2" changeset="100757328" timestamp="2021-03-10T07:24:03Z" user="crosstato" uid="12579164" lat="43.5531194" lon="-80.1967785" />
+ <node id="8502785235" visible="true" version="1" changeset="100757328" timestamp="2021-03-10T07:24:03Z" user="crosstato" uid="12579164" lat="43.5523968" lon="-80.1965083" />
+ <node id="8502785236" visible="true" version="1" changeset="100757328" timestamp="2021-03-10T07:24:03Z" user="crosstato" uid="12579164" lat="43.5530811" lon="-80.1967549" />
+ <way id="802544799" visible="true" version="5" changeset="166155475" timestamp="2025-05-12T14:19:52Z" user="Coehill" uid="8290324">
+  <nd ref="7507036341" />
+  <nd ref="8502785235" />
+  <nd ref="7507036342" />
+  <nd ref="7507036343" />
+  <nd ref="7507036344" />
+  <nd ref="7507036345" />
+  <nd ref="7507036346" />
+  <nd ref="7507036347" />
+  <nd ref="7507036348" />
+  <nd ref="7507036349" />
+  <nd ref="7507036350" />
+  <nd ref="7507036351" />
+  <nd ref="7507036352" />
+  <nd ref="7507036353" />
+  <nd ref="7507036354" />
+  <nd ref="7507036355" />
+  <nd ref="7507036356" />
+  <nd ref="7507036357" />
+  <nd ref="7507036358" />
+  <nd ref="7507036359" />
+  <nd ref="7507036360" />
+  <nd ref="8502785236" />
+  <nd ref="7507036341" />
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:province" v="ON" />
+  <tag k="amenity" v="recycling" />
+  <tag k="building" v="yes" />
+  <tag k="name" v="Organic Waste Processing Facility" />
+  <tag k="recycling:food_waste" v="yes" />
+  <tag k="recycling:organic" v="yes" />
+  <tag k="recycling_type" v="centre" />
+  <tag k="source" v="microsoft/BuildingFootprints" />
+ </way>
+<node id="7514057946" visible="true" version="3" changeset="169071069" timestamp="2025-07-17T16:55:47Z" user="saun-ders" uid="16743468" lat="43.5648503" lon="-80.2335373" />
+ <node id="7514057947" visible="true" version="3" changeset="169071069" timestamp="2025-07-17T16:55:47Z" user="saun-ders" uid="16743468" lat="43.5649266" lon="-80.2335724" />
+ <node id="7514057948" visible="true" version="3" changeset="169071069" timestamp="2025-07-17T16:55:47Z" user="saun-ders" uid="16743468" lat="43.5648821" lon="-80.2337568" />
+ <node id="7514057949" visible="true" version="3" changeset="169071069" timestamp="2025-07-17T16:55:47Z" user="saun-ders" uid="16743468" lat="43.5648058" lon="-80.2337217" />
+ <node id="13191857026" visible="true" version="3" changeset="189754874" timestamp="2026-09-30T04:10:39Z" user="skfd imports" uid="24088502" lat="43.5649046" lon="-80.2335615">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="35" />
+  <tag k="addr:postcode" v="N1E 0G6" />
+  <tag k="addr:street" v="Mountford Drive" />
+  <tag k="addr:unit" v="4" />
+ </node>
+ <node id="13191857027" visible="true" version="3" changeset="189754874" timestamp="2026-09-30T04:10:39Z" user="skfd imports" uid="24088502" lat="43.5648643" lon="-80.2335434">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="35" />
+  <tag k="addr:street" v="Mountford Drive" />
+  <tag k="addr:unit" v="2" />
+ </node>
+ <node id="13191857034" visible="true" version="3" changeset="189754874" timestamp="2026-09-30T04:10:39Z" user="skfd imports" uid="24088502" lat="43.5648626" lon="-80.2337477">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="35" />
+  <tag k="addr:postcode" v="N1E 0G6" />
+  <tag k="addr:street" v="Mountford Drive" />
+  <tag k="addr:unit" v="3" />
+ </node>
+ <node id="13191857035" visible="true" version="3" changeset="189754874" timestamp="2026-09-30T04:10:39Z" user="skfd imports" uid="24088502" lat="43.5648221" lon="-80.2337269">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="35" />
+  <tag k="addr:postcode" v="N1E 0G6" />
+  <tag k="addr:street" v="Mountford Drive" />
+  <tag k="addr:unit" v="1" />
+ </node>
+ <way id="803283659" visible="true" version="3" changeset="172815117" timestamp="2025-10-04T03:40:20Z" user="ARandomThumbtack_Import" uid="23299759">
+  <nd ref="7514057946" />
+  <nd ref="13191857027" />
+  <nd ref="13191857026" />
+  <nd ref="7514057947" />
+  <nd ref="7514057948" />
+  <nd ref="13191857034" />
+  <nd ref="13191857035" />
+  <nd ref="7514057949" />
+  <nd ref="7514057946" />
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:province" v="ON" />
+  <tag k="building" v="yes" />
+  <tag k="source" v="microsoft/BuildingFootprints" />
+ </way>
+<node id="7514057950" visible="true" version="3" changeset="169071069" timestamp="2025-07-17T16:55:47Z" user="saun-ders" uid="16743468" lat="43.5649666" lon="-80.2335866" />
+ <node id="7514057951" visible="true" version="3" changeset="169071069" timestamp="2025-07-17T16:55:47Z" user="saun-ders" uid="16743468" lat="43.5650492" lon="-80.2336253" />
+ <node id="7514057952" visible="true" version="3" changeset="169071069" timestamp="2025-07-17T16:55:47Z" user="saun-ders" uid="16743468" lat="43.5650042" lon="-80.2338114" />
+ <node id="7514057953" visible="true" version="3" changeset="169071069" timestamp="2025-07-17T16:55:47Z" user="saun-ders" uid="16743468" lat="43.5649216" lon="-80.2337737" />
+ <node id="13191857024" visible="true" version="3" changeset="189754874" timestamp="2026-09-30T04:10:39Z" user="skfd imports" uid="24088502" lat="43.5650237" lon="-80.2336149">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="35" />
+  <tag k="addr:postcode" v="N1E 0G6" />
+  <tag k="addr:street" v="Mountford Drive" />
+  <tag k="addr:unit" v="8" />
+ </node>
+ <node id="13191857025" visible="true" version="3" changeset="189754874" timestamp="2026-09-30T04:10:39Z" user="skfd imports" uid="24088502" lat="43.5649827" lon="-80.2335965">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="35" />
+  <tag k="addr:postcode" v="N1E 0G6" />
+  <tag k="addr:street" v="Mountford Drive" />
+  <tag k="addr:unit" v="6" />
+ </node>
+ <node id="13191857032" visible="true" version="3" changeset="189754874" timestamp="2026-09-30T04:10:39Z" user="skfd imports" uid="24088502" lat="43.5649804" lon="-80.2338015">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="35" />
+  <tag k="addr:postcode" v="N1E 0G6" />
+  <tag k="addr:street" v="Mountford Drive" />
+  <tag k="addr:unit" v="7" />
+ </node>
+ <node id="13191857033" visible="true" version="3" changeset="189754874" timestamp="2026-09-30T04:10:39Z" user="skfd imports" uid="24088502" lat="43.5649387" lon="-80.2337824">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="35" />
+  <tag k="addr:postcode" v="N1E 0G6" />
+  <tag k="addr:street" v="Mountford Drive" />
+  <tag k="addr:unit" v="5" />
+ </node>
+ <way id="803283660" visible="true" version="3" changeset="172815117" timestamp="2025-10-04T03:40:20Z" user="ARandomThumbtack_Import" uid="23299759">
+  <nd ref="7514057950" />
+  <nd ref="13191857025" />
+  <nd ref="13191857024" />
+  <nd ref="7514057951" />
+  <nd ref="7514057952" />
+  <nd ref="13191857032" />
+  <nd ref="13191857033" />
+  <nd ref="7514057953" />
+  <nd ref="7514057950" />
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:province" v="ON" />
+  <tag k="building" v="yes" />
+  <tag k="source" v="microsoft/BuildingFootprints" />
+ </way>
+<node id="7514057954" visible="true" version="3" changeset="169071069" timestamp="2025-07-17T16:55:47Z" user="saun-ders" uid="16743468" lat="43.5650887" lon="-80.2336422" />
+ <node id="7514057955" visible="true" version="3" changeset="169071069" timestamp="2025-07-17T16:55:47Z" user="saun-ders" uid="16743468" lat="43.5651694" lon="-80.2336793" />
+ <node id="7514057956" visible="true" version="3" changeset="169071069" timestamp="2025-07-17T16:55:47Z" user="saun-ders" uid="16743468" lat="43.5651233" lon="-80.2338699" />
+ <node id="7514057957" visible="true" version="3" changeset="169071069" timestamp="2025-07-17T16:55:47Z" user="saun-ders" uid="16743468" lat="43.5650426" lon="-80.2338328" />
+ <node id="13191857022" visible="true" version="3" changeset="189754874" timestamp="2026-09-30T04:10:39Z" user="skfd imports" uid="24088502" lat="43.5651413" lon="-80.2336676">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="35" />
+  <tag k="addr:postcode" v="N1E 0G6" />
+  <tag k="addr:street" v="Mountford Drive" />
+  <tag k="addr:unit" v="12" />
+ </node>
+ <node id="13191857023" visible="true" version="3" changeset="189754874" timestamp="2026-09-30T04:10:39Z" user="skfd imports" uid="24088502" lat="43.5651066" lon="-80.2336520">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="35" />
+  <tag k="addr:street" v="Mountford Drive" />
+  <tag k="addr:unit" v="10" />
+ </node>
+ <node id="13191857030" visible="true" version="3" changeset="189754874" timestamp="2026-09-30T04:10:39Z" user="skfd imports" uid="24088502" lat="43.5650981" lon="-80.2338552">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="35" />
+  <tag k="addr:postcode" v="N1E 0G6" />
+  <tag k="addr:street" v="Mountford Drive" />
+  <tag k="addr:unit" v="11" />
+ </node>
+ <node id="13191857031" visible="true" version="3" changeset="189754874" timestamp="2026-09-30T04:10:39Z" user="skfd imports" uid="24088502" lat="43.5650613" lon="-80.2338379">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="35" />
+  <tag k="addr:postcode" v="N1E 0G6" />
+  <tag k="addr:street" v="Mountford Drive" />
+  <tag k="addr:unit" v="9" />
+ </node>
+ <way id="803283661" visible="true" version="3" changeset="172815117" timestamp="2025-10-04T03:40:20Z" user="ARandomThumbtack_Import" uid="23299759">
+  <nd ref="7514057954" />
+  <nd ref="13191857023" />
+  <nd ref="13191857022" />
+  <nd ref="7514057955" />
+  <nd ref="7514057956" />
+  <nd ref="13191857030" />
+  <nd ref="13191857031" />
+  <nd ref="7514057957" />
+  <nd ref="7514057954" />
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:province" v="ON" />
+  <tag k="building" v="yes" />
+  <tag k="source" v="microsoft/BuildingFootprints" />
+ </way>
+<node id="7514057958" visible="true" version="3" changeset="169071069" timestamp="2025-07-17T16:55:47Z" user="saun-ders" uid="16743468" lat="43.5651621" lon="-80.2338890" />
+ <node id="7514057959" visible="true" version="3" changeset="169071069" timestamp="2025-07-17T16:55:47Z" user="saun-ders" uid="16743468" lat="43.5652088" lon="-80.2336961" />
+ <node id="7514057960" visible="true" version="3" changeset="169071069" timestamp="2025-07-17T16:55:47Z" user="saun-ders" uid="16743468" lat="43.5652886" lon="-80.2337328" />
+ <node id="7514057961" visible="true" version="3" changeset="169071069" timestamp="2025-07-17T16:55:47Z" user="saun-ders" uid="16743468" lat="43.5652419" lon="-80.2339257" />
+ <node id="13191857020" visible="true" version="3" changeset="189754874" timestamp="2026-09-30T04:10:39Z" user="skfd imports" uid="24088502" lat="43.5652649" lon="-80.2337230">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="35" />
+  <tag k="addr:street" v="Mountford Drive" />
+  <tag k="addr:unit" v="16" />
+ </node>
+ <node id="13191857021" visible="true" version="3" changeset="189754874" timestamp="2026-09-30T04:10:39Z" user="skfd imports" uid="24088502" lat="43.5652257" lon="-80.2337055">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="35" />
+  <tag k="addr:postcode" v="N1E 0G6" />
+  <tag k="addr:street" v="Mountford Drive" />
+  <tag k="addr:unit" v="14" />
+ </node>
+ <node id="13191857028" visible="true" version="3" changeset="189754874" timestamp="2026-09-30T04:10:39Z" user="skfd imports" uid="24088502" lat="43.5652204" lon="-80.2339158">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="35" />
+  <tag k="addr:postcode" v="N1E 0G6" />
+  <tag k="addr:street" v="Mountford Drive" />
+  <tag k="addr:unit" v="15" />
+ </node>
+ <node id="13191857029" visible="true" version="3" changeset="189754874" timestamp="2026-09-30T04:10:39Z" user="skfd imports" uid="24088502" lat="43.5651821" lon="-80.2338982">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="35" />
+  <tag k="addr:postcode" v="N1E 0G6" />
+  <tag k="addr:street" v="Mountford Drive" />
+  <tag k="addr:unit" v="13" />
+ </node>
+ <way id="803283662" visible="true" version="3" changeset="172815117" timestamp="2025-10-04T03:40:20Z" user="ARandomThumbtack_Import" uid="23299759">
+  <nd ref="7514057958" />
+  <nd ref="7514057959" />
+  <nd ref="13191857021" />
+  <nd ref="13191857020" />
+  <nd ref="7514057960" />
+  <nd ref="7514057961" />
+  <nd ref="13191857028" />
+  <nd ref="13191857029" />
+  <nd ref="7514057958" />
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:province" v="ON" />
+  <tag k="building" v="yes" />
+  <tag k="source" v="microsoft/BuildingFootprints" />
+ </way>
+<node id="12853505585" visible="true" version="1" changeset="166574438" timestamp="2025-05-21T15:26:58Z" user="Coehill" uid="8290324" lat="43.5534068" lon="-80.1996811" />
+ <node id="12853505586" visible="true" version="1" changeset="166574438" timestamp="2025-05-21T15:26:58Z" user="Coehill" uid="8290324" lat="43.5533904" lon="-80.1997033" />
+ <node id="12853505587" visible="true" version="1" changeset="166574438" timestamp="2025-05-21T15:26:58Z" user="Coehill" uid="8290324" lat="43.5533128" lon="-80.1995943" />
+ <node id="12853505588" visible="true" version="1" changeset="166574438" timestamp="2025-05-21T15:26:58Z" user="Coehill" uid="8290324" lat="43.5533291" lon="-80.1995722" />
+ <way id="1388560463" visible="true" version="2" changeset="166575553" timestamp="2025-05-21T15:53:52Z" user="Coehill" uid="8290324">
+  <nd ref="12853505585" />
+  <nd ref="12853505586" />
+  <nd ref="12853505587" />
+  <nd ref="12853505588" />
+  <nd ref="12853505585" />
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:province" v="ON" />
+  <tag k="air_conditioning" v="yes" />
+  <tag k="building" v="yes" />
+  <tag k="building:levels" v="1" />
+  <tag k="check_date" v="2025-05-21" />
+  <tag k="description" v="Guelph residents can take up to two bikes per year from the centre.&#10;&#10;Bicycles are available all year-round. Sizes and styles vary based on donations.&#10;&#10;There is no fee, but we ask you to sign a waiver stating that you won’t sell the bike." />
+  <tag k="email" v="waste@guelph.ca" />
+  <tag k="fee" v="no" />
+  <tag k="image" v="https://guelph.ca/wp-content/uploads/logo_ReCycle-217x300.jpg" />
+  <tag k="internet_access" v="no" />
+  <tag k="name" v="ReCycle Bike Reuse Program" />
+  <tag k="phone" v="+1-519-767-0598" />
+  <tag k="service:bicycle:charging" v="no" />
+  <tag k="service:bicycle:cleaning" v="no" />
+  <tag k="service:bicycle:clothing" v="no" />
+  <tag k="service:bicycle:dealer" v="no" />
+  <tag k="service:bicycle:repair" v="no" />
+  <tag k="service:bicycle:second_hand" v="yes" />
+  <tag k="service:bicycle:service" v="no" />
+  <tag k="shop" v="bicycle" />
+  <tag k="start_date" v="2012" />
+  <tag k="toilets" v="no" />
+  <tag k="website" v="https://guelph.ca/living/environment/garbage-and-recycling/bike-reuse-program/" />
+  <tag k="wikidata" v="Q134530991" />
+ </way>
+<node id="12250221052" visible="true" version="1" changeset="157870434" timestamp="2024-10-14T10:43:07Z" user="eireidium" uid="146307" lat="43.5413178" lon="-80.2492642" />
+ <node id="12250221053" visible="true" version="1" changeset="157870434" timestamp="2024-10-14T10:43:07Z" user="eireidium" uid="146307" lat="43.5415780" lon="-80.2491127" />
+ <node id="12250221054" visible="true" version="1" changeset="157870434" timestamp="2024-10-14T10:43:07Z" user="eireidium" uid="146307" lat="43.5416038" lon="-80.2491119" />
+ <node id="12250221055" visible="true" version="1" changeset="157870434" timestamp="2024-10-14T10:43:07Z" user="eireidium" uid="146307" lat="43.5416272" lon="-80.2491235" />
+ <node id="12250221056" visible="true" version="1" changeset="157870434" timestamp="2024-10-14T10:43:07Z" user="eireidium" uid="146307" lat="43.5417429" lon="-80.2492402" />
+ <node id="12250221057" visible="true" version="1" changeset="157870434" timestamp="2024-10-14T10:43:07Z" user="eireidium" uid="146307" lat="43.5417547" lon="-80.2492679" />
+ <node id="12250221058" visible="true" version="1" changeset="157870434" timestamp="2024-10-14T10:43:07Z" user="eireidium" uid="146307" lat="43.5417557" lon="-80.2492882" />
+ <node id="12250221059" visible="true" version="1" changeset="157870434" timestamp="2024-10-14T10:43:07Z" user="eireidium" uid="146307" lat="43.5417503" lon="-80.2493070" />
+ <node id="12250221060" visible="true" version="1" changeset="157870434" timestamp="2024-10-14T10:43:07Z" user="eireidium" uid="146307" lat="43.5417262" lon="-80.2493339" />
+ <node id="14181547309" visible="true" version="1" changeset="189029832" timestamp="2026-09-14T20:06:06Z" user="Metroscapes" uid="23225814" lat="43.5414539" lon="-80.2496304" />
+ <node id="14181547310" visible="true" version="1" changeset="189029832" timestamp="2026-09-14T20:06:06Z" user="Metroscapes" uid="23225814" lat="43.5412623" lon="-80.2492929" />
+ <way id="1558934403" visible="true" version="1" changeset="189029832" timestamp="2026-09-14T20:06:06Z" user="Metroscapes" uid="23225814">
+  <nd ref="14181547309" />
+  <nd ref="14181547310" />
+  <nd ref="12250221052" />
+  <nd ref="12250221053" />
+  <nd ref="12250221054" />
+  <nd ref="12250221055" />
+  <nd ref="12250221056" />
+  <nd ref="12250221057" />
+  <nd ref="12250221058" />
+  <nd ref="12250221059" />
+  <nd ref="12250221060" />
+  <nd ref="14181547309" />
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:province" v="Ontario" />
+  <tag k="leisure" v="park" />
+  <tag k="name" v="Waterloo Avenue Park" />
+  <tag k="operator" v="City of Guelph" />
+  <tag k="operator:type" v="government" />
+ </way>
+<relation id="12595929" visible="true" version="2" changeset="163828388" timestamp="2025-03-19T17:39:21Z" user="Coehill" uid="8290324">
+  <member type="way" ref="931896324" role="inner" />
+  <member type="way" ref="931896323" role="inner" />
+  <member type="way" ref="177929657" role="outer" />
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="150" />
+  <tag k="addr:postcode" v="N1E 6K9" />
+  <tag k="addr:province" v="ON" />
+  <tag k="addr:street" v="Delhi Street" />
+  <tag k="building" v="hospital" />
+  <tag k="name" v="Homewood Health Centre" />
+  <tag k="type" v="multipolygon" />
+ </relation>
+<relation id="14939223" visible="true" version="2" changeset="163184121" timestamp="2025-03-04T02:58:36Z" user="Coehill" uid="8290324">
+  <member type="way" ref="260551702" role="outer" />
+  <member type="way" ref="1117466048" role="inner" />
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="380" />
+  <tag k="addr:province" v="ON" />
+  <tag k="addr:street" v="Elizabeth Street" />
+  <tag k="building" v="fire_station" />
+  <tag k="check_date" v="2025-03-03" />
+  <tag k="name" v="Guelph Fire Station #5" />
+  <tag k="start_date" v="2005" />
+  <tag k="type" v="multipolygon" />
+  <tag k="website" v="https://guelph.ca/living/emergency-services/fire-service/" />
+ </relation>
+<node id="2186361723" visible="true" version="5" changeset="173581847" timestamp="2025-10-21T13:11:17Z" user="saun-ders" uid="16743468" lat="43.5508294" lon="-80.2650349" />
+ <node id="2186361737" visible="true" version="3" changeset="160144788" timestamp="2024-12-10T21:25:15Z" user="eireidium" uid="146307" lat="43.5509478" lon="-80.2657277" />
+ <node id="2186361746" visible="true" version="2" changeset="160144788" timestamp="2024-12-10T21:25:15Z" user="eireidium" uid="146307" lat="43.5512528" lon="-80.2658186" />
+ <node id="2186361749" visible="true" version="3" changeset="160144664" timestamp="2024-12-10T21:20:42Z" user="eireidium" uid="146307" lat="43.5513714" lon="-80.2642777" />
+ <node id="2186361765" visible="true" version="2" changeset="160144664" timestamp="2024-12-10T21:20:42Z" user="eireidium" uid="146307" lat="43.5517063" lon="-80.2659338" />
+ <node id="2186361767" visible="true" version="4" changeset="173581847" timestamp="2025-10-21T13:11:17Z" user="saun-ders" uid="16743468" lat="43.5518549" lon="-80.2659053" />
+ <node id="2186361769" visible="true" version="4" changeset="160144664" timestamp="2024-12-10T21:20:42Z" user="eireidium" uid="146307" lat="43.5518862" lon="-80.2644431" />
+ <node id="2186361771" visible="true" version="4" changeset="173581847" timestamp="2025-10-21T13:11:17Z" user="saun-ders" uid="16743468" lat="43.5519937" lon="-80.2657159" />
+ <node id="2186361772" visible="true" version="3" changeset="160144664" timestamp="2024-12-10T21:20:42Z" user="eireidium" uid="146307" lat="43.5520232" lon="-80.2655551" />
+ <way id="208339454" visible="true" version="6" changeset="173632285" timestamp="2025-10-22T14:59:18Z" user="saun-ders" uid="16743468">
+  <nd ref="2186361765" />
+  <nd ref="2186361746" />
+  <nd ref="2186361737" />
+  <nd ref="2186361723" />
+  <nd ref="2186361749" />
+  <nd ref="2186361769" />
+  <nd ref="2186361772" />
+  <nd ref="2186361771" />
+  <nd ref="2186361767" />
+  <nd ref="2186361765" />
+  <tag k="access" v="customers" />
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:province" v="ON" />
+  <tag k="addr:street" v="Exhibition Park" />
+  <tag k="covered" v="no" />
+  <tag k="fee" v="no" />
+  <tag k="indoor" v="no" />
+  <tag k="leisure" v="pitch" />
+  <tag k="lit" v="yes" />
+  <tag k="name" v="David E. Hastings Stadium" />
+  <tag k="source" v="Bing" />
+  <tag k="sport" v="baseball" />
+  <tag k="surface" v="grass" />
+  <tag k="wikidata" v="Q5680443" />
+ </way>
+<node id="6713019472" visible="true" version="3" changeset="165000052" timestamp="2025-04-15T19:15:43Z" user="eireidium" uid="146307" lat="43.5448339" lon="-80.2453880" />
+ <node id="6713019473" visible="true" version="3" changeset="165000052" timestamp="2025-04-15T19:15:43Z" user="eireidium" uid="146307" lat="43.5447107" lon="-80.2454530" />
+ <node id="9075274872" visible="true" version="2" changeset="165000052" timestamp="2025-04-15T19:15:43Z" user="eireidium" uid="146307" lat="43.5448146" lon="-80.2452394" />
+ <node id="9075274873" visible="true" version="2" changeset="165000052" timestamp="2025-04-15T19:15:43Z" user="eireidium" uid="146307" lat="43.5447999" lon="-80.2451863" />
+ <node id="9075274874" visible="true" version="2" changeset="165000052" timestamp="2025-04-15T19:15:43Z" user="eireidium" uid="146307" lat="43.5447805" lon="-80.2451965" />
+ <node id="9075274875" visible="true" version="2" changeset="165000052" timestamp="2025-04-15T19:15:43Z" user="eireidium" uid="146307" lat="43.5447954" lon="-80.2452495" />
+ <node id="9075274876" visible="true" version="2" changeset="165000052" timestamp="2025-04-15T19:15:43Z" user="eireidium" uid="146307" lat="43.5446226" lon="-80.2453232" />
+ <node id="9075274877" visible="true" version="2" changeset="165000052" timestamp="2025-04-15T19:15:43Z" user="eireidium" uid="146307" lat="43.5446652" lon="-80.2453008" />
+ <node id="9075274878" visible="true" version="2" changeset="165000052" timestamp="2025-04-15T19:15:43Z" user="eireidium" uid="146307" lat="43.5446381" lon="-80.2453793" />
+ <node id="9075274879" visible="true" version="2" changeset="165000052" timestamp="2025-04-15T19:15:43Z" user="eireidium" uid="146307" lat="43.5446836" lon="-80.2453553" />
+ <node id="9075274880" visible="true" version="2" changeset="165000052" timestamp="2025-04-15T19:15:43Z" user="eireidium" uid="146307" lat="43.5446426" lon="-80.2452192" />
+ <node id="9075274881" visible="true" version="2" changeset="165000052" timestamp="2025-04-15T19:15:43Z" user="eireidium" uid="146307" lat="43.5447684" lon="-80.2451529" />
+ <way id="714069159" visible="true" version="3" changeset="169461740" timestamp="2025-07-25T15:37:31Z" user="Coehill" uid="8290324">
+  <nd ref="6713019472" />
+  <nd ref="6713019473" />
+  <nd ref="9075274879" />
+  <nd ref="9075274878" />
+  <nd ref="9075274876" />
+  <nd ref="9075274877" />
+  <nd ref="9075274880" />
+  <nd ref="9075274881" />
+  <nd ref="9075274874" />
+  <nd ref="9075274873" />
+  <nd ref="9075274872" />
+  <nd ref="9075274875" />
+  <nd ref="6713019472" />
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:postcode" v="N1H 3N4" />
+  <tag k="addr:province" v="ON" />
+  <tag k="addr:street" v="Farquhar Street" />
+  <tag k="building" v="yes" />
+  <tag k="building:levels" v="3" />
+ </way>
+<node id="13147598022" visible="true" version="1" changeset="172020959" timestamp="2025-09-16T15:17:40Z" user="saun-ders" uid="16743468" lat="43.5609404" lon="-80.2264286" />
+ <node id="13147598023" visible="true" version="1" changeset="172020959" timestamp="2025-09-16T15:17:40Z" user="saun-ders" uid="16743468" lat="43.5608349" lon="-80.2262686" />
+ <node id="13147598024" visible="true" version="1" changeset="172020959" timestamp="2025-09-16T15:17:40Z" user="saun-ders" uid="16743468" lat="43.5607876" lon="-80.2263281" />
+ <node id="13147598025" visible="true" version="1" changeset="172020959" timestamp="2025-09-16T15:17:40Z" user="saun-ders" uid="16743468" lat="43.5608931" lon="-80.2264881" />
+ <way id="1430308403" visible="true" version="1" changeset="172020959" timestamp="2025-09-16T15:17:40Z" user="saun-ders" uid="16743468">
+  <nd ref="13147598022" />
+  <nd ref="13147598023" />
+  <nd ref="13147598024" />
+  <nd ref="13147598025" />
+  <nd ref="13147598022" />
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:province" v="ON" />
+  <tag k="addr:street" v="Grange Road" />
+  <tag k="building" v="yes" />
+ </way>
+<relation id="4066188" visible="true" version="4" changeset="147826738" timestamp="2024-02-23T17:01:50Z" user="Coehill" uid="8290324">
+  <member type="way" ref="305066531" role="inner" />
+  <member type="way" ref="208488189" role="outer" />
+  <member type="way" ref="1085110050" role="outer" />
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="155" />
+  <tag k="addr:postcode" v="N1H2P3" />
+  <tag k="addr:province" v="Ontario" />
+  <tag k="addr:street" v="Paisley Street" />
+  <tag k="building" v="school" />
+  <tag k="building:levels" v="3" />
+  <tag k="name" v="Guelph Collegiate Vocational Institute" />
+  <tag k="short_name" v="GCVI" />
+  <tag k="type" v="multipolygon" />
+ </relation>
+<relation id="12981919" visible="true" version="3" changeset="163827988" timestamp="2025-03-19T17:32:04Z" user="Coehill" uid="8290324">
+  <member type="way" ref="123830501" role="outer" />
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="100" />
+  <tag k="addr:postcode" v="N1H 5H8" />
+  <tag k="addr:province" v="ON" />
+  <tag k="addr:street" v="Westmount Road" />
+  <tag k="building" v="public" />
+  <tag k="name" v="St. Joseph's Health Centre" />
+  <tag k="type" v="multipolygon" />
+  <tag k="website" v="https://www.sjhcg.ca/" />
+ </relation>
+<node id="12842384522" visible="true" version="1" changeset="166356125" timestamp="2025-05-16T15:09:45Z" user="Coehill" uid="8290324" lat="43.5448735" lon="-80.2706314" />
+ <node id="12842384523" visible="true" version="1" changeset="166356125" timestamp="2025-05-16T15:09:45Z" user="Coehill" uid="8290324" lat="43.5448166" lon="-80.2705533" />
+ <node id="12842384524" visible="true" version="1" changeset="166356125" timestamp="2025-05-16T15:09:45Z" user="Coehill" uid="8290324" lat="43.5447050" lon="-80.2707081" />
+ <node id="12842384525" visible="true" version="1" changeset="166356125" timestamp="2025-05-16T15:09:45Z" user="Coehill" uid="8290324" lat="43.5447620" lon="-80.2707862" />
+ <way id="1387307325" visible="true" version="1" changeset="166356125" timestamp="2025-05-16T15:09:45Z" user="Coehill" uid="8290324">
+  <nd ref="12842384522" />
+  <nd ref="12842384523" />
+  <nd ref="12842384524" />
+  <nd ref="12842384525" />
+  <nd ref="12842384522" />
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:province" v="ON" />
+  <tag k="addr:street" v="Willow Road" />
+  <tag k="garden:type" v="community" />
+  <tag k="leisure" v="garden" />
+ </way>
+</osm>

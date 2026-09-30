@@ -1,0 +1,33 @@
+batch,area,type,id,version,street,housenumber,before_province
+1,relations and non-address objects,node,416262818,5,James Street East,,ON
+1,relations and non-address objects,node,1732487985,3,Edinburgh Road South,,ON
+1,relations and non-address objects,node,3192278891,4,,,ON
+1,relations and non-address objects,node,3599309937,10,,,ON
+1,relations and non-address objects,node,3631895695,4,,,ON
+1,relations and non-address objects,node,9095771631,1,Woodlawn Road West,,ON
+1,relations and non-address objects,node,11225222239,10,Waterloo Avenue,,Ontario
+1,relations and non-address objects,node,12089876618,3,,,ON
+1,relations and non-address objects,node,12634704597,1,,,ON
+1,relations and non-address objects,node,12634818698,1,,,ON
+1,relations and non-address objects,node,12634818700,1,,,ON
+1,relations and non-address objects,node,12854590757,1,,,ON
+1,relations and non-address objects,relation,4066188,4,Paisley Street,155,Ontario
+1,relations and non-address objects,relation,12595929,2,Delhi Street,150,ON
+1,relations and non-address objects,relation,12981919,3,Westmount Road,100,ON
+1,relations and non-address objects,relation,14939223,2,Elizabeth Street,380,ON
+1,relations and non-address objects,way,177929342,2,,,ON
+1,relations and non-address objects,way,178084455,4,,,ON
+1,relations and non-address objects,way,208339454,6,Exhibition Park,,ON
+1,relations and non-address objects,way,208503417,6,,,ON
+1,relations and non-address objects,way,413398792,4,,,ON
+1,relations and non-address objects,way,714069159,3,Farquhar Street,,ON
+1,relations and non-address objects,way,772999951,5,,,Ontario
+1,relations and non-address objects,way,802544799,5,,,ON
+1,relations and non-address objects,way,803283659,3,,,ON
+1,relations and non-address objects,way,803283660,3,,,ON
+1,relations and non-address objects,way,803283661,3,,,ON
+1,relations and non-address objects,way,803283662,3,,,ON
+1,relations and non-address objects,way,1387307325,1,Willow Road,,ON
+1,relations and non-address objects,way,1388560463,2,,,ON
+1,relations and non-address objects,way,1430308403,1,Grange Road,,ON
+1,relations and non-address objects,way,1558934403,1,,,Ontario
