@@ -96,14 +96,14 @@ def test_building_letters_group_on_their_own():
 
 def test_a_letter_prefixed_run_never_merges_across_letters():
     # C112 and D101 are not neighbours however close their numbers look.
-    assert normalise("C101-C102;D101-D102")[0] == "C101-C102;D101-D102"
+    assert normalise("C101-C103;D101-D103")[0] == "C101-C103;D101-D103"
 
 
 def test_a_letter_suffix_cannot_join_a_range():
     # 511 Edinburgh Road South. 101A is one value: it is not unit 101, it is
     # not unit 102, and it must not be absorbed into 101-102.
     assert parse_flats("101A") == ["101A"]
-    assert normalise("101;101A;102;201;202")[0] == "101-102;101A;201-202"
+    assert normalise("101;101A;102;201;202")[0] == "101;101A;102;201;202"
 
 
 def test_ll_floors_are_a_real_prefix_and_keep_their_padding():
@@ -134,7 +134,7 @@ def test_a_stepped_sequence_is_not_forced_into_a_range():
 
 def test_a_genuine_gap_still_breaks_the_run():
     # 23 Woodlawn Road East: 706 does not exist.
-    assert normalise("701;702;703;704;705;707;708")[0] == "701-705;707-708"
+    assert normalise("701;702;703;704;705;707;708")[0] == "701-705;707;708"
 
 
 def test_bare_letter_designators_survive():
@@ -179,9 +179,17 @@ def test_a_designator_that_is_not_a_range_but_holds_a_hyphen_is_refused():
     assert normalise("101;PH-2") == (None, "unparsed")
 
 
+def test_a_pair_is_written_as_two_units_not_a_range():
+    # A range starts at three. `5-6` is the same length as `5;6` and reads as
+    # a span, so live pairs written with a dash come back split.
+    assert normalise("5;6") == ("5;6", "")
+    assert normalise("5-6") == ("5;6", "")
+    assert normalise("5-7") == ("5-7", "")
+
+
 def test_duplicates_collapse_without_changing_the_unit_set():
     assert parse_flats("101;101;102") == ["101", "102"]
-    assert normalise("101;101;102") == ("101-102", "")
+    assert normalise("101;101;102") == ("101;102", "")
 
 
 # --- the gate ---------------------------------------------------------------
