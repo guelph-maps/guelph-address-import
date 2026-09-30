@@ -9,8 +9,8 @@ have been *found* but not yet proposed, so they do not live only in a chat log.
 | 2 | Split double-encoded unit housenumbers | **done** 2026-09-16, 5,521 objects, 36 changesets |
 | — | Campaign 2/3 leftovers, corroborated by the City roster | **done**, 32 objects |
 | 3 | Unit lists `addr:unit` → `addr:flats` (447) | **done** 2026-09-17, 447 objects, 23 changesets |
-| 4 | Remove meaningless `addr:interpolation` (81) | **announced** 2026-09-18 (post #21) with campaign 5, one batch set — uploading 2026-09-19/20 |
-| 5 | A real `addr:flats` normalizer (292 of 464 untidy, re-measured) | **announced** 2026-09-18 (post #21), merged with campaign 4 — 325 objects, 22 batches, uploading 2026-09-19/20 |
+| 4 | Remove meaningless `addr:interpolation` (81) | **announced** 2026-09-18 (post #21) with campaign 5, one batch set — **still not uploaded**, rebuilt 2026-09-29 |
+| 5 | A real `addr:flats` normalizer (292 of 464 untidy, re-measured) | **announced** 2026-09-18 (post #21), merged with campaign 4 — 325 objects, 22 batches, **still not uploaded**, rebuilt 2026-09-29 |
 
 ---
 
@@ -48,8 +48,9 @@ getting the right key; this removes the wrong one. And the warning will
 otherwise nag every mapper who opens one of those buildings in JOSM, forever.
 
 **Consent.** Announced 2026-09-18 as post #21 on [thread #135103][thread],
-jointly with campaign 5, and uploading the weekend of 2026-09-19/20 without a
-14-day window — the same call as campaign 3. The posted form does **not** say
+jointly with campaign 5, without a
+14-day window. The 2026-09-19/20 weekend it named came and went without an
+upload; the batches were rebuilt 2026-09-29 and still wait on JOSM — the same call as campaign 3. The posted form does **not** say
 that the 405 real interpolation ways are being left alone, which is the one
 thing this entry asked it to say; #21 is editable and that line still belongs
 in it.

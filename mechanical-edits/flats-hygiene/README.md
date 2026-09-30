@@ -22,7 +22,9 @@ thing in a banner. This file is for whoever comes back to the machinery later.
 ## Where the consent is
 
 **Posted 2026-09-18 as post #21** on [thread #135103][thread]. Upload is the
-weekend of **2026-09-19/20** — no 14-day window, the same call as campaign 3
+weekend of **2026-09-19/20** — no 14-day window, the same call as campaign 3.
+**That weekend passed without an upload**; the batches were rebuilt against
+live OSM on 2026-09-29 and still wait on JOSM
 and the units reversal, with the standing offer to revert on request in
 `IMPORT_PROPOSAL.mediawiki` § Status.
 

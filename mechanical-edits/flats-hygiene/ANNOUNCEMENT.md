@@ -2,7 +2,8 @@
 
 **Posted 2026-09-18 as post #21**, in condensed form and *before* the wiki
 page gained sections 4 and 5 — so the closing link was dropped from the post
-rather than left dangling. Upload is the weekend of **2026-09-19/20**.
+rather than left dangling. Upload was announced for the weekend of **2026-09-19/20** and did not
+happen; nothing has been uploaded as of **2026-09-29**.
 
 What went up is shorter than what is below. Missing, and still worth adding to
 #21 (it ends "Will update this post when it's done"): the 81-of-635 figure

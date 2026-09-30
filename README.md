@@ -2,7 +2,7 @@
 
 The **Guelph city checkout** of the address-import family — city #3,
 scaffolded 2026-08-15. Status: **two mechanical campaigns finished and
-verified, two more announced and uploading the weekend of 2026-09-19/20, the
+verified, two more announced 2026-09-18 and still not uploaded, the
 gap-fill import not yet run.** 5,968 objects re-tagged over
 2026-09-16/17 in 59 changesets — see
 [`mechanical-edits/TODO.md`](mechanical-edits/TODO.md) for the ledger.
@@ -147,8 +147,8 @@ states intent):
 all five campaigns. The two found *while* running the others are now **built
 as one batch set** in
 [`mechanical-edits/flats-hygiene/`](mechanical-edits/flats-hygiene/) and
-**announced 2026-09-18** (post #21) and **uploading the weekend of
-2026-09-19/20** — 81 objects carrying `addr:interpolation` where it
+**announced 2026-09-18** (post #21), **not uploaded**, and rebuilt against
+live OSM 2026-09-29 — 81 objects carrying `addr:interpolation` where it
 cannot mean anything (against 405 legitimate ones that stay untouched, and 149
 multi-node ones out of scope), plus a real `addr:flats` normaliser, re-measured
 at 292 of 464 values untidy. 325 objects, 22 batches; 48 take both edits,

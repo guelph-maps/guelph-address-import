@@ -13,8 +13,8 @@ would announce twice what a reader sees as one cleanup of the same apartment
 buildings.
 
 **Announced 2026-09-18** as post #21 on thread #135103, in condensed form,
-and uploading the weekend of 2026-09-19/20 without a 14-day window — the same
-call as campaign 3. ANNOUNCEMENT.md beside this file records what the posted
+without a 14-day window — the same call as campaign 3. The 2026-09-19/20
+weekend it named passed with nothing uploaded; rebuilt 2026-09-29. ANNOUNCEMENT.md beside this file records what the posted
 version left out. On the day of upload the batches are rebuilt with --refetch,
 because the versions they were prepared against will have moved.
 
@@ -265,8 +265,9 @@ STEPS = [
     "<strong>Announced.</strong> The notice went up as post #21 on "
     "<a href='https://community.openstreetmap.org/t/"
     "import-addresses-from-city-of-guelph-data/135103'>#135103</a> on "
-    "2026-09-18, and these upload the weekend of 2026-09-19/20. No 14-day "
-    "window, same as campaign 3.",
+    "2026-09-18. The 2026-09-19/20 weekend it named passed with nothing "
+    "uploaded, and these batches were rebuilt 2026-09-29. No 14-day window, "
+    "same as campaign 3.",
     "On the day: <code>build_batches.py --refetch</code>, then "
     "<code>python test_flats_parse.py</code>. The round-trip runs against "
     "whatever OSM holds that morning, not against today's cache.",
@@ -448,7 +449,7 @@ def main() -> None:
     print(f"longest addr:flats value: {was} chars before, {longest} after "
           f"(OSM's limit is 255)")
     print(f"run sheet: {page}")
-    print("Announced 2026-09-18 (post #21); uploading 2026-09-19/20. "
+    print("Announced 2026-09-18 (post #21); NOT uploaded yet. "
           "Batch 1 is the pilot — post its count and changeset before the "
           "rest moves.")
 
