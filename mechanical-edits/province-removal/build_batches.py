@@ -26,14 +26,18 @@ silent:
 * **Objects with no `addr:housenumber` are refused.** Something carrying
   `addr:province` but no housenumber is a boundary or a `place=*` node, not an
   address. A human looks before it is stripped.
-* **`ON` and `On` variants batch last, on their own.** The wiki section 1 says
-  they come off on the same pass; the forum post names only `Ontario`. Keeping
-  them in separate batches at the end of the run lets the operator upload the
-  `Ontario` ones and hold the rest if the thread would rather.
+* **`ON` and `On` variants batch last, in one city-wide batch.** The wiki
+  section 1 says they come off on the same pass; the forum post names only
+  `Ontario`. Keeping them in a batch of their own at the end of the run lets
+  the operator upload the `Ontario` ones and hold the rest if the thread would
+  rather. There are ~600, too few to be worth one changeset per area.
+* **One changeset per area.** Every area fits under the API's 10,000 changes
+  per changeset (the largest, Grange Hill East, is ~5,900), so no area is
+  split unless `--per-batch` asks for it.
 
     python build_batches.py                  # uses the cached fetch
     python build_batches.py --refetch        # pull OSM again first
-    python build_batches.py --per-batch 2000 # one changeset per neighbourhood
+    python build_batches.py --per-batch 600  # split areas, ~105 changesets
 
 Nothing here uploads. The operator opens each batch in JOSM, looks at it, and
 presses upload.
@@ -150,7 +154,7 @@ CAMPAIGN = C.Campaign(
         "prepared earlier will have moved, and a stale one costs you a "
         "conflict per object.",
     ],
-    max_per_batch=600,
+    max_per_batch=10000,
     pilot_min=25,
 )
 
@@ -160,10 +164,9 @@ def main() -> None:
     ap.add_argument("--refetch", action="store_true",
                     help="pull the addr:province set from Overpass again")
     ap.add_argument("--per-batch", type=int, default=CAMPAIGN.max_per_batch,
-                    help=("objects per batch (default %(default)s, giving ~75 "
-                          "changesets). Pass 2000 for one changeset per "
-                          "neighbourhood, which is closer to what post #14 "
-                          "literally promised but far coarser to revert."))
+                    help=("objects per batch (default %(default)s, the API's "
+                          "changeset limit, giving one changeset per area). "
+                          "Pass 600 for finer-grained reverts."))
     args = ap.parse_args()
     CAMPAIGN.max_per_batch = args.per_batch
 
@@ -212,11 +215,13 @@ def main() -> None:
           f"{len(review)} refused "
           f"({', '.join(f'{k} {v}' for k, v in by_reason.items() if v)})")
 
-    # Ontario first and pilot-promoted; the variants trail as their own
-    # batches so they can be held back without unpicking anything.
+    # Ontario first and pilot-promoted; the variants trail as one city-wide
+    # batch so they can be held back without unpicking anything.
     batches = C.promote_pilot(
         C.make_batches(primary, CAMPAIGN.max_per_batch), CAMPAIGN.pilot_min)
-    batches += C.make_batches(variants, CAMPAIGN.max_per_batch)
+    variant_area = "all areas, " + "/".join(sorted({r["province"] for r in variants}))
+    batches += C.make_batches([dict(r, area=variant_area) for r in variants],
+                              CAMPAIGN.max_per_batch)
 
     total = len(batches)
     records = []

@@ -96,7 +96,7 @@ true scale, and 3, 4 and 5, were announced on short notice instead, with the
 standing offer to revert on request:
 
 1. **Remove `addr:province`** — ✅ **built 2026-09-17**, 44,763 objects in
-   105 batches, not yet uploaded. **The consented count was wrong by 12×**:
+   25 batches, one per area, uploading. **The consented count was wrong by 12×**:
    the thread was told ~3,699, the real figure is 44,796 (44,155 `Ontario`,
    607 `ON`, 1 `On`) — very nearly every address object in the city. 3,699 was
    a sample count published as a census. The edit is unchanged and still

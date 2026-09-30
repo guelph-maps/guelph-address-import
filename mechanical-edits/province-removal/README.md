@@ -51,15 +51,15 @@ that quoted it.
   over, and it needs a correction on the thread before a single batch goes up.
   The correction is owed regardless of whether anyone objects: the number was
   wrong in public.
-* **Batch count.** The builder defaults to 600 per batch, giving **105
-  changesets** — a multi-evening job, not a sitting. `--per-batch 2000` gives
-  ~30, which is closer to what post #14 literally promised ("neighbourhood by
-  neighbourhood") but far coarser to revert. Campaigns 2 and 3 both split
-  large areas, so splitting is already the established reading of that
-  promise; the question is only how fine.
+* **Batch count.** One changeset per Guelph area, which is what post #14
+  literally promised ("neighbourhood by neighbourhood"): **25 changesets**,
+  24 areas plus the variants. The largest, Grange Hill East, is ~5,900
+  objects, under the API's 10,000 per changeset. Chosen 2026-09-30 over the
+  earlier 600-per-batch cut (105 changesets); `--per-batch 600` still gives
+  that if a finer revert is wanted.
 * **The `ON` variants are a separate ask.** The wiki §1 says they are removed
   on the same pass; the forum post names only `Ontario`. They are built into
-  their own batches at the end of the run, so the operator can upload the
+  one city-wide batch at the end of the run, so the operator can upload the
   `Ontario` ones and hold the 608 `ON`/`On` ones if the thread prefers.
 
 ### What it does not change
@@ -73,7 +73,7 @@ by the enclosing admin boundary. Only the count was wrong.
 Remove `addr:province`. Change nothing else. An object whose only tag change
 would be a no-op is dropped rather than uploaded.
 
-**Built 2026-09-17: 44,763 objects in 105 batches, 33 refused.**
+**Built 2026-09-30: 44,763 objects in 25 batches, 33 refused.**
 
 Routed to `review.csv` rather than batched:
 
