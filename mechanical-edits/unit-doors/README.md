@@ -10,6 +10,7 @@ without its units.
 
 ## Status — read this first
 
+- **Parked 2026-09-29.** The `addr:flats` listings it replaces are valid OSM (containment), so this is a consistency upgrade, not a fix. Nothing is queued. Note that the continuous import will not converge these groups by itself: `MATCH_LISTED` treats a listed unit as present, and the import never modifies. Campaign 1 has since changed every one of the 252 objects, so `--refetch` is mandatory if this is revived.
 - **Not announced.** This edit has **not** been posted to
   [thread #135103](https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103).
   The choice was to fix the data first and announce afterwards. Post before
