@@ -34,6 +34,23 @@ What this module guarantees, because every campaign needs it identically:
 * one batch is one area is one changeset is one revert;
 * a transform that changes nothing is **dropped, not uploaded** — a no-op edit
   still burns a version and a changeset comment. `changed()` is the check.
+
+Creating nodes (added for edit 6, unit-doors). A batch item may carry an
+optional `create` list; each entry is one new node that rides in the same
+changeset as the item's edit, so a campaign can move information off an
+object and onto new ones atomically:
+
+    item["create"] = [{"id": -53606, "lat": 43.49364, "lon": -80.21887,
+                       "tags": {...}, "street": ..., "housenumber": ...,
+                       "extra": {manifest columns}}, ...]
+
+`write_batch` writes each as `<node id="-N" lat lon>` with its tags and **no
+`version` and no `action`** — a negative id is what tells JOSM (and the API)
+the node is new. The id is the campaign's to choose and must be negative and
+unique across the campaign; a stable one (e.g. minus the source point's id)
+keeps rebuilds comparable. Each created node gets its own manifest row with
+the negative id and an empty version. Items without `create` — every
+campaign before edit 6 — produce byte-identical output to before.
 """
 from __future__ import annotations
 
@@ -340,6 +357,7 @@ def write_batch(camp: Campaign, batch_dir: Path, batch: dict, index: int,
     rows: list[dict] = []
     nodes: list[ET.Element] = []
     ways: list[ET.Element] = []
+    created: list[ET.Element] = []   # new nodes from items' optional `create`
     seen_nodes: set[str] = set()
     for item in batch["items"]:
         el = selected[(item["type"], item["id"])]
@@ -374,8 +392,25 @@ def write_batch(camp: Campaign, batch_dir: Path, batch: dict, index: int,
             **extra,
         })
 
+        for new in item.get("create", ()):
+            nid = int(new["id"])
+            if nid >= 0:
+                raise ValueError(f"a created node needs a negative id, got {nid}")
+            node = ET.Element("node", {"id": str(nid), "lat": str(new["lat"]),
+                                       "lon": str(new["lon"])})
+            for key, value in new["tags"].items():
+                ET.SubElement(node, "tag", k=key, v=value)
+            created.append(node)
+            rows.append({
+                "batch": index, "area": batch["area"], "type": "node",
+                "id": str(nid), "version": "",
+                "street": new.get("street", ""),
+                "housenumber": new.get("housenumber", ""),
+                **new.get("extra", {}),
+            })
+
     # Nodes first so JOSM has the referenced geometry when it parses the ways.
-    for el in nodes + ways:
+    for el in nodes + created + ways:
         out.append(el)
 
     batch_dir.mkdir(parents=True, exist_ok=True)
