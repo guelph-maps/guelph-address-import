@@ -143,7 +143,7 @@ Changeset comment:
 > Guelph addresses: units with their own outside doors get one addr:unit node
 > per door instead of addr:flats on the building - Kortright Hills (9/17)
 
-**Collides with province-removal on version.** Many of these buildings still
+**Collides with province-removal on version.** All 252 of these objects still
 carry `addr:province` (way 794182120 does). Whichever of edit 1 and edit 6
 uploads second must be rebuilt with `--refetch` first, or JOSM will raise
 conflicts on the shared objects.
