@@ -1,0 +1,26 @@
+batch,file,area,objects,changeset,uploaded_at,account
+1,01-non-residential-b.osm,Non-Residential - B,121,189754709,2026-09-30T04:01:51Z,skfd imports
+2,02-unplaced.osm,Unplaced,193,189754712,2026-09-30T04:02:08Z,skfd imports
+3,03-university.osm,University,236,189754719,2026-09-30T04:02:37Z,skfd imports
+4,04-june-avenue.osm,June Avenue,472,189754722,2026-09-30T04:02:54Z,skfd imports
+5,05-non-residential-a.osm,Non-Residential - A,501,189754736,2026-09-30T04:03:38Z,skfd imports
+6,06-non-residential-c.osm,Non-Residential - C,501,189754738,2026-09-30T04:03:49Z,skfd imports
+7,07-dover-cliff.osm,Dover Cliff,1061,189754744,2026-09-30T04:04:03Z,skfd imports
+8,08-kortright-hills.osm,Kortright Hills,1318,189754746,2026-09-30T04:04:21Z,skfd imports
+9,09-two-rivers.osm,Two Rivers,1445,189754754,2026-09-30T04:04:47Z,skfd imports
+10,10-brant.osm,Brant,1457,189754763,2026-09-30T04:05:05Z,skfd imports
+11,11-rickson-ridge.osm,Rickson Ridge,1548,189754772,2026-09-30T04:05:18Z,skfd imports
+12,12-clairfields.osm,Clairfields,1593,189754776,2026-09-30T04:05:29Z,skfd imports
+13,13-downtown-sunny-acres.osm,Downtown - Sunny Acres,1678,189754783,2026-09-30T04:05:50Z,skfd imports
+14,14-onward-willow.osm,Onward Willow,1722,189754798,2026-09-30T04:06:21Z,skfd imports
+15,15-st-georges-parkway.osm,St. Georges Parkway,1803,189754804,2026-09-30T04:06:43Z,skfd imports
+16,16-exhibition-park.osm,Exhibition Park,2101,189754807,2026-09-30T04:06:56Z,skfd imports
+17,17-old-university.osm,Old University,2373,189754813,2026-09-30T04:07:12Z,skfd imports
+18,18-hales-barton.osm,Hales Barton,2610,189754820,2026-09-30T04:07:33Z,skfd imports
+19,19-hanlon-creek.osm,Hanlon Creek,2782,189754825,2026-09-30T04:07:53Z,skfd imports
+20,20-parkwood-gardens.osm,Parkwood Gardens,2963,189754830,2026-09-30T04:08:15Z,skfd imports
+21,21-west-willow-woods.osm,West Willow Woods,2966,189754840,2026-09-30T04:08:36Z,skfd imports
+22,22-waverley.osm,Waverley,3377,189754845,2026-09-30T04:08:50Z,skfd imports
+23,23-pine-ridge-westminster-woods.osm,Pine Ridge - Westminster Woods,3435,189754862,2026-09-30T04:09:47Z,skfd imports
+24,24-grange-hill-east.osm,Grange Hill East,5899,189754874,2026-09-30T04:10:45Z,skfd imports
+25,25-all-areas-on-on.osm,"all areas, ON/On",608,189754880,2026-09-30T04:11:12Z,skfd imports
