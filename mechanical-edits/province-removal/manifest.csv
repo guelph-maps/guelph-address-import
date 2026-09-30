@@ -1642,21 +1642,21 @@ batch,area,type,id,version,street,housenumber,before_province
 6,Non-Residential - C,node,13244832443,2,Farley Drive,33,Ontario
 6,Non-Residential - C,node,13244832444,2,Farley Drive,33,Ontario
 6,Non-Residential - C,way,1119814707,2,Goodwin Drive,17,Ontario
-6,Non-Residential - C,way,287908449,4,Goodwin Drive,37,Ontario
-6,Non-Residential - C,way,287908442,4,Goodwin Drive,39,Ontario
-6,Non-Residential - C,way,287908447,4,Goodwin Drive,41,Ontario
-6,Non-Residential - C,way,287908444,4,Goodwin Drive,43,Ontario
-6,Non-Residential - C,way,287908445,4,Goodwin Drive,45,Ontario
+6,Non-Residential - C,way,287908449,5,Goodwin Drive,37,Ontario
+6,Non-Residential - C,way,287908442,5,Goodwin Drive,39,Ontario
+6,Non-Residential - C,way,287908447,5,Goodwin Drive,41,Ontario
+6,Non-Residential - C,way,287908444,5,Goodwin Drive,43,Ontario
+6,Non-Residential - C,way,287908445,5,Goodwin Drive,45,Ontario
 6,Non-Residential - C,way,287908446,2,Goodwin Drive,47,Ontario
 6,Non-Residential - C,node,13244832452,1,Goodwin Drive,51,Ontario
 6,Non-Residential - C,way,947111504,2,Goodwin Drive,77,Ontario
 6,Non-Residential - C,way,947111497,2,Goodwin Drive,81,Ontario
 6,Non-Residential - C,way,1087992763,2,Gordon Street,1858,Ontario
-6,Non-Residential - C,way,862511297,8,Gordon Street,1878,Ontario
-6,Non-Residential - C,way,862511298,8,Gordon Street,1880,Ontario
-6,Non-Residential - C,node,13241233182,2,Gordon Street,1882,Ontario
-6,Non-Residential - C,node,13241233183,2,Gordon Street,1884,Ontario
-6,Non-Residential - C,way,961839908,4,Gordon Street,1886,Ontario
+6,Non-Residential - C,way,862511297,9,Gordon Street,1878,Ontario
+6,Non-Residential - C,way,862511298,9,Gordon Street,1880,Ontario
+6,Non-Residential - C,node,13241233182,3,Gordon Street,1882,Ontario
+6,Non-Residential - C,node,13241233183,3,Gordon Street,1884,Ontario
+6,Non-Residential - C,way,961839908,5,Gordon Street,1886,Ontario
 6,Non-Residential - C,way,802538865,2,Gordon Street,1906,Ontario
 6,Non-Residential - C,node,13241233208,1,Gordon Street,1912,Ontario
 6,Non-Residential - C,way,802538864,3,Gordon Street,1924,Ontario
@@ -1714,11 +1714,11 @@ batch,area,type,id,version,street,housenumber,before_province
 6,Non-Residential - C,way,1443052856,1,Kay Crescent,12,Ontario
 6,Non-Residential - C,way,1443052854,1,Kay Crescent,14,Ontario
 6,Non-Residential - C,way,1443052853,1,Kay Crescent,16,Ontario
-6,Non-Residential - C,way,900493343,4,Kay Crescent,17,Ontario
+6,Non-Residential - C,way,900493343,5,Kay Crescent,17,Ontario
 6,Non-Residential - C,way,1443052852,1,Kay Crescent,18,Ontario
 6,Non-Residential - C,way,1443052855,1,Kay Crescent,2,Ontario
 6,Non-Residential - C,way,1443052851,1,Kay Crescent,20,Ontario
-6,Non-Residential - C,way,900493342,4,Kay Crescent,25,Ontario
+6,Non-Residential - C,way,900493342,5,Kay Crescent,25,Ontario
 6,Non-Residential - C,way,1443052857,1,Kay Crescent,36,Ontario
 6,Non-Residential - C,way,1443052860,1,Kay Crescent,38,Ontario
 6,Non-Residential - C,node,13241233184,2,Kay Crescent,39,Ontario
@@ -1739,16 +1739,16 @@ batch,area,type,id,version,street,housenumber,before_province
 6,Non-Residential - C,way,1443052878,2,Kay Crescent,39,Ontario
 6,Non-Residential - C,way,1443052879,2,Kay Crescent,39,Ontario
 6,Non-Residential - C,way,1443052880,2,Kay Crescent,39,Ontario
-6,Non-Residential - C,way,1443052881,2,Kay Crescent,39,Ontario
-6,Non-Residential - C,way,1443052882,2,Kay Crescent,39,Ontario
-6,Non-Residential - C,way,1443052883,2,Kay Crescent,39,Ontario
-6,Non-Residential - C,way,1443052884,2,Kay Crescent,39,Ontario
-6,Non-Residential - C,way,1443052885,2,Kay Crescent,39,Ontario
-6,Non-Residential - C,way,1443052886,2,Kay Crescent,39,Ontario
+6,Non-Residential - C,way,1443052881,3,Kay Crescent,39,Ontario
+6,Non-Residential - C,way,1443052882,3,Kay Crescent,39,Ontario
+6,Non-Residential - C,way,1443052883,3,Kay Crescent,39,Ontario
+6,Non-Residential - C,way,1443052884,3,Kay Crescent,39,Ontario
+6,Non-Residential - C,way,1443052885,3,Kay Crescent,39,Ontario
+6,Non-Residential - C,way,1443052886,3,Kay Crescent,39,Ontario
 6,Non-Residential - C,way,802540385,4,Kay Crescent,39,Ontario
-6,Non-Residential - C,way,802540386,4,Kay Crescent,39,Ontario
-6,Non-Residential - C,way,802540388,4,Kay Crescent,39,Ontario
-6,Non-Residential - C,way,802540389,4,Kay Crescent,39,Ontario
+6,Non-Residential - C,way,802540386,5,Kay Crescent,39,Ontario
+6,Non-Residential - C,way,802540388,5,Kay Crescent,39,Ontario
+6,Non-Residential - C,way,802540389,5,Kay Crescent,39,Ontario
 6,Non-Residential - C,way,802540390,4,Kay Crescent,39,Ontario
 6,Non-Residential - C,way,802540391,4,Kay Crescent,39,Ontario
 6,Non-Residential - C,way,1443052850,1,Kay Crescent,4,Ontario
@@ -1756,7 +1756,7 @@ batch,area,type,id,version,street,housenumber,before_province
 6,Non-Residential - C,way,900493365,2,Kay Crescent,42,Ontario
 6,Non-Residential - C,way,1443052858,1,Kay Crescent,44,Ontario
 6,Non-Residential - C,way,1443052849,1,Kay Crescent,6,Ontario
-6,Non-Residential - C,way,741807532,5,Kay Crescent,7,Ontario
+6,Non-Residential - C,way,741807532,6,Kay Crescent,7,Ontario
 6,Non-Residential - C,way,1443052848,1,Kay Crescent,8,Ontario
 6,Non-Residential - C,way,949246002,2,Kilkenny Place,1,Ontario
 6,Non-Residential - C,way,802540401,2,Kilkenny Place,10,Ontario
@@ -26597,43 +26597,43 @@ batch,area,type,id,version,street,housenumber,before_province
 53,Parkwood Gardens,way,921942607,3,Fife Road,186,Ontario
 53,Parkwood Gardens,way,921859705,2,Fife Road,187,Ontario
 53,Parkwood Gardens,way,921859706,2,Fife Road,189,Ontario
-53,Parkwood Gardens,way,1441651733,2,Fife Road,190,Ontario
-53,Parkwood Gardens,way,1441651734,2,Fife Road,190,Ontario
-53,Parkwood Gardens,way,1441651735,2,Fife Road,190,Ontario
-53,Parkwood Gardens,way,1441651736,2,Fife Road,190,Ontario
-53,Parkwood Gardens,way,1441651737,2,Fife Road,190,Ontario
-53,Parkwood Gardens,way,1441651738,2,Fife Road,190,Ontario
-53,Parkwood Gardens,way,1441651739,2,Fife Road,190,Ontario
-53,Parkwood Gardens,way,1441651740,2,Fife Road,190,Ontario
-53,Parkwood Gardens,way,1441651741,2,Fife Road,190,Ontario
-53,Parkwood Gardens,way,1441651742,2,Fife Road,190,Ontario
-53,Parkwood Gardens,way,1441651743,2,Fife Road,190,Ontario
-53,Parkwood Gardens,way,1441651744,2,Fife Road,190,Ontario
-53,Parkwood Gardens,way,1441651745,2,Fife Road,190,Ontario
-53,Parkwood Gardens,way,1441651746,2,Fife Road,190,Ontario
-53,Parkwood Gardens,way,1441651747,2,Fife Road,190,Ontario
-53,Parkwood Gardens,way,1441651748,2,Fife Road,190,Ontario
-53,Parkwood Gardens,way,1441651749,2,Fife Road,190,Ontario
-53,Parkwood Gardens,way,1441651750,2,Fife Road,190,Ontario
-53,Parkwood Gardens,way,1441651751,2,Fife Road,190,Ontario
-53,Parkwood Gardens,way,1441651752,2,Fife Road,190,Ontario
-53,Parkwood Gardens,way,1441651753,2,Fife Road,190,Ontario
-53,Parkwood Gardens,way,1441651754,2,Fife Road,190,Ontario
-53,Parkwood Gardens,way,1441651755,2,Fife Road,190,Ontario
-53,Parkwood Gardens,way,1441651756,2,Fife Road,190,Ontario
-53,Parkwood Gardens,way,1441651757,2,Fife Road,190,Ontario
-53,Parkwood Gardens,way,1441651758,2,Fife Road,190,Ontario
-53,Parkwood Gardens,way,1441651759,2,Fife Road,190,Ontario
-53,Parkwood Gardens,way,1441651760,2,Fife Road,190,Ontario
-53,Parkwood Gardens,way,1441651761,2,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651733,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651734,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651735,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651736,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651737,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651738,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651739,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651740,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651741,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651742,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651743,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651744,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651745,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651746,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651747,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651748,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651749,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651750,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651751,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651752,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651753,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651754,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651755,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651756,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651757,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651758,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651759,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651760,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,1441651761,3,Fife Road,190,Ontario
 53,Parkwood Gardens,way,921942595,3,Fife Road,190,Ontario
-53,Parkwood Gardens,way,921942596,3,Fife Road,190,Ontario
-53,Parkwood Gardens,way,921942597,3,Fife Road,190,Ontario
-53,Parkwood Gardens,way,921942598,3,Fife Road,190,Ontario
-53,Parkwood Gardens,way,921942599,3,Fife Road,190,Ontario
-53,Parkwood Gardens,way,921942600,3,Fife Road,190,Ontario
-53,Parkwood Gardens,way,921942601,3,Fife Road,190,Ontario
-53,Parkwood Gardens,way,921942602,3,Fife Road,190,Ontario
+53,Parkwood Gardens,way,921942596,4,Fife Road,190,Ontario
+53,Parkwood Gardens,way,921942597,4,Fife Road,190,Ontario
+53,Parkwood Gardens,way,921942598,4,Fife Road,190,Ontario
+53,Parkwood Gardens,way,921942599,4,Fife Road,190,Ontario
+53,Parkwood Gardens,way,921942600,4,Fife Road,190,Ontario
+53,Parkwood Gardens,way,921942601,4,Fife Road,190,Ontario
+53,Parkwood Gardens,way,921942602,4,Fife Road,190,Ontario
 53,Parkwood Gardens,way,1441652369,1,Fife Road,191,Ontario
 53,Parkwood Gardens,way,921859707,2,Fife Road,193,Ontario
 53,Parkwood Gardens,way,1441652377,1,Fife Road,195,Ontario
@@ -27418,7 +27418,7 @@ batch,area,type,id,version,street,housenumber,before_province
 55,Parkwood Gardens,way,922289662,3,Paisley Road,886,Ontario
 55,Parkwood Gardens,way,922289663,3,Paisley Road,888,Ontario
 55,Parkwood Gardens,way,922289664,3,Paisley Road,890,Ontario
-55,Parkwood Gardens,way,413943417,4,Paisley Road,901,Ontario
+55,Parkwood Gardens,way,413943417,5,Paisley Road,901,Ontario
 55,Parkwood Gardens,way,803280036,4,Paisley Road,904,Ontario
 55,Parkwood Gardens,way,256251931,3,Paisley Road,926,Ontario
 55,Parkwood Gardens,way,192882368,4,Paisley Road,950,Ontario
@@ -29244,31 +29244,31 @@ batch,area,type,id,version,street,housenumber,before_province
 58,West Willow Woods,way,912221543,4,Flaherty Drive,70,Ontario
 58,West Willow Woods,way,912221544,4,Flaherty Drive,72,Ontario
 58,West Willow Woods,way,912221545,4,Flaherty Drive,74,Ontario
-58,West Willow Woods,way,1437043928,2,Flaherty Drive,75,Ontario
-58,West Willow Woods,way,1437043929,2,Flaherty Drive,75,Ontario
-58,West Willow Woods,way,1437043930,2,Flaherty Drive,75,Ontario
-58,West Willow Woods,way,1437043931,2,Flaherty Drive,75,Ontario
-58,West Willow Woods,way,1437043932,2,Flaherty Drive,75,Ontario
-58,West Willow Woods,way,1437043933,2,Flaherty Drive,75,Ontario
-58,West Willow Woods,way,1437043934,2,Flaherty Drive,75,Ontario
-58,West Willow Woods,way,1437043935,2,Flaherty Drive,75,Ontario
-58,West Willow Woods,way,1437043936,2,Flaherty Drive,75,Ontario
-58,West Willow Woods,way,1437043937,2,Flaherty Drive,75,Ontario
-58,West Willow Woods,way,1437043938,2,Flaherty Drive,75,Ontario
-58,West Willow Woods,way,1437043939,2,Flaherty Drive,75,Ontario
-58,West Willow Woods,way,1437043940,2,Flaherty Drive,75,Ontario
-58,West Willow Woods,way,1437043941,2,Flaherty Drive,75,Ontario
-58,West Willow Woods,way,1437043942,2,Flaherty Drive,75,Ontario
-58,West Willow Woods,way,1437043943,2,Flaherty Drive,75,Ontario
-58,West Willow Woods,way,1437043944,2,Flaherty Drive,75,Ontario
-58,West Willow Woods,way,912221550,4,Flaherty Drive,75,Ontario
-58,West Willow Woods,way,912221551,4,Flaherty Drive,75,Ontario
-58,West Willow Woods,way,912221552,4,Flaherty Drive,75,Ontario
-58,West Willow Woods,way,912221553,4,Flaherty Drive,75,Ontario
-58,West Willow Woods,way,912221554,4,Flaherty Drive,75,Ontario
-58,West Willow Woods,way,912221556,4,Flaherty Drive,75,Ontario
-58,West Willow Woods,way,912221557,4,Flaherty Drive,75,Ontario
-58,West Willow Woods,way,912221558,4,Flaherty Drive,75,Ontario
+58,West Willow Woods,way,1437043928,3,Flaherty Drive,75,Ontario
+58,West Willow Woods,way,1437043929,3,Flaherty Drive,75,Ontario
+58,West Willow Woods,way,1437043930,3,Flaherty Drive,75,Ontario
+58,West Willow Woods,way,1437043931,3,Flaherty Drive,75,Ontario
+58,West Willow Woods,way,1437043932,3,Flaherty Drive,75,Ontario
+58,West Willow Woods,way,1437043933,3,Flaherty Drive,75,Ontario
+58,West Willow Woods,way,1437043934,3,Flaherty Drive,75,Ontario
+58,West Willow Woods,way,1437043935,3,Flaherty Drive,75,Ontario
+58,West Willow Woods,way,1437043936,3,Flaherty Drive,75,Ontario
+58,West Willow Woods,way,1437043937,3,Flaherty Drive,75,Ontario
+58,West Willow Woods,way,1437043938,3,Flaherty Drive,75,Ontario
+58,West Willow Woods,way,1437043939,3,Flaherty Drive,75,Ontario
+58,West Willow Woods,way,1437043940,3,Flaherty Drive,75,Ontario
+58,West Willow Woods,way,1437043941,3,Flaherty Drive,75,Ontario
+58,West Willow Woods,way,1437043942,3,Flaherty Drive,75,Ontario
+58,West Willow Woods,way,1437043943,3,Flaherty Drive,75,Ontario
+58,West Willow Woods,way,1437043944,3,Flaherty Drive,75,Ontario
+58,West Willow Woods,way,912221550,5,Flaherty Drive,75,Ontario
+58,West Willow Woods,way,912221551,5,Flaherty Drive,75,Ontario
+58,West Willow Woods,way,912221552,5,Flaherty Drive,75,Ontario
+58,West Willow Woods,way,912221553,5,Flaherty Drive,75,Ontario
+58,West Willow Woods,way,912221554,5,Flaherty Drive,75,Ontario
+58,West Willow Woods,way,912221556,5,Flaherty Drive,75,Ontario
+58,West Willow Woods,way,912221557,5,Flaherty Drive,75,Ontario
+58,West Willow Woods,way,912221558,5,Flaherty Drive,75,Ontario
 58,West Willow Woods,way,912221546,4,Flaherty Drive,76,Ontario
 58,West Willow Woods,way,912221547,4,Flaherty Drive,78,Ontario
 58,West Willow Woods,way,911106585,5,Flaherty Drive,8,Ontario
@@ -29479,9 +29479,9 @@ batch,area,type,id,version,street,housenumber,before_province
 58,West Willow Woods,way,911102364,2,Imperial Road North,133,Ontario
 58,West Willow Woods,way,911102363,2,Imperial Road North,135,Ontario
 58,West Willow Woods,way,911102362,2,Imperial Road North,137,Ontario
-58,West Willow Woods,way,557515464,5,Imperial Road North,142,Ontario
-58,West Willow Woods,way,557515432,5,Imperial Road North,146,Ontario
-58,West Willow Woods,way,557515399,5,Imperial Road North,150,Ontario
+58,West Willow Woods,way,557515464,6,Imperial Road North,142,Ontario
+58,West Willow Woods,way,557515432,6,Imperial Road North,146,Ontario
+58,West Willow Woods,way,557515399,6,Imperial Road North,150,Ontario
 58,West Willow Woods,way,557693179,2,Imperial Road North,155,Ontario
 58,West Willow Woods,way,557693178,2,Imperial Road North,157,Ontario
 58,West Willow Woods,way,557693177,2,Imperial Road North,159,Ontario
@@ -30332,27 +30332,27 @@ batch,area,type,id,version,street,housenumber,before_province
 60,West Willow Woods,way,1441651841,2,Rhonda Road,49,Ontario
 60,West Willow Woods,way,1441651842,2,Rhonda Road,49,Ontario
 60,West Willow Woods,way,1441651843,2,Rhonda Road,49,Ontario
-60,West Willow Woods,way,1441651844,2,Rhonda Road,49,Ontario
-60,West Willow Woods,way,1441651845,2,Rhonda Road,49,Ontario
-60,West Willow Woods,way,1441651846,2,Rhonda Road,49,Ontario
-60,West Willow Woods,way,1441651847,2,Rhonda Road,49,Ontario
-60,West Willow Woods,way,1441651848,2,Rhonda Road,49,Ontario
-60,West Willow Woods,way,1441651849,2,Rhonda Road,49,Ontario
-60,West Willow Woods,way,1441651850,2,Rhonda Road,49,Ontario
-60,West Willow Woods,way,1441651851,2,Rhonda Road,49,Ontario
-60,West Willow Woods,way,1441651852,2,Rhonda Road,49,Ontario
-60,West Willow Woods,way,1441651853,2,Rhonda Road,49,Ontario
-60,West Willow Woods,way,1441651854,2,Rhonda Road,49,Ontario
-60,West Willow Woods,way,1441651855,2,Rhonda Road,49,Ontario
-60,West Willow Woods,way,1441651856,2,Rhonda Road,49,Ontario
-60,West Willow Woods,way,1441651910,2,Rhonda Road,49,Ontario
-60,West Willow Woods,way,1441651911,2,Rhonda Road,49,Ontario
-60,West Willow Woods,way,1441651912,2,Rhonda Road,49,Ontario
-60,West Willow Woods,way,1441651913,2,Rhonda Road,49,Ontario
-60,West Willow Woods,way,1441651914,2,Rhonda Road,49,Ontario
-60,West Willow Woods,way,1441651915,2,Rhonda Road,49,Ontario
-60,West Willow Woods,way,1441651916,2,Rhonda Road,49,Ontario
-60,West Willow Woods,way,1441651917,2,Rhonda Road,49,Ontario
+60,West Willow Woods,way,1441651844,3,Rhonda Road,49,Ontario
+60,West Willow Woods,way,1441651845,3,Rhonda Road,49,Ontario
+60,West Willow Woods,way,1441651846,3,Rhonda Road,49,Ontario
+60,West Willow Woods,way,1441651847,3,Rhonda Road,49,Ontario
+60,West Willow Woods,way,1441651848,3,Rhonda Road,49,Ontario
+60,West Willow Woods,way,1441651849,3,Rhonda Road,49,Ontario
+60,West Willow Woods,way,1441651850,3,Rhonda Road,49,Ontario
+60,West Willow Woods,way,1441651851,3,Rhonda Road,49,Ontario
+60,West Willow Woods,way,1441651852,3,Rhonda Road,49,Ontario
+60,West Willow Woods,way,1441651853,3,Rhonda Road,49,Ontario
+60,West Willow Woods,way,1441651854,3,Rhonda Road,49,Ontario
+60,West Willow Woods,way,1441651855,3,Rhonda Road,49,Ontario
+60,West Willow Woods,way,1441651856,3,Rhonda Road,49,Ontario
+60,West Willow Woods,way,1441651910,3,Rhonda Road,49,Ontario
+60,West Willow Woods,way,1441651911,3,Rhonda Road,49,Ontario
+60,West Willow Woods,way,1441651912,3,Rhonda Road,49,Ontario
+60,West Willow Woods,way,1441651913,3,Rhonda Road,49,Ontario
+60,West Willow Woods,way,1441651914,3,Rhonda Road,49,Ontario
+60,West Willow Woods,way,1441651915,3,Rhonda Road,49,Ontario
+60,West Willow Woods,way,1441651916,3,Rhonda Road,49,Ontario
+60,West Willow Woods,way,1441651917,3,Rhonda Road,49,Ontario
 60,West Willow Woods,way,1441651918,2,Rhonda Road,49,Ontario
 60,West Willow Woods,way,1441651919,2,Rhonda Road,49,Ontario
 60,West Willow Woods,way,1441651920,2,Rhonda Road,49,Ontario
@@ -30366,9 +30366,9 @@ batch,area,type,id,version,street,housenumber,before_province
 60,West Willow Woods,way,1441651928,2,Rhonda Road,49,Ontario
 60,West Willow Woods,way,1441651929,2,Rhonda Road,49,Ontario
 60,West Willow Woods,way,803276518,3,Rhonda Road,49,Ontario
-60,West Willow Woods,way,803276519,3,Rhonda Road,49,Ontario
-60,West Willow Woods,way,803276525,3,Rhonda Road,49,Ontario
-60,West Willow Woods,way,803276526,3,Rhonda Road,49,Ontario
+60,West Willow Woods,way,803276519,4,Rhonda Road,49,Ontario
+60,West Willow Woods,way,803276525,4,Rhonda Road,49,Ontario
+60,West Willow Woods,way,803276526,4,Rhonda Road,49,Ontario
 60,West Willow Woods,way,803278090,2,Rhonda Road,50,Ontario
 60,West Willow Woods,way,803278091,2,Rhonda Road,52,Ontario
 60,West Willow Woods,way,803276916,2,Rhonda Road,53,Ontario
@@ -30555,7 +30555,7 @@ batch,area,type,id,version,street,housenumber,before_province
 60,West Willow Woods,way,913001858,2,Sharon Place,8,Ontario
 60,West Willow Woods,way,913001852,2,Sharon Place,9,Ontario
 60,West Willow Woods,way,397929671,4,Speedvale Avenue West,336,Ontario
-60,West Willow Woods,way,413380308,5,Speedvale Avenue West,350,Ontario
+60,West Willow Woods,way,413380308,6,Speedvale Avenue West,350,Ontario
 60,West Willow Woods,way,413380307,4,Speedvale Avenue West,370,Ontario
 60,West Willow Woods,way,397896208,4,Speedvale Avenue West,400,Ontario
 60,West Willow Woods,node,13208001448,1,Speedvale Avenue West,404,Ontario
@@ -31055,8 +31055,8 @@ batch,area,type,id,version,street,housenumber,before_province
 61,West Willow Woods,way,803278065,2,Westwood Road,79,Ontario
 61,West Willow Woods,way,358946116,2,Westwood Road,85,Ontario
 61,West Willow Woods,way,358946115,2,Westwood Road,87,Ontario
-61,West Willow Woods,way,358946113,4,Westwood Road,89,Ontario
-61,West Willow Woods,way,358946112,4,Westwood Road,93,Ontario
+61,West Willow Woods,way,358946113,5,Westwood Road,89,Ontario
+61,West Willow Woods,way,358946112,5,Westwood Road,93,Ontario
 61,West Willow Woods,way,803278080,2,Wildwood Place,10,Ontario
 61,West Willow Woods,way,803278084,2,Wildwood Place,11,Ontario
 61,West Willow Woods,way,803278081,2,Wildwood Place,12,Ontario
@@ -38295,7 +38295,7 @@ batch,area,type,id,version,street,housenumber,before_province
 74,Grange Hill East,way,802544828,2,Airpark Place,21,Ontario
 74,Grange Hill East,way,802544824,2,Airpark Place,32,Ontario
 74,Grange Hill East,way,802544822,3,Airpark Place,35,Ontario
-74,Grange Hill East,way,802544823,3,Airpark Place,45,Ontario
+74,Grange Hill East,way,802544823,4,Airpark Place,45,Ontario
 74,Grange Hill East,way,970246469,2,Airpark Place,55,Ontario
 74,Grange Hill East,way,937006019,3,Auden Road,227,Ontario
 74,Grange Hill East,way,937006018,3,Auden Road,229,Ontario
@@ -38460,10 +38460,10 @@ batch,area,type,id,version,street,housenumber,before_province
 74,Grange Hill East,way,1435231914,2,Auden Road,394,Ontario
 74,Grange Hill East,way,1435231915,2,Auden Road,394,Ontario
 74,Grange Hill East,way,1435231916,2,Auden Road,394,Ontario
-74,Grange Hill East,way,803283640,4,Auden Road,394,Ontario
+74,Grange Hill East,way,803283640,5,Auden Road,394,Ontario
 74,Grange Hill East,way,803283641,4,Auden Road,394,Ontario
 74,Grange Hill East,way,803283642,5,Auden Road,394,Ontario
-74,Grange Hill East,way,803283643,4,Auden Road,394,Ontario
+74,Grange Hill East,way,803283643,5,Auden Road,394,Ontario
 74,Grange Hill East,way,803283644,2,Auden Road,394,Ontario
 74,Grange Hill East,way,803283645,4,Auden Road,394,Ontario
 74,Grange Hill East,way,803283646,4,Auden Road,394,Ontario
@@ -38521,14 +38521,14 @@ batch,area,type,id,version,street,housenumber,before_province
 74,Grange Hill East,way,937552921,2,Auden Road,452,Ontario
 74,Grange Hill East,way,937552919,2,Auden Road,454,Ontario
 74,Grange Hill East,way,937552920,2,Auden Road,456,Ontario
-74,Grange Hill East,way,937956322,4,Auden Road,467,Ontario
-74,Grange Hill East,way,937956323,4,Auden Road,467,Ontario
-74,Grange Hill East,way,937956324,4,Auden Road,467,Ontario
-74,Grange Hill East,way,937956325,4,Auden Road,467,Ontario
-74,Grange Hill East,way,937956326,4,Auden Road,467,Ontario
-74,Grange Hill East,way,937956327,4,Auden Road,467,Ontario
+74,Grange Hill East,way,937956322,5,Auden Road,467,Ontario
+74,Grange Hill East,way,937956323,5,Auden Road,467,Ontario
+74,Grange Hill East,way,937956324,5,Auden Road,467,Ontario
+74,Grange Hill East,way,937956325,5,Auden Road,467,Ontario
+74,Grange Hill East,way,937956326,5,Auden Road,467,Ontario
+74,Grange Hill East,way,937956327,5,Auden Road,467,Ontario
 74,Grange Hill East,way,937956328,3,Auden Road,467,Ontario
-74,Grange Hill East,way,937956329,4,Auden Road,467,Ontario
+74,Grange Hill East,way,937956329,5,Auden Road,467,Ontario
 74,Grange Hill East,way,1435231917,2,Auden Road,470,Ontario
 74,Grange Hill East,way,1435231918,2,Auden Road,470,Ontario
 74,Grange Hill East,way,1435231919,2,Auden Road,470,Ontario
@@ -38537,16 +38537,16 @@ batch,area,type,id,version,street,housenumber,before_province
 74,Grange Hill East,way,1435231922,2,Auden Road,470,Ontario
 74,Grange Hill East,way,1435231923,2,Auden Road,470,Ontario
 74,Grange Hill East,way,1435231924,2,Auden Road,470,Ontario
-74,Grange Hill East,way,937552909,4,Auden Road,470,Ontario
+74,Grange Hill East,way,937552909,5,Auden Road,470,Ontario
 74,Grange Hill East,way,937552910,2,Auden Road,470,Ontario
-74,Grange Hill East,way,937552911,4,Auden Road,470,Ontario
-74,Grange Hill East,way,937552912,4,Auden Road,470,Ontario
-74,Grange Hill East,way,937552913,4,Auden Road,470,Ontario
-74,Grange Hill East,way,937552914,4,Auden Road,470,Ontario
-74,Grange Hill East,way,937552915,4,Auden Road,470,Ontario
-74,Grange Hill East,way,937552916,4,Auden Road,470,Ontario
-74,Grange Hill East,way,937552917,4,Auden Road,470,Ontario
-74,Grange Hill East,way,937552918,4,Auden Road,470,Ontario
+74,Grange Hill East,way,937552911,5,Auden Road,470,Ontario
+74,Grange Hill East,way,937552912,5,Auden Road,470,Ontario
+74,Grange Hill East,way,937552913,5,Auden Road,470,Ontario
+74,Grange Hill East,way,937552914,5,Auden Road,470,Ontario
+74,Grange Hill East,way,937552915,5,Auden Road,470,Ontario
+74,Grange Hill East,way,937552916,5,Auden Road,470,Ontario
+74,Grange Hill East,way,937552917,5,Auden Road,470,Ontario
+74,Grange Hill East,way,937552918,5,Auden Road,470,Ontario
 74,Grange Hill East,way,939208889,2,Beaumont Crescent,100,Ontario
 74,Grange Hill East,way,939208888,2,Beaumont Crescent,102,Ontario
 74,Grange Hill East,way,939208891,2,Beaumont Crescent,92,Ontario
@@ -38951,9 +38951,9 @@ batch,area,type,id,version,street,housenumber,before_province
 75,Grange Hill East,way,940228263,3,Cityview Drive North,94,Ontario
 75,Grange Hill East,way,940228242,2,Cityview Drive North,97,Ontario
 75,Grange Hill East,way,940228262,2,Cityview Drive North,98,Ontario
-75,Grange Hill East,way,939208872,3,Cityview Drive South,5,Ontario
-75,Grange Hill East,way,939208873,3,Cityview Drive South,7,Ontario
-75,Grange Hill East,way,939208874,3,Cityview Drive South,9,Ontario
+75,Grange Hill East,way,939208872,4,Cityview Drive South,5,Ontario
+75,Grange Hill East,way,939208873,4,Cityview Drive South,7,Ontario
+75,Grange Hill East,way,939208874,4,Cityview Drive South,9,Ontario
 75,Grange Hill East,way,939209021,2,Clearview Street,15,Ontario
 75,Grange Hill East,way,332331982,2,Clearview Street,25,Ontario
 75,Grange Hill East,way,941667241,2,Clythe Creek Drive,1,Ontario
@@ -39495,7 +39495,7 @@ batch,area,type,id,version,street,housenumber,before_province
 76,Grange Hill East,way,1434156492,2,Eastview Road,66,Ontario
 76,Grange Hill East,way,1434156493,2,Eastview Road,66,Ontario
 76,Grange Hill East,way,1434156494,2,Eastview Road,66,Ontario
-76,Grange Hill East,way,803283699,3,Eastview Road,66,Ontario
+76,Grange Hill East,way,803283699,4,Eastview Road,66,Ontario
 76,Grange Hill East,way,803283700,3,Eastview Road,66,Ontario
 76,Grange Hill East,way,803283702,4,Eastview Road,66,Ontario
 76,Grange Hill East,way,803283703,4,Eastview Road,66,Ontario
@@ -40084,7 +40084,7 @@ batch,area,type,id,version,street,housenumber,before_province
 77,Grange Hill East,way,940635272,2,Grange Road,408,Ontario
 77,Grange Hill East,way,940635235,2,Grange Road,410,Ontario
 77,Grange Hill East,way,940635271,2,Grange Road,412,Ontario
-77,Grange Hill East,way,333632635,4,Grange Road,415,Ontario
+77,Grange Hill East,way,333632635,5,Grange Road,415,Ontario
 77,Grange Hill East,way,1435232062,2,Grange Road,426,Ontario
 77,Grange Hill East,way,1435232063,2,Grange Road,426,Ontario
 77,Grange Hill East,way,1435232064,2,Grange Road,426,Ontario
@@ -41572,8 +41572,8 @@ batch,area,type,id,version,street,housenumber,before_province
 79,Grange Hill East,node,13191857088,2,Mountford Drive,35,Ontario
 79,Grange Hill East,node,13191857089,2,Mountford Drive,35,Ontario
 79,Grange Hill East,node,13191857090,2,Mountford Drive,35,Ontario
-79,Grange Hill East,way,803283648,3,Mountford Drive,35,Ontario
-79,Grange Hill East,way,803283649,3,Mountford Drive,35,Ontario
+79,Grange Hill East,way,803283648,4,Mountford Drive,35,Ontario
+79,Grange Hill East,way,803283649,4,Mountford Drive,35,Ontario
 79,Grange Hill East,way,936542269,3,Mountford Drive,4,Ontario
 79,Grange Hill East,way,936584491,2,Mountford Drive,41,Ontario
 79,Grange Hill East,way,936527062,3,Mountford Drive,42,Ontario
@@ -42499,7 +42499,7 @@ batch,area,type,id,version,street,housenumber,before_province
 81,Grange Hill East,way,942414527,3,Shackleton Drive,20,Ontario
 81,Grange Hill East,way,942414528,3,Shackleton Drive,20,Ontario
 81,Grange Hill East,way,942414529,3,Shackleton Drive,20,Ontario
-81,Grange Hill East,way,942414532,3,Shackleton Drive,20,Ontario
+81,Grange Hill East,way,942414532,4,Shackleton Drive,20,Ontario
 81,Grange Hill East,way,942414538,2,Shackleton Drive,21,Ontario
 81,Grange Hill East,way,942414539,2,Shackleton Drive,23,Ontario
 81,Grange Hill East,way,942414540,2,Shackleton Drive,25,Ontario
@@ -43066,8 +43066,8 @@ batch,area,type,id,version,street,housenumber,before_province
 82,Grange Hill East,node,13248884047,1,Stone Road East,867,Ontario
 82,Grange Hill East,way,332331983,3,Suburban Avenue,74,Ontario
 82,Grange Hill East,way,938235521,2,Summit Ridge Drive,1,Ontario
-82,Grange Hill East,way,803283670,3,Summit Ridge Drive,104,Ontario
-82,Grange Hill East,way,803283669,3,Summit Ridge Drive,108,Ontario
+82,Grange Hill East,way,803283670,4,Summit Ridge Drive,104,Ontario
+82,Grange Hill East,way,803283669,4,Summit Ridge Drive,108,Ontario
 82,Grange Hill East,way,938238821,2,Summit Ridge Drive,11,Ontario
 82,Grange Hill East,way,803283680,2,Summit Ridge Drive,120,Ontario
 82,Grange Hill East,way,1434156499,1,Summit Ridge Drive,122,Ontario
@@ -44001,7 +44001,7 @@ batch,area,type,id,version,street,housenumber,before_province
 83,Grange Hill East,way,941677706,2,Watson Parkway North,292,Ontario
 83,Grange Hill East,way,941677705,2,Watson Parkway North,294,Ontario
 83,Grange Hill East,way,941677704,2,Watson Parkway North,296,Ontario
-83,Grange Hill East,way,941667226,3,Watson Parkway North,308,Ontario
+83,Grange Hill East,way,941667226,4,Watson Parkway North,308,Ontario
 83,Grange Hill East,way,1435231660,2,Watson Parkway North,365,Ontario
 83,Grange Hill East,way,1435231661,2,Watson Parkway North,365,Ontario
 83,Grange Hill East,way,1435231662,2,Watson Parkway North,365,Ontario
