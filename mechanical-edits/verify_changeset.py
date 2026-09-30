@@ -60,11 +60,13 @@ EXPECT = {"flats-hygiene": expected_flats_hygiene,
 
 def find_changeset(batch: int, total: int) -> ET.Element:
     root = get(f"{API}/changesets?display_name={urllib.request.quote(ACCOUNT)}")
-    marker = f"({batch}/{total})"
+    # flats-hygiene writes "(1/22)", province-removal "[batch 1/105]".
+    markers = (f"({batch}/{total})", f"[batch {batch}/{total}]")
     for cs in root.findall("changeset"):  # newest first
-        if marker in tags_of(cs).get("comment", ""):
+        comment = tags_of(cs).get("comment", "")
+        if any(m in comment for m in markers):
             return cs
-    sys.exit(f"no changeset by {ACCOUNT!r} with {marker} in its comment yet")
+    sys.exit(f"no changeset by {ACCOUNT!r} with {' or '.join(markers)} in its comment yet")
 
 
 def main() -> None:
