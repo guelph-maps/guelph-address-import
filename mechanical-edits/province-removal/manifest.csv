@@ -79,12 +79,12 @@ batch,area,type,id,version,street,housenumber,before_province
 1,Non-Residential - B,way,802544820,2,Watson Parkway South,180,Ontario
 1,Non-Residential - B,way,942762620,2,Watson Parkway South,32,Ontario
 1,Non-Residential - B,way,311436743,5,Watson Parkway South,57,Ontario
-1,Non-Residential - B,way,802544817,4,Watson Parkway South,70,Ontario
+1,Non-Residential - B,way,802544817,5,Watson Parkway South,70,Ontario
 1,Non-Residential - B,way,177694775,2,Watson Road South,111,Ontario
 1,Non-Residential - B,way,177694770,2,Watson Road South,129,Ontario
 1,Non-Residential - B,node,13252941742,1,Watson Road South,225,Ontario
 1,Non-Residential - B,way,311436740,2,Watson Road South,25,Ontario
-1,Non-Residential - B,way,802544833,3,Watson Road South,3,Ontario
+1,Non-Residential - B,way,802544833,4,Watson Road South,3,Ontario
 1,Non-Residential - B,way,802544832,2,Watson Road South,33,Ontario
 1,Non-Residential - B,way,802544831,2,Watson Road South,43,Ontario
 1,Non-Residential - B,way,802544830,2,Watson Road South,51,Ontario
@@ -104,7 +104,7 @@ batch,area,type,id,version,street,housenumber,before_province
 1,Non-Residential - B,way,311436738,2,York Road,1007,Ontario
 1,Non-Residential - B,way,260551711,2,York Road,494;496;498;500,Ontario
 1,Non-Residential - B,way,801615073,2,York Road,550,Ontario
-1,Non-Residential - B,way,1054125923,3,York Road,561,Ontario
+1,Non-Residential - B,way,1054125923,4,York Road,561,Ontario
 1,Non-Residential - B,way,1054125924,3,York Road,561,Ontario
 1,Non-Residential - B,way,802547739,2,York Road,578,Ontario
 1,Non-Residential - B,way,939208893,2,York Road,587,Ontario
@@ -335,7 +335,7 @@ batch,area,type,id,version,street,housenumber,before_province
 3,University,way,166904580,5,Chancellors Way,230,Ontario
 3,University,way,166904576,3,Chancellors Way,235,Ontario
 3,University,way,166904582,5,Chancellors Way,240,Ontario
-3,University,way,212563853,5,Chancellors Way,245,Ontario
+3,University,way,212563853,6,Chancellors Way,245,Ontario
 3,University,way,711504130,2,Christie Lane,12,Ontario
 3,University,way,136549177,3,Christie Lane,24,Ontario
 3,University,way,136548728,4,Christie Lane,37,Ontario
@@ -388,7 +388,7 @@ batch,area,type,id,version,street,housenumber,before_province
 3,University,node,13252941771,2,Gordon Street,176,Ontario
 3,University,node,13252941770,1,Gordon Street,180,Ontario
 3,University,way,802817794,4,Gordon Street,200,Ontario
-3,University,way,802817805,4,Gordon Street,220,Ontario
+3,University,way,802817805,5,Gordon Street,220,Ontario
 3,University,way,802817806,5,Gordon Street,236,Ontario
 3,University,way,802822239,3,Gordon Street,314,Ontario
 3,University,way,802822240,3,Gordon Street,316,Ontario
@@ -557,7 +557,7 @@ batch,area,type,id,version,street,housenumber,before_province
 4,June Avenue,way,475631441,2,Arrow Road,150,Ontario
 4,June Avenue,way,475631439,3,Arrow Road,151,Ontario
 4,June Avenue,way,662977314,2,Arrow Road,30,Ontario
-4,June Avenue,way,475631431,3,Arrow Road,31,Ontario
+4,June Avenue,way,475631431,4,Arrow Road,31,Ontario
 4,June Avenue,way,475631432,2,Arrow Road,39,Ontario
 4,June Avenue,way,475631429,3,Arrow Road,42,Ontario
 4,June Avenue,node,13201223790,1,Arrow Road,47,Ontario
@@ -661,19 +661,19 @@ batch,area,type,id,version,street,housenumber,before_province
 4,June Avenue,way,927026738,2,Brentwood Drive,73,Ontario
 4,June Avenue,way,927026737,2,Brentwood Drive,75,Ontario
 4,June Avenue,way,927026705,2,Brentwood Drive,83,Ontario
-4,June Avenue,way,1436604427,2,Burns Drive,11,Ontario
-4,June Avenue,way,802123329,3,Burns Drive,11,Ontario
-4,June Avenue,way,1436604432,2,Burns Drive,15,Ontario
-4,June Avenue,way,802123326,3,Burns Drive,15,Ontario
-4,June Avenue,way,1436604433,2,Burns Drive,17,Ontario
-4,June Avenue,way,802123325,3,Burns Drive,17,Ontario
-4,June Avenue,way,1436604430,2,Burns Drive,19,Ontario
-4,June Avenue,way,1436604431,2,Burns Drive,19,Ontario
-4,June Avenue,way,802123324,3,Burns Drive,19,Ontario
+4,June Avenue,way,1436604427,3,Burns Drive,11,Ontario
+4,June Avenue,way,802123329,4,Burns Drive,11,Ontario
+4,June Avenue,way,1436604432,3,Burns Drive,15,Ontario
+4,June Avenue,way,802123326,4,Burns Drive,15,Ontario
+4,June Avenue,way,1436604433,3,Burns Drive,17,Ontario
+4,June Avenue,way,802123325,4,Burns Drive,17,Ontario
+4,June Avenue,way,1436604430,3,Burns Drive,19,Ontario
+4,June Avenue,way,1436604431,3,Burns Drive,19,Ontario
+4,June Avenue,way,802123324,4,Burns Drive,19,Ontario
 4,June Avenue,way,212948056,4,Burns Drive,25,Ontario
-4,June Avenue,way,1436604425,2,Burns Drive,3,Ontario
-4,June Avenue,way,1436604426,2,Burns Drive,3,Ontario
-4,June Avenue,way,802123328,3,Burns Drive,3,Ontario
+4,June Avenue,way,1436604425,3,Burns Drive,3,Ontario
+4,June Avenue,way,1436604426,3,Burns Drive,3,Ontario
+4,June Avenue,way,802123328,4,Burns Drive,3,Ontario
 4,June Avenue,node,13204173615,2,Burns Drive,33,Ontario
 4,June Avenue,node,13204173618,2,Burns Drive,33,Ontario
 4,June Avenue,node,13204173619,2,Burns Drive,33,Ontario
@@ -712,9 +712,9 @@ batch,area,type,id,version,street,housenumber,before_province
 4,June Avenue,way,927026694,3,Burns Drive,59;61,Ontario
 4,June Avenue,way,927026695,2,Burns Drive,63;65,Ontario
 4,June Avenue,way,927026696,3,Burns Drive,67;69,Ontario
-4,June Avenue,way,1436604428,2,Burns Drive,9,Ontario
-4,June Avenue,way,1436604429,2,Burns Drive,9,Ontario
-4,June Avenue,way,802123327,3,Burns Drive,9,Ontario
+4,June Avenue,way,1436604428,3,Burns Drive,9,Ontario
+4,June Avenue,way,1436604429,3,Burns Drive,9,Ontario
+4,June Avenue,way,802123327,4,Burns Drive,9,Ontario
 4,June Avenue,node,13204173616,2,Burns Drive,91,Ontario
 4,June Avenue,node,13204173621,2,Burns Drive,91,Ontario
 4,June Avenue,node,13204173631,2,Burns Drive,91,Ontario
@@ -971,8 +971,8 @@ batch,area,type,id,version,street,housenumber,before_province
 4,June Avenue,way,144061123,3,Woodlawn Road East,20,Ontario
 4,June Avenue,way,1436028336,3,Woodlawn Road East,60,Ontario
 4,June Avenue,way,178085153,8,Woodlawn Road East,60,Ontario
-4,June Avenue,way,1436028337,4,Woodlawn Road East,70,Ontario
-4,June Avenue,way,353492157,6,Woodlawn Road East,72,Ontario
+4,June Avenue,way,1436028337,5,Woodlawn Road East,70,Ontario
+4,June Avenue,way,353492157,7,Woodlawn Road East,72,Ontario
 4,June Avenue,way,802123317,4,Woodlawn Road West,100,Ontario
 4,June Avenue,way,236670718,4,Woodlawn Road West,107,Ontario
 4,June Avenue,way,178085109,11,Woodlawn Road West,11,Ontario
@@ -1078,16 +1078,16 @@ batch,area,type,id,version,street,housenumber,before_province
 5,Non-Residential - A,way,632319010,5,Burns Drive,70,Ontario
 5,Non-Residential - A,way,632319011,4,Burns Drive,72,Ontario
 5,Non-Residential - A,way,632319012,3,Burns Drive,74,Ontario
-5,Non-Residential - A,way,1436604416,2,Burns Drive,80,Ontario
-5,Non-Residential - A,way,1436604417,2,Burns Drive,80,Ontario
-5,Non-Residential - A,way,1436604418,2,Burns Drive,80,Ontario
-5,Non-Residential - A,way,1436604419,2,Burns Drive,80,Ontario
-5,Non-Residential - A,way,632319013,4,Burns Drive,80,Ontario
-5,Non-Residential - A,way,1436604420,2,Burns Drive,86,Ontario
-5,Non-Residential - A,way,1436604421,2,Burns Drive,86,Ontario
-5,Non-Residential - A,way,1436604422,2,Burns Drive,86,Ontario
-5,Non-Residential - A,way,1436604423,2,Burns Drive,86,Ontario
-5,Non-Residential - A,way,632319014,4,Burns Drive,86,Ontario
+5,Non-Residential - A,way,1436604416,3,Burns Drive,80,Ontario
+5,Non-Residential - A,way,1436604417,3,Burns Drive,80,Ontario
+5,Non-Residential - A,way,1436604418,3,Burns Drive,80,Ontario
+5,Non-Residential - A,way,1436604419,3,Burns Drive,80,Ontario
+5,Non-Residential - A,way,632319013,5,Burns Drive,80,Ontario
+5,Non-Residential - A,way,1436604420,3,Burns Drive,86,Ontario
+5,Non-Residential - A,way,1436604421,3,Burns Drive,86,Ontario
+5,Non-Residential - A,way,1436604422,3,Burns Drive,86,Ontario
+5,Non-Residential - A,way,1436604423,3,Burns Drive,86,Ontario
+5,Non-Residential - A,way,632319014,5,Burns Drive,86,Ontario
 5,Non-Residential - A,way,662977318,3,Campbell Road,101,Ontario
 5,Non-Residential - A,way,212951901,2,Campbell Road,15,Ontario
 5,Non-Residential - A,node,13201223782,1,Campbell Road,49,Ontario
@@ -1132,7 +1132,7 @@ batch,area,type,id,version,street,housenumber,before_province
 5,Non-Residential - A,way,161318015,4,Edinburgh Road North,460,Ontario
 5,Non-Residential - A,way,399149205,4,Elmira Road North,329,Ontario
 5,Non-Residential - A,way,399149204,3,Elmira Road North,337,Ontario
-5,Non-Residential - A,way,344325628,6,Elmira Road North,355,Ontario
+5,Non-Residential - A,way,344325628,7,Elmira Road North,355,Ontario
 5,Non-Residential - A,way,336724245,4,Elmira Road North,381,Ontario
 5,Non-Residential - A,way,399149211,3,Elmira Road North,383,Ontario
 5,Non-Residential - A,node,13201224115,1,Elmira Road North,400,Ontario
@@ -1140,7 +1140,7 @@ batch,area,type,id,version,street,housenumber,before_province
 5,Non-Residential - A,way,258565448,3,Elmira Road North,440,Ontario
 5,Non-Residential - A,way,399149534,3,Elmira Road North,447,Ontario
 5,Non-Residential - A,way,802122629,2,Elmira Road North,467,Ontario
-5,Non-Residential - A,way,399149535,4,Elmira Road North,473,Ontario
+5,Non-Residential - A,way,399149535,5,Elmira Road North,473,Ontario
 5,Non-Residential - A,way,399149536,4,Elmira Road North,479,Ontario
 5,Non-Residential - A,way,802122628,3,Elmira Road North,491,Ontario
 5,Non-Residential - A,way,802122627,2,Elmira Road North,499,Ontario
@@ -1324,7 +1324,7 @@ batch,area,type,id,version,street,housenumber,before_province
 5,Non-Residential - A,way,397895797,2,Monarch Road,1,Ontario
 5,Non-Residential - A,way,802121048,2,Monarch Road,15,Ontario
 5,Non-Residential - A,node,13201224130,1,Monarch Road,24,Ontario
-5,Non-Residential - A,way,802121047,3,Monarch Road,27,Ontario
+5,Non-Residential - A,way,802121047,4,Monarch Road,27,Ontario
 5,Non-Residential - A,way,397895794,3,Monarch Road,32,Ontario
 5,Non-Residential - A,way,802121049,2,Monarch Road,54,Ontario
 5,Non-Residential - A,node,13201224106,1,Monarch Road,65,Ontario
@@ -2338,7 +2338,7 @@ batch,area,type,id,version,street,housenumber,before_province
 7,Dover Cliff,way,802528361,2,Conroy Crescent,10,Ontario
 7,Dover Cliff,way,802528375,2,Conroy Crescent,100,Ontario
 7,Dover Cliff,way,1442944101,1,Conroy Crescent,102,Ontario
-7,Dover Cliff,way,802528772,3,Conroy Crescent,105,Ontario
+7,Dover Cliff,way,802528772,4,Conroy Crescent,105,Ontario
 7,Dover Cliff,way,1442944102,1,Conroy Crescent,108,Ontario
 7,Dover Cliff,way,1442944087,1,Conroy Crescent,11,Ontario
 7,Dover Cliff,way,802528750,2,Conroy Crescent,110,Ontario
@@ -2374,7 +2374,7 @@ batch,area,type,id,version,street,housenumber,before_province
 7,Dover Cliff,way,802528352,2,Conroy Crescent,3,Ontario
 7,Dover Cliff,way,802528358,2,Conroy Crescent,31,Ontario
 7,Dover Cliff,way,802528359,2,Conroy Crescent,33,Ontario
-7,Dover Cliff,way,210083020,3,Conroy Crescent,37,Ontario
+7,Dover Cliff,way,210083020,4,Conroy Crescent,37,Ontario
 7,Dover Cliff,way,1442944091,1,Conroy Crescent,40,Ontario
 7,Dover Cliff,way,210083017,2,Conroy Crescent,41,Ontario
 7,Dover Cliff,way,802528365,2,Conroy Crescent,42,Ontario
@@ -2385,14 +2385,14 @@ batch,area,type,id,version,street,housenumber,before_province
 7,Dover Cliff,way,1442944084,1,Conroy Crescent,5,Ontario
 7,Dover Cliff,way,1442944093,1,Conroy Crescent,50,Ontario
 7,Dover Cliff,way,802528368,2,Conroy Crescent,52,Ontario
-7,Dover Cliff,way,802528770,3,Conroy Crescent,53,Ontario
+7,Dover Cliff,way,802528770,4,Conroy Crescent,53,Ontario
 7,Dover Cliff,way,1442944094,1,Conroy Crescent,54,Ontario
 7,Dover Cliff,way,802528369,2,Conroy Crescent,56,Ontario
-7,Dover Cliff,way,210083022,3,Conroy Crescent,57,Ontario
+7,Dover Cliff,way,210083022,4,Conroy Crescent,57,Ontario
 7,Dover Cliff,way,1442944095,1,Conroy Crescent,58,Ontario
 7,Dover Cliff,way,802528370,2,Conroy Crescent,60,Ontario
 7,Dover Cliff,way,1442944096,1,Conroy Crescent,62,Ontario
-7,Dover Cliff,way,210083021,3,Conroy Crescent,63,Ontario
+7,Dover Cliff,way,210083021,4,Conroy Crescent,63,Ontario
 7,Dover Cliff,way,802528371,2,Conroy Crescent,64,Ontario
 7,Dover Cliff,way,1442944097,1,Conroy Crescent,66,Ontario
 7,Dover Cliff,way,802528353,2,Conroy Crescent,7,Ontario
@@ -2405,7 +2405,7 @@ batch,area,type,id,version,street,housenumber,before_province
 7,Dover Cliff,way,210083018,2,Conroy Crescent,83,Ontario
 7,Dover Cliff,way,802528373,2,Conroy Crescent,84,Ontario
 7,Dover Cliff,way,1442944085,1,Conroy Crescent,9,Ontario
-7,Dover Cliff,way,802528771,3,Conroy Crescent,91,Ontario
+7,Dover Cliff,way,802528771,4,Conroy Crescent,91,Ontario
 7,Dover Cliff,way,802528374,2,Conroy Crescent,92,Ontario
 7,Dover Cliff,way,1442944100,1,Conroy Crescent,94,Ontario
 7,Dover Cliff,way,802520005,2,Coventry Drive,10,Ontario
@@ -3339,9 +3339,9 @@ batch,area,type,id,version,street,housenumber,before_province
 9,Kortright Hills,way,802538838,3,Hanlon Creek Boulevard,225,Ontario
 9,Kortright Hills,way,802538839,3,Hanlon Creek Boulevard,230,Ontario
 9,Kortright Hills,way,1052899793,2,Hanlon Creek Boulevard,245,Ontario
-9,Kortright Hills,way,794182126,4,Hanlon Creek Boulevard,265,Ontario
+9,Kortright Hills,way,794182126,5,Hanlon Creek Boulevard,265,Ontario
 9,Kortright Hills,node,13240147669,1,Hanlon Creek Boulevard,270,Ontario
-9,Kortright Hills,way,794182120,4,Hanlon Creek Boulevard,275,Ontario
+9,Kortright Hills,way,794182120,5,Hanlon Creek Boulevard,275,Ontario
 9,Kortright Hills,way,305065631,3,Hanlon Creek Boulevard,285,Ontario
 9,Kortright Hills,node,13240147744,1,Hanlon Creek Boulevard,30,Ontario
 9,Kortright Hills,way,1430918727,1,Hanlon Creek Boulevard,30,Ontario
@@ -4535,16 +4535,16 @@ batch,area,type,id,version,street,housenumber,before_province
 12,Two Rivers,way,882913719,3,Arthur Street South,5,Ontario
 12,Two Rivers,way,882913717,3,Arthur Street South,50,Ontario
 12,Two Rivers,way,714071027,5,Arthur Street South,53,Ontario
-12,Two Rivers,way,714071029,6,Arthur Street South,53,Ontario
+12,Two Rivers,way,714071029,7,Arthur Street South,53,Ontario
 12,Two Rivers,way,927975803,3,Arthur Street South,6,Ontario
 12,Two Rivers,way,927975845,2,Arthur Street South,60,Ontario
 12,Two Rivers,way,927975846,2,Arthur Street South,62,Ontario
-12,Two Rivers,way,714071030,6,Arthur Street South,63,Ontario
+12,Two Rivers,way,714071030,7,Arthur Street South,63,Ontario
 12,Two Rivers,way,927975847,2,Arthur Street South,72,Ontario
-12,Two Rivers,way,1065787162,5,Arthur Street South,73,Ontario
+12,Two Rivers,way,1065787162,6,Arthur Street South,73,Ontario
 12,Two Rivers,way,927975849,2,Arthur Street South,74,Ontario
 12,Two Rivers,way,927975850,2,Arthur Street South,88,Ontario
-12,Two Rivers,way,1347682501,4,Arthur Street South,93,Ontario
+12,Two Rivers,way,1347682501,5,Arthur Street South,93,Ontario
 12,Two Rivers,way,927975852,2,Arthur Street South,94,Ontario
 12,Two Rivers,way,927975853,2,Arthur Street South,98,Ontario
 12,Two Rivers,way,929094306,2,Audrey Avenue,23,Ontario
@@ -5329,7 +5329,7 @@ batch,area,type,id,version,street,housenumber,before_province
 13,Two Rivers,way,927902800,3,Neeve Street,200,Ontario
 13,Two Rivers,way,927902799,3,Neeve Street,202,Ontario
 13,Two Rivers,way,424352115,4,Neeve Street,203,Ontario
-13,Two Rivers,way,356650876,5,Neeve Street,83,Ontario
+13,Two Rivers,way,356650876,6,Neeve Street,83,Ontario
 13,Two Rivers,way,273302726,3,Neeve Street,85,Ontario
 13,Two Rivers,way,273302725,3,Neeve Street,87,Ontario
 13,Two Rivers,way,927975916,2,Oliver Street,10,Ontario
@@ -5393,7 +5393,7 @@ batch,area,type,id,version,street,housenumber,before_province
 13,Two Rivers,way,927976000,5,Ontario Street,20,Ontario
 13,Two Rivers,way,1330491699,2,Ontario Street,23,Ontario
 13,Two Rivers,way,927929291,3,Ontario Street,25,Ontario
-13,Two Rivers,way,142082372,12,Ontario Street,26,Ontario
+13,Two Rivers,way,142082372,13,Ontario Street,26,Ontario
 13,Two Rivers,way,927975999,5,Ontario Street,28,Ontario
 13,Two Rivers,way,927929290,3,Ontario Street,29,Ontario
 13,Two Rivers,way,927976004,2,Ontario Street,2;4,Ontario
@@ -5596,7 +5596,7 @@ batch,area,type,id,version,street,housenumber,before_province
 13,Two Rivers,way,802547749,2,Victoria Road South,149,Ontario
 13,Two Rivers,way,802547747,2,Victoria Road South,151,Ontario
 13,Two Rivers,way,802547748,2,Victoria Road South,153,Ontario
-13,Two Rivers,way,260551704,8,Victoria Road South,199,Ontario
+13,Two Rivers,way,260551704,9,Victoria Road South,199,Ontario
 13,Two Rivers,way,260551708,8,Victoria Road South,199,Ontario
 13,Two Rivers,node,6775603085,7,Victoria Road South,199,Ontario
 13,Two Rivers,way,929094212,2,Victoria Road South,205,Ontario
@@ -5664,7 +5664,7 @@ batch,area,type,id,version,street,housenumber,before_province
 14,Two Rivers,way,927975949,2,Wood Street,23,Ontario
 14,Two Rivers,way,927975948,2,Wood Street,25,Ontario
 14,Two Rivers,way,927975982,2,Wood Street,26,Ontario
-14,Two Rivers,way,177695409,7,Wyndham Street South,60,Ontario
+14,Two Rivers,way,177695409,8,Wyndham Street South,60,Ontario
 14,Two Rivers,way,259490719,5,Wyndham Street South,67,Ontario
 14,Two Rivers,way,927902956,4,Wyndham Street South,68,Ontario
 14,Two Rivers,way,882913701,4,Wyndham Street South,71,Ontario
@@ -7739,11 +7739,11 @@ batch,area,type,id,version,street,housenumber,before_province
 18,Rickson Ridge,way,801555967,4,Gordon Street,1055,Ontario
 18,Rickson Ridge,way,801555968,4,Gordon Street,1055,Ontario
 18,Rickson Ridge,way,801555969,4,Gordon Street,1055,Ontario
-18,Rickson Ridge,way,801555971,4,Gordon Street,1077,Ontario
-18,Rickson Ridge,way,801555970,5,Gordon Street,1083,Ontario
+18,Rickson Ridge,way,801555971,5,Gordon Street,1077,Ontario
+18,Rickson Ridge,way,801555970,6,Gordon Street,1083,Ontario
 18,Rickson Ridge,way,399322266,6,Gordon Street,1099,Ontario
 18,Rickson Ridge,way,801677271,2,Gordon Street,1119,Ontario
-18,Rickson Ridge,way,1156180354,3,Gordon Street,1131,Ontario
+18,Rickson Ridge,way,1156180354,4,Gordon Street,1131,Ontario
 18,Rickson Ridge,way,1444324093,2,Gordon Street,1155,Ontario
 18,Rickson Ridge,way,1444324094,2,Gordon Street,1155,Ontario
 18,Rickson Ridge,way,1444324095,2,Gordon Street,1155,Ontario
@@ -7874,8 +7874,8 @@ batch,area,type,id,version,street,housenumber,before_province
 18,Rickson Ridge,way,208650757,3,Gordon Street,1155,Ontario
 18,Rickson Ridge,way,208650758,3,Gordon Street,1155,Ontario
 18,Rickson Ridge,way,208650759,3,Gordon Street,1155,Ontario
-18,Rickson Ridge,way,659406271,5,Gordon Street,1219,Ontario
-18,Rickson Ridge,way,499046190,9,Gordon Street,1291,Ontario
+18,Rickson Ridge,way,659406271,6,Gordon Street,1219,Ontario
+18,Rickson Ridge,way,499046190,10,Gordon Street,1291,Ontario
 18,Rickson Ridge,way,399321881,5,Gordon Street,987,Ontario
 18,Rickson Ridge,way,801677270,2,Harts Lane West,24,Ontario
 18,Rickson Ridge,way,801677269,2,Harts Lane West,32,Ontario
@@ -9527,7 +9527,7 @@ batch,area,type,id,version,street,housenumber,before_province
 22,Clairfields,way,1444323937,1,Gordon Street,1443,Ontario
 22,Clairfields,way,801555987,2,Gordon Street,1445,Ontario
 22,Clairfields,way,399342901,2,Gordon Street,1453,Ontario
-22,Clairfields,way,399342891,3,Gordon Street,1467,Ontario
+22,Clairfields,way,399342891,4,Gordon Street,1467,Ontario
 22,Clairfields,way,945671215,3,Gordon Street,1475,Ontario
 22,Clairfields,way,801565482,4,Gordon Street,1483,Ontario
 22,Clairfields,way,801555991,4,Gordon Street,1499,Ontario
@@ -9756,7 +9756,7 @@ batch,area,type,id,version,street,housenumber,before_province
 22,Clairfields,way,803252295,2,Gosling Gardens,317,Ontario
 22,Clairfields,way,803252294,2,Gosling Gardens,319,Ontario
 22,Clairfields,way,945663867,2,Gosling Gardens,33,Ontario
-22,Clairfields,way,961839909,5,Gosling Gardens,332,Ontario
+22,Clairfields,way,961839909,6,Gosling Gardens,332,Ontario
 22,Clairfields,way,961839910,3,Gosling Gardens,333,Ontario
 22,Clairfields,way,945663866,2,Gosling Gardens,35,Ontario
 22,Clairfields,way,945663865,2,Gosling Gardens,37,Ontario
@@ -10017,7 +10017,7 @@ batch,area,type,id,version,street,housenumber,before_province
 22,Clairfields,node,13238223381,1,Lily Lane,72,Ontario
 22,Clairfields,node,13238223441,1,Lily Lane,8,Ontario
 22,Clairfields,node,13238223440,1,Lily Lane,9,Ontario
-22,Clairfields,way,1004013623,5,Lowes Road West,26,Ontario
+22,Clairfields,way,1004013623,6,Lowes Road West,26,Ontario
 22,Clairfields,way,1004013614,3,Lowes Road West,29,Ontario
 22,Clairfields,way,1004013615,3,Lowes Road West,31,Ontario
 22,Clairfields,way,1004013616,3,Lowes Road West,33,Ontario
@@ -10281,12 +10281,12 @@ batch,area,type,id,version,street,housenumber,before_province
 23,Clairfields,way,68311868,7,Southgate Drive,175,Ontario
 23,Clairfields,way,68311950,3,Southgate Drive,180,Ontario
 23,Clairfields,way,337955617,2,Southgate Drive,190,Ontario
-23,Clairfields,way,208650114,3,Southgate Drive,200,Ontario
+23,Clairfields,way,208650114,4,Southgate Drive,200,Ontario
 23,Clairfields,node,13238223472,1,Southgate Drive,215,Ontario
 23,Clairfields,node,13238223471,1,Southgate Drive,225,Ontario
 23,Clairfields,way,68311673,4,Southgate Drive,230,Ontario
-23,Clairfields,way,337955594,6,Southgate Drive,245,Ontario
-23,Clairfields,way,337955609,6,Southgate Drive,245,Ontario
+23,Clairfields,way,337955594,7,Southgate Drive,245,Ontario
+23,Clairfields,way,337955609,7,Southgate Drive,245,Ontario
 23,Clairfields,node,13238223470,1,Southgate Drive,250,Ontario
 23,Clairfields,way,208650278,2,Southgate Drive,270,Ontario
 23,Clairfields,way,208650139,2,Southgate Drive,290,Ontario
@@ -10532,7 +10532,7 @@ batch,area,type,id,version,street,housenumber,before_province
 24,Downtown - Sunny Acres,way,922836430,2,Beechwood Avenue,106,Ontario
 24,Downtown - Sunny Acres,way,922836429,5,Beechwood Avenue,110,Ontario
 24,Downtown - Sunny Acres,way,922836428,6,Beechwood Avenue,112,Ontario
-24,Downtown - Sunny Acres,way,1076453164,5,Beechwood Avenue,83,Ontario
+24,Downtown - Sunny Acres,way,1076453164,6,Beechwood Avenue,83,Ontario
 24,Downtown - Sunny Acres,way,922836436,3,Beechwood Avenue,88,Ontario
 24,Downtown - Sunny Acres,way,922836435,3,Beechwood Avenue,90,Ontario
 24,Downtown - Sunny Acres,way,802123355,4,Beechwood Avenue,93,Ontario
@@ -11167,19 +11167,19 @@ batch,area,type,id,version,street,housenumber,before_province
 25,Downtown - Sunny Acres,way,878038168,2,Goldie Avenue,9,Ontario
 25,Downtown - Sunny Acres,way,259225310,14,Gordon Street,2,Ontario
 25,Downtown - Sunny Acres,way,254741140,6,Gordon Street,23;25,Ontario
-25,Downtown - Sunny Acres,way,413398803,7,Gordon Street,31,Ontario
+25,Downtown - Sunny Acres,way,413398803,8,Gordon Street,31,Ontario
 25,Downtown - Sunny Acres,way,413398788,5,Gordon Street,42,Ontario
 25,Downtown - Sunny Acres,node,13150618368,2,Gordon Street,5,Ontario
 25,Downtown - Sunny Acres,node,13150618369,2,Gordon Street,5,Ontario
 25,Downtown - Sunny Acres,node,13150618370,2,Gordon Street,5,Ontario
 25,Downtown - Sunny Acres,node,13150618371,2,Gordon Street,5,Ontario
 25,Downtown - Sunny Acres,node,13150618372,2,Gordon Street,5,Ontario
-25,Downtown - Sunny Acres,node,13150618373,2,Gordon Street,5,Ontario
-25,Downtown - Sunny Acres,node,13150618374,2,Gordon Street,5,Ontario
+25,Downtown - Sunny Acres,node,13150618373,3,Gordon Street,5,Ontario
+25,Downtown - Sunny Acres,node,13150618374,3,Gordon Street,5,Ontario
 25,Downtown - Sunny Acres,node,13150618375,2,Gordon Street,5,Ontario
-25,Downtown - Sunny Acres,node,13150618376,2,Gordon Street,5,Ontario
-25,Downtown - Sunny Acres,node,13150618377,2,Gordon Street,5,Ontario
-25,Downtown - Sunny Acres,node,13150618378,2,Gordon Street,5,Ontario
+25,Downtown - Sunny Acres,node,13150618376,3,Gordon Street,5,Ontario
+25,Downtown - Sunny Acres,node,13150618377,3,Gordon Street,5,Ontario
+25,Downtown - Sunny Acres,node,13150618378,3,Gordon Street,5,Ontario
 25,Downtown - Sunny Acres,node,13150618379,2,Gordon Street,5,Ontario
 25,Downtown - Sunny Acres,node,13150618380,2,Gordon Street,5,Ontario
 25,Downtown - Sunny Acres,way,923609387,5,Gordon Street,56,Ontario
@@ -11315,7 +11315,7 @@ batch,area,type,id,version,street,housenumber,before_province
 25,Downtown - Sunny Acres,way,271077696,4,Kent Street,82,Ontario
 25,Downtown - Sunny Acres,way,925435065,5,Kent Street,85,Ontario
 25,Downtown - Sunny Acres,way,925435066,4,Kent Street,89;91,Ontario
-25,Downtown - Sunny Acres,way,177696219,7,MacDonell Street,160,Ontario
+25,Downtown - Sunny Acres,way,177696219,8,MacDonell Street,160,Ontario
 25,Downtown - Sunny Acres,node,13159082362,1,Macdonell Street,107,Ontario
 25,Downtown - Sunny Acres,node,13159082371,1,Macdonell Street,109,Ontario
 25,Downtown - Sunny Acres,node,13159082396,1,Macdonell Street,11,Ontario
@@ -11680,7 +11680,7 @@ batch,area,type,id,version,street,housenumber,before_province
 26,Downtown - Sunny Acres,way,1331410170,2,Quebec Street,15,Ontario
 26,Downtown - Sunny Acres,way,259490737,3,Quebec Street,17,Ontario
 26,Downtown - Sunny Acres,node,13159082377,2,Quebec Street,19,Ontario
-26,Downtown - Sunny Acres,node,13159082381,2,Quebec Street,21,Ontario
+26,Downtown - Sunny Acres,node,13159082381,3,Quebec Street,21,Ontario
 26,Downtown - Sunny Acres,node,13159082407,1,Quebec Street,23,Ontario
 26,Downtown - Sunny Acres,way,259490738,2,Quebec Street,27,Ontario
 26,Downtown - Sunny Acres,node,13159082376,1,Quebec Street,29,Ontario
@@ -11833,8 +11833,8 @@ batch,area,type,id,version,street,housenumber,before_province
 26,Downtown - Sunny Acres,way,980489559,3,Surrey Street East,124,Ontario
 26,Downtown - Sunny Acres,node,13159068476,1,Surrey Street East,129,Ontario
 26,Downtown - Sunny Acres,way,981101322,4,Surrey Street East,130;132,Ontario
-26,Downtown - Sunny Acres,way,1431616569,2,Surrey Street East,47,Ontario
-26,Downtown - Sunny Acres,way,493155848,3,Surrey Street East,49,Ontario
+26,Downtown - Sunny Acres,way,1431616569,3,Surrey Street East,47,Ontario
+26,Downtown - Sunny Acres,way,493155848,4,Surrey Street East,49,Ontario
 26,Downtown - Sunny Acres,way,424355351,5,Surrey Street East,67,Ontario
 26,Downtown - Sunny Acres,way,980489563,2,Surrey Street East,81,Ontario
 26,Downtown - Sunny Acres,way,980489562,4,Surrey Street East,83,Ontario
@@ -11865,7 +11865,7 @@ batch,area,type,id,version,street,housenumber,before_province
 26,Downtown - Sunny Acres,way,923609521,3,Waterloo Avenue,115,Ontario
 26,Downtown - Sunny Acres,way,923609616,4,Waterloo Avenue,118,Ontario
 26,Downtown - Sunny Acres,way,271071500,4,Waterloo Avenue,12,Ontario
-26,Downtown - Sunny Acres,way,923609578,5,Waterloo Avenue,121,Ontario
+26,Downtown - Sunny Acres,way,923609578,6,Waterloo Avenue,121,Ontario
 26,Downtown - Sunny Acres,way,923609593,4,Waterloo Avenue,132,Ontario
 26,Downtown - Sunny Acres,way,923609556,3,Waterloo Avenue,133,Ontario
 26,Downtown - Sunny Acres,way,1330622618,2,Waterloo Avenue,134,Ontario
@@ -11941,8 +11941,8 @@ batch,area,type,id,version,street,housenumber,before_province
 26,Downtown - Sunny Acres,way,819734226,4,Waterloo Avenue,335,Ontario
 26,Downtown - Sunny Acres,way,819734221,6,Waterloo Avenue,338,Ontario
 26,Downtown - Sunny Acres,way,208935696,2,Waterloo Avenue,343,Ontario
-26,Downtown - Sunny Acres,way,819734215,7,Waterloo Avenue,358,Ontario
-26,Downtown - Sunny Acres,way,819734214,4,Waterloo Avenue,360,Ontario
+26,Downtown - Sunny Acres,way,819734215,8,Waterloo Avenue,358,Ontario
+26,Downtown - Sunny Acres,way,819734214,5,Waterloo Avenue,360,Ontario
 26,Downtown - Sunny Acres,way,177929651,5,Waterloo Avenue,364,Ontario
 26,Downtown - Sunny Acres,way,770625335,4,Waterloo Avenue,36;38,Ontario
 26,Downtown - Sunny Acres,way,208935697,6,Waterloo Avenue,371,Ontario
@@ -11973,7 +11973,7 @@ batch,area,type,id,version,street,housenumber,before_province
 26,Downtown - Sunny Acres,way,271085886,7,Waterloo Avenue,92;94,Ontario
 26,Downtown - Sunny Acres,way,923609518,3,Waterloo Avenue,93,Ontario
 26,Downtown - Sunny Acres,way,271085894,5,Waterloo Avenue,98,Ontario
-26,Downtown - Sunny Acres,way,675436618,8,Wellington Street East,150,Ontario
+26,Downtown - Sunny Acres,way,675436618,9,Wellington Street East,150,Ontario
 26,Downtown - Sunny Acres,way,217474773,6,Wellington Street East,20,Ontario
 26,Downtown - Sunny Acres,way,217474769,8,Wellington Street East,28,Ontario
 26,Downtown - Sunny Acres,way,217474766,6,Wellington Street East,36,Ontario
@@ -12123,10 +12123,10 @@ batch,area,type,id,version,street,housenumber,before_province
 26,Downtown - Sunny Acres,way,271085890,4,Yorkshire Street South,70,Ontario
 26,Downtown - Sunny Acres,way,1330623908,2,Yorkshire Street South,71,Ontario
 26,Downtown - Sunny Acres,way,923609583,4,Yorkshire Street South,73,Ontario
-27,Onward Willow,way,502064546,4,Ajax Street,10,Ontario
+27,Onward Willow,way,502064546,5,Ajax Street,10,Ontario
 27,Onward Willow,way,878036224,2,Ajax Street,3,Ontario
-27,Onward Willow,way,502064547,3,Ajax Street,7,Ontario
-27,Onward Willow,way,502064548,3,Ajax Street,9,Ontario
+27,Onward Willow,way,502064547,4,Ajax Street,7,Ontario
+27,Onward Willow,way,502064548,4,Ajax Street,9,Ontario
 27,Onward Willow,way,878038944,3,Alma Street North,100,Ontario
 27,Onward Willow,way,878038945,3,Alma Street North,102,Ontario
 27,Onward Willow,way,878038946,3,Alma Street North,104,Ontario
@@ -12323,9 +12323,9 @@ batch,area,type,id,version,street,housenumber,before_province
 27,Onward Willow,way,878040823,2,Bagot Street,101,Ontario
 27,Onward Willow,way,878040822,2,Bagot Street,103,Ontario
 27,Onward Willow,way,878039602,2,Bagot Street,104,Ontario
-27,Onward Willow,way,208356564,3,Bagot Street,105,Ontario
+27,Onward Willow,way,208356564,4,Bagot Street,105,Ontario
 27,Onward Willow,way,878039601,2,Bagot Street,106,Ontario
-27,Onward Willow,way,208356615,4,Bagot Street,107,Ontario
+27,Onward Willow,way,208356615,5,Bagot Street,107,Ontario
 27,Onward Willow,way,878039600,2,Bagot Street,110,Ontario
 27,Onward Willow,way,802119219,2,Bagot Street,111,Ontario
 27,Onward Willow,way,878039599,2,Bagot Street,112,Ontario
@@ -13188,7 +13188,7 @@ batch,area,type,id,version,street,housenumber,before_province
 28,Onward Willow,way,295924587,2,Silvercreek Parkway North,102,Ontario
 28,Onward Willow,way,295922067,6,Silvercreek Parkway North,104,Ontario
 28,Onward Willow,way,295922066,3,Silvercreek Parkway North,105,Ontario
-28,Onward Willow,way,208492557,3,Silvercreek Parkway North,106,Ontario
+28,Onward Willow,way,208492557,4,Silvercreek Parkway North,106,Ontario
 28,Onward Willow,way,397928433,2,Silvercreek Parkway North,108,Ontario
 28,Onward Willow,way,991032284,2,Silvercreek Parkway North,109,Ontario
 28,Onward Willow,way,208492554,3,Silvercreek Parkway North,110,Ontario
@@ -13366,7 +13366,7 @@ batch,area,type,id,version,street,housenumber,before_province
 29,Onward Willow,way,1442367346,2,Silvercreek Parkway North,40,Ontario
 29,Onward Willow,way,1442367347,2,Silvercreek Parkway North,40,Ontario
 29,Onward Willow,way,1442367348,2,Silvercreek Parkway North,40,Ontario
-29,Onward Willow,way,1442367349,2,Silvercreek Parkway North,40,Ontario
+29,Onward Willow,way,1442367349,3,Silvercreek Parkway North,40,Ontario
 29,Onward Willow,way,1442367350,2,Silvercreek Parkway North,40,Ontario
 29,Onward Willow,way,1442367351,2,Silvercreek Parkway North,40,Ontario
 29,Onward Willow,way,1442367352,2,Silvercreek Parkway North,40,Ontario
@@ -13417,7 +13417,7 @@ batch,area,type,id,version,street,housenumber,before_province
 29,Onward Willow,way,878036111,2,Silvercreek Parkway North,55,Ontario
 29,Onward Willow,way,1442055219,1,Silvercreek Parkway North,57,Ontario
 29,Onward Willow,way,878036110,2,Silvercreek Parkway North,59,Ontario
-29,Onward Willow,way,502064544,4,Silvercreek Parkway North,65,Ontario
+29,Onward Willow,way,502064544,5,Silvercreek Parkway North,65,Ontario
 29,Onward Willow,way,1442367384,2,Silvercreek Parkway North,70,Ontario
 29,Onward Willow,way,1442367385,2,Silvercreek Parkway North,70,Ontario
 29,Onward Willow,way,1442367386,2,Silvercreek Parkway North,70,Ontario
@@ -13484,7 +13484,7 @@ batch,area,type,id,version,street,housenumber,before_province
 29,Onward Willow,way,803274556,3,Silvercreek Parkway North,70,Ontario
 29,Onward Willow,way,803274558,3,Silvercreek Parkway North,70,Ontario
 29,Onward Willow,way,803274559,3,Silvercreek Parkway North,70,Ontario
-29,Onward Willow,way,502064545,3,Silvercreek Parkway North,75,Ontario
+29,Onward Willow,way,502064545,4,Silvercreek Parkway North,75,Ontario
 29,Onward Willow,way,502064592,2,Silvercreek Parkway North,87,Ontario
 29,Onward Willow,way,397928504,2,Silvercreek Parkway North,90,Ontario
 29,Onward Willow,way,878036203,2,Sleeman Avenue,10,Ontario
@@ -13818,7 +13818,7 @@ batch,area,type,id,version,street,housenumber,before_province
 29,Onward Willow,way,1442367320,1,Willow Road,207,Ontario
 29,Onward Willow,way,1442367319,1,Willow Road,209,Ontario
 29,Onward Willow,way,1442367318,1,Willow Road,211,Ontario
-29,Onward Willow,way,208492512,3,Willow Road,234,Ontario
+29,Onward Willow,way,208492512,4,Willow Road,234,Ontario
 29,Onward Willow,way,208492558,3,Willow Road,238,Ontario
 29,Onward Willow,way,208495900,2,Willow Road,244,Ontario
 29,Onward Willow,way,208495899,3,Willow Road,246,Ontario
@@ -14222,9 +14222,9 @@ batch,area,type,id,version,street,housenumber,before_province
 30,St. Georges Parkway,way,351541460,3,Eramosa Road,211;215;219;209,Ontario
 30,St. Georges Parkway,way,208353246,2,Eramosa Road,247,Ontario
 30,St. Georges Parkway,way,929589719,2,Eramosa Road,25,Ontario
-30,St. Georges Parkway,way,208488067,4,Eramosa Road,265,Ontario
+30,St. Georges Parkway,way,208488067,5,Eramosa Road,265,Ontario
 30,St. Georges Parkway,way,242672732,4,Eramosa Road,275,Ontario
-30,St. Georges Parkway,way,240744882,6,Eramosa Road,297,Ontario
+30,St. Georges Parkway,way,240744882,7,Eramosa Road,297,Ontario
 30,St. Georges Parkway,way,929589750,3,Eramosa Road,3,Ontario
 30,St. Georges Parkway,way,929589718,2,Eramosa Road,31,Ontario
 30,St. Georges Parkway,way,772914439,4,Eramosa Road,325,Ontario
@@ -15237,7 +15237,7 @@ batch,area,type,id,version,street,housenumber,before_province
 32,St. Georges Parkway,way,803266270,2,Stevenson Street North,97,Ontario
 32,St. Georges Parkway,way,930888679,2,Stevenson Street North,98,Ontario
 32,St. Georges Parkway,way,929944273,3,Stuart Street,1,Ontario
-32,St. Georges Parkway,way,929589622,6,Stuart Street,10,Ontario
+32,St. Georges Parkway,way,929589622,7,Stuart Street,10,Ontario
 32,St. Georges Parkway,way,931647360,2,Stuart Street,101,Ontario
 32,St. Georges Parkway,way,931647352,2,Stuart Street,102,Ontario
 32,St. Georges Parkway,way,931647336,2,Stuart Street,104,Ontario
@@ -15801,7 +15801,7 @@ batch,area,type,id,version,street,housenumber,before_province
 34,Exhibition Park,way,802124521,3,Cardigan Street,100;98,Ontario
 34,Exhibition Park,way,1432328006,1,Cardigan Street,102;104,Ontario
 34,Exhibition Park,way,1432328018,1,Cardigan Street,110;106;108,Ontario
-34,Exhibition Park,way,925775122,4,Cardigan Street,122,Ontario
+34,Exhibition Park,way,925775122,5,Cardigan Street,122,Ontario
 34,Exhibition Park,way,926061432,2,Cardigan Street,140,Ontario
 34,Exhibition Park,way,926061433,2,Cardigan Street,148,Ontario
 34,Exhibition Park,way,926061436,2,Cardigan Street,158,Ontario
@@ -16203,7 +16203,7 @@ batch,area,type,id,version,street,housenumber,before_province
 34,Exhibition Park,way,208492450,5,Edinburgh Road North,245,Ontario
 34,Exhibition Park,way,208493152,3,Edinburgh Road North,251;249,Ontario
 34,Exhibition Park,way,1353860108,2,Edinburgh Road North,253,Ontario
-34,Exhibition Park,way,1042083497,5,Edinburgh Road North,395,Ontario
+34,Exhibition Park,way,1042083497,6,Edinburgh Road North,395,Ontario
 34,Exhibition Park,way,925426378,4,Edinburgh Road North,81,Ontario
 34,Exhibition Park,way,925426379,3,Edinburgh Road North,85,Ontario
 34,Exhibition Park,way,925426380,4,Edinburgh Road North,89,Ontario
@@ -16846,7 +16846,7 @@ batch,area,type,id,version,street,housenumber,before_province
 35,Exhibition Park,way,925796254,3,Mctague Street,6;8,Ontario
 35,Exhibition Park,way,925796276,3,Mctague Street,7,Ontario
 35,Exhibition Park,way,925796290,3,Mctague Street,73;75,Ontario
-35,Exhibition Park,node,13164297972,2,Mont Street,1,Ontario
+35,Exhibition Park,node,13164297972,3,Mont Street,1,Ontario
 35,Exhibition Park,way,925796271,3,Mont Street,12,Ontario
 36,Exhibition Park,way,926071904,3,Mont Street,17,Ontario
 36,Exhibition Park,way,925796270,3,Mont Street,18,Ontario
@@ -17308,7 +17308,7 @@ batch,area,type,id,version,street,housenumber,before_province
 36,Exhibition Park,way,925775198,3,Suffolk Street West,41;43,Ontario
 36,Exhibition Park,way,925746820,3,Suffolk Street West,44,Ontario
 36,Exhibition Park,way,925775199,3,Suffolk Street West,45;47;49;51,Ontario
-36,Exhibition Park,way,925775200,4,Suffolk Street West,57,Ontario
+36,Exhibition Park,way,925775200,5,Suffolk Street West,57,Ontario
 36,Exhibition Park,way,925775237,2,Suffolk Street West,61,Ontario
 36,Exhibition Park,way,925775238,2,Suffolk Street West,67;65,Ontario
 36,Exhibition Park,way,925775236,2,Suffolk Street West,69;71,Ontario
@@ -17455,11 +17455,11 @@ batch,area,type,id,version,street,housenumber,before_province
 37,Exhibition Park,way,1369220537,4,Westmount Road,120,Ontario
 37,Exhibition Park,way,1369220538,4,Westmount Road,120,Ontario
 37,Exhibition Park,way,1369220539,4,Westmount Road,120,Ontario
-37,Exhibition Park,way,1369220540,4,Westmount Road,120,Ontario
+37,Exhibition Park,way,1369220540,5,Westmount Road,120,Ontario
 37,Exhibition Park,way,1369220541,4,Westmount Road,120,Ontario
-37,Exhibition Park,way,1369220542,4,Westmount Road,120,Ontario
+37,Exhibition Park,way,1369220542,5,Westmount Road,120,Ontario
 37,Exhibition Park,way,1369220543,4,Westmount Road,120,Ontario
-37,Exhibition Park,way,1369220544,4,Westmount Road,120,Ontario
+37,Exhibition Park,way,1369220544,5,Westmount Road,120,Ontario
 37,Exhibition Park,way,1369220545,4,Westmount Road,120,Ontario
 37,Exhibition Park,way,1369220546,4,Westmount Road,120,Ontario
 37,Exhibition Park,way,1369220547,4,Westmount Road,120,Ontario
@@ -17536,7 +17536,7 @@ batch,area,type,id,version,street,housenumber,before_province
 37,Exhibition Park,way,217269481,2,Woolwich Street,185,Ontario
 37,Exhibition Park,way,896522624,2,Woolwich Street,193,Ontario
 37,Exhibition Park,way,217269482,3,Woolwich Street,199,Ontario
-37,Exhibition Park,way,123242060,6,Woolwich Street,200,Ontario
+37,Exhibition Park,way,123242060,7,Woolwich Street,200,Ontario
 37,Exhibition Park,way,123419055,3,Woolwich Street,207,Ontario
 37,Exhibition Park,way,1431616570,1,Woolwich Street,208,Ontario
 37,Exhibition Park,way,123418400,4,Woolwich Street,210,Ontario
@@ -17637,8 +17637,8 @@ batch,area,type,id,version,street,housenumber,before_province
 37,Exhibition Park,way,926473809,3,Woolwich Street,554,Ontario
 37,Exhibition Park,way,926473888,2,Woolwich Street,555,Ontario
 37,Exhibition Park,way,926473887,2,Woolwich Street,559,Ontario
-37,Exhibition Park,way,882913721,3,Woolwich Street,560,Ontario
-37,Exhibition Park,way,882913722,3,Woolwich Street,560,Ontario
+37,Exhibition Park,way,882913721,4,Woolwich Street,560,Ontario
+37,Exhibition Park,way,882913722,4,Woolwich Street,560,Ontario
 37,Exhibition Park,way,882913723,2,Woolwich Street,562,Ontario
 37,Exhibition Park,way,926473862,2,Woolwich Street,567,Ontario
 37,Exhibition Park,way,882913724,3,Woolwich Street,568,Ontario
@@ -17681,7 +17681,7 @@ batch,area,type,id,version,street,housenumber,before_province
 37,Exhibition Park,node,13159082320,1,Wyndham Street North,112,Ontario
 37,Exhibition Park,node,13159068497,1,Wyndham Street North,114,Ontario
 37,Exhibition Park,way,1344917649,2,Wyndham Street North,115;117;119,Ontario
-37,Exhibition Park,node,13159082353,2,Wyndham Street North,116,Ontario
+37,Exhibition Park,node,13159082353,3,Wyndham Street North,116,Ontario
 37,Exhibition Park,node,13159082340,1,Wyndham Street North,118,Ontario
 37,Exhibition Park,way,1330887102,2,Wyndham Street North,120;122;124,Ontario
 37,Exhibition Park,way,1344917650,2,Wyndham Street North,121,Ontario
@@ -17694,7 +17694,7 @@ batch,area,type,id,version,street,housenumber,before_province
 37,Exhibition Park,node,13159082334,1,Wyndham Street North,137,Ontario
 37,Exhibition Park,way,123418030,8,Wyndham Street North,138,Ontario
 37,Exhibition Park,node,13159082327,1,Wyndham Street North,141,Ontario
-37,Exhibition Park,way,1344915931,4,Wyndham Street North,143,Ontario
+37,Exhibition Park,way,1344915931,5,Wyndham Street North,143,Ontario
 37,Exhibition Park,way,123874408,5,Wyndham Street North,146;148;150,Ontario
 37,Exhibition Park,way,775584291,16,Wyndham Street North,153;147,Ontario
 37,Exhibition Park,way,444678079,6,Wyndham Street North,166,Ontario
@@ -17707,16 +17707,16 @@ batch,area,type,id,version,street,housenumber,before_province
 37,Exhibition Park,way,1344917644,2,Wyndham Street North,99;97,Ontario
 37,Exhibition Park,way,271071501,5,Yarmouth Street,15,Ontario
 37,Exhibition Park,way,132979487,4,Yarmouth Street,21,Ontario
-37,Exhibition Park,node,12314152369,3,Yarmouth Street,31,Ontario
+37,Exhibition Park,node,12314152369,4,Yarmouth Street,31,Ontario
 37,Exhibition Park,node,4214081733,6,Yarmouth Street,37,Ontario
 37,Exhibition Park,way,134699885,3,Yarmouth Street,50,Ontario
 37,Exhibition Park,way,388738760,4,Yarmouth Street,51,Ontario
 37,Exhibition Park,way,388735928,2,Yarmouth Street,53,Ontario
-37,Exhibition Park,node,12314155787,3,Yarmouth Street,55,Ontario
+37,Exhibition Park,node,12314155787,4,Yarmouth Street,55,Ontario
 37,Exhibition Park,way,388733893,3,Yarmouth Street,59,Ontario
 37,Exhibition Park,node,3944486551,4,Yarmouth Street,75,Ontario
 37,Exhibition Park,node,3944996090,4,Yarmouth Street,77,Ontario
-37,Exhibition Park,way,409855358,4,Yarmouth Street,86,Ontario
+37,Exhibition Park,way,409855358,5,Yarmouth Street,86,Ontario
 37,Exhibition Park,way,423988865,4,Yarmouth Street,88,Ontario
 37,Exhibition Park,way,458799386,5,Yarmouth Street,90,Ontario
 37,Exhibition Park,way,925426413,4,Yorkshire Street North,112;114,Ontario
@@ -18968,10 +18968,10 @@ batch,area,type,id,version,street,housenumber,before_province
 40,Old University,node,13251106168,2,Janefield Avenue,39,Ontario
 40,Old University,node,13251106187,2,Janefield Avenue,41,Ontario
 40,Old University,node,13251106167,2,Janefield Avenue,43,Ontario
-40,Old University,way,1349266419,3,Janefield Avenue,454,Ontario
-40,Old University,way,801566997,5,Janefield Avenue,456,Ontario
-40,Old University,way,1349266429,3,Janefield Avenue,458,Ontario
-40,Old University,way,801567001,3,Janefield Avenue,460,Ontario
+40,Old University,way,1349266419,4,Janefield Avenue,454,Ontario
+40,Old University,way,801566997,6,Janefield Avenue,456,Ontario
+40,Old University,way,1349266429,4,Janefield Avenue,458,Ontario
+40,Old University,way,801567001,4,Janefield Avenue,460,Ontario
 40,Old University,way,801569345,3,Janefield Avenue,49,Ontario
 40,Old University,way,801569344,3,Janefield Avenue,53,Ontario
 40,Old University,way,1349518482,2,Janefield Avenue,57,Ontario
@@ -19127,7 +19127,7 @@ batch,area,type,id,version,street,housenumber,before_province
 40,Old University,way,802811040,4,Manor Park Crescent,20,Ontario
 40,Old University,way,802811039,3,Manor Park Crescent,24,Ontario
 40,Old University,node,13251106166,1,Manor Park Crescent,25,Ontario
-40,Old University,way,802811015,5,Manor Park Crescent,25,Ontario
+40,Old University,way,802811015,6,Manor Park Crescent,25,Ontario
 40,Old University,way,802811016,5,Manor Park Crescent,25,Ontario
 40,Old University,way,802811017,5,Manor Park Crescent,25,Ontario
 40,Old University,way,802811018,4,Manor Park Crescent,25,Ontario
@@ -19848,7 +19848,7 @@ batch,area,type,id,version,street,housenumber,before_province
 41,Old University,way,354160011,3,Water Street,105,Ontario
 41,Old University,way,84770818,6,Water Street,108,Ontario
 41,Old University,way,802815633,3,Water Street,115,Ontario
-41,Old University,way,802815631,4,Water Street,119,Ontario
+41,Old University,way,802815631,5,Water Street,119,Ontario
 41,Old University,way,802815624,3,Water Street,120,Ontario
 41,Old University,way,802814746,2,Water Street,158,Ontario
 41,Old University,way,802814745,3,Water Street,160,Ontario
@@ -20394,14 +20394,14 @@ batch,area,type,id,version,street,housenumber,before_province
 42,Hales Barton,way,801565470,3,Arkell Road,216,Ontario
 42,Hales Barton,node,13248884044,1,Arkell Road,220,Ontario
 42,Hales Barton,way,960901225,2,Arkell Road,284,Ontario
-42,Hales Barton,way,1283416466,4,Arkell Road,32,Ontario
-42,Hales Barton,way,1283416472,4,Arkell Road,32,Ontario
-42,Hales Barton,way,1283416476,4,Arkell Road,32,Ontario
-42,Hales Barton,way,1283416486,4,Arkell Road,32,Ontario
-42,Hales Barton,way,1443819663,3,Arkell Road,32,Ontario
-42,Hales Barton,way,1443819664,3,Arkell Road,32,Ontario
-42,Hales Barton,way,1443819665,3,Arkell Road,32,Ontario
-42,Hales Barton,way,1443819666,3,Arkell Road,32,Ontario
+42,Hales Barton,way,1283416466,5,Arkell Road,32,Ontario
+42,Hales Barton,way,1283416472,5,Arkell Road,32,Ontario
+42,Hales Barton,way,1283416476,5,Arkell Road,32,Ontario
+42,Hales Barton,way,1283416486,5,Arkell Road,32,Ontario
+42,Hales Barton,way,1443819663,4,Arkell Road,32,Ontario
+42,Hales Barton,way,1443819664,4,Arkell Road,32,Ontario
+42,Hales Barton,way,1443819665,4,Arkell Road,32,Ontario
+42,Hales Barton,way,1443819666,4,Arkell Road,32,Ontario
 42,Hales Barton,way,1539070683,2,Arkell Road,32,Ontario
 42,Hales Barton,node,13248884022,1,Arkell Road,348,Ontario
 42,Hales Barton,way,1447739002,5,Arkell Road,388,Ontario
@@ -20612,8 +20612,8 @@ batch,area,type,id,version,street,housenumber,before_province
 42,Hales Barton,way,1443820141,1,Bayberry Drive,32,Ontario
 42,Hales Barton,node,13248884038,1,Bayberry Drive,33,Ontario
 42,Hales Barton,way,801652221,2,Bayberry Drive,5,Ontario
-42,Hales Barton,way,208407926,3,Bayberry Drive,65,Ontario
-42,Hales Barton,way,801652218,4,Bayberry Drive,71,Ontario
+42,Hales Barton,way,208407926,4,Bayberry Drive,65,Ontario
+42,Hales Barton,way,801652218,5,Bayberry Drive,71,Ontario
 42,Hales Barton,way,1443820104,1,Bayberry Drive,9,Ontario
 42,Hales Barton,way,801647333,2,Beechlawn Boulevard,1,Ontario
 42,Hales Barton,way,1443820099,1,Beechlawn Boulevard,10,Ontario
@@ -21223,8 +21223,8 @@ batch,area,type,id,version,street,housenumber,before_province
 43,Hales Barton,way,801641112,2,Gordon Street,1250,Ontario
 43,Hales Barton,node,13248884046,1,Gordon Street,1260,Ontario
 43,Hales Barton,way,499045988,2,Gordon Street,1270,Ontario
-43,Hales Barton,way,499045964,5,Gordon Street,1280,Ontario
-43,Hales Barton,way,499049867,5,Gordon Street,1284,Ontario
+43,Hales Barton,way,499045964,6,Gordon Street,1280,Ontario
+43,Hales Barton,way,499049867,6,Gordon Street,1284,Ontario
 43,Hales Barton,way,499045987,2,Gordon Street,1300,Ontario
 43,Hales Barton,way,217385839,5,Gordon Street,1320,Ontario
 43,Hales Barton,way,499047329,3,Gordon Street,1340,Ontario
@@ -22932,7 +22932,7 @@ batch,area,type,id,version,street,housenumber,before_province
 47,Hanlon Creek,way,802109124,4,Christopher Court,3,Ontario
 47,Hanlon Creek,way,802109125,4,Christopher Court,4,Ontario
 47,Hanlon Creek,way,801612613,3,Christopher Court,7,Ontario
-47,Hanlon Creek,way,801612614,6,Christopher Court,8,Ontario
+47,Hanlon Creek,way,801612614,7,Christopher Court,8,Ontario
 47,Hanlon Creek,way,801612658,2,Cole Road,100,Ontario
 47,Hanlon Creek,way,801612657,2,Cole Road,102,Ontario
 47,Hanlon Creek,way,801612667,2,Cole Road,104,Ontario
@@ -23334,7 +23334,7 @@ batch,area,type,id,version,street,housenumber,before_province
 47,Hanlon Creek,way,802105980,2,Deerchase Court,7,Ontario
 48,Hanlon Creek,way,802105977,2,Deerchase Court,8,Ontario
 48,Hanlon Creek,way,802105979,2,Deerchase Court,9,Ontario
-48,Hanlon Creek,way,215069449,5,Edinburgh Road South,511,Ontario
+48,Hanlon Creek,way,215069449,6,Edinburgh Road South,511,Ontario
 48,Hanlon Creek,way,802114164,3,Edinburgh Road South,521,Ontario
 48,Hanlon Creek,way,802114163,3,Edinburgh Road South,523,Ontario
 48,Hanlon Creek,way,802114166,3,Edinburgh Road South,525,Ontario
@@ -23472,29 +23472,29 @@ batch,area,type,id,version,street,housenumber,before_province
 48,Hanlon Creek,way,802111567,2,Ervin Crescent,7,Ontario
 48,Hanlon Creek,way,802111566,2,Ervin Crescent,9,Ontario
 48,Hanlon Creek,way,208650497,7,Gordon Street,785,Ontario
-48,Hanlon Creek,way,743421919,4,Gordon Street,803,Ontario
-48,Hanlon Creek,way,743421918,4,Gordon Street,807,Ontario
+48,Hanlon Creek,way,743421919,5,Gordon Street,803,Ontario
+48,Hanlon Creek,way,743421918,5,Gordon Street,807,Ontario
 48,Hanlon Creek,way,743421917,3,Gordon Street,815,Ontario
 48,Hanlon Creek,way,743421916,3,Gordon Street,825,Ontario
 48,Hanlon Creek,way,743421915,3,Gordon Street,833,Ontario
-48,Hanlon Creek,way,800638895,3,Gordon Street,941,Ontario
-48,Hanlon Creek,way,800638896,3,Gordon Street,941,Ontario
-48,Hanlon Creek,way,800638897,3,Gordon Street,941,Ontario
-48,Hanlon Creek,way,800638898,3,Gordon Street,941,Ontario
-48,Hanlon Creek,way,800638899,3,Gordon Street,941,Ontario
-48,Hanlon Creek,way,800638900,3,Gordon Street,941,Ontario
-48,Hanlon Creek,way,800638901,3,Gordon Street,941,Ontario
-48,Hanlon Creek,way,800638902,3,Gordon Street,941,Ontario
-48,Hanlon Creek,way,800638903,3,Gordon Street,941,Ontario
-48,Hanlon Creek,way,800638904,3,Gordon Street,941,Ontario
-48,Hanlon Creek,way,800638905,3,Gordon Street,941,Ontario
-48,Hanlon Creek,way,800638906,3,Gordon Street,941,Ontario
-48,Hanlon Creek,way,800638907,3,Gordon Street,941,Ontario
-48,Hanlon Creek,way,800638908,3,Gordon Street,941,Ontario
-48,Hanlon Creek,way,800638909,3,Gordon Street,941,Ontario
-48,Hanlon Creek,way,800638910,3,Gordon Street,941,Ontario
-48,Hanlon Creek,way,800638911,3,Gordon Street,941,Ontario
-48,Hanlon Creek,way,800638912,3,Gordon Street,941,Ontario
+48,Hanlon Creek,way,800638895,4,Gordon Street,941,Ontario
+48,Hanlon Creek,way,800638896,4,Gordon Street,941,Ontario
+48,Hanlon Creek,way,800638897,4,Gordon Street,941,Ontario
+48,Hanlon Creek,way,800638898,4,Gordon Street,941,Ontario
+48,Hanlon Creek,way,800638899,4,Gordon Street,941,Ontario
+48,Hanlon Creek,way,800638900,4,Gordon Street,941,Ontario
+48,Hanlon Creek,way,800638901,4,Gordon Street,941,Ontario
+48,Hanlon Creek,way,800638902,4,Gordon Street,941,Ontario
+48,Hanlon Creek,way,800638903,4,Gordon Street,941,Ontario
+48,Hanlon Creek,way,800638904,4,Gordon Street,941,Ontario
+48,Hanlon Creek,way,800638905,4,Gordon Street,941,Ontario
+48,Hanlon Creek,way,800638906,4,Gordon Street,941,Ontario
+48,Hanlon Creek,way,800638907,4,Gordon Street,941,Ontario
+48,Hanlon Creek,way,800638908,4,Gordon Street,941,Ontario
+48,Hanlon Creek,way,800638909,4,Gordon Street,941,Ontario
+48,Hanlon Creek,way,800638910,4,Gordon Street,941,Ontario
+48,Hanlon Creek,way,800638911,4,Gordon Street,941,Ontario
+48,Hanlon Creek,way,800638912,4,Gordon Street,941,Ontario
 48,Hanlon Creek,way,177602029,5,Gordon Street,951,Ontario
 48,Hanlon Creek,way,798113113,3,Grierson Drive,50,Ontario
 48,Hanlon Creek,way,798231604,3,Gryphon Place,10,Ontario
@@ -24679,8 +24679,8 @@ batch,area,type,id,version,street,housenumber,before_province
 50,Hanlon Creek,way,208500359,6,Scottsdale Drive,617,Ontario
 50,Hanlon Creek,way,657489365,5,Scottsdale Drive,620,Ontario
 50,Hanlon Creek,way,416292136,7,Scottsdale Drive,630,Ontario
-50,Hanlon Creek,way,212559742,6,Scottsdale Drive,649,Ontario
-50,Hanlon Creek,way,212559745,5,Scottsdale Drive,649,Ontario
+50,Hanlon Creek,way,212559742,7,Scottsdale Drive,649,Ontario
+50,Hanlon Creek,way,212559745,6,Scottsdale Drive,649,Ontario
 50,Hanlon Creek,node,13252526491,2,Scottsdale Drive,650,Ontario
 50,Hanlon Creek,node,13252526492,2,Scottsdale Drive,650,Ontario
 50,Hanlon Creek,node,13252526493,2,Scottsdale Drive,650,Ontario
@@ -25092,8 +25092,8 @@ batch,area,type,id,version,street,housenumber,before_province
 50,Hanlon Creek,node,13252526515,2,Stone Road West,292,Ontario
 50,Hanlon Creek,node,13252526518,2,Stone Road West,292,Ontario
 50,Hanlon Creek,node,13252526519,2,Stone Road West,292,Ontario
-50,Hanlon Creek,way,215069452,15,Stone Road West,304,Ontario
-50,Hanlon Creek,way,215069453,5,Stone Road West,304,Ontario
+50,Hanlon Creek,way,215069452,16,Stone Road West,304,Ontario
+50,Hanlon Creek,way,215069453,6,Stone Road West,304,Ontario
 50,Hanlon Creek,node,5509310981,7,Stone Road West,304,Ontario
 50,Hanlon Creek,way,215069450,3,Stone Road West,314,Ontario
 50,Hanlon Creek,way,369321183,3,Stone Road West,324,Ontario
@@ -31757,13 +31757,13 @@ batch,area,type,id,version,street,housenumber,before_province
 62,Waverley,way,1436028288,2,Country Club Drive,120,Ontario
 62,Waverley,way,1436028289,2,Country Club Drive,120,Ontario
 62,Waverley,way,1436028290,2,Country Club Drive,120,Ontario
-62,Waverley,way,761343575,3,Country Club Drive,120,Ontario
-62,Waverley,way,761343576,3,Country Club Drive,120,Ontario
+62,Waverley,way,761343575,4,Country Club Drive,120,Ontario
+62,Waverley,way,761343576,4,Country Club Drive,120,Ontario
 62,Waverley,way,761343579,4,Country Club Drive,120,Ontario
 62,Waverley,way,761343580,5,Country Club Drive,120,Ontario
 62,Waverley,way,761343582,5,Country Club Drive,120,Ontario
 62,Waverley,way,761343583,3,Country Club Drive,120,Ontario
-62,Waverley,way,761343584,3,Country Club Drive,120,Ontario
+62,Waverley,way,761343584,4,Country Club Drive,120,Ontario
 62,Waverley,way,761343585,3,Country Club Drive,120,Ontario
 62,Waverley,way,954050298,4,Country Club Drive,120,Ontario
 62,Waverley,way,954050299,3,Country Club Drive,120,Ontario
@@ -32884,14 +32884,14 @@ batch,area,type,id,version,street,housenumber,before_province
 64,Waverley,way,952289381,3,Marilyn Drive,1,Ontario
 64,Waverley,way,952289386,3,Marilyn Drive,11,Ontario
 64,Waverley,way,952289384,3,Marilyn Drive,15,Ontario
-64,Waverley,way,802124534,4,Marilyn Drive,16,Ontario
+64,Waverley,way,802124534,5,Marilyn Drive,16,Ontario
 64,Waverley,way,952289385,2,Marilyn Drive,17,Ontario
 64,Waverley,way,952327445,2,Marilyn Drive,19,Ontario
 64,Waverley,way,178085149,4,Marilyn Drive,20,Ontario
 64,Waverley,way,952327444,2,Marilyn Drive,21,Ontario
-64,Waverley,way,178085148,6,Marilyn Drive,22,Ontario
+64,Waverley,way,178085148,7,Marilyn Drive,22,Ontario
 64,Waverley,way,952327443,2,Marilyn Drive,23,Ontario
-64,Waverley,way,178085152,7,Marilyn Drive,24,Ontario
+64,Waverley,way,178085152,8,Marilyn Drive,24,Ontario
 64,Waverley,way,952327442,2,Marilyn Drive,25,Ontario
 64,Waverley,way,952327441,2,Marilyn Drive,27,Ontario
 64,Waverley,way,952327440,2,Marilyn Drive,29,Ontario
@@ -33142,7 +33142,7 @@ batch,area,type,id,version,street,housenumber,before_province
 64,Waverley,way,935634249,2,Newstead Street,7,Ontario
 64,Waverley,way,935634255,2,Newstead Street,8,Ontario
 64,Waverley,way,935634293,2,Newstead Street,9,Ontario
-64,Waverley,node,13165533695,2,Norwich Street East,110,Ontario
+64,Waverley,node,13165533695,3,Norwich Street East,110,Ontario
 64,Waverley,way,931652619,2,Norwich Street East,112,Ontario
 64,Waverley,way,931652601,2,Norwich Street East,114,Ontario
 64,Waverley,way,931652603,2,Norwich Street East,118,Ontario
@@ -34040,7 +34040,7 @@ batch,area,type,id,version,street,housenumber,before_province
 66,Waverley,way,882920253,2,Sumac Place,7,Ontario
 66,Waverley,way,882920023,2,Sumac Place,8,Ontario
 66,Waverley,way,882920254,2,Sumac Place,9,Ontario
-66,Waverley,way,802125028,3,Sunnylea Crescent,1,Ontario
+66,Waverley,way,802125028,4,Sunnylea Crescent,1,Ontario
 66,Waverley,way,802125025,2,Sunnylea Crescent,100,Ontario
 66,Waverley,way,932284729,2,Sunnylea Crescent,11,Ontario
 66,Waverley,way,932284671,2,Sunnylea Crescent,12,Ontario
@@ -34049,7 +34049,7 @@ batch,area,type,id,version,street,housenumber,before_province
 66,Waverley,way,932284731,2,Sunnylea Crescent,17,Ontario
 66,Waverley,way,932284725,2,Sunnylea Crescent,18,Ontario
 66,Waverley,way,932284732,2,Sunnylea Crescent,19,Ontario
-66,Waverley,way,802125026,3,Sunnylea Crescent,2,Ontario
+66,Waverley,way,802125026,4,Sunnylea Crescent,2,Ontario
 66,Waverley,way,932284724,2,Sunnylea Crescent,20,Ontario
 66,Waverley,way,932284733,2,Sunnylea Crescent,21,Ontario
 66,Waverley,way,932284723,2,Sunnylea Crescent,22,Ontario
@@ -34060,7 +34060,7 @@ batch,area,type,id,version,street,housenumber,before_province
 66,Waverley,way,932284678,2,Sunnylea Crescent,27,Ontario
 66,Waverley,way,932284680,2,Sunnylea Crescent,28,Ontario
 66,Waverley,way,932284677,2,Sunnylea Crescent,29,Ontario
-66,Waverley,way,802125029,3,Sunnylea Crescent,3,Ontario
+66,Waverley,way,802125029,4,Sunnylea Crescent,3,Ontario
 66,Waverley,way,932284721,2,Sunnylea Crescent,30,Ontario
 66,Waverley,way,932284736,2,Sunnylea Crescent,31,Ontario
 66,Waverley,way,932284720,2,Sunnylea Crescent,32,Ontario
@@ -34071,7 +34071,7 @@ batch,area,type,id,version,street,housenumber,before_province
 66,Waverley,way,932284670,2,Sunnylea Crescent,37,Ontario
 66,Waverley,way,932284673,2,Sunnylea Crescent,38,Ontario
 66,Waverley,way,932284668,2,Sunnylea Crescent,39,Ontario
-66,Waverley,way,802125027,3,Sunnylea Crescent,4,Ontario
+66,Waverley,way,802125027,4,Sunnylea Crescent,4,Ontario
 66,Waverley,way,932284717,2,Sunnylea Crescent,40,Ontario
 66,Waverley,way,932284664,2,Sunnylea Crescent,42,Ontario
 66,Waverley,way,932284738,2,Sunnylea Crescent,43,Ontario
@@ -34692,10 +34692,10 @@ batch,area,type,id,version,street,housenumber,before_province
 67,Waverley,way,897285461,2,Wolseley Road,5,Ontario
 67,Waverley,way,882916357,3,Wolseley Road,6,Ontario
 67,Waverley,way,897285462,2,Wolseley Road,7,Ontario
-67,Waverley,way,803281467,5,Woodlawn Road East,100,Ontario
-67,Waverley,way,803281468,5,Woodlawn Road East,100,Ontario
-67,Waverley,way,954036919,3,Woodlawn Road East,100,Ontario
-67,Waverley,way,954036924,3,Woodlawn Road East,100,Ontario
+67,Waverley,way,803281467,6,Woodlawn Road East,100,Ontario
+67,Waverley,way,803281468,6,Woodlawn Road East,100,Ontario
+67,Waverley,way,954036919,4,Woodlawn Road East,100,Ontario
+67,Waverley,way,954036924,4,Woodlawn Road East,100,Ontario
 67,Waverley,node,13198848800,1,Woodlawn Road East,102,Ontario
 67,Waverley,node,13198848801,2,Woodlawn Road East,102,Ontario
 67,Waverley,node,13198848802,2,Woodlawn Road East,102,Ontario
@@ -34741,9 +34741,9 @@ batch,area,type,id,version,street,housenumber,before_province
 67,Waverley,node,13198848762,2,Woodlawn Road East,122,Ontario
 67,Waverley,node,13198848763,2,Woodlawn Road East,122,Ontario
 67,Waverley,way,762133360,3,Woodlawn Road East,133,Ontario
-67,Waverley,way,178085150,6,Woodlawn Road East,19,Ontario
+67,Waverley,way,178085150,7,Woodlawn Road East,19,Ontario
 67,Waverley,way,178085155,6,Woodlawn Road East,21,Ontario
-67,Waverley,way,178085151,5,Woodlawn Road East,23,Ontario
+67,Waverley,way,178085151,6,Woodlawn Road East,23,Ontario
 67,Waverley,way,882941965,2,Woodlawn Road East,390,Ontario
 67,Waverley,way,882941961,2,Woodlawn Road East,392,Ontario
 67,Waverley,way,882941960,2,Woodlawn Road East,394,Ontario
@@ -35131,7 +35131,7 @@ batch,area,type,id,version,street,housenumber,before_province
 68,Pine Ridge - Westminster Woods,way,801563084,3,Bard Boulevard,105,Ontario
 68,Pine Ridge - Westminster Woods,way,801563085,3,Bard Boulevard,105,Ontario
 68,Pine Ridge - Westminster Woods,way,801563086,3,Bard Boulevard,105,Ontario
-68,Pine Ridge - Westminster Woods,way,878035921,5,Bard Boulevard,106,Ontario
+68,Pine Ridge - Westminster Woods,way,878035921,6,Bard Boulevard,106,Ontario
 68,Pine Ridge - Westminster Woods,way,960612430,2,Bard Boulevard,11,Ontario
 68,Pine Ridge - Westminster Woods,way,960612429,2,Bard Boulevard,15,Ontario
 68,Pine Ridge - Westminster Woods,way,960612428,2,Bard Boulevard,17,Ontario
@@ -35695,7 +35695,7 @@ batch,area,type,id,version,street,housenumber,before_province
 69,Pine Ridge - Westminster Woods,way,952856563,2,Colonial Drive,174,Ontario
 69,Pine Ridge - Westminster Woods,way,952856564,2,Colonial Drive,176,Ontario
 69,Pine Ridge - Westminster Woods,way,960901244,2,Colonial Drive,19,Ontario
-69,Pine Ridge - Westminster Woods,way,878035915,4,Colonial Drive,2,Ontario
+69,Pine Ridge - Westminster Woods,way,878035915,5,Colonial Drive,2,Ontario
 69,Pine Ridge - Westminster Woods,node,13244832453,1,Colonial Drive,209,Ontario
 69,Pine Ridge - Westminster Woods,way,960901245,2,Colonial Drive,21,Ontario
 69,Pine Ridge - Westminster Woods,way,960901246,2,Colonial Drive,23,Ontario
@@ -36193,10 +36193,10 @@ batch,area,type,id,version,street,housenumber,before_province
 70,Pine Ridge - Westminster Woods,way,1443359761,1,Farley Drive,83,Ontario
 70,Pine Ridge - Westminster Woods,way,1443359762,1,Farley Drive,85,Ontario
 70,Pine Ridge - Westminster Woods,way,969441654,3,Farley Drive,98,Ontario
-70,Pine Ridge - Westminster Woods,way,802540407,3,Frederick Drive,100,Ontario
-70,Pine Ridge - Westminster Woods,way,802540411,3,Frederick Drive,101,Ontario
-70,Pine Ridge - Westminster Woods,way,802540408,5,Frederick Drive,64,Ontario
-70,Pine Ridge - Westminster Woods,way,950227736,3,Frederick Drive,65,Ontario
+70,Pine Ridge - Westminster Woods,way,802540407,4,Frederick Drive,100,Ontario
+70,Pine Ridge - Westminster Woods,way,802540411,4,Frederick Drive,101,Ontario
+70,Pine Ridge - Westminster Woods,way,802540408,6,Frederick Drive,64,Ontario
+70,Pine Ridge - Westminster Woods,way,950227736,4,Frederick Drive,65,Ontario
 70,Pine Ridge - Westminster Woods,way,948608005,2,Gaw Crescent,1,Ontario
 70,Pine Ridge - Westminster Woods,way,948608027,2,Gaw Crescent,10,Ontario
 70,Pine Ridge - Westminster Woods,way,948608010,2,Gaw Crescent,11,Ontario
@@ -36344,7 +36344,7 @@ batch,area,type,id,version,street,housenumber,before_province
 70,Pine Ridge - Westminster Woods,node,13244832455,1,Gordon Street,1408,Ontario
 70,Pine Ridge - Westminster Woods,way,801555990,2,Gordon Street,1416,Ontario
 70,Pine Ridge - Westminster Woods,way,208649960,3,Gordon Street,1428,Ontario
-70,Pine Ridge - Westminster Woods,way,801657260,3,Gordon Street,1440,Ontario
+70,Pine Ridge - Westminster Woods,way,801657260,4,Gordon Street,1440,Ontario
 70,Pine Ridge - Westminster Woods,node,13244832464,2,Gordon Street,1460,Ontario
 70,Pine Ridge - Westminster Woods,node,13244832465,2,Gordon Street,1460,Ontario
 70,Pine Ridge - Westminster Woods,node,13244832466,2,Gordon Street,1460,Ontario
@@ -36819,12 +36819,12 @@ batch,area,type,id,version,street,housenumber,before_province
 71,Pine Ridge - Westminster Woods,way,1443359874,1,Kingsbury Square,30,Ontario
 71,Pine Ridge - Westminster Woods,way,1443359875,1,Kingsbury Square,32,Ontario
 71,Pine Ridge - Westminster Woods,way,1443359876,1,Kingsbury Square,34,Ontario
-71,Pine Ridge - Westminster Woods,way,837634910,4,Kingsbury Square,35,Ontario
+71,Pine Ridge - Westminster Woods,way,837634910,5,Kingsbury Square,35,Ontario
 71,Pine Ridge - Westminster Woods,way,1443359877,1,Kingsbury Square,36,Ontario
 71,Pine Ridge - Westminster Woods,way,1443359878,1,Kingsbury Square,38,Ontario
 71,Pine Ridge - Westminster Woods,way,802540410,3,Kingsbury Square,40,Ontario
-71,Pine Ridge - Westminster Woods,way,802540405,3,Kingsbury Square,45,Ontario
-71,Pine Ridge - Westminster Woods,way,802540406,3,Kingsbury Square,67,Ontario
+71,Pine Ridge - Westminster Woods,way,802540405,4,Kingsbury Square,45,Ontario
+71,Pine Ridge - Westminster Woods,way,802540406,4,Kingsbury Square,67,Ontario
 71,Pine Ridge - Westminster Woods,way,1443359819,1,Lambeth Way,10,Ontario
 71,Pine Ridge - Westminster Woods,way,1443359836,1,Lambeth Way,100,Ontario
 71,Pine Ridge - Westminster Woods,way,1443359837,1,Lambeth Way,102,Ontario
@@ -37033,7 +37033,7 @@ batch,area,type,id,version,street,housenumber,before_province
 71,Pine Ridge - Westminster Woods,way,947111424,2,Lynch Circle,84,Ontario
 71,Pine Ridge - Westminster Woods,way,947111425,2,Lynch Circle,86,Ontario
 71,Pine Ridge - Westminster Woods,way,947111464,2,Lynch Circle,9,Ontario
-71,Pine Ridge - Westminster Woods,way,287946730,4,Lynnmore Street,60,Ontario
+71,Pine Ridge - Westminster Woods,way,287946730,5,Lynnmore Street,60,Ontario
 71,Pine Ridge - Westminster Woods,way,801656403,2,Malvern Crescent,10,Ontario
 71,Pine Ridge - Westminster Woods,way,801656391,2,Malvern Crescent,11,Ontario
 71,Pine Ridge - Westminster Woods,way,801656402,2,Malvern Crescent,12,Ontario
@@ -38104,7 +38104,7 @@ batch,area,type,id,version,street,housenumber,before_province
 73,Pine Ridge - Westminster Woods,way,801564640,2,Waterford Drive,14,Ontario
 73,Pine Ridge - Westminster Woods,way,1443359864,1,Waterford Drive,16,Ontario
 73,Pine Ridge - Westminster Woods,way,1443359863,1,Waterford Drive,18,Ontario
-73,Pine Ridge - Westminster Woods,way,287946734,3,Waterford Drive,19,Ontario
+73,Pine Ridge - Westminster Woods,way,287946734,4,Waterford Drive,19,Ontario
 73,Pine Ridge - Westminster Woods,way,1443359862,1,Waterford Drive,20,Ontario
 73,Pine Ridge - Westminster Woods,way,1443359861,1,Waterford Drive,22,Ontario
 73,Pine Ridge - Westminster Woods,way,1443359860,1,Waterford Drive,24,Ontario
@@ -38115,7 +38115,7 @@ batch,area,type,id,version,street,housenumber,before_province
 73,Pine Ridge - Westminster Woods,way,1443359856,1,Waterford Drive,36,Ontario
 73,Pine Ridge - Westminster Woods,way,1443359855,1,Waterford Drive,38,Ontario
 73,Pine Ridge - Westminster Woods,way,1443359850,1,Waterford Drive,42,Ontario
-73,Pine Ridge - Westminster Woods,way,287946731,3,Waterford Drive,43,Ontario
+73,Pine Ridge - Westminster Woods,way,287946731,4,Waterford Drive,43,Ontario
 73,Pine Ridge - Westminster Woods,way,1443359851,1,Waterford Drive,44,Ontario
 73,Pine Ridge - Westminster Woods,way,1443359852,1,Waterford Drive,46,Ontario
 73,Pine Ridge - Westminster Woods,way,1443359853,1,Waterford Drive,48,Ontario
@@ -44305,7 +44305,7 @@ batch,area,type,id,version,street,housenumber,before_province
 100,June Avenue,node,7235303544,2,Woodlawn Road East,20,ON
 100,June Avenue,node,9687195460,3,Woodlawn Road West,100,ON
 100,June Avenue,way,802123330,3,Woodlawn Road West,124,ON
-100,June Avenue,way,773015474,3,Woodlawn Road West,243-263,ON
+100,June Avenue,way,773015474,4,Woodlawn Road West,243-263,ON
 100,June Avenue,node,8565564138,2,Woodlawn Road West,253,ON
 100,June Avenue,node,8565564139,4,Woodlawn Road West,253,ON
 100,June Avenue,node,8185928817,3,Woodlawn Road West,255,ON
