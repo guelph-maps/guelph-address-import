@@ -5,7 +5,7 @@ have been *found* but not yet proposed, so they do not live only in a chat log.
 
 | # | Campaign | State |
 |---|---|---|
-| 1 | Remove `addr:province` (44,796, **not** the ~3,699 consented) | **announced** 2026-09-18 (post #21 states 44,796), rebuilt 2026-09-30, 44,763 objects, 25 batches (one per area) — uploading |
+| 1 | Remove `addr:province` (44,796, **not** the ~3,699 consented) | **done** 2026-09-30, 44,763 objects, 25 changesets (one per area) 189754709–189754880, all verified; 33 left for hand review |
 | 2 | Split double-encoded unit housenumbers | **done** 2026-09-16, 5,521 objects, 36 changesets |
 | — | Campaign 2/3 leftovers, corroborated by the City roster | **done**, 32 objects |
 | 3 | Unit lists `addr:unit` → `addr:flats` (447) | **done** 2026-09-17, 447 objects, 23 changesets |
