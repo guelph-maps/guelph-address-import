@@ -2,8 +2,8 @@
 
 The **Guelph city checkout** of the address-import family — city #3,
 scaffolded 2026-08-15. Status: **two mechanical campaigns finished and
-verified, two more announced 2026-09-18 and still not uploaded, the
-gap-fill import not yet run.** 5,968 objects re-tagged over
+verified, two more announced 2026-09-18 and still not uploaded, and the
+gap-fill import **conflated but not uploaded** (2026-09-29).** 5,968 objects re-tagged over
 2026-09-16/17 in 59 changesets — see
 [`mechanical-edits/TODO.md`](mechanical-edits/TODO.md) for the ledger.
 `ARandomThumbtack_Import` imported Guelph's addresses solo in 2025 (first
@@ -119,6 +119,43 @@ Plus 32 stragglers the rules first refused and the City's roster later
 settled. None of the five is on the import path, and the import does not wait
 on them — but the split had to run **before** conflation, or door candidates
 would have duplicated against the badly-encoded objects.
+
+**Baseline conflation ran 2026-09-29** against a fresh extract (Geofabrik PBF
+of 2026-09-28, so it post-dates campaigns 2 and 3 — an older extract would
+have proposed door nodes beside the objects the split had already fixed).
+134 tiles built from the 23 areas; 53,847 source points at snapshot 47.
+
+| | |
+|---|---|
+| MATCH | 41,600 |
+| MATCH_LISTED | 895 |
+| MATCH_FAR | 722 |
+| MISSING | 2,757 |
+| **Auto-approved by the checks** | **2,621** |
+| **Held for review** | **1,325** |
+
+Nothing is uploaded. Three things stand between this queue and a changeset,
+and only the first is a tooling problem:
+
+1. **No `.env.prod`.** Only the `.example` files exist, so there are no OSM
+   OAuth credentials and the app cannot authenticate.
+2. **2,621 candidates are `AUTO_APPROVED`** — passed by the check suite with
+   no human having looked at them. The wiki says *"nothing uploads unreviewed"*
+   and *"every candidate is approved or rejected by a named reviewer"*, and
+   `osm_export` emits every candidate at `stage='APPROVED'`, auto or not. The
+   review UI surfaces them as `AUTO_APPROVED` rows precisely so a reviewer can
+   walk them; that walk has not happened.
+3. **The published roll-out is one pilot tile, posted to the thread with its
+   counts and changeset, then a one-week hold** before the rest.
+
+The three complexes the footprint-guard bug affects were checked against this
+run and behave as `config.toml` promises: 15 Carere Crescent, 85 Mullin Drive
+and 176 Janefield Avenue each land at `REVIEW_PENDING` with `unit_shape=review`
+and the over-long listing dropped rather than truncated. They cannot collapse
+silently — but they are still one candidate each rather than per-door, so a
+reviewer has to route them by hand. The guard itself is still unfixed.
+
+All 31 `nearby_street_mismatch` warnings are held for review, not auto-approved.
 
 **Blockers before the pilot upload** (not before publishing — the wiki page
 states intent):
