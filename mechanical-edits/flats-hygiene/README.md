@@ -262,7 +262,10 @@ workaround lives.
 - [ ] The four dropped paragraphs added to #21, or deliberately left out
 - [ ] `build_batches.py --refetch` on the day; `python test_flats_parse.py` against the fresh fetch; counts re-read against this README
 - [ ] JOSM signed in as `skfd imports`, not the personal account
-- [ ] Batch 1 (pilot, Hanlon Creek, 26) uploaded; count and changeset posted to the thread
+- [x] Batch 1 (Hanlon Creek, 26) uploaded 2026-09-30 01:32Z as changeset 189752405 and
+      verified. **Not posted to the thread as a pilot** — the maintainer's call was to
+      skip the pilot pause and continue; `PILOT_POST.md` stays unposted, and with it the
+      #14 admission and the timing statement
 - [ ] Remaining 21 batches; `uploads.csv` appended per batch, as edits 2 and 3 do
 - [ ] Wiki sections 4 and 5 updated with what actually went up
 
