@@ -1,16 +1,40 @@
 # Addendum for post #21 — paste-ready
 
 Post #21 (2026-09-18) ends *"Will update this post when it's done"*, so it is
-editable. What follows is the four things the condensed post dropped, written
-to be appended to it rather than posted separately.
+editable. What follows is what the condensed post dropped, written to be
+appended to it rather than posted separately.
 
-**The timing paragraph is the one that matters.** Proceeding without a 14-day
-window is a defensible call — campaign 3 and the units reversal both made it —
-but it is defensible *stated*. Right now #21 announces two campaigns and does
-not say when they land, that no window is being run, or that they will be
-reverted on request. The rest is detail; that paragraph is the consent.
+#21 was edited four minutes after it went up — inside Discourse's grace
+window, so no revision shows — to add *"removing addr:province from anything
+that has it – 44,796 instances"*. So it announces three campaigns, not two,
+and this addendum covers all three.
+
+**Two paragraphs matter more than the rest.**
+
+- **The timing paragraph** is the consent. Proceeding without a 14-day window
+  is a defensible call, but only when it is stated, and #21 does not say when
+  anything lands, that no window is being run, or that it will be reverted on
+  request.
+- **The province paragraph** admits that #14's ~3,699 was wrong. #21 states
+  the true figure without saying it differs from the one consent was asked
+  for, so a reader comparing the two posts gets no explanation from the
+  thread. The wiki records the error; the thread does not yet.
 
 ---
+
+**On `addr:province`, and a number I got wrong.** In #14 I asked to remove
+`addr:province` from "the ~3,699 Guelph objects that carry it". That was a
+sample count I quoted as if it were city-wide: a survey read 4,244 Guelph
+elements and found the tag on 3,878 of them, and I published that sample's
+split as a census. The real figure is the 44,796 above — very nearly every
+address object in the city. The edit and its reasons haven't changed: Canadian
+convention omits the province, the Toronto import doesn't write it, and the
+enclosing boundary already implies it. Its size was misstated, and the wiki
+page records that rather than quietly overwriting it. 44,763 objects go up in
+105 batches; 33 are held back for hand review (29 with no housenumber at all,
+4 relations). The 607 `ON` and 1 `On` go in separate batches at the very end,
+so they can still be held back if anyone would rather I stuck to the letter of
+#14.
 
 **Scope, stated plainly: 81 objects lose `addr:interpolation`, and 554 keep
 it.** The tag describes a way drawn between two address nodes — the numbers
@@ -33,26 +57,23 @@ letters; `LL01` keeps its zero — that one needed a fix in the import itself;
 and 176 Janefield Avenue is a row of blocks stepping by two, so `224;234`
 stays `224;234` rather than claiming nine units that do not exist.
 
-**325 objects in 22 batches**, one batch per Guelph Area, one changeset each,
-same method as edits 2 and 3, from `skfd imports` with `mechanical=yes`. 146
-objects that were already correct are skipped rather than uploaded as no-ops.
-Batch 1 is the pilot — Hanlon Creek, 26 objects — and I will post its count
-and changeset number here before the rest moves.
+**Order, and batches.** Flats and interpolation go first: 325 objects in 22
+batches, one per Guelph Area. Province follows, rebuilt against live OSM once
+those are in — every one of the 325 also carries `addr:province`, so the
+second campaign has to be prepared against the versions the first one leaves
+behind. Each batch is its own changeset and its own revert, from
+`skfd imports` with `mechanical=yes`. Each campaign's first batch is a pilot,
+and I will post its count and changeset number here before the rest of that
+campaign moves.
 
-**On timing, plainly.** These upload this weekend, and I am not running a
-14-day window, the same as the last two times. Both halves are tagging changes
-on a well-defined set, nothing is deleted and no geometry moves, and every
-edited object is recorded with the version it was prepared against and its
-prior value, so a revert is mechanical. I would rather say that outright than
-let an announcement pass for a consultation. **If you object, the batches get
+**On timing, plainly.** I am not running a 14-day window for any of the
+three, the same as for campaign 3. All three are tagging changes on a
+well-defined set, nothing is deleted and no geometry moves, and every edited
+object is recorded with the version it was prepared against and its prior
+value, so a revert is mechanical. I would rather say that outright than let an
+announcement pass for a consultation. **If you object, the batches get
 reverted on request — no argument first.** @ARandomThumbtack, your standing
 veto is unaffected.
 
 Detail and the counts:
 <https://wiki.openstreetmap.org/wiki/Guelph/Address_Import/Continuous#Mechanical_edits>
-
----
-
-*The closing link only resolves once the wiki page carries sections 4 and 5.
-They are written in `IMPORT_PROPOSAL.mediawiki`; drop the link from the paste
-if the page has not been republished yet.*

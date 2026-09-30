@@ -969,10 +969,10 @@ batch,area,type,id,version,street,housenumber,before_province
 4,June Avenue,way,239062269,9,Woodlawn Road East,14,Ontario
 4,June Avenue,way,761143411,3,Woodlawn Road East,18,Ontario
 4,June Avenue,way,144061123,3,Woodlawn Road East,20,Ontario
-4,June Avenue,way,1436028336,1,Woodlawn Road East,60,Ontario
-4,June Avenue,way,178085153,6,Woodlawn Road East,60,Ontario
-4,June Avenue,way,1436028337,2,Woodlawn Road East,70,Ontario
-4,June Avenue,way,353492157,5,Woodlawn Road East,72,Ontario
+4,June Avenue,way,1436028336,3,Woodlawn Road East,60,Ontario
+4,June Avenue,way,178085153,8,Woodlawn Road East,60,Ontario
+4,June Avenue,way,1436028337,4,Woodlawn Road East,70,Ontario
+4,June Avenue,way,353492157,6,Woodlawn Road East,72,Ontario
 4,June Avenue,way,802123317,4,Woodlawn Road West,100,Ontario
 4,June Avenue,way,236670718,4,Woodlawn Road West,107,Ontario
 4,June Avenue,way,178085109,11,Woodlawn Road West,11,Ontario
@@ -9156,7 +9156,7 @@ batch,area,type,id,version,street,housenumber,before_province
 21,Clairfields,way,943722590,2,Coopers Court,6,Ontario
 21,Clairfields,way,943722588,2,Coopers Court,7,Ontario
 21,Clairfields,way,943722589,2,Coopers Court,8,Ontario
-21,Clairfields,way,397933780,9,Corporate Court,11,Ontario
+21,Clairfields,way,397933780,10,Corporate Court,11,Ontario
 21,Clairfields,way,305065523,2,Corporate Court,24,Ontario
 21,Clairfields,way,305065522,2,Corporate Court,44,Ontario
 21,Clairfields,way,305065526,4,Corporate Court,60,Ontario
@@ -10317,7 +10317,7 @@ batch,area,type,id,version,street,housenumber,before_province
 23,Clairfields,way,68312164,4,Southgate Drive,670,Ontario
 23,Clairfields,way,305065527,4,Southgate Drive,679,Ontario
 23,Clairfields,way,249287411,2,Southgate Drive,70,Ontario
-23,Clairfields,way,1454337418,2,Southgate Drive,701,Ontario
+23,Clairfields,way,1454337418,3,Southgate Drive,701,Ontario
 23,Clairfields,way,305065525,9,Southgate Drive,705,Ontario
 23,Clairfields,way,305065524,2,Southgate Drive,745,Ontario
 23,Clairfields,way,208650151,9,Southgate Drive,75,Ontario
@@ -17530,7 +17530,7 @@ batch,area,type,id,version,street,housenumber,before_province
 37,Exhibition Park,node,3955495880,2,Woolwich Street,170,Ontario
 37,Exhibition Park,node,3955482022,2,Woolwich Street,172,Ontario
 37,Exhibition Park,way,217269483,2,Woolwich Street,173,Ontario
-37,Exhibition Park,way,217269390,8,Woolwich Street,176,Ontario
+37,Exhibition Park,way,217269390,9,Woolwich Street,176,Ontario
 37,Exhibition Park,way,458800306,5,Woolwich Street,182,Ontario
 37,Exhibition Park,way,220410557,3,Woolwich Street,183;175;177;179,Ontario
 37,Exhibition Park,way,217269481,2,Woolwich Street,185,Ontario
@@ -20404,7 +20404,7 @@ batch,area,type,id,version,street,housenumber,before_province
 42,Hales Barton,way,1443819666,3,Arkell Road,32,Ontario
 42,Hales Barton,way,1539070683,2,Arkell Road,32,Ontario
 42,Hales Barton,node,13248884022,1,Arkell Road,348,Ontario
-42,Hales Barton,way,1447739002,3,Arkell Road,388,Ontario
+42,Hales Barton,way,1447739002,5,Arkell Road,388,Ontario
 42,Hales Barton,way,1283416470,4,Arkell Road,60,Ontario
 42,Hales Barton,way,1283416479,4,Arkell Road,60,Ontario
 42,Hales Barton,way,1283416482,4,Arkell Road,60,Ontario
@@ -24941,146 +24941,146 @@ batch,area,type,id,version,street,housenumber,before_province
 50,Hanlon Creek,way,161133173,5,Stone Road West,110,Ontario
 50,Hanlon Creek,way,139208693,3,Stone Road West,130,Ontario
 50,Hanlon Creek,way,139208634,5,Stone Road West,174,Ontario
-50,Hanlon Creek,way,1444079476,2,Stone Road West,252,Ontario
-50,Hanlon Creek,way,1444079477,2,Stone Road West,252,Ontario
-50,Hanlon Creek,way,1444079478,2,Stone Road West,252,Ontario
-50,Hanlon Creek,way,1444079479,2,Stone Road West,252,Ontario
-50,Hanlon Creek,way,1444079480,2,Stone Road West,252,Ontario
-50,Hanlon Creek,way,798114810,4,Stone Road West,252,Ontario
-50,Hanlon Creek,way,798114815,4,Stone Road West,252,Ontario
-50,Hanlon Creek,way,798114816,4,Stone Road West,252,Ontario
-50,Hanlon Creek,way,798114817,4,Stone Road West,252,Ontario
-50,Hanlon Creek,way,798114818,4,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891277662,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891277663,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891277664,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891277665,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891277666,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891277667,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891277668,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891277669,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891277670,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891277671,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891277672,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891280250,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891280251,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891280252,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891280253,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891280254,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891280255,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891280256,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891280257,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891280258,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891280259,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891282970,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891282971,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891282972,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891282973,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891282974,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891282975,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891282976,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891282977,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891282978,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891282979,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891282980,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891282981,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891282982,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891284960,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891284961,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891284962,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891284963,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891284964,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891284965,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891284966,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891284967,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891284968,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891284969,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891284970,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292868,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292869,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292870,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292871,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292872,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292873,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292874,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292875,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292876,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292881,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292882,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292883,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292884,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292885,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292886,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292887,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292888,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292889,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292890,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292891,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292892,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292893,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292894,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292895,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292896,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292897,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292898,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292899,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292900,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292901,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292902,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891292903,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303281,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303282,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303283,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303284,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303285,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303286,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303287,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303288,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303289,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303290,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303291,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303292,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303293,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303294,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303295,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303296,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303297,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303298,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303299,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303300,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303301,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303302,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303303,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303304,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303305,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303306,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303307,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303308,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303309,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303310,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303311,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303312,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303313,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303314,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303315,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303316,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303317,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303318,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303319,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303324,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303325,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303326,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303327,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303328,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303329,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303330,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303331,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303332,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303333,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303334,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303335,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303336,3,Stone Road West,252,Ontario
-50,Hanlon Creek,way,891303337,3,Stone Road West,252,Ontario
+50,Hanlon Creek,way,1444079476,3,Stone Road West,252,Ontario
+50,Hanlon Creek,way,1444079477,3,Stone Road West,252,Ontario
+50,Hanlon Creek,way,1444079478,3,Stone Road West,252,Ontario
+50,Hanlon Creek,way,1444079479,3,Stone Road West,252,Ontario
+50,Hanlon Creek,way,1444079480,3,Stone Road West,252,Ontario
+50,Hanlon Creek,way,798114810,5,Stone Road West,252,Ontario
+50,Hanlon Creek,way,798114815,5,Stone Road West,252,Ontario
+50,Hanlon Creek,way,798114816,5,Stone Road West,252,Ontario
+50,Hanlon Creek,way,798114817,5,Stone Road West,252,Ontario
+50,Hanlon Creek,way,798114818,5,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891277662,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891277663,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891277664,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891277665,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891277666,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891277667,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891277668,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891277669,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891277670,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891277671,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891277672,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891280250,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891280251,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891280252,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891280253,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891280254,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891280255,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891280256,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891280257,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891280258,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891280259,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891282970,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891282971,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891282972,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891282973,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891282974,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891282975,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891282976,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891282977,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891282978,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891282979,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891282980,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891282981,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891282982,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891284960,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891284961,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891284962,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891284963,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891284964,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891284965,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891284966,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891284967,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891284968,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891284969,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891284970,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292868,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292869,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292870,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292871,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292872,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292873,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292874,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292875,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292876,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292881,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292882,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292883,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292884,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292885,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292886,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292887,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292888,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292889,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292890,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292891,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292892,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292893,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292894,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292895,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292896,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292897,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292898,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292899,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292900,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292901,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292902,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891292903,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303281,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303282,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303283,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303284,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303285,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303286,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303287,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303288,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303289,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303290,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303291,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303292,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303293,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303294,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303295,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303296,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303297,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303298,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303299,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303300,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303301,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303302,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303303,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303304,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303305,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303306,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303307,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303308,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303309,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303310,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303311,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303312,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303313,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303314,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303315,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303316,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303317,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303318,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303319,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303324,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303325,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303326,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303327,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303328,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303329,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303330,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303331,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303332,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303333,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303334,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303335,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303336,4,Stone Road West,252,Ontario
+50,Hanlon Creek,way,891303337,4,Stone Road West,252,Ontario
 50,Hanlon Creek,node,13252526497,2,Stone Road West,292,Ontario
 50,Hanlon Creek,node,13252526499,2,Stone Road West,292,Ontario
 50,Hanlon Creek,node,13252526501,2,Stone Road West,292,Ontario
@@ -34742,7 +34742,7 @@ batch,area,type,id,version,street,housenumber,before_province
 67,Waverley,node,13198848763,2,Woodlawn Road East,122,Ontario
 67,Waverley,way,762133360,3,Woodlawn Road East,133,Ontario
 67,Waverley,way,178085150,6,Woodlawn Road East,19,Ontario
-67,Waverley,way,178085155,5,Woodlawn Road East,21,Ontario
+67,Waverley,way,178085155,6,Woodlawn Road East,21,Ontario
 67,Waverley,way,178085151,5,Woodlawn Road East,23,Ontario
 67,Waverley,way,882941965,2,Woodlawn Road East,390,Ontario
 67,Waverley,way,882941961,2,Woodlawn Road East,392,Ontario
@@ -35131,7 +35131,7 @@ batch,area,type,id,version,street,housenumber,before_province
 68,Pine Ridge - Westminster Woods,way,801563084,3,Bard Boulevard,105,Ontario
 68,Pine Ridge - Westminster Woods,way,801563085,3,Bard Boulevard,105,Ontario
 68,Pine Ridge - Westminster Woods,way,801563086,3,Bard Boulevard,105,Ontario
-68,Pine Ridge - Westminster Woods,way,878035921,4,Bard Boulevard,106,Ontario
+68,Pine Ridge - Westminster Woods,way,878035921,5,Bard Boulevard,106,Ontario
 68,Pine Ridge - Westminster Woods,way,960612430,2,Bard Boulevard,11,Ontario
 68,Pine Ridge - Westminster Woods,way,960612429,2,Bard Boulevard,15,Ontario
 68,Pine Ridge - Westminster Woods,way,960612428,2,Bard Boulevard,17,Ontario
@@ -36192,7 +36192,7 @@ batch,area,type,id,version,street,housenumber,before_province
 70,Pine Ridge - Westminster Woods,way,801660451,3,Farley Drive,81,Ontario
 70,Pine Ridge - Westminster Woods,way,1443359761,1,Farley Drive,83,Ontario
 70,Pine Ridge - Westminster Woods,way,1443359762,1,Farley Drive,85,Ontario
-70,Pine Ridge - Westminster Woods,way,969441654,2,Farley Drive,98,Ontario
+70,Pine Ridge - Westminster Woods,way,969441654,3,Farley Drive,98,Ontario
 70,Pine Ridge - Westminster Woods,way,802540407,3,Frederick Drive,100,Ontario
 70,Pine Ridge - Westminster Woods,way,802540411,3,Frederick Drive,101,Ontario
 70,Pine Ridge - Westminster Woods,way,802540408,5,Frederick Drive,64,Ontario
@@ -44025,7 +44025,7 @@ batch,area,type,id,version,street,housenumber,before_province
 83,Grange Hill East,way,802541827,2,Watson Parkway South,549,Ontario
 83,Grange Hill East,way,802541839,2,Watson Parkway South,565,Ontario
 83,Grange Hill East,way,802541840,2,Watson Parkway South,581,Ontario
-83,Grange Hill East,way,942024395,2,Watson Road North,144,Ontario
+83,Grange Hill East,way,942024395,3,Watson Road North,144,Ontario
 83,Grange Hill East,way,942046712,2,Watson Road North,177,Ontario
 83,Grange Hill East,way,942046713,2,Watson Road North,179,Ontario
 83,Grange Hill East,way,802547722,2,Watson Road North,18,Ontario
@@ -44037,7 +44037,7 @@ batch,area,type,id,version,street,housenumber,before_province
 83,Grange Hill East,way,802547723,3,Watson Road North,24,Ontario
 83,Grange Hill East,way,1444356820,1,Watson Road South,134,Ontario
 83,Grange Hill East,way,802544821,3,Watson Road South,170,Ontario
-83,Grange Hill East,way,311436741,2,Watson Road South,2,Ontario
+83,Grange Hill East,way,311436741,3,Watson Road South,2,Ontario
 83,Grange Hill East,way,208487921,2,Watson Road South,236,Ontario
 83,Grange Hill East,way,311436742,2,Watson Road South,50,Ontario
 83,Grange Hill East,way,937553007,2,Watt Street,10,Ontario
@@ -44203,7 +44203,7 @@ batch,area,type,id,version,street,housenumber,before_province
 94,Hanlon Creek,node,7202168500,5,Scottsdale Drive,649,ON
 94,Hanlon Creek,way,354160042,7,Scottsdale Drive,650,ON
 94,Hanlon Creek,node,9228949507,2,Scottsdale Drive,650,ON
-94,Hanlon Creek,node,9228949508,4,Scottsdale Drive,650,ON
+94,Hanlon Creek,node,9228949508,5,Scottsdale Drive,650,ON
 94,Hanlon Creek,node,9228949509,1,Scottsdale Drive,650,ON
 94,Hanlon Creek,node,9228949510,3,Scottsdale Drive,650,ON
 94,Hanlon Creek,node,9228949511,1,Scottsdale Drive,650,ON
@@ -44679,7 +44679,7 @@ batch,area,type,id,version,street,housenumber,before_province
 105,Downtown - Sunny Acres,node,9793948572,4,Gordon Street,5,ON
 105,Downtown - Sunny Acres,node,9793948574,6,Gordon Street,5,ON
 105,Downtown - Sunny Acres,way,413398786,2,Gordon Street,"64,72",ON
-105,Downtown - Sunny Acres,way,217474772,6,Gordon Street,65,ON
+105,Downtown - Sunny Acres,way,217474772,7,Gordon Street,65,ON
 105,Downtown - Sunny Acres,way,271076103,2,Gordon Street,"7,9,11",ON
 105,Downtown - Sunny Acres,way,424356250,4,Gordon Street,73,ON
 105,Downtown - Sunny Acres,way,713131227,3,Gordon Street,87,ON

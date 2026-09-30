@@ -1,7 +1,12 @@
 # Province count correction — draft, for thread #135103
 
-**Not posted.** Nothing in `mechanical-edits/province-removal/batches/` may be
-uploaded until it is.
+**Superseded — never posted.** Post #21 was edited on 2026-09-18 (21:20Z,
+inside Discourse's grace window, so no revision shows) to announce removing
+`addr:province` from all 44,796 objects. The scale is on the thread, and the
+question below about a fresh window is moot. The one paragraph still owed —
+*where the wrong number came from* — has moved to
+`mechanical-edits/flats-hygiene/POST21_ADDENDUM.md`. Kept as written below,
+for the record.
 
 Post #18 (2026-09-16) went up the night *before* the province count was
 re-measured, so it lists "Remove `addr:province=Ontario`" under *What is next*

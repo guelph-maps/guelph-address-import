@@ -1,10 +1,17 @@
 # Campaign 1 — remove `addr:province`
 
-Consented 2026-09-10 on [thread #135103][thread]. Built 2026-09-17.
+Consented 2026-09-10 on [thread #135103][thread], at ~3,699. Built 2026-09-17.
+**True scale announced 2026-09-18** in post #21 — *"removing addr:province
+from anything that has it – 44,796 instances"* — without a fresh window.
+Rebuilt against live OSM 2026-09-29: same 44,763 objects, 155 of them at a
+newer version. Uploads **after** flats-hygiene, and is rebuilt again with
+`--refetch` once that is in: all 325 flats-hygiene objects are in this set.
 
-## The scope is twelve times what we told the community
+## The scope is twelve times what we first told the community
 
-**Do not upload this campaign on the existing consent.** Re-measured against
+*(This once said: do not upload on the existing consent. #21 settled that —
+see above. What is still owed on the thread is the admission that #14's
+figure was wrong; it is in `flats-hygiene/POST21_ADDENDUM.md`.)* Re-measured against
 live Overpass on 2026-09-17:
 
 | Value | Objects |

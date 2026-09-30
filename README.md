@@ -54,17 +54,25 @@ Publication state:
    #135103, `addr:full` withdrawal included. The 14-day objection window ran to
    2026-09-10 and closed with no objections; ARandomThumbtack replied
    supportively in #15, and #16 (2026-09-01) followed up on the open questions.
-   The unit split is consented. **The province edit is not** — #14 asked for it
-   at ~3,699 objects and it is 44,796, so that consent does not cover what the
-   campaign actually does. See `PROVINCE_CORRECTION_POST.md`.
+   The unit split is consented. **The province edit was not covered by it** —
+   #14 asked for it at ~3,699 objects and it is 44,796. Its true scale reached
+   the thread in #21 on 2026-09-18 (item 7), without a fresh window.
 5. ✅ `FINDINGS_POST.md` — **posted 2026-09-16** as post #18, in condensed
    form, the night before the province count was re-measured. It therefore
    carries neither the correction nor the notices campaigns 4 and 5 need.
-6. ⬜ `PROVINCE_CORRECTION_POST.md` — **not posted.** Corrects #14's figure and
-   asks whether the corrected scope wants a fresh window.
+6. ➖ `PROVINCE_CORRECTION_POST.md` — **superseded, never posted.** #21 was
+   edited inside Discourse's five-minute grace window (2026-09-18 21:20Z, so
+   no revision shows) to announce removing `addr:province` from all 44,796 —
+   the corrected figure, stated as a go-ahead rather than asked as a question,
+   so the draft's question about a fresh window is moot. Still owed: its
+   admission that #14's ~3,699 was a sample published as a census. That
+   paragraph now lives in
+   [`POST21_ADDENDUM.md`](mechanical-edits/flats-hygiene/POST21_ADDENDUM.md),
+   for #21's promised update.
 7. ✅ `mechanical-edits/flats-hygiene/ANNOUNCEMENT.md` — **posted 2026-09-18**
    as post #21, in condensed form, like #18 before it. What went up: the two
-   campaigns named together, the 74-of-81 overlap, and the four `addr:flats`
+   campaigns named together — plus campaign 1 at 44,796, edited in four
+   minutes later — the 74-of-81 overlap, and the four `addr:flats`
    defects with their examples. What did **not**: the 81-of-635 figure and the
    554 left alone — which the draft called the hard number to lead with — the
    round-trip gate, the 325-objects-in-22-batches plan with its pilot, and the
@@ -82,8 +90,9 @@ wiki's reasoning back, and weighed in on the parked `44B` idea (see
 [`IDEAS.md`](IDEAS.md)).
 
 **Five mechanical edits** ride along with the proposal, each announced
-separately under the Automated Edits code of conduct. 1 and 2 went through a
-14-day window; 3, 4 and 5 were announced on short notice instead, with the
+separately under the Automated Edits code of conduct. 2 went through a
+14-day window, and 1 through the same one at a twelfth of its real size; 1's
+true scale, and 3, 4 and 5, were announced on short notice instead, with the
 standing offer to revert on request:
 
 1. **Remove `addr:province`** — ✅ **built 2026-09-17**, 44,763 objects in
@@ -91,8 +100,10 @@ standing offer to revert on request:
    the thread was told ~3,699, the real figure is 44,796 (44,155 `Ontario`,
    607 `ON`, 1 `On`) — very nearly every address object in the city. 3,699 was
    a sample count published as a census. The edit is unchanged and still
-   right; its size was misstated, so it waits on a correction and the
-   community's answer on whether a fresh window is wanted. See
+   right; its size was misstated. Its true scale was announced in #21 on
+   2026-09-18 without a fresh window. Rebuilt 2026-09-29 (155 versions had
+   moved); uploads **after** campaigns 4 and 5, which share all 325 of their
+   objects with it. See
    [`mechanical-edits/province-removal/README.md`](mechanical-edits/province-removal/README.md).
 2. **Split double-encoded unit housenumbers** — ✅ **done 2026-09-16**, 5,521
    objects in 36 changesets. `addr:housenumber=714-30` + `addr:unit=30` →

@@ -137,14 +137,15 @@ CAMPAIGN = C.Campaign(
     sample=sample_html,
     review_columns=["province"],
     steps=[
-        "<strong>Do not start.</strong> The thread was told this edit touches "
-        "~3,699 objects. It touches ~44,800. Post the correction first - see "
-        "README.md.",
+        "<strong>Announced.</strong> Post #21 (2026-09-18) states the true "
+        "scale, 44,796. Upload <em>after</em> flats-hygiene, and rebuild with "
+        "<code>--refetch</code> once it is in: all 325 of its objects are in "
+        "this set too.",
         "Upload the pilot, then wait a day and look at what came back before "
         "doing the rest.",
         "The <code>ON</code> / <code>On</code> batches are last and separate. "
-        "They are covered by the wiki but not named in the forum post; upload "
-        "them only if the thread is content.",
+        "#21's 44,796 includes them; they stay last so they can still be "
+        "held back on request.",
         "Rebuild with <code>--refetch</code> on the day you upload. Versions "
         "prepared earlier will have moved, and a stale one costs you a "
         "conflict per object.",
