@@ -9,8 +9,8 @@ have been *found* but not yet proposed, so they do not live only in a chat log.
 | 2 | Split double-encoded unit housenumbers | **done** 2026-09-16, 5,521 objects, 36 changesets |
 | — | Campaign 2/3 leftovers, corroborated by the City roster | **done**, 32 objects |
 | 3 | Unit lists `addr:unit` → `addr:flats` (447) | **done** 2026-09-17, 447 objects, 23 changesets |
-| 4 | Remove meaningless `addr:interpolation` (81) | **announced** 2026-09-18 (post #21) with campaign 5, one batch set — **still not uploaded**, rebuilt 2026-09-29 |
-| 5 | A real `addr:flats` normalizer (292 of 464 untidy, re-measured) | **announced** 2026-09-18 (post #21), merged with campaign 4 — 325 objects, 22 batches, **still not uploaded**, rebuilt 2026-09-29 |
+| 4 | Remove meaningless `addr:interpolation` (81) | **done** 2026-09-30, with campaign 5 — changesets 189752405–189752690, all verified |
+| 5 | A real `addr:flats` normalizer (292 of 464 untidy, re-measured) | **done** 2026-09-30, merged with campaign 4 — 325 objects, 22 changesets, each read back from the API and verified |
 
 ---
 
