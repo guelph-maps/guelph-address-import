@@ -27,3 +27,8 @@ mechanical-edits/province-removal/batches/
 mechanical-edits/flats-hygiene/live.osm
 mechanical-edits/flats-hygiene/batches/
 .pytest_cache/
+
+# Mechanical edit 6 (unit doors): same arrangement.
+mechanical-edits/unit-doors/live.osm
+mechanical-edits/unit-doors/live_units.osm
+mechanical-edits/unit-doors/batches/
