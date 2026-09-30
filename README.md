@@ -123,7 +123,8 @@ would have duplicated against the badly-encoded objects.
 **Baseline conflation ran 2026-09-29** against a fresh extract (Geofabrik PBF
 of 2026-09-28, so it post-dates campaigns 2 and 3 — an older extract would
 have proposed door nodes beside the objects the split had already fixed).
-134 tiles built from the 23 areas; 53,847 source points at snapshot 47.
+134 tiles built from the 23 areas; 53,847 source points at snapshot 47, and
+all 134 runs recorded against snapshot 47 — no tile picked up a stale one.
 
 | | |
 |---|---|
@@ -139,12 +140,13 @@ and only the first is a tooling problem:
 
 1. **No `.env.prod`.** Only the `.example` files exist, so there are no OSM
    OAuth credentials and the app cannot authenticate.
-2. **2,621 candidates are `AUTO_APPROVED`** — passed by the check suite with
-   no human having looked at them. The wiki says *"nothing uploads unreviewed"*
-   and *"every candidate is approved or rejected by a named reviewer"*, and
-   `osm_export` emits every candidate at `stage='APPROVED'`, auto or not. The
-   review UI surfaces them as `AUTO_APPROVED` rows precisely so a reviewer can
-   walk them; that walk has not happened.
+2. **The review walk has not happened.** 2,621 candidates carry the check
+   suite's pre-verdict `AUTO_APPROVED` and 1,325 are `REVIEW_PENDING`. That is
+   not a bypass — the UI lists both kinds together (`review.py` synthesises the
+   auto-approved ones as rows for exactly this reason) and nothing uploads
+   without a human in the UI clicking per tile. But the walk is a person's job
+   and no one has done it, so the counts above are the size of that job, not a
+   queue that is ready to go.
 3. **The published roll-out is one pilot tile, posted to the thread with its
    counts and changeset, then a one-week hold** before the rest.
 
