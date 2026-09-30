@@ -101,7 +101,7 @@ batch,area,type,id,version,street,housenumber,edit,shape,flats_before,flats_afte
 13,Non-Residential - A,way,344325628,6,Elmira Road North,355,interpolation,closed,100-140,100-140,all
 13,Non-Residential - A,way,399149535,4,Elmira Road North,473,flats,closed,1;2;3;4,1-4,
 13,Non-Residential - A,way,802121047,3,Monarch Road,27,flats,closed,1;2;3;4;5;6,1-6,
-14,Pine Ridge - Westminster Woods,way,878035921,4,Bard Boulevard,106,flats,closed,101-114;201-220;301-320;401-418;,101-114;201-220;301-320;401-418,
+14,Pine Ridge - Westminster Woods,way,878035921,5,Bard Boulevard,106,flats,closed,101-114;201-220;301-320;401-418;,101-114;201-220;301-320;401-418,
 14,Pine Ridge - Westminster Woods,way,878035915,4,Colonial Drive,2,interpolation+flats,closed,101-110;201-211;301-313;401-414;,101-110;201-211;301-313;401-414,all
 14,Pine Ridge - Westminster Woods,way,802540407,3,Frederick Drive,100,flats,closed,1;10;11;12;13;14;15;16;2;3;4;5;6;7;8;9,1-16,
 14,Pine Ridge - Westminster Woods,way,802540411,3,Frederick Drive,101,flats,closed,1;10;11;12;13;14;15;16;2;3;4;5;6;7;8;9,1-16,
@@ -177,8 +177,8 @@ batch,area,type,id,version,street,housenumber,edit,shape,flats_before,flats_afte
 18,June Avenue,way,1436604428,2,Burns Drive,9,flats,closed,53;54;55;56;57;58,53-58,
 18,June Avenue,way,1436604429,2,Burns Drive,9,flats,closed,59;60;61;62;63;64,59-64,
 18,June Avenue,way,802123327,3,Burns Drive,9,flats,closed,65;66;67;68;69;70,65-70,
-18,June Avenue,way,1436028337,2,Woodlawn Road East,70,interpolation+flats,closed,101-114;201-218;301-318;,101-114;201-218;301-318,all
-18,June Avenue,way,353492157,5,Woodlawn Road East,72,interpolation+flats,closed,101-103;201-207;301-307;401-407;501-507;601-607;,101-103;201-207;301-307;401-407;501-507;601-607,all
+18,June Avenue,way,1436028337,4,Woodlawn Road East,70,interpolation+flats,closed,101-114;201-218;301-318;,101-114;201-218;301-318,all
+18,June Avenue,way,353492157,6,Woodlawn Road East,72,interpolation+flats,closed,101-103;201-207;301-307;401-407;501-507;601-607;,101-103;201-207;301-307;401-407;501-507;601-607,all
 18,June Avenue,way,773015474,3,Woodlawn Road West,243-263,interpolation,closed,,,odd
 19,Non-Residential - C,way,287908449,4,Goodwin Drive,37,interpolation+flats,closed,101-113;201-214;301-314;401-414;,101-113;201-214;301-314;401-414,all
 19,Non-Residential - C,way,287908442,4,Goodwin Drive,39,interpolation+flats,closed,101-111;201-212;301-312;401-412;,101-111;201-212;301-312;401-412,all
