@@ -173,12 +173,15 @@ All 31 `nearby_street_mismatch` warnings are held for review, not auto-approved.
 **Blockers before the pilot upload** (not before publishing — the wiki page
 states intent):
 
-- The engine writes `addr:housenumber`, `addr:street`, `addr:source` and the
-  enriched `addr:postcode`, and no `source:license` on the changeset. Still
-  missing for Guelph: the constant `addr:city=Guelph`, and the changeset
-  `source:license`. (Dropping `addr:province` removed one of the two constants
-  this used to need; `addr:source` and `created_by=address-importer-friend`
-  landed in the engine 2026-08-27.)
+- ~~Constant `addr:city=Guelph` and changeset `source:license`~~ — **done**:
+  the engine reads `[export] node_tags` and `source_license`, and
+  `config.toml` sets both (checked 2026-10-01).
+- **The unit-shape review comes first** (2026-10-01): `unit_shape_verdicts` is
+  empty. 54 of the 409 multi-unit groups are open to a verdict — 17 `review`
+  that need a decision, 27 `nodes` and 10 `collapse` to confirm; the other 355
+  are frozen by what OSM already holds. Verdicts change how many candidates
+  exist, so they must land **before** ingest — the 2026-09-29 conflation
+  above is superseded once they do, and is rerun on a fresh extract after.
 - The engine still has **no tag-modification path** — it creates nodes. The
   route taken instead was JOSM, area by area, as the 2025 import did: each
   campaign directory under `mechanical-edits/` builds `.osm` batches carrying
