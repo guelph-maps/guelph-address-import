@@ -169,6 +169,17 @@ Run over all 514 stacked groups in the source:
 
 So 349 of the 407 unit-bearing groups decide themselves and 58 want eyes — about one in seven. The review cases are emitted '''collapsed rather than held back''', because collapsing is defensible either way and it puts one node in front of the reviewer instead of 140 to reject. <code>252 Stone Road West</code> is the honest example: a mall whose 140 "units" are storefronts, and whether a storefront is a front door is not a judgement any rule should be making silently.
 
+=== What the numbering cannot see: the buildings (added 2026-10-01) ===
+
+Numbering misreads one shape: a townhouse complex numbered by block. <code>15 Carere Crescent</code>'s <code>9A;9B</code> reads as building-coded suites, though it is 66 townhouses in 34 buildings. So the groups the rule collapses or doubts are also measured against OSM's own building outlines, and two findings are recorded as verdicts — each marked as automatic, carrying its measurements, and reversible one by one:
+
+* Units spread over three or more buildings, a median of two or fewer to a building → '''door nodes'''. Ten groups, among them 15 Carere Crescent, 176 and 224 Janefield Avenue and 31 Greengate Road.
+* A doubted group of eight or more units, mostly in one building with under 25 m² of footprint each → '''collapse'''. Two: 63 and 73 Arthur Street South.
+
+Everything else stays with the rule and a human reviewer.
+
+'''Doors beside a listing.''' Where a townhouse complex's buildings already list their units in <code>addr:flats</code>, its doors are still added, as nodes carrying <code>addr:unit</code> beside the building. The listing is left as it is: this import only creates. The two keys mean different things — the building ''contains'' unit 30, the door node ''is'' unit 30 — and they are never on the same object. Until 2026-10-01 a listing counted as the doors and they were skipped. Removing a listing once its doors exist would be a separate edit, and is not part of this import.
+
 === <code>addr:flats</code>, and its limits ===
 
 Collapsed nodes list their units as semicolon-separated ranges, broken wherever the numbering skips. A single range would be a lie: Guelph's tower units are floor-coded, so <code>19 Woodlawn Road East</code> runs 101 to 915 while holding 142 units, and only 2 of 46 all-numeric towers are contiguous. <code>23 Woodlawn Road East</code>, 103 units, comes out as

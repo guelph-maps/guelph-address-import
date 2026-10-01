@@ -210,8 +210,11 @@ status = "props:STATUS"
 #
 # The fix is a footprint guard on the collapse branch, not a longer tag: a
 # group whose units span more than roughly one building should be per-door
-# even when its numbering looks coded. Until that lands, the three are flagged
-# for review and a reviewer should expect to route them to door nodes by hand.
+# even when its numbering looks coded. LANDED AS VERDICTS 2026-10-01, not in
+# the rule: address-importer-friend t2/unit_autojudge.py measures every group
+# the rule collapses or doubts against OSM's building outlines, and units in
+# 3+ buildings at a median of <=2 each get an `auto:` nodes verdict. All three
+# are among the 10 it recorded.
 # Do NOT "fix" this by truncating or by raising the limit — both would paper
 # over a group that was misread.
 # Known cosmetic wrinkle: strays sort to the tail, so 511 Edinburgh Road South

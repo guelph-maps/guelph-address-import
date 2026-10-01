@@ -176,10 +176,15 @@ states intent):
 - ~~Constant `addr:city=Guelph` and changeset `source:license`~~ — **done**:
   the engine reads `[export] node_tags` and `source_license`, and
   `config.toml` sets both (checked 2026-10-01).
-- **The unit-shape review comes first** (2026-10-01): `unit_shape_verdicts` is
-  empty. 54 of the 409 multi-unit groups are open to a verdict — 17 `review`
-  that need a decision, 27 `nodes` and 10 `collapse` to confirm; the other 355
-  are frozen by what OSM already holds. Verdicts change how many candidates
+- **The unit-shape review comes first** (2026-10-01). Three engine changes
+  landed that evening (address-importer-friend `2d45b3ba`, `c7ec20ca`,
+  `998342d6`): a building's unit listing no longer stands in for its doors
+  (all 910 MATCH_LISTED rows, 77 groups, re-read MISSING); a group somebody
+  else shaped in OSM takes a verdict, only our own uploads freeze; and a judge
+  over OSM's 49,677 building outlines recorded 12 `auto:` verdicts — 10
+  townhouse complexes to doors, 63 and 73 Arthur Street South to collapse.
+  54 groups have nothing in OSM yet (17 `review`); all 409 now take a
+  verdict. Verdicts change how many candidates
   exist, so they must land **before** ingest — the 2026-09-29 conflation
   above is superseded once they do, and is rerun on a fresh extract after.
 - The engine still has **no tag-modification path** — it creates nodes. The
@@ -192,9 +197,11 @@ states intent):
   `addr:flats` listing overflows OSM's 255-character limit turn out to be
   complexes 100–200 m across, not buildings — 15 Carere Crescent is 32
   separate townhouse blocks. The collapse branch decides on unit numbering and
-  never asks how far apart the units are. Fix the footprint guard before any
-  unit-bearing import run, or those three collapse into a single node each.
-  `config.toml` carries the measurements.
+  never asks how far apart the units are. **Resolved as verdicts 2026-10-01**:
+  the building judge reads all three as townhouse complexes and records
+  `nodes` (31 Greengate Road and 224 Janefield Avenue, which numbered as
+  coded too, with them). The guard inside the rule itself is still unbuilt;
+  the verdicts carry it. `config.toml` carries the measurements.
 
 **[`mechanical-edits/TODO.md`](mechanical-edits/TODO.md) is the ledger** for
 all five campaigns. The two found *while* running the others are now **built
