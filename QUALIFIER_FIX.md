@@ -26,6 +26,8 @@ The engine will **not** flag these as stale. `unit_hash` covers the *distinct* d
 
 To re-judge them, clear or confirm each verdict at `/units/shapes?focus=<civic_key>`, then judge the new 155A / 8A / 10A groups.
 
+**Cleared 2026-10-03 at the operator's request.** The three verdicts above were deleted with `unit_verdicts.clear` so they show up unjudged. Their old values are recorded in the table above.
+
 One more merged group carried units but had no verdict: `38|RIDGEWAY AVENUE|GUELPH` (38, 38A, 38B, each with a plain point and unit 2). It is now three groups, and all three are unjudged.
 
 None of these groups is frozen, because nothing has been uploaded.
