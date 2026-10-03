@@ -27,6 +27,14 @@ Two of them have only a single unit point: 139 Arthur Street North, unit A
 me most. It looks like a single detached house with its own PIN and roll number,
 and the neighbouring lots have no units. What does the 119 stand for?
 
+Last, a few UNIT_NO values I can't read:
+
+- 32 Regent Street: COMMON. Is this the condominium's common elements?
+- 130 Silvercreek Parkway North: BLD D and BLD E, beside units 1 to 24. Are
+  these whole buildings rather than units?
+- 53, 63 and 73 Arthur Street South: AT1 to AT8, RL1 to RL6, BHA, BHB, BHC-1,
+  BHC-2 and RR-A1 to RR-B2. What do the prefixes stand for?
+
 The full list of the 332 addresses is below, taken from the live layer on
 2 October 2026.
 
