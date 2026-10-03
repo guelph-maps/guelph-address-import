@@ -126,8 +126,8 @@ standing offer to revert on request:
    before→after list is
    [`mechanical-edits/flats-hygiene/FLATS_NORMALISATION_LIST.md`](mechanical-edits/flats-hygiene/FLATS_NORMALISATION_LIST.md).
    Its batches were cut just before the engine stopped writing a pair as a
-   range, so 126 values went up as `1-2`. A follow-up spells them out as `1;2`
-   (built 2026-10-02, not uploaded):
+   range, so 126 values went up as `1-2`. A follow-up spelled them out as
+   `1;2` (done 2026-10-03, 14 changesets):
    [`mechanical-edits/flats-pairs/`](mechanical-edits/flats-pairs/).
 
 Plus 32 stragglers the rules first refused and the City's roster later

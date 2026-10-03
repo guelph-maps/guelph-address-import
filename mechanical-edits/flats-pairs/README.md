@@ -1,6 +1,6 @@
 # Campaign 5, pairs — `1-2` becomes `1;2`
 
-**Built 2026-10-02, not uploaded.** 126 objects in 12 batches. Every one of
+**Done 2026-10-03.** 126 objects in 14 changesets, 189908359–189908514, each read back from the API and verified (log below). 126 objects in 12 batches as built. Every one of
 them was written by campaign 5.
 
 Campaign 5 re-rendered `addr:flats` through the engine's `compress_flats`.
@@ -76,3 +76,12 @@ split by area, the same as every earlier campaign.
   Edinburgh. Since then the builder clears old batch files, the loop refuses a
   batch number that matches two files, and the verifier skips changesets that
   are already recorded.
+- **Batches 2–7** went up as built: changesets 189908416–189908434.
+- **Batch 8 (Exhibition Park)** conflicted. skfd had edited way 925775200
+  (57 Suffolk Street West, adding `name=King Edward Place` and three more tags)
+  at 23:37, after the 23:00 fetch. That way moved to **batch 13**, prepared
+  against v7 so its new tags were kept, and went up as 189908514. The other 3
+  objects went up as 189908437, the changeset the conflicted attempt had left
+  open.
+- **Batches 9–12**: changesets 189908500–189908508.
+- Read back afterwards from the main API, all 126 objects hold the split form.
