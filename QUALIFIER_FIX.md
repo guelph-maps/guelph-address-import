@@ -36,6 +36,25 @@ The `tool.db` candidates were built before the fix. 203 of them carry a QUALIFIE
 
 The worst runs by approved count are 65, 33, 67, 85, 13, 36 and 49 (all `-batch-20260929`).
 
+## What OSM holds at the lettered points
+
+Checked against the Geofabrik extract of 2026-09-28 (`data/osm`): OSM addresses within 30 m on the same normalized street. There are 198 lettered civic addresses (206 rows):
+
+- **28** already have their lettered number in OSM (`155A`). After the fix they match.
+- **152** have nothing nearby with the bare number or the lettered one, so they will read MISSING and get imported as their own addresses.
+- **18** have only a bare-number object nearby. For 14 of these, the City also publishes the plain number, so that object belongs to the plain address and is correct.
+
+That leaves **4 OSM objects with a bare number at a spot where the City publishes only the lettered pair**:
+
+- way 1442154696 at 114 Surrey St E (City: 114A, 114B)
+- node 1880282526 at 38 Dublin St S (38A, 38B)
+- node 11082000915 at 54 Carden St (54A, 54B)
+- node 4028442011 at 616 Woodlawn Rd E (616A, 616B)
+
+Each could be a building-level address for a duplex as easily as a mis-tag. Look at them while reviewing; they are not a mechanical edit.
+
+So `[prior_import] tag_mapping` (STREETNO → addr:housenumber) does not mean the 2025 import wrote bare numbers at lettered points: the counts above show no such pattern. That table is a record only, and the engine never reads it.
+
 ## Not covered
 
 `t2/reverse_sweep.py` hard-codes `number AS address_number` and Toronto's `LO_NUM_SUF`, so it still reads 155A as 155. It is Toronto-shaped and is not part of the Guelph import path.
