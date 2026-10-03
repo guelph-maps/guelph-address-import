@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<osm version="0.6" generator="guelph-area-duplicates"><changeset><tag k="comment" v="Guelph address import: remove 5 address nodes created inside parks and a school that already carry the same address (import conflation measured areas from their centre; fixed)" /><tag k="source" v="Guelph Open Data" /><tag k="import" v="yes" /><tag k="import_plan" v="https://wiki.openstreetmap.org/wiki/Guelph/Address_Import/Continuous" /></changeset><node id="14245022294" visible="true" version="1" changeset="189912809" timestamp="2026-10-03T07:28:56Z" user="skfd imports" uid="24088502" lat="43.5574400" lon="-80.2361200" action="delete">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="24" />
+  <tag k="addr:postcode" v="N1E 2S7" />
+  <tag k="addr:source" v="Guelph Open Data" />
+  <tag k="addr:street" v="Franchetto Boulevard" />
+ </node>
+ <node id="14245099260" visible="true" version="1" changeset="189912796" timestamp="2026-10-03T07:28:40Z" user="skfd imports" uid="24088502" lat="43.5044200" lon="-80.1890900" action="delete">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="22" />
+  <tag k="addr:postcode" v="N1L 1P8" />
+  <tag k="addr:source" v="Guelph Open Data" />
+  <tag k="addr:street" v="Eugene Drive" />
+ </node>
+ <node id="14245110520" visible="true" version="1" changeset="189912614" timestamp="2026-10-03T07:22:46Z" user="skfd imports" uid="24088502" lat="43.5651900" lon="-80.2202200" action="delete">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="71" />
+  <tag k="addr:source" v="Guelph Open Data" />
+  <tag k="addr:street" v="Lee Street" />
+ </node>
+ <node id="14245110523" visible="true" version="1" changeset="189912614" timestamp="2026-10-03T07:22:46Z" user="skfd imports" uid="24088502" lat="43.5684700" lon="-80.2196000" action="delete">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="31" />
+  <tag k="addr:postcode" v="N1E 7E9" />
+  <tag k="addr:source" v="Guelph Open Data" />
+  <tag k="addr:street" v="O'connor Lane" />
+ </node>
+ <node id="14245110851" visible="true" version="1" changeset="189912680" timestamp="2026-10-03T07:24:55Z" user="skfd imports" uid="24088502" lat="43.5237800" lon="-80.1868800" action="delete">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:housenumber" v="388" />
+  <tag k="addr:postcode" v="N1L 1E6" />
+  <tag k="addr:source" v="Guelph Open Data" />
+  <tag k="addr:street" v="Arkell Road" />
+ </node>
+</osm>
