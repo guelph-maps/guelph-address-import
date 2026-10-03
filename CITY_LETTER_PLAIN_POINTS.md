@@ -8,7 +8,7 @@ I map Guelph's addresses in OpenStreetMap using your Addresses dataset
 (explore.guelph.ca/datasets/cityofguelph::addresses-1). Thank you for publishing
 it. I have one question I can't answer from the data itself.
 
-327 civic addresses have unit points (HAS_UNIT = Y) and also one point with no
+332 civic addresses have unit points (HAS_UNIT = Y) and also one point with no
 UNIT_NO (HAS_UNIT = N). For example, 147 Arthur Street North has units A, B and C
 plus a plain "147" (ADDID 34872).
 
@@ -23,7 +23,7 @@ glad to know it.
 A smaller related question: 82 addresses have unit points but no plain point at
 all. Is that expected, or should each of them have one? I can send that list too.
 
-The full list of the 327 addresses is below, taken from the live layer on
+The full list of the 332 addresses is below, taken from the live layer on
 2 October 2026.
 
 Thanks,
@@ -35,7 +35,7 @@ OpenStreetMap Guelph address import: https://github.com/guelph-maps/guelph-addre
 
 ## Addresses with both unit points and a plain point
 
-### Up to four units (81 addresses)
+### Up to four units (86 addresses)
 
 - 35 Airpark Place: 1, 3 (plain point ADDID 37020)
 - 52 Alma Street North: 2 (plain point ADDID 45969)
@@ -46,7 +46,8 @@ OpenStreetMap Guelph address import: https://github.com/guelph-maps/guelph-addre
 - 96 Bagot Street: A (plain point ADDID 54094)
 - 151 Bristol Street: B, C (plain point ADDID 11859)
 - 153 Bristol Street: B, C (plain point ADDID 57307)
-- 155 Bristol Street: B, C (plain point ADDID 57310, 57313)
+- 155 Bristol Street: B, C (plain point ADDID 57310)
+- 155A Bristol Street: B, C (plain point ADDID 57313)
 - 122 Cardigan Street: 1, 2, 3, 4 (plain point ADDID 24180)
 - 25 Dublin Street South: D (plain point ADDID 16747)
 - 27 Dublin Street South: A, B, C (plain point ADDID 54369)
@@ -84,8 +85,10 @@ OpenStreetMap Guelph address import: https://github.com/guelph-maps/guelph-addre
 - 115 Neeve Street: A, B (plain point ADDID 24673)
 - 10 Nicklin Crescent: B (plain point ADDID 3057)
 - 110 Norwich Street East: 1, 2, 4 (plain point ADDID 25329)
-- 8 Orchard Crescent: 2, 3 (plain point ADDID 57266, 57267)
-- 10 Orchard Crescent: 2, 3 (plain point ADDID 16451, 57268)
+- 8 Orchard Crescent: 2, 3 (plain point ADDID 57266)
+- 8A Orchard Crescent: 2, 3 (plain point ADDID 57267)
+- 10 Orchard Crescent: 2, 3 (plain point ADDID 16451)
+- 10A Orchard Crescent: 2, 3 (plain point ADDID 57268)
 - 37 Ottawa Crescent: B (plain point ADDID 23296)
 - 22 Oxford Street: A, B, C (plain point ADDID 25086)
 - 305 Paisley Road: A, B (plain point ADDID 25777)
@@ -100,7 +103,9 @@ OpenStreetMap Guelph address import: https://github.com/guelph-maps/guelph-addre
 - 44 Regent Street: B (plain point ADDID 55147)
 - 160 Renfield Street: 2, 3 (plain point ADDID 9369)
 - 36 Ridgeway Avenue: 2 (plain point ADDID 39327)
-- 38 Ridgeway Avenue: 2 (plain point ADDID 57281, 57282, 57283)
+- 38 Ridgeway Avenue: 2 (plain point ADDID 57281)
+- 38A Ridgeway Avenue: 2 (plain point ADDID 57282)
+- 38B Ridgeway Avenue: 2 (plain point ADDID 57283)
 - 615 Scottsdale Drive: A, B (plain point ADDID 43573)
 - 127 Silurian Drive: 2 (plain point ADDID 40604)
 - 460 Speedvale Avenue West: 1 (plain point ADDID 15857)
