@@ -373,6 +373,21 @@ policy = "per-door-or-collapse"
 [status]
 active_values = ["Active"]
 
+# 13 active rows carry STREETNO "0": placeholder points with no civic number,
+# two of them bridges (LANDMKNAME "Gow's Bridge" on Mccrae Boulevard, ADDID
+# 56660; "Norwich Street Bridge" on Norwich Street East, 56662). The others:
+# 7699 Stephanie Dr, 23417 Edinburgh Rd S, 26087 Watson Pkwy N, 39610 York Rd,
+# 44938 London Rd W, 48703 Poppy Dr E, 23545 Massey Rd, 39535 Woodlawn Rd E,
+# 20168 Scottsdale Dr, 56574 Imperial Rd N, 56663 Yarmouth St. Before this, 11
+# of them auto-approved and the initial import would have uploaded
+# addr:housenumber=0. Conflation now SKIPs them with the reason below. All 13
+# have no QUALIFIER and no unit (source checked 2026-10-03), so with
+# number_suffix they still project as a bare "0" — the key matches the
+# projected housenumber, not STREETNO. Engine: address-importer-friend
+# [skip] housenumbers, added 2026-10-03.
+[skip.housenumbers]
+"0" = "City placeholder point with no civic number (bridges and similar), not an address"
+
 # Operator-facing chrome — where the tool's header and footer point for Guelph.
 # Omitted keys are simply not shown (before 2026-08-29 every city was shown
 # Toronto's repo, thread and licence). No `open_data` here: Guelph's licence is
