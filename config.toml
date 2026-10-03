@@ -30,6 +30,15 @@ street_from = "street"
 # which inflated the survey's first distinct count 40,634 -> 53,706 (the trap
 # documented in 08-survey-results-2026-08-12.md). Synthesize instead.
 full_from = "number+street"
+# STREETNO holds only the digits; the letter is a separate QUALIFIER prop
+# (155A Bristol Street = "155" + "A"). Non-null on 206 active rows at snapshot
+# 47: A 106, B 85, C 8, D 3, E 2, B1, B2 (30B1/30B2 Edinburgh Road North).
+# Without it 155A projected as 155 — the wrong addr:housenumber at every such
+# point, and 111 civic groups merged with their lettered siblings (604A +
+# 604B Woodlawn Road East read as two plain 604s; 155 + 155A Bristol as units
+# B and C twice). Keyed on number+qualifier no group repeats a unit. Added
+# 2026-10-03 with the engine's number_suffix (address-importer-friend).
+number_suffix = "props:QUALIFIER"
 # PLACE is 'Guelph' on 53,771 rows and 'Guelph/Eramosa Twp' on 75 — the one
 # subdivision the city layer publishes past its own boundary (NE corner;
 # Wellington's dataset carries the same 73-75 addresses, the only genuine
@@ -64,6 +73,11 @@ status = "props:STATUS"
 # 514 groups are stacked (deepest 214 units), 80 of those have no unit-less
 # row to elect (lowest identity_key then). 111 groups carry >1 unit-less rows
 # — civic-level intra-source duplicates worth a look during review.
+# CORRECTED 2026-10-03: those 111 were never duplicates. Every one is a
+# lettered sibling (155 + 155A) merged by the dropped QUALIFIER; with
+# number_suffix declared above, snapshot 47 projects 53,847 rows -> 40,767
+# groups (was 40,635), unit-bearing groups 409 -> 414, groups with >1
+# unit-less row 111 -> 0, groups repeating a unit designator 4 -> 0.
 #
 # COLLAPSE VS PER-DOOR NODES — the rule (2026-09-15). Superseded two earlier
 # readings of this, both of which classified on geometry and both of which were
@@ -95,7 +109,8 @@ status = "props:STATUS"
 #    58 groups  1,381 units  REVIEW   — sequential but under 4.5 m apart
 #   107 groups      0 units  civic duplicates, no unit rows — these are the
 #                            ~111 intra-source duplicates noted above, not a
-#                            unit question at all.
+#                            unit question at all. (Lettered siblings, not
+#                            duplicates — see the 2026-10-03 correction.)
 # So 349 of 407 unit-bearing groups decide themselves and 58 need eyes — about
 # one in seven. REVIEW is where the genuinely hard cases sit: 252 Stone Road
 # West is a mall whose 140 "units" are storefronts, and whether a storefront is
