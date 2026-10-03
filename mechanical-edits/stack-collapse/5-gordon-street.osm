@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='utf-8'?>
+<osm version="0.6" generator="guelph-stack-collapse"><changeset><tag k="comment" v="5 Gordon Street: merge the per-stack addr:flats nodes into one listing on the building; a column of suites is not a place, and none of these nodes is an entrance (survey)" /><tag k="source" v="survey;Guelph Open Data" /><tag k="source:license" v="OGL-Canada-2.0" /><tag k="mechanical" v="no" /><tag k="import_plan" v="https://wiki.openstreetmap.org/wiki/Guelph/Address_Import/Continuous#Mechanical_edits" /></changeset><node id="4147305199" visible="true" version="3" changeset="172078824" timestamp="2025-09-17T18:51:39Z" user="ARandomThumbtack_Import" uid="23299759" lat="43.5419926" lon="-80.2487081" />
+ <node id="4147305200" visible="true" version="3" changeset="172078824" timestamp="2025-09-17T18:51:39Z" user="ARandomThumbtack_Import" uid="23299759" lat="43.5418448" lon="-80.2482810" />
+ <node id="4147305201" visible="true" version="3" changeset="172078824" timestamp="2025-09-17T18:51:39Z" user="ARandomThumbtack_Import" uid="23299759" lat="43.5418285" lon="-80.2485365" />
+ <node id="4147305202" visible="true" version="3" changeset="172078824" timestamp="2025-09-17T18:51:39Z" user="ARandomThumbtack_Import" uid="23299759" lat="43.5416168" lon="-80.2488977" />
+ <node id="12139119135" visible="true" version="2" changeset="157870600" timestamp="2024-10-14T10:47:31Z" user="eireidium" uid="146307" lat="43.5419206" lon="-80.2484880" />
+ <node id="12139119142" visible="true" version="2" changeset="157870600" timestamp="2024-10-14T10:47:31Z" user="eireidium" uid="146307" lat="43.5415621" lon="-80.2486721" />
+ <node id="13150618372" visible="true" version="3" changeset="189754783" timestamp="2026-09-30T04:05:47Z" user="skfd imports" uid="24088502" lat="43.5417268" lon="-80.2488451" action="delete">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:flats" v="203;303;403;503;603" />
+  <tag k="addr:housenumber" v="5" />
+  <tag k="addr:postcode" v="N1H 4G8" />
+  <tag k="addr:street" v="Gordon Street" />
+ </node>
+ <node id="13150618373" visible="true" version="4" changeset="189754783" timestamp="2026-09-30T04:05:47Z" user="skfd imports" uid="24088502" lat="43.5417942" lon="-80.2488115" action="delete">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:flats" v="102B;202;302;402;502;602" />
+  <tag k="addr:housenumber" v="5" />
+  <tag k="addr:postcode" v="N1H 4G8" />
+  <tag k="addr:street" v="Gordon Street" />
+ </node>
+ <node id="13150618374" visible="true" version="4" changeset="189754783" timestamp="2026-09-30T04:05:47Z" user="skfd imports" uid="24088502" lat="43.5418585" lon="-80.2487792" action="delete">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:flats" v="102A;201;301;401;501;601" />
+  <tag k="addr:housenumber" v="5" />
+  <tag k="addr:postcode" v="N1H 4G8" />
+  <tag k="addr:street" v="Gordon Street" />
+ </node>
+ <node id="13150618375" visible="true" version="3" changeset="189754783" timestamp="2026-09-30T04:05:47Z" user="skfd imports" uid="24088502" lat="43.5419452" lon="-80.2487350" action="delete">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:flats" v="100;200;300;400;500;600" />
+  <tag k="addr:housenumber" v="5" />
+  <tag k="addr:postcode" v="N1H 4G8" />
+  <tag k="addr:street" v="Gordon Street" />
+ </node>
+ <node id="13150618376" visible="true" version="4" changeset="189754783" timestamp="2026-09-30T04:05:47Z" user="skfd imports" uid="24088502" lat="43.5418560" lon="-80.2483041" action="delete">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:flats" v="107;212;312;412" />
+  <tag k="addr:housenumber" v="5" />
+  <tag k="addr:postcode" v="N1H 4G8" />
+  <tag k="addr:street" v="Gordon Street" />
+ </node>
+ <node id="13150618377" visible="true" version="4" changeset="189754783" timestamp="2026-09-30T04:05:47Z" user="skfd imports" uid="24088502" lat="43.5418792" lon="-80.2483720" action="delete">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:flats" v="106;211;311;411" />
+  <tag k="addr:housenumber" v="5" />
+  <tag k="addr:postcode" v="N1H 4G8" />
+  <tag k="addr:street" v="Gordon Street" />
+ </node>
+ <node id="13150618378" visible="true" version="4" changeset="189754783" timestamp="2026-09-30T04:05:47Z" user="skfd imports" uid="24088502" lat="43.5419004" lon="-80.2484334" action="delete">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:flats" v="105;210;310;410" />
+  <tag k="addr:housenumber" v="5" />
+  <tag k="addr:postcode" v="N1H 4G8" />
+  <tag k="addr:street" v="Gordon Street" />
+ </node>
+ <node id="13151043353" visible="true" version="1" changeset="172078824" timestamp="2025-09-17T18:51:36Z" user="ARandomThumbtack_Import" uid="23299759" lat="43.5417705" lon="-80.2483189" />
+ <node id="13150618368" visible="true" version="3" changeset="189754783" timestamp="2026-09-30T04:05:47Z" user="skfd imports" uid="24088502" lat="43.5417953" lon="-80.2485522" action="delete">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:flats" v="208;308;408;507;607" />
+  <tag k="addr:housenumber" v="5" />
+  <tag k="addr:postcode" v="N1H 4G8" />
+  <tag k="addr:street" v="Gordon Street" />
+ </node>
+ <node id="13150618369" visible="true" version="3" changeset="189754783" timestamp="2026-09-30T04:05:47Z" user="skfd imports" uid="24088502" lat="43.5416619" lon="-80.2486215" action="delete">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:flats" v="206;306;406;506;606" />
+  <tag k="addr:housenumber" v="5" />
+  <tag k="addr:postcode" v="N1H 4G8" />
+  <tag k="addr:street" v="Gordon Street" />
+ </node>
+ <node id="13150618370" visible="true" version="3" changeset="189754783" timestamp="2026-09-30T04:05:47Z" user="skfd imports" uid="24088502" lat="43.5416080" lon="-80.2486505" action="delete">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:flats" v="205;305;405;505;605" />
+  <tag k="addr:housenumber" v="5" />
+  <tag k="addr:postcode" v="N1H 4G8" />
+  <tag k="addr:street" v="Gordon Street" />
+ </node>
+ <node id="13150618371" visible="true" version="3" changeset="189754783" timestamp="2026-09-30T04:05:47Z" user="skfd imports" uid="24088502" lat="43.5416677" lon="-80.2488742" action="delete">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:flats" v="204;304;404;504;604" />
+  <tag k="addr:housenumber" v="5" />
+  <tag k="addr:postcode" v="N1H 4G8" />
+  <tag k="addr:street" v="Gordon Street" />
+ </node>
+ <node id="13150618379" visible="true" version="3" changeset="189754783" timestamp="2026-09-30T04:05:47Z" user="skfd imports" uid="24088502" lat="43.5418834" lon="-80.2485069" action="delete">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:flats" v="209;309;409" />
+  <tag k="addr:housenumber" v="5" />
+  <tag k="addr:postcode" v="N1H 4G8" />
+  <tag k="addr:street" v="Gordon Street" />
+ </node>
+ <node id="13150618380" visible="true" version="3" changeset="189754783" timestamp="2026-09-30T04:05:47Z" user="skfd imports" uid="24088502" lat="43.5417357" lon="-80.2485829" action="delete">
+  <tag k="addr:city" v="Guelph" />
+  <tag k="addr:flats" v="207;307;407" />
+  <tag k="addr:housenumber" v="5" />
+  <tag k="addr:postcode" v="N1H 4G8" />
+  <tag k="addr:street" v="Gordon Street" />
+ </node>
+<way id="413398801" visible="true" version="8" changeset="189754880" timestamp="2026-09-30T04:11:11Z" user="skfd imports" uid="24088502" action="modify">
+  <nd ref="4147305199" /><nd ref="12139119135" /><nd ref="4147305200" /><nd ref="13151043353" /><nd ref="4147305201" /><nd ref="12139119142" /><nd ref="4147305202" /><nd ref="4147305199" /><tag k="addr:city" v="Guelph" /><tag k="addr:housenumber" v="5" /><tag k="addr:postcode" v="N1H 4G8" /><tag k="addr:street" v="Gordon Street" /><tag k="building" v="yes" /><tag k="building:levels" v="6" /><tag k="building:material" v="brick" /><tag k="roof:levels" v="0" /><tag k="roof:shape" v="flat" /><tag k="addr:flats" v="100;102A;102B;105-107;200-212;300-312;400-412;500-507;600-607" /></way>
+</osm>

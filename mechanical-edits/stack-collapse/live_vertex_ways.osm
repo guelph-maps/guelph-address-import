@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="Overpass API 0.7.62.11 87bfad18">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2026-10-03T02:27:30Z" areas="2026-10-02T05:18:35Z"/>
+
+  <way id="123914433" version="10" timestamp="2024-11-05T12:05:37Z" changeset="158776283" uid="146307" user="eireidium">
+    <nd ref="1380458672"/>
+    <nd ref="1380458650"/>
+    <nd ref="12314155794"/>
+    <nd ref="3918881389"/>
+    <nd ref="3915397581"/>
+    <nd ref="3915397575"/>
+    <nd ref="12314155791"/>
+    <nd ref="3915397573"/>
+    <nd ref="12314155792"/>
+    <nd ref="3915397569"/>
+    <nd ref="3917988994"/>
+    <nd ref="3915397578"/>
+    <nd ref="3915397564"/>
+    <nd ref="12314155800"/>
+    <nd ref="3915397574"/>
+    <nd ref="12314155793"/>
+    <nd ref="3915397565"/>
+    <nd ref="3915397576"/>
+    <nd ref="3915397570"/>
+    <nd ref="3915397579"/>
+    <nd ref="12314155788"/>
+    <nd ref="3915397577"/>
+    <nd ref="3919001245"/>
+    <nd ref="3915397567"/>
+    <nd ref="3915397580"/>
+    <nd ref="3917979981"/>
+    <nd ref="12314155787"/>
+    <nd ref="12314155786"/>
+    <nd ref="12314155789"/>
+    <nd ref="3915397566"/>
+    <nd ref="3915397571"/>
+    <nd ref="3918952200"/>
+    <nd ref="3915397572"/>
+    <nd ref="3915397568"/>
+    <nd ref="12314155790"/>
+    <nd ref="1380458672"/>
+    <tag k="addr:city" v="Guelph"/>
+    <tag k="addr:housenumber" v="55"/>
+    <tag k="addr:postcode" v="N1H 7R4"/>
+    <tag k="addr:street" v="Yarmouth Street"/>
+    <tag k="building" v="apartments"/>
+    <tag k="building:flats" v="71"/>
+    <tag k="layer" v="-1"/>
+    <tag k="name" v="Wyndamere Place Condominiums"/>
+  </way>
+  <way id="123914434" version="11" timestamp="2025-09-21T03:20:19Z" changeset="172228504" uid="23299759" user="ARandomThumbtack_Import">
+    <nd ref="1380458674"/>
+    <nd ref="12314152366"/>
+    <nd ref="1380458678"/>
+    <nd ref="4121197113"/>
+    <nd ref="1380458645"/>
+    <nd ref="1380458675"/>
+    <nd ref="4547475740"/>
+    <nd ref="4214081733"/>
+    <nd ref="12314152369"/>
+    <nd ref="12314152370"/>
+    <nd ref="1380458674"/>
+    <tag k="building" v="apartments"/>
+    <tag k="building:flats" v="19"/>
+    <tag k="building:levels" v="3"/>
+  </way>
+  <way id="127004974" version="6" timestamp="2024-11-05T12:13:29Z" changeset="158776539" uid="146307" user="eireidium">
+    <nd ref="1406486396"/>
+    <nd ref="1406486403"/>
+    <nd ref="2760236381"/>
+    <nd ref="12314175892"/>
+    <nd ref="12314175893"/>
+    <nd ref="2760236373"/>
+    <nd ref="12314175894"/>
+    <nd ref="12314175895"/>
+    <nd ref="1406486406"/>
+    <nd ref="1406486407"/>
+    <nd ref="3944486551"/>
+    <nd ref="3944996090"/>
+    <nd ref="1406486396"/>
+    <tag k="building" v="apartments"/>
+    <tag k="building:flats" v="5"/>
+  </way>
+  <way id="208936063" version="3" timestamp="2025-09-21T03:20:19Z" changeset="172228504" uid="23299759" user="ARandomThumbtack_Import">
+    <nd ref="2191950992"/>
+    <nd ref="2191950991"/>
+    <nd ref="13159082381"/>
+    <nd ref="13159082377"/>
+    <nd ref="2191950993"/>
+    <nd ref="13159082407"/>
+    <nd ref="2649147893"/>
+    <nd ref="2191950992"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="388612068" version="2" timestamp="2024-11-05T12:05:37Z" changeset="158776283" uid="146307" user="eireidium">
+    <nd ref="3917979980"/>
+    <nd ref="12314155787"/>
+    <tag k="highway" v="footway"/>
+    <tag k="surface" v="concrete"/>
+  </way>
+  <way id="413398801" version="8" timestamp="2026-09-30T04:11:11Z" changeset="189754880" uid="24088502" user="skfd imports">
+    <nd ref="4147305199"/>
+    <nd ref="12139119135"/>
+    <nd ref="13150618378"/>
+    <nd ref="13150618377"/>
+    <nd ref="13150618376"/>
+    <nd ref="4147305200"/>
+    <nd ref="13151043353"/>
+    <nd ref="4147305201"/>
+    <nd ref="12139119142"/>
+    <nd ref="4147305202"/>
+    <nd ref="13150618372"/>
+    <nd ref="13150618373"/>
+    <nd ref="13150618374"/>
+    <nd ref="13150618375"/>
+    <nd ref="4147305199"/>
+    <tag k="addr:city" v="Guelph"/>
+    <tag k="addr:housenumber" v="5"/>
+    <tag k="addr:postcode" v="N1H 4G8"/>
+    <tag k="addr:street" v="Gordon Street"/>
+    <tag k="building" v="yes"/>
+    <tag k="building:levels" v="6"/>
+    <tag k="building:material" v="brick"/>
+    <tag k="roof:levels" v="0"/>
+    <tag k="roof:shape" v="flat"/>
+  </way>
+  <way id="858762001" version="4" timestamp="2025-09-21T03:20:19Z" changeset="172228504" uid="23299759" user="ARandomThumbtack_Import">
+    <nd ref="12314191243"/>
+    <nd ref="12314191242"/>
+    <nd ref="8005273363"/>
+    <nd ref="12314191252"/>
+    <nd ref="12314191253"/>
+    <nd ref="13159068497"/>
+    <nd ref="8005273362"/>
+    <nd ref="13159082353"/>
+    <nd ref="12314191243"/>
+    <tag k="building" v="commercial"/>
+    <tag k="building:levels" v="2"/>
+    <tag k="name" v="Thurston Block"/>
+    <tag k="start_date" v="1924"/>
+  </way>
+  <way id="926061500" version="3" timestamp="2025-09-23T16:07:07Z" changeset="172352218" uid="23299759" user="ARandomThumbtack_Import">
+    <nd ref="8593964594"/>
+    <nd ref="8593964591"/>
+    <nd ref="8593964581"/>
+    <nd ref="8593964582"/>
+    <nd ref="8593964592"/>
+    <nd ref="13165539606"/>
+    <nd ref="8593964583"/>
+    <nd ref="8593964590"/>
+    <nd ref="8593964589"/>
+    <nd ref="8593964588"/>
+    <nd ref="13165539605"/>
+    <nd ref="8593964593"/>
+    <nd ref="8593964586"/>
+    <nd ref="8593964587"/>
+    <nd ref="8593964584"/>
+    <nd ref="8593964585"/>
+    <nd ref="8593964594"/>
+    <tag k="building" v="detached"/>
+  </way>
+  <way id="927902888" version="4" timestamp="2025-10-02T04:33:39Z" changeset="172731484" uid="23299759" user="ARandomThumbtack_Import">
+    <nd ref="8608159941"/>
+    <nd ref="13188159617"/>
+    <nd ref="8608159938"/>
+    <nd ref="8608159939"/>
+    <nd ref="12244922190"/>
+    <nd ref="12244922191"/>
+    <nd ref="8608159940"/>
+    <nd ref="13188159619"/>
+    <nd ref="12244922196"/>
+    <nd ref="8608159936"/>
+    <nd ref="8608159937"/>
+    <nd ref="12244922193"/>
+    <nd ref="12244922194"/>
+    <nd ref="12244922195"/>
+    <nd ref="12244922192"/>
+    <nd ref="8608159941"/>
+    <tag k="building" v="detached"/>
+  </way>
+  <way id="927975772" version="2" timestamp="2025-10-02T04:33:39Z" changeset="172731484" uid="23299759" user="ARandomThumbtack_Import">
+    <nd ref="8608706895"/>
+    <nd ref="13188159621"/>
+    <nd ref="8608706902"/>
+    <nd ref="13188159620"/>
+    <nd ref="8608706903"/>
+    <nd ref="8608706900"/>
+    <nd ref="8608706899"/>
+    <nd ref="8608706904"/>
+    <nd ref="8608706894"/>
+    <nd ref="8608706901"/>
+    <nd ref="8608706896"/>
+    <nd ref="8608706895"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="929108620" version="4" timestamp="2026-09-30T04:11:11Z" changeset="189754880" uid="24088502" user="skfd imports">
+    <nd ref="8616827579"/>
+    <nd ref="8616827578"/>
+    <nd ref="13164248917"/>
+    <nd ref="13164248912"/>
+    <nd ref="8616827577"/>
+    <nd ref="8616827576"/>
+    <nd ref="8616827579"/>
+    <tag k="addr:city" v="Guelph"/>
+    <tag k="addr:housenumber" v="18"/>
+    <tag k="addr:street" v="Grove Street"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="929108671" version="2" timestamp="2025-09-23T00:49:49Z" changeset="172319903" uid="23299759" user="ARandomThumbtack_Import">
+    <nd ref="8616827885"/>
+    <nd ref="8616827992"/>
+    <nd ref="8616827991"/>
+    <nd ref="8616827886"/>
+    <nd ref="13164248916"/>
+    <nd ref="8616827993"/>
+    <nd ref="8616827994"/>
+    <nd ref="8616827995"/>
+    <nd ref="8616827996"/>
+    <nd ref="13164248921"/>
+    <nd ref="8616827885"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="929589722" version="3" timestamp="2025-09-23T00:49:49Z" changeset="172319903" uid="23299759" user="ARandomThumbtack_Import">
+    <nd ref="8621047527"/>
+    <nd ref="8621047524"/>
+    <nd ref="8621047525"/>
+    <nd ref="13164248923"/>
+    <nd ref="13164248924"/>
+    <nd ref="8621047526"/>
+    <nd ref="13023317366"/>
+    <nd ref="13023317367"/>
+    <nd ref="8621047523"/>
+    <nd ref="8621047521"/>
+    <nd ref="13164248922"/>
+    <nd ref="8621047520"/>
+    <nd ref="8621047522"/>
+    <nd ref="8621047527"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="931652621" version="2" timestamp="2025-09-23T16:07:07Z" changeset="172352218" uid="23299759" user="ARandomThumbtack_Import">
+    <nd ref="8637126188"/>
+    <nd ref="8637126185"/>
+    <nd ref="13165533695"/>
+    <nd ref="8637126184"/>
+    <nd ref="8637126183"/>
+    <nd ref="8637126182"/>
+    <nd ref="13165539609"/>
+    <nd ref="8637126181"/>
+    <nd ref="8637126186"/>
+    <nd ref="8637126187"/>
+    <nd ref="8637126188"/>
+    <tag k="building" v="yes"/>
+  </way>
+
+</osm>
