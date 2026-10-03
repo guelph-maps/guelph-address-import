@@ -46,6 +46,7 @@ mailing address:
 - 82 Farquhar Street (ADDID 53855): 0
 - 33 and 35 Lambeth Way (ADDID 30480, 55312): N0L 0H1
 - 1 Cox Court (ADDID 18992): N0B 1C0
+- 1423 Gordon Street (ADDID 43586): N1B 0B8, the only N1B in the layer
 
 HAS_UNIT doesn't always agree with UNIT_NO. 286 points that have a UNIT_NO say
 HAS_UNIT = N, across 24 addresses; 155 Bristol Street units B and C (ADDID 57311,
