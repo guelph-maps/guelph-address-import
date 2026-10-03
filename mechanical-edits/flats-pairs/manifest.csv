@@ -1,0 +1,127 @@
+batch,area,type,id,version,street,housenumber,flats_before,flats_after
+1,Parkwood Gardens,way,1441651733,4,Fife Road,190,59-60,59;60
+1,Parkwood Gardens,way,1441651734,4,Fife Road,190,57-58,57;58
+1,Parkwood Gardens,way,1441651735,4,Fife Road,190,55-56,55;56
+1,Parkwood Gardens,way,1441651736,4,Fife Road,190,51-52,51;52
+1,Parkwood Gardens,way,1441651737,4,Fife Road,190,49-50,49;50
+1,Parkwood Gardens,way,1441651738,4,Fife Road,190,47-48,47;48
+1,Parkwood Gardens,way,1441651739,4,Fife Road,190,77-78,77;78
+1,Parkwood Gardens,way,1441651740,4,Fife Road,190,79-80,79;80
+1,Parkwood Gardens,way,1441651741,4,Fife Road,190,81-82,81;82
+1,Parkwood Gardens,way,1441651742,4,Fife Road,190,61-62,61;62
+1,Parkwood Gardens,way,1441651743,4,Fife Road,190,63-64,63;64
+1,Parkwood Gardens,way,1441651744,4,Fife Road,190,65-66,65;66
+1,Parkwood Gardens,way,1441651745,4,Fife Road,190,67-68,67;68
+1,Parkwood Gardens,way,1441651746,4,Fife Road,190,69-70,69;70
+1,Parkwood Gardens,way,1441651747,4,Fife Road,190,71-72,71;72
+1,Parkwood Gardens,way,1441651748,4,Fife Road,190,73-74,73;74
+1,Parkwood Gardens,way,1441651749,4,Fife Road,190,42-43,42;43
+1,Parkwood Gardens,way,1441651750,4,Fife Road,190,40-41,40;41
+1,Parkwood Gardens,way,1441651751,4,Fife Road,190,38-39,38;39
+1,Parkwood Gardens,way,1441651752,4,Fife Road,190,34-35,34;35
+1,Parkwood Gardens,way,1441651753,4,Fife Road,190,32-33,32;33
+1,Parkwood Gardens,way,1441651754,4,Fife Road,190,30-31,30;31
+1,Parkwood Gardens,way,1441651755,4,Fife Road,190,99-100,99;100
+1,Parkwood Gardens,way,1441651756,4,Fife Road,190,97-98,97;98
+1,Parkwood Gardens,way,1441651757,4,Fife Road,190,95-96,95;96
+1,Parkwood Gardens,way,1441651758,4,Fife Road,190,93-94,93;94
+1,Parkwood Gardens,way,1441651759,4,Fife Road,190,91-92,91;92
+1,Parkwood Gardens,way,1441651760,4,Fife Road,190,89-90,89;90
+1,Parkwood Gardens,way,1441651761,4,Fife Road,190,87-88,87;88
+1,Parkwood Gardens,way,921942596,5,Fife Road,190,36-37,36;37
+1,Parkwood Gardens,way,921942597,5,Fife Road,190,28-29,28;29
+1,Parkwood Gardens,way,921942598,5,Fife Road,190,85-86,85;86
+1,Parkwood Gardens,way,921942599,5,Fife Road,190,83-84,83;84
+1,Parkwood Gardens,way,921942600,5,Fife Road,190,75-76,75;76
+1,Parkwood Gardens,way,921942601,5,Fife Road,190,45-46,45;46
+1,Parkwood Gardens,way,921942602,5,Fife Road,190,53-54,53;54
+2,St. Georges Parkway,way,240744882,8,Eramosa Road,297,1-2,1;2
+3,University,way,802817805,6,Gordon Street,220,11-12;14-17;21-26;31-36,11;12;14-17;21-26;31-36
+4,Grange Hill East,way,937552915,6,Auden Road,470,22-23,22;23
+4,Grange Hill East,way,937552916,6,Auden Road,470,16-17,16;17
+5,Hanlon Creek,way,215069449,7,Edinburgh Road South,511,101-102;101A;201-202,101;101A;102;201;202
+5,Hanlon Creek,way,212559742,8,Scottsdale Drive,649,100-101,100;101
+6,Onward Willow,way,208492557,5,Silvercreek Parkway North,106,1-2;4-5;7,1;2;4;5;7
+6,Onward Willow,way,1442367349,4,Silvercreek Parkway North,40,47-48,47;48
+7,Downtown - Sunny Acres,way,1431616569,4,Surrey Street East,47,1-2;3A;3B;3C;4-8,1;2;3A;3B;3C;4-8
+7,Downtown - Sunny Acres,way,493155848,5,Surrey Street East,49,11;21-22;23A;23B;23C;31-32;33A;33B;33C,11;21;22;23A;23B;23C;31;32;33A;33B;33C
+7,Downtown - Sunny Acres,way,819734214,6,Waterloo Avenue,360,107-108;209-212,107;108;209-212
+7,Downtown - Sunny Acres,way,675436618,10,Wellington Street East,150,101-104;301-314;401-414;501-514;601-614;701-707;801-808;901-908;1001-1008;1101-1108;1201-1208;1301-1308;1401-1408;1501-1508;1601-1606;1701-1704;1801-1802,101-104;301-314;401-414;501-514;601-614;701-707;801-808;901-908;1001-1008;1101-1108;1201-1208;1301-1308;1401-1408;1501-1508;1601-1606;1701-1704;1801;1802
+8,Exhibition Park,way,925775200,6,Suffolk Street West,57,101-102;203-204;305-306;407-408;PH,101;102;203;204;305;306;407;408;PH
+8,Exhibition Park,way,1369220540,6,Westmount Road,120,13-14,13;14
+8,Exhibition Park,way,1369220544,6,Westmount Road,120,15-16,15;16
+8,Exhibition Park,node,12314152369,5,Yarmouth Street,31,101;106-107;201-207;301-307,101;106;107;201-207;301-307
+9,Waverley,way,761343575,5,Country Club Drive,120,11-12;14-33,11;12;14-33
+9,Waverley,node,13165533695,4,Norwich Street East,110,1-2;4,1;2;4
+9,Waverley,way,803281467,7,Woodlawn Road East,100,5-6,5;6
+9,Waverley,way,803281468,7,Woodlawn Road East,100,1-2,1;2
+9,Waverley,way,954036919,5,Woodlawn Road East,100,3-4,3;4
+9,Waverley,way,954036924,5,Woodlawn Road East,100,7-8,7;8
+10,Non-Residential - C,way,961839908,6,Gordon Street,1886,101-102;201-202,101;102;201;202
+10,Non-Residential - C,way,1443052881,4,Kay Crescent,39,32-33,32;33
+10,Non-Residential - C,way,1443052882,4,Kay Crescent,39,34-35,34;35
+10,Non-Residential - C,way,1443052883,4,Kay Crescent,39,36-37,36;37
+10,Non-Residential - C,way,1443052884,4,Kay Crescent,39,46-47,46;47
+10,Non-Residential - C,way,1443052885,4,Kay Crescent,39,44-45,44;45
+10,Non-Residential - C,way,1443052886,4,Kay Crescent,39,42-43,42;43
+10,Non-Residential - C,way,802540388,6,Kay Crescent,39,38-39,38;39
+10,Non-Residential - C,way,802540389,6,Kay Crescent,39,40-41,40;41
+11,Non-Residential - A,way,1436604416,4,Burns Drive,80,11-12,11;12
+11,Non-Residential - A,way,1436604417,4,Burns Drive,80,13-14,13;14
+11,Non-Residential - A,way,1436604418,4,Burns Drive,80,15-16,15;16
+11,Non-Residential - A,way,1436604419,4,Burns Drive,80,17-18,17;18
+11,Non-Residential - A,way,632319013,6,Burns Drive,80,19-20,19;20
+11,Non-Residential - A,way,1436604420,4,Burns Drive,86,1-2,1;2
+11,Non-Residential - A,way,1436604421,4,Burns Drive,86,3-4,3;4
+11,Non-Residential - A,way,1436604422,4,Burns Drive,86,5-6,5;6
+11,Non-Residential - A,way,1436604423,4,Burns Drive,86,7-8,7;8
+11,Non-Residential - A,way,632319014,6,Burns Drive,86,9-10,9;10
+12,West Willow Woods,way,1437043928,4,Flaherty Drive,75,49-50,49;50
+12,West Willow Woods,way,1437043929,4,Flaherty Drive,75,45-46,45;46
+12,West Willow Woods,way,1437043930,4,Flaherty Drive,75,41-42,41;42
+12,West Willow Woods,way,1437043931,4,Flaherty Drive,75,37-38,37;38
+12,West Willow Woods,way,1437043932,4,Flaherty Drive,75,35-36,35;36
+12,West Willow Woods,way,1437043933,4,Flaherty Drive,75,31-32,31;32
+12,West Willow Woods,way,1437043934,4,Flaherty Drive,75,33-34,33;34
+12,West Willow Woods,way,1437043935,4,Flaherty Drive,75,3-4,3;4
+12,West Willow Woods,way,1437043936,4,Flaherty Drive,75,5-6,5;6
+12,West Willow Woods,way,1437043937,4,Flaherty Drive,75,9-10,9;10
+12,West Willow Woods,way,1437043938,4,Flaherty Drive,75,11-12,11;12
+12,West Willow Woods,way,1437043939,4,Flaherty Drive,75,13-14,13;14
+12,West Willow Woods,way,1437043940,4,Flaherty Drive,75,17-18,17;18
+12,West Willow Woods,way,1437043941,4,Flaherty Drive,75,19-20,19;20
+12,West Willow Woods,way,1437043942,4,Flaherty Drive,75,25-26,25;26
+12,West Willow Woods,way,1437043943,4,Flaherty Drive,75,23-24,23;24
+12,West Willow Woods,way,1437043944,4,Flaherty Drive,75,21-22,21;22
+12,West Willow Woods,way,912221550,6,Flaherty Drive,75,39-40,39;40
+12,West Willow Woods,way,912221551,6,Flaherty Drive,75,43-44,43;44
+12,West Willow Woods,way,912221552,6,Flaherty Drive,75,47-48,47;48
+12,West Willow Woods,way,912221553,6,Flaherty Drive,75,27-28,27;28
+12,West Willow Woods,way,912221554,6,Flaherty Drive,75,15-16,15;16
+12,West Willow Woods,way,912221556,6,Flaherty Drive,75,29-30,29;30
+12,West Willow Woods,way,912221557,6,Flaherty Drive,75,1-2,1;2
+12,West Willow Woods,way,912221558,6,Flaherty Drive,75,7-8,7;8
+12,West Willow Woods,way,1441651844,4,Rhonda Road,49,98-99,98;99
+12,West Willow Woods,way,1441651845,4,Rhonda Road,49,94-95,94;95
+12,West Willow Woods,way,1441651846,4,Rhonda Road,49,84-85,84;85
+12,West Willow Woods,way,1441651847,4,Rhonda Road,49,88-89,88;89
+12,West Willow Woods,way,1441651848,4,Rhonda Road,49,90-91,90;91
+12,West Willow Woods,way,1441651849,4,Rhonda Road,49,92-93,92;93
+12,West Willow Woods,way,1441651850,4,Rhonda Road,49,96-97,96;97
+12,West Willow Woods,way,1441651851,4,Rhonda Road,49,100-101,100;101
+12,West Willow Woods,way,1441651852,4,Rhonda Road,49,102-103,102;103
+12,West Willow Woods,way,1441651853,4,Rhonda Road,49,104-105,104;105
+12,West Willow Woods,way,1441651854,4,Rhonda Road,49,106-107,106;107
+12,West Willow Woods,way,1441651855,4,Rhonda Road,49,108-109,108;109
+12,West Willow Woods,way,1441651856,4,Rhonda Road,49,110-111,110;111
+12,West Willow Woods,way,1441651910,4,Rhonda Road,49,128-129,128;129
+12,West Willow Woods,way,1441651911,4,Rhonda Road,49,126-127,126;127
+12,West Willow Woods,way,1441651912,4,Rhonda Road,49,122-123,122;123
+12,West Willow Woods,way,1441651913,4,Rhonda Road,49,118-119,118;119
+12,West Willow Woods,way,1441651914,4,Rhonda Road,49,116-117,116;117
+12,West Willow Woods,way,1441651915,4,Rhonda Road,49,124-125,124;125
+12,West Willow Woods,way,1441651916,4,Rhonda Road,49,130-131,130;131
+12,West Willow Woods,way,1441651917,4,Rhonda Road,49,114-115,114;115
+12,West Willow Woods,way,803276519,5,Rhonda Road,49,112-113,112;113
+12,West Willow Woods,way,803276525,5,Rhonda Road,49,120-121,120;121
+12,West Willow Woods,way,803276526,5,Rhonda Road,49,86-87,86;87

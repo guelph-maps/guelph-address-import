@@ -5,6 +5,13 @@ addr:interpolation = all        ->  (removed)     on closed ways and nodes only
 addr:flats = 101;102;103;       ->  101-103       re-rendered by the import's own renderer
 ```
 
+> **Uploaded with one stale rendering.** These batches were cut at 20:58 on
+> 2026-09-29. At 21:51 the engine changed so that a range needs three units,
+> and the batches were not rebuilt before upload. So 126 values went up
+> holding a pair written as a range (`1-2`). [`../flats-pairs/`](../flats-pairs/)
+> spells them out. Don't rebuild here to fix it: `manifest.csv` and
+> `uploads.csv` are the revert record for the 325 objects already uploaded.
+
 Two campaigns, one builder, one batch set, one revert. 74 of the 81 objects
 carrying a meaningless `addr:interpolation` also carry `addr:flats` — 71 of
 the 78 closed ways, and all 3 of the nodes. TODO.md says "74 of the 78 closed

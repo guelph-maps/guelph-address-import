@@ -1,5 +1,7 @@
 # addr:flats — every value this campaign rewrites
 
+> **2026-10-02:** 126 rows below end in a two-unit range (`1;2` → `1-2`). That was the renderer as it stood when these batches were cut, 53 minutes before it stopped writing pairs as ranges. They are spelled out again by [`../flats-pairs/`](../flats-pairs/).
+
 Generated from `manifest.csv` (built 2026-09-17 against live OSM, re-verify with `build_batches.py --refetch` on the day).
 
 **292 of the 464 live `addr:flats` values change.** The other 172 are already exactly what the renderer produces (146 of them had nothing else to edit either, so they are not uploaded at all).
