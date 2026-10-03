@@ -48,6 +48,23 @@ mailing address:
 - 1 Cox Court (ADDID 18992): N0B 1C0
 - 1423 Gordon Street (ADDID 43586): N1B 0B8, the only N1B in the layer
 
+In eight apartment buildings, one or a few points have a different POSTCODE
+from the rest of the building. Which one is right?
+
+- 89 and 93 Westwood Road: units N1H 7J7; the plain points (ADDID 55300,
+  55301) N1H 6Y7
+- 142 Imperial Road North: units N1H 8J9; the plain point (ADDID 27773)
+  N1H 4E8
+- 281 Bristol Street: units N1H 8J3; the plain point (ADDID 50800) N1H 3M5
+- 45 Goodwin Drive: units N1L 0E9; unit 204 (ADDID 29592) N1L 0G5
+- 1083 Gordon Street: units N1G 0E8; units 107, 209 and 306 (ADDID 48355,
+  48337, 48377) N1G 0E3, and unit 403 (ADDID 48272) N1L 1H2
+- 1219 Gordon Street: units N1L 0M9; unit 406 (ADDID 50439) N1L 1H2
+- 1280 Gordon Street: units N1L 0N6; the plain point (ADDID 14206) N1L 1H3,
+  and unit 108 (ADDID 51543) N1H 4H6
+
+Most units in the three Gordon Street buildings have no POSTCODE at all.
+
 HAS_UNIT doesn't always agree with UNIT_NO. 286 points that have a UNIT_NO say
 HAS_UNIT = N, across 24 addresses; 155 Bristol Street units B and C (ADDID 57311,
 57312) are two of them. Nine points with no UNIT_NO say HAS_UNIT = Y: ADDID
