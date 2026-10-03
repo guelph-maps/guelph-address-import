@@ -25,9 +25,11 @@ tower cut by a tile boundary reads as rows of doors on both sides.
 **The door tags come from the engine's own `osm_export.build_tags`**, fed the
 same fields `candidates._candidate_values` / `_emit_group` feed it, so these
 nodes are exactly what the continuous import would have written:
-addr:housenumber, addr:street, addr:unit, addr:source, addr:city. No
-addr:postcode (the engine only adds one from a POI fallback) and no
-addr:province (Guelph dropped it). The unit-less civic row of a group is not
+addr:housenumber, addr:street, addr:unit, addr:postcode, addr:source,
+addr:city. The postcode is the door's own City row's, through the engine's
+`[postcode]` check (`candidates._source_postcode`), so a value the import
+would omit is omitted here too; skfd, 2026-10-03: "if we have postal code to
+write, write it". No addr:province (Guelph dropped it). The unit-less civic row of a group is not
 created: the building way, or the existing civic node, keeps its
 addr:housenumber and addr:street and *is* that object.
 
@@ -131,10 +133,12 @@ def door_tags(row: dict) -> dict[str, str]:
     street_raw = expand_street_name(apply_street_override(
         candidates._street_from_row(row)))
     hn = row.get("address_number") or ""
+    postcode, _raw, _why = candidates._source_postcode(row)
     return osm_export.build_tags({
         "housenumber": str(hn).strip().upper() if hn else "",
         "street_raw": street_raw,
         "unit": (row.get("unit_name") or "").strip(),
+        "postcode": postcode,
     })
 
 

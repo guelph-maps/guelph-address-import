@@ -105,13 +105,21 @@ addr:city=Guelph
 addr:source=Guelph Open Data
 ```
 
-No `addr:postcode` and no `addr:province` (Guelph dropped it). The buildings
-keep whatever postcode they carry. The postcode was left off because, when this
-campaign was cut, the engine wrote one only from a POI fallback. Since
-2026-10-03 the engine writes the City's `POSTCODE` on every node it creates
-(proposal, § Tagging plan), so these doors would be the exception: decide
-before upload whether `build_batches.py` should copy the City row's postcode
-too, through the same check (`[postcode] prefixes` in `config.toml`).
+Each door carries its own City row's `addr:postcode`, through the engine's
+`[postcode]` check, so a value the import would omit is omitted here too
+(skfd, 2026-10-03: "if we have postal code to write, write it"). No
+`addr:province` (Guelph dropped it). The buildings keep whatever postcode they
+carry.
+
+**The batches on disk predate this.** They were cut on 2026-09-29 and their
+doors have no postcode. A rebuild from the cached snapshot on 2026-10-03 added
+the postcode to 976 of 1,246 doors; the other 270, in 17 groups (121 at 1291
+Gordon Street), have no City postcode at all. That rebuild also moved the
+campaign from 17 batches and 868 doors to 20 and 1,246, through source and
+verdict changes since 2026-09-29, not through the postcode. Nothing else about
+any object changed. It was not committed, and `batches/` is empty
+until the next build: rebuild with `--refetch`, then re-check the numbers above,
+before upload.
 
 ## Guards
 
