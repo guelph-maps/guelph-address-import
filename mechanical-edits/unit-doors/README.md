@@ -75,8 +75,17 @@ Avenue (52), 49 Rhonda Road (48), 20 Shackleton Drive (43), and so on.
 **The 14 City-only doors are new since 2026-09-29**, when every created door
 was a unit the OSM listing named. All 14 are 561 York Road, units 6–19: the
 City has them, the listing does not. That follows the import's rule for doors
-beside a listing (proposal, 2026-10-01), but it is the one place this edit
-adds units OSM did not already list — check it before the post.
+beside a listing (proposal, 2026-10-01), and it is the one place this edit
+adds units OSM did not already list. No OSM building contains units 6–19 yet:
+the second block is unmapped. skfd has surveyed it: a commercial building where
+not every unit has its own door. Creating a node per unit is accepted anyway
+(2026-10-03).
+
+**Overlap with the import.** Since 2026-10-01 the continuous import proposes
+these same doors itself: a listing no longer stands in for them. Either may
+create them first. Whichever goes second must work from fresh OSM data —
+`--refetch` here, so doors the import already created become
+`skip-existing`, or a refreshed extract for the import.
 
 The largest groups: 1291 Gordon Street (160 doors), 941 Gordon Street and 190
 Fife Road (72 each), 240 Westwood Road (70), 15 Carere Crescent (64 — judged
