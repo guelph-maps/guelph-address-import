@@ -1,93 +1,21 @@
 type,id,street,housenumber,flats,shape,units_city,units_osm,detail,area,reason
-node,13164248922,Arthur Street North,151,A;B,review,,,,St. Georges Parkway,shape-review
-node,13164248921,Arthur Street North,28,A;B;C;D,review,,,,St. Georges Parkway,shape-review
-way,1076453164,Beechwood Avenue,83,1-16,review,,,,Downtown - Sunny Acres,shape-review
-way,803283639,Carere Crescent,15,28A;28B,civic-only,,,,Brant,shape-civic-only
-way,1002133611,Carere Crescent,15,9A;9B,civic-only,,,,Brant,shape-civic-only
-way,1002133612,Carere Crescent,15,11A;11B,civic-only,,,,Brant,shape-civic-only
-way,1002133613,Carere Crescent,15,13A;13B,civic-only,,,,Brant,shape-civic-only
-way,1002133614,Carere Crescent,15,15A;15B,civic-only,,,,Brant,shape-civic-only
-way,1002133731,Carere Crescent,15,23A;23B,civic-only,,,,Brant,shape-civic-only
-way,1002133737,Carere Crescent,15,19A;19B,civic-only,,,,Brant,shape-civic-only
-way,1002133738,Carere Crescent,15,21A;21B,civic-only,,,,Brant,shape-civic-only
-way,1002134901,Carere Crescent,15,37A;37B,civic-only,,,,Brant,shape-civic-only
-way,1002134902,Carere Crescent,15,36A;36B,civic-only,,,,Brant,shape-civic-only
-way,1002134903,Carere Crescent,15,34A;34B,civic-only,,,,Brant,shape-civic-only
-way,1002134904,Carere Crescent,15,35A;35B,civic-only,,,,Brant,shape-civic-only
-way,1002134905,Carere Crescent,15,32A;32B,civic-only,,,,Brant,shape-civic-only
-way,1002134906,Carere Crescent,15,33A;33B,civic-only,,,,Brant,shape-civic-only
-way,1002135386,Carere Crescent,15,42A;42B,civic-only,,,,Brant,shape-civic-only
-way,1002135387,Carere Crescent,15,41A;41B,civic-only,,,,Brant,shape-civic-only
-way,1002135388,Carere Crescent,15,40A;40B,civic-only,,,,Brant,shape-civic-only
-way,1002135389,Carere Crescent,15,39A;39B,civic-only,,,,Brant,shape-civic-only
-way,1002135390,Carere Crescent,15,38A;38B,civic-only,,,,Brant,shape-civic-only
-way,1002135571,Carere Crescent,15,48A;48B,civic-only,,,,Brant,shape-civic-only
-way,1002135572,Carere Crescent,15,47A;47B,civic-only,,,,Brant,shape-civic-only
-way,1002135573,Carere Crescent,15,46A;46B,civic-only,,,,Brant,shape-civic-only
-way,1002135574,Carere Crescent,15,45A;45B,civic-only,,,,Brant,shape-civic-only
-way,1002135575,Carere Crescent,15,44A;44B,civic-only,,,,Brant,shape-civic-only
-way,1002135576,Carere Crescent,15,43A;43B,civic-only,,,,Brant,shape-civic-only
-way,1002136083,Carere Crescent,15,29A;29B,civic-only,,,,Brant,shape-civic-only
-way,1002136084,Carere Crescent,15,31A;31B,civic-only,,,,Brant,shape-civic-only
-way,1002136085,Carere Crescent,15,30A;30B,civic-only,,,,Brant,shape-civic-only
-way,1002136091,Carere Crescent,15,24A;24B,civic-only,,,,Brant,shape-civic-only
-way,1002136092,Carere Crescent,15,25A;25B,civic-only,,,,Brant,shape-civic-only
-way,1002136093,Carere Crescent,15,26A;26B,civic-only,,,,Brant,shape-civic-only
-way,1002136094,Carere Crescent,15,27A;27B,civic-only,,,,Brant,shape-civic-only
-way,939208872,Cityview Drive South,5,101-108,review,,,,Grange Hill East,shape-review
-way,939208873,Cityview Drive South,7,201-212,review,,,,Grange Hill East,shape-review
-way,939208874,Cityview Drive South,9,301-308,review,,,,Grange Hill East,shape-review
-way,210083020,Conroy Crescent,37,1-15,review,,,,Dover Cliff,shape-review
-way,210083021,Conroy Crescent,63,1-3;21-24;31-37;41-48;51-58,review,,,,Dover Cliff,shape-review
 way,344325628,Elmira Road North,355,100-140,nodes,40,41,122,Non-Residential - A,osm-unit-not-in-city
-way,926452787,Exhibition Street,253,A;B;C;D;E;F;G;H;I;J;K,review,,,,Exhibition Park,shape-review
-way,926452788,Exhibition Street,263,A;B;C;D;E;F;G;H;I;J;K,review,,,,Exhibition Park,shape-review
-way,1156180354,Gordon Street,1131,1-8,review,,,,Rickson Ridge,shape-review
 node,13241233183,Gordon Street,1884,101-114;201-214;301-312;401-412;501-512;601-612;701-712;801-805,no-source-group,,,,Non-Residential - C,no-source-group
-way,743421919,Gordon Street,803,1-15,review,,,,Hanlon Creek,shape-review
-way,743421918,Gordon Street,807,1-12,review,,,,Hanlon Creek,shape-review
-node,13164248912,Grove Street,18,A,review,,,,St. Georges Parkway,shape-review
-node,13188159621,Huron Street,49,A;B,review,,,,Two Rivers,shape-review
-node,13188159620,Huron Street,51,A;B;C;D;E,review,,,,Two Rivers,shape-review
-way,1349287614,Janefield Avenue,176,228;230,civic-only,,,,Old University,shape-civic-only
-way,1349287615,Janefield Avenue,176,226;232,civic-only,,,,Old University,shape-civic-only
-way,1349287616,Janefield Avenue,176,224;234,civic-only,,,,Old University,shape-civic-only
-way,1349287617,Janefield Avenue,176,222;236,civic-only,,,,Old University,shape-civic-only
-way,1349287618,Janefield Avenue,176,220;238,civic-only,,,,Old University,shape-civic-only
-way,1349287989,Janefield Avenue,176,154;202,civic-only,,,,Old University,shape-civic-only
-way,1349287990,Janefield Avenue,176,156;200,civic-only,,,,Old University,shape-civic-only
-way,1349287997,Janefield Avenue,176,152;204,civic-only,,,,Old University,shape-civic-only
-way,1349319931,Janefield Avenue,176,308;318,civic-only,,,,Old University,shape-civic-only
-way,1349319932,Janefield Avenue,176,310;316,civic-only,,,,Old University,shape-civic-only
-way,1349319933,Janefield Avenue,176,312;314,civic-only,,,,Old University,shape-civic-only
-node,13251106189,Janefield Avenue,27,B,review,,,,Old University,shape-review
+way,1349287614,Janefield Avenue,176,228;230,nodes,76,22,152;154;156,Old University,osm-unit-not-in-city
+way,1349287615,Janefield Avenue,176,226;232,nodes,76,22,152;154;156,Old University,osm-unit-not-in-city
+way,1349287616,Janefield Avenue,176,224;234,nodes,76,22,152;154;156,Old University,osm-unit-not-in-city
+way,1349287617,Janefield Avenue,176,222;236,nodes,76,22,152;154;156,Old University,osm-unit-not-in-city
+way,1349287618,Janefield Avenue,176,220;238,nodes,76,22,152;154;156,Old University,osm-unit-not-in-city
+way,1349287989,Janefield Avenue,176,154;202,nodes,76,22,152;154;156,Old University,osm-unit-not-in-city
+way,1349287990,Janefield Avenue,176,156;200,nodes,76,22,152;154;156,Old University,osm-unit-not-in-city
+way,1349287997,Janefield Avenue,176,152;204,nodes,76,22,152;154;156,Old University,osm-unit-not-in-city
+way,1349319931,Janefield Avenue,176,308;318,nodes,76,22,152;154;156,Old University,osm-unit-not-in-city
+way,1349319932,Janefield Avenue,176,310;316,nodes,76,22,152;154;156,Old University,osm-unit-not-in-city
+way,1349319933,Janefield Avenue,176,312;314,nodes,76,22,152;154;156,Old University,osm-unit-not-in-city
 way,1349287991,Janefield Avenue,74,158;198,nodes,89,8,192;194;196;198,Old University,osm-unit-not-in-city
 way,1349287992,Janefield Avenue,74,160;196,nodes,89,8,192;194;196;198,Old University,osm-unit-not-in-city
 way,1349287993,Janefield Avenue,74,162;194,nodes,89,8,192;194;196;198,Old University,osm-unit-not-in-city
 way,1349287996,Janefield Avenue,74,164;192,nodes,89,8,192;194;196;198,Old University,osm-unit-not-in-city
-way,802540386,Kay Crescent,39,12-21,review,,,,Non-Residential - C,shape-review
-way,802540388,Kay Crescent,39,38-39,review,,,,Non-Residential - C,shape-review
-way,802540389,Kay Crescent,39,40-41,review,,,,Non-Residential - C,shape-review
-way,1443052881,Kay Crescent,39,32-33,review,,,,Non-Residential - C,shape-review
-way,1443052882,Kay Crescent,39,34-35,review,,,,Non-Residential - C,shape-review
-way,1443052883,Kay Crescent,39,36-37,review,,,,Non-Residential - C,shape-review
-way,1443052884,Kay Crescent,39,46-47,review,,,,Non-Residential - C,shape-review
-way,1443052885,Kay Crescent,39,44-45,review,,,,Non-Residential - C,shape-review
-way,1443052886,Kay Crescent,39,42-43,review,,,,Non-Residential - C,shape-review
+way,741807532,Kay Crescent,7,101-113;201-215;301-315;401-415;501-515;601-615;LL01-LL06,split,,,,Non-Residential - C,shape-split
 way,931652638,King Street,108,A;B;C,no-source-group,,,,Waverley,no-source-group
-way,1430415277,Liverpool Street,25,A;B;C,review,,,,Exhibition Park,shape-review
-way,925796246,Mctague Street,42,A;B;C,review,,,,Exhibition Park,shape-review
-node,13164297972,Mont Street,1,1-6,review,,,,Exhibition Park,shape-review
-node,13188159617,Neeve Street,115,A;B,review,,,,Two Rivers,shape-review
-node,13159082377,Quebec Street,19,201,review,,,,Downtown - Sunny Acres,shape-review
 way,242662848,Speedvale Avenue East,8,A;B;C;E;G,no-source-group,,,,Waverley,no-source-group
-way,925775200,Suffolk Street West,57,101-102;203-204;305-306;407-408;PH,review,,,,Exhibition Park,shape-review
-way,802125026,Sunnylea Crescent,2,1-8,review,,,,Waverley,shape-review
-way,802125029,Sunnylea Crescent,3,1-8,review,,,,Waverley,shape-review
-way,802125027,Sunnylea Crescent,4,1-8,review,,,,Waverley,shape-review
-way,819734257,Waterloo Avenue,210,A;B,review,,,,Downtown - Sunny Acres,shape-review
-way,882913721,Woolwich Street,560,A1-A9,review,,,,Exhibition Park,shape-review
-way,882913722,Woolwich Street,560,B1-B9,review,,,,Exhibition Park,shape-review
-node,13159082353,Wyndham Street North,116,1-4,review,,,,Exhibition Park,shape-review
-node,3944996090,Yarmouth Street,77,A;B;C;D,review,,,,Exhibition Park,shape-review
-way,1054125923,York Road,561,1-4,review,,,,Non-Residential - B,shape-review

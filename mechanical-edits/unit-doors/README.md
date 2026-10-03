@@ -10,7 +10,7 @@ without its units.
 
 ## Status — read this first
 
-- **Parked 2026-09-29.** The `addr:flats` listings it replaces are valid OSM (containment), so this is a consistency upgrade, not a fix. Nothing is queued. Note that the continuous import will not converge these groups by itself: `MATCH_LISTED` treats a listed unit as present, and the import never modifies. Campaign 1 has since changed every one of the 252 objects, so `--refetch` is mandatory if this is revived.
+- **Parked 2026-09-29.** The `addr:flats` listings it replaces are valid OSM (containment), so this is a consistency upgrade, not a fix. Nothing is queued. Note that the continuous import will not converge these groups by itself: `MATCH_LISTED` treats a listed unit as present, and the import never modifies. **Rebuilt 2026-10-03 with `--refetch`** (numbers below), after campaign 1 had changed every listing object; rebuild again before any upload.
 - **Not announced.** This edit has **not** been posted to
   [thread #135103](https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103).
   The choice was to fix the data first and announce afterwards. Post before
@@ -21,7 +21,7 @@ without its units.
   unit point — same tags, from the engine's own `osm_export.build_tags`. They
   are the first `addr:unit` nodes the import itself puts into Guelph. The
   changeset still carries `mechanical=yes`, from `_common`; whether a
-  changeset that creates 868 City-sourced nodes should be tagged as an import
+  changeset that creates 1,246 City-sourced nodes should be tagged as an import
   instead is worth deciding before the post.
 
 ## Why
@@ -46,46 +46,50 @@ Shape comes **only** from `t2.unit_shapes.collect()` — the whole civic group
 as the source has it, with the operator's verdicts applied. Never the per-run
 `candidates` table in tool.db, which is tile-cut.
 
-Measured 2026-09-29 against a fresh fetch (`--refetch`, after the flats-hygiene
-uploads landed):
+Measured 2026-10-03 against a fresh fetch (`--refetch`). Between 2026-09-29
+and this build the unit-shape audit judged the groups that were `review` and
+`civic-only` then (84 objects: 59 now batched, 11 held, 13 collapse, 1 split), so
+the population grew:
 
 | addr:flats objects | 464 | |
 |---|---|---|
-| in a `nodes` group, batched | **252** (240 ways, 12 nodes) | 74 civic groups |
-| in a `nodes` group, held by a guard | 5 | 2 groups — see review |
-| `collapse` | 120 | untouched, in no file — `addr:flats` is right there |
-| `review` | 41 | 32 groups — review.csv |
-| `civic-only` | 43 | 2 groups — review.csv |
+| in a `nodes` group, batched | **311** (294 ways, 17 nodes) | 92 civic groups |
+| in a `nodes` group, held by a guard | 16 | 3 groups — see review |
+| `collapse` | 133 | untouched, in no file — `addr:flats` is right there |
+| `split` verdict | 1 | 1 group (7 Kay Crescent) — review.csv |
 | no City group at that address | 3 | review.csv |
 
-What the 74 groups become:
+What the 92 groups become:
 
 | | |
 |---|---|
-| objects that lose `addr:flats` | **252** |
-| door nodes created | **868** — every one a unit the OSM listing named |
-| units **not** created, already in OSM as an `addr:unit` object | **389** |
+| objects that lose `addr:flats` | **311** |
+| door nodes created | **1,246** — 1,232 named by the OSM listing, 14 City-only |
+| units **not** created, already in OSM as an `addr:unit` object | **465** |
 
-The 389 are recorded in `manifest.csv` as `action=skip-existing` with the
-blocking object. 386 of them are City units the listing never named, already
-mapped as their own door ways (297) or nodes (89) — 35 Mountford Drive (84),
-40 Silvercreek Parkway North (58), 49 Rhonda Road (48), 20 Shackleton Drive
-(43), and so on. So the groups where the City has far more units than the OSM
-listing are groups whose other doors are already in OSM, and **no unit is
-created that OSM did not already list**. The remaining 3 are listed units that
-a POI node already carries (304 Stone Road West unit 11, 649 Scottsdale Drive
-unit 1, 350 Speedvale Avenue West unit 1); the listing goes and the POI keeps
-the unit.
+The 465 are recorded in `manifest.csv` as `action=skip-existing` with the
+blocking object — already mapped as their own door ways (361) or nodes (104):
+35 Mountford Drive (84), 40 Silvercreek Parkway North (58), 224 Janefield
+Avenue (52), 49 Rhonda Road (48), 20 Shackleton Drive (43), and so on.
 
-Where the listing object is a **node** (12 of them — Janefield Avenue, Mason
-Court, Woolwich Street): it loses `addr:flats` exactly as a way does and stays
-the civic node; the doors are created beside it. 10 groups have a single unit.
+**The 14 City-only doors are new since 2026-09-29**, when every created door
+was a unit the OSM listing named. All 14 are 561 York Road, units 6–19: the
+City has them, the listing does not. That follows the import's rule for doors
+beside a listing (proposal, 2026-10-01), but it is the one place this edit
+adds units OSM did not already list — check it before the post.
 
-Door placement: 781 of 868 created nodes fall inside a listed building
-footprint, 18 belong to node listings, and 69 fall outside — all within 4.4 m
-of a listed wall (100 Frederick Drive, 45 Airpark Place, 146 Downey Road, the
-Burns Drive rows). City door points on or just outside the wall; `inside_footprint`
-in the manifest says which.
+The largest groups: 1291 Gordon Street (160 doors), 941 Gordon Street and 190
+Fife Road (72 each), 240 Westwood Road (70), 15 Carere Crescent (64 — judged
+since it read `civic-only` on 2026-09-29).
+
+Where the listing object is a **node** (17 of them): it loses `addr:flats`
+exactly as a way does and stays the civic node; the doors are created beside
+it. 12 groups have a single unit.
+
+Door placement: 1,092 of 1,246 created nodes fall inside a listed building
+footprint, 33 belong to node listings, and 121 fall outside.
+`inside_footprint` in the manifest says which; on 2026-09-29 every outside
+door was within 4.4 m of a listed wall, and the 121 have not been re-measured.
 
 **Not created:** the unit-less civic row of a group. The engine's `nodes`
 shape would create it too, but here the building way (or civic node) keeps its
@@ -111,15 +115,8 @@ Each door carries its own City row's `addr:postcode`, through the engine's
 `addr:province` (Guelph dropped it). The buildings keep whatever postcode they
 carry.
 
-**The batches on disk predate this.** They were cut on 2026-09-29 and their
-doors have no postcode. A rebuild from the cached snapshot on 2026-10-03 added
-the postcode to 976 of 1,246 doors; the other 270, in 17 groups (121 at 1291
-Gordon Street), have no City postcode at all. That rebuild also moved the
-campaign from 17 batches and 868 doors to 20 and 1,246, through source and
-verdict changes since 2026-09-29, not through the postcode. Nothing else about
-any object changed. It was not committed, and `batches/` is empty
-until the next build: rebuild with `--refetch`, then re-check the numbers above,
-before upload.
+In this build 976 of the 1,246 doors carry a postcode. The other 270, in 17
+groups (121 at 1291 Gordon Street), have none because the City row has none.
 
 ## Guards
 
@@ -127,39 +124,36 @@ A group goes whole to `review.csv` rather than half-edited when:
 
 | reason | this build |
 |---|---|
-| `osm-unit-not-in-city` — OSM lists a unit the City lacks; removing the listing would lose it | 5 objects, 2 groups |
+| `osm-unit-not-in-city` — OSM lists a unit the City lacks; removing the listing would lose it | 16 objects, 3 groups |
 | `street-mismatch` — engine's street ≠ the OSM object's `addr:street` | 0 |
 | `flats-unparsed` / `relation` / `city-duplicate-unit` | 0 |
-| `shape-review` / `shape-civic-only` / `no-source-group` | 41 / 43 / 3 |
+| `shape-split` / `no-source-group` | 1 / 3 |
 
-The two guard hits are real hand work:
+The guard hits are real hand work:
 
 - **355 Elmira Road North** — way 344325628 says `100-140`; the City has no 122.
 - **74 Janefield Avenue** — ways 1349287991–996 list pairs like `158;198`,
-  `164;192`; 192–198 are not units of 74. Next door, 176 Janefield Avenue
-  (civic-only) has ways listing `154;202`, `220;238`: the mapper paired
-  front and back units per building across two civics.
-
-Worth a verdict on the audit page: **15 Carere Crescent** is 32 semis each
-listing `28A;28B` and reads like a door group, but the engine calls it
-`civic-only` (the listing is past 255 characters), so it is not in this edit.
+  `164;192`; 192–198 are not units of 74.
+- **176 Janefield Avenue** (11 objects, in this edit since its verdict): the
+  listings name 152, 154 and 156, which are not units of 176. With 74 next
+  door, the mapper paired front and back units per building across two
+  civics.
 
 ## Batches
 
-17 batches, one per area with door groups, one changeset each. No group is
-split across batches (asserted). **Batch 1, the pilot, is Non-Residential - B**:
-3 buildings (2 Taggart Street, 3 Watson Road South, 70 Watson Parkway South),
-16 doors. 275 Hanlon Creek Boulevard is in batch 9, Kortright Hills.
+20 batches, one per area with door groups, one changeset each. No group is
+split across batches (asserted). **Batch 1, the pilot, is Clairfields**: 3
+objects at 200 and 245 Southgate Drive, 15 doors. 275 Hanlon Creek Boulevard
+is in batch 11, Kortright Hills; the biggest are 17, Grange Hill East (189
+doors), and 20, West Willow Woods (179).
 
 Changeset comment:
 
 > Guelph addresses: units with their own outside doors get one addr:unit node
-> per door instead of addr:flats on the building - Kortright Hills (9/17)
+> per door instead of addr:flats on the building - Kortright Hills (11/20)
 
-**Collides with province-removal on version.** All 252 of these objects still
-carry `addr:province` (way 794182120 does). Whichever of edit 1 and edit 6
-uploads second must be rebuilt with `--refetch` first, or JOSM will raise
-conflicts on the shared objects.
+No longer collides with province-removal: none of the 311 objects carries
+`addr:province` in the 2026-10-03 fetch.
 
 ## Rebuild, check, upload
 
@@ -180,7 +174,7 @@ Upload, from `mechanical-edits/`, signed in to JOSM as `skfd imports`:
 
 ```
 python upload_loop.py unit-doors 1 1      # the pilot, then look at it
-python upload_loop.py unit-doors 2 17
+python upload_loop.py unit-doors 2 20
 ```
 
 `verify_changeset.py` now understands created nodes: for a manifest with
