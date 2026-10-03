@@ -106,11 +106,13 @@ def match_created(created: list[ET.Element], want: list[dict]) -> list[str]:
     return problems
 
 
-def find_changeset(batch: int, total: int) -> ET.Element:
+def find_changeset(batch: int, total: int, skip: set[str] = frozenset()) -> ET.Element:
     root = get(f"{API}/changesets?display_name={urllib.request.quote(ACCOUNT)}")
     # flats-hygiene writes "(1/22)", province-removal "[batch 1/105]".
     markers = (f"({batch}/{total})", f"[batch {batch}/{total}]")
     for cs in root.findall("changeset"):  # newest first
+        if cs.get("id") in skip:
+            continue  # already recorded, under this batch or another
         comment = tags_of(cs).get("comment", "")
         if any(m in comment for m in markers):
             return cs
@@ -138,13 +140,15 @@ def main() -> None:
     batch_file = next((here / "batches").glob(f"{args.batch:02d}-*.osm")).name
 
     uploads = here / "uploads.csv"
+    recorded: set[str] = set()
     if uploads.exists():
         for u in csv.DictReader(open(uploads, encoding="utf-8")):
+            recorded.add(u["changeset"])
             if int(u["batch"]) == args.batch:
                 sys.exit(f"batch {args.batch} already recorded as changeset {u['changeset']}")
 
     cs = (get(f"{API}/changeset/{args.changeset}").find("changeset")
-          if args.changeset else find_changeset(args.batch, total))
+          if args.changeset else find_changeset(args.batch, total, recorded))
     cs_id, user = cs.get("id"), cs.get("user")
     ctags = tags_of(cs)
     problems: list[str] = []

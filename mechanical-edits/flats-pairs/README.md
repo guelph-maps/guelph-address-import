@@ -61,3 +61,18 @@ Five of the 12 batches hold one or two objects each, because batches are
 split by area, the same as every earlier campaign.
 
 [thread]: https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103
+
+## Upload log
+
+- **Batch 1**, Parkwood Gardens: changeset 189908359, 36 objects, verified.
+- **Batch 0**: changeset 189908363 holds 1 object, way 212559742 at 649
+  Scottsdale Drive (`100-101` → `100;101`). Its comment says "Hanlon Creek
+  (2/12)", but this object belongs to batch 5. The tags are correct and it
+  verified clean. It went up under the wrong label because the first build
+  (before the 511 Edinburgh gate fix) left `02-hanlon-creek.osm` beside the
+  rebuild's `02-st-georges-parkway.osm`, and the upload loop picked the stale
+  file. The object is filed as batch 0 in the manifest, and its file is kept
+  as `00-hanlon-creek-uploaded-as-2.osm`. Batch 5 now holds only 511
+  Edinburgh. Since then the builder clears old batch files, the loop refuses a
+  batch number that matches two files, and the verifier skips changesets that
+  are already recorded.

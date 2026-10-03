@@ -249,6 +249,10 @@ def main() -> None:
 
     batches = promote_pilot(make_batches(safe, CAMPAIGN.max_per_batch),
                             CAMPAIGN.pilot_min)
+    # A rebuild can renumber; files left from the last one would share a
+    # batch number with the new ones, and the upload loop loads by number.
+    for old in BATCH_DIR.glob("*.osm"):
+        old.unlink()
     records = []
     for index, batch in enumerate(batches, 1):
         print(f"  batch {index}/{len(batches)}: {batch['area']} "

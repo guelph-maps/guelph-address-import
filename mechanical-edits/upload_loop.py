@@ -49,7 +49,12 @@ def main() -> None:
         if n in recorded(camp):
             say(f"batch {n}: already recorded, skipping")
             continue
-        path = next((camp / "batches").glob(f"{n:02d}-*.osm"))
+        found = sorted((camp / "batches").glob(f"{n:02d}-*.osm"))
+        if len(found) != 1:
+            # A rebuild that renumbers leaves the old files behind; loading the
+            # wrong one put flats-pairs' batch 5 object up as batch 2.
+            sys.exit(f"batch {n}: expected one file, found {[p.name for p in found]}")
+        path = found[0]
         load(path)
         say(f"batch {n}: LOADED {path.name} — press Upload in JOSM")
         while True:

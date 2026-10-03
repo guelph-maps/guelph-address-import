@@ -40,7 +40,7 @@ batch,area,type,id,version,street,housenumber,flats_before,flats_after
 4,Grange Hill East,way,937552915,6,Auden Road,470,22-23,22;23
 4,Grange Hill East,way,937552916,6,Auden Road,470,16-17,16;17
 5,Hanlon Creek,way,215069449,7,Edinburgh Road South,511,101-102;101A;201-202,101;101A;102;201;202
-5,Hanlon Creek,way,212559742,8,Scottsdale Drive,649,100-101,100;101
+0,Hanlon Creek,way,212559742,8,Scottsdale Drive,649,100-101,100;101
 6,Onward Willow,way,208492557,5,Silvercreek Parkway North,106,1-2;4-5;7,1;2;4;5;7
 6,Onward Willow,way,1442367349,4,Silvercreek Parkway North,40,47-48,47;48
 7,Downtown - Sunny Acres,way,1431616569,4,Surrey Street East,47,1-2;3A;3B;3C;4-8,1;2;3A;3B;3C;4-8
