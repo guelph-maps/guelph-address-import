@@ -53,6 +53,12 @@ def expected_flats_hygiene(before: dict, row: dict) -> dict:
     return after
 
 
+def expected_flats_pairs(before: dict, row: dict) -> dict:
+    after = dict(before)
+    after["addr:flats"] = row["flats_after"]
+    return after
+
+
 def expected_province(before: dict, row: dict) -> dict:
     after = dict(before)
     after.pop("addr:province", None)
@@ -66,6 +72,7 @@ def expected_unit_doors(before: dict, row: dict) -> dict:
 
 
 EXPECT = {"flats-hygiene": expected_flats_hygiene,
+          "flats-pairs": expected_flats_pairs,
           "province-removal": expected_province,
           "province-leftovers": expected_province,
           "unit-doors": expected_unit_doors}
