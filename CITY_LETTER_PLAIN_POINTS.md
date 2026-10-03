@@ -22,6 +22,10 @@ glad to know it.
 
 A smaller related question: 82 addresses have unit points but no plain point at
 all. Is that expected, or should each of them have one? I can send that list too.
+Two of them have only a single unit point: 139 Arthur Street North, unit A
+(ADDID 8349), and 2053 Gordon Street, unit 119 (ADDID 19158). The second puzzles
+me most. It looks like a single detached house with its own PIN and roll number,
+and the neighbouring lots have no units. What does the 119 stand for?
 
 The full list of the 332 addresses is below, taken from the live layer on
 2 October 2026.
