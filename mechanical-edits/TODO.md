@@ -11,7 +11,8 @@ have been *found* but not yet proposed, so they do not live only in a chat log.
 | 3 | Unit lists `addr:unit` → `addr:flats` (447) | **done** 2026-09-17, 447 objects, 23 changesets |
 | 4 | Remove meaningless `addr:interpolation` (81) | **done** 2026-09-30, with campaign 5 — changesets 189752405–189752690, all verified |
 | 5 | A real `addr:flats` normalizer (292 of 464 untidy, re-measured) | **done** 2026-09-30, merged with campaign 4 — 325 objects, 22 changesets, each read back from the API and verified |
-| 6 | Unit doors: `addr:flats` on door groups → one `addr:unit` node per door (252 objects, 868 nodes) | **built 2026-09-29, parked** — the listings are valid OSM, so it is a consistency upgrade, not a fix. The import will not converge these groups on its own. If revived: post on #135103 first, rebuild with `--refetch` (campaign 1 moved every version). See `unit-doors/README.md` |
+| 6 | Unit doors: `addr:flats` on door groups → one `addr:unit` node per door (252 objects, 868 nodes) | **built 2026-09-29, parked** — the listings are valid OSM, so it is a consistency upgrade, not a fix. Since 2026-10-01 the import creates these doors itself (a listing no longer stands in for a door), so edit 6 shrinks to stripping the then-redundant listings. If revived: post on #135103 first, rebuild with `--refetch` (campaign 1 moved every version). See `unit-doors/README.md` |
+| 7 | `addr:flats` naming another civic's units (14 objects; 7 are the 74/176 Janefield back-to-back slices) | **recorded 2026-10-02, not built** — after the import, and announced first. See `cross-civic-flats/README.md`; a curiosity post is drafted beside it |
 
 ---
 
