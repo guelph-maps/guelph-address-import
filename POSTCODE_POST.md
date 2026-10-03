@@ -43,3 +43,11 @@ not edited.
 
 The `addr:postcode` row on the wiki page has the details:
 <https://wiki.openstreetmap.org/wiki/Guelph/Address_Import/Continuous#Tagging_plan>
+
+**Also: no `addr:housenumber=0`**
+
+The City has 13 active points numbered 0. Two are bridges (Gow's Bridge on
+McCrae Boulevard, Norwich Street Bridge); the other 11 have no name or note.
+11 of the 13 would have gone up as new nodes with `addr:housenumber=0`.
+They're now skipped, since nobody writes 0 on a door, and I've asked the City
+what they stand for.
