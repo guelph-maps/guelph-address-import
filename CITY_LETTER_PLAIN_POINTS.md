@@ -35,7 +35,7 @@ Last, a few UNIT_NO values I can't read:
 - 53, 63 and 73 Arthur Street South: AT1 to AT8, RL1 to RL6, BHA, BHB, BHC-1,
   BHC-2 and RR-A1 to RR-B2. What do the prefixes stand for?
 
-Two smaller things I noticed on the way, in case they are useful:
+A few smaller things I noticed on the way, in case they are useful:
 
 Some POSTCODE values look like they belong somewhere else, maybe an owner's
 mailing address:
@@ -58,6 +58,17 @@ On Gosling Gardens, the 30 points numbered 175 to 239 (odd side) have STDIR =
 West, while FULLNAME and STREETNAME have no direction and every other point on
 the street has none. As far as I know there is no Gosling Gardens West, so the
 West looks like a leftover.
+
+13 active points have STREETNO 0. Two are bridges by their LANDMKNAME: Gow's
+Bridge on Mccrae Boulevard (ADDID 56660) and Norwich Street Bridge on Norwich
+Street East (56662). The other 11 have no name or note, yet all have a PIN and
+ten have a roll number: Stephanie Drive (7699), Edinburgh Road South (23417), Watson
+Parkway North (26087), York Road (39610), London Road West (44938), Poppy Drive
+East (48703), Massey Road (23545), Woodlawn Road East (39535), Scottsdale Drive
+(20168), Imperial Road North (56574) and Yarmouth Street (56663). What do these
+points stand for? Is 0 a placeholder for a property with no civic number yet?
+For now I am leaving them out of OpenStreetMap, since nobody would write 0 on a
+door.
 
 The full list of the 332 addresses is below, taken from the live layer on
 2 October 2026.
