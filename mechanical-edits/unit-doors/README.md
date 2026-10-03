@@ -105,9 +105,13 @@ addr:city=Guelph
 addr:source=Guelph Open Data
 ```
 
-No `addr:postcode` (the engine only writes one from a POI fallback) and no
-`addr:province` (Guelph dropped it). The buildings keep whatever postcode they
-carry.
+No `addr:postcode` and no `addr:province` (Guelph dropped it). The buildings
+keep whatever postcode they carry. The postcode was left off because, when this
+campaign was cut, the engine wrote one only from a POI fallback. Since
+2026-10-03 the engine writes the City's `POSTCODE` on every node it creates
+(proposal, § Tagging plan), so these doors would be the exception: decide
+before upload whether `build_batches.py` should copy the City row's postcode
+too, through the same check (`[postcode] prefixes` in `config.toml`).
 
 ## Guards
 

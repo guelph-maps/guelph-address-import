@@ -63,6 +63,12 @@ unit = "unit"
 # if Guelph ever publishes Proposed/Pending rows they are filtered, not
 # imported.
 status = "props:STATUS"
+# POSTCODE, on 48,957 of 53,847 active rows at snapshot 47 and written by the
+# 2025 import on most of what it uploaded (3,773 of 4,244 sampled elements in
+# onboarding/entry-state-2026-08-15.json). Decided 2026-10-03: created nodes
+# carry it, as the import we continue did. Checked against [postcode] below at
+# ingest; a value that fails is left off the node and audited, never fixed up.
+postcode = "props:POSTCODE"
 # Absent, verified against snapshot-39 props (19 keys, 2026-08-15): no
 # lo_num/hi_num ranges, no address_class. suffix_range therefore stays
 # undeclared below — the engine would refuse a config that enables it.
@@ -372,6 +378,17 @@ policy = "per-door-or-collapse"
 
 [status]
 active_values = ["Active"]
+
+# The forward sortation areas a City POSTCODE must start with to be written.
+# Measured 2026-10-03 on snapshot 47's 48,957 values: N1E 14,878, N1H 12,361,
+# N1G 11,333, N1L 6,043, N1K 3,062 (one is 595 Governors Road, the only one
+# of the 75 Guelph/Eramosa Twp rows with a postcode), N1C 1,272 — 48,949 in
+# all. The 8 left out, all reported in CITY_LETTER_PLAIN_POINTS.md: K8V 5P4
+# (ADDID 9539), M6N 2N8 (48658), L7P 0N4 (51877), N0L 0H1 (30480, 55312),
+# N0B 1C0 (18992), N1B 0B8 (43586, 1423 Gordon Street) and "0" (53855).
+# A new FSA appearing in the City's layer is omitted until it is added here.
+[postcode]
+prefixes = ["N1C", "N1E", "N1G", "N1H", "N1K", "N1L"]
 
 # 13 active rows carry STREETNO "0": placeholder points with no civic number,
 # two of them bridges (LANDMKNAME "Gow's Bridge" on Mccrae Boulevard, ADDID
