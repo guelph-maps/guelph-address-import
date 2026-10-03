@@ -106,13 +106,19 @@ def match_created(created: list[ET.Element], want: list[dict]) -> list[str]:
     return problems
 
 
-def find_changeset(batch: int, total: int, skip: set[str] = frozenset()) -> ET.Element:
+def find_changeset(batch: int, total: int, skip: set[str] = frozenset(),
+                   exact: str = "") -> ET.Element:
     root = get(f"{API}/changesets?display_name={urllib.request.quote(ACCOUNT)}")
-    # flats-hygiene writes "(1/22)", province-removal "[batch 1/105]".
-    markers = (f"({batch}/{total})", f"[batch {batch}/{total}]")
+    # flats-hygiene writes "(1/22)", province-removal "[batch 1/105]". When the
+    # batch file carries its comment, that exact text is the marker: a batch
+    # added after the fact (flats-pairs 13/13) would otherwise shift `total`.
+    markers = ((exact,) if exact else
+               (f"({batch}/{total})", f"[batch {batch}/{total}]"))
     for cs in root.findall("changeset"):  # newest first
         if cs.get("id") in skip:
             continue  # already recorded, under this batch or another
+        if cs.get("open") != "true" and cs.get("changes_count") == "0":
+            continue  # an upload that conflicted before writing anything
         comment = tags_of(cs).get("comment", "")
         if any(m in comment for m in markers):
             return cs
@@ -137,7 +143,10 @@ def main() -> None:
     creates = [r for r in mine if r.get("action") == "create"]
     if not rows and not creates:
         sys.exit(f"batch {args.batch} has no manifest rows")
-    batch_file = next((here / "batches").glob(f"{args.batch:02d}-*.osm")).name
+    batch_path = next((here / "batches").glob(f"{args.batch:02d}-*.osm"))
+    batch_file = batch_path.name
+    head = ET.parse(batch_path).getroot().find("changeset")
+    file_comment = tags_of(head).get("comment", "") if head is not None else ""
 
     uploads = here / "uploads.csv"
     recorded: set[str] = set()
@@ -148,7 +157,7 @@ def main() -> None:
                 sys.exit(f"batch {args.batch} already recorded as changeset {u['changeset']}")
 
     cs = (get(f"{API}/changeset/{args.changeset}").find("changeset")
-          if args.changeset else find_changeset(args.batch, total, recorded))
+          if args.changeset else find_changeset(args.batch, total, recorded, file_comment))
     cs_id, user = cs.get("id"), cs.get("user")
     ctags = tags_of(cs)
     problems: list[str] = []
@@ -168,6 +177,12 @@ def main() -> None:
             before[k] = tags_of(el)
         if el.tag in ("way", "relation"):
             el.clear()
+    # An object re-prepared after the fetch (someone edited it in between) is
+    # prepared against a version live.osm never saw; read that one from the API.
+    for k in set(wanted) - set(before):
+        el = get(f"{API}/{k[0]}/{k[1]}/{wanted[k]}").find(k[0])
+        if el is not None:
+            before[k] = tags_of(el)
     missing = set(wanted) - set(before)
     if missing:
         sys.exit(f"{len(missing)} prepared-against versions not in live.osm "
