@@ -53,6 +53,11 @@ HAS_UNIT = N, across 24 addresses; 155 Bristol Street units B and C (ADDID 57311
 25459, 41799, 57263, 57290, 57291, 57292, 57300, 57301 and 57302. Which of the
 two fields should I trust? I can send the 24 addresses too.
 
+On Gosling Gardens, the 30 points numbered 175 to 239 (odd side) have STDIR =
+West, while FULLNAME and STREETNAME have no direction and every other point on
+the street has none. As far as I know there is no Gosling Gardens West, so the
+West looks like a leftover.
+
 The full list of the 332 addresses is below, taken from the live layer on
 2 October 2026.
 
