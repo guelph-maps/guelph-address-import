@@ -37,7 +37,7 @@ So from the initial gap-fill on, new nodes get `addr:postcode` from the City's
 
 What does **not** change: I won't retag existing objects. If an address is
 already in OSM with a different postcode, the import leaves it alone and flags
-it for me to look at. Existing addresses with no postcode at all (about 700)
+it for me to look at. Existing addresses with no postcode at all (about 700 at the last count)
 are listed by [guelph-beholder](https://github.com/guelph-maps/guelph-beholder),
 not edited.
 

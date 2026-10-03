@@ -387,6 +387,13 @@ active_values = ["Active"]
 # (ADDID 9539), M6N 2N8 (48658), L7P 0N4 (51877), N0L 0H1 (30480, 55312),
 # N0B 1C0 (18992), N1B 0B8 (43586, 1423 Gordon Street) and "0" (53855).
 # A new FSA appearing in the City's layer is omitted until it is added here.
+# A collapsed building takes a postcode only when its rows agree on one
+# (engine, 2026-10-03). 31 civic groups carry two or more valid ones, but 23
+# of them become door nodes, each with its own row's postcode (180 Marksam
+# Road's four codes fall on its doors). The 8 that collapse are towers with
+# one dominant code and 1-4 stray rows — 89 and 93 Westwood Road, 142
+# Imperial Road North, 281 Bristol Street, 45 Goodwin Drive, 1083, 1219 and
+# 1280 Gordon Street — and those nodes get none.
 [postcode]
 prefixes = ["N1C", "N1E", "N1G", "N1H", "N1K", "N1L"]
 
