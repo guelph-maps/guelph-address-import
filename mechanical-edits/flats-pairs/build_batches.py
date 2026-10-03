@@ -44,6 +44,7 @@ import re
 import sys
 from datetime import datetime
 from pathlib import Path
+from xml.etree import ElementTree as ET
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent))
@@ -183,6 +184,25 @@ CAMPAIGN = Campaign(
 )
 
 
+def verify_modify_set(records: list[dict]) -> None:
+    """Read the batch files back: every object marked `action="modify"` is in
+    exactly one batch, and the marked set is the manifest. Campaign 1 found 58
+    objects double-marked through shared child nodes before
+    `_common.geometry_stub` existed; this is the check that caught them."""
+    expected = {(row["type"], row["id"]) for rec in records for row in rec["rows"]}
+    seen: dict[tuple[str, str], list[int]] = {}
+    for rec in records:
+        for el in ET.parse(rec["path"]).getroot():
+            if el.attrib.get("action") == "modify":
+                seen.setdefault((el.tag, el.attrib["id"]), []).append(rec["index"])
+    dupes = {k: v for k, v in seen.items() if len(v) > 1}
+    if dupes or set(seen) != expected:
+        raise SystemExit(f"batch verification failed: {len(dupes)} double-marked, "
+                         f"{len(set(seen) ^ expected)} differ from the manifest")
+    print(f"  verified: {len(seen)} objects marked modify, each in one batch, "
+          f"matching the manifest")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--refetch", action="store_true",
@@ -243,6 +263,7 @@ def main() -> None:
             assert row["flats_after"] != row["flats_before"], row
             assert len(row["flats_after"]) == len(row["flats_before"]), row
 
+    verify_modify_set(records)
     write_csvs(HERE, CAMPAIGN, records, review)
     stamp = datetime.now().astimezone().strftime("%Y-%m-%d %H:%M %Z")
     page = _runsheet.write(HERE, CAMPAIGN, records, review, stamp,
