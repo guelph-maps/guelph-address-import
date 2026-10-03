@@ -6,10 +6,10 @@ Hello,
 
 I map Guelph's addresses in OpenStreetMap using your Addresses dataset
 (explore.guelph.ca/datasets/cityofguelph::addresses-1). Thank you for publishing
-it. I have one question I can't answer from the data itself.
+it. I have a few questions I can't answer from the data itself.
 
-332 civic addresses have unit points (HAS_UNIT = Y) and also one point with no
-UNIT_NO (HAS_UNIT = N). For example, 147 Arthur Street North has units A, B and C
+332 civic addresses have unit points (with a UNIT_NO) and also one point with no
+UNIT_NO. For example, 147 Arthur Street North has units A, B and C
 plus a plain "147" (ADDID 34872).
 
 Does that plain point stand for a separate dwelling or door with no unit letter,
@@ -34,6 +34,24 @@ Last, a few UNIT_NO values I can't read:
   these whole buildings rather than units?
 - 53, 63 and 73 Arthur Street South: AT1 to AT8, RL1 to RL6, BHA, BHB, BHC-1,
   BHC-2 and RR-A1 to RR-B2. What do the prefixes stand for?
+
+Two smaller things I noticed on the way, in case they are useful:
+
+Some POSTCODE values look like they belong somewhere else, maybe an owner's
+mailing address:
+
+- 254 Colonial Drive (ADDID 9539): K8V 5P4
+- 91 Poppy Drive East, unit 14 (ADDID 48658): M6N 2N8
+- 88 Decorso Drive, unit 88 (ADDID 51877): L7P 0N4
+- 82 Farquhar Street (ADDID 53855): 0
+- 33 and 35 Lambeth Way (ADDID 30480, 55312): N0L 0H1
+- 1 Cox Court (ADDID 18992): N0B 1C0
+
+HAS_UNIT doesn't always agree with UNIT_NO. 286 points that have a UNIT_NO say
+HAS_UNIT = N, across 24 addresses; 155 Bristol Street units B and C (ADDID 57311,
+57312) are two of them. Nine points with no UNIT_NO say HAS_UNIT = Y: ADDID
+25459, 41799, 57263, 57290, 57291, 57292, 57300, 57301 and 57302. Which of the
+two fields should I trust? I can send the 24 addresses too.
 
 The full list of the 332 addresses is below, taken from the live layer on
 2 October 2026.
