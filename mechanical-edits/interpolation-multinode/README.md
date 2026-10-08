@@ -4,8 +4,10 @@
 addr:interpolation line, N to N         ->  deleted (with its bare middle nodes)   29, built
 addr:interpolation line, every address  ->  deleted, if the thread agrees          62, not built
   between its ends already mapped
-addr:interpolation line, no City        ->  deleted, if the thread agrees          56, not built
+addr:interpolation line, no City        ->  deleted, if the thread agrees          48, not built
   address between its ends
+line whose street the City spells       ->  hand cases                              8
+  differently
 line with one bare end                  ->  hand cases                              2
 end nodes, all of them                  ->  not touched
 ```
@@ -66,14 +68,20 @@ by (street, housenumber):
 |---|---|---|---|---|
 | **same-number** — runs from N to N | **29** | 0 by construction | — | — |
 | **covered** — every one already mapped | **62** | 261 | **261** | 44 |
-| **empty** — the City has none between the ends | **56** | 0 | — | — |
+| **empty** — the City has none between the ends | **48** | 0 | — | — |
+| **unmatched-street** — the City has no street spelt that way | **8** | ? | — | — |
 | adds an address the map lacks | **0** | | | |
 
-**Not one of the 147 supplies an address OSM does not already have as a
-real object.** 44 of those 261 are there because the import put them there
+**Not one of the 139 that can be checked supplies an address OSM does not
+already have as a real object.** 44 of those 261 are there because the import put them there
 this month; Burns Drive 37–83 odd spans 15, and 14 of them are ours.
 
-The 56 **empty** lines are worse than redundant. They can only generate
+The lookup is by (street, housenumber) anywhere in Guelph, not by position:
+it asks whether the address exists in OSM, not whether it sits beside the
+line. 75 of the 261 sit more than 60 m from their line, which is what a range
+bound drawn along a road centreline looks like next to a point on a lot.
+
+The 48 **empty** lines are worse than redundant. They can only generate
 numbers that do not exist: Beaumont Crescent 63–83 odd, where the City has no
 odd number below 109; Brant Avenue 20–24 even, where it has no 20, 22 or 24.
 That is what the `source` tags say they are — **121 from NRCan CanVec, 28
@@ -82,8 +90,31 @@ not addresses anyone lives at. A range bound is a number a block face could
 hold.
 
 That reaches the end nodes too. Of the 147, **76 have neither end number in
-the City's data**, and 42 of those are empty lines: two address nodes and a
-line between them, none of which the City knows. They are not touched here —
+the City's data**, and 34 of those are empty lines: two address nodes and a
+line between them, none of which the City knows. Every empty line's street
+does exist in the City's data under that spelling; the gaps are in the
+numbers, not the names.
+
+### The eight on streets the City spells differently
+
+Found by checking exactly that, and taken *out* of empty, because "the City
+has no address between the ends" means nothing when the City has no street of
+that name:
+
+| Lines | As the end nodes spell it | The City has |
+|---|---|---|
+| 2 | Glenholme Drive (16–46 even, 15–27 odd) | Glenholm Drive, 11 points, 15–80 |
+| 2 | Lowes Road (20–24 even, 21–25 odd) | Lowes Road East, Lowes Road West |
+| 1 | Spencer Court (10–54 even) | Spencer Crescent |
+| 1 | Watson Rang South (533–537 odd) | Watson Road South, up to 290 |
+| 2 | Powerhouse Lane (26–168 even, 53–101 odd) | no such street |
+
+All eight are StatCan 92-500-X. Their end nodes are address nodes with a
+misspelt street, which is the more useful thing to fix; whether the line then
+covers anything can be asked again afterwards. Hand cases, not batched.
+(Poppy Lane 1–1 has the same problem — the City has Poppy Drive East and West
+— but a 1-to-1 line says nothing whatever the street is called, so it stays
+in same-number.) They are not touched here —
 see [Not this edit](#not-this-edit).
 
 ### The two broken ones
@@ -125,13 +156,13 @@ of them, a kilometre each; Imperial Road South has 30 to 30 twice. Each pair of
 end nodes is the same address twice, which is a duplicate-node question for a
 later pass and stays exactly as it is.
 
-### Not built: covered (62) and empty (56)
+### Not built: covered (62) and empty (48)
 
 ```bash
 C:/Users/kk/Code/address-importer-friend/.venv/Scripts/python.exe build_batches.py --tiers same-number,covered,empty
 ```
 
-builds them as batches 2 and 3 — **62 ways + 138 nodes** and **56 ways + 101
+builds them as batches 2 and 3 — **62 ways + 138 nodes** and **48 ways + 87
 nodes**, checked by the same gate. They are left out of the default because
 both rest on one premise: **that the City's roster is the whole truth about
 which addresses exist.** That is what the import has assumed throughout, and
@@ -146,13 +177,13 @@ these go.
    window.** Every earlier campaign retagged and ran without one; this one
    deletes other people's objects, and @ARandomThumbtack asked to be told
    (post #19). Fourteen days is the import guideline's number.
-2. **If nobody objects: upload all three tiers, 147 lines.** The survey says
-   none of them carries an address the map lacks, and 56 of them invent ones.
+2. **If nobody objects: upload all three tiers, 139 lines.** The survey says
+   none of them carries an address the map lacks, and 48 of them invent ones.
    Rebuild with `--refetch --tiers same-number,covered,empty` on the day.
 3. **If the roster premise is questioned: upload same-number only** (29), and
    leave covered and empty for whoever raised it.
-4. **The 2 broken lines** go to whoever opens them, by hand, from the
-   personal account.
+4. **The 2 broken lines and the 8 on misspelt streets** go to whoever opens
+   them, by hand, from the personal account.
 
 ## The gate
 
@@ -193,11 +224,12 @@ gitignored. `survey.csv`, `survey_2node.csv` and `manifest.csv` are tracked.
 
 - **The 405 two-node lines give the same answer**, in
   [`survey_2node.csv`](survey_2node.csv): 396 valid, 9 with a bare end; 77
-  same-number, 120 covered, 199 empty, **0 adding an address** — 407 City
+  same-number, 120 covered, 190 empty, 9 on unmatched streets, **0 adding an
+  address** — 407 City
   addresses spanned, all mapped, 71 by the import. They are the same CanVec
   and StatCan ranges with fewer bends. Campaign 4 called them "real
   interpolation, correctly tagged", and by the JOSM test they are; by this
-  test, they are as redundant as the 147. A follow-up, announced on its own.
+  test, they are as redundant as the 139. A follow-up, announced on its own.
 - **End nodes the City does not know.** 76 of the 147 lines have both ends
   outside the City's data, 26 one end. Those are address nodes asserting a
   number the authority says does not exist — the reverse-beholder question
@@ -209,6 +241,7 @@ gitignored. `survey.csv`, `survey_2node.csv` and `manifest.csv` are tracked.
 
 - [x] Survey against live OSM, 2026-10-07
 - [x] Batch 1 (same-number) built and gated; covered/empty buildable
+- [ ] The 2 bare-ended lines and the 8 unmatched-street lines, by hand
 - [ ] `ANNOUNCEMENT.md` posted to #135103; 14 days
 - [ ] Decide the tiers from the thread
 - [ ] `build_batches.py --refetch --tiers …` on the day

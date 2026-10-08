@@ -15,7 +15,7 @@ has to ask.
 
 ---
 
-**Proposal: delete 147 address interpolation lines in Guelph that no longer
+**Proposal: delete 139 address interpolation lines in Guelph that no longer
 add any address — questions welcome before anything moves.**
 
 When we removed `addr:interpolation` from building outlines last month (post
@@ -24,9 +24,11 @@ saying they needed a different check. Here it is.
 
 **By JOSM's test they're fine.** 147 of the 149 have a numbered address node
 at both ends, on the same street, with the right odd/even parity. Two have a
-bare end and are genuinely broken; I'll leave those to be fixed by hand.
+bare end and are genuinely broken; I'll leave those to be fixed by hand, along
+with 8 whose end nodes misspell the street (Glenholme Drive, Watson Rang
+South, Spencer Court for Spencer Crescent…).
 
-**But none of the 147 adds an address OSM doesn't already have.** For each
+**But none of the other 139 adds an address OSM doesn't already have.** For each
 line I took every City address on that street, on that side, between its end
 numbers, and looked it up in OSM:
 
@@ -34,7 +36,7 @@ numbers, and looked it up in OSM:
   kilometre long. They interpolate nothing at all.
 - **62** span 261 City addresses, and **all 261 are already mapped** as real
   nodes or buildings (44 of them added by the gap-fill this month).
-- **56** span *no* City address. They can only produce numbers that don't
+- **48** span *no* City address. They can only produce numbers that don't
   exist: Beaumont Crescent 63–83 odd, where the City's only odd number is
   109; Brant Avenue 20–24 even, where there is no 20, 22 or 24.
 
@@ -50,12 +52,12 @@ Every object goes up at its current version, so anything edited since my
 survey conflicts in JOSM instead of being deleted, and the manifest keeps each
 way's tags and node list so any of it can be put back.
 
-**The one thing I'd like a view on:** the 62 and the 56 are only redundant if
+**The one thing I'd like a view on:** the 62 and the 48 are only redundant if
 the City's address list is taken as complete — a house the City left out
 would lose the line that geocodes it today. The import has assumed the City is
 authoritative throughout, but that's a judgement, not a fact. So:
 
-- if nobody objects by **[DATE, 14 days out]**, I'll delete all 147, in three
+- if nobody objects by **[DATE, 14 days out]**, I'll delete all 139, in three
   changesets (one per group above), from `skfd imports`;
 - if anyone doubts the City's list, I'll delete only the 29 same-number lines,
   which don't depend on it, and leave the rest.

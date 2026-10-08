@@ -283,8 +283,14 @@ def main(refetch: bool | None = None) -> None:
         #                already a real object in OSM
         #   empty        the City has no address strictly between the ends;
         #                the line can only generate numbers that do not exist
+        #   unmatched-street
+        #                the City has no street spelt the way the line's ends
+        #                spell it, so "no address between" means nothing.
+        #                Glenholme for Glenholm, Lowes Road with no East/West.
+        #                Not a deletion tier: the ends want fixing first
         if ends_n == 2 and None not in lo_hi:
             tier = ("same-number" if lo_hi[0] == lo_hi[1]
+                    else "unmatched-street" if street not in city_by_street
                     else "covered" if seen_civic and not missing
                     else "empty" if not seen_civic else "adds-addresses")
         else:
