@@ -8,16 +8,16 @@
 
 == Status ==
 
-* '''Stage:''' In progress, and it stays there: this is continuous upkeep, re-run when the City publishes, so it is never marked complete.
-** '''The first gap-fill cycle is uploaded''': 2026-10-03 to 2026-10-07, '''4,367''' address nodes in '''131''' changesets (189912383–190173922), one per tile, from [[osm:user/skfd imports|skfd imports]]. 1,680 are door nodes carrying <code>addr:unit</code>, at 143 addresses; 8 are one node for a building with its units in <code>addr:flats</code>; 2,679 are plain civic addresses. 3,531 carry the City's postcode. Reported on the thread in [https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103/22 post #22].
+* '''Stage:''' In progress. This is continuous upkeep, so it is never marked complete.
+** '''The first gap-fill is done''': '''4,367''' addresses added, 2026-10-03 to 2026-10-07. Reported in [https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103/22 post #22].
+** Five of them duplicated an address already on a park or school, and were deleted the same week.
+** '''All five mechanical edits are done.'''
 ** The gap-fill and campaigns 1 and 2 were announced on 2026-08-28; the 14-day objection window closed on 2026-09-10 with no objections.
-** '''One correction followed.''' Five of those nodes landed inside a park or school that already carried the same address, because conflation measured an area from its centre and the centre was past the match radius. They were deleted on 2026-10-07 in changeset 190174014, and areas are now matched by their edges.
-** '''All five mechanical edits are finished.''' 2 and 3: 5,521 and 447 objects, 59 changesets, 2026-09-16/17, all from the import account except the very first, which went from the maintainer's personal account by mistake and is disclosed on the thread. 4 and 5 together: 325 objects, 22 changesets, 2026-09-30. 1: 44,763 objects in 25 changesets, one per area, 2026-09-30, plus 32 held for hand review in one more. A follow-up to 5 on 2026-10-03 spelt out 126 two-unit values as <code>1;2</code> rather than <code>1-2</code> (14 changesets).
 * '''Announced on short notice, 2026-09-18:''' campaigns '''1''', '''4''' and '''5''' — [https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103/21 post #21]. The same call as below, for the same reasons, and it is the third time it has been made: a reader entitled to think once was reasonable is entitled to think three times is a habit, and saying so is the point of this bullet. For campaign 1 it goes further than for the others: #21 is where its true scale, 44,796 objects, first reached the thread, so the scale and the go-ahead arrived in the same post with no window between them. All three are attribute-only on a set enumerated object by object, with the prior value and the object version recorded for every one. '''Reverted on request.''' The posted notice is shorter than the page: it does not carry the 81-of-635 scope, the round-trip gate, this timing statement, or the admission that post #14's ~3,699 was wrong, so this page is where those live until #21's promised update carries them.
 * '''Announced on short notice, 2026-09-16:''' the reversal in § Unit-level addresses and campaign 3. These are '''announced, not consented''' — they are proceeding without waiting out a fresh 14-day window, which is a deliberate choice by the maintainer and is recorded here rather than glossed. The reasoning is that both are tagging changes on a single well-defined set, fully and mechanically reversible, with the prior value recorded per object; neither deletes anything, moves any geometry, or touches any object outside the sets described below. '''If anyone objects, the affected batches are reverted on request''' — no argument first — and ARandomThumbtack's standing veto over anything touching Guelph addresses is unaffected by the pace. A reader who thinks this was the wrong call should say so on [https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103 thread #135103]; that judgement is theirs to make and the record is here to make it on.
 * '''Last revised:''' 2026-10-07
 * '''Contact:''' guelph@comentality.com
-* '''OSM import account:''' [[osm:user/skfd imports|skfd imports]] — the same dedicated account used for the [[Toronto/Import/AddressPoints|Toronto address import]]. The maintainer's personal account ([[User:skfd|skfd]]) is not used for any upload from this tooling.
+* '''OSM import account:''' [[osm:user/skfd imports|skfd imports]] — the same dedicated account used for the [[Toronto/Import/AddressPoints|Toronto address import]]. The maintainer's personal account ([[User:skfd|skfd]]) is not used for any upload from this tooling, except one early changeset sent from it by mistake ([https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103/17 post #17] says so).
 * '''Discussion:''' [https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103 OSM Community Forum thread #135103] — the 2025 import's own thread, tagged <code>import</code> / <code>import-proposal</code>, where this proposal was announced rather than in a new topic. The announcement venue under the current [[Import/Guidelines|OSM Import Guidelines]].
 * '''Tooling:''' [https://github.com/skfd/address-importer-friend address-importer-friend] (engine) + [https://github.com/guelph-maps/guelph-address-import guelph-address-import] (this city's config) + [https://github.com/skfd/ontario-address-changes ontario-address-changes] (source tracker).
 * '''What this page is:''' a '''continuation''', not an initial import proposal — and short for two reasons, both of them deference rather than brevity for its own sake.
@@ -208,7 +208,7 @@ Five tag cleanups on '''existing''' Guelph objects, each announced separately fr
 
 === 1. Remove <code>addr:province=Ontario</code> ===
 
-'''Done, 2026-09-30''': '''44,763''' objects in 25 changesets, 189754709–189754880, one per area; the 33 held for hand review followed in 189755505 (32, since one had already lost the tag).
+'''Done, 2026-09-30.'''
 
 The 2025 import wrote <code>addr:province</code> as a constant; it is now on '''44,796''' Guelph objects — '''44,155''' <code>Ontario</code>, '''607''' <code>ON</code> and one <code>On</code>, re-measured against Overpass 2026-09-17. Against 47,050 objects in the city carrying <code>addr:housenumber</code>, that is very nearly every address object in Guelph. Canadian convention omits province, as does the Toronto import, and the value is fully implied by the enclosing admin boundary. Removed, with no replacement. The <code>ON</code> variants are removed on the same pass rather than harmonised, in their own batches at the end of the run so they can be held back independently.
 
@@ -248,7 +248,7 @@ A single-valued <code>addr:unit</code> is a door and is not touched.
 
 === 4. Remove <code>addr:interpolation</code> where it cannot mean anything ===
 
-'''Announced 2026-09-18; done 2026-09-30''', together with campaign 5, in changesets 189752405–189752690. '''81''' objects lose the key and '''554 keep it'''. This campaign withdraws a non-goal this page published on 2026-08-27; § Non-goals records that rather than deleting it.
+'''Announced 2026-09-18; done 2026-09-30.''' '''81''' objects lose the key and '''554 keep it'''. This campaign withdraws a non-goal this page published on 2026-08-27; § Non-goals records that rather than deleting it.
 
 <code>addr:interpolation</code> describes '''a way drawn between two address nodes''': the numbers run from the housenumber at one end to the housenumber at the other. It cannot mean anything on a shape with no two ends. Guelph carries it on 635 objects, surveyed against Overpass on 2026-09-17:
 
@@ -270,7 +270,7 @@ Which 554 are left alone matters more than the 81: "removing <code>addr:interpol
 
 === 5. Normalise <code>addr:flats</code> formatting ===
 
-'''Announced 2026-09-18; done 2026-09-30''', together with campaign 4. '''292''' of the '''464''' objects carrying <code>addr:flats</code> are re-rendered, and '''not one of them changes which units it names'''. Campaign 3 moved 447 unit lists '''verbatim''', on purpose — that promise is what made it trivially reversible — and this is the tidy-up afterwards. The 172 values already in the right form are left byte-for-byte alone.
+'''Announced 2026-09-18; done 2026-09-30.''' '''292''' of the '''464''' objects carrying <code>addr:flats</code> are re-rendered, and '''not one of them changes which units it names'''. Campaign 3 moved 447 unit lists '''verbatim''', on purpose — that promise is what made it trivially reversible — and this is the tidy-up afterwards. The 172 values already in the right form are left byte-for-byte alone.
 
 Four defects, at least one of which is present on each of the 292:
 
@@ -337,7 +337,7 @@ Per cycle, triggered by a change in the source data rather than by a calendar:
 
 '''Roll-out:''' one pilot tile first, published on the forum thread with its counts and its changeset, then a one-week hold before the remaining areas. First cycle only; subsequent cycles are ordinary maintenance batches.
 
-'''What happened instead, 2026-10-03 to 07.''' The first cycle ran without the pilot post and without the hold. The maintainer uploaded tile by tile over five days and reported once, at the end, in [https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103/22 post #22]. That is a departure from the line above, recorded here rather than left to be noticed. Each changeset is still a single tile and can be reverted on its own.
+'''As it happened:''' the first cycle went without the pilot post and the one-week hold, and was reported once, at the end, in [https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103/22 post #22].
 
 === Reviewer roster ===
 
