@@ -1,9 +1,10 @@
 # Campaign 7: `addr:flats` naming units the City puts elsewhere
 
-**Built 2026-10-07, after the import. Not announced, not uploaded.** Two
+**Built 2026-10-07, after the import. Not uploaded.** Two
 batches: [`batches/`](batches/), run sheet [`index.html`](index.html), and
-revert record [`manifest.csv`](manifest.csv). The post that goes first is
-[`FORUM_POST.md`](FORUM_POST.md).
+revert record [`manifest.csv`](manifest.csv). No forum post: skfd decided on
+2026-10-07 that none of the post-import cleanups gets one. The draft is in
+git history at `5b2afeb`.
 
 | Batch | Objects | Edit |
 |---|---|---|

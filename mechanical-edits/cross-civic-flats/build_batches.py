@@ -287,10 +287,7 @@ REVIEW_REASONS = {
 }
 
 STEPS = [
-    "<strong>Announce first.</strong> Post <code>FORUM_POST.md</code> on "
-    "<a href='https://community.openstreetmap.org/t/"
-    "import-addresses-from-city-of-guelph-data/135103'>#135103</a> "
-    "(ARandomThumbtack asked to be told). skfd decides whether to wait for replies.",
+    "<strong>No forum post</strong> (skfd decided 2026-10-07).",
     "On the day, run <code>build_batches.py</code> again. Every gate re-reads OSM.",
     "Sign JOSM in as <code>skfd imports</code>.",
     "Batch 1: the Janefield slices. Upload it, then run "

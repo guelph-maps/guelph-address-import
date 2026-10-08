@@ -175,10 +175,7 @@ REVIEW_REASONS = {
 }
 
 STEPS = [
-    "<strong>Announce first.</strong> Post <code>FORUM_POST.md</code> on "
-    "<a href='https://community.openstreetmap.org/t/"
-    "import-addresses-from-city-of-guelph-data/135103'>#135103</a> and wait "
-    "the days it promises.",
+    "<strong>No forum post</strong> (skfd decided 2026-10-07).",
     "On the day: <code>build_batches.py --refetch</code>. Versions move; a "
     "stale batch conflicts in JOSM rather than overwriting, but a rebuild is "
     "cheaper than resolving conflicts.",

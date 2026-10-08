@@ -12,11 +12,12 @@ line with one bare end                  ->  hand cases                          
 end nodes, all of them                  ->  not touched
 ```
 
-> **Not posted, not uploaded.** Prepared 2026-10-07 against live OSM, after the
-> import's last changeset. [`ANNOUNCEMENT.md`](ANNOUNCEMENT.md) is the draft for
-> [#135103][thread]. This is the first mechanical edit that **deletes** rather
-> than retags, and what it deletes is other mappers' 2012–2016 work, so the
-> recommendation below is a real window, not a notice.
+> **Not uploaded.** Prepared 2026-10-07 against live OSM, after the import's
+> last changeset. This is the first mechanical edit that **deletes** rather
+> than retags, and what it deletes is other mappers' 2012–2016 work. The
+> recommendation below was a 14-day question on [#135103][thread]; skfd decided
+> on 2026-10-07 against posting it, so the tiers are skfd's call alone. The
+> draft, short and long, is in git history at `5b2afeb`.
 
 ## Where this came from
 
@@ -173,15 +174,13 @@ these go.
 
 ## Recommendation
 
-1. **Post [`ANNOUNCEMENT.md`](ANNOUNCEMENT.md) as a question, with a 14-day
-   window.** Every earlier campaign retagged and ran without one; this one
-   deletes other people's objects, and @ARandomThumbtack asked to be told
-   (post #19). Fourteen days is the import guideline's number.
-2. **If nobody objects: upload all three tiers, 139 lines.** The survey says
+1. ~~Post a question with a 14-day window.~~ Decided 2026-10-07: no forum
+   post. Steps 2 and 3 are skfd's choice instead of the thread's.
+2. **All three tiers, 139 lines.** The survey says
    none of them carries an address the map lacks, and 48 of them invent ones.
    Rebuild with `--refetch --tiers same-number,covered,empty` on the day.
-3. **If the roster premise is questioned: upload same-number only** (29), and
-   leave covered and empty for whoever raised it.
+3. **Or same-number only** (29), if the City's list is not to be trusted as
+   complete. The City letter now asks exactly that.
 4. **The 2 broken lines and the 8 on misspelt streets** go to whoever opens
    them, by hand, from the personal account.
 
@@ -242,8 +241,8 @@ gitignored. `survey.csv`, `survey_2node.csv` and `manifest.csv` are tracked.
 - [x] Survey against live OSM, 2026-10-07
 - [x] Batch 1 (same-number) built and gated; covered/empty buildable
 - [ ] The 2 bare-ended lines and the 8 unmatched-street lines, by hand
-- [ ] `ANNOUNCEMENT.md` posted to #135103; 14 days
-- [ ] Decide the tiers from the thread
+- [x] ~~`ANNOUNCEMENT.md` posted to #135103~~ no post (decided 2026-10-07)
+- [ ] Decide the tiers
 - [ ] `build_batches.py --refetch --tiers …` on the day
 - [ ] JOSM signed in as `skfd imports`
 - [ ] Each batch uploaded, then `python ../verify_changeset.py . N`, which

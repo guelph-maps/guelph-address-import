@@ -1,8 +1,9 @@
 # Stack collapse — 5 Gordon Street
 
 **Built 2026-10-02, rebuilt 2026-10-07, not uploaded.** One building, one
-changeset: [`5-gordon-street.osm`](5-gordon-street.osm). Upload-ready; the
-forum note is drafted in [`FORUM_NOTE.md`](FORUM_NOTE.md).
+changeset: [`5-gordon-street.osm`](5-gordon-street.osm). Upload-ready. No
+forum note: skfd decided on 2026-10-07 that none of the post-import cleanups
+gets one (the draft is in git history at `5b2afeb`).
 
 ## What was there
 
@@ -100,10 +101,7 @@ interpolation ways. The redundant-listings post is the natural host: both are
 `addr:flats` listings giving way to the shape the import writes. A post of its
 own for one building would be the thread's noisiest-to-useful ratio yet.
 
-**Unless nothing else is going up soon.** If the operator wants this uploaded
-before the sibling posts are ready, the standalone reply in
-[`FORUM_NOTE.md`](FORUM_NOTE.md) is short and complete. Either form @-mentions
-ARandomThumbtack.
+**Superseded 2026-10-07:** no post at all, for this or the sibling edits.
 
 ## Upload
 

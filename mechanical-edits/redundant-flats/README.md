@@ -11,9 +11,8 @@ Nothing is created, nothing is deleted, no other tag moves.
 - **Built 2026-10-07** against a fresh fetch (Overpass `osm_base`
   2026-10-08T01:07Z, after the last import changeset). Rebuild with
   `--refetch` before any upload.
-- **Not announced.** The draft is [`FORUM_POST.md`](FORUM_POST.md), for
-  [thread #135103](https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103).
-  Post first.
+- **No forum post.** skfd decided on 2026-10-07 that none of the
+  post-import cleanups gets one. The draft is in git history at `5b2afeb`.
 - **Nothing uploaded.**
 - **Supersedes [`../unit-doors/`](../unit-doors/README.md).** That build
   created the doors and stripped the listings in one changeset. The import
@@ -154,5 +153,4 @@ same expectation as unit-doors: only `addr:flats` gone). Revert:
 | `manifest.csv` | one row per stripped object: `group` (civic key), `flats_before`, `units`, `origin` (campaign-3 / hand-cases / other), `last_user` |
 | `review.csv` | every listing at an uploaded door civic not batched, with reason and detail |
 | `index.html` | the run sheet |
-| `FORUM_POST.md` | the draft notice for #135103 |
 | `live.osm`, `live_units.osm`, `batches/` | regenerable, not tracked |
