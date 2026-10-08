@@ -32,6 +32,9 @@ mechanical-edits/flats-hygiene/batches/
 mechanical-edits/unit-doors/live.osm
 mechanical-edits/unit-doors/live_units.osm
 mechanical-edits/unit-doors/batches/
+mechanical-edits/redundant-flats/live.osm
+mechanical-edits/redundant-flats/live_units.osm
+mechanical-edits/redundant-flats/batches/
 mechanical-edits/province-leftovers/live.osm
 mechanical-edits/province-leftovers/batches/
 mechanical-edits/flats-pairs/live.osm

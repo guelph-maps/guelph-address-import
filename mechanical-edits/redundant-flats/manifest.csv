@@ -1,0 +1,318 @@
+batch,area,type,id,version,street,housenumber,group,flats_before,units,origin,last_user
+1,Kortright Hills,way,1450184510,3,Downey Road,146,146|DOWNEY ROAD|GUELPH,24A;24B,2,campaign-3,skfd imports
+1,Kortright Hills,way,1450184516,3,Downey Road,146,146|DOWNEY ROAD|GUELPH,17A;17B,2,campaign-3,skfd imports
+1,Kortright Hills,way,1450184517,4,Downey Road,146,146|DOWNEY ROAD|GUELPH,18A;18B,2,campaign-3,skfd imports
+1,Kortright Hills,way,1450184675,3,Downey Road,146,146|DOWNEY ROAD|GUELPH,20A;20B,2,campaign-3,skfd imports
+1,Kortright Hills,way,1450184676,3,Downey Road,146,146|DOWNEY ROAD|GUELPH,19A;19B,2,campaign-3,skfd imports
+1,Kortright Hills,way,1450184680,3,Downey Road,146,146|DOWNEY ROAD|GUELPH,22A;22B,2,campaign-3,skfd imports
+1,Kortright Hills,way,1450184684,3,Downey Road,146,146|DOWNEY ROAD|GUELPH,21A;21B,2,campaign-3,skfd imports
+1,Kortright Hills,way,802839119,5,Downey Road,146,146|DOWNEY ROAD|GUELPH,23A;23B,2,campaign-3,skfd imports
+1,Kortright Hills,way,794182126,6,Hanlon Creek Boulevard,265,265|HANLON CREEK BOULEVARD|GUELPH,1;3-5;9,5,campaign-3,skfd imports
+1,Kortright Hills,way,794182120,6,Hanlon Creek Boulevard,275,275|HANLON CREEK BOULEVARD|GUELPH,1-5,5,campaign-3,skfd imports
+2,Rickson Ridge,way,1156180354,5,Gordon Street,1131,1131|GORDON STREET|GUELPH,1-8,8,campaign-3,skfd imports
+3,Clairfields,way,208650114,5,Southgate Drive,200,200|SOUTHGATE DRIVE|GUELPH,1-3,3,campaign-3,skfd imports
+3,Clairfields,way,337955594,8,Southgate Drive,245,245|SOUTHGATE DRIVE|GUELPH,7-12,6,campaign-3,skfd imports
+3,Clairfields,way,337955609,8,Southgate Drive,245,245|SOUTHGATE DRIVE|GUELPH,1-6,6,campaign-3,skfd imports
+4,Downtown - Sunny Acres,way,1076453164,7,Beechwood Avenue,83,83|BEECHWOOD AVENUE|GUELPH,1-16,16,campaign-3,skfd imports
+4,Downtown - Sunny Acres,node,13159082377,3,Quebec Street,19,19|QUEBEC STREET|GUELPH,201,1,hand-cases,skfd imports
+4,Downtown - Sunny Acres,way,923609578,7,Waterloo Avenue,121,121|WATERLOO AVENUE|GUELPH,101-110,10,campaign-3,skfd imports
+4,Downtown - Sunny Acres,way,819734257,7,Waterloo Avenue,210,210|WATERLOO AVENUE|GUELPH,A;B,2,campaign-3,skfd imports
+5,Non-Residential - B,way,177694773,4,Taggart Street,2,2|TAGGART STREET|GUELPH,2;4A;6;8,4,campaign-3,skfd imports
+5,Non-Residential - B,way,802544817,6,Watson Parkway South,70,70|WATSON PARKWAY SOUTH|GUELPH,1-8,8,campaign-3,skfd imports
+5,Non-Residential - B,way,802544833,5,Watson Road South,3,3|WATSON ROAD SOUTH|GUELPH,1-3;8,4,campaign-3,skfd imports
+5,Non-Residential - B,way,1054125923,6,York Road,561,561|YORK ROAD|GUELPH,1-4,4,campaign-3,skfd
+6,Onward Willow,way,1442367112,3,Paisley Road,305,305|PAISLEY ROAD|GUELPH,A;B,2,campaign-3,skfd imports
+6,Onward Willow,way,1442367111,3,Paisley Road,307,307|PAISLEY ROAD|GUELPH,A;B,2,campaign-3,skfd imports
+6,Onward Willow,way,208492557,6,Silvercreek Parkway North,106,106|SILVERCREEK PARKWAY NORTH|GUELPH,1;2;4;5;7,5,campaign-3,skfd imports
+6,Onward Willow,way,1442367349,5,Silvercreek Parkway North,40,40|SILVERCREEK PARKWAY NORTH|GUELPH,47;48,2,campaign-3,skfd imports
+7,Pine Ridge - Westminster Woods,way,802540407,5,Frederick Drive,100,100|FREDERICK DRIVE|GUELPH,1-16,16,campaign-3,skfd imports
+7,Pine Ridge - Westminster Woods,way,802540411,5,Frederick Drive,101,101|FREDERICK DRIVE|GUELPH,1-16,16,campaign-3,skfd imports
+7,Pine Ridge - Westminster Woods,way,950227736,5,Frederick Drive,65,65|FREDERICK DRIVE|GUELPH,1-6,6,campaign-3,skfd imports
+7,Pine Ridge - Westminster Woods,way,949555552,4,Goodwin Drive,161,161|GOODWIN DRIVE|GUELPH,B,1,hand-cases,skfd imports
+8,Two Rivers,way,927975886,4,Huron Street,131,131|HURON STREET|GUELPH,A;B;C,3,campaign-3,skfd imports
+8,Two Rivers,way,927975771,4,Huron Street,47,47|HURON STREET|GUELPH,A;B,2,campaign-3,skfd imports
+8,Two Rivers,node,13188159620,3,Huron Street,51,51|HURON STREET|GUELPH,A;B;C;D;E,5,campaign-3,skfd imports
+8,Two Rivers,way,260551704,10,Victoria Road South,199,199|VICTORIA ROAD SOUTH|GUELPH,1-8,8,campaign-3,skfd imports
+9,St. Georges Parkway,node,13164248922,3,Arthur Street North,151,151|ARTHUR STREET NORTH|GUELPH,A;B,2,campaign-3,skfd imports
+9,St. Georges Parkway,way,208488067,6,Eramosa Road,265,265|ERAMOSA ROAD|GUELPH,1-4,4,campaign-3,skfd imports
+9,St. Georges Parkway,way,240744882,9,Eramosa Road,297,297|ERAMOSA ROAD|GUELPH,1;2,2,campaign-3,skfd imports
+9,St. Georges Parkway,way,803260905,4,Ottawa Crescent,37,37|OTTAWA CRESCENT|GUELPH,B,1,hand-cases,skfd imports
+9,St. Georges Parkway,way,929589622,8,Stuart Street,10,10|STUART STREET|GUELPH,1-10,10,campaign-3,skfd imports
+10,Waverley,way,761343576,5,Country Club Drive,120,120|COUNTRY CLUB DRIVE|GUELPH,1-10,10,campaign-3,skfd imports
+10,Waverley,way,761343584,5,Country Club Drive,120,120|COUNTRY CLUB DRIVE|GUELPH,58-61,4,campaign-3,skfd imports
+10,Waverley,way,803281467,8,Woodlawn Road East,100,100|WOODLAWN ROAD EAST|GUELPH,5;6,2,campaign-3,skfd imports
+10,Waverley,way,803281468,8,Woodlawn Road East,100,100|WOODLAWN ROAD EAST|GUELPH,1;2,2,campaign-3,skfd imports
+10,Waverley,way,954036919,6,Woodlawn Road East,100,100|WOODLAWN ROAD EAST|GUELPH,3;4,2,campaign-3,skfd imports
+10,Waverley,way,954036924,6,Woodlawn Road East,100,100|WOODLAWN ROAD EAST|GUELPH,7;8,2,campaign-3,skfd imports
+11,Non-Residential - C,way,1443052881,5,Kay Crescent,39,39|KAY CRESCENT|GUELPH,32;33,2,campaign-3,skfd imports
+11,Non-Residential - C,way,1443052882,5,Kay Crescent,39,39|KAY CRESCENT|GUELPH,34;35,2,campaign-3,skfd imports
+11,Non-Residential - C,way,1443052883,5,Kay Crescent,39,39|KAY CRESCENT|GUELPH,36;37,2,campaign-3,skfd imports
+11,Non-Residential - C,way,1443052884,5,Kay Crescent,39,39|KAY CRESCENT|GUELPH,46;47,2,campaign-3,skfd imports
+11,Non-Residential - C,way,1443052885,5,Kay Crescent,39,39|KAY CRESCENT|GUELPH,44;45,2,campaign-3,skfd imports
+11,Non-Residential - C,way,1443052886,5,Kay Crescent,39,39|KAY CRESCENT|GUELPH,42;43,2,campaign-3,skfd imports
+11,Non-Residential - C,way,802540386,6,Kay Crescent,39,39|KAY CRESCENT|GUELPH,12-21,10,campaign-3,skfd imports
+11,Non-Residential - C,way,802540388,7,Kay Crescent,39,39|KAY CRESCENT|GUELPH,38;39,2,campaign-3,skfd imports
+11,Non-Residential - C,way,802540389,7,Kay Crescent,39,39|KAY CRESCENT|GUELPH,40;41,2,campaign-3,skfd imports
+12,Non-Residential - A,way,1436604416,5,Burns Drive,80,80|BURNS DRIVE|GUELPH,11;12,2,campaign-3,skfd imports
+12,Non-Residential - A,way,1436604417,5,Burns Drive,80,80|BURNS DRIVE|GUELPH,13;14,2,campaign-3,skfd imports
+12,Non-Residential - A,way,1436604418,5,Burns Drive,80,80|BURNS DRIVE|GUELPH,15;16,2,campaign-3,skfd imports
+12,Non-Residential - A,way,1436604419,5,Burns Drive,80,80|BURNS DRIVE|GUELPH,17;18,2,campaign-3,skfd imports
+12,Non-Residential - A,way,632319013,7,Burns Drive,80,80|BURNS DRIVE|GUELPH,19;20,2,campaign-3,skfd imports
+12,Non-Residential - A,way,1436604420,5,Burns Drive,86,86|BURNS DRIVE|GUELPH,1;2,2,campaign-3,skfd imports
+12,Non-Residential - A,way,1436604421,5,Burns Drive,86,86|BURNS DRIVE|GUELPH,3;4,2,campaign-3,skfd imports
+12,Non-Residential - A,way,1436604422,5,Burns Drive,86,86|BURNS DRIVE|GUELPH,5;6,2,campaign-3,skfd imports
+12,Non-Residential - A,way,1436604423,5,Burns Drive,86,86|BURNS DRIVE|GUELPH,7;8,2,campaign-3,skfd imports
+12,Non-Residential - A,way,632319014,7,Burns Drive,86,86|BURNS DRIVE|GUELPH,9;10,2,campaign-3,skfd imports
+12,Non-Residential - A,way,399149535,6,Elmira Road North,473,473|ELMIRA ROAD NORTH|GUELPH,1-4,4,campaign-3,skfd imports
+12,Non-Residential - A,way,802121047,5,Monarch Road,27,27|MONARCH ROAD|GUELPH,1-6,6,campaign-3,skfd imports
+13,June Avenue,way,475631431,5,Arrow Road,31,31|ARROW ROAD|GUELPH,1-11,11,campaign-3,skfd imports
+13,June Avenue,way,1436604427,4,Burns Drive,11,11|BURNS DRIVE|GUELPH,13-16,4,campaign-3,skfd imports
+13,June Avenue,way,802123329,5,Burns Drive,11,11|BURNS DRIVE|GUELPH,17-20,4,campaign-3,skfd imports
+13,June Avenue,way,1436604432,4,Burns Drive,15,15|BURNS DRIVE|GUELPH,21-24,4,campaign-3,skfd imports
+13,June Avenue,way,802123326,5,Burns Drive,15,15|BURNS DRIVE|GUELPH,25-28,4,campaign-3,skfd imports
+13,June Avenue,way,1436604433,4,Burns Drive,17,17|BURNS DRIVE|GUELPH,35-40,6,campaign-3,skfd imports
+13,June Avenue,way,802123325,5,Burns Drive,17,17|BURNS DRIVE|GUELPH,29-34,6,campaign-3,skfd imports
+13,June Avenue,way,1436604430,4,Burns Drive,19,19|BURNS DRIVE|GUELPH,41-44,4,campaign-3,skfd imports
+13,June Avenue,way,1436604431,4,Burns Drive,19,19|BURNS DRIVE|GUELPH,49-52,4,campaign-3,skfd imports
+13,June Avenue,way,802123324,5,Burns Drive,19,19|BURNS DRIVE|GUELPH,45-48,4,campaign-3,skfd imports
+13,June Avenue,way,1436604425,4,Burns Drive,3,3|BURNS DRIVE|GUELPH,1-4,4,campaign-3,skfd imports
+13,June Avenue,way,1436604426,4,Burns Drive,3,3|BURNS DRIVE|GUELPH,5-8,4,campaign-3,skfd imports
+13,June Avenue,way,802123328,5,Burns Drive,3,3|BURNS DRIVE|GUELPH,9-12,4,campaign-3,skfd imports
+13,June Avenue,way,1436604428,4,Burns Drive,9,9|BURNS DRIVE|GUELPH,53-58,6,campaign-3,skfd imports
+13,June Avenue,way,1436604429,4,Burns Drive,9,9|BURNS DRIVE|GUELPH,59-64,6,campaign-3,skfd imports
+13,June Avenue,way,802123327,5,Burns Drive,9,9|BURNS DRIVE|GUELPH,65-70,6,campaign-3,skfd imports
+14,Old University,way,1349287614,4,Janefield Avenue,176,176|JANEFIELD AVENUE|GUELPH,228;230,2,campaign-3,skfd imports
+14,Old University,way,1349287615,4,Janefield Avenue,176,176|JANEFIELD AVENUE|GUELPH,226;232,2,campaign-3,skfd imports
+14,Old University,way,1349287616,4,Janefield Avenue,176,176|JANEFIELD AVENUE|GUELPH,224;234,2,campaign-3,skfd imports
+14,Old University,way,1349287617,4,Janefield Avenue,176,176|JANEFIELD AVENUE|GUELPH,222;236,2,campaign-3,skfd imports
+14,Old University,way,1349287618,4,Janefield Avenue,176,176|JANEFIELD AVENUE|GUELPH,220;238,2,campaign-3,skfd imports
+14,Old University,way,1349319931,4,Janefield Avenue,176,176|JANEFIELD AVENUE|GUELPH,308;318,2,campaign-3,skfd imports
+14,Old University,way,1349319932,4,Janefield Avenue,176,176|JANEFIELD AVENUE|GUELPH,310;316,2,campaign-3,skfd imports
+14,Old University,way,1349319933,4,Janefield Avenue,176,176|JANEFIELD AVENUE|GUELPH,312;314,2,campaign-3,skfd imports
+14,Old University,way,1349291101,4,Janefield Avenue,224,224|JANEFIELD AVENUE|GUELPH,346;352,2,campaign-3,skfd imports
+14,Old University,way,1349291102,4,Janefield Avenue,224,224|JANEFIELD AVENUE|GUELPH,348;350,2,campaign-3,skfd imports
+14,Old University,way,801566989,5,Janefield Avenue,224,224|JANEFIELD AVENUE|GUELPH,344;354,2,campaign-3,skfd imports
+14,Old University,node,13251106189,3,Janefield Avenue,27,27|JANEFIELD AVENUE|GUELPH,B,1,hand-cases,skfd imports
+14,Old University,node,13251106172,3,Janefield Avenue,33,33|JANEFIELD AVENUE|GUELPH,B;C,2,hand-cases,skfd imports
+14,Old University,node,13251106188,3,Janefield Avenue,35,35|JANEFIELD AVENUE|GUELPH,B;C,2,hand-cases,skfd imports
+14,Old University,node,13251106171,3,Janefield Avenue,37,37|JANEFIELD AVENUE|GUELPH,B,1,hand-cases,skfd imports
+14,Old University,node,13251106168,3,Janefield Avenue,39,39|JANEFIELD AVENUE|GUELPH,B,1,hand-cases,skfd imports
+14,Old University,node,13251106187,3,Janefield Avenue,41,41|JANEFIELD AVENUE|GUELPH,B,1,hand-cases,skfd imports
+14,Old University,node,13251106167,3,Janefield Avenue,43,43|JANEFIELD AVENUE|GUELPH,B,1,hand-cases,skfd imports
+14,Old University,way,802811015,7,Manor Park Crescent,25,25|MANOR PARK CRESCENT|GUELPH,13-15,3,campaign-3,skfd imports
+14,Old University,node,13251106170,3,Mason Court,10,10|MASON COURT|GUELPH,B;C,2,hand-cases,skfd imports
+14,Old University,node,13251106169,3,Mason Court,12,12|MASON COURT|GUELPH,B;C,2,hand-cases,skfd imports
+14,Old University,node,13251106174,3,Mason Court,6,6|MASON COURT|GUELPH,B,1,hand-cases,skfd imports
+14,Old University,node,13251106173,3,Mason Court,8,8|MASON COURT|GUELPH,B,1,hand-cases,skfd imports
+15,Exhibition Park,way,925775122,6,Cardigan Street,122,122|CARDIGAN STREET|GUELPH,1-4,4,campaign-3,skfd imports
+15,Exhibition Park,way,1430415280,3,Dublin Street North,124,124|DUBLIN STREET NORTH|GUELPH,A;B,2,campaign-3,skfd imports
+15,Exhibition Park,way,925437750,5,Dublin Street North,126,126|DUBLIN STREET NORTH|GUELPH,A;B,2,campaign-3,skfd imports
+15,Exhibition Park,way,926452787,5,Exhibition Street,253,253|EXHIBITION STREET|GUELPH,A;B;C;D;E;F;G;H;I;J;K,11,campaign-3,skfd imports
+15,Exhibition Park,way,926452788,5,Exhibition Street,263,263|EXHIBITION STREET|GUELPH,A;B;C;D;E;F;G;H;I;J;K,11,campaign-3,skfd imports
+15,Exhibition Park,way,925746826,6,Liverpool Street,23,23|LIVERPOOL STREET|GUELPH,A;B;C,3,campaign-3,skfd imports
+15,Exhibition Park,node,13164297972,4,Mont Street,1,1|MONT STREET|GUELPH,1-6,6,campaign-3,skfd imports
+15,Exhibition Park,way,1369220537,5,Westmount Road,120,120|WESTMOUNT ROAD|GUELPH,2;4,2,campaign-3,skfd imports
+15,Exhibition Park,way,1369220538,5,Westmount Road,120,120|WESTMOUNT ROAD|GUELPH,6;8,2,campaign-3,skfd imports
+15,Exhibition Park,way,1369220539,5,Westmount Road,120,120|WESTMOUNT ROAD|GUELPH,10;12,2,campaign-3,skfd imports
+15,Exhibition Park,way,1369220540,7,Westmount Road,120,120|WESTMOUNT ROAD|GUELPH,13;14,2,campaign-3,skfd imports
+15,Exhibition Park,way,1369220541,5,Westmount Road,120,120|WESTMOUNT ROAD|GUELPH,5;7,2,campaign-3,skfd imports
+15,Exhibition Park,way,1369220542,6,Westmount Road,120,120|WESTMOUNT ROAD|GUELPH,9;11,2,campaign-3,skfd imports
+15,Exhibition Park,way,1369220543,5,Westmount Road,120,120|WESTMOUNT ROAD|GUELPH,1;3,2,campaign-3,skfd imports
+15,Exhibition Park,way,1369220544,7,Westmount Road,120,120|WESTMOUNT ROAD|GUELPH,15;16,2,campaign-3,skfd imports
+15,Exhibition Park,way,1369220545,5,Westmount Road,120,120|WESTMOUNT ROAD|GUELPH,18;20,2,campaign-3,skfd imports
+15,Exhibition Park,way,1369220546,5,Westmount Road,120,120|WESTMOUNT ROAD|GUELPH,22;24,2,campaign-3,skfd imports
+15,Exhibition Park,way,1369220547,5,Westmount Road,120,120|WESTMOUNT ROAD|GUELPH,26;28,2,campaign-3,skfd imports
+15,Exhibition Park,way,1369220548,5,Westmount Road,120,120|WESTMOUNT ROAD|GUELPH,17;19,2,campaign-3,skfd imports
+15,Exhibition Park,way,1369220549,5,Westmount Road,120,120|WESTMOUNT ROAD|GUELPH,21;23,2,campaign-3,skfd imports
+15,Exhibition Park,way,1369220550,5,Westmount Road,120,120|WESTMOUNT ROAD|GUELPH,25;27,2,campaign-3,skfd imports
+15,Exhibition Park,node,13165539606,3,Woolwich Street,323,323|WOOLWICH STREET|GUELPH,A;B,2,campaign-3,skfd imports
+15,Exhibition Park,node,13165539605,3,Woolwich Street,325,325|WOOLWICH STREET|GUELPH,A;B,2,campaign-3,skfd imports
+15,Exhibition Park,way,926071750,5,Woolwich Street,448,448|WOOLWICH STREET|GUELPH,B,1,hand-cases,skfd imports
+16,Hanlon Creek,way,743421919,6,Gordon Street,803,803|GORDON STREET|GUELPH,1-15,15,campaign-3,skfd imports
+16,Hanlon Creek,way,800638895,5,Gordon Street,941,941|GORDON STREET|GUELPH,65-68,4,campaign-3,skfd imports
+16,Hanlon Creek,way,800638896,5,Gordon Street,941,941|GORDON STREET|GUELPH,61-64,4,campaign-3,skfd imports
+16,Hanlon Creek,way,800638897,5,Gordon Street,941,941|GORDON STREET|GUELPH,57-60,4,campaign-3,skfd imports
+16,Hanlon Creek,way,800638898,5,Gordon Street,941,941|GORDON STREET|GUELPH,53-56,4,campaign-3,skfd imports
+16,Hanlon Creek,way,800638899,5,Gordon Street,941,941|GORDON STREET|GUELPH,49-52,4,campaign-3,skfd imports
+16,Hanlon Creek,way,800638900,5,Gordon Street,941,941|GORDON STREET|GUELPH,45-48,4,campaign-3,skfd imports
+16,Hanlon Creek,way,800638901,5,Gordon Street,941,941|GORDON STREET|GUELPH,41-44,4,campaign-3,skfd imports
+16,Hanlon Creek,way,800638902,5,Gordon Street,941,941|GORDON STREET|GUELPH,37-40,4,campaign-3,skfd imports
+16,Hanlon Creek,way,800638903,5,Gordon Street,941,941|GORDON STREET|GUELPH,21-24,4,campaign-3,skfd imports
+16,Hanlon Creek,way,800638904,5,Gordon Street,941,941|GORDON STREET|GUELPH,17-20,4,campaign-3,skfd imports
+16,Hanlon Creek,way,800638905,5,Gordon Street,941,941|GORDON STREET|GUELPH,13-16,4,campaign-3,skfd imports
+16,Hanlon Creek,way,800638906,5,Gordon Street,941,941|GORDON STREET|GUELPH,9-12,4,campaign-3,skfd imports
+16,Hanlon Creek,way,800638907,5,Gordon Street,941,941|GORDON STREET|GUELPH,5-8,4,campaign-3,skfd imports
+16,Hanlon Creek,way,800638908,5,Gordon Street,941,941|GORDON STREET|GUELPH,1-4,4,campaign-3,skfd imports
+16,Hanlon Creek,way,800638909,5,Gordon Street,941,941|GORDON STREET|GUELPH,33-36,4,campaign-3,skfd imports
+16,Hanlon Creek,way,800638910,5,Gordon Street,941,941|GORDON STREET|GUELPH,29-32,4,campaign-3,skfd imports
+16,Hanlon Creek,way,800638911,5,Gordon Street,941,941|GORDON STREET|GUELPH,25-28,4,campaign-3,skfd imports
+16,Hanlon Creek,way,800638912,5,Gordon Street,941,941|GORDON STREET|GUELPH,69-72,4,campaign-3,skfd imports
+16,Hanlon Creek,way,212559741,8,Scottsdale Drive,615,615|SCOTTSDALE DRIVE|GUELPH,A;B,2,campaign-3,skfd imports
+16,Hanlon Creek,way,212559742,9,Scottsdale Drive,649,649|SCOTTSDALE DRIVE|GUELPH,100;101,2,campaign-3,skfd imports
+16,Hanlon Creek,way,212559745,7,Scottsdale Drive,649,649|SCOTTSDALE DRIVE|GUELPH,1-5;2B,6,campaign-3,skfd imports
+16,Hanlon Creek,way,215069452,18,Stone Road West,304,304|STONE ROAD WEST|GUELPH,1-4,4,campaign-3,skfd
+16,Hanlon Creek,way,215069453,7,Stone Road West,304,304|STONE ROAD WEST|GUELPH,7-12,6,campaign-3,skfd imports
+17,Grange Hill East,way,802544823,5,Airpark Place,45,45|AIRPARK PLACE|GUELPH,1-8,8,campaign-3,skfd imports
+17,Grange Hill East,way,803283640,6,Auden Road,394,394|AUDEN ROAD|GUELPH,29-39,11,campaign-3,skfd imports
+17,Grange Hill East,way,803283643,6,Auden Road,394,394|AUDEN ROAD|GUELPH,11-19,9,campaign-3,skfd imports
+17,Grange Hill East,way,937956322,6,Auden Road,467,467|AUDEN ROAD|GUELPH,14-20,7,campaign-3,skfd imports
+17,Grange Hill East,way,937956323,6,Auden Road,467,467|AUDEN ROAD|GUELPH,39-44,6,campaign-3,skfd imports
+17,Grange Hill East,way,937956324,6,Auden Road,467,467|AUDEN ROAD|GUELPH,7-13,7,campaign-3,skfd imports
+17,Grange Hill East,way,937956325,6,Auden Road,467,467|AUDEN ROAD|GUELPH,1-6,6,campaign-3,skfd imports
+17,Grange Hill East,way,937956326,6,Auden Road,467,467|AUDEN ROAD|GUELPH,33-38,6,campaign-3,skfd imports
+17,Grange Hill East,way,937956327,6,Auden Road,467,467|AUDEN ROAD|GUELPH,27-32,6,campaign-3,skfd imports
+17,Grange Hill East,way,937956329,6,Auden Road,467,467|AUDEN ROAD|GUELPH,21-26,6,campaign-3,skfd imports
+17,Grange Hill East,way,937552909,6,Auden Road,470,470|AUDEN ROAD|GUELPH,37-40,4,campaign-3,skfd imports
+17,Grange Hill East,way,937552911,6,Auden Road,470,470|AUDEN ROAD|GUELPH,32-36,5,campaign-3,skfd imports
+17,Grange Hill East,way,937552912,6,Auden Road,470,470|AUDEN ROAD|GUELPH,26-31,6,campaign-3,skfd imports
+17,Grange Hill East,way,937552913,6,Auden Road,470,470|AUDEN ROAD|GUELPH,41-44,4,campaign-3,skfd imports
+17,Grange Hill East,way,937552914,6,Auden Road,470,470|AUDEN ROAD|GUELPH,45-48,4,campaign-3,skfd imports
+17,Grange Hill East,way,937552915,7,Auden Road,470,470|AUDEN ROAD|GUELPH,22;23,2,campaign-3,skfd imports
+17,Grange Hill East,way,937552916,7,Auden Road,470,470|AUDEN ROAD|GUELPH,16;17,2,campaign-3,skfd imports
+17,Grange Hill East,way,937552917,6,Auden Road,470,470|AUDEN ROAD|GUELPH,7-13,7,campaign-3,skfd imports
+17,Grange Hill East,way,937552918,6,Auden Road,470,470|AUDEN ROAD|GUELPH,1-6,6,campaign-3,skfd imports
+17,Grange Hill East,way,939208872,5,Cityview Drive South,5,5|CITYVIEW DRIVE SOUTH|GUELPH,101-108,8,campaign-3,skfd imports
+17,Grange Hill East,way,939208873,5,Cityview Drive South,7,7|CITYVIEW DRIVE SOUTH|GUELPH,201-212,12,campaign-3,skfd imports
+17,Grange Hill East,way,939208874,5,Cityview Drive South,9,9|CITYVIEW DRIVE SOUTH|GUELPH,301-308,8,campaign-3,skfd imports
+17,Grange Hill East,way,803283699,5,Eastview Road,66,66|EASTVIEW ROAD|GUELPH,7-11,5,campaign-3,skfd imports
+17,Grange Hill East,way,803283648,5,Mountford Drive,35,35|MOUNTFORD DRIVE|GUELPH,17-32,16,campaign-3,skfd imports
+17,Grange Hill East,way,803283649,5,Mountford Drive,35,35|MOUNTFORD DRIVE|GUELPH,65-88,24,campaign-3,skfd imports
+17,Grange Hill East,way,942414532,5,Shackleton Drive,20,20|SHACKLETON DRIVE|GUELPH,44-47,4,campaign-3,skfd imports
+18,Brant,way,1002133611,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,9A;9B,2,campaign-3,skfd imports
+18,Brant,way,1002133612,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,11A;11B,2,campaign-3,skfd imports
+18,Brant,way,1002133613,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,13A;13B,2,campaign-3,skfd imports
+18,Brant,way,1002133614,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,15A;15B,2,campaign-3,skfd imports
+18,Brant,way,1002133731,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,23A;23B,2,campaign-3,skfd imports
+18,Brant,way,1002133737,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,19A;19B,2,campaign-3,skfd imports
+18,Brant,way,1002133738,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,21A;21B,2,campaign-3,skfd imports
+18,Brant,way,1002134901,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,37A;37B,2,campaign-3,skfd imports
+18,Brant,way,1002134902,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,36A;36B,2,campaign-3,skfd imports
+18,Brant,way,1002134903,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,34A;34B,2,campaign-3,skfd imports
+18,Brant,way,1002134904,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,35A;35B,2,campaign-3,skfd imports
+18,Brant,way,1002134905,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,32A;32B,2,campaign-3,skfd imports
+18,Brant,way,1002134906,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,33A;33B,2,campaign-3,skfd imports
+18,Brant,way,1002135386,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,42A;42B,2,campaign-3,skfd imports
+18,Brant,way,1002135387,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,41A;41B,2,campaign-3,skfd imports
+18,Brant,way,1002135388,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,40A;40B,2,campaign-3,skfd imports
+18,Brant,way,1002135389,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,39A;39B,2,campaign-3,skfd imports
+18,Brant,way,1002135390,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,38A;38B,2,campaign-3,skfd imports
+18,Brant,way,1002135571,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,48A;48B,2,campaign-3,skfd imports
+18,Brant,way,1002135572,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,47A;47B,2,campaign-3,skfd imports
+18,Brant,way,1002135573,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,46A;46B,2,campaign-3,skfd imports
+18,Brant,way,1002135574,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,45A;45B,2,campaign-3,skfd imports
+18,Brant,way,1002135575,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,44A;44B,2,campaign-3,skfd imports
+18,Brant,way,1002135576,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,43A;43B,2,campaign-3,skfd imports
+18,Brant,way,1002136083,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,29A;29B,2,campaign-3,skfd imports
+18,Brant,way,1002136084,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,31A;31B,2,campaign-3,skfd imports
+18,Brant,way,1002136085,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,30A;30B,2,campaign-3,skfd imports
+18,Brant,way,1002136091,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,24A;24B,2,campaign-3,skfd imports
+18,Brant,way,1002136092,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,25A;25B,2,campaign-3,skfd imports
+18,Brant,way,1002136093,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,26A;26B,2,campaign-3,skfd imports
+18,Brant,way,1002136094,5,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,27A;27B,2,campaign-3,skfd imports
+18,Brant,way,803283639,6,Carere Crescent,15,15|CARERE CRESCENT|GUELPH,28A;28B,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651733,5,Fife Road,190,190|FIFE ROAD|GUELPH,59;60,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651734,5,Fife Road,190,190|FIFE ROAD|GUELPH,57;58,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651735,5,Fife Road,190,190|FIFE ROAD|GUELPH,55;56,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651736,5,Fife Road,190,190|FIFE ROAD|GUELPH,51;52,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651737,5,Fife Road,190,190|FIFE ROAD|GUELPH,49;50,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651738,5,Fife Road,190,190|FIFE ROAD|GUELPH,47;48,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651739,5,Fife Road,190,190|FIFE ROAD|GUELPH,77;78,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651740,5,Fife Road,190,190|FIFE ROAD|GUELPH,79;80,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651741,5,Fife Road,190,190|FIFE ROAD|GUELPH,81;82,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651742,5,Fife Road,190,190|FIFE ROAD|GUELPH,61;62,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651743,5,Fife Road,190,190|FIFE ROAD|GUELPH,63;64,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651744,5,Fife Road,190,190|FIFE ROAD|GUELPH,65;66,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651745,5,Fife Road,190,190|FIFE ROAD|GUELPH,67;68,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651746,5,Fife Road,190,190|FIFE ROAD|GUELPH,69;70,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651747,5,Fife Road,190,190|FIFE ROAD|GUELPH,71;72,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651748,5,Fife Road,190,190|FIFE ROAD|GUELPH,73;74,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651749,5,Fife Road,190,190|FIFE ROAD|GUELPH,42;43,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651750,5,Fife Road,190,190|FIFE ROAD|GUELPH,40;41,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651751,5,Fife Road,190,190|FIFE ROAD|GUELPH,38;39,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651752,5,Fife Road,190,190|FIFE ROAD|GUELPH,34;35,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651753,5,Fife Road,190,190|FIFE ROAD|GUELPH,32;33,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651754,5,Fife Road,190,190|FIFE ROAD|GUELPH,30;31,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651755,5,Fife Road,190,190|FIFE ROAD|GUELPH,99;100,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651756,5,Fife Road,190,190|FIFE ROAD|GUELPH,97;98,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651757,5,Fife Road,190,190|FIFE ROAD|GUELPH,95;96,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651758,5,Fife Road,190,190|FIFE ROAD|GUELPH,93;94,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651759,5,Fife Road,190,190|FIFE ROAD|GUELPH,91;92,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651760,5,Fife Road,190,190|FIFE ROAD|GUELPH,89;90,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,1441651761,5,Fife Road,190,190|FIFE ROAD|GUELPH,87;88,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,921942596,6,Fife Road,190,190|FIFE ROAD|GUELPH,36;37,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,921942597,6,Fife Road,190,190|FIFE ROAD|GUELPH,28;29,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,921942598,6,Fife Road,190,190|FIFE ROAD|GUELPH,85;86,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,921942599,6,Fife Road,190,190|FIFE ROAD|GUELPH,83;84,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,921942600,6,Fife Road,190,190|FIFE ROAD|GUELPH,75;76,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,921942601,6,Fife Road,190,190|FIFE ROAD|GUELPH,45;46,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,921942602,6,Fife Road,190,190|FIFE ROAD|GUELPH,53;54,2,campaign-3,skfd imports
+19,Parkwood Gardens,way,921078119,5,Imperial Road South,338,338|IMPERIAL ROAD SOUTH|GUELPH,B,1,hand-cases,skfd imports
+20,West Willow Woods,way,1437043928,5,Flaherty Drive,75,75|FLAHERTY DRIVE|GUELPH,49;50,2,campaign-3,skfd imports
+20,West Willow Woods,way,1437043929,5,Flaherty Drive,75,75|FLAHERTY DRIVE|GUELPH,45;46,2,campaign-3,skfd imports
+20,West Willow Woods,way,1437043930,5,Flaherty Drive,75,75|FLAHERTY DRIVE|GUELPH,41;42,2,campaign-3,skfd imports
+20,West Willow Woods,way,1437043931,5,Flaherty Drive,75,75|FLAHERTY DRIVE|GUELPH,37;38,2,campaign-3,skfd imports
+20,West Willow Woods,way,1437043932,5,Flaherty Drive,75,75|FLAHERTY DRIVE|GUELPH,35;36,2,campaign-3,skfd imports
+20,West Willow Woods,way,1437043933,5,Flaherty Drive,75,75|FLAHERTY DRIVE|GUELPH,31;32,2,campaign-3,skfd imports
+20,West Willow Woods,way,1437043934,5,Flaherty Drive,75,75|FLAHERTY DRIVE|GUELPH,33;34,2,campaign-3,skfd imports
+20,West Willow Woods,way,1437043935,5,Flaherty Drive,75,75|FLAHERTY DRIVE|GUELPH,3;4,2,campaign-3,skfd imports
+20,West Willow Woods,way,1437043936,5,Flaherty Drive,75,75|FLAHERTY DRIVE|GUELPH,5;6,2,campaign-3,skfd imports
+20,West Willow Woods,way,1437043937,5,Flaherty Drive,75,75|FLAHERTY DRIVE|GUELPH,9;10,2,campaign-3,skfd imports
+20,West Willow Woods,way,1437043938,5,Flaherty Drive,75,75|FLAHERTY DRIVE|GUELPH,11;12,2,campaign-3,skfd imports
+20,West Willow Woods,way,1437043939,5,Flaherty Drive,75,75|FLAHERTY DRIVE|GUELPH,13;14,2,campaign-3,skfd imports
+20,West Willow Woods,way,1437043940,5,Flaherty Drive,75,75|FLAHERTY DRIVE|GUELPH,17;18,2,campaign-3,skfd imports
+20,West Willow Woods,way,1437043941,5,Flaherty Drive,75,75|FLAHERTY DRIVE|GUELPH,19;20,2,campaign-3,skfd imports
+20,West Willow Woods,way,1437043942,5,Flaherty Drive,75,75|FLAHERTY DRIVE|GUELPH,25;26,2,campaign-3,skfd imports
+20,West Willow Woods,way,1437043943,5,Flaherty Drive,75,75|FLAHERTY DRIVE|GUELPH,23;24,2,campaign-3,skfd imports
+20,West Willow Woods,way,1437043944,5,Flaherty Drive,75,75|FLAHERTY DRIVE|GUELPH,21;22,2,campaign-3,skfd imports
+20,West Willow Woods,way,912221550,7,Flaherty Drive,75,75|FLAHERTY DRIVE|GUELPH,39;40,2,campaign-3,skfd imports
+20,West Willow Woods,way,912221551,7,Flaherty Drive,75,75|FLAHERTY DRIVE|GUELPH,43;44,2,campaign-3,skfd imports
+20,West Willow Woods,way,912221552,7,Flaherty Drive,75,75|FLAHERTY DRIVE|GUELPH,47;48,2,campaign-3,skfd imports
+20,West Willow Woods,way,912221553,7,Flaherty Drive,75,75|FLAHERTY DRIVE|GUELPH,27;28,2,campaign-3,skfd imports
+20,West Willow Woods,way,912221554,7,Flaherty Drive,75,75|FLAHERTY DRIVE|GUELPH,15;16,2,campaign-3,skfd imports
+20,West Willow Woods,way,912221556,7,Flaherty Drive,75,75|FLAHERTY DRIVE|GUELPH,29;30,2,campaign-3,skfd imports
+20,West Willow Woods,way,912221557,7,Flaherty Drive,75,75|FLAHERTY DRIVE|GUELPH,1;2,2,campaign-3,skfd imports
+20,West Willow Woods,way,912221558,7,Flaherty Drive,75,75|FLAHERTY DRIVE|GUELPH,7;8,2,campaign-3,skfd imports
+20,West Willow Woods,way,1441651844,5,Rhonda Road,49,49|RHONDA ROAD|GUELPH,98;99,2,campaign-3,skfd imports
+20,West Willow Woods,way,1441651845,5,Rhonda Road,49,49|RHONDA ROAD|GUELPH,94;95,2,campaign-3,skfd imports
+20,West Willow Woods,way,1441651846,5,Rhonda Road,49,49|RHONDA ROAD|GUELPH,84;85,2,campaign-3,skfd imports
+20,West Willow Woods,way,1441651847,5,Rhonda Road,49,49|RHONDA ROAD|GUELPH,88;89,2,campaign-3,skfd imports
+20,West Willow Woods,way,1441651848,5,Rhonda Road,49,49|RHONDA ROAD|GUELPH,90;91,2,campaign-3,skfd imports
+20,West Willow Woods,way,1441651849,5,Rhonda Road,49,49|RHONDA ROAD|GUELPH,92;93,2,campaign-3,skfd imports
+20,West Willow Woods,way,1441651850,5,Rhonda Road,49,49|RHONDA ROAD|GUELPH,96;97,2,campaign-3,skfd imports
+20,West Willow Woods,way,1441651851,5,Rhonda Road,49,49|RHONDA ROAD|GUELPH,100;101,2,campaign-3,skfd imports
+20,West Willow Woods,way,1441651852,5,Rhonda Road,49,49|RHONDA ROAD|GUELPH,102;103,2,campaign-3,skfd imports
+20,West Willow Woods,way,1441651853,5,Rhonda Road,49,49|RHONDA ROAD|GUELPH,104;105,2,campaign-3,skfd imports
+20,West Willow Woods,way,1441651854,5,Rhonda Road,49,49|RHONDA ROAD|GUELPH,106;107,2,campaign-3,skfd imports
+20,West Willow Woods,way,1441651855,5,Rhonda Road,49,49|RHONDA ROAD|GUELPH,108;109,2,campaign-3,skfd imports
+20,West Willow Woods,way,1441651856,5,Rhonda Road,49,49|RHONDA ROAD|GUELPH,110;111,2,campaign-3,skfd imports
+20,West Willow Woods,way,1441651910,5,Rhonda Road,49,49|RHONDA ROAD|GUELPH,128;129,2,campaign-3,skfd imports
+20,West Willow Woods,way,1441651911,5,Rhonda Road,49,49|RHONDA ROAD|GUELPH,126;127,2,campaign-3,skfd imports
+20,West Willow Woods,way,1441651912,5,Rhonda Road,49,49|RHONDA ROAD|GUELPH,122;123,2,campaign-3,skfd imports
+20,West Willow Woods,way,1441651913,5,Rhonda Road,49,49|RHONDA ROAD|GUELPH,118;119,2,campaign-3,skfd imports
+20,West Willow Woods,way,1441651914,5,Rhonda Road,49,49|RHONDA ROAD|GUELPH,116;117,2,campaign-3,skfd imports
+20,West Willow Woods,way,1441651915,5,Rhonda Road,49,49|RHONDA ROAD|GUELPH,124;125,2,campaign-3,skfd imports
+20,West Willow Woods,way,1441651916,5,Rhonda Road,49,49|RHONDA ROAD|GUELPH,130;131,2,campaign-3,skfd imports
+20,West Willow Woods,way,1441651917,5,Rhonda Road,49,49|RHONDA ROAD|GUELPH,114;115,2,campaign-3,skfd imports
+20,West Willow Woods,way,803276519,6,Rhonda Road,49,49|RHONDA ROAD|GUELPH,112;113,2,campaign-3,skfd imports
+20,West Willow Woods,way,803276525,6,Rhonda Road,49,49|RHONDA ROAD|GUELPH,120;121,2,campaign-3,skfd imports
+20,West Willow Woods,way,803276526,6,Rhonda Road,49,49|RHONDA ROAD|GUELPH,86;87,2,campaign-3,skfd imports
+20,West Willow Woods,way,413380308,7,Speedvale Avenue West,350,350|SPEEDVALE AVENUE WEST|GUELPH,1-12,12,campaign-3,skfd imports
+20,West Willow Woods,way,1019900572,4,Westwood Road,240,240|WESTWOOD ROAD|GUELPH,10A;10B;10C,3,campaign-3,skfd imports
+20,West Willow Woods,way,1019900573,4,Westwood Road,240,240|WESTWOOD ROAD|GUELPH,8A;8B;8C;8D,4,campaign-3,skfd imports
+20,West Willow Woods,way,1019900574,4,Westwood Road,240,240|WESTWOOD ROAD|GUELPH,7A;7B;7C;7D,4,campaign-3,skfd imports
+20,West Willow Woods,way,1019900576,4,Westwood Road,240,240|WESTWOOD ROAD|GUELPH,14A;14B;14C;14D,4,campaign-3,skfd imports
+20,West Willow Woods,way,1441652013,3,Westwood Road,240,240|WESTWOOD ROAD|GUELPH,1A;1B;1C,3,campaign-3,skfd imports
+20,West Willow Woods,way,1441652014,3,Westwood Road,240,240|WESTWOOD ROAD|GUELPH,6A;6B;6C;6D,4,campaign-3,skfd imports
+20,West Willow Woods,way,1441652015,3,Westwood Road,240,240|WESTWOOD ROAD|GUELPH,5A;5B;5C;5D,4,campaign-3,skfd imports
+20,West Willow Woods,way,1441652016,3,Westwood Road,240,240|WESTWOOD ROAD|GUELPH,2A;2B;2C;2D,4,campaign-3,skfd imports
+20,West Willow Woods,way,1441652017,3,Westwood Road,240,240|WESTWOOD ROAD|GUELPH,9A;9B;9C,3,campaign-3,skfd imports
+20,West Willow Woods,way,1441652018,3,Westwood Road,240,240|WESTWOOD ROAD|GUELPH,13A;13B;13C;13D,4,campaign-3,skfd imports
+20,West Willow Woods,way,1441652019,3,Westwood Road,240,240|WESTWOOD ROAD|GUELPH,20A;20B;20C;20D,4,campaign-3,skfd imports
+20,West Willow Woods,way,1441652020,3,Westwood Road,240,240|WESTWOOD ROAD|GUELPH,16A;16B;16C;16D,4,campaign-3,skfd imports
+20,West Willow Woods,way,1441652021,3,Westwood Road,240,240|WESTWOOD ROAD|GUELPH,12A;12B;12C,3,campaign-3,skfd imports
+20,West Willow Woods,way,803279310,5,Westwood Road,240,240|WESTWOOD ROAD|GUELPH,17A;17B;17C;17D,4,campaign-3,skfd imports
+20,West Willow Woods,way,803279312,5,Westwood Road,240,240|WESTWOOD ROAD|GUELPH,18A;18B;18C;18D,4,campaign-3,skfd imports
+20,West Willow Woods,way,803279313,5,Westwood Road,240,240|WESTWOOD ROAD|GUELPH,19A;19B;19C;19D,4,campaign-3,skfd imports
+20,West Willow Woods,way,803279314,5,Westwood Road,240,240|WESTWOOD ROAD|GUELPH,3A;3B;3C,3,campaign-3,skfd imports
+20,West Willow Woods,way,803279315,5,Westwood Road,240,240|WESTWOOD ROAD|GUELPH,4A;4B;4C;4D,4,campaign-3,skfd imports
+20,West Willow Woods,way,803279319,5,Westwood Road,240,240|WESTWOOD ROAD|GUELPH,11A;11B;11C,3,campaign-3,skfd imports

@@ -75,7 +75,8 @@ EXPECT = {"flats-hygiene": expected_flats_hygiene,
           "flats-pairs": expected_flats_pairs,
           "province-removal": expected_province,
           "province-leftovers": expected_province,
-          "unit-doors": expected_unit_doors}
+          "unit-doors": expected_unit_doors,
+          "redundant-flats": expected_unit_doors}
 
 # A created node may land a hair off the prepared position once the API has
 # stored it at 7 decimal places; 1e-6 degrees is about 11 cm.

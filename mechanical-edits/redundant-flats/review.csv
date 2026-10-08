@@ -1,0 +1,11 @@
+type,id,street,housenumber,flats,units_city,detail,origin,last_user,area,reason
+way,761343575,Country Club Drive,120,11;12;14-33,74,32,campaign-3,skfd imports,Waverley,unit-without-door
+way,344325628,Elmira Road North,355,100-140,40,122 (only on a POI: 122),campaign-3,skfd imports,Non-Residential - A,osm-unit-not-in-city
+way,1349287989,Janefield Avenue,176,154;202,76,154 at 74,campaign-3,skfd imports,Old University,cross-civic
+way,1349287990,Janefield Avenue,176,156;200,76,156 at 74,campaign-3,skfd imports,Old University,cross-civic
+way,1349287997,Janefield Avenue,176,152;204,76,152 at 74,campaign-3,skfd imports,Old University,cross-civic
+way,1349287991,Janefield Avenue,74,158;198,89,198 at 176,campaign-3,skfd imports,Old University,cross-civic
+way,1349287992,Janefield Avenue,74,160;196,89,196 at 176,campaign-3,skfd imports,Old University,cross-civic
+way,1349287993,Janefield Avenue,74,162;194,89,194 at 176,campaign-3,skfd imports,Old University,cross-civic
+way,1349287996,Janefield Avenue,74,164;192,89,192 at 176,campaign-3,skfd imports,Old University,cross-civic
+way,741807532,Kay Crescent,7,101-113;201-215;301-315;401-415;501-515;601-615;LL01-LL06,94,doors also exist for LL01;LL02;LL03;LL04;LL05;LL06,campaign-3,skfd imports,Non-Residential - C,shape-split

@@ -1,0 +1,288 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Mechanical edit 6 — listings the doors made redundant — run sheet</title>
+<style>
+:root { color-scheme: light dark; --line:#d5d7db; --muted:#6b7177;
+        --ok:#1f7a3f; --warn:#8a5a00; --bg:#fff; --fg:#16181d; --card:#fafbfc; }
+@media (prefers-color-scheme: dark) {
+  :root { --line:#3a3f46; --muted:#9aa1a9; --ok:#6fcf8f; --warn:#e0b25c;
+          --bg:#14171a; --fg:#e8eaed; --card:#1b1f23; } }
+* { box-sizing: border-box; }
+body { margin:0 auto; padding:2rem 1.25rem 6rem; max-width:64rem;
+       background:var(--bg); color:var(--fg);
+       font:15px/1.55 -apple-system,Segoe UI,Roboto,sans-serif; }
+h1 { font-size:1.5rem; margin:0 0 .25rem; }
+h2 { font-size:1.05rem; margin:2.25rem 0 .6rem; }
+h3 { font-size:.95rem; margin:1.6rem 0 .3rem; }
+.sub { color:var(--muted); margin:0 0 1.5rem; }
+.banner { border:1px solid var(--line); border-left:4px solid var(--ok);
+          background:var(--card); padding:.85rem 1rem; border-radius:6px;
+          margin:0 0 1rem; }
+.banner.warn { border-left-color:var(--warn); }
+code, .mono { font-family:ui-monospace,SFMono-Regular,Consolas,monospace;
+              font-size:.86em; }
+table { border-collapse:collapse; width:100%; }
+th, td { text-align:left; padding:.5rem .55rem; border-bottom:1px solid var(--line);
+         vertical-align:top; }
+th { font-size:.78rem; text-transform:uppercase; letter-spacing:.04em;
+     color:var(--muted); font-weight:600; }
+tr.done td { opacity:.42; }
+tr.pilot td { background:color-mix(in srgb, var(--ok) 9%, transparent); }
+td.n { text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
+a.open { display:inline-block; padding:.3rem .65rem; border:1px solid var(--line);
+         border-radius:5px; text-decoration:none; color:inherit;
+         background:var(--card); white-space:nowrap; }
+a.open:hover { border-color:var(--ok); }
+.cs { color:var(--muted); font-size:.8rem; margin-top:.3rem; word-break:break-word; }
+.copy { cursor:pointer; border:1px solid var(--line); background:var(--card);
+        border-radius:4px; font-size:.72rem; padding:.1rem .4rem; color:inherit; }
+.progress { position:sticky; top:0; background:var(--bg); padding:.7rem 0;
+            border-bottom:1px solid var(--line); z-index:2; font-weight:600; }
+ol.steps li, ul.steps li { margin:.4rem 0; }
+</style>
+<h1>Mechanical edit 6 — listings the doors made redundant — run sheet</h1>
+<p class="sub">Where every unit a building lists now has its own <code>addr:unit</code> door node, remove <code>addr:flats</code> from the building. Nothing else changes.</p>
+
+<div class="banner warn">
+  <strong>Nothing here uploads itself.</strong> Open each batch in JOSM, look at
+  it, then press upload. The changeset tags are pre-filled from the file;
+  <code>created_by</code> is JOSM's own. Upload from the
+  <code>skfd imports</code> account, not a personal one.
+</div>
+
+<p class="sub">Built 2026-10-07 21:15 Eastern Daylight Time — 475 objects selected,
+317 batched across 20 batches,
+10 left for hand review.
+Plan: <a href="https://wiki.openstreetmap.org/wiki/Guelph/Address_Import/Continuous#Mechanical_edits">wiki § Mechanical edits</a> ·
+Thread: <a href="https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103">#135103</a></p>
+
+<div class="progress" id="tally"></div>
+
+<h2>Batches</h2>
+<table>
+  <thead><tr><th></th><th class="n">#</th><th>Area</th><th class="n">Objects</th>
+  <th>Open</th></tr></thead>
+  <tbody>
+      <tr class="pilot" data-key="01-kortright-hills" data-count="10">
+        <td><input type="checkbox" aria-label="batch 1 uploaded"></td>
+        <td class="n">1 <strong>PILOT</strong></td>
+        <td><strong>Kortright Hills</strong><div class='cs'>Downey Road, Hanlon Creek Boulevard</div><div class='cs mono'>e.g. 146|DOWNEY ROAD|GUELPH: addr:flats=24A;24B removed</div></td>
+        <td class="n">10</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/redundant-flats/batches/01-kortright-hills.osm">Open in JOSM</a>
+            <div class="cs">01-kortright-hills.osm
+            <button class="copy" data-text="Guelph addresses: remove addr:flats where every listed unit now has its own addr:unit door node - Kortright Hills (1/20)">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="02-rickson-ridge" data-count="1">
+        <td><input type="checkbox" aria-label="batch 2 uploaded"></td>
+        <td class="n">2</td>
+        <td><strong>Rickson Ridge</strong><div class='cs'>Gordon Street</div><div class='cs mono'>e.g. 1131|GORDON STREET|GUELPH: addr:flats=1-8 removed</div></td>
+        <td class="n">1</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/redundant-flats/batches/02-rickson-ridge.osm">Open in JOSM</a>
+            <div class="cs">02-rickson-ridge.osm
+            <button class="copy" data-text="Guelph addresses: remove addr:flats where every listed unit now has its own addr:unit door node - Rickson Ridge (2/20)">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="03-clairfields" data-count="3">
+        <td><input type="checkbox" aria-label="batch 3 uploaded"></td>
+        <td class="n">3</td>
+        <td><strong>Clairfields</strong><div class='cs'>Southgate Drive</div><div class='cs mono'>e.g. 200|SOUTHGATE DRIVE|GUELPH: addr:flats=1-3 removed</div></td>
+        <td class="n">3</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/redundant-flats/batches/03-clairfields.osm">Open in JOSM</a>
+            <div class="cs">03-clairfields.osm
+            <button class="copy" data-text="Guelph addresses: remove addr:flats where every listed unit now has its own addr:unit door node - Clairfields (3/20)">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="04-downtown-sunny-acres" data-count="4">
+        <td><input type="checkbox" aria-label="batch 4 uploaded"></td>
+        <td class="n">4</td>
+        <td><strong>Downtown - Sunny Acres</strong><div class='cs'>Beechwood Avenue, Quebec Street, Waterloo Avenue</div><div class='cs mono'>e.g. 83|BEECHWOOD AVENUE|GUELPH: addr:flats=1-16 removed</div></td>
+        <td class="n">4</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/redundant-flats/batches/04-downtown-sunny-acres.osm">Open in JOSM</a>
+            <div class="cs">04-downtown-sunny-acres.osm
+            <button class="copy" data-text="Guelph addresses: remove addr:flats where every listed unit now has its own addr:unit door node - Downtown - Sunny Acres (4/20)">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="05-non-residential-b" data-count="4">
+        <td><input type="checkbox" aria-label="batch 5 uploaded"></td>
+        <td class="n">5</td>
+        <td><strong>Non-Residential - B</strong><div class='cs'>Taggart Street, Watson Parkway South, Watson Road South, York Road</div><div class='cs mono'>e.g. 2|TAGGART STREET|GUELPH: addr:flats=2;4A;6;8 removed</div></td>
+        <td class="n">4</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/redundant-flats/batches/05-non-residential-b.osm">Open in JOSM</a>
+            <div class="cs">05-non-residential-b.osm
+            <button class="copy" data-text="Guelph addresses: remove addr:flats where every listed unit now has its own addr:unit door node - Non-Residential - B (5/20)">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="06-onward-willow" data-count="4">
+        <td><input type="checkbox" aria-label="batch 6 uploaded"></td>
+        <td class="n">6</td>
+        <td><strong>Onward Willow</strong><div class='cs'>Paisley Road, Silvercreek Parkway North</div><div class='cs mono'>e.g. 305|PAISLEY ROAD|GUELPH: addr:flats=A;B removed</div></td>
+        <td class="n">4</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/redundant-flats/batches/06-onward-willow.osm">Open in JOSM</a>
+            <div class="cs">06-onward-willow.osm
+            <button class="copy" data-text="Guelph addresses: remove addr:flats where every listed unit now has its own addr:unit door node - Onward Willow (6/20)">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="07-pine-ridge-westminster-woods" data-count="4">
+        <td><input type="checkbox" aria-label="batch 7 uploaded"></td>
+        <td class="n">7</td>
+        <td><strong>Pine Ridge - Westminster Woods</strong><div class='cs'>Frederick Drive, Goodwin Drive</div><div class='cs mono'>e.g. 100|FREDERICK DRIVE|GUELPH: addr:flats=1-16 removed</div></td>
+        <td class="n">4</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/redundant-flats/batches/07-pine-ridge-westminster-woods.osm">Open in JOSM</a>
+            <div class="cs">07-pine-ridge-westminster-woods.osm
+            <button class="copy" data-text="Guelph addresses: remove addr:flats where every listed unit now has its own addr:unit door node - Pine Ridge - Westminster Woods (7/20)">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="08-two-rivers" data-count="4">
+        <td><input type="checkbox" aria-label="batch 8 uploaded"></td>
+        <td class="n">8</td>
+        <td><strong>Two Rivers</strong><div class='cs'>Huron Street, Victoria Road South</div><div class='cs mono'>e.g. 131|HURON STREET|GUELPH: addr:flats=A;B;C removed</div></td>
+        <td class="n">4</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/redundant-flats/batches/08-two-rivers.osm">Open in JOSM</a>
+            <div class="cs">08-two-rivers.osm
+            <button class="copy" data-text="Guelph addresses: remove addr:flats where every listed unit now has its own addr:unit door node - Two Rivers (8/20)">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="09-st-georges-parkway" data-count="5">
+        <td><input type="checkbox" aria-label="batch 9 uploaded"></td>
+        <td class="n">9</td>
+        <td><strong>St. Georges Parkway</strong><div class='cs'>Arthur Street North, Eramosa Road, Ottawa Crescent, Stuart Street</div><div class='cs mono'>e.g. 151|ARTHUR STREET NORTH|GUELPH: addr:flats=A;B removed</div></td>
+        <td class="n">5</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/redundant-flats/batches/09-st-georges-parkway.osm">Open in JOSM</a>
+            <div class="cs">09-st-georges-parkway.osm
+            <button class="copy" data-text="Guelph addresses: remove addr:flats where every listed unit now has its own addr:unit door node - St. Georges Parkway (9/20)">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="10-waverley" data-count="6">
+        <td><input type="checkbox" aria-label="batch 10 uploaded"></td>
+        <td class="n">10</td>
+        <td><strong>Waverley</strong><div class='cs'>Country Club Drive, Woodlawn Road East</div><div class='cs mono'>e.g. 120|COUNTRY CLUB DRIVE|GUELPH: addr:flats=1-10 removed</div></td>
+        <td class="n">6</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/redundant-flats/batches/10-waverley.osm">Open in JOSM</a>
+            <div class="cs">10-waverley.osm
+            <button class="copy" data-text="Guelph addresses: remove addr:flats where every listed unit now has its own addr:unit door node - Waverley (10/20)">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="11-non-residential-c" data-count="9">
+        <td><input type="checkbox" aria-label="batch 11 uploaded"></td>
+        <td class="n">11</td>
+        <td><strong>Non-Residential - C</strong><div class='cs'>Kay Crescent</div><div class='cs mono'>e.g. 39|KAY CRESCENT|GUELPH: addr:flats=32;33 removed</div></td>
+        <td class="n">9</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/redundant-flats/batches/11-non-residential-c.osm">Open in JOSM</a>
+            <div class="cs">11-non-residential-c.osm
+            <button class="copy" data-text="Guelph addresses: remove addr:flats where every listed unit now has its own addr:unit door node - Non-Residential - C (11/20)">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="12-non-residential-a" data-count="12">
+        <td><input type="checkbox" aria-label="batch 12 uploaded"></td>
+        <td class="n">12</td>
+        <td><strong>Non-Residential - A</strong><div class='cs'>Burns Drive, Elmira Road North, Monarch Road</div><div class='cs mono'>e.g. 80|BURNS DRIVE|GUELPH: addr:flats=11;12 removed</div></td>
+        <td class="n">12</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/redundant-flats/batches/12-non-residential-a.osm">Open in JOSM</a>
+            <div class="cs">12-non-residential-a.osm
+            <button class="copy" data-text="Guelph addresses: remove addr:flats where every listed unit now has its own addr:unit door node - Non-Residential - A (12/20)">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="13-june-avenue" data-count="16">
+        <td><input type="checkbox" aria-label="batch 13 uploaded"></td>
+        <td class="n">13</td>
+        <td><strong>June Avenue</strong><div class='cs'>Arrow Road, Burns Drive</div><div class='cs mono'>e.g. 31|ARROW ROAD|GUELPH: addr:flats=1-11 removed</div></td>
+        <td class="n">16</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/redundant-flats/batches/13-june-avenue.osm">Open in JOSM</a>
+            <div class="cs">13-june-avenue.osm
+            <button class="copy" data-text="Guelph addresses: remove addr:flats where every listed unit now has its own addr:unit door node - June Avenue (13/20)">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="14-old-university" data-count="23">
+        <td><input type="checkbox" aria-label="batch 14 uploaded"></td>
+        <td class="n">14</td>
+        <td><strong>Old University</strong><div class='cs'>Janefield Avenue, Manor Park Crescent, Mason Court</div><div class='cs mono'>e.g. 176|JANEFIELD AVENUE|GUELPH: addr:flats=228;230 removed</div></td>
+        <td class="n">23</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/redundant-flats/batches/14-old-university.osm">Open in JOSM</a>
+            <div class="cs">14-old-university.osm
+            <button class="copy" data-text="Guelph addresses: remove addr:flats where every listed unit now has its own addr:unit door node - Old University (14/20)">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="15-exhibition-park" data-count="24">
+        <td><input type="checkbox" aria-label="batch 15 uploaded"></td>
+        <td class="n">15</td>
+        <td><strong>Exhibition Park</strong><div class='cs'>Cardigan Street, Dublin Street North, Exhibition Street, Liverpool Street +3 more</div><div class='cs mono'>e.g. 122|CARDIGAN STREET|GUELPH: addr:flats=1-4 removed</div></td>
+        <td class="n">24</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/redundant-flats/batches/15-exhibition-park.osm">Open in JOSM</a>
+            <div class="cs">15-exhibition-park.osm
+            <button class="copy" data-text="Guelph addresses: remove addr:flats where every listed unit now has its own addr:unit door node - Exhibition Park (15/20)">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="16-hanlon-creek" data-count="24">
+        <td><input type="checkbox" aria-label="batch 16 uploaded"></td>
+        <td class="n">16</td>
+        <td><strong>Hanlon Creek</strong><div class='cs'>Gordon Street, Scottsdale Drive, Stone Road West</div><div class='cs mono'>e.g. 803|GORDON STREET|GUELPH: addr:flats=1-15 removed</div></td>
+        <td class="n">24</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/redundant-flats/batches/16-hanlon-creek.osm">Open in JOSM</a>
+            <div class="cs">16-hanlon-creek.osm
+            <button class="copy" data-text="Guelph addresses: remove addr:flats where every listed unit now has its own addr:unit door node - Hanlon Creek (16/20)">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="17-grange-hill-east" data-count="26">
+        <td><input type="checkbox" aria-label="batch 17 uploaded"></td>
+        <td class="n">17</td>
+        <td><strong>Grange Hill East</strong><div class='cs'>Airpark Place, Auden Road, Cityview Drive South, Eastview Road +2 more</div><div class='cs mono'>e.g. 45|AIRPARK PLACE|GUELPH: addr:flats=1-8 removed</div></td>
+        <td class="n">26</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/redundant-flats/batches/17-grange-hill-east.osm">Open in JOSM</a>
+            <div class="cs">17-grange-hill-east.osm
+            <button class="copy" data-text="Guelph addresses: remove addr:flats where every listed unit now has its own addr:unit door node - Grange Hill East (17/20)">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="18-brant" data-count="32">
+        <td><input type="checkbox" aria-label="batch 18 uploaded"></td>
+        <td class="n">18</td>
+        <td><strong>Brant</strong><div class='cs'>Carere Crescent</div><div class='cs mono'>e.g. 15|CARERE CRESCENT|GUELPH: addr:flats=9A;9B removed</div></td>
+        <td class="n">32</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/redundant-flats/batches/18-brant.osm">Open in JOSM</a>
+            <div class="cs">18-brant.osm
+            <button class="copy" data-text="Guelph addresses: remove addr:flats where every listed unit now has its own addr:unit door node - Brant (18/20)">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="19-parkwood-gardens" data-count="37">
+        <td><input type="checkbox" aria-label="batch 19 uploaded"></td>
+        <td class="n">19</td>
+        <td><strong>Parkwood Gardens</strong><div class='cs'>Fife Road, Imperial Road South</div><div class='cs mono'>e.g. 190|FIFE ROAD|GUELPH: addr:flats=59;60 removed</div></td>
+        <td class="n">37</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/redundant-flats/batches/19-parkwood-gardens.osm">Open in JOSM</a>
+            <div class="cs">19-parkwood-gardens.osm
+            <button class="copy" data-text="Guelph addresses: remove addr:flats where every listed unit now has its own addr:unit door node - Parkwood Gardens (19/20)">copy comment</button></div></td>
+      </tr>
+      <tr class="" data-key="20-west-willow-woods" data-count="69">
+        <td><input type="checkbox" aria-label="batch 20 uploaded"></td>
+        <td class="n">20</td>
+        <td><strong>West Willow Woods</strong><div class='cs'>Flaherty Drive, Rhonda Road, Speedvale Avenue West, Westwood Road</div><div class='cs mono'>e.g. 75|FLAHERTY DRIVE|GUELPH: addr:flats=49;50 removed</div></td>
+        <td class="n">69</td>
+        <td><a class="open" href="http://127.0.0.1:8111/open_file?filename=C:/Users/kk/Code/guelph-address-import/mechanical-edits/redundant-flats/batches/20-west-willow-woods.osm">Open in JOSM</a>
+            <div class="cs">20-west-willow-woods.osm
+            <button class="copy" data-text="Guelph addresses: remove addr:flats where every listed unit now has its own addr:unit door node - West Willow Woods (20/20)">copy comment</button></div></td>
+      </tr></tbody>
+</table>
+
+<h2>Order of work</h2><ol class="steps"><li><strong>Announce first.</strong> Post <code>FORUM_POST.md</code> on <a href='https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103'>#135103</a> and wait the days it promises.</li><li>On the day: <code>build_batches.py --refetch</code>. Versions move; a stale batch conflicts in JOSM rather than overwriting, but a rebuild is cheaper than resolving conflicts.</li><li>Sign JOSM in as <code>skfd imports</code>. Run <code>python upload_loop.py redundant-flats 1 N</code> to feed batches and verify each from the API.</li><li>Batch 1 is the pilot. Upload it, check it on the map, then the rest.</li></ol>
+
+<h2>Left for hand review</h2><h3>Listing names a unit whose door is at another civic — 7</h3><p class='sub'>Campaign 7's (<code>cross-civic-flats/</code>): the 74/176 Janefield back-to-back slices. Every unit has its door, but not all at this civic; left to that campaign.</p><table><thead><tr><th>Object</th><th>housenumber</th><th>flats</th><th>units_city</th><th>detail</th><th>origin</th><th>last_user</th><th>Street</th><th></th></tr></thead><tbody><tr><td class='mono'>way 1349287989</td><td class='mono'>176</td><td class='mono'>154;202</td><td class='mono'>76</td><td class='mono'>154 at 74</td><td class='mono'>campaign-3</td><td class='mono'>skfd imports</td><td>Janefield Avenue</td><td><a href='https://www.openstreetmap.org/way/1349287989'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w1349287989'>JOSM</a></td></tr><tr><td class='mono'>way 1349287990</td><td class='mono'>176</td><td class='mono'>156;200</td><td class='mono'>76</td><td class='mono'>156 at 74</td><td class='mono'>campaign-3</td><td class='mono'>skfd imports</td><td>Janefield Avenue</td><td><a href='https://www.openstreetmap.org/way/1349287990'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w1349287990'>JOSM</a></td></tr><tr><td class='mono'>way 1349287997</td><td class='mono'>176</td><td class='mono'>152;204</td><td class='mono'>76</td><td class='mono'>152 at 74</td><td class='mono'>campaign-3</td><td class='mono'>skfd imports</td><td>Janefield Avenue</td><td><a href='https://www.openstreetmap.org/way/1349287997'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w1349287997'>JOSM</a></td></tr><tr><td class='mono'>way 1349287991</td><td class='mono'>74</td><td class='mono'>158;198</td><td class='mono'>89</td><td class='mono'>198 at 176</td><td class='mono'>campaign-3</td><td class='mono'>skfd imports</td><td>Janefield Avenue</td><td><a href='https://www.openstreetmap.org/way/1349287991'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w1349287991'>JOSM</a></td></tr><tr><td class='mono'>way 1349287992</td><td class='mono'>74</td><td class='mono'>160;196</td><td class='mono'>89</td><td class='mono'>196 at 176</td><td class='mono'>campaign-3</td><td class='mono'>skfd imports</td><td>Janefield Avenue</td><td><a href='https://www.openstreetmap.org/way/1349287992'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w1349287992'>JOSM</a></td></tr><tr><td class='mono'>way 1349287993</td><td class='mono'>74</td><td class='mono'>162;194</td><td class='mono'>89</td><td class='mono'>194 at 176</td><td class='mono'>campaign-3</td><td class='mono'>skfd imports</td><td>Janefield Avenue</td><td><a href='https://www.openstreetmap.org/way/1349287993'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w1349287993'>JOSM</a></td></tr><tr><td class='mono'>way 1349287996</td><td class='mono'>74</td><td class='mono'>164;192</td><td class='mono'>89</td><td class='mono'>192 at 176</td><td class='mono'>campaign-3</td><td class='mono'>skfd imports</td><td>Janefield Avenue</td><td><a href='https://www.openstreetmap.org/way/1349287996'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w1349287996'>JOSM</a></td></tr></tbody></table><h3>A listed unit has no door at this civic — 1</h3><p class='sub'>Stripping the listing would lose a unit nobody created. <code>detail</code> names the units.</p><table><thead><tr><th>Object</th><th>housenumber</th><th>flats</th><th>units_city</th><th>detail</th><th>origin</th><th>last_user</th><th>Street</th><th></th></tr></thead><tbody><tr><td class='mono'>way 761343575</td><td class='mono'>120</td><td class='mono'>11;12;14-33</td><td class='mono'>74</td><td class='mono'>32</td><td class='mono'>campaign-3</td><td class='mono'>skfd imports</td><td>Country Club Drive</td><td><a href='https://www.openstreetmap.org/way/761343575'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w761343575'>JOSM</a></td></tr></tbody></table><h3>OSM lists a unit the City does not have here — 1</h3><p class='sub'>The doors stand in for the City's units, not this one. A hand question, not a rule.</p><table><thead><tr><th>Object</th><th>housenumber</th><th>flats</th><th>units_city</th><th>detail</th><th>origin</th><th>last_user</th><th>Street</th><th></th></tr></thead><tbody><tr><td class='mono'>way 344325628</td><td class='mono'>355</td><td class='mono'>100-140</td><td class='mono'>40</td><td class='mono'>122 (only on a POI: 122)</td><td class='mono'>campaign-3</td><td class='mono'>skfd imports</td><td>Elmira Road North</td><td><a href='https://www.openstreetmap.org/way/344325628'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w344325628'>JOSM</a></td></tr></tbody></table><h3>Operator verdict <code>split</code> — 1</h3><p class='sub'>Doors for the row units, one listing for the tower: the listing is the intended shape here. Any doors it also names are reported.</p><table><thead><tr><th>Object</th><th>housenumber</th><th>flats</th><th>units_city</th><th>detail</th><th>origin</th><th>last_user</th><th>Street</th><th></th></tr></thead><tbody><tr><td class='mono'>way 741807532</td><td class='mono'>7</td><td class='mono'>101-113;201-215;301-315;401-415;501-515;601-615…</td><td class='mono'>94</td><td class='mono'>doors also exist for LL01;LL02;LL03;LL04;LL05;L…</td><td class='mono'>campaign-3</td><td class='mono'>skfd imports</td><td>Kay Crescent</td><td><a href='https://www.openstreetmap.org/way/741807532'>osm.org</a> · <a href='http://127.0.0.1:8111/load_object?objects=w741807532'>JOSM</a></td></tr></tbody></table>
+
+<script>
+const TOTAL_BATCHES = 20;
+const TOTAL_OBJECTS = 317;
+
+const KEY = 'guelph-redundant-flats-done';
+const done = new Set(JSON.parse(localStorage.getItem(KEY) || '[]'));
+function paint() {
+  let objs = 0, batches = 0;
+  document.querySelectorAll('tr[data-key]').forEach(tr => {
+    const on = done.has(tr.dataset.key);
+    tr.classList.toggle('done', on);
+    tr.querySelector('input').checked = on;
+    if (on) { batches++; objs += Number(tr.dataset.count); }
+  });
+  document.getElementById('tally').textContent =
+    batches + ' of ' + TOTAL_BATCHES + ' batches uploaded \u2014 ' +
+    objs.toLocaleString() + ' of ' + TOTAL_OBJECTS.toLocaleString() + ' objects';
+}
+document.addEventListener('change', e => {
+  if (e.target.matches('tr[data-key] input')) {
+    const id = e.target.closest('tr').dataset.key;
+    e.target.checked ? done.add(id) : done.delete(id);
+    localStorage.setItem(KEY, JSON.stringify([...done]));
+    paint();
+  }
+});
+document.addEventListener('click', e => {
+  if (e.target.matches('.copy')) {
+    navigator.clipboard.writeText(e.target.dataset.text);
+    const was = e.target.textContent;
+    e.target.textContent = 'copied';
+    setTimeout(() => { e.target.textContent = was; }, 900);
+  }
+});
+paint();
+
+</script>
