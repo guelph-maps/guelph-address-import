@@ -1,11 +1,11 @@
 # guelph-address-import
 
 The **Guelph city checkout** of the address-import family — city #3,
-scaffolded 2026-08-15. Status: **two mechanical campaigns finished and
-verified, two more announced 2026-09-18 and still not uploaded, and the
-gap-fill import **conflated but not uploaded** (2026-09-29).** 5,968 objects re-tagged over
-2026-09-16/17 in 59 changesets — see
-[`mechanical-edits/TODO.md`](mechanical-edits/TODO.md) for the ledger.
+scaffolded 2026-08-15. Status: **the first gap-fill pass is uploaded** —
+4,367 address nodes in 131 changesets, 2026-10-03 to 2026-10-07 — and
+every mechanical edit that was going to run before it has run. What follows
+is the monthly re-run, plus the cleanups held until the import was done. See
+[`mechanical-edits/TODO.md`](mechanical-edits/TODO.md) for the edit ledger.
 `ARandomThumbtack_Import` imported Guelph's addresses solo in 2025 (first
 changeset 2025-09-16, declared complete 2025-10-23 on the
 [wiki page](https://wiki.openstreetmap.org/wiki/Guelph/Address_Import)),
@@ -48,8 +48,9 @@ Publication state:
    refuses to open a changeset while it is empty, so this gated every upload.
 3. ✅ `WIKI_CATALOGUE_ENTRY.mediawiki` — **published**; both rows are live in
    `Import/Catalogue` § Ongoing Imports, Semi-Automated (checked against the
-   raw wikitext 2026-09-15). Guelph's row still reads status `Planned` and
-   wants moving to `In progress` once the first batch uploads.
+   raw wikitext 2026-09-15). Guelph's row still read status `Planned` on
+   2026-10-07, after the first pass had uploaded. It wants `In progress`, and
+   stays there: the import is continuous, so it is never marked complete.
 4. ✅ `FORUM_ANNOUNCEMENT.md` — **posted 2026-08-28** as post #14 on thread
    #135103, `addr:full` withdrawal included. The 14-day objection window ran to
    2026-09-10 and closed with no objections; ARandomThumbtack replied
@@ -95,8 +96,8 @@ separately under the Automated Edits code of conduct. 2 went through a
 true scale, and 3, 4 and 5, were announced on short notice instead, with the
 standing offer to revert on request:
 
-1. **Remove `addr:province`** — ✅ **built 2026-09-17**, 44,763 objects in
-   25 batches, one per area, uploading. **The consented count was wrong by 12×**:
+1. **Remove `addr:province`** — ✅ **done 2026-09-30**, 44,763 objects in
+   25 changesets, one per area. **The consented count was wrong by 12×**:
    the thread was told ~3,699, the real figure is 44,796 (44,155 `Ontario`,
    607 `ON`, 1 `On`) — very nearly every address object in the city. 3,699 was
    a sample count published as a census. The edit is unchanged and still
@@ -116,11 +117,11 @@ standing offer to revert on request:
    14-day window; the wiki page records that choice and the standing offer to
    revert on request.
 
-4. **Remove meaningless `addr:interpolation`** — ✅ **built 2026-09-17**,
-   81 objects, sharing campaign 5's batch set. Announced 2026-09-18 as post
+4. **Remove meaningless `addr:interpolation`** — ✅ **done 2026-09-30**,
+   81 objects, sharing campaign 5's changesets. Announced 2026-09-18 as post
    #21. Withdraws a non-goal the wiki published on 2026-08-27; the page
    strikes it rather than deleting it.
-5. **Normalise `addr:flats` formatting** — ✅ **built 2026-09-17**, 292 of 464
+5. **Normalise `addr:flats` formatting** — ✅ **done 2026-09-30**, 292 of 464
    values re-rendered through the engine's own `compress_flats`, every one
    gated on a round trip. Announced 2026-09-18 as post #21. The full
    before→after list is
@@ -135,84 +136,52 @@ settled. None of the five is on the import path, and the import does not wait
 on them — but the split had to run **before** conflation, or door candidates
 would have duplicated against the badly-encoded objects.
 
-**Baseline conflation ran 2026-09-29** against a fresh extract (Geofabrik PBF
-of 2026-09-28, so it post-dates campaigns 2 and 3 — an older extract would
-have proposed door nodes beside the objects the split had already fixed).
-134 tiles built from the 23 areas; 53,847 source points at snapshot 47, and
-all 134 runs recorded against snapshot 47 — no tile picked up a stale one.
+**The first gap-fill pass uploaded 2026-10-03 to 2026-10-07** (local
+time): **4,367 address nodes in 131 changesets, 189912383–190173922**, one
+run per tile. Before it, every group of unit addresses got a shape at
+`/units/shapes`: 414 groups, 12 judged automatically from OSM building
+outlines. Then all runs were deleted and rebuilt from a fresh extract.
 
 | | |
 |---|---|
-| MATCH | 41,600 |
-| MATCH_LISTED | 895 |
-| MATCH_FAR | 722 |
-| MISSING | 2,757 |
-| **Auto-approved by the checks** | **2,621** |
-| **Held for review** | **1,325** |
+| Source points (snapshot 47) | 53,847 |
+| Already in OSM, skipped | 42,408 |
+| Rejected in review | 1,099 |
+| **Uploaded** | **4,367** |
+| — door nodes (`addr:unit`), across 143 addresses | 1,680 |
+| — one node per building, units in `addr:flats` | 8 |
+| — plain civic addresses | 2,679 |
+| — carrying the City's postcode | 3,531 |
 
-Nothing is uploaded. Three things stand between this queue and a changeset,
-and only the first is a tooling problem:
+The wrap-up page, generated from `tool.db` by
+`python -m t2.static_export --stats`, is
+[`docs/stats/index.html`](docs/stats/index.html).
 
-1. **No `.env.prod`.** Only the `.example` files exist, so there are no OSM
-   OAuth credentials and the app cannot authenticate.
-2. **The review walk has not happened.** 2,621 candidates carry the check
-   suite's pre-verdict `AUTO_APPROVED` and 1,325 are `REVIEW_PENDING`. That is
-   not a bypass — the UI lists both kinds together (`review.py` synthesises the
-   auto-approved ones as rows for exactly this reason) and nothing uploads
-   without a human in the UI clicking per tile. But the walk is a person's job
-   and no one has done it, so the counts above are the size of that job, not a
-   queue that is ready to go.
-3. **The published roll-out is one pilot tile, posted to the thread with its
-   counts and changeset, then a one-week hold** before the rest.
+**One correction went up afterwards.** Conflation measured a park or school
+from its centre, so five City points inside an addressed park or school
+uploaded as new nodes. They were deleted on 2026-10-07 in changeset
+190174014, and the engine now matches areas by their edges. See
+[`mechanical-edits/area-duplicates/`](mechanical-edits/area-duplicates/).
 
-The three complexes the footprint-guard bug affects were checked against this
-run and behave as `config.toml` promises: 15 Carere Crescent, 85 Mullin Drive
-and 176 Janefield Avenue each land at `REVIEW_PENDING` with `unit_shape=review`
-and the over-long listing dropped rather than truncated. They cannot collapse
-silently — but they are still one candidate each rather than per-door, so a
-reviewer has to route them by hand. The guard itself is still unfixed.
+**What comes next:**
 
-All 31 `nearby_street_mismatch` warnings are held for review, not auto-approved.
-
-**Blockers before the pilot upload** (not before publishing — the wiki page
-states intent):
-
-- ~~Constant `addr:city=Guelph` and changeset `source:license`~~ — **done**:
-  the engine reads `[export] node_tags` and `source_license`, and
-  `config.toml` sets both (checked 2026-10-01).
-- **The unit-shape review comes first** (2026-10-01). Three engine changes
-  landed that evening (address-importer-friend `2d45b3ba`, `c7ec20ca`,
-  `998342d6`): a building's unit listing no longer stands in for its doors
-  (all 910 MATCH_LISTED rows, 77 groups, re-read MISSING); a group somebody
-  else shaped in OSM takes a verdict, only our own uploads freeze; and a judge
-  over OSM's 49,677 building outlines recorded 12 `auto:` verdicts — 10
-  townhouse complexes to doors, 63 and 73 Arthur Street South to collapse.
-  54 groups have nothing in OSM yet (17 `review`); all 409 now take a
-  verdict. Verdicts change how many candidates
-  exist, so they must land **before** ingest — the 2026-09-29 conflation
-  above is superseded once they do, and is rerun on a fresh extract after.
-- The engine still has **no tag-modification path** — it creates nodes. The
-  route taken instead was JOSM, area by area, as the 2025 import did: each
-  campaign directory under `mechanical-edits/` builds `.osm` batches carrying
-  the live version of every object, so a stale one raises a conflict rather
-  than overwriting someone, with prior values in `manifest.csv` and
-  batch→changeset in `uploads.csv`. Campaign 1 has no equivalent yet.
-- **A classifier bug, found 2026-09-17 and not yet fixed.** Three groups whose
-  `addr:flats` listing overflows OSM's 255-character limit turn out to be
-  complexes 100–200 m across, not buildings — 15 Carere Crescent is 32
-  separate townhouse blocks. The collapse branch decides on unit numbering and
-  never asks how far apart the units are. **Resolved as verdicts 2026-10-01**:
-  the building judge reads all three as townhouse complexes and records
-  `nodes` (31 Greengate Road and 224 Janefield Avenue, which numbered as
-  coded too, with them). The guard inside the rule itself is still unbuilt;
-  the verdicts carry it. `config.toml` carries the measurements.
+- **The monthly re-run** when the City publishes. This is continuous upkeep:
+  the wiki status stays `In progress` and is never marked complete.
+- **The cleanups held until the import was done** (see the
+  [ledger](mechanical-edits/TODO.md)): the 149 interpolation ways with 3 or
+  more nodes; campaign 7, `addr:flats` naming another civic's units; the
+  `addr:flats` listings the new door nodes have made redundant (what is left
+  of edit 6); and the 5 Gordon Street stack collapse. Each one is announced
+  on the thread before it uploads.
+- **Still unbuilt:** the maintenance path for unit groups (a new unit at an
+  address whose shape is already in OSM), and the footprint guard inside the
+  unit rule itself. Verdicts cover both for now.
 
 **[`mechanical-edits/TODO.md`](mechanical-edits/TODO.md) is the ledger** for
 all five campaigns. The two found *while* running the others are now **built
 as one batch set** in
 [`mechanical-edits/flats-hygiene/`](mechanical-edits/flats-hygiene/) and
-**announced 2026-09-18** (post #21), **not uploaded**, and rebuilt against
-live OSM 2026-09-29 — 81 objects carrying `addr:interpolation` where it
+**announced 2026-09-18** (post #21) and **uploaded 2026-09-30** — 81 objects carrying `addr:interpolation` where it
 cannot mean anything (against 405 legitimate ones that stay untouched, and 149
 multi-node ones out of scope), plus a real `addr:flats` normaliser, re-measured
 at 292 of 464 values untidy. 325 objects, 22 batches; 48 take both edits,
