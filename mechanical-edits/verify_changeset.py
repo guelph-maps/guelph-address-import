@@ -74,12 +74,22 @@ def expected_unit_doors(before: dict, row: dict) -> dict:
     return after
 
 
+def expected_cross_civic(before: dict, row: dict) -> dict:
+    after = dict(before)
+    if row["flats_after"]:
+        after["addr:flats"] = row["flats_after"]
+    else:
+        after.pop("addr:flats", None)
+    return after
+
+
 EXPECT = {"flats-hygiene": expected_flats_hygiene,
           "flats-pairs": expected_flats_pairs,
           "province-removal": expected_province,
           "province-leftovers": expected_province,
           "unit-doors": expected_unit_doors,
           "redundant-flats": expected_unit_doors,
+          "cross-civic-flats": expected_cross_civic,
           # deletes only: no modify rows, so no tags to compare
           "interpolation-multinode": lambda before, row: before}
 

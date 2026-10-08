@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<osm version="0.6" generator="guelph-address-import cross-civic-flats (mechanical edit 7)"><changeset><tag k="comment" v="Guelph addresses: remove addr:flats on Janefield back-to-back slices; each unit is now its own door node at the right civic (1/2)" /><tag k="source" v="Guelph Open Data" /><tag k="source:license" v="OGL-Canada-2.0" /><tag k="mechanical" v="yes" /><tag k="bot" v="no" /><tag k="import_plan" v="https://wiki.openstreetmap.org/wiki/Guelph/Address_Import/Continuous#Mechanical_edits" /></changeset><node id="12481131685" version="1" lat="43.5184114" lon="-80.2451773" /><node id="12481131686" version="1" lat="43.5183207" lon="-80.2450479" /><node id="12481131687" version="1" lat="43.5183638" lon="-80.2449904" /><node id="12481131688" version="1" lat="43.5184545" lon="-80.2451198" /><node id="12481131689" version="1" lat="43.5183625" lon="-80.2452423" /><node id="12481131690" version="1" lat="43.5183516" lon="-80.2452268" /><node id="12481131691" version="1" lat="43.5182718" lon="-80.2451130" /><node id="12481287909" version="1" lat="43.5185028" lon="-80.2450556" /><node id="12481287910" version="1" lat="43.5184121" lon="-80.2449260" /><node id="12481131692" version="1" lat="43.5183033" lon="-80.2452928" /><node id="12481131693" version="1" lat="43.5182106" lon="-80.2451638" /><node id="12481131694" version="1" lat="43.5182597" lon="-80.2450968" /><node id="12481131695" version="1" lat="43.5182606" lon="-80.2453514" /><node id="12481131696" version="1" lat="43.5181677" lon="-80.2452225" /><node id="12481131697" version="1" lat="43.5182098" lon="-80.2454210" /><node id="12481131698" version="1" lat="43.5181169" lon="-80.2452921" /><node id="12481287907" version="1" lat="43.5181660" lon="-80.2454785" /><node id="12481287908" version="1" lat="43.5180733" lon="-80.2453519" /><way id="1349287989" visible="true" version="4" changeset="189754813" timestamp="2026-09-30T04:07:09Z" user="skfd imports" uid="24088502" action="modify">
+  <nd ref="12481131685" />
+  <nd ref="12481131686" />
+  <nd ref="12481131687" />
+  <nd ref="12481131688" />
+  <nd ref="12481131685" />
+  <tag k="addr:city" v="Guelph" /><tag k="addr:housenumber" v="176" /><tag k="addr:postcode" v="N1G 2L6" /><tag k="addr:street" v="Janefield Avenue" /><tag k="building" v="terrace" /><tag k="source" v="microsoft/BuildingFootprints" /></way>
+<way id="1349287990" visible="true" version="4" changeset="189754813" timestamp="2026-09-30T04:07:09Z" user="skfd imports" uid="24088502" action="modify">
+  <nd ref="12481131689" />
+  <nd ref="12481131690" />
+  <nd ref="12481131691" />
+  <nd ref="12481131686" />
+  <nd ref="12481131685" />
+  <nd ref="12481131689" />
+  <tag k="addr:city" v="Guelph" /><tag k="addr:housenumber" v="176" /><tag k="addr:postcode" v="N1G 2L6" /><tag k="addr:street" v="Janefield Avenue" /><tag k="building" v="terrace" /><tag k="source" v="microsoft/BuildingFootprints" /></way>
+<way id="1349287997" visible="true" version="4" changeset="189754813" timestamp="2026-09-30T04:07:09Z" user="skfd imports" uid="24088502" action="modify">
+  <nd ref="12481131688" />
+  <nd ref="12481287909" />
+  <nd ref="12481287910" />
+  <nd ref="12481131687" />
+  <nd ref="12481131688" />
+  <tag k="addr:city" v="Guelph" /><tag k="addr:housenumber" v="176" /><tag k="addr:postcode" v="N1G 2L6" /><tag k="addr:street" v="Janefield Avenue" /><tag k="building" v="house" /><tag k="house" v="terraced" /></way>
+<way id="1349287991" visible="true" version="4" changeset="189754813" timestamp="2026-09-30T04:07:09Z" user="skfd imports" uid="24088502" action="modify">
+  <nd ref="12481131692" />
+  <nd ref="12481131693" />
+  <nd ref="12481131694" />
+  <nd ref="12481131691" />
+  <nd ref="12481131690" />
+  <nd ref="12481131692" />
+  <tag k="addr:city" v="Guelph" /><tag k="addr:housenumber" v="74" /><tag k="addr:postcode" v="N1G 2L6" /><tag k="addr:street" v="Janefield Avenue" /><tag k="building" v="terrace" /><tag k="source" v="microsoft/BuildingFootprints" /></way>
+<way id="1349287992" visible="true" version="4" changeset="189754813" timestamp="2026-09-30T04:07:09Z" user="skfd imports" uid="24088502" action="modify">
+  <nd ref="12481131695" />
+  <nd ref="12481131696" />
+  <nd ref="12481131693" />
+  <nd ref="12481131692" />
+  <nd ref="12481131695" />
+  <tag k="addr:city" v="Guelph" /><tag k="addr:housenumber" v="74" /><tag k="addr:postcode" v="N1G 2L6" /><tag k="addr:street" v="Janefield Avenue" /><tag k="building" v="terrace" /><tag k="source" v="microsoft/BuildingFootprints" /></way>
+<way id="1349287993" visible="true" version="4" changeset="189754813" timestamp="2026-09-30T04:07:09Z" user="skfd imports" uid="24088502" action="modify">
+  <nd ref="12481131697" />
+  <nd ref="12481131698" />
+  <nd ref="12481131696" />
+  <nd ref="12481131695" />
+  <nd ref="12481131697" />
+  <tag k="addr:city" v="Guelph" /><tag k="addr:housenumber" v="74" /><tag k="addr:postcode" v="N1G 2L6" /><tag k="addr:street" v="Janefield Avenue" /><tag k="building" v="terrace" /><tag k="source" v="microsoft/BuildingFootprints" /></way>
+<way id="1349287996" visible="true" version="4" changeset="189754813" timestamp="2026-09-30T04:07:09Z" user="skfd imports" uid="24088502" action="modify">
+  <nd ref="12481131697" />
+  <nd ref="12481287907" />
+  <nd ref="12481287908" />
+  <nd ref="12481131698" />
+  <nd ref="12481131697" />
+  <tag k="addr:city" v="Guelph" /><tag k="addr:housenumber" v="74" /><tag k="addr:street" v="Janefield Avenue" /><tag k="building" v="house" /><tag k="house" v="terraced" /></way>
+</osm>

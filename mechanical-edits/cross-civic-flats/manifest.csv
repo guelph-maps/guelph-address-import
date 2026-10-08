@@ -1,0 +1,11 @@
+batch,area,type,id,version,street,housenumber,flats_before,flats_after,removed,evidence,city_snapshot
+1,Janefield back-to-back slices,way,1349287989,4,Janefield Avenue,176,154;202,,154;202,74/154=n14256497423 176/202=n14256497433,51 (2026-10-06)
+1,Janefield back-to-back slices,way,1349287990,4,Janefield Avenue,176,156;200,,156;200,74/156=n14256497456 176/200=n14256497441,51 (2026-10-06)
+1,Janefield back-to-back slices,way,1349287997,4,Janefield Avenue,176,152;204,,152;204,74/152=n14256497449 176/204=n14256497413,51 (2026-10-06)
+1,Janefield back-to-back slices,way,1349287991,4,Janefield Avenue,74,158;198,,158;198,74/158=n14256497425 176/198=n14256497444,51 (2026-10-06)
+1,Janefield back-to-back slices,way,1349287992,4,Janefield Avenue,74,160;196,,160;196,74/160=n14256497469 176/196=n14256497455,51 (2026-10-06)
+1,Janefield back-to-back slices,way,1349287993,4,Janefield Avenue,74,162;194,,162;194,74/162=n14256497420 176/194=n14256497417,51 (2026-10-06)
+1,Janefield back-to-back slices,way,1349287996,4,Janefield Avenue,74,164;192,,164;192,74/164=n14256497429 176/192=n14256497450,51 (2026-10-06)
+2,"Towers, one unit each",way,802528770,5,Conroy Crescent,53,101-107;201-208;301-308,101-104;106;107;201-208;301-308,105,"City has 22 units here, listing 23",51 (2026-10-06)
+2,"Towers, one unit each",way,1349266419,5,Janefield Avenue,454,101-108;201-208,101-108;201-203;205-208,204,"City has 15 units here, listing 16",51 (2026-10-06)
+2,"Towers, one unit each",way,178085151,7,Woodlawn Road East,23,101-110;201-212;301-312;401-412;501-512;601-612;701-712;801-812;901-909;911,101-110;201-212;301-312;401-412;501-512;601-612;701-705;707-712;801-812;901-909;911,706,"City has 103 units here, listing 104",51 (2026-10-06)

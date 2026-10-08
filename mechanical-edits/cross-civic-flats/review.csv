@@ -1,0 +1,5 @@
+type,id,street,housenumber,flats,removed,evidence,area,reason
+way,502064547,Ajax Street,7,104-108;205-207;209;210;306-311;406-411,,,"Towers, one unit each",already-right
+way,1042083497,Edinburgh Road North,395,105-108;110-114;201-207;209-213;217;301-307;309-313;317;401-407;409-413;417;501-507;509-513;517;601-607;609-613;617;701-707;709-713;717,,,"Towers, one unit each",already-right
+way,344325628,Elmira Road North,355,100-140,122,n9139124204,"Towers, one unit each",unit-in-osm
+way,819734215,Waterloo Avenue,358,101-106;201-208;301-308;401-408;501-508;601-608;701-708;801-808;901-908;1001-1008;1101-1108,903,building:flats=86,"Towers, one unit each",building-flats

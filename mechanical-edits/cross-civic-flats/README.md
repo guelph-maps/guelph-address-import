@@ -1,71 +1,152 @@
-# `addr:flats` listings that name another civic's units — follow-up, not built
+# Campaign 7: `addr:flats` naming units the City puts elsewhere
 
-**Found 2026-10-02**, from skfd asking how
-[way 1349287990](https://www.openstreetmap.org/way/1349287990) — `176 Janefield
-Avenue`, `addr:flats=156;200` — could list two units 44 apart. **Not part of
-the import**, which only creates; this is a cleanup for after it, and it wants
-its own post on thread #135103 before any edit.
+**Built 2026-10-07, after the import. Not announced, not uploaded.** Two
+batches: [`batches/`](batches/), run sheet [`index.html`](index.html), and
+revert record [`manifest.csv`](manifest.csv). The post that goes first is
+[`FORUM_POST.md`](FORUM_POST.md).
+
+| Batch | Objects | Edit |
+|---|---|---|
+| 1 | 7 | The Janefield back-to-back slices lose `addr:flats`, whole |
+| 2 | 3 | 454 Janefield, 53 Conroy and 23 Woodlawn East each lose one unit the City lacks |
+
+Found 2026-10-02, from skfd asking how
+[way 1349287990](https://www.openstreetmap.org/way/1349287990), `176 Janefield
+Avenue` with `addr:flats=156;200`, could list two units 44 apart.
 
 ## How it happened
 
-The Janefield complex is two civic numbers on one site. The City puts one side
-of each row at **74 Janefield Avenue** (units 152–178) and the other at
-**176 Janefield Avenue** (units 180–330). The OSM footprints there come from
-Microsoft's building data and slice each row into narrow pieces, each covering
-one home from either side: every pair sums to a constant (152+204, 154+202,
-156+200, …), the signature of back-to-back townhouses numbered up one side and
-back down the other.
+The Janefield complex is two civic numbers on one site. The City puts
+**74 Janefield Avenue** at units 2–178 and **176 Janefield Avenue** at
+180–330. The OSM footprints come from Microsoft's building data. In one row
+they cut the terrace into narrow slices that each hold one home from either
+side. Every pair sums to 356 (152+204, 154+202, 156+200, …), the signature of
+back-to-back townhouses numbered up one side and back down the other.
 
-The 2025 import tagged each slice with one housenumber and every City unit
-point that fell inside it as a multi-valued `addr:unit`, whichever civic the
+The 2025 import tagged each slice with one housenumber, and listed as
+`addr:unit` every City point that fell inside the slice, whichever civic the
 point belonged to (way 1349287990 v2, changeset 173653735). Campaign 3 moved
-the value to `addr:flats` verbatim (v3, 2026-09-17). So the listing is the 2025
-importer's spatial join, not anything the City says.
+the list to `addr:flats` verbatim (v3, 2026-09-17). So the listing is the
+2025 importer's spatial join, not anything the City says.
 
-## The 14
+## Re-checked 2026-10-07, after the import
 
-Every OSM object listing units (462, extract of 2026-09-28) checked against
-the City's units at the same civic number (snapshot 47). "→" is the civic the
-City actually puts that unit at; "—" means the City has no such unit on the
-street at all.
+All 14 objects were read live from the API, and the City side from snapshot
+51 (2026-10-06). Snapshot 52 (2026-10-07) has the same content hash and was
+skipped, so 51 is the current data.
 
-| Civic in OSM | Object | Listing | Units not at this civic |
-|---|---|---|---|
-| 74 Janefield Avenue | [w1349287991](https://www.openstreetmap.org/way/1349287991) | `158;198` | 198→176 |
-| 74 Janefield Avenue | [w1349287992](https://www.openstreetmap.org/way/1349287992) | `160;196` | 196→176 |
-| 74 Janefield Avenue | [w1349287993](https://www.openstreetmap.org/way/1349287993) | `162;194` | 194→176 |
-| 74 Janefield Avenue | [w1349287996](https://www.openstreetmap.org/way/1349287996) | `164;192` | 192→176 |
-| 176 Janefield Avenue | [w1349287989](https://www.openstreetmap.org/way/1349287989) | `154;202` | 154→74 |
-| 176 Janefield Avenue | [w1349287990](https://www.openstreetmap.org/way/1349287990) | `156;200` | 156→74 |
-| 176 Janefield Avenue | [w1349287997](https://www.openstreetmap.org/way/1349287997) | `152;204` | 152→74 |
-| 454 Janefield Avenue | [w1349266419](https://www.openstreetmap.org/way/1349266419) | `101-108;201-208` | 204→176 |
-| 7 Ajax Street | [w502064547](https://www.openstreetmap.org/way/502064547) | `104-108;205-210;306-311;406-411` | 208→10 |
-| 53 Conroy Crescent | [w802528770](https://www.openstreetmap.org/way/802528770) | `101-107;201-208;301-308` | 105→105/91 |
-| 23 Woodlawn Road East | [w178085151](https://www.openstreetmap.org/way/178085151) | `101-110;…;901-909;911` | 706→19 |
-| 395 Edinburgh Road North | [w1042083497](https://www.openstreetmap.org/way/1042083497) | `105-108;…;709-713;717` | 414, 415, 416 → — |
-| 358 Waterloo Avenue | [w819734215](https://www.openstreetmap.org/way/819734215) | `1001-1008;1101-1108;101-106;…` | 903 → — |
-| 355 Elmira Road North | [w344325628](https://www.openstreetmap.org/way/344325628) | `100-140` | 122 → — |
+| Civic | Object | Listing | City lacks | Now |
+|---|---|---|---|---|
+| 176 Janefield Avenue | [w1349287989](https://www.openstreetmap.org/way/1349287989) | `154;202` | 154 (at 74) | **batch 1** |
+| 176 Janefield Avenue | [w1349287990](https://www.openstreetmap.org/way/1349287990) | `156;200` | 156 (at 74) | **batch 1** |
+| 176 Janefield Avenue | [w1349287997](https://www.openstreetmap.org/way/1349287997) | `152;204` | 152 (at 74) | **batch 1** |
+| 74 Janefield Avenue | [w1349287991](https://www.openstreetmap.org/way/1349287991) | `158;198` | 198 (at 176) | **batch 1** |
+| 74 Janefield Avenue | [w1349287992](https://www.openstreetmap.org/way/1349287992) | `160;196` | 196 (at 176) | **batch 1** |
+| 74 Janefield Avenue | [w1349287993](https://www.openstreetmap.org/way/1349287993) | `162;194` | 194 (at 176) | **batch 1** |
+| 74 Janefield Avenue | [w1349287996](https://www.openstreetmap.org/way/1349287996) | `164;192` | 192 (at 176) | **batch 1** |
+| 454 Janefield Avenue | [w1349266419](https://www.openstreetmap.org/way/1349266419) | `101-108;201-208` | 204 | **batch 2** → `101-108;201-203;205-208` |
+| 53 Conroy Crescent | [w802528770](https://www.openstreetmap.org/way/802528770) | `101-107;201-208;301-308` | 105 | **batch 2** → `101-104;106;107;201-208;301-308` |
+| 23 Woodlawn Road East | [w178085151](https://www.openstreetmap.org/way/178085151) | `…;701-712;…` | 706 | **batch 2** → `…;701-705;707-712;…` |
+| 358 Waterloo Avenue | [w819734215](https://www.openstreetmap.org/way/819734215) | `…;901-908;…` | 903 | **held**: `building:flats=86` |
+| 355 Elmira Road North | [w344325628](https://www.openstreetmap.org/way/344325628) | `100-140` | 122 | **held**: a POI carries 122 |
+| 7 Ajax Street | [w502064547](https://www.openstreetmap.org/way/502064547) | was `…;205-210;…` | 208 | **done** by skfd, [190114899](https://www.openstreetmap.org/changeset/190114899) |
+| 395 Edinburgh Road North | [w1042083497](https://www.openstreetmap.org/way/1042083497) | was `…;409-417;…` | 414–416 | **done** by skfd, [190115369](https://www.openstreetmap.org/changeset/190115369) |
 
-Two different things are in this table:
+**A correction to the first version of this table.** It drew an arrow from a
+tower's stray unit to "the building next door" (204 → 176 Janefield,
+208 → 10 Ajax, 105 → 105/91 Conroy, 706 → 19 Woodlawn). That was a
+coincidence of numbering. Each of those neighbours has a full run of its own
+that includes the number: 10 Ajax has 201–209, and 19 Woodlawn has 701–716.
+176 Janefield's 204 is a townhouse. No unit was borrowed from next door. For
+all seven towers the fact is the same one: the City has no such unit *at this
+civic*. What separates them is whether OSM has its own evidence for the unit.
 
-- **The 7 Janefield slices (74/176) are wrong by construction**: one footprint,
-  two civics, one housenumber. Both groups get door nodes in the import (176 by
-  the building judge, 74 by the rule), so each unit arrives as its own node at
-  the right civic and these listings become redundant as well as wrong. They
-  fall inside edit 6's scope (strip listings on door groups) if it is revived.
-- **The other 7 are one or three stray units on a tower's listing.** 454
-  Janefield, 7 Ajax, 53 Conroy and 23 Woodlawn East name a unit the City puts at
-  the building next door; Edinburgh, Waterloo and Elmira name units the City
-  does not have at all. Which side is wrong — the 2025 join, a renumbering, or
-  the City — is not knowable from here. These want a look, not a rule.
+### The Janefield slices: redundant now, as well as half wrong
+
+The import's changeset
+[190115284](https://www.openstreetmap.org/changeset/190115284) (2026-10-06)
+created a door node for every one of the 14 units these slices list, each at
+the City's civic for it. **Each door lies inside the very slice that lists
+it.** That confirms the back-to-back reading on the ground plan, and leaves
+every listing saying nothing a door does not already say, half of it under the
+wrong civic.
+
+So batch 1 removes `addr:flats` from the seven, and changes nothing else.
+The [redundant-listings edit](../redundant-flats/README.md) held exactly these
+seven for this campaign (its reason `cross-civic`), so no object is in both.
+
+**The housenumber stays.** Each slice still says `176` (or `74`) while
+containing a home of the other civic. That is half right, like every
+footprint that straddles two addresses, and changing it is a claim about the
+building rather than the listing. It is left to skfd.
+
+### The towers: the City lacks one unit
+
+skfd hand-fixed two of the seven towers on 2026-10-06 in iD ("flat list fix"),
+removing exactly the units the City lacks. That is the standard the operator
+has already applied. Batch 2 applies it to the three where nothing in OSM
+argues otherwise. In each, the listing names every City unit at the civic and
+exactly one more:
+
+- **454 Janefield Avenue**: 204 (City: 101–108, 201–203, 205–208)
+- **53 Conroy Crescent**: 105 (City: 101–104, 106–107, …)
+- **23 Woodlawn Road East**: 706 (City: 701–705, 707–712)
+
+Each is a single gap in an otherwise regular run, so the City's data may be
+missing a real unit rather than OSM listing a fake one. Nothing here can tell
+which, and it is why batch 2 is separate. The post asks anyone who knows
+one of these buildings to say so.
+
+Held, because OSM has its own evidence for the unit:
+
+- **358 Waterloo Avenue, 903.** `building:flats=86` was added by Coehill in
+  January 2024, before the 2025 import. 86 is the listing's count *with* 903.
+  The City has 85.
+- **355 Elmira Road North, 122** (Melran Mall). A law office is mapped at
+  `addr:unit=122` ([n9139124204](https://www.openstreetmap.org/node/9139124204)).
+  The redundant-listings edit holds this way too.
+
+Both are questions for the City, not edits.
+
+## The build
+
+    C:/Users/kk/Code/address-importer-friend/.venv/Scripts/python.exe build_batches.py
+
+[`build_batches.py`](build_batches.py) reads the 14 ways in full, plus every
+address object within ~150 m of each, from the API and not Overpass, and
+writes `live.osm` from that. Every gate is decided on the day, and the slice
+gates are fatal:
+
+- **Slice:** the listing is a pair. For each unit, the City has it at exactly
+  one of 74/176, exactly one OSM object at that civic carries it, that object
+  is a node, and it lies inside this slice. The slice carries no `addr:*` tag
+  beyond street, number, city, postcode and flats.
+- **Tower:** the listing names every City unit and exactly one more. To
+  review if another object at the civic carries that unit (`unit-in-osm`),
+  if `building:flats` disagrees with the trimmed count (`building-flats`), if
+  the live value is not already in the renderer's form (`not-canonical`), or
+  if the listing already equals the City (`already-right`).
+- **Written:** each batch's units after are its units before less exactly
+  the removed ones. Only ways carry an action, and every way carries its live
+  version, so a stale one conflicts in JOSM.
+
+Read an upload back with `python ../verify_changeset.py cross-civic-flats N`.
+It now knows this campaign: `addr:flats` becomes `flats_after`, or goes when
+that is empty.
 
 ## What not to do
 
-Do not "fix" them by moving the stray unit onto the other civic's listing:
-for the Janefield slices that writes a second wrong listing, and for the towers
-it asserts a containment nobody has checked. Removing the stray value is the
-most an edit should claim, and only after the import's door nodes are up.
+Do not "fix" a stray by moving it onto the other civic's listing. For the
+Janefield slices that writes a second wrong listing, and for the towers it
+asserts a containment nobody has checked. Removing a value is the most an
+edit should claim.
 
-To regenerate the list: compare each `listing_ids` entry on
-`/units/shapes` rows (`unit_shapes.collect()`) against the row's own `units`,
-as in the session of 2026-10-02.
+## Found in passing, not in this edit
+
+**355 Elmira Road North: about 20 units now exist twice.** The import's doors
+there (changesets 190123548 and others, 2026-10-06/07) include units that a
+business POI at the same civic already carried. Examples: 103 Guelph Budokan
+and a door, 123 IKONIK and a door, 112 Melran Holdings plus Cerniuk
+Construction and a door. Conflation did not count a POI's `addr:unit` as the
+unit being present. The import's other runs may have done the same, so it
+wants an engine look and is not a mechanical edit.
