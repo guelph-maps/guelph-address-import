@@ -146,6 +146,21 @@ The wrap-up page, generated from `tool.db` by
 `python -m t2.static_export --stats`, is
 [`docs/stats/index.html`](docs/stats/index.html).
 
+**The database itself is published.** The living `tool.db` holds every run,
+candidate, review verdict and uploaded changeset. Snapshots go up as dated,
+credential-scrubbed release assets on this repo through the engine's
+`/publish-db ../guelph-address-import`. The first one,
+[`tool-db-20261007`](https://github.com/guelph-maps/guelph-address-import/releases/tag/tool-db-20261007)
+(8 MB, 134 uploaded runs), was taken after the initial import. The next one
+goes up after a monthly re-run.
+
+```bash
+gh release download tool-db-20261007 --repo guelph-maps/guelph-address-import
+xz -d tool-db-20261007.db.xz
+sqlite3 -readonly tool-db-20261007.db \
+  "SELECT run_id, changeset_id FROM runs WHERE upload_status='uploaded' LIMIT 5;"
+```
+
 **One correction went up afterwards.** Conflation measured a park or school
 from its centre, so five City points inside an addressed park or school
 uploaded as new nodes. They were deleted on 2026-10-07 in changeset
