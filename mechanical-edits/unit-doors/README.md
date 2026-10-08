@@ -10,6 +10,7 @@ without its units.
 
 ## Status — read this first
 
+- **Superseded 2026-10-07 by [`../redundant-flats/`](../redundant-flats/README.md).** The import created these doors itself (1,680 door nodes, 2026-10-03..07), so only the listing half of this edit is left, and it is built there: 317 listings, every unit already a door. **Do not load this directory's `batches/`.** They would create every door a second time. What follows is the record of the 2026-09-29/10-03 build.
 - **Parked 2026-09-29.** The `addr:flats` listings it replaces are valid OSM (containment), so this is a consistency upgrade, not a fix. Nothing is queued. Note that the continuous import will not converge these groups by itself: `MATCH_LISTED` treats a listed unit as present, and the import never modifies. **Rebuilt 2026-10-03 with `--refetch`** (numbers below), after campaign 1 had changed every listing object; rebuild again before any upload.
 - **Not announced.** This edit has **not** been posted to
   [thread #135103](https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103).
