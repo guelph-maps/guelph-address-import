@@ -13,6 +13,40 @@ an address the map does not already have; the count is secondary. And say
 what is *not* deleted — the end nodes, the 405 two-node lines — before anyone
 has to ask.
 
+## Short version — the one to post (2026-10-07)
+
+skfd asked for a short version. The long one stays below for reference.
+
+---
+
+**Old address interpolation lines: OK to delete the ones that add nothing?**
+
+Guelph still has 149 address interpolation lines with three or more nodes.
+Most came from CanVec in 2012 and StatCan in 2016: road-network address
+*ranges*, drawn before the City's points were mapped. I checked each one
+against the City's address list, and none of them adds an address OSM
+doesn't already have:
+
+- **29** run from a number to the same number (306 to 306 Downey Road), so
+  they interpolate nothing.
+- **62** span 261 City addresses, and all 261 are already mapped as real
+  objects.
+- **48** span no City address at all, so they can only invent numbers. For
+  example, [Beaumont Crescent 63–83 odd](https://www.openstreetmap.org/way/177608148):
+  the City's only odd number on that street is 109.
+
+The plan is to delete the lines and their untagged middle nodes. The end
+nodes stay. The 62 and the 48 are only redundant if the City's list is
+complete, so if anyone doubts that, I'll delete just the 29. I'll wait until
+**October 21** for objections. The 10 lines with a missing end or a
+misspelt street I'll fix by hand.
+
+Details per line: https://github.com/guelph-maps/guelph-address-import/tree/main/mechanical-edits/interpolation-multinode
+
+---
+
+## Long version
+
 ---
 
 **Proposal: delete 139 address interpolation lines in Guelph that no longer
