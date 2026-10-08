@@ -87,6 +87,24 @@ points stand for? Is 0 a placeholder for a property with no civic number yet?
 For now I am leaving them out of OpenStreetMap, since nobody would write 0 on a
 door.
 
+Two more came up after the upload, in buildings where OpenStreetMap lists a
+unit your layer doesn't have. Each is a single gap in an otherwise regular run,
+so I can't tell whether OpenStreetMap is wrong or the layer is missing a unit:
+
+- 454 Janefield Avenue: 204 (the layer has 201 to 203 and 205 to 208)
+- 53 Conroy Crescent: 105 (101 to 104, 106 and 107)
+- 23 Woodlawn Road East: 706 (701 to 705 and 707 to 712)
+- 358 Waterloo Avenue: 903. A mapper recorded 86 units here in 2024; the
+  layer has 85.
+- 355 Elmira Road North (Melran Mall): a law office there gives its address as
+  unit 122, which the layer doesn't have.
+
+And a general one: is the layer meant to list every civic number the City has
+assigned, including vacant lots? Some old address ranges in OpenStreetMap span
+numbers the layer doesn't have, for example 63 to 83 (odd) Beaumont Crescent
+and 20 to 24 (even) Brant Avenue. I'd like to know whether a number missing
+from the layer can be taken as not existing.
+
 The full list of the 332 addresses is below, taken from the live layer on
 2 October 2026.
 
