@@ -1,0 +1,4 @@
+# Overpass caches, regenerable with --refetch; batches go stale as versions move.
+live_*.osm
+batches/
+__pycache__/
