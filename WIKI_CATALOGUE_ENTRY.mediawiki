@@ -67,11 +67,11 @@ right: Toronto is 2026-05, Guelph 2026-08, and the row above them is 2026-07.)
 |OGL-Canada-2.0
 |{{Tag|addr:source||Guelph Open Data}}
 | {{N/A}}
-| {{no|Planned}}
+| {{yes|Ongoing}}
 | 2026-08-27
 | ongoing
 |{{User|skfd|wiki=skfd|osm=skfd}}{{User|skfd imports|wiki=|osm=skfd imports}}
-|Continuation of [[Guelph/Address Import|ARandomThumbtack's 2025 import]], with their agreement: continuous gap-fill of the ~2,523 civic addresses OSM lacks, plus two announced mechanical tag cleanups. Create-only, human-reviewed per batch. [https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103 Forum thread]
+|Continuation of [[Guelph/Address Import|ARandomThumbtack's 2025 import]], with their agreement: continuous gap-fill of the ~2,523 civic addresses OSM lacks, plus five mechanical tag cleanups (all finished). First gap-fill cycle uploaded 2026-10-03 to 07: 4,367 address nodes. Create-only, human-reviewed per batch. [https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103 Forum thread]
 | {{yes|yes}}
 
 
