@@ -43,7 +43,7 @@ above make it a ~70% inference rather than a fact.
 **What it would cost.** Under `[units] policy = "per-door-or-collapse"` a
 2-unit house becomes door nodes, not a collapsed civic node, so the main door
 takes `addr:unit=1` — which asserts *identity*, "this node is unit 1". That is
-the distinction [FINDINGS_POST.md](FINDINGS_POST.md) line 25 was written
+the distinction `FINDINGS_POST.md` (post #18) *(draft removed 2026-10-07; in git history at `2444043`)* line 25 was written
 about; `addr:flats=1;2` would claim only containment, but the policy will not
 collapse a group that small. It would also be **the first value the import
 writes that is not in the source**, against a project that has so far moved

@@ -36,7 +36,7 @@ and the units reversal, with the standing offer to revert on request in
 `IMPORT_PROPOSAL.mediawiki` § Status.
 
 The posted form is condensed and drops four things the draft in
-[`ANNOUNCEMENT.md`](ANNOUNCEMENT.md) carried: the 81-of-635 figure with the
+[`ANNOUNCEMENT.md`](ANNOUNCEMENT.md) *(draft removed 2026-10-07; in git history at `2444043`)* carried: the 81-of-635 figure with the
 554 objects left alone, the round-trip gate, the batch plan and its pilot, and
 the timing paragraph — which is where the no-window statement and the revert
 offer lived. #21 ends "Will update this post when it's done" and can still

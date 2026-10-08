@@ -11,7 +11,7 @@ thing in a banner. This file is for whoever comes back to the machinery later.
 
 ## Where the consent is
 
-Nowhere yet. The announcement is drafted in [`ANNOUNCEMENT.md`](ANNOUNCEMENT.md)
+Nowhere yet. The announcement is drafted in [`ANNOUNCEMENT.md`](ANNOUNCEMENT.md) *(draft removed 2026-10-07; in git history at `2444043`)*
 beside this file and has **not** been posted to [thread #135103][thread]. The
 edit is written up as section 3 of
 [Guelph/Address_Import/Continuous § Mechanical edits][wiki]; the post goes up

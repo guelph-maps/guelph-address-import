@@ -51,36 +51,24 @@ Publication state:
    raw wikitext 2026-09-15). Guelph's row still read status `Planned` on
    2026-10-07, after the first pass had uploaded. It wants `In progress`, and
    stays there: the import is continuous, so it is never marked complete.
-4. ✅ `FORUM_ANNOUNCEMENT.md` — **posted 2026-08-28** as post #14 on thread
-   #135103, `addr:full` withdrawal included. The 14-day objection window ran to
-   2026-09-10 and closed with no objections; ARandomThumbtack replied
-   supportively in #15, and #16 (2026-09-01) followed up on the open questions.
-   The unit split is consented. **The province edit was not covered by it** —
-   #14 asked for it at ~3,699 objects and it is 44,796. Its true scale reached
-   the thread in #21 on 2026-09-18 (item 7), without a fresh window.
-5. ✅ `FINDINGS_POST.md` — **posted 2026-09-16** as post #18, in condensed
-   form, the night before the province count was re-measured. It therefore
-   carries neither the correction nor the notices campaigns 4 and 5 need.
-6. ➖ `PROVINCE_CORRECTION_POST.md` — **superseded, never posted.** #21 was
-   edited inside Discourse's five-minute grace window (2026-09-18 21:20Z, so
-   no revision shows) to announce removing `addr:province` from all 44,796 —
-   the corrected figure, stated as a go-ahead rather than asked as a question,
-   so the draft's question about a fresh window is moot. Still owed: its
-   admission that #14's ~3,699 was a sample published as a census. That
-   paragraph now lives in
-   [`POST21_ADDENDUM.md`](mechanical-edits/flats-hygiene/POST21_ADDENDUM.md),
-   for #21's promised update.
-7. ✅ `mechanical-edits/flats-hygiene/ANNOUNCEMENT.md` — **posted 2026-09-18**
-   as post #21, in condensed form, like #18 before it. What went up: the two
-   campaigns named together — plus campaign 1 at 44,796, edited in four
-   minutes later — the 74-of-81 overlap, and the four `addr:flats`
-   defects with their examples. What did **not**: the 81-of-635 figure and the
-   554 left alone — which the draft called the hard number to lead with — the
-   round-trip gate, the 325-objects-in-22-batches plan with its pilot, and the
-   plain no-window-plus-revert-on-request paragraph carrying
-   ARandomThumbtack's standing veto. The post closes "Will update this post
-   when it's done", so those four can still be added there rather than in a
-   second post.
+4. ✅ **Forum thread #135103.** What we posted, and what each post carried:
+   - [#14](https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103/14) (2026-08-28): the announcement, with `addr:full` withdrawn.
+     Its 14-day window closed 2026-09-10 with no objections. It asked for
+     the province edit at ~3,699 objects; the real figure was 44,796.
+   - [#16](https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103/16) (2026-09-01): the open questions.
+   - [#17](https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103/17) (2026-09-16): the unit-split pilot, the move to
+     `addr:flats`, and the reversal: unit addresses get uploaded after all.
+   - [#18](https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103/18) (2026-09-17): unit re-tagging done.
+   - [#21](https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103/21) (2026-09-18): campaigns 4 and 5, plus campaign 1 at
+     44,796. Updated 2026-10-07 to say it is all done.
+   - [#22](https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103/22) (2026-10-07): the gap-fill import is complete.
+
+   Only the wiki says that #14's ~3,699 was a sample count published as a
+   census; the thread never got that admission.
+
+   The drafts behind #14 to #22 were removed on 2026-10-07 once they were
+   posted or superseded. They are in git history at `2444043`. Drafts still
+   waiting to be posted sit beside their campaign under `mechanical-edits/`.
 
 **The original importer is reading and wants to be told.** In #19 (2026-09-17)
 ARandomThumbtack asked: *"when making such a change like the Unit-level

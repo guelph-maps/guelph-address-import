@@ -68,7 +68,7 @@ missed, `addr:province` untouched.
 **The pilot went from `skfd`, not `skfd imports`.** The page names the
 dedicated account and says the personal one is never used for uploads from
 this tooling. The 69 objects are correct and stay; the slip is disclosed in
-`PILOT_POST.md`, and batches 2–36 go from `skfd imports` — which means
+`PILOT_POST.md` *(draft removed 2026-10-07; in git history at `2444043`)*, and batches 2–36 go from `skfd imports` — which means
 signing JOSM into that account before continuing.
 
 ## Running it again

@@ -11,7 +11,7 @@ newer version. Uploads **after** flats-hygiene, and is rebuilt again with
 
 *(This once said: do not upload on the existing consent. #21 settled that —
 see above. What is still owed on the thread is the admission that #14's
-figure was wrong; it is in `flats-hygiene/POST21_ADDENDUM.md`.)* Re-measured against
+figure was wrong; it is in `flats-hygiene/POST21_ADDENDUM.md` *(draft removed 2026-10-07; in git history at `2444043`)*.)* Re-measured against
 live Overpass on 2026-09-17:
 
 | Value | Objects |
