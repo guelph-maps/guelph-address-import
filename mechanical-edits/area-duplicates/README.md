@@ -12,6 +12,9 @@ uploaded were re-checked with `scripts/reconflate_areas.py`: 10 became MATCH
 five that went up. It is checked to touch only version-1 nodes of ours that
 carry nothing but the address.
 
+**Uploaded 2026-10-07** as changeset 190174014. All five nodes read back from
+the API as `visible="false"`, version 2.
+
 | Node | Address | Inside |
 |---|---|---|
 | 14245022294 | 24 Franchetto Boulevard | Franchetto Park |
