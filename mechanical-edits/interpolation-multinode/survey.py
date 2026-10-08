@@ -44,6 +44,7 @@ import _common  # noqa: E402
 INTERP = HERE / "live_interp.osm"
 ADDR = HERE / "live_addr.osm"
 OLD_REVIEW = HERE.parent / "flats-hygiene" / "review.csv"
+AREAS = HERE.parent / "flats-hygiene" / "areas.geojson"
 
 INTERP_QUERY = f"""
 [out:xml][timeout:900];
@@ -112,6 +113,36 @@ def city_points() -> list[dict]:
     return out
 
 
+def county_points(city_db: str) -> dict[str, list[tuple]]:
+    """Wellington County's points, by street: (number, lon, lat, municipality).
+
+    The City's roster stops at the city limit. Past it — Guelph/Eramosa to
+    the north and east, Puslinch to the south — "the City has no address
+    here" means nothing, and the County is the authority. Lives beside the
+    City's DB in ontario-address-changes.
+    """
+    path = Path(city_db).parents[1] / "wellington" / "wellington.db"
+    db = sqlite3.connect(path)
+    latest = db.execute("select max(max_snapshot_id) from addresses").fetchone()[0]
+    out: dict[str, list[tuple]] = collections.defaultdict(list)
+    for number, street, lon, lat, props in db.execute(
+            "select number, street, longitude, latitude, props from addresses "
+            "where max_snapshot_id = ?", (latest,)):
+        if lon is None or not str(number or "").isdigit():
+            continue
+        out[norm(street)].append((int(number), lon, lat,
+                                  json.loads(props or "{}").get("Municipality", "")))
+    return out
+
+
+def city_limit():
+    """The union of the 23 Guelph Areas: the City's own idea of its edge."""
+    from shapely.geometry import shape
+    from shapely.ops import unary_union
+    gj = json.loads(AREAS.read_text(encoding="utf-8"))
+    return unary_union([shape(f["geometry"]) for f in gj["features"]]).buffer(0)
+
+
 def import_changesets() -> set[str]:
     db = sqlite3.connect(CITY_DIR / "data" / "guelph" / "tool.db")
     return {str(r[0]) for r in db.execute("select changeset_id from changesets")}
@@ -148,6 +179,10 @@ def main(refetch: bool | None = None) -> None:
                                "every addr:housenumber object")
     ours = import_changesets()
     city = city_points()
+    cfg = tomllib.loads((CITY_DIR / "config.toml").read_text(encoding="utf-8"))
+    county = county_points(cfg["source"]["sqlite_path"])
+    limit = city_limit()
+    from shapely.geometry import Point
 
     nodes = {el.get("id"): el for el in iroot.iter("node")}
     interp_ways = [w for w in iroot.iter("way")
@@ -251,6 +286,26 @@ def main(refetch: bool | None = None) -> None:
         for p in cands:
             seen_civic[p["housenumber"]] = p
         far = sum(1 for p in seen_civic.values() if p["dist"] > NEAR_M)
+
+        # The edge of the City's knowledge. Nodes outside the 23 Areas sit
+        # where the City's roster does not speak; and any County address on
+        # this street, in this line's range and parity, near the line, that
+        # OSM lacks is one deleting the line would lose. Eramosa Road
+        # 706-768 even is the case that found this: 750 and 756 are
+        # Guelph-Eramosa's, and only the line knows them.
+        outside = sum(1 for g in geom if not limit.contains(Point(g)))
+        county_in = []
+        if None not in lo_hi and lo_hi[0] != lo_hi[1]:
+            lo, hi = sorted(lo_hi)
+            for n, lon, lat, muni in county.get(street, ()):
+                if not lo <= n <= hi or not in_scheme(n, interp):
+                    continue
+                d = min(seg_dist((lon, lat), geom[i], geom[i + 1])
+                        for i in range(len(geom) - 1))
+                if d <= 150:
+                    county_in.append((n, muni))
+        county_missing = sorted({f"{n} ({m})" for n, m in county_in
+                                 if not mapped.get((street, str(n)))})
         # Are the end numbers real? CanVec and StatCan 92-500-X carried
         # block-face address *ranges*, and a range bound need not be an
         # address anyone lives at.
@@ -283,6 +338,11 @@ def main(refetch: bool | None = None) -> None:
         #                already a real object in OSM
         #   empty        the City has no address strictly between the ends;
         #                the line can only generate numbers that do not exist
+        #   county-addresses
+        #                Wellington County has an address in the range that
+        #                OSM lacks. The line is its only record. Never delete
+        #   outside-city a node lies outside the City's 23 Areas, where its
+        #                roster does not speak. Held, not judged
         #   unmatched-street
         #                the City has no street spelt the way the line's ends
         #                spell it, so "no address between" means nothing.
@@ -290,6 +350,8 @@ def main(refetch: bool | None = None) -> None:
         #                Not a deletion tier: the ends want fixing first
         if ends_n == 2 and None not in lo_hi:
             tier = ("same-number" if lo_hi[0] == lo_hi[1]
+                    else "county-addresses" if county_missing
+                    else "outside-city" if outside
                     else "unmatched-street" if street not in city_by_street
                     else "covered" if seen_civic and not missing
                     else "empty" if not seen_civic else "adds-addresses")
@@ -338,6 +400,8 @@ def main(refetch: bool | None = None) -> None:
             "streets_on_line": n_streets,
             "class": cls,
             "ends_in_city": end_real, "ends_duplicated": end_dupes,
+            "nodes_outside_city": outside, "county_in_range": len(county_in),
+            "county_unmapped": ";".join(county_missing),
             "ends_addr_only": end_addr_only,
             "end_tags": " | ".join(";".join(f"{k}={v}" for k, v in t.items()) for t in ends),
             "city_between": len(seen_civic), "city_far": far, "mapped": covered,

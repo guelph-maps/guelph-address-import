@@ -2,12 +2,14 @@
 
 ```
 addr:interpolation line, N to N         ->  deleted (with its bare middle nodes)   29, built
-addr:interpolation line, every address  ->  deleted, if the thread agrees          62, not built
+addr:interpolation line, every address  ->  deleted, if skfd chooses             61, not built
   between its ends already mapped
-addr:interpolation line, no City        ->  deleted, if the thread agrees          48, not built
+addr:interpolation line, no City        ->  deleted, if skfd chooses             47, not built
   address between its ends
 line whose street the City spells       ->  hand cases                              8
   differently
+line spanning County addresses OSM     ->  NEVER deleted                           2
+  lacks (Guelph/Eramosa)
 line with one bare end                  ->  hand cases                              2
 end nodes, all of them                  ->  not touched
 ```
@@ -68,21 +70,22 @@ by (street, housenumber):
 | Tier | Lines | City addresses between the ends | Already mapped | …by our import |
 |---|---|---|---|---|
 | **same-number** — runs from N to N | **29** | 0 by construction | — | — |
-| **covered** — every one already mapped | **62** | 261 | **261** | 44 |
-| **empty** — the City has none between the ends | **48** | 0 | — | — |
+| **covered** — every one already mapped | **61** | 260 | **260** | 44 |
+| **empty** — the City has none between the ends | **47** | 0 | — | — |
+| **county-addresses** — Wellington County has addresses in the range that OSM lacks | **2** | | | |
 | **unmatched-street** — the City has no street spelt that way | **8** | ? | — | — |
 | adds an address the map lacks | **0** | | | |
 
-**Not one of the 139 that can be checked supplies an address OSM does not
-already have as a real object.** 44 of those 261 are there because the import put them there
+**Not one of the 137 that can be checked supplies an address OSM does not
+already have as a real object.** 44 of those 260 are there because the import put them there
 this month; Burns Drive 37–83 odd spans 15, and 14 of them are ours.
 
 The lookup is by (street, housenumber) anywhere in Guelph, not by position:
 it asks whether the address exists in OSM, not whether it sits beside the
-line. 75 of the 261 sit more than 60 m from their line, which is what a range
+line. 75 of the 260 sit more than 60 m from their line, which is what a range
 bound drawn along a road centreline looks like next to a point on a lot.
 
-The 48 **empty** lines are worse than redundant. They can only generate
+The 47 **empty** lines are worse than redundant. They can only generate
 numbers that do not exist: Beaumont Crescent 63–83 odd, where the City has no
 odd number below 109; Brant Avenue 20–24 even, where it has no 20, 22 or 24.
 That is what the `source` tags say they are — **121 from NRCan CanVec, 28
@@ -91,7 +94,7 @@ not addresses anyone lives at. A range bound is a number a block face could
 hold.
 
 That reaches the end nodes too. Of the 147, **76 have neither end number in
-the City's data**, and 34 of those are empty lines: two address nodes and a
+the City's data**, and 33 of those are empty lines: two address nodes and a
 line between them, none of which the City knows. Every empty line's street
 does exist in the City's data under that spelling; the gaps are in the
 numbers, not the names.
@@ -117,6 +120,30 @@ covers anything can be asked again afterwards. Hand cases, not batched.
 — but a 1-to-1 line says nothing whatever the street is called, so it stays
 in same-number.) They are not touched here —
 see [Not this edit](#not-this-edit).
+
+### The two that cross into Guelph/Eramosa — never delete
+
+The City's roster stops at the city limit, so past it "the City has no
+address here" says nothing. The survey therefore also reads Wellington
+County's points (snapshot 89, beside the City's in `ontario-address-changes`)
+and, for each line, every County address on its street, in its range and
+parity, within 150 m. Any that OSM lacks is an address only the line records.
+
+| Way | Line | County addresses in range, not in OSM |
+|---|---|---|
+| [400248075](https://www.openstreetmap.org/way/400248075) | Eramosa Road 706–768 even | 750, 756 (Guelph-Eramosa) — the County-only evens `ERAMOSA_OVERLAP.md` §4 names |
+| [177924494](https://www.openstreetmap.org/way/177924494) | Fife Road 7070–7134 even, no node inside the 23 Areas | 7070, 7086, 7090, 7096, 7100, 7102, 7108 (Guelph-Eramosa) |
+
+Before this check they read as **covered** and **empty**. That was wrong, and
+the City data could not have shown it. They are tier `county-addresses`,
+which no `--tiers` value builds. The fix for both is adding the County's
+addresses, which belongs to Wellington's import rather than this one; then
+the lines can be asked again. A line with any node outside the 23 Areas is
+held as `outside-city` even when the County has nothing there. No 3+-node
+line other than Fife Road has one; five 2-node lines do.
+
+The `same-number` tier needs neither check: N to N interpolates nothing
+wherever it is.
 
 ### The two broken ones
 
@@ -157,13 +184,13 @@ of them, a kilometre each; Imperial Road South has 30 to 30 twice. Each pair of
 end nodes is the same address twice, which is a duplicate-node question for a
 later pass and stays exactly as it is.
 
-### Not built: covered (62) and empty (48)
+### Not built: covered (61) and empty (47)
 
 ```bash
 C:/Users/kk/Code/address-importer-friend/.venv/Scripts/python.exe build_batches.py --tiers same-number,covered,empty
 ```
 
-builds them as batches 2 and 3 — **62 ways + 138 nodes** and **48 ways + 87
+builds them as batches 2 and 3 — **61 ways + 137 nodes** and **47 ways + 86
 nodes**, checked by the same gate. They are left out of the default because
 both rest on one premise: **that the City's roster is the whole truth about
 which addresses exist.** That is what the import has assumed throughout, and
@@ -176,8 +203,8 @@ these go.
 
 1. ~~Post a question with a 14-day window.~~ Decided 2026-10-07: no forum
    post. Steps 2 and 3 are skfd's choice instead of the thread's.
-2. **All three tiers, 139 lines.** The survey says
-   none of them carries an address the map lacks, and 48 of them invent ones.
+2. **All three tiers, 137 lines.** The survey says
+   none of them carries an address the map lacks, and 47 of them invent ones.
    Rebuild with `--refetch --tiers same-number,covered,empty` on the day.
 3. **Or same-number only** (29), if the City's list is not to be trusted as
    complete. The City letter now asks exactly that.
@@ -223,12 +250,13 @@ gitignored. `survey.csv`, `survey_2node.csv` and `manifest.csv` are tracked.
 
 - **The 405 two-node lines give the same answer**, in
   [`survey_2node.csv`](survey_2node.csv): 396 valid, 9 with a bare end; 77
-  same-number, 120 covered, 190 empty, 9 on unmatched streets, **0 adding an
-  address** — 407 City
+  same-number, 120 covered, 187 empty, 6 on unmatched streets, 5 outside the
+  city and 1 spanning County addresses OSM lacks (Whitelaw Road 5051–5117
+  odd); otherwise **0 adding an address** — 407 City
   addresses spanned, all mapped, 71 by the import. They are the same CanVec
   and StatCan ranges with fewer bends. Campaign 4 called them "real
   interpolation, correctly tagged", and by the JOSM test they are; by this
-  test, they are as redundant as the 139. A follow-up, announced on its own.
+  test, they are as redundant as the 137. A follow-up, announced on its own.
 - **End nodes the City does not know.** 76 of the 147 lines have both ends
   outside the City's data, 26 one end. Those are address nodes asserting a
   number the authority says does not exist — the reverse-beholder question
