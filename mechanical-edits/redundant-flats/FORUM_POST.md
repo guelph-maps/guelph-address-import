@@ -29,8 +29,8 @@ unit there is now in OSM twice: once as its own door, and once in a listing
 that says the units share one entrance. They don't share one. That's why
 they got doors.
 
-So I'll remove `addr:flats` from those **317 objects** (300 buildings and 17
-address nodes). Nothing else on them changes, and nothing is created or
+So I'll remove `addr:flats` from those **317 objects**: 299 building
+outlines, one address-only area and 17 address nodes. Nothing else on them changes, and nothing is created or
 deleted. The rule is strict: a listing goes only if **every** unit it names
 now has its own door node at the same address. In practice all 1,069 of those
 units are the import's new doors. Examples: the eight semis at
@@ -40,8 +40,8 @@ so on), [275 Hanlon Creek Boulevard](https://www.openstreetmap.org/way/794182120
 
 @ARandomThumbtack, these values started as your import's `addr:unit` lists.
 Campaign 3 moved them to `addr:flats` in September, verbatim. Now they come
-off, because each unit has its own address node. I didn't touch any listing
-that a mapper wrote as `addr:flats`, and in fact none of the 317 is one.
+off, because each unit has its own address node. Nobody has edited any of
+the 317 values since: each one is still exactly what this project last wrote.
 
 **Not touched (10).** I'll look at these by hand:
 

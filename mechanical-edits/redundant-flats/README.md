@@ -52,14 +52,17 @@ doors OSM lacked.
 |---|---|
 | `addr:flats` objects in Guelph | 475 (421 ways, 54 nodes) |
 | at a civic with uploaded doors | 327, at 92 civics |
-| **fully covered → batched** | **317** (300 ways, 17 civic nodes), naming 1,069 units |
+| **fully covered → batched** | **317** (300 ways, of which 299 building outlines and 1 address-only area, way 942414532; 17 civic nodes), naming 1,069 units |
 | held, `review.csv` | 10 |
 
 **Whose listings these are.** Every one of the 317 had its `addr:flats`
 written by this project: 301 by campaign 3 (moving list-valued `addr:unit`
 over verbatim) and 16 by the hand cases (campaign 2/3 leftovers). Each value
 was the 2025 import's own, moved onto the right key. No mapper wrote any of
-them as `addr:flats`. `last_user` in the manifest is `skfd imports` on all
+them as `addr:flats`. And none was edited after us. All 317 live values equal
+this project's last write, which is flats-pairs' `flats_after`, else
+flats-hygiene's, else campaign 3's or the hand cases' `after_flats` (checked
+2026-10-07). `last_user` in the manifest is `skfd imports` on all
 317, because campaign 1 touched every one. The `origin` column is the one
 that answers the question.
 
