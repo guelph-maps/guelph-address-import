@@ -7,9 +7,12 @@ Without --changeset it finds the newest changeset by `skfd imports` whose
 comment names that batch ("(N/TOTAL)"). The checks, each fatal:
 
 - the changeset belongs to `skfd imports` and carries mechanical=yes;
-- it deletes nothing, and creates nothing unless the manifest has
-  `action=create` rows (edit 6, unit-doors) — then the created nodes must be
-  exactly those rows, matched one-to-one on their full tag set and position;
+- it creates nothing unless the manifest has `action=create` rows (edit 6,
+  unit-doors) — then the created nodes must be exactly those rows, matched
+  one-to-one on their full tag set and position;
+- it deletes nothing unless the manifest has `action=delete` rows
+  (interpolation-multinode) — then the deleted objects must be exactly those
+  rows, each at the prepared version plus one;
 - the set of modified objects is exactly the batch's manifest rows (those with
   `action=modify` when the manifest has an action column; `skip-existing`
   rows are records of what was *not* done and are ignored here);
@@ -76,7 +79,9 @@ EXPECT = {"flats-hygiene": expected_flats_hygiene,
           "province-removal": expected_province,
           "province-leftovers": expected_province,
           "unit-doors": expected_unit_doors,
-          "redundant-flats": expected_unit_doors}
+          "redundant-flats": expected_unit_doors,
+          # deletes only: no modify rows, so no tags to compare
+          "interpolation-multinode": lambda before, row: before}
 
 # A created node may land a hair off the prepared position once the API has
 # stored it at 7 decimal places; 1e-6 degrees is about 11 cm.
@@ -142,7 +147,8 @@ def main() -> None:
     rows = {(r["type"], r["id"]): r for r in mine
             if r.get("action", "modify") == "modify"}
     creates = [r for r in mine if r.get("action") == "create"]
-    if not rows and not creates:
+    deletes = {(r["type"], r["id"]): r for r in mine if r.get("action") == "delete"}
+    if not rows and not creates and not deletes:
         sys.exit(f"batch {args.batch} has no manifest rows")
     batch_path = next((here / "batches").glob(f"{args.batch:02d}-*.osm"))
     batch_file = batch_path.name
@@ -172,7 +178,7 @@ def main() -> None:
     # What the batch was prepared against: the object versions in live.osm.
     wanted = {k: int(r["version"]) for k, r in rows.items()}
     before: dict[tuple[str, str], dict] = {}
-    for _, el in ET.iterparse(here / "live.osm"):
+    for _, el in (ET.iterparse(here / "live.osm") if wanted else ()):
         k = (el.tag, el.get("id"))
         if k in wanted and int(el.get("version")) == wanted[k]:
             before[k] = tags_of(el)
@@ -195,8 +201,20 @@ def main() -> None:
     modified = {(el.tag, el.get("id")): el for blk in change.findall("modify") for el in blk}
     if creates or created:
         problems.extend(match_created(created, creates))
-    if deleted:
+    if deleted and not deletes:
         problems.append(f"{len(deleted)} objects deleted")
+    elif deletes or deleted:
+        got = {(el.tag, el.get("id")): el for el in deleted}
+        if set(got) - set(deletes):
+            problems.append(f"{len(set(got) - set(deletes))} deleted objects not in the "
+                            f"batch, e.g. {sorted(set(got) - set(deletes))[:3]}")
+        if set(deletes) - set(got):
+            problems.append(f"{len(set(deletes) - set(got))} batch deletions not in the "
+                            f"changeset, e.g. {sorted(set(deletes) - set(got))[:3]}")
+        for k in set(got) & set(deletes):
+            if int(got[k].get("version")) != int(deletes[k]["version"]) + 1:
+                problems.append(f"{k[0]} {k[1]}: deleted at version {got[k].get('version')}, "
+                                f"expected {int(deletes[k]['version']) + 1}")
     extra = set(modified) - set(rows)
     short = set(rows) - set(modified)
     if extra:
@@ -222,7 +240,8 @@ def main() -> None:
 
     print(f"changeset {cs_id} by {user}: {len(modified)} modified, "
           f"{len(created)} created, {len(deleted)} deleted; batch has "
-          f"{len(rows)}" + (f" + {len(creates)} to create" if creates else ""))
+          f"{len(rows)}" + (f" + {len(creates)} to create" if creates else "")
+          + (f" + {len(deletes)} to delete" if deletes else ""))
     print(f"comment: {ctags.get('comment')}")
     if problems:
         print("\nFAILED — not recorded:")
@@ -236,7 +255,7 @@ def main() -> None:
         w = csv.writer(f)
         if new_file:
             w.writerow(["batch", "file", "area", "objects", "changeset", "uploaded_at", "account"])
-        w.writerow([args.batch, batch_file, area, len(rows) + len(creates), cs_id,
+        w.writerow([args.batch, batch_file, area, len(rows) + len(creates) + len(deletes), cs_id,
                     cs.get("closed_at") or cs.get("created_at"), user])
     print(f"verified: every object changed exactly as the manifest says. "
           f"Recorded batch {args.batch} -> {cs_id} in {uploads.name}.")
