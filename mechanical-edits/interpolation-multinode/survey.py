@@ -137,8 +137,11 @@ def in_scheme(n: int, interp: str) -> bool:
     return {"even": n % 2 == 0, "odd": n % 2 == 1}.get(interp, True)
 
 
-def main() -> None:
-    refetch = "--refetch" in sys.argv
+def main(refetch: bool | None = None) -> None:
+    """build_batches.py --refetch calls this, so tiers are re-read against
+    the same fetch the batches are written from."""
+    if refetch is None:
+        refetch = "--refetch" in sys.argv
     iroot = _common.fetch_live(INTERP_QUERY, INTERP, refetch,
                                "addr:interpolation ways, their nodes and neighbours")
     aroot = _common.fetch_live(ADDR_QUERY, ADDR, refetch,

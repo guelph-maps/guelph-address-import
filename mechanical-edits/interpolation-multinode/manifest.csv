@@ -1,0 +1,77 @@
+batch,area,type,id,version,street,housenumber,action,tier,way,nodes,lat,lon,tags
+1,Pine Ridge - Westminster Woods,way,177864923,6,arkell road,299-299,delete,same-number,,1587475340;1587500441;2914741765;4903671833;4903671831;1882746670,,,"{""addr:interpolation"": ""odd"", ""source"": ""NRCan-CanVec-10.0+8.0""}"
+1,Pine Ridge - Westminster Woods,node,1587500441,1,,,delete,same-number,177864923,,43.5225122,-80.1874679,{}
+1,Pine Ridge - Westminster Woods,node,2914741765,1,,,delete,same-number,177864923,,43.5226417,-80.1873570,{}
+1,Pine Ridge - Westminster Woods,node,4903671833,1,,,delete,same-number,177864923,,43.5230478,-80.1866520,{}
+1,Pine Ridge - Westminster Woods,node,4903671831,1,,,delete,same-number,177864923,,43.5233896,-80.1863305,{}
+1,Pine Ridge - Westminster Woods,way,145333797,2,clair road east,360-360,delete,same-number,,1587476347;1587496711;1882746886,,,"{""addr:interpolation"": ""even"", ""source"": ""NRCan-CanVec-8.0""}"
+1,Pine Ridge - Westminster Woods,node,1587496711,1,,,delete,same-number,145333797,,43.5016672,-80.1874679,{}
+1,Pine Ridge - Westminster Woods,way,145334400,1,clairfields drive east,54-54,delete,same-number,,1587479679;1587497449;1587479707,,,"{""addr:interpolation"": ""even"", ""source"": ""NRCan-CanVec-8.0""}"
+1,Pine Ridge - Westminster Woods,node,1587497449,1,,,delete,same-number,145334400,,43.5056460,-80.1919370,{}
+1,Old University,way,145334498,1,college avenue west,138-138,delete,same-number,,1587471247;1587500888;1587471248,,,"{""addr:interpolation"": ""even"", ""source"": ""NRCan-CanVec-8.0""}"
+1,Old University,node,1587500888,1,,,delete,same-number,145334498,,43.5250700,-80.2417800,{}
+1,Kortright Hills,way,180286168,1,downey road,306-306,delete,same-number,,1907194862;1907210027;1907194863,,,"{""addr:interpolation"": ""even"", ""source"": ""NRCan-CanVec-10.0""}"
+1,Kortright Hills,node,1907210027,1,,,delete,same-number,180286168,,43.4879324,-80.2300937,{}
+1,Kortright Hills,way,180286254,1,downey road,570-570,delete,same-number,,1907198254;1907209257;1907198255,,,"{""addr:interpolation"": ""even"", ""source"": ""NRCan-CanVec-10.0""}"
+1,Kortright Hills,node,1907209257,1,,,delete,same-number,180286254,,43.4811797,-80.2276318,{}
+1,Non-Residential - A,way,177928256,1,edinburgh road north,394-394,delete,same-number,,1883275036;1883277818;1883275037,,,"{""addr:interpolation"": ""even"", ""source"": ""NRCan-CanVec-10.0""}"
+1,Non-Residential - A,node,1883277818,1,,,delete,same-number,177928256,,43.5517510,-80.2782267,{}
+1,Hanlon Creek,way,145334619,1,edinburgh road south,504-504,delete,same-number,,1587478837;1587500338;1587478840,,,"{""addr:interpolation"": ""even"", ""source"": ""NRCan-CanVec-8.0""}"
+1,Hanlon Creek,node,1587500338,1,,,delete,same-number,145334619,,43.5197760,-80.2332710,{}
+1,Hanlon Creek,way,145334837,1,edinburgh road south,511-511,delete,same-number,,1587479101;1587500322;1587500324;1587479158,,,"{""addr:interpolation"": ""odd"", ""source"": ""NRCan-CanVec-8.0""}"
+1,Hanlon Creek,node,1587500322,1,,,delete,same-number,145334837,,43.5194720,-80.2335530,{}
+1,Hanlon Creek,node,1587500324,1,,,delete,same-number,145334837,,43.5195040,-80.2336200,{}
+1,Old University,way,177926829,2,edinburgh road south,186-186,delete,same-number,,1883273071;2903646854;1883273073,,,"{""addr:interpolation"": ""even"", ""source"": ""NRCan-CanVec-10.0""}"
+1,Old University,node,2903646854,4,,,delete,same-number,177926829,,43.5335223,-80.2525016,{}
+1,West Willow Woods,way,177924308,2,elmira road north,70-70,delete,same-number,,1883252440;12987904523;1883252441,,,"{""addr:interpolation"": ""even"", ""source"": ""NRCan-CanVec-10.0""}"
+1,West Willow Woods,node,12987904523,1,,,delete,same-number,177924308,,43.5258926,-80.2973694,{}
+1,West Willow Woods,way,177924501,1,elmira road north,1-1,delete,same-number,,1883251182;1883253143;1883251183,,,"{""addr:interpolation"": ""odd"", ""source"": ""NRCan-CanVec-10.0""}"
+1,West Willow Woods,node,1883253143,1,,,delete,same-number,177924501,,43.5248920,-80.2954645,{}
+1,Non-Residential - C,way,177864958,2,goodwin drive,63-63,delete,same-number,,1882747742;8849776996;1882747752,,,"{""addr:interpolation"": ""odd"", ""source"": ""NRCan-CanVec-10.0""}"
+1,Non-Residential - C,node,8849776996,1,,,delete,same-number,177864958,,43.5047680,-80.1858683,{}
+1,Parkwood Gardens,way,177924575,1,imperial road south,30-30,delete,same-number,,1883251901;1883253190;1883253257;1883251902,,,"{""addr:interpolation"": ""even"", ""source"": ""NRCan-CanVec-10.0""}"
+1,Parkwood Gardens,node,1883253190,1,,,delete,same-number,177924575,,43.5256136,-80.2887250,{}
+1,Parkwood Gardens,node,1883253257,1,,,delete,same-number,177924575,,43.5262699,-80.2892321,{}
+1,Parkwood Gardens,way,177924646,1,imperial road south,30-30,delete,same-number,,1883251899;1883253169;1883253168;1883253178;1883251900,,,"{""addr:interpolation"": ""even"", ""source"": ""NRCan-CanVec-10.0""}"
+1,Parkwood Gardens,node,1883253169,1,,,delete,same-number,177924646,,43.5252418,-80.2869686,{}
+1,Parkwood Gardens,node,1883253168,1,,,delete,same-number,177924646,,43.5252386,-80.2878201,{}
+1,Parkwood Gardens,node,1883253178,1,,,delete,same-number,177924646,,43.5254136,-80.2883904,{}
+1,Parkwood Gardens,way,177924708,2,imperial road south,21-21,delete,same-number,,1883251724;1883253149;8562466254;1883253148;1883253151;1883253163;1883251725,,,"{""addr:interpolation"": ""odd"", ""source"": ""NRCan-CanVec-10.0""}"
+1,Parkwood Gardens,node,1883253149,1,,,delete,same-number,177924708,,43.5249802,-80.2869226,{}
+1,Parkwood Gardens,node,8562466254,1,,,delete,same-number,177924708,,43.5249477,-80.2873694,{}
+1,Parkwood Gardens,node,1883253148,2,,,delete,same-number,177924708,,43.5249668,-80.2877605,{}
+1,Parkwood Gardens,node,1883253151,1,,,delete,same-number,177924708,,43.5249853,-80.2879267,{}
+1,Parkwood Gardens,node,1883253163,1,,,delete,same-number,177924708,,43.5251783,-80.2885555,{}
+1,Downtown - Sunny Acres,way,177928382,1,inkerman street,167-167,delete,same-number,,1883272587;1883277062;1883277088;1883272588,,,"{""addr:interpolation"": ""odd"", ""source"": ""NRCan-CanVec-10.0""}"
+1,Downtown - Sunny Acres,node,1883277062,1,,,delete,same-number,177928382,,43.5349192,-80.2638682,{}
+1,Downtown - Sunny Acres,node,1883277088,1,,,delete,same-number,177928382,,43.5350442,-80.2637058,{}
+1,Parkwood Gardens,way,177924697,1,paisley road,901-901,delete,same-number,,1883252543;1883253217;1883253261;1883253281;1883253307;1883252544,,,"{""addr:interpolation"": ""odd"", ""source"": ""NRCan-CanVec-10.0""}"
+1,Parkwood Gardens,node,1883253217,1,,,delete,same-number,177924697,,43.5258125,-80.2857581,{}
+1,Parkwood Gardens,node,1883253261,1,,,delete,same-number,177924697,,43.5263425,-80.2855539,{}
+1,Parkwood Gardens,node,1883253281,1,,,delete,same-number,177924697,,43.5265788,-80.2853730,{}
+1,Parkwood Gardens,node,1883253307,1,,,delete,same-number,177924697,,43.5269718,-80.2848454,{}
+1,Old University,way,145334311,1,poppy lane,1-1,delete,same-number,,1587470200;1587500122;1587470201,,,"{""addr:interpolation"": ""odd"", ""source"": ""NRCan-CanVec-8.0""}"
+1,Old University,node,1587500122,2,,,delete,same-number,145334311,,43.5171008,-80.2454167,{}
+1,Downtown - Sunny Acres,way,177928461,1,preston street,20-20,delete,same-number,,1883273427;1883277527;1883277521;1883277519;1883277523;1883273429,,,"{""addr:interpolation"": ""even"", ""source"": ""NRCan-CanVec-10.0""}"
+1,Downtown - Sunny Acres,node,1883277527,1,,,delete,same-number,177928461,,43.5392719,-80.2535317,{}
+1,Downtown - Sunny Acres,node,1883277521,1,,,delete,same-number,177928461,,43.5392167,-80.2532495,{}
+1,Downtown - Sunny Acres,node,1883277519,1,,,delete,same-number,177928461,,43.5392153,-80.2531950,{}
+1,Downtown - Sunny Acres,node,1883277523,1,,,delete,same-number,177928461,,43.5392314,-80.2531453,{}
+1,University,way,145334489,1,stone road east,50-50,delete,same-number,,1587478659;1587501205;1587478700,,,"{""addr:interpolation"": ""even"", ""source"": ""NRCan-CanVec-8.0""}"
+1,University,node,1587501205,1,,,delete,same-number,145334489,,43.5271440,-80.2243690,{}
+1,University,way,145334442,1,stone road west,99-99,delete,same-number,,1587486738;1587500596;1587486745,,,"{""addr:interpolation"": ""odd"", ""source"": ""NRCan-CanVec-8.0""}"
+1,University,node,1587500596,1,,,delete,same-number,145334442,,43.5236200,-80.2291270,{}
+1,University,way,177608065,3,trent lane,98-98,delete,same-number,,1880283636;1880283699;1880283719;4636122827;12387014755;1880283637,,,"{""addr:interpolation"": ""even"", ""source"": ""NRCan-CanVec-10.0""}"
+1,University,node,1880283699,1,,,delete,same-number,177608065,,43.5323842,-80.2267581,{}
+1,University,node,1880283719,1,,,delete,same-number,177608065,,43.5330991,-80.2277349,{}
+1,University,node,4636122827,1,,,delete,same-number,177608065,,43.5333056,-80.2280317,{}
+1,Downtown - Sunny Acres,way,177927576,2,waterloo avenue,360-360,delete,same-number,,1883252049;1883253679;1883274932,,,"{""addr:interpolation"": ""even"", ""source"": ""NRCan-CanVec-10.0""}"
+1,Downtown - Sunny Acres,node,1883253679,1,,,delete,same-number,177927576,,43.5312500,-80.2604978,{}
+1,Onward Willow,way,177928004,2,westwood road,60-60,delete,same-number,,1883275808;9932828853;1883275809,,,"{""addr:interpolation"": ""even"", ""source"": ""NRCan-CanVec-10.0""}"
+1,West Willow Woods,way,177924535,1,willow road,715-715,delete,same-number,,1883252461;1883253339;1883252462,,,"{""addr:interpolation"": ""odd"", ""source"": ""NRCan-CanVec-10.0""}"
+1,West Willow Woods,node,1883253339,1,,,delete,same-number,177924535,,43.5273907,-80.2973613,{}
+1,Waverley,way,178082998,2,woodlawn road east,133-133,delete,same-number,,1884586675;8821389962;1884586676,,,"{""addr:interpolation"": ""odd"", ""source"": ""NRCan-CanVec-10.0""}"
+1,Waverley,node,8821389962,1,,,delete,same-number,178082998,,43.5729100,-80.2662817,{}
+1,June Avenue,way,178083007,3,woolwich street,760-760,delete,same-number,,1883276104;1883278035;12986454488;1884588164,,,"{""addr:interpolation"": ""even"", ""source"": ""NRCan-CanVec-10.0""}"
+1,June Avenue,node,1883278035,1,,,delete,same-number,178083007,,43.5625000,-80.2741214,{}
+1,Waverley,way,178083166,3,woolwich street,745-745,delete,same-number,,1884588131;8569692727;1884588132,,,"{""addr:interpolation"": ""odd"", ""source"": ""NRCan-CanVec-10.0""}"
