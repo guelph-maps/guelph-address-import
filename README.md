@@ -48,9 +48,10 @@ Publication state:
    refuses to open a changeset while it is empty, so this gated every upload.
 3. ✅ `WIKI_CATALOGUE_ENTRY.mediawiki` — **published**; both rows are live in
    `Import/Catalogue` § Ongoing Imports, Semi-Automated (checked against the
-   raw wikitext 2026-09-15). Guelph's row still read status `Planned` on
-   2026-10-07, after the first pass had uploaded. It wants `In progress`, and
-   stays there: the import is continuous, so it is never marked complete.
+   raw wikitext 2026-09-15). Guelph's row reads `Ongoing` since 2026-10-07
+   (revision 3102952) and stays there: the import is continuous, so it is
+   never marked complete. The proposal page was republished the same day
+   (revision 3102951) with the first gap-fill and all five edits done.
 4. ✅ **Forum thread #135103.** What we posted, and what each post carried:
    - [#14](https://community.openstreetmap.org/t/import-addresses-from-city-of-guelph-data/135103/14) (2026-08-28): the announcement, with `addr:full` withdrawn.
      Its 14-day window closed 2026-09-10 with no objections. It asked for
