@@ -87,7 +87,7 @@ points stand for? Is 0 a placeholder for a property with no civic number yet?
 For now I am leaving them out of OpenStreetMap, since nobody would write 0 on a
 door.
 
-Two more came up after the upload, in buildings where OpenStreetMap lists a
+A few more came up after the upload, in buildings where OpenStreetMap lists a
 unit your layer doesn't have. Each is a single gap in an otherwise regular run,
 so I can't tell whether OpenStreetMap is wrong or the layer is missing a unit:
 
