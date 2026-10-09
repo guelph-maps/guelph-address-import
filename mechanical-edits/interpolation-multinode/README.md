@@ -14,6 +14,18 @@ line with one bare end                  ->  hand cases                          
 end nodes, all of them                  ->  not touched
 ```
 
+> **Superseded 2026-10-09: done through MapRoulette, not as a mechanical
+> edit.** skfd's call. Every Guelph interpolation line (these 149 and the 405
+> two-node ones) becomes a MapRoulette task in
+> [`against-interpolation`](https://github.com/skfd/against-interpolation)
+> (`run.py --city guelph`), the tool already running Toronto's 158
+> challenges. A mapper checks each line and deletes it **with its end nodes**,
+> which the batches here never did. The survey below is still the evidence,
+> and its guards carried over: lines crossing the city limit and lines
+> spanning Wellington County addresses OSM lacks are held back there too.
+> `batches/` and `manifest.csv` stay as a record and are **not to be
+> uploaded**.
+
 > **Not uploaded.** Prepared 2026-10-07 against live OSM, after the import's
 > last changeset. This is the first mechanical edit that **deletes** rather
 > than retags, and what it deletes is other mappers' 2012–2016 work. The
