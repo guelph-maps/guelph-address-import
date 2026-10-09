@@ -99,6 +99,12 @@ so I can't tell whether OpenStreetMap is wrong or the layer is missing a unit:
 - 355 Elmira Road North (Melran Mall): a law office there gives its address as
   unit 122, which the layer doesn't have.
 
+Behind these is a more general question: what does a building's set of unit
+points mean? Is it meant to be every unit in the building, or only some of
+them, for example the ones registered for a particular purpose? If it is
+complete, I can treat a unit the layer lacks as not existing. If it is partial,
+I should leave such units in OpenStreetMap.
+
 And a general one: is the layer meant to list every civic number the City has
 assigned, including vacant lots? Some old address ranges in OpenStreetMap span
 numbers the layer doesn't have, for example 63 to 83 (odd) Beaumont Crescent

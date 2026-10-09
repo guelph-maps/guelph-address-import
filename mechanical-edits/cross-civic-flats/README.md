@@ -1,8 +1,12 @@
 # Campaign 7: `addr:flats` naming units the City puts elsewhere
 
-**Built 2026-10-07, after the import. Not uploaded.** Two
-batches: [`batches/`](batches/), run sheet [`index.html`](index.html), and
-revert record [`manifest.csv`](manifest.csv). No forum post: skfd decided on
+**Built 2026-10-07, after the import. Not uploaded, and now done by hand.**
+On 2026-10-09 skfd chose to make both edits by hand in JOSM, on the personal
+account, instead of uploading the batches. The towers come first. For the
+Janefield slices, the plan is to split them in JOSM and then fix their
+addresses. The batch files ([`batches/`](batches/), [`index.html`](index.html))
+stay as the reference for what each object should end up as.
+[`manifest.csv`](manifest.csv) holds every prior value. No forum post: skfd decided on
 2026-10-07 that none of the post-import cleanups gets one. The draft is in
 git history at `5b2afeb`.
 
@@ -95,8 +99,9 @@ exactly one more:
 
 Each is a single gap in an otherwise regular run, so the City's data may be
 missing a real unit rather than OSM listing a fake one. Nothing here can tell
-which, and it is why batch 2 is separate. The post asks anyone who knows
-one of these buildings to say so.
+which, and it is why batch 2 is separate. The City letter
+(`CITY_LETTER_PLAIN_POINTS.md`) asks about all five, and whether a building's
+unit list is meant to be complete. If it is partial, put these three back.
 
 Held, because OSM has its own evidence for the unit:
 
