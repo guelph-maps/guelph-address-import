@@ -11,6 +11,13 @@ Nothing is created, nothing is deleted, no other tag moves.
 - **Built 2026-10-07** against a fresh fetch (Overpass `osm_base`
   2026-10-08T01:07Z, after the last import changeset). Rebuild with
   `--refetch` before any upload.
+- **Batch 14 (Old University) is stale.** skfd's hand edit in changeset
+  190278301 (2026-10-10) touched 23 of its objects at Janefield Avenue and
+  Mason Court: ways split, six civic nodes deleted, four moved, and the door
+  nodes at 176 and 224 Janefield deleted. More hand fixes there are pending.
+  Rebuild with `--refetch` only **after** they land. The gate will then hold
+  any listing whose doors are gone, and drop the objects that no longer
+  carry `addr:flats`.
 - **No forum post.** skfd decided on 2026-10-07 that none of the
   post-import cleanups gets one. The draft is in git history at `5b2afeb`.
 - **Nothing uploaded.**
