@@ -6,7 +6,13 @@ account, instead of uploading the batches. The towers come first. For the
 Janefield slices, the plan is to split them in JOSM and then fix their
 addresses. The batch files ([`batches/`](batches/), [`index.html`](index.html))
 stay as the reference for what each object should end up as.
-[`manifest.csv`](manifest.csv) holds every prior value. No forum post: skfd decided on
+[`manifest.csv`](manifest.csv) holds every prior value.
+
+**Towers done 2026-10-09** (local time) by skfd in JOSM:
+[changeset 190277623](https://www.openstreetmap.org/changeset/190277623).
+It was read back from the API: the three ways changed only `addr:flats`, each
+to exactly batch 2's value, from the version the batch was built against.
+Recorded in [`uploads.csv`](uploads.csv). The Janefield slices are next. No forum post: skfd decided on
 2026-10-07 that none of the post-import cleanups gets one. The draft is in
 git history at `5b2afeb`.
 
