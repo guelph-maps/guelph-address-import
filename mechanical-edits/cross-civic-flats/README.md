@@ -1,6 +1,6 @@
 # Campaign 7: `addr:flats` naming units the City puts elsewhere
 
-**Built 2026-10-07, after the import. Not uploaded, and now done by hand.**
+**Done 2026-10-09, by hand.** Built 2026-10-07 as two batches, which were never uploaded.
 On 2026-10-09 skfd chose to make both edits by hand in JOSM, on the personal
 account, instead of uploading the batches. The towers come first. For the
 Janefield slices, the plan is to split them in JOSM and then fix their
@@ -12,7 +12,39 @@ stay as the reference for what each object should end up as.
 [changeset 190277623](https://www.openstreetmap.org/changeset/190277623).
 It was read back from the API: the three ways changed only `addr:flats`, each
 to exactly batch 2's value, from the version the batch was built against.
-Recorded in [`uploads.csv`](uploads.csv). The Janefield slices are next. No forum post: skfd decided on
+Recorded in [`uploads.csv`](uploads.csv).
+
+**Janefield done 2026-10-09** by skfd in JOSM, in three changesets. The
+operator went further than batch 1, which would only have removed the
+listings. Every back-to-back strip on the block was cut into its two homes
+(the 7 cross-civic strips plus the same-civic pairs at 176 and 224), and each
+half carries its civic and `addr:unit` for the one home inside it, like every
+other strip on the street. The import's door nodes there were deleted as now
+duplicate. Sheds, fences, driveways and trees that a new development replaced
+were removed and its buildings drawn.
+
+- [190278301](https://www.openstreetmap.org/changeset/190278301): the splits.
+  Read back: 7 halves kept their strip's old civic though their home was at
+  the other, 34 halves used a one-value `addr:flats`, and deleting the old
+  `B;C` listing nodes took the plain civic of 6/8/10/12 Mason Court and
+  33/35 Janefield with them.
+- [190279486](https://www.openstreetmap.org/changeset/190279486): fixes the 7
+  civics and turns the one-value `addr:flats` into `addr:unit`.
+- [190279513](https://www.openstreetmap.org/changeset/190279513): re-adds the
+  six plain civic nodes.
+
+Checked after the third: each of the 36 deleted doors' homes is carried by
+the building half that contains it, at the City's civic. No one-value
+`addr:flats` is left, and every unit-B/C house has its plain civic again.
+Still there: `addr:flats=B` beside a unit-B node at 27, 37, 39, 41 and 43
+Janefield. That is the redundant-listings edit's job, and its Old University
+batch must be refetched (this work touched 23 of its objects).
+
+**Found in passing:** 12 CanVec-8.0 address nodes from 2018 on the block
+carry Janefield numbers the City doesn't have as civics (128, 190, 192, 234,
+236, 252, 254, 280, 282, 342, 344, 382). They look like the townhouse unit
+numbers mapped as housenumbers. Two duplicate `1 Poppy Lane` nodes are also
+there. Both predate this work and are input for the reverse beholder. No forum post: skfd decided on
 2026-10-07 that none of the post-import cleanups gets one. The draft is in
 git history at `5b2afeb`.
 
