@@ -1,9 +1,19 @@
 # Stack collapse — 5 Gordon Street
 
-**Built 2026-10-02, rebuilt 2026-10-07, not uploaded.** One building, one
-changeset: [`5-gordon-street.osm`](5-gordon-street.osm). Upload-ready. No
-forum note: skfd decided on 2026-10-07 that none of the post-import cleanups
-gets one (the draft is in git history at `5b2afeb`).
+**Done 2026-10-20** — [changeset 190812544](https://www.openstreetmap.org/changeset/190812544),
+by hand in JOSM from skfd's own account, `mechanical=no` and
+`source=survey;Guelph Open Data`: the judgement here is a survey finding, not
+a rule applied to a set. Read back from the API and checked against
+[`5-gordon-street.osm`](5-gordon-street.osm): 14 changes, 1 modify and 13
+deletes, nothing created, exactly the planned objects and no others, and the
+way's tags byte-identical to the prepared file. Way 413398801 is now v9 with
+7 vertices and the 61-suite listing; all 13 stack nodes are `visible=false`.
+No forum note: skfd decided on 2026-10-07 that none of the post-import
+cleanups gets one (the draft is in git history at `5b2afeb`).
+
+Prepared 2026-10-02, rebuilt 2026-10-07, re-checked against live OSM on
+2026-10-20 before loading — nothing had moved in the interim, zero version
+mismatches, so the file went up as built.
 
 ## What was there
 
