@@ -20,7 +20,11 @@ Nothing is created, nothing is deleted, no other tag moves.
   carry `addr:flats`.
 - **No forum post.** skfd decided on 2026-10-07 that none of the
   post-import cleanups gets one. The draft is in git history at `5b2afeb`.
-- **Nothing uploaded.**
+- **Nothing uploaded, and the case for uploading is weaker than this file
+  first argued.** Tested 2026-10-20: Nominatim does not index `addr:flats`
+  at all, so stripping it changes no geocoding answer and removes no
+  duplicate — see [`GEOCODER_TEST.md`](GEOCODER_TEST.md). What is left in
+  favour is drift, which is a judgement call. Awaiting skfd's decision.
 - **Supersedes [`../unit-doors/`](../unit-doors/README.md).** That build
   created the doors and stripped the listings in one changeset. The import
   has since created the doors, so its batches are stale and must not be
@@ -34,9 +38,19 @@ Edit 6 was built 2026-09-29 to replace `addr:flats` on door groups with one
 first pass (2026-10-03..07) created **1,680 door nodes at 143 civic
 addresses**. At 92 of those, a building or civic node still lists the same
 units in `addr:flats`. Now each unit is in OSM twice: as its own door, and as
-an entry in a listing that says the units share one entrance. The doors are
-the shape the operator chose for each of these groups at `/units/shapes`. The
-listings contradict that choice and add nothing.
+an entry in a listing on the building. The doors are the shape the operator
+chose for each of these groups at `/units/shapes`.
+
+**This paragraph used to say the listings "contradict that choice and add
+nothing". Both halves were overstated, and 2026-10-20 is when that was
+admitted.** They do not contradict: `addr:unit` means identity — this node
+*is* unit 3 — and `addr:flats` means containment — this building *serves*
+units 1-5. A building that contains five units still contains them once the
+five doors are mapped, and `addr:flats` on a building outline is good OSM on
+its own terms. Nor do they add nothing: a consumer indexing buildings reads
+the unit range straight off the way, where otherwise it needs a spatial join
+from door nodes to the enclosing outline. The honest case against them is
+drift, not error.
 
 ## Who is in it
 
