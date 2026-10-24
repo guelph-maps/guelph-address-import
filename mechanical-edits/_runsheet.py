@@ -159,6 +159,11 @@ def render(camp: Campaign, records: list[dict], review: list[dict],
             f"<table><thead><tr><th>Object</th><th>housenumber</th>{heads}"
             f"<th>Street</th><th></th></tr></thead><tbody>{body}</tbody></table>")
 
+    account_note = (f"Upload from the <code>{html.escape(camp.account)}</code> "
+                    + ("account, not a personal one."
+                       if camp.account == "skfd imports" else
+                       "account — this campaign is hand-uploaded cleanup, "
+                       "not an import."))
     steps = "".join(f"<li>{s}</li>" for s in camp.steps)
     js = PAGE_JS.replace("%SLUG%", camp.slug)
     return f"""<!doctype html>
@@ -171,8 +176,7 @@ def render(camp: Campaign, records: list[dict], review: list[dict],
 <div class="banner warn">
   <strong>Nothing here uploads itself.</strong> Open each batch in JOSM, look at
   it, then press upload. The changeset tags are pre-filled from the file;
-  <code>created_by</code> is JOSM's own. Upload from the
-  <code>skfd imports</code> account, not a personal one.
+  <code>created_by</code> is JOSM's own. {account_note}
 </div>
 
 <p class="sub">Built {html.escape(stamp)} — {selected:,} objects selected,

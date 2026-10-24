@@ -3,10 +3,11 @@ manifest says — then record it in the campaign's uploads.csv.
 
     python verify_changeset.py <campaign-dir> <batch> [--changeset ID]
 
-Without --changeset it finds the newest changeset by `skfd imports` whose
-comment names that batch ("(N/TOTAL)"). The checks, each fatal:
+Without --changeset it finds the newest changeset by the campaign's account
+(`skfd imports`, unless `ACCOUNTS` names another) whose comment names that
+batch ("(N/TOTAL)"). The checks, each fatal:
 
-- the changeset belongs to `skfd imports` and carries mechanical=yes;
+- the changeset belongs to that account and carries mechanical=yes;
 - it creates nothing unless the manifest has `action=create` rows (edit 6,
   unit-doors) — then the created nodes must be exactly those rows, matched
   one-to-one on their full tag set and position;
@@ -34,6 +35,12 @@ from pathlib import Path
 
 API = "https://api.openstreetmap.org/api/0.6"
 ACCOUNT = "skfd imports"
+# Per-campaign exceptions. redundant-flats is small-scale manual cleanup
+# rather than an import — 299 tag removals skfd uploads by hand — so it goes
+# up from the personal account. Its pilot went that way on 2026-10-24 and
+# skfd chose to finish all 20 batches there rather than revert 10 correct
+# objects over a label. Every other campaign stays on the import account.
+ACCOUNTS = {"redundant-flats": "skfd"}
 UA = {"User-Agent": "guelph-address-import verify_changeset (skfd)"}
 
 
@@ -123,8 +130,8 @@ def match_created(created: list[ET.Element], want: list[dict]) -> list[str]:
 
 
 def find_changeset(batch: int, total: int, skip: set[str] = frozenset(),
-                   exact: str = "") -> ET.Element:
-    root = get(f"{API}/changesets?display_name={urllib.request.quote(ACCOUNT)}")
+                   exact: str = "", account: str = ACCOUNT) -> ET.Element:
+    root = get(f"{API}/changesets?display_name={urllib.request.quote(account)}")
     # flats-hygiene writes "(1/22)", province-removal "[batch 1/105]". When the
     # batch file carries its comment, that exact text is the marker: a batch
     # added after the fact (flats-pairs 13/13) would otherwise shift `total`.
@@ -138,7 +145,7 @@ def find_changeset(batch: int, total: int, skip: set[str] = frozenset(),
         comment = tags_of(cs).get("comment", "")
         if any(m in comment for m in markers):
             return cs
-    sys.exit(f"no changeset by {ACCOUNT!r} with {' or '.join(markers)} in its comment yet")
+    sys.exit(f"no changeset by {account!r} with {' or '.join(markers)} in its comment yet")
 
 
 def main() -> None:
@@ -151,6 +158,7 @@ def main() -> None:
 
     here = Path(args.campaign_dir).resolve()
     expect = EXPECT[here.name]
+    account = ACCOUNTS.get(here.name, ACCOUNT)
     rows_all = list(csv.DictReader(open(here / "manifest.csv", encoding="utf-8")))
     total = max(int(r["batch"]) for r in rows_all)
     mine = [r for r in rows_all if int(r["batch"]) == args.batch]
@@ -174,12 +182,13 @@ def main() -> None:
                 sys.exit(f"batch {args.batch} already recorded as changeset {u['changeset']}")
 
     cs = (get(f"{API}/changeset/{args.changeset}").find("changeset")
-          if args.changeset else find_changeset(args.batch, total, recorded, file_comment))
+          if args.changeset else find_changeset(args.batch, total, recorded,
+                                                file_comment, account))
     cs_id, user = cs.get("id"), cs.get("user")
     ctags = tags_of(cs)
     problems: list[str] = []
-    if user != ACCOUNT:
-        problems.append(f"changeset {cs_id} is by {user!r}, not {ACCOUNT!r}")
+    if user != account:
+        problems.append(f"changeset {cs_id} is by {user!r}, not {account!r}")
     if ctags.get("mechanical") != "yes":
         problems.append("changeset lacks mechanical=yes")
     if cs.get("open") == "true":

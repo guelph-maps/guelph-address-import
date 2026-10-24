@@ -290,6 +290,7 @@ class Campaign:
     review_columns: list[str] = field(default_factory=list)
     max_per_batch: int = 250
     pilot_min: int = 25
+    account: str = "skfd imports"   # OSM account the batches go up from
 
 
 def changeset_tags(camp: Campaign, batch: dict,

@@ -186,7 +186,8 @@ STEPS = [
     "On the day: <code>build_batches.py --refetch</code>. Versions move; a "
     "stale batch conflicts in JOSM rather than overwriting, but a rebuild is "
     "cheaper than resolving conflicts.",
-    "Sign JOSM in as <code>skfd imports</code>. Run "
+    "Sign JOSM in as <code>skfd</code> — this one is hand cleanup, not an "
+    "import (2026-10-24). Run "
     "<code>python upload_loop.py redundant-flats 1 N</code> to feed batches "
     "and verify each from the API.",
     "Batch 1 is the pilot. Upload it, check it on the map, then the rest.",
@@ -211,6 +212,7 @@ CAMPAIGN = Campaign(
     review_columns=["flats", "units_city", "detail", "origin", "last_user"],
     max_per_batch=250,
     pilot_min=10,
+    account="skfd",   # hand-uploaded cleanup, not an import (2026-10-24)
 )
 
 

@@ -175,9 +175,12 @@ uploaded as new nodes. They were deleted on 2026-10-07 in changeset
   [ledger](mechanical-edits/TODO.md)). None of them gets a forum post: that
   was decided 2026-10-07, after post #22 closed the thread's business.
   - **What is left of edit 6**, the `addr:flats` listings the new door nodes
-    made redundant, is the one still to upload. Decided 2026-10-24 to strip
+    made redundant, is **uploading now**. Decided 2026-10-24 to strip
     them, on drift alone, after the geocoder case for them failed; rebuilt
-    the same day to 299 objects in 20 batches, pilot Kortright Hills. See
+    the same day to 299 objects in 20 batches. The pilot, Kortright Hills,
+    went up 2026-10-24 as changeset 190987199 and verified. This campaign
+    uploads from `skfd` rather than `skfd imports`: skfd's call that it is
+    small-scale manual cleanup, not an import. See
     [`mechanical-edits/redundant-flats/`](mechanical-edits/redundant-flats/README.md).
   - **Campaign 7** (`addr:flats` naming another civic's units) was done by
     hand in JOSM instead, 2026-10-10.

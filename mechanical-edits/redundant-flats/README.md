@@ -16,8 +16,26 @@ Nothing is created, nothing is deleted, no other tag moves.
   below), so what is left is the surviving argument: the same fact on two
   objects, so a mapper renumbering a door has no reason to see the listing.
   skfd weighed that against keeping the listings and chose to strip.
-  **Nothing is uploaded yet.** Pilot batch 1 (Kortright Hills, 10 objects)
-  goes up first and gets looked at, then 2-20.
+- **Pilot batch 1 is up: changeset
+  [190987199](https://www.openstreetmap.org/changeset/190987199)**, 2026-10-24,
+  Kortright Hills, 10 objects. Verified against the manifest: 10 modified,
+  nothing created or deleted, every object its live tags minus `addr:flats`.
+  Batches 2-20 (289 objects) follow.
+- **This campaign uploads from `skfd`, not `skfd imports`.** The pilot went
+  up from the personal account on 2026-10-24 — JOSM was signed in to it —
+  and `verify_changeset.py` failed it on the account alone, the content
+  being correct. skfd's call: **this is not an import but small-scale manual
+  fixes**, so the personal account is the right one, and all 20 batches go
+  up from it rather than reverting 10 correct objects over a label.
+  `ACCOUNTS["redundant-flats"]` in `verify_changeset.py` is that decision;
+  every other campaign still demands `skfd imports`. **Stay signed in as
+  `skfd` for 2-20** — switching mid-run now fails verify and halts the loop.
+  Note the tension this leaves: the batches still carry `mechanical=yes` and
+  an `import_plan` tag, and
+  [`IMPORT_PROPOSAL.mediawiki`](../../IMPORT_PROPOSAL.mediawiki) says the
+  personal account "is not used for any upload from this tooling, except one
+  early changeset sent from it by mistake". That published sentence is now
+  wrong by 20 changesets. Nobody has been asked to fix the wiki.
 - **The stale batch is resolved, by its listings leaving.** The Janefield
   hand fixes landed (changesets 190278301, 190279486, 190279513) and this
   build sees them: 74, 176 and 224 Janefield Avenue carry no `addr:flats` at
@@ -169,12 +187,16 @@ The build reads every file it wrote back and refuses the set unless:
 - every unit its former listing named has a non-POI `addr:unit` object at its
   civic in `live_units.osm`.
 
-Upload, from `mechanical-edits/`, signed in to JOSM as `skfd imports`:
+Upload, from `mechanical-edits/`, signed in to JOSM as `skfd` (see Status —
+this campaign is hand cleanup, not an import):
 
 ```
 python upload_loop.py redundant-flats 1 1      # the pilot, then look at it
 python upload_loop.py redundant-flats 2 20
 ```
+
+Batch 1 is done (changeset 190987199); `uploads.csv` records it, and the
+loop skips what is already recorded.
 
 `verify_changeset.py` knows this directory (`EXPECT["redundant-flats"]`, the
 same expectation as unit-doors: only `addr:flats` gone). Revert:
