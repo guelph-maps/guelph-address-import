@@ -20,6 +20,13 @@ batch ("(N/TOTAL)"). The checks, each fatal:
 - on every object, the tags after the upload equal the tags it was prepared
   against with only the campaign's own change applied — nothing else moved.
 
+With --rebased, that last check runs against each object's *actual* parent
+version instead of the one the batch was prepared against. Use it when JOSM
+rebased an upload onto somebody else's newer edit: the check is then stricter
+about what matters (our change and nothing else, measured against what was
+really there) and silent about the version gap, which the default run reports.
+Look at the object's history first — the flag is the operator saying they did.
+
 Only after all of that passes is a row appended to uploads.csv, in the columns
 campaigns 2 and 3 already use. Read-only against the API; no credentials.
 """
@@ -154,6 +161,9 @@ def main() -> None:
     ap.add_argument("campaign_dir")
     ap.add_argument("batch", type=int)
     ap.add_argument("--changeset", type=int)
+    ap.add_argument("--rebased", action="store_true",
+                    help="verify against each object's actual parent version, "
+                         "for an upload JOSM rebased onto a newer edit")
     args = ap.parse_args()
 
     here = Path(args.campaign_dir).resolve()
@@ -194,8 +204,21 @@ def main() -> None:
     if cs.get("open") == "true":
         sys.exit(f"changeset {cs_id} is still open — wait for JOSM to close it")
 
+    change = get(f"{API}/changeset/{cs_id}/download")
+    created = [el for blk in change.findall("create") for el in blk]
+    deleted = [el for blk in change.findall("delete") for el in blk]
+    modified = {(el.tag, el.get("id")): el for blk in change.findall("modify") for el in blk}
+
     # What the batch was prepared against: the object versions in live.osm.
     wanted = {k: int(r["version"]) for k, r in rows.items()}
+    rebased: list[str] = []
+    for k in set(wanted) & set(modified):
+        parent = int(modified[k].get("version")) - 1
+        if parent != wanted[k]:
+            rebased.append(f"{k[0]} {k[1]}: prepared against v{wanted[k]}, "
+                           f"uploaded onto v{parent}")
+            if args.rebased:
+                wanted[k] = parent
     before: dict[tuple[str, str], dict] = {}
     for _, el in (ET.iterparse(here / "live.osm") if wanted else ()):
         k = (el.tag, el.get("id"))
@@ -214,10 +237,6 @@ def main() -> None:
         sys.exit(f"{len(missing)} prepared-against versions not in live.osm "
                  f"(was the campaign refetched after building?) e.g. {sorted(missing)[:3]}")
 
-    change = get(f"{API}/changeset/{cs_id}/download")
-    created = [el for blk in change.findall("create") for el in blk]
-    deleted = [el for blk in change.findall("delete") for el in blk]
-    modified = {(el.tag, el.get("id")): el for blk in change.findall("modify") for el in blk}
     if creates or created:
         problems.extend(match_created(created, creates))
     if deleted and not deletes:
@@ -262,6 +281,14 @@ def main() -> None:
           f"{len(rows)}" + (f" + {len(creates)} to create" if creates else "")
           + (f" + {len(deletes)} to delete" if deletes else ""))
     print(f"comment: {ctags.get('comment')}")
+    if rebased:
+        how = ("checked against the newer versions (--rebased)" if args.rebased
+               else "NOT checked against them; look at each history, then "
+                    "re-run with --rebased")
+        print()
+        print(f"{len(rebased)} object(s) moved under the batch — {how}:")
+        for r in rebased:
+            print("  -", r)
     if problems:
         print("\nFAILED — not recorded:")
         for p in problems:

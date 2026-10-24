@@ -36,6 +36,21 @@ Nothing is created, nothing is deleted, no other tag moves.
   personal account "is not used for any upload from this tooling, except one
   early changeset sent from it by mistake". That published sentence is now
   wrong by 20 changesets. Nobody has been asked to fix the wiki.
+- **Batches 1-8 are up** (changesets 190987199, 190987361, 190987365,
+  190987370, 190987374, 190987390, 190987401, 190987404), 2026-10-24, all
+  verified. 9-20 remain.
+- **Batch 8 was rebased under us, and that is fine.** `timmy688` edited 297
+  Eramosa Road way 240744882 twice on 2026-10-24 (18:43Z `building:levels=3`,
+  19:35Z), after this build fetched at 01:03Z. JOSM uploaded our strip onto
+  their v11 instead of the v9 we prepared, so v12 keeps every tag of theirs
+  and the same 12 nodes, with only `addr:flats` gone — checked against the
+  object history. The strict check still failed it on the version gap, which
+  is the guard working. `verify_changeset.py --rebased` is the answer: it
+  verifies against each object's *actual* parent version, so it is stricter
+  about what matters and silent about the gap. The default run names the
+  objects that moved and tells you to look first; the flag is you saying you
+  did. Batch 8 is recorded that way. Expect more of these — timmy688 is
+  mapping Guelph today, and this build is a day old.
 - **The stale batch is resolved, by its listings leaving.** The Janefield
   hand fixes landed (changesets 190278301, 190279486, 190279513) and this
   build sees them: 74, 176 and 224 Janefield Avenue carry no `addr:flats` at
@@ -199,8 +214,12 @@ Batch 1 is done (changeset 190987199); `uploads.csv` records it, and the
 loop skips what is already recorded.
 
 `verify_changeset.py` knows this directory (`EXPECT["redundant-flats"]`, the
-same expectation as unit-doors: only `addr:flats` gone). Revert:
-`flats_before` in `manifest.csv` is each object's value.
+same expectation as unit-doors: only `addr:flats` gone). If the loop halts on
+`version N, expected M`, somebody edited the object after the fetch: read its
+history, confirm the upload kept their work, then record it with
+`python verify_changeset.py redundant-flats <batch> --rebased` and restart the
+loop at the next batch. Revert: `flats_before` in `manifest.csv` is each
+object's value.
 
 ## Files
 
