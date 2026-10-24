@@ -172,11 +172,18 @@ uploaded as new nodes. They were deleted on 2026-10-07 in changeset
 - **The monthly re-run** when the City publishes. This is continuous upkeep:
   the wiki status stays `In progress` and is never marked complete.
 - **The cleanups held until the import was done** (see the
-  [ledger](mechanical-edits/TODO.md)): the 149 interpolation ways with 3 or
-  more nodes; campaign 7, `addr:flats` naming another civic's units; the
-  `addr:flats` listings the new door nodes have made redundant (what is left
-  of edit 6); and the 5 Gordon Street stack collapse. Each one is announced
-  on the thread before it uploads.
+  [ledger](mechanical-edits/TODO.md)). None of them gets a forum post: that
+  was decided 2026-10-07, after post #22 closed the thread's business.
+  - **What is left of edit 6**, the `addr:flats` listings the new door nodes
+    made redundant, is the one still to upload. Decided 2026-10-24 to strip
+    them, on drift alone, after the geocoder case for them failed; rebuilt
+    the same day to 299 objects in 20 batches, pilot Kortright Hills. See
+    [`mechanical-edits/redundant-flats/`](mechanical-edits/redundant-flats/README.md).
+  - **Campaign 7** (`addr:flats` naming another civic's units) was done by
+    hand in JOSM instead, 2026-10-10.
+  - **The 5 Gordon Street stack collapse** is up: changeset 190812544.
+  - **The 149 interpolation ways with 3 or more nodes** are superseded by a
+    MapRoulette challenge rather than a batch of our own.
 - **Still unbuilt:** the maintenance path for unit groups (a new unit at an
   address whose shape is already in OSM), and the footprint guard inside the
   unit rule itself. Verdicts cover both for now.
