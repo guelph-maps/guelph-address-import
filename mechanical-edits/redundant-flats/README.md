@@ -10,17 +10,23 @@ Nothing is created, nothing is deleted, no other tag moves.
 
 - **Rebuilt 2026-10-24** against a fresh fetch (Overpass `osm_base`
   2026-10-24T05:01Z). **299 objects in 20 batches**, down from 317 on
-  2026-10-07. Rebuild with `--refetch` again if the upload does not follow
-  within a few days.
+  2026-10-07. Uploaded the same day, so the build never went stale — one
+  object did move under it, see below.
 - **Decided 2026-10-24: strip them, on drift.** The harm case is gone (see
   below), so what is left is the surviving argument: the same fact on two
   objects, so a mapper renumbering a door has no reason to see the listing.
   skfd weighed that against keeping the listings and chose to strip.
-- **Pilot batch 1 is up: changeset
-  [190987199](https://www.openstreetmap.org/changeset/190987199)**, 2026-10-24,
-  Kortright Hills, 10 objects. Verified against the manifest: 10 modified,
-  nothing created or deleted, every object its live tags minus `addr:flats`.
-  Batches 2-20 (289 objects) follow.
+- **Done 2026-10-24: all 20 batches up, all 299 objects verified.** Changesets
+  190987199, 190987361, 190987365, 190987370, 190987374, 190987390, 190987401,
+  190987404, 190987542, 190987554, 190987565, 190987571, 190987577, 190987590,
+  190987599, 190987603, 190987609, 190987616, 190987623, 190987630 —
+  `uploads.csv` is the ledger, 20 rows against 299 manifest rows. Every batch
+  was read back from the API and matched its manifest: nothing created,
+  nothing deleted, each object its live tags minus `addr:flats`.
+  **Independently confirmed:** `addr:flats` in Guelph (Overpass area
+  3607486148) is now **140**, from 439 — ways 404 to 116, nodes 35 to 24,
+  which is exactly the 288 ways and 11 nodes this edit stripped. The four
+  held objects still carry theirs, checked one by one.
 - **This campaign uploads from `skfd`, not `skfd imports`.** The pilot went
   up from the personal account on 2026-10-24 — JOSM was signed in to it —
   and `verify_changeset.py` failed it on the account alone, the content
