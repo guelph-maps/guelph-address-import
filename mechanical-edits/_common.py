@@ -334,6 +334,22 @@ def geometry_stub(node: ET.Element) -> ET.Element:
     return ET.Element("node", keep)
 
 
+def clear_batches(batch_dir: Path) -> list[str]:
+    """Delete the previous run's .osm files and name what went.
+
+    A rebuild that renumbers does not overwrite the old numbering, it sits
+    beside it: 20 batches rebuilt into 20 differently-named files leaves two
+    candidates for half of them. `upload_loop.load` then refuses the batch,
+    and when it did not refuse it put flats-pairs' batch 5 object up as batch
+    2. Call this once, before the write loop.
+    """
+    batch_dir.mkdir(parents=True, exist_ok=True)
+    gone = sorted(p.name for p in batch_dir.glob("*.osm"))
+    for path in batch_dir.glob("*.osm"):
+        path.unlink()
+    return gone
+
+
 def write_batch(camp: Campaign, batch_dir: Path, batch: dict, index: int,
                 total: int, selected: dict, by_node_id: dict) -> dict:
     """Emit one .osm. Returns the record the manifest and run sheet need."""

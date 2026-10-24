@@ -79,8 +79,9 @@ from t2.conflate import _is_poi_node, normalize_street  # noqa: E402
 
 import _runsheet  # noqa: E402
 from _common import (AREA_ID, Campaign, assign_area, batchable, centre,  # noqa: E402
-                     element_tags, fetch_live, index_live, load_areas,
-                     make_batches, promote_pilot, write_batch, write_csvs)
+                     clear_batches, element_tags, fetch_live, index_live,
+                     load_areas, make_batches, promote_pilot, write_batch,
+                     write_csvs)
 from flats_parse import parse_flats  # noqa: E402
 
 TOOL_DB = CITY_DIR / "data" / "guelph" / "tool.db"
@@ -363,6 +364,9 @@ def main() -> None:
                             CAMPAIGN.pilot_min)
     total = len(batches)
     extra = {(it["type"], it["id"]): it for it in items}
+    stale = clear_batches(BATCH_DIR)
+    if stale:
+        print(f"  cleared {len(stale)} .osm from the previous build")
     records = []
     for index, batch in enumerate(batches, 1):
         rec = write_batch(CAMPAIGN, BATCH_DIR, batch, index, total,
