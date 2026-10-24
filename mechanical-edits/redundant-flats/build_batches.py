@@ -146,6 +146,12 @@ REVIEW_REASONS = {
         "Campaign 7's (<code>cross-civic-flats/</code>): the 74/176 Janefield "
         "back-to-back slices. Every unit has its door, but not all at this "
         "civic; left to that campaign."),
+    "doors-deleted": (
+        "This import's doors at the civic are gone",
+        "A hand edit deleted a door node the import created, or took "
+        "<code>addr:unit</code> off it, so the group changed after the "
+        "import. Whatever the listing now names, it is a hand question "
+        "rather than a mechanical strip."),
     "unit-without-door": (
         "A listed unit has no door at this civic",
         "Stripping the listing would lose a unit nobody created. "
@@ -266,20 +272,36 @@ def main() -> None:
 
     groups = uploaded_door_groups()
     civic_of: dict[tuple, str] = {}          # OSM (hn, street) -> civic_key
+    gone_doors: dict[str, list[str]] = {}    # civic_key -> our doors now gone
     for key, ids in groups.items():
         found = {(hn(unit_tags[i]), norm(unit_tags[i].get("addr:street")))
                  for i in ids if unit_tags.get(i)}
-        gone = [i for i in ids if not unit_tags.get(i)]
+        gone = sorted(i for i in ids if not unit_tags.get(i))
         if gone:
-            raise SystemExit(f"{len(gone)} uploaded doors at {key} are not in "
-                             f"live_units.osm, e.g. node {gone[0]}")
-        if len(found) != 1:
+            # A hand edit deleted a door this import uploaded, or took
+            # addr:unit off it, so the group changed under us. That is not
+            # fatal -- the per-listing gate reads live OSM, and somebody
+            # else's door counts -- but it is never silent: every listing at
+            # such a civic is held as `doors-deleted`.
+            gone_doors[key] = gone
+        if len(found) > 1:
             raise SystemExit(f"doors at {key} disagree on their civic: {found}")
+        if not found:
+            # Every door of ours is gone, so the civic cannot be read off our
+            # own live tags. Fall back to the key itself, so a listing there
+            # is still seen and held rather than quietly skipped.
+            number, street, _municipality = key.split("|")
+            found = {(number.strip().upper(), norm(street))}
         civic_of[found.pop()] = key
     loose = {(h, normalize_street(s)): k for (h, s), k in civic_of.items()}
     print(f"{len(selected)} addr:flats objects, {len(groups)} civics with "
           f"uploaded doors ({sum(len(v) for v in groups.values())} nodes), "
           f"{len(areas)} areas")
+    if gone_doors:
+        print(f"  {sum(len(v) for v in gone_doors.values())} of those doors "
+              f"are gone from live OSM, at {len(gone_doors)} civics: "
+              + "; ".join(f"{k} ({len(v)})" for k, v in sorted(gone_doors.items()))
+              + " - any listing there is held")
 
     data = unit_shapes.collect()
     shape_of = {k: r["shape"] for k, r in data["by_key"].items()}
@@ -307,6 +329,10 @@ def main() -> None:
             if alt is None:
                 continue                      # not at an uploaded door civic
             key, reason, detail = alt, "street-spelling", t.get("addr:street", "")
+        elif key in gone_doors:
+            reason = "doors-deleted"
+            detail = (f"{len(gone_doors[key])} of this import's doors are gone "
+                      f"from OSM, e.g. node {gone_doors[key][0]}")
         else:
             reason, detail = classify(kind, t, civic, key, doors, city_units,
                                       shape_of, street_units)
