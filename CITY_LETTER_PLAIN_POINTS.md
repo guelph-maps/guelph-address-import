@@ -5,6 +5,19 @@
 > (campaign 7), whether a building's unit list is complete at all (edit 6's
 > remaining holds, and the 108 interpolation lines that rest on the City
 > roster being complete), and what the plain point without a UNIT_NO means.
+>
+> **When the reply lands, the exchange goes up as an OSM diary entry** on
+> skfd's own account (`openstreetmap.org/user/skfd/diary`, not the import
+> account), decided 2026-10-24: question, the City's answer, and what changed
+> in OSM because of it. Not before the answer — a letter published with no
+> reply reads as a complaint about the City rather than a record of asking.
+> **Two rules for the public version.** The stray-POSTCODE list stays out of
+> it: those values look like an owner's mailing address leaking into a civic
+> record, which is the City's to fix quietly, so the post says eight
+> buildings disagree with themselves and seven records carry another
+> municipality's code, and leaves the ADDIDs here. And the reply is quoted
+> for its substance, without the signature block — `gisadmin@` is a role
+> address, but whoever answers is a person.
 
 **To:** gisadmin@guelph.ca
 **Cc:** opengov@guelph.ca
