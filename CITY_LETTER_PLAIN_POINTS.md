@@ -1,3 +1,11 @@
+> **Sent 2026-10-24**, with small edits made at the keyboard that are not
+> folded back in here, so read this as the draft that went rather than the
+> exact text. Nothing has come back yet. Four things in the repo wait on the
+> reply: 355 Elmira Road North's unit 122 and 358 Waterloo Avenue's 903
+> (campaign 7), whether a building's unit list is complete at all (edit 6's
+> remaining holds, and the 108 interpolation lines that rest on the City
+> roster being complete), and what the plain point without a UNIT_NO means.
+
 **To:** gisadmin@guelph.ca
 **Cc:** opengov@guelph.ca
 **Subject:** Addresses open data: what does the point without a unit number mean?
