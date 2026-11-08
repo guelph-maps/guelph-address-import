@@ -511,3 +511,10 @@ source_license = "OGL-Canada-2.0"
 # Source field -> OSM tag, as the prior import wrote them. addr:province was
 # added as a constant "Ontario".
 tag_mapping = { STREETNO = "addr:housenumber", FULLNAME = "addr:street", PLACE = "addr:city", POSTCODE = "addr:postcode", UNIT_NO = "addr:unit" }
+
+
+[maintenance]
+# Read only by the engine's maintenance-reminder workflow (scripts/maintenance_reminder.py):
+# a monthly reminder issue is filed from the 1st after this date. The day the initial
+# import finished and continuous maintenance began.
+since = "2026-10-07"
