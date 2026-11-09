@@ -477,7 +477,8 @@ changeset_comment_template = "{city} Open Data address import, run={run_name}"
 # source=Guelph Open Data), NOT the "City of ..." form Toronto uses. One city,
 # one attribution value: a reader filtering Guelph's address provenance should
 # get one answer, not two spellings of it. The *key* deliberately does not
-# match theirs — the engine writes addr:source on nodes and source on the
+# match theirs — the engine writes source:addr on nodes (addr:source until
+# 2026-11-09) and source on the
 # changeset; see the wiki page's tagging plan for why.
 attribution = "Guelph Open Data"
 # Our page, published 2026-08-27 and confirmed live before this was set — the

@@ -52,7 +52,7 @@ right: Toronto is 2026-05, Guelph 2026-08, and the row above them is 2026-07.)
 |[https://open.toronto.ca/dataset/address-points-municipal-toronto-one-address-repository/ City of Toronto Open Data — Address Points (Municipal)]
 |Toronto, Ontario, Canada
 |[https://open.toronto.ca/open-data-license/ Open Government Licence – Toronto]
-|{{Tag|addr:source||City of Toronto Open Data}} — the 2026-05 rollout wrote {{Tag|source||City of Toronto Open Data}}
+|{{Tag|source:addr||City of Toronto Open Data}} — the 2026-05 rollout wrote {{Tag|source||City of Toronto Open Data}}, maintenance until 2026-11-09 {{Tag|addr:source||City of Toronto Open Data}}
 | {{N/A}}
 | {{yes|Ongoing}}
 | 2026-05-04
@@ -65,7 +65,7 @@ right: Toronto is 2026-05, Guelph 2026-08, and the row above them is 2026-07.)
 |[https://explore.guelph.ca/datasets/cityofguelph::addresses-1/explore City of Guelph Open Data — Addresses]
 |Guelph, Ontario, Canada
 |OGL-Canada-2.0
-|{{Tag|addr:source||Guelph Open Data}}
+|{{Tag|source:addr||Guelph Open Data}} — {{Tag|addr:source||Guelph Open Data}} until 2026-11-09
 | {{N/A}}
 | {{yes|Ongoing}}
 | 2026-08-27
